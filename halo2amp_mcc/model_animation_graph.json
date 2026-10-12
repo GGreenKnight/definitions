@@ -1303,7 +1303,8 @@
         },
         {
           "type": "string_id",
-          "name": "input function"
+          "name": "input function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "real_bounds",
@@ -2420,7 +2421,8 @@
         },
         {
           "type": "string_id",
-          "name": "yaw source object function"
+          "name": "yaw source object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "custom",
@@ -2429,7 +2431,8 @@
         },
         {
           "type": "string_id",
-          "name": "pitch source object function"
+          "name": "pitch source object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "custom",
@@ -2438,7 +2441,8 @@
         },
         {
           "type": "string_id",
-          "name": "weight source object function"
+          "name": "weight source object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "short_block_index",
@@ -2511,7 +2515,8 @@
         },
         {
           "type": "string_id",
-          "name": "frame ratio object function"
+          "name": "frame ratio object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "custom",
@@ -2520,7 +2525,8 @@
         },
         {
           "type": "string_id",
-          "name": "playback speed object function"
+          "name": "playback speed object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "custom",
@@ -2529,7 +2535,8 @@
         },
         {
           "type": "string_id",
-          "name": "blend weight object function"
+          "name": "blend weight object function",
+          "string_editor": "object_function_panel"
         },
         {
           "type": "struct",

@@ -3018,6 +3018,16 @@
       "block": "visor colors",
       "label": "name",
       "sort": "ignore_case"
+    },
+    "object_function_panel": {
+      "caption": "Object Functions",
+      "validate": false,
+      "builder": "object_function_panel",
+      "with": "object_function",
+      "graph_block": "content/vehicle suspension",
+      "graph_label": "function name",
+      "graph_title": "model animation graph",
+      "empty": "No object functions available."
     }
   }
 }
