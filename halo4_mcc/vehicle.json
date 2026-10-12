@@ -935,7 +935,8 @@
         },
         {
           "type": "string_id",
-          "name": "propeller marker name"
+          "name": "propeller marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "real_fraction",
@@ -1791,7 +1792,8 @@
         },
         {
           "type": "string_id",
-          "name": "foot marker name"
+          "name": "foot marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "pad",
@@ -1885,7 +1887,8 @@
         },
         {
           "type": "string_id",
-          "name": "left lift marker"
+          "name": "left lift marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1894,7 +1897,8 @@
         },
         {
           "type": "string_id",
-          "name": "right lift marker"
+          "name": "right lift marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1903,7 +1907,8 @@
         },
         {
           "type": "string_id",
-          "name": "thrust marker"
+          "name": "thrust marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "struct",
@@ -2160,7 +2165,8 @@
         },
         {
           "type": "string_id",
-          "name": "rotation marker"
+          "name": "rotation marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -2649,7 +2655,8 @@
         },
         {
           "type": "string_id",
-          "name": "hull marker name#the name of the hull surface used to spew effects along the hull of the vehicle."
+          "name": "hull marker name#the name of the hull surface used to spew effects along the hull of the vehicle.",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -3196,7 +3203,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "long_flags",
@@ -3304,7 +3312,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "long_flags",

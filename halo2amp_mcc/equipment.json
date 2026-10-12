@@ -519,7 +519,8 @@
         },
         {
           "type": "old_string_id",
-          "name": "camera marker name"
+          "name": "camera marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "angle",
@@ -2397,7 +2398,8 @@
         },
         {
           "type": "string_id",
-          "name": "spawn effect marker"
+          "name": "spawn effect marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "tag_reference",
@@ -2416,7 +2418,8 @@
         },
         {
           "type": "string_id",
-          "name": "despawn effect marker"
+          "name": "despawn effect marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -2766,7 +2769,8 @@
         },
         {
           "type": "string_id",
-          "name": "attached effect marker"
+          "name": "attached effect marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -3183,7 +3187,8 @@
         },
         {
           "type": "string_id",
-          "name": "spawn effect marker"
+          "name": "spawn effect marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",

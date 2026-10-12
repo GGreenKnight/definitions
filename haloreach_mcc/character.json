@@ -4187,7 +4187,8 @@
         },
         {
           "type": "string_id",
-          "name": "spew marker#From whence should the infection forms cometh?"
+          "name": "spew marker#From whence should the infection forms cometh?",
+          "string_editor": "marker_names"
         },
         {
           "type": "real_bounds",
@@ -4447,7 +4448,8 @@
         },
         {
           "type": "string_id",
-          "name": "crate marker name"
+          "name": "crate marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -4456,7 +4458,8 @@
         },
         {
           "type": "string_id",
-          "name": "unit marker name"
+          "name": "unit marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",

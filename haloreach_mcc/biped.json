@@ -498,7 +498,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -863,7 +864,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name#you don't need this if you're just generating effects.  If empty it defaults to the up of the object"
+          "name": "marker name#you don't need this if you're just generating effects.  If empty it defaults to the up of the object",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -872,7 +874,8 @@
         },
         {
           "type": "string_id",
-          "name": "alignment marker name#you don't need this if you're just generating effects.  If empty it defaults to \"marker name\""
+          "name": "alignment marker name#you don't need this if you're just generating effects.  If empty it defaults to \"marker name\"",
+          "string_editor": "marker_names"
         },
         {
           "type": "explanation",
@@ -1336,7 +1339,8 @@
         },
         {
           "type": "old_string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",

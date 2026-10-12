@@ -654,7 +654,8 @@
         },
         {
           "type": "old_string_id",
-          "name": "marker"
+          "name": "marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "char_enum",
@@ -713,7 +714,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -846,7 +848,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^"
+          "name": "marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -1102,7 +1105,8 @@
         },
         {
           "type": "string_id",
-          "name": "boundary center marker"
+          "name": "boundary center marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1111,7 +1115,8 @@
         },
         {
           "type": "string_id",
-          "name": "spawned object marker name"
+          "name": "spawned object marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "explanation",

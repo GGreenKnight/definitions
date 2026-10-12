@@ -2415,6 +2415,167 @@
       "graph_label": "function name",
       "graph_title": "model animation graph",
       "empty": "No object functions available."
+    },
+    "marker_names": {
+      "caption": "Marker Names",
+      "validate": false,
+      "builder": "marker_names",
+      "model": "model",
+      "render_model": "render model",
+      "markers": "marker groups",
+      "marker_label": "name",
+      "empty": "No marker names available.",
+      "providers": [
+        {
+          "group": "render_model",
+          "from": "itself"
+        },
+        {
+          "group": "object",
+          "field": "multiplayer object/spawned object marker name",
+          "from": {
+            "relative": [
+              "spawned object"
+            ]
+          }
+        },
+        {
+          "group": "unit",
+          "field": "assassination weapon anchor marker",
+          "from": {
+            "relative": [
+              "assassination weapon"
+            ]
+          }
+        },
+        {
+          "group": "character",
+          "field": "activity objects/crate marker name",
+          "from": {
+            "relative": [
+              "crate"
+            ]
+          }
+        },
+        {
+          "group": "cinematic_scene",
+          "field": "objects/attachments/object marker name",
+          "from": {
+            "relative": [
+              "..",
+              "object type"
+            ]
+          }
+        },
+        {
+          "group": "cinematic_scene",
+          "field": "objects/attachments/attachment marker name",
+          "from": {
+            "relative": [
+              "attachment type"
+            ]
+          }
+        },
+        {
+          "group": "cinematic_scene",
+          "field": "shots/lighting/marker",
+          "from": {
+            "relative": [
+              {
+                "index": "subject",
+                "block": "objects"
+              },
+              "object type"
+            ]
+          }
+        },
+        {
+          "group": "cinematic_scene",
+          "field": "shots/effects/marker name",
+          "from": {
+            "relative": [
+              {
+                "index": "marker parent",
+                "block": "objects"
+              },
+              "object type"
+            ]
+          }
+        },
+        {
+          "group": "model",
+          "field": "variants/objects/child marker",
+          "from": {
+            "relative": [
+              "child object"
+            ]
+          }
+        },
+        {
+          "group": "scenario",
+          "field": "connection marker",
+          "from": {
+            "relative": [
+              "..",
+              "..",
+              {
+                "index": "type",
+                "palettes": {
+                  "scenery": "scenery palette",
+                  "scenerys": "scenery palette",
+                  "bipeds": "biped palette",
+                  "vehicles": "vehicle palette",
+                  "vehicle datum references": "vehicle palette",
+                  "weapons": "weapon palette",
+                  "machines": "machine palette",
+                  "terminals": "terminal palette",
+                  "controls": "control palette",
+                  "giants": "giant palette",
+                  "crates": "crate palette"
+                }
+              },
+              "name"
+            ]
+          }
+        },
+        {
+          "group": "character",
+          "from": {
+            "reference": "unit"
+          }
+        },
+        {
+          "group": "effect",
+          "from": {
+            "list": [
+              "replace",
+              "gravity",
+              "normal",
+              "forward",
+              "backward",
+              "reflection",
+              "root",
+              "impact",
+              "water_surface",
+              "structure_surface",
+              "child"
+            ]
+          }
+        },
+        {
+          "group": "object",
+          "from": "itself"
+        },
+        {
+          "group": "model",
+          "from": "itself"
+        },
+        {
+          "from": {
+            "same_path": "model"
+          }
+        }
+      ]
     }
   }
 }

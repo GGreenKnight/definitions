@@ -198,7 +198,8 @@
         },
         {
           "type": "string_id",
-          "name": "assassination weapon stow marker#the anchor we attach the knife to when we stow it"
+          "name": "assassination weapon stow marker#the anchor we attach the knife to when we stow it",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -207,7 +208,8 @@
         },
         {
           "type": "string_id",
-          "name": "assassination weapon out marker#the anchor we attach the knife to when we pull it out"
+          "name": "assassination weapon out marker#the anchor we attach the knife to when we pull it out",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -216,7 +218,8 @@
         },
         {
           "type": "string_id",
-          "name": "assassination weapon anchor marker#the marker on the knife that we anchor to the biped"
+          "name": "assassination weapon anchor marker#the marker on the knife that we anchor to the biped",
+          "string_editor": "marker_names"
         },
         {
           "type": "tag_reference",
@@ -835,7 +838,8 @@
         },
         {
           "type": "old_string_id",
-          "name": "camera marker name"
+          "name": "camera marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "angle",
@@ -1151,7 +1155,8 @@
         },
         {
           "type": "string_id",
-          "name": "preferred_grenade_marker#if found, use this marker to attach live grenades to"
+          "name": "preferred_grenade_marker#if found, use this marker to attach live grenades to",
+          "string_editor": "marker_names"
         },
         {
           "type": "explanation",
@@ -1195,7 +1200,8 @@
         },
         {
           "type": "string_id",
-          "name": "right hand marker"
+          "name": "right hand marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1204,7 +1210,8 @@
         },
         {
           "type": "string_id",
-          "name": "left hand marker"
+          "name": "left hand marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -1586,7 +1593,8 @@
         },
         {
           "type": "string_id",
-          "name": "alert mode effect marker"
+          "name": "alert mode effect marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -1807,7 +1815,8 @@
         },
         {
           "type": "old_string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1816,7 +1825,8 @@
         },
         {
           "type": "string_id",
-          "name": "entry marker(s) name"
+          "name": "entry marker(s) name",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -1825,7 +1835,8 @@
         },
         {
           "type": "string_id",
-          "name": "ui marker name"
+          "name": "ui marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -1838,7 +1849,8 @@
         },
         {
           "type": "string_id",
-          "name": "boarding grenade marker"
+          "name": "boarding grenade marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",

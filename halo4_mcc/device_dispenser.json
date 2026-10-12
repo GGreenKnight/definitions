@@ -112,7 +112,8 @@
         },
         {
           "type": "string_id",
-          "name": "spawn marker name#The dispensed object will appear with this marker's position and orientation"
+          "name": "spawn marker name#The dispensed object will appear with this marker's position and orientation",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -121,7 +122,8 @@
         },
         {
           "type": "string_id",
-          "name": "effect marker name#Creates the dispense effect at this marker name"
+          "name": "effect marker name#Creates the dispense effect at this marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "tag_reference",

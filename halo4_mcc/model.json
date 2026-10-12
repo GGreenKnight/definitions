@@ -825,7 +825,8 @@
         },
         {
           "type": "string_id",
-          "name": "parent marker^"
+          "name": "parent marker^",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -838,7 +839,8 @@
         },
         {
           "type": "string_id",
-          "name": "child marker"
+          "name": "child marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -2548,7 +2550,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^#multiple markers become multiple spheres of the same radius"
+          "name": "marker name^#multiple markers become multiple spheres of the same radius",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -2646,7 +2649,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name^#multiple markers become multiple spheres of the same radius"
+          "name": "marker name^#multiple markers become multiple spheres of the same radius",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",
@@ -2950,7 +2954,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker 1 name"
+          "name": "marker 1 name",
+          "string_editor": "marker_names"
         },
         {
           "type": "long_integer",
@@ -2963,7 +2968,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker 2 name"
+          "name": "marker 2 name",
+          "string_editor": "marker_names"
         },
         {
           "type": "long_integer",

@@ -283,7 +283,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -324,7 +325,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "char_enum",

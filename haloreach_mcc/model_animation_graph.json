@@ -1003,7 +1003,8 @@
         },
         {
           "type": "string_id",
-          "name": "foot marker name^"
+          "name": "foot marker name^",
+          "string_editor": "marker_names"
         },
         {
           "type": "real_bounds",
@@ -1016,7 +1017,8 @@
         },
         {
           "type": "string_id",
-          "name": "ankle marker name"
+          "name": "ankle marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "real_bounds",
@@ -1405,7 +1407,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -1436,7 +1439,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "char_enum",
@@ -1752,7 +1756,8 @@
         },
         {
           "type": "string_id",
-          "name": "target marker"
+          "name": "target marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "char_integer",
@@ -2854,7 +2859,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker#the marker name on the object being attached"
+          "name": "marker#the marker name on the object being attached",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -2863,7 +2869,8 @@
         },
         {
           "type": "string_id",
-          "name": "attach to marker#the marker name object (weapon, vehicle, etc.) the above marker is being attached to"
+          "name": "attach to marker#the marker name object (weapon, vehicle, etc.) the above marker is being attached to",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -3213,7 +3220,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name#this marker should be parented to the vehicle root node"
+          "name": "marker name#this marker should be parented to the vehicle root node",
+          "string_editor": "marker_names"
         },
         {
           "type": "custom",
@@ -3222,7 +3230,8 @@
         },
         {
           "type": "string_id",
-          "name": "contact marker name#this marker should be parented to the wheel node"
+          "name": "contact marker name#this marker should be parented to the wheel node",
+          "string_editor": "marker_names"
         },
         {
           "type": "real",

@@ -848,7 +848,8 @@
         },
         {
           "type": "string_id",
-          "name": "connection marker"
+          "name": "connection marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",

@@ -1761,7 +1761,8 @@
         },
         {
           "type": "string_id",
-          "name": "optional barrel marker name"
+          "name": "optional barrel marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "short_enum",

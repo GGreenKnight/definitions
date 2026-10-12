@@ -509,7 +509,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker"
+          "name": "marker",
+          "string_editor": "marker_names"
         },
         {
           "type": "terminator",
@@ -626,7 +627,8 @@
         },
         {
           "type": "string_id",
-          "name": "object marker name"
+          "name": "object marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "string_id",
@@ -639,7 +641,8 @@
         },
         {
           "type": "string_id",
-          "name": "attachment marker name"
+          "name": "attachment marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "tag_reference",
@@ -847,7 +850,8 @@
         },
         {
           "type": "string_id",
-          "name": "marker name"
+          "name": "marker name",
+          "string_editor": "marker_names"
         },
         {
           "type": "long_block_index",
