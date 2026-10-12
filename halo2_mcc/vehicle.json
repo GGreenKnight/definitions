@@ -642,7 +642,8 @@
     },
     {
      "type": "string_id",
-     "name": "collision global material name"
+     "name": "collision global material name",
+     "group_tag": "sted"
     },
     {
      "type": "pad",
@@ -693,6 +694,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -703,6 +705,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -787,6 +790,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -833,6 +837,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -843,6 +848,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -852,6 +858,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {

@@ -191,7 +191,8 @@
     },
     {
      "type": "real",
-     "name": "gain:dB"
+     "name": "gain:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -389,7 +390,8 @@
     },
     {
      "type": "real",
-     "name": null
+     "name": null,
+     "group_tag": "+dB+"
     },
     {
      "type": "long_flags",

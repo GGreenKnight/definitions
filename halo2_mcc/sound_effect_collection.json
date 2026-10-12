@@ -386,7 +386,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "sound effect"
+     "name": "sound effect",
+     "group_tag": "tmpl"
     },
     {
      "type": "tag_reference",
@@ -442,7 +443,8 @@
     },
     {
      "type": "real",
-     "name": "gain:dB#additional attenuation to sound"
+     "name": "gain:dB#additional attenuation to sound",
+     "group_tag": "+dB+"
     },
     {
      "type": "long_flags",
@@ -506,15 +508,18 @@
     },
     {
      "type": "string_id",
-     "name": "input"
+     "name": "input",
+     "group_tag": "fnin"
     },
     {
      "type": "string_id",
-     "name": "range"
+     "name": "range",
+     "group_tag": "fnir"
     },
     {
      "type": "real",
-     "name": "time period: seconds"
+     "name": "time period: seconds",
+     "group_tag": "fn**"
     },
     {
      "type": "long_integer",
@@ -526,7 +531,8 @@
     },
     {
      "type": "custom",
-     "name": "sound effect value"
+     "name": "sound effect value",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -545,7 +551,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -587,7 +594,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -616,7 +624,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -625,7 +634,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -708,11 +718,13 @@
     {
      "type": "short_enum",
      "name": "input",
+     "group_tag": "fnin",
      "definition": "input"
     },
     {
      "type": "short_enum",
      "name": "range",
+     "group_tag": "fnir",
      "definition": "input"
     },
     {

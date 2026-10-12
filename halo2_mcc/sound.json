@@ -372,11 +372,13 @@
     },
     {
      "type": "real",
-     "name": "natural pitch:cents#the apparent pitch when these samples are played at their recorded pitch."
+     "name": "natural pitch:cents#the apparent pitch when these samples are played at their recorded pitch.",
+     "group_tag": "cent"
     },
     {
      "type": "real_bounds",
-     "name": "bend bounds:cents#the range of pitches that will be represented using this sample. this should always contain the natural pitch."
+     "name": "bend bounds:cents#the range of pitches that will be represented using this sample. this should always contain the natural pitch.",
+     "group_tag": "cent"
     },
     {
      "type": "short_integer",
@@ -485,7 +487,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SOUND_PLAYBACK_ID"
+     "name": "SOUND_PLAYBACK_ID",
+     "group_tag": "sply"
     },
     {
      "type": "long_flags",
@@ -581,19 +584,23 @@
     },
     {
      "type": "real",
-     "name": "maximum bend per second:cents"
+     "name": "maximum bend per second:cents",
+     "group_tag": "cent"
     },
     {
      "type": "real",
-     "name": "gain base:dB#sound's random gain will start here"
+     "name": "gain base:dB#sound's random gain will start here",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "gain variance:dB#sound's gain will be randomly modulated within this range"
+     "name": "gain variance:dB#sound's gain will be randomly modulated within this range",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
-     "name": "random pitch bounds:cents#the sound's pitch will be modulated randomly within this range."
+     "name": "random pitch bounds:cents#the sound's pitch will be modulated randomly within this range.",
+     "group_tag": "cent"
     },
     {
      "type": "angle",
@@ -605,7 +612,8 @@
     },
     {
      "type": "real",
-     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener"
+     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener",
+     "group_tag": "+dB+"
     },
     {
      "type": "terminator",
@@ -632,7 +640,8 @@
     },
     {
      "type": "real",
-     "name": "maximum bend per second:cents"
+     "name": "maximum bend per second:cents",
+     "group_tag": "cent"
     },
     {
      "type": "explanation",
@@ -641,15 +650,18 @@
     },
     {
      "type": "real",
-     "name": "gain base:dB#sound's random gain will start here"
+     "name": "gain base:dB#sound's random gain will start here",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "gain variance:dB#sound's gain will be randomly modulated within this range"
+     "name": "gain variance:dB#sound's gain will be randomly modulated within this range",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
-     "name": "random pitch bounds:cents#the sound's pitch will be modulated randomly within this range."
+     "name": "random pitch bounds:cents#the sound's pitch will be modulated randomly within this range.",
+     "group_tag": "cent"
     },
     {
      "type": "explanation",
@@ -666,7 +678,8 @@
     },
     {
      "type": "real",
-     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener"
+     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener",
+     "group_tag": "+dB+"
     },
     {
      "type": "explanation",
@@ -708,11 +721,13 @@
     },
     {
      "type": "real_bounds",
-     "name": "gain modifier:dB"
+     "name": "gain modifier:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
-     "name": "pitch modifier:cents"
+     "name": "pitch modifier:cents",
+     "group_tag": "cent"
     },
     {
      "type": "fraction_bounds",
@@ -844,11 +859,13 @@
     },
     {
      "type": "real",
-     "name": "natural pitch:cents#the apparent pitch when these samples are played at their recorded pitch."
+     "name": "natural pitch:cents#the apparent pitch when these samples are played at their recorded pitch.",
+     "group_tag": "cent"
     },
     {
      "type": "real_bounds",
-     "name": "bend bounds:cents#the range of pitches that will be represented using this sample."
+     "name": "bend bounds:cents#the range of pitches that will be represented using this sample.",
+     "group_tag": "cent"
     },
     {
      "type": "real_bounds",
@@ -881,7 +898,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -923,7 +941,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -952,7 +971,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -961,7 +981,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -998,7 +1019,8 @@
     },
     {
      "type": "real",
-     "name": "gain:dB#additional attenuation when played"
+     "name": "gain:dB#additional attenuation when played",
+     "group_tag": "+dB+"
     },
     {
      "type": "data",
@@ -1137,7 +1159,8 @@
     },
     {
      "type": "custom",
-     "name": "'mkpl'"
+     "name": "'mkpl'",
+     "group_tag": "mkpl"
     },
     {
      "type": "terminator",
@@ -1424,7 +1447,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "sound effect"
+     "name": "sound effect",
+     "group_tag": "tmpl"
     },
     {
      "type": "tag_reference",
@@ -1480,7 +1504,8 @@
     },
     {
      "type": "real",
-     "name": "gain:dB#additional attenuation to sound"
+     "name": "gain:dB#additional attenuation to sound",
+     "group_tag": "+dB+"
     },
     {
      "type": "long_flags",
@@ -1544,15 +1569,18 @@
     },
     {
      "type": "string_id",
-     "name": "input"
+     "name": "input",
+     "group_tag": "fnin"
     },
     {
      "type": "string_id",
-     "name": "range"
+     "name": "range",
+     "group_tag": "fnir"
     },
     {
      "type": "real",
-     "name": "time period: seconds"
+     "name": "time period: seconds",
+     "group_tag": "fn**"
     },
     {
      "type": "long_integer",
@@ -1564,7 +1592,8 @@
     },
     {
      "type": "custom",
-     "name": "sound effect value"
+     "name": "sound effect value",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -1637,11 +1666,13 @@
     {
      "type": "short_enum",
      "name": "input",
+     "group_tag": "fnin",
      "definition": "input"
     },
     {
      "type": "short_enum",
      "name": "range",
+     "group_tag": "fnir",
      "definition": "input"
     },
     {
@@ -1707,7 +1738,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SOUND_PLAYBACK_ID"
+     "name": "SOUND_PLAYBACK_ID",
+     "group_tag": "sply"
     },
     {
      "type": "long_flags",
@@ -1791,7 +1823,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SOUND_PLAYBACK_ID"
+     "name": "SOUND_PLAYBACK_ID",
+     "group_tag": "sply"
     },
     {
      "type": "long_flags",
@@ -1960,11 +1993,13 @@
    "fields": [
     {
      "type": "custom",
-     "name": "Clear distances"
+     "name": "Clear distances",
+     "group_tag": "edit"
     },
     {
      "type": "custom",
-     "name": "Reset distances"
+     "name": "Reset distances",
+     "group_tag": "edit"
     },
     {
      "type": "real",
@@ -1980,7 +2015,8 @@
     },
     {
      "type": "real",
-     "name": "maximum bend per second:cents"
+     "name": "maximum bend per second:cents",
+     "group_tag": "cent"
     },
     {
      "type": "explanation",
@@ -1989,15 +2025,18 @@
     },
     {
      "type": "custom",
-     "name": "Update gain bounds"
+     "name": "Update gain bounds",
+     "group_tag": "edit"
     },
     {
      "type": "real",
-     "name": "gain base:dB#sound's random gain will start here"
+     "name": "gain base:dB#sound's random gain will start here",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "gain variance:dB#sound's gain will be randomly modulated within this range"
+     "name": "gain variance:dB#sound's gain will be randomly modulated within this range",
+     "group_tag": "+dB+"
     },
     {
      "type": "short_bounds",
@@ -2018,7 +2057,8 @@
     },
     {
      "type": "real",
-     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener"
+     "name": "outer cone gain:dB#the gain to use when the sound is directed away from the listener",
+     "group_tag": "+dB+"
     },
     {
      "type": "explanation",
@@ -2027,7 +2067,8 @@
     },
     {
      "type": "custom",
-     "name": "Update location"
+     "name": "Update location",
+     "group_tag": "edit"
     },
     {
      "type": "long_flags",
@@ -2064,7 +2105,8 @@
     },
     {
      "type": "real_bounds",
-     "name": "gain modifier:dB"
+     "name": "gain modifier:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "short_bounds",
@@ -2109,7 +2151,8 @@
     },
     {
      "type": "short_bounds",
-     "name": null
+     "name": null,
+     "group_tag": "fn**"
     },
     {
      "type": "pad",
@@ -2133,7 +2176,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "'snpl'"
+     "name": "'snpl'",
+     "group_tag": "snpl"
     },
     {
      "type": "string_id",
@@ -2141,7 +2185,8 @@
     },
     {
      "type": "custom",
-     "name": "Update skip fraction"
+     "name": "Update skip fraction",
+     "group_tag": "edit"
     },
     {
      "type": "real_fraction",
@@ -2149,11 +2194,13 @@
     },
     {
      "type": "custom",
-     "name": "Update gain"
+     "name": "Update gain",
+     "group_tag": "edit"
     },
     {
      "type": "real",
-     "name": "gain:dB#additional attenuation when played"
+     "name": "gain:dB#additional attenuation when played",
+     "group_tag": "+dB+"
     },
     {
      "type": "long_integer",
@@ -2209,7 +2256,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "'snpl'"
+     "name": "'snpl'",
+     "group_tag": "snpl"
     },
     {
      "type": "string_id",
@@ -2277,7 +2325,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "'snpl'"
+     "name": "'snpl'",
+     "group_tag": "snpl"
     },
     {
      "type": "string_id",
@@ -2345,7 +2394,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "'snpl'"
+     "name": "'snpl'",
+     "group_tag": "snpl"
     },
     {
      "type": "string_id",
@@ -2925,7 +2975,8 @@
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",

@@ -552,7 +552,8 @@
     },
     {
      "type": "string_id",
-     "name": "global material name"
+     "name": "global material name",
+     "group_tag": "sted"
     },
     {
      "type": "pad",
@@ -658,7 +659,8 @@
     },
     {
      "type": "string_id",
-     "name": "global shield material name"
+     "name": "global shield material name",
+     "group_tag": "sted"
     },
     {
      "type": "real",
@@ -1151,7 +1153,8 @@
     },
     {
      "type": "string_id",
-     "name": "global shield material name"
+     "name": "global shield material name",
+     "group_tag": "sted"
     },
     {
      "type": "real",
@@ -1492,7 +1495,8 @@
     },
     {
      "type": "custom",
-     "name": "MODEL_DEFINITION_TAG"
+     "name": "MODEL_DEFINITION_TAG",
+     "group_tag": "hlmt"
     },
     {
      "type": "tag_reference",

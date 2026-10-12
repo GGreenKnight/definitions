@@ -2771,11 +2771,13 @@
     {
      "type": "block",
      "name": "weapons properties",
+     "group_tag": "sort",
      "definition": "character_weapons_block"
     },
     {
      "type": "block",
      "name": "firing pattern properties",
+     "group_tag": "sort",
      "definition": "character_firing_pattern_properties_block"
     },
     {
@@ -2786,6 +2788,7 @@
     {
      "type": "block",
      "name": "grenades properties",
+     "group_tag": "sort",
      "definition": "character_grenades_block"
     },
     {
@@ -2796,6 +2799,7 @@
     {
      "type": "block",
      "name": "vehicle properties",
+     "group_tag": "sort",
      "definition": "character_vehicle_block"
     },
     {
@@ -3115,11 +3119,13 @@
     {
      "type": "block",
      "name": "weapons properties",
+     "group_tag": "sort",
      "definition": "character_weapons_block"
     },
     {
      "type": "block",
      "name": "firing pattern properties",
+     "group_tag": "sort",
      "definition": "character_firing_pattern_properties_block"
     },
     {
@@ -3130,6 +3136,7 @@
     {
      "type": "block",
      "name": "grenades properties",
+     "group_tag": "sort",
      "definition": "character_grenades_block"
     },
     {
@@ -3140,6 +3147,7 @@
     {
      "type": "block",
      "name": "vehicle properties",
+     "group_tag": "sort",
      "definition": "character_vehicle_block"
     },
     {

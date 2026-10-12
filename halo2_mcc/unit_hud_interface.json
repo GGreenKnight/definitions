@@ -49,7 +49,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "UNIT_HUD_INTERFACE_VIEW_CUSTOM_ID"
+     "name": "UNIT_HUD_INTERFACE_VIEW_CUSTOM_ID",
+     "group_tag": "uhis"
     },
     {
      "type": "explanation",

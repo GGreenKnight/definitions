@@ -222,6 +222,7 @@
     {
      "type": "block",
      "name": "material responses",
+     "group_tag": "sort",
      "definition": "projectile_material_response_block"
     },
     {
@@ -286,7 +287,8 @@
     },
     {
      "type": "string_id",
-     "name": "material name"
+     "name": "material name",
+     "group_tag": "sted"
     },
     {
      "type": "skip",
@@ -718,6 +720,7 @@
     {
      "type": "block",
      "name": "material responses",
+     "group_tag": "sort",
      "definition": "projectile_material_response_block"
     },
     {

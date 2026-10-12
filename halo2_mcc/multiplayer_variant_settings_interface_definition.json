@@ -114,7 +114,8 @@
     },
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "struct",
@@ -123,7 +124,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "explanation",
@@ -217,7 +219,8 @@
     },
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "array",
@@ -226,7 +229,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",

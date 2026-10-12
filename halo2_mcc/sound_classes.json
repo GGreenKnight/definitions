@@ -175,11 +175,13 @@
     },
     {
      "type": "real",
-     "name": "reverb gain:dB#how much reverb applies to this sound class"
+     "name": "reverb gain:dB#how much reverb applies to this sound class",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "override speaker gain:dB"
+     "name": "override speaker gain:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
@@ -187,15 +189,18 @@
     },
     {
      "type": "custom",
-     "name": "Update gain bounds"
+     "name": "Update gain bounds",
+     "group_tag": "edit"
     },
     {
      "type": "real_bounds",
-     "name": "gain bounds:dB"
+     "name": "gain bounds:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "cutscene ducking:dB"
+     "name": "cutscene ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -211,7 +216,8 @@
     },
     {
      "type": "real",
-     "name": "scripted dialog ducking:dB"
+     "name": "scripted dialog ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -302,11 +308,13 @@
     },
     {
      "type": "real",
-     "name": "reverb gain:dB#how much reverb applies to this sound class"
+     "name": "reverb gain:dB#how much reverb applies to this sound class",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "override speaker gain:dB"
+     "name": "override speaker gain:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
@@ -314,15 +322,18 @@
     },
     {
      "type": "custom",
-     "name": "Update gain bounds"
+     "name": "Update gain bounds",
+     "group_tag": "edit"
     },
     {
      "type": "real_bounds",
-     "name": "gain bounds:dB"
+     "name": "gain bounds:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "cutscene ducking:dB"
+     "name": "cutscene ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -338,7 +349,8 @@
     },
     {
      "type": "real",
-     "name": "scripted dialog ducking:dB"
+     "name": "scripted dialog ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -417,7 +429,8 @@
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -437,7 +450,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -479,7 +493,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -508,7 +523,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -517,7 +533,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -577,11 +594,13 @@
     },
     {
      "type": "real",
-     "name": "reverb gain:dB#how much reverb applies to this sound class"
+     "name": "reverb gain:dB#how much reverb applies to this sound class",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "override speaker gain:dB"
+     "name": "override speaker gain:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real_bounds",
@@ -589,15 +608,18 @@
     },
     {
      "type": "custom",
-     "name": "Update gain bounds"
+     "name": "Update gain bounds",
+     "group_tag": "edit"
     },
     {
      "type": "real_bounds",
-     "name": "gain bounds:dB"
+     "name": "gain bounds:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "cutscene ducking:dB"
+     "name": "cutscene ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -613,7 +635,8 @@
     },
     {
      "type": "real",
-     "name": "scripted dialog ducking:dB"
+     "name": "scripted dialog ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
@@ -694,7 +717,8 @@
     },
     {
      "type": "real",
-     "name": "ducking:dB"
+     "name": "ducking:dB",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",

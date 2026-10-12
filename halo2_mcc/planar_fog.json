@@ -38,7 +38,8 @@
     },
     {
      "type": "string_id",
-     "name": "global material name"
+     "name": "global material name",
+     "group_tag": "sted"
     },
     {
      "type": "pad",

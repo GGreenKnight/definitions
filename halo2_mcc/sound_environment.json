@@ -33,51 +33,63 @@
     },
     {
      "type": "real",
-     "name": "room intensity:dB#intensity of the room effect"
+     "name": "room intensity:dB#intensity of the room effect",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "room intensity hf:dB#intensity of the room effect above the reference high frequency"
+     "name": "room intensity hf:dB#intensity of the room effect above the reference high frequency",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "room rolloff (0 to 10)#how quickly the room effect rolls off, from 0.0 to 10.0"
+     "name": "room rolloff (0 to 10)#how quickly the room effect rolls off, from 0.0 to 10.0",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "decay time (.1 to 20):seconds"
+     "name": "decay time (.1 to 20):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "decay hf ratio (.1 to 2)"
+     "name": "decay hf ratio (.1 to 2)",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "reflections intensity:dB[-100,10]"
+     "name": "reflections intensity:dB[-100,10]",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "reflections delay (0 to .3):seconds"
+     "name": "reflections delay (0 to .3):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "reverb intensity:dB[-100,20]"
+     "name": "reverb intensity:dB[-100,20]",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "reverb delay (0 to .1):seconds"
+     "name": "reverb delay (0 to .1):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "diffusion"
+     "name": "diffusion",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "density"
+     "name": "density",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "hf reference(20 to 20,000):Hz#for hf values, what frequency defines hf, from 20 to 20,000"
+     "name": "hf reference(20 to 20,000):Hz#for hf values, what frequency defines hf, from 20 to 20,000",
+     "group_tag": "auds"
     },
     {
      "type": "string_id",
@@ -114,51 +126,63 @@
     },
     {
      "type": "real",
-     "name": "room intensity:dB#intensity of the room effect"
+     "name": "room intensity:dB#intensity of the room effect",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "room intensity hf:dB#intensity of the room effect above the reference high frequency"
+     "name": "room intensity hf:dB#intensity of the room effect above the reference high frequency",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "room rolloff (0 to 10)#how quickly the room effect rolls off, from 0.0 to 10.0"
+     "name": "room rolloff (0 to 10)#how quickly the room effect rolls off, from 0.0 to 10.0",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "decay time (.1 to 20):seconds"
+     "name": "decay time (.1 to 20):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "decay hf ratio (.1 to 2)"
+     "name": "decay hf ratio (.1 to 2)",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "reflections intensity:dB[-100,10]"
+     "name": "reflections intensity:dB[-100,10]",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "reflections delay (0 to .3):seconds"
+     "name": "reflections delay (0 to .3):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "reverb intensity:dB[-100,20]"
+     "name": "reverb intensity:dB[-100,20]",
+     "group_tag": "+dB+"
     },
     {
      "type": "real",
-     "name": "reverb delay (0 to .1):seconds"
+     "name": "reverb delay (0 to .1):seconds",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "diffusion"
+     "name": "diffusion",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "density"
+     "name": "density",
+     "group_tag": "auds"
     },
     {
      "type": "real",
-     "name": "hf reference(20 to 20,000):Hz#for hf values, what frequency defines hf, from 20 to 20,000"
+     "name": "hf reference(20 to 20,000):Hz#for hf values, what frequency defines hf, from 20 to 20,000",
+     "group_tag": "auds"
     },
     {
      "type": "string_id",

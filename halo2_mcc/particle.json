@@ -246,11 +246,13 @@
     },
     {
      "type": "custom",
-     "name": "shader"
+     "name": "shader",
+     "group_tag": "tmpl"
     },
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "tag_reference",
@@ -269,7 +271,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "explanation",
@@ -454,15 +457,18 @@
     },
     {
      "type": "string_id",
-     "name": "input name"
+     "name": "input name",
+     "group_tag": "fnin"
     },
     {
      "type": "string_id",
-     "name": "range name"
+     "name": "range name",
+     "group_tag": "fnir"
     },
     {
      "type": "real",
-     "name": "time period:seconds"
+     "name": "time period:seconds",
+     "group_tag": "fn**"
     },
     {
      "type": "explanation",
@@ -471,7 +477,8 @@
     },
     {
      "type": "custom",
-     "name": "animation function"
+     "name": "animation function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -490,7 +497,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -532,7 +540,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -561,7 +570,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -570,7 +580,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -600,26 +611,31 @@
     {
      "type": "short_enum",
      "name": "Input Variable",
+     "group_tag": "fnin",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Range Variable",
+     "group_tag": "fnir",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier",
+     "group_tag": "fnop",
      "definition": "Output Modifier"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier Input",
+     "group_tag": "fnom",
      "definition": "Input Variable"
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -640,26 +656,31 @@
     {
      "type": "short_enum",
      "name": "Input Variable",
+     "group_tag": "fnin",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Range Variable",
+     "group_tag": "fnir",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier",
+     "group_tag": "fnop",
      "definition": "Output Modifier"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier Input",
+     "group_tag": "fnom",
      "definition": "Input Variable"
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -1231,7 +1252,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -1727,7 +1749,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",

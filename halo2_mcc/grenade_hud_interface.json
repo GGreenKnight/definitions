@@ -39,7 +39,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "GRENADE_HUD_INTERFACE_VIEW_CUSTOM_ID"
+     "name": "GRENADE_HUD_INTERFACE_VIEW_CUSTOM_ID",
+     "group_tag": "ghis"
     },
     {
      "type": "explanation",

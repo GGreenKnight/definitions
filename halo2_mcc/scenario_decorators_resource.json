@@ -149,11 +149,13 @@
     {
      "type": "pad",
      "name": "sizeof(long)",
+     "group_tag": "nuke",
      "definition": 4
     },
     {
      "type": "pad",
      "name": "sizeof(long)",
+     "group_tag": "nuke",
      "definition": 4
     },
     {
@@ -337,6 +339,7 @@
     {
      "type": "pad",
      "name": "sizeof(triangle_buffer)",
+     "group_tag": "nuke",
      "definition": 16
     },
     {
@@ -356,6 +359,7 @@
     {
      "type": "pad",
      "name": "sizeof(triangle_buffer)",
+     "group_tag": "nuke",
      "definition": 16
     },
     {

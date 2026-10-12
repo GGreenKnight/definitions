@@ -251,7 +251,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -271,7 +272,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -313,7 +315,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -342,7 +345,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -351,7 +355,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -380,7 +385,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",

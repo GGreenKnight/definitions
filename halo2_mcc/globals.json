@@ -447,6 +447,7 @@
     {
      "type": "block",
      "name": "materials",
+     "group_tag": "sort",
      "definition": "materials_block"
     },
     {
@@ -3675,11 +3676,13 @@
     },
     {
      "type": "string_id",
-     "name": "new material name"
+     "name": "new material name",
+     "group_tag": "sted"
     },
     {
      "type": "string_id",
-     "name": "new general material name"
+     "name": "new general material name",
+     "group_tag": "sted"
     },
     {
      "type": "useless_pad",

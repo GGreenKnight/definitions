@@ -302,26 +302,31 @@
     {
      "type": "short_enum",
      "name": "Input Variable",
+     "group_tag": "fnin",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Range Variable",
+     "group_tag": "fnir",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier",
+     "group_tag": "fnop",
      "definition": "Output Modifier"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier Input",
+     "group_tag": "fnom",
      "definition": "Input Variable"
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -341,7 +346,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -383,7 +389,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -412,7 +419,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -421,7 +429,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -451,26 +460,31 @@
     {
      "type": "short_enum",
      "name": "Input Variable",
+     "group_tag": "fnin",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Range Variable",
+     "group_tag": "fnir",
      "definition": "Input Variable"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier",
+     "group_tag": "fnop",
      "definition": "Output Modifier"
     },
     {
      "type": "short_enum",
      "name": "Output Modifier Input",
+     "group_tag": "fnom",
      "definition": "Input Variable"
     },
     {
      "type": "custom",
-     "name": "Mapping"
+     "name": "Mapping",
+     "group_tag": "fned"
     },
     {
      "type": "struct",

@@ -692,6 +692,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -755,7 +756,8 @@
     },
     {
      "type": "string_id",
-     "name": "global material name"
+     "name": "global material name",
+     "group_tag": "sted"
     },
     {
      "type": "short_block_index",
@@ -1045,6 +1047,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1055,6 +1058,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1064,6 +1068,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1081,6 +1086,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1091,6 +1097,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1158,6 +1165,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1168,6 +1176,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1193,6 +1202,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1203,6 +1213,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1274,6 +1285,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1284,6 +1296,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1293,6 +1306,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1382,6 +1396,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1392,6 +1407,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1401,6 +1417,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1427,6 +1444,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1437,6 +1455,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1548,6 +1567,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1558,6 +1578,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1567,6 +1588,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1665,6 +1687,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1675,6 +1698,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1684,6 +1708,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1719,6 +1744,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd32",
      "definition": 0
     },
     {
@@ -1733,6 +1759,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1750,6 +1777,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 4
     },
     {
@@ -1912,6 +1940,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1922,6 +1951,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1963,6 +1993,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -1987,6 +2018,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -2014,6 +2046,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -2024,6 +2057,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -2161,11 +2195,13 @@
     },
     {
      "type": "string_id",
-     "name": "node a material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node a"
+     "name": "node a material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node a",
+     "group_tag": "sted"
     },
     {
      "type": "string_id",
-     "name": "node b material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node b, if node b is none we use whatever material a has"
+     "name": "node b material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node b, if node b is none we use whatever material a has",
+     "group_tag": "sted"
     },
     {
      "type": "terminator",
@@ -3129,6 +3165,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -3139,6 +3176,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -3148,6 +3186,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {

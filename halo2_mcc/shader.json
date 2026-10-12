@@ -227,7 +227,8 @@
     },
     {
      "type": "string_id",
-     "name": "material name"
+     "name": "material name",
+     "group_tag": "sted"
     },
     {
      "type": "block",
@@ -471,15 +472,18 @@
     },
     {
      "type": "string_id",
-     "name": "input name"
+     "name": "input name",
+     "group_tag": "fnin"
     },
     {
      "type": "string_id",
-     "name": "range name"
+     "name": "range name",
+     "group_tag": "fnir"
     },
     {
      "type": "real",
-     "name": "time period:seconds"
+     "name": "time period:seconds",
+     "group_tag": "fn**"
     },
     {
      "type": "explanation",
@@ -488,7 +492,8 @@
     },
     {
      "type": "custom",
-     "name": "animation function"
+     "name": "animation function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -507,7 +512,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "char_integer",
@@ -549,7 +555,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -578,7 +585,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "HIDE_GROUP_ID"
+     "name": "HIDE_GROUP_ID",
+     "group_tag": "hide"
     },
     {
      "type": "block",
@@ -587,7 +595,8 @@
     },
     {
      "type": "custom",
-     "name": "END_HIDE_GROUP_ID"
+     "name": "END_HIDE_GROUP_ID",
+     "group_tag": "edih"
     },
     {
      "type": "terminator",
@@ -870,7 +879,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",
@@ -1366,7 +1376,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "function"
+     "name": "function",
+     "group_tag": "fned"
     },
     {
      "type": "struct",

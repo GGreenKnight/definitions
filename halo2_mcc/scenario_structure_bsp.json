@@ -2459,7 +2459,8 @@
     },
     {
      "type": "pointer",
-     "name": "runtime_dx9_index_buffer\u0001"
+     "name": "runtime_dx9_index_buffer\u0001",
+     "group_tag": "nuke"
     },
     {
      "type": "terminator",
@@ -2948,7 +2949,8 @@
     },
     {
      "type": "pointer",
-     "name": "index_buffer\u0001"
+     "name": "index_buffer\u0001",
+     "group_tag": "nuke"
     },
     {
      "type": "terminator",
@@ -4189,11 +4191,13 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
      "type": "pointer",
-     "name": "runtime_dx9_index_buffer\u0001"
+     "name": "runtime_dx9_index_buffer\u0001",
+     "group_tag": "nuke"
     },
     {
      "type": "terminator",
@@ -4821,6 +4825,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4831,6 +4836,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4862,6 +4868,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4872,6 +4879,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4893,6 +4901,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4903,6 +4912,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "pd64",
      "definition": 0
     },
     {
@@ -4921,6 +4931,7 @@
     {
      "type": "pad",
      "name": null,
+     "group_tag": "algn",
      "definition": 8
     },
     {
@@ -7772,21 +7783,25 @@
    "fields": [
     {
      "type": "long_integer",
-     "name": "unique id*"
+     "name": "unique id*",
+     "group_tag": "obj#"
     },
     {
      "type": "short_block_index",
      "name": "origin bsp index*",
+     "group_tag": "obj#",
      "definition": "scenario_structure_bsp_reference_block"
     },
     {
      "type": "char_enum",
      "name": "type*",
+     "group_tag": "obj#",
      "definition": "type_8"
     },
     {
      "type": "char_enum",
      "name": "source*",
+     "group_tag": "obj#",
      "definition": "source"
     },
     {
@@ -8177,11 +8192,13 @@
     {
      "type": "pad",
      "name": "sizeof(long)",
+     "group_tag": "nuke",
      "definition": 4
     },
     {
      "type": "pad",
      "name": "sizeof(long)",
+     "group_tag": "nuke",
      "definition": 4
     },
     {
@@ -8273,6 +8290,7 @@
     {
      "type": "pad",
      "name": "sizeof(triangle_buffer)",
+     "group_tag": "nuke",
      "definition": 16
     },
     {
@@ -8292,6 +8310,7 @@
     {
      "type": "pad",
      "name": "sizeof(triangle_buffer)",
+     "group_tag": "nuke",
      "definition": 16
     },
     {

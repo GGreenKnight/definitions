@@ -120,7 +120,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SCENARIO_ENVIRONMENT_OBJECT_EDITOR_FLAGS_ID"
+     "name": "SCENARIO_ENVIRONMENT_OBJECT_EDITOR_FLAGS_ID",
+     "group_tag": "envf"
     },
     {
      "type": "short_block_index",
@@ -317,20 +318,24 @@
    "fields": [
     {
      "type": "custom",
-     "name": "FILTER_ON_NEXT_FIELD_ID,-1"
+     "name": "FILTER_ON_NEXT_FIELD_ID,-1",
+     "group_tag": "filt"
     },
     {
      "type": "short_block_index",
      "name": "type",
+     "group_tag": "type",
      "definition": "scenario_creature_palette_block"
     },
     {
      "type": "custom",
-     "name": "FILTER_ON_NEXT_FIELD_ID,-2"
+     "name": "FILTER_ON_NEXT_FIELD_ID,-2",
+     "group_tag": "filt"
     },
     {
      "type": "short_block_index",
      "name": "name^",
+     "group_tag": "name",
      "definition": "scenario_object_names_block"
     },
     {
@@ -350,7 +355,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SCENARIO_OBJECT_EDIT_ID"
+     "name": "SCENARIO_OBJECT_EDIT_ID",
+     "group_tag": "obed"
     },
     {
      "type": "long_flags",
@@ -359,15 +365,18 @@
     },
     {
      "type": "real_point_3d",
-     "name": "position"
+     "name": "position",
+     "group_tag": "poin"
     },
     {
      "type": "real_euler_angles_3d",
-     "name": "rotation"
+     "name": "rotation",
+     "group_tag": "orie"
     },
     {
      "type": "real",
-     "name": "scale"
+     "name": "scale",
+     "group_tag": "scal"
     },
     {
      "type": "word_flags",
@@ -377,6 +386,7 @@
     {
      "type": "word_block_flags",
      "name": "manual bsp flags*",
+     "group_tag": "mbsp",
      "definition": "scenario_structure_bsp_reference_block"
     },
     {
@@ -387,6 +397,7 @@
     {
      "type": "char_enum",
      "name": "bsp policy",
+     "group_tag": "enum",
      "definition": "bsp policy"
     },
     {
@@ -397,6 +408,7 @@
     {
      "type": "short_block_index",
      "name": null,
+     "group_tag": "ugly",
      "definition": "g_scenario_editor_folder_block"
     },
     {
@@ -412,21 +424,25 @@
    "fields": [
     {
      "type": "long_integer",
-     "name": "unique id*"
+     "name": "unique id*",
+     "group_tag": "obj#"
     },
     {
      "type": "short_block_index",
      "name": "origin bsp index*",
+     "group_tag": "obj#",
      "definition": "scenario_structure_bsp_reference_block"
     },
     {
      "type": "char_enum",
      "name": "type*",
+     "group_tag": "obj#",
      "definition": "type"
     },
     {
      "type": "char_enum",
      "name": "source*",
+     "group_tag": "obj#",
      "definition": "source"
     },
     {
@@ -461,7 +477,8 @@
    "fields": [
     {
      "type": "custom",
-     "name": "SCENARIO_OBJECT_EDIT_ID"
+     "name": "SCENARIO_OBJECT_EDIT_ID",
+     "group_tag": "obed"
     },
     {
      "type": "long_flags",
@@ -470,15 +487,18 @@
     },
     {
      "type": "real_point_3d",
-     "name": "position"
+     "name": "position",
+     "group_tag": "poin"
     },
     {
      "type": "real_euler_angles_3d",
-     "name": "rotation"
+     "name": "rotation",
+     "group_tag": "orie"
     },
     {
      "type": "real",
-     "name": "scale"
+     "name": "scale",
+     "group_tag": "scal"
     },
     {
      "type": "word_flags",
@@ -488,6 +508,7 @@
     {
      "type": "word_block_flags",
      "name": "manual bsp flags*",
+     "group_tag": "mbsp",
      "definition": "scenario_structure_bsp_reference_block"
     },
     {
@@ -498,6 +519,7 @@
     {
      "type": "char_enum",
      "name": "bsp policy",
+     "group_tag": "enum",
      "definition": "bsp policy"
     },
     {
@@ -508,6 +530,7 @@
     {
      "type": "short_block_index",
      "name": null,
+     "group_tag": "ugly",
      "definition": "g_scenario_editor_folder_block"
     },
     {

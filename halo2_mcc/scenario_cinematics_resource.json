@@ -105,7 +105,8 @@
     },
     {
      "type": "custom",
-     "name": "SCENARIO_CAMERA_POINT_EDITOR_FLAGS_ID"
+     "name": "SCENARIO_CAMERA_POINT_EDITOR_FLAGS_ID",
+     "group_tag": "cmed"
     },
     {
      "type": "pad",

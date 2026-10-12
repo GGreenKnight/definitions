@@ -1139,7 +1139,8 @@
     },
     {
      "type": "pointer",
-     "name": "index_buffer\u0001"
+     "name": "index_buffer\u0001",
+     "group_tag": "nuke"
     },
     {
      "type": "terminator",
