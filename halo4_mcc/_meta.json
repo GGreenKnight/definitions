@@ -1763,86 +1763,24 @@
         }
       ],
       "builder": "object_function",
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "device_dispenser": [
-          "object",
-          "device",
-          "dispenser"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ],
-        "spawner": [
-          "object",
-          "entity",
-          "spawner"
-        ]
-      },
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_dispenser",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "spawner",
+        "vehicle",
+        "weapon"
+      ],
       "lists": {
         "object": [
           "active_shield_vitality",
@@ -2303,86 +2241,24 @@
     "object_function_no_own": {
       "own_functions": false,
       "builder": "object_function",
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "device_dispenser": [
-          "object",
-          "device",
-          "dispenser"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ],
-        "spawner": [
-          "object",
-          "entity",
-          "spawner"
-        ]
-      },
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_dispenser",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "spawner",
+        "vehicle",
+        "weapon"
+      ],
       "lists": {
         "object": [
           "active_shield_vitality",

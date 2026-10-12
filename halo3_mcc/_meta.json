@@ -445,75 +445,24 @@
           "keep_empty": true
         }
       ],
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ]
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "vehicle",
+        "weapon"
+      ],
+      "titles": {
+        "device_terminal": "terminal"
       },
       "lists": {
         "object": [
@@ -667,7 +616,17 @@
           "locked",
           "delay"
         ],
-        "terminal": [
+        "projectile": [
+          "time_remaining",
+          "range_remaining",
+          "tracer",
+          "acceleration_range",
+          "projectile_attach"
+        ],
+        "creature": [
+          "shooting"
+        ],
+        "device_terminal": [
           "terminal_error",
           "activation",
           "layer0_x",
@@ -678,91 +637,30 @@
           "overlay_intensity",
           "reading_mode",
           "scroll_speed"
-        ],
-        "projectile": [
-          "time_remaining",
-          "range_remaining",
-          "tracer",
-          "acceleration_range",
-          "projectile_attach"
-        ],
-        "creature": [
-          "shooting"
         ]
       }
     },
     "object_function_no_own": {
       "builder": "object_function",
       "own_functions": false,
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ]
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "vehicle",
+        "weapon"
+      ],
+      "titles": {
+        "device_terminal": "terminal"
       },
       "lists": {
         "object": [
@@ -916,7 +814,17 @@
           "locked",
           "delay"
         ],
-        "terminal": [
+        "projectile": [
+          "time_remaining",
+          "range_remaining",
+          "tracer",
+          "acceleration_range",
+          "projectile_attach"
+        ],
+        "creature": [
+          "shooting"
+        ],
+        "device_terminal": [
           "terminal_error",
           "activation",
           "layer0_x",
@@ -927,16 +835,6 @@
           "overlay_intensity",
           "reading_mode",
           "scroll_speed"
-        ],
-        "projectile": [
-          "time_remaining",
-          "range_remaining",
-          "tracer",
-          "acceleration_range",
-          "projectile_attach"
-        ],
-        "creature": [
-          "shooting"
         ]
       }
     },

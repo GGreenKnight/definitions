@@ -781,76 +781,22 @@
           "keep_empty": true
         }
       ],
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ]
-      },
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "vehicle",
+        "weapon"
+      ],
       "lists": {
         "object": [
           "zero",
@@ -1147,76 +1093,22 @@
     "object_function_no_own": {
       "builder": "object_function",
       "own_functions": false,
-      "types": {
-        "biped": [
-          "object",
-          "motor",
-          "unit",
-          "biped"
-        ],
-        "vehicle": [
-          "object",
-          "motor",
-          "unit",
-          "vehicle"
-        ],
-        "weapon": [
-          "object",
-          "item",
-          "weapon"
-        ],
-        "equipment": [
-          "object",
-          "item",
-          "equipment"
-        ],
-        "device_terminal": [
-          "object",
-          "device",
-          "terminal"
-        ],
-        "projectile": [
-          "object",
-          "projectile"
-        ],
-        "scenery": [
-          "object",
-          "scenery"
-        ],
-        "device_machine": [
-          "object",
-          "device",
-          "machine"
-        ],
-        "device_control": [
-          "object",
-          "device",
-          "control"
-        ],
-        "sound_scenery": [
-          "object",
-          "sound_scenery"
-        ],
-        "crate": [
-          "object",
-          "crate"
-        ],
-        "creature": [
-          "object",
-          "motor",
-          "creature"
-        ],
-        "giant": [
-          "object",
-          "motor",
-          "unit",
-          "giant"
-        ],
-        "effect_scenery": [
-          "object",
-          "effect scenery"
-        ]
-      },
+      "object_types": [
+        "biped",
+        "crate",
+        "creature",
+        "device_control",
+        "device_machine",
+        "device_terminal",
+        "effect_scenery",
+        "equipment",
+        "giant",
+        "projectile",
+        "scenery",
+        "sound_scenery",
+        "vehicle",
+        "weapon"
+      ],
       "lists": {
         "object": [
           "zero",

@@ -321,68 +321,21 @@
      "keep_empty": true
     }
    ],
-   "types": {
-    "biped": [
-     "object",
-     "unit",
-     "biped"
-    ],
-    "vehicle": [
-     "object",
-     "unit",
-     "vehicle"
-    ],
-    "weapon": [
-     "object",
-     "item",
-     "weapon"
-    ],
-    "equipment": [
-     "object",
-     "item",
-     "equipment"
-    ],
-    "garbage": [
-     "object",
-     "item",
-     "garbage"
-    ],
-    "projectile": [
-     "object",
-     "projectile"
-    ],
-    "scenery": [
-     "object",
-     "scenery"
-    ],
-    "device_machine": [
-     "object",
-     "device",
-     "machine"
-    ],
-    "device_control": [
-     "object",
-     "device",
-     "control"
-    ],
-    "device_light_fixture": [
-     "object",
-     "device",
-     "light_fixture"
-    ],
-    "sound_scenery": [
-     "object",
-     "sound_scenery"
-    ],
-    "crate": [
-     "object",
-     "crate"
-    ],
-    "creature": [
-     "object",
-     "creature"
-    ]
-   },
+   "object_types": [
+    "biped",
+    "crate",
+    "creature",
+    "device_control",
+    "device_light_fixture",
+    "device_machine",
+    "equipment",
+    "garbage",
+    "projectile",
+    "scenery",
+    "sound_scenery",
+    "vehicle",
+    "weapon"
+   ],
    "lists": {
     "object": [
      "zero",
@@ -547,68 +500,21 @@
   "object_function_no_own": {
    "builder": "object_function",
    "own_functions": false,
-   "types": {
-    "biped": [
-     "object",
-     "unit",
-     "biped"
-    ],
-    "vehicle": [
-     "object",
-     "unit",
-     "vehicle"
-    ],
-    "weapon": [
-     "object",
-     "item",
-     "weapon"
-    ],
-    "equipment": [
-     "object",
-     "item",
-     "equipment"
-    ],
-    "garbage": [
-     "object",
-     "item",
-     "garbage"
-    ],
-    "projectile": [
-     "object",
-     "projectile"
-    ],
-    "scenery": [
-     "object",
-     "scenery"
-    ],
-    "device_machine": [
-     "object",
-     "device",
-     "machine"
-    ],
-    "device_control": [
-     "object",
-     "device",
-     "control"
-    ],
-    "device_light_fixture": [
-     "object",
-     "device",
-     "light_fixture"
-    ],
-    "sound_scenery": [
-     "object",
-     "sound_scenery"
-    ],
-    "crate": [
-     "object",
-     "crate"
-    ],
-    "creature": [
-     "object",
-     "creature"
-    ]
-   },
+   "object_types": [
+    "biped",
+    "crate",
+    "creature",
+    "device_control",
+    "device_light_fixture",
+    "device_machine",
+    "equipment",
+    "garbage",
+    "projectile",
+    "scenery",
+    "sound_scenery",
+    "vehicle",
+    "weapon"
+   ],
    "lists": {
     "object": [
      "zero",
