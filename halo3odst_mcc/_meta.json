@@ -462,5 +462,923 @@
         }
       }
     }
+  },
+  "string_editors": {
+    "material": {
+      "caption": "Choose Material",
+      "builder": "names",
+      "source": [
+        "globals"
+      ],
+      "block": "materials",
+      "label": "name",
+      "parent": "parent name",
+      "parent_selectable": true,
+      "sort": "bytes"
+    },
+    "object_marker": {
+      "caption": "Cinematic Object Marker",
+      "builder": "names",
+      "require_group": [
+        "cinematic_scene"
+      ],
+      "source": [
+        {
+          "element": "objects",
+          "ref": "model animation graph"
+        }
+      ],
+      "block": "definitions/skeleton nodes",
+      "label": "name",
+      "keep_empty": true
+    },
+    "cinematic_object_variant": {
+      "builder": "cinematic_object_variant",
+      "require_group": [
+        "cinematic_scene"
+      ],
+      "object_block": "objects",
+      "object": "object type",
+      "model": "model",
+      "variants": {
+        "block": "variants",
+        "label": "name",
+        "keep_empty": true
+      }
+    },
+    "object_function": {
+      "caption": "Object Function",
+      "builder": "object_function",
+      "own_functions": true,
+      "own": [
+        {
+          "block": "functions",
+          "label": "export name",
+          "keep_empty": true
+        }
+      ],
+      "types": {
+        "biped": [
+          "object",
+          "motor",
+          "unit",
+          "biped"
+        ],
+        "vehicle": [
+          "object",
+          "motor",
+          "unit",
+          "vehicle"
+        ],
+        "weapon": [
+          "object",
+          "item",
+          "weapon"
+        ],
+        "equipment": [
+          "object",
+          "item",
+          "equipment"
+        ],
+        "device_arg_device": [
+          "object",
+          "device",
+          "arg device"
+        ],
+        "device_terminal": [
+          "object",
+          "device",
+          "terminal"
+        ],
+        "projectile": [
+          "object",
+          "projectile"
+        ],
+        "scenery": [
+          "object",
+          "scenery"
+        ],
+        "device_machine": [
+          "object",
+          "device",
+          "machine"
+        ],
+        "device_control": [
+          "object",
+          "device",
+          "control"
+        ],
+        "sound_scenery": [
+          "object",
+          "sound_scenery"
+        ],
+        "crate": [
+          "object",
+          "crate"
+        ],
+        "creature": [
+          "object",
+          "motor",
+          "creature"
+        ],
+        "giant": [
+          "object",
+          "motor",
+          "unit",
+          "giant"
+        ],
+        "effect_scenery": [
+          "object",
+          "effect scenery"
+        ]
+      },
+      "lists": {
+        "object": [
+          "zero",
+          "one",
+          "current_body_damage",
+          "current_shield_damage",
+          "body_vitality",
+          "shield_vitality",
+          "shield_depleted",
+          "random_constant",
+          "alive",
+          "compass",
+          "variant",
+          "object_overshield_amount",
+          "electrical_power",
+          "all_quiet",
+          "time_hours",
+          "time_minutes",
+          "time_seconds",
+          "morse_code",
+          "holiday",
+          "oddball_effect",
+          "flashlights allowed",
+          "scripted_object_function_a",
+          "scripted_object_function_b",
+          "scripted_object_function_c",
+          "scripted_object_function_d",
+          "jetpack_exhaust",
+          "phantom_power",
+          "phantom_speed",
+          "phantom_on",
+          "jetpack_exhaust"
+        ],
+        "unit": [
+          "driver_seat_power",
+          "gunner_seat_power",
+          "aiming_change",
+          "horizontal_aiming_change",
+          "mouth_aperture",
+          "integrated_light_power",
+          "can_blink",
+          "driver_seat_occupied",
+          "gunner_seat_occupied",
+          "crouch",
+          "barrel_spin",
+          "weapon_illumination",
+          "active_camouflage",
+          "boost",
+          "unit_open",
+          "unit_closed",
+          "vertical_thrust",
+          "gear_position",
+          "emp_disabled"
+        ],
+        "biped": [
+          "flying_speed",
+          "flight",
+          "combat_status"
+        ],
+        "vehicle": [
+          "speed_absolute",
+          "speed_forward",
+          "speed_backward",
+          "slide_absolute",
+          "slide_left",
+          "slide_right",
+          "speed_slide_maximum",
+          "turn_absolute",
+          "turn_left",
+          "turn_right",
+          "jump",
+          "boost",
+          "velocity_air",
+          "velocity_water",
+          "velocity_ground",
+          "velocity_forward",
+          "velocity_left",
+          "velocity_up",
+          "left_tread_position",
+          "right_tread_position",
+          "left_tread_velocity",
+          "right_tread_velocity",
+          "front_left_tire_position",
+          "front_right_tire_position",
+          "back_left_tire_position",
+          "back_right_tire_position",
+          "front_left_tire_velocity",
+          "front_right_tire_velocity",
+          "back_left_tire_velocity",
+          "back_right_tire_velocity",
+          "wingtip_contrail",
+          "thrust",
+          "hover",
+          "engine_power",
+          "engine_power_left",
+          "engine_power_right",
+          "engine_cruising",
+          "engine_rpm",
+          "wingtip_contrail_new",
+          "mean_antigrav",
+          "emitting",
+          "tread_grind",
+          "surge",
+          "phase",
+          "anti_gravity_strength",
+          "anti_gravity_engine_position"
+        ],
+        "weapon": [
+          "ready",
+          "power",
+          "turned_on",
+          "heat",
+          "overheated",
+          "illumination",
+          "primary_ammunition",
+          "primary_ammunition_ones",
+          "primary_ammunition_tens",
+          "secondary_ammunition",
+          "primary_ejection_port",
+          "secondary_ejection_port",
+          "primary_rate_of_fire",
+          "secondary_rate_of_fire",
+          "primary_firing",
+          "secondary_firing",
+          "primary_charged",
+          "secondary_charged",
+          "integrated_light",
+          "age",
+          "primary_trigger_down",
+          "secondary_trigger_down",
+          "barrel_spin",
+          "warthog_chaingun_illumination",
+          "primary_barrel_firing",
+          "primary_barrel_firing_single",
+          "primary_barrel_firing_dual_left",
+          "primary_barrel_firing_dual_right",
+          "secondary_barrel_firing",
+          "turning_on",
+          "stowed"
+        ],
+        "equipment": [
+          "age",
+          "death"
+        ],
+        "device": [
+          "power",
+          "change_in_power",
+          "position",
+          "change_in_position",
+          "locked",
+          "delay"
+        ],
+        "terminal": [
+          "terminal_error",
+          "activation",
+          "layer0_x",
+          "layer0_y",
+          "layer1_x",
+          "layer1_y",
+          "hex_intensity",
+          "overlay_intensity",
+          "reading_mode",
+          "scroll_speed"
+        ],
+        "projectile": [
+          "time_remaining",
+          "range_remaining",
+          "tracer",
+          "acceleration_range",
+          "projectile_attach"
+        ],
+        "creature": [
+          "shooting"
+        ]
+      }
+    },
+    "object_function_no_own": {
+      "builder": "object_function",
+      "own_functions": false,
+      "types": {
+        "biped": [
+          "object",
+          "motor",
+          "unit",
+          "biped"
+        ],
+        "vehicle": [
+          "object",
+          "motor",
+          "unit",
+          "vehicle"
+        ],
+        "weapon": [
+          "object",
+          "item",
+          "weapon"
+        ],
+        "equipment": [
+          "object",
+          "item",
+          "equipment"
+        ],
+        "device_arg_device": [
+          "object",
+          "device",
+          "arg device"
+        ],
+        "device_terminal": [
+          "object",
+          "device",
+          "terminal"
+        ],
+        "projectile": [
+          "object",
+          "projectile"
+        ],
+        "scenery": [
+          "object",
+          "scenery"
+        ],
+        "device_machine": [
+          "object",
+          "device",
+          "machine"
+        ],
+        "device_control": [
+          "object",
+          "device",
+          "control"
+        ],
+        "sound_scenery": [
+          "object",
+          "sound_scenery"
+        ],
+        "crate": [
+          "object",
+          "crate"
+        ],
+        "creature": [
+          "object",
+          "motor",
+          "creature"
+        ],
+        "giant": [
+          "object",
+          "motor",
+          "unit",
+          "giant"
+        ],
+        "effect_scenery": [
+          "object",
+          "effect scenery"
+        ]
+      },
+      "lists": {
+        "object": [
+          "zero",
+          "one",
+          "current_body_damage",
+          "current_shield_damage",
+          "body_vitality",
+          "shield_vitality",
+          "shield_depleted",
+          "random_constant",
+          "alive",
+          "compass",
+          "variant",
+          "object_overshield_amount",
+          "electrical_power",
+          "all_quiet",
+          "time_hours",
+          "time_minutes",
+          "time_seconds",
+          "morse_code",
+          "holiday",
+          "oddball_effect",
+          "flashlights allowed",
+          "scripted_object_function_a",
+          "scripted_object_function_b",
+          "scripted_object_function_c",
+          "scripted_object_function_d",
+          "jetpack_exhaust",
+          "phantom_power",
+          "phantom_speed",
+          "phantom_on",
+          "jetpack_exhaust"
+        ],
+        "unit": [
+          "driver_seat_power",
+          "gunner_seat_power",
+          "aiming_change",
+          "horizontal_aiming_change",
+          "mouth_aperture",
+          "integrated_light_power",
+          "can_blink",
+          "driver_seat_occupied",
+          "gunner_seat_occupied",
+          "crouch",
+          "barrel_spin",
+          "weapon_illumination",
+          "active_camouflage",
+          "boost",
+          "unit_open",
+          "unit_closed",
+          "vertical_thrust",
+          "gear_position",
+          "emp_disabled"
+        ],
+        "biped": [
+          "flying_speed",
+          "flight",
+          "combat_status"
+        ],
+        "vehicle": [
+          "speed_absolute",
+          "speed_forward",
+          "speed_backward",
+          "slide_absolute",
+          "slide_left",
+          "slide_right",
+          "speed_slide_maximum",
+          "turn_absolute",
+          "turn_left",
+          "turn_right",
+          "jump",
+          "boost",
+          "velocity_air",
+          "velocity_water",
+          "velocity_ground",
+          "velocity_forward",
+          "velocity_left",
+          "velocity_up",
+          "left_tread_position",
+          "right_tread_position",
+          "left_tread_velocity",
+          "right_tread_velocity",
+          "front_left_tire_position",
+          "front_right_tire_position",
+          "back_left_tire_position",
+          "back_right_tire_position",
+          "front_left_tire_velocity",
+          "front_right_tire_velocity",
+          "back_left_tire_velocity",
+          "back_right_tire_velocity",
+          "wingtip_contrail",
+          "thrust",
+          "hover",
+          "engine_power",
+          "engine_power_left",
+          "engine_power_right",
+          "engine_cruising",
+          "engine_rpm",
+          "wingtip_contrail_new",
+          "mean_antigrav",
+          "emitting",
+          "tread_grind",
+          "surge",
+          "phase",
+          "anti_gravity_strength",
+          "anti_gravity_engine_position"
+        ],
+        "weapon": [
+          "ready",
+          "power",
+          "turned_on",
+          "heat",
+          "overheated",
+          "illumination",
+          "primary_ammunition",
+          "primary_ammunition_ones",
+          "primary_ammunition_tens",
+          "secondary_ammunition",
+          "primary_ejection_port",
+          "secondary_ejection_port",
+          "primary_rate_of_fire",
+          "secondary_rate_of_fire",
+          "primary_firing",
+          "secondary_firing",
+          "primary_charged",
+          "secondary_charged",
+          "integrated_light",
+          "age",
+          "primary_trigger_down",
+          "secondary_trigger_down",
+          "barrel_spin",
+          "warthog_chaingun_illumination",
+          "primary_barrel_firing",
+          "primary_barrel_firing_single",
+          "primary_barrel_firing_dual_left",
+          "primary_barrel_firing_dual_right",
+          "secondary_barrel_firing",
+          "turning_on",
+          "stowed"
+        ],
+        "equipment": [
+          "age",
+          "death"
+        ],
+        "device": [
+          "power",
+          "change_in_power",
+          "position",
+          "change_in_position",
+          "locked",
+          "delay"
+        ],
+        "terminal": [
+          "terminal_error",
+          "activation",
+          "layer0_x",
+          "layer0_y",
+          "layer1_x",
+          "layer1_y",
+          "hex_intensity",
+          "overlay_intensity",
+          "reading_mode",
+          "scroll_speed"
+        ],
+        "projectile": [
+          "time_remaining",
+          "range_remaining",
+          "tracer",
+          "acceleration_range",
+          "projectile_attach"
+        ],
+        "creature": [
+          "shooting"
+        ]
+      }
+    },
+    "ai_activities": {
+      "caption": "AI Activities",
+      "builder": "ai_activities",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "activities": [
+        {
+          "name": "none"
+        },
+        {
+          "name": "patrol"
+        },
+        {
+          "name": "stand"
+        },
+        {
+          "name": "crouch"
+        },
+        {
+          "name": "stand_drawn"
+        },
+        {
+          "name": "crouch_drawn"
+        },
+        {
+          "name": "corner",
+          "postures": [
+            "corner_cover_left",
+            "corner_cover_right"
+          ]
+        },
+        {
+          "name": "corner_open",
+          "postures": [
+            "corner_open_left",
+            "corner_open_right"
+          ]
+        },
+        {
+          "name": "bunker",
+          "postures": [
+            "bunker_cover"
+          ]
+        },
+        {
+          "name": "bunker_open",
+          "postures": [
+            "bunker_open"
+          ]
+        },
+        {
+          "name": "combat",
+          "postures": [
+            "act_combat"
+          ]
+        },
+        {
+          "name": "backup",
+          "postures": [
+            "act_backup_left",
+            "act_backup_right"
+          ]
+        },
+        {
+          "name": "guard",
+          "postures": [
+            "act_guard_1",
+            "act_guard_2",
+            "act_guard_3",
+            "act_guard_4"
+          ]
+        },
+        {
+          "name": "guard_crouch",
+          "postures": [
+            "act_guard_crouch",
+            "act_guard_crouch_1"
+          ]
+        },
+        {
+          "name": "guard_wall",
+          "postures": [
+            "act_guard_wall_1"
+          ]
+        },
+        {
+          "name": "typing",
+          "postures": [
+            "act_typing"
+          ]
+        },
+        {
+          "name": "kneel",
+          "postures": [
+            "act_kneel_1",
+            "act_kneel_2"
+          ]
+        },
+        {
+          "name": "gaze",
+          "postures": [
+            "act_gaze_1",
+            "act_gaze_2"
+          ]
+        },
+        {
+          "name": "poke",
+          "postures": [
+            "act_poke_1"
+          ]
+        },
+        {
+          "name": "sniff",
+          "postures": [
+            "act_sniff_1"
+          ]
+        },
+        {
+          "name": "track",
+          "postures": [
+            "act_track_1"
+          ]
+        },
+        {
+          "name": "watch",
+          "postures": [
+            "act_watch_1"
+          ]
+        },
+        {
+          "name": "examine",
+          "postures": [
+            "act_examine_1"
+          ]
+        },
+        {
+          "name": "sleep",
+          "postures": [
+            "asleep"
+          ]
+        },
+        {
+          "name": "at_ease",
+          "postures": [
+            "act_smoking",
+            "act_cards"
+          ]
+        },
+        {
+          "name": "cower",
+          "postures": [
+            "act_cower_1",
+            "act_cower_2"
+          ]
+        },
+        {
+          "name": "tai_chi",
+          "postures": [
+            "act_tai_chi"
+          ]
+        },
+        {
+          "name": "pee",
+          "postures": [
+            "act_pee_1"
+          ]
+        },
+        {
+          "name": "doze",
+          "postures": [
+            "act_doze_sit_1",
+            "act_doze_stand_1"
+          ]
+        },
+        {
+          "name": "eat",
+          "postures": [
+            "act_eat_1",
+            "act_bugger_lunch"
+          ]
+        },
+        {
+          "name": "medic",
+          "postures": [
+            "act_medic"
+          ]
+        },
+        {
+          "name": "work",
+          "postures": [
+            "act_work",
+            "act_work_stand"
+          ]
+        },
+        {
+          "name": "cheering",
+          "postures": [
+            "act_cheering_1",
+            "act_cheering_2",
+            "act_cheering_3",
+            "act_cheering_4",
+            "act_cheering_5"
+          ]
+        },
+        {
+          "name": "injured",
+          "postures": [
+            "act_injured_ankle",
+            "act_injured_sit_wall",
+            "act_injured_shoulder",
+            "act_injured_gut"
+          ]
+        },
+        {
+          "name": "captured",
+          "postures": [
+            "act_captured_sit_wall",
+            "act_captured_cuffed_wall",
+            "act_captured_kneel"
+          ]
+        }
+      ],
+      "filter": {
+        "walk": [
+          [
+            "spawn points",
+            "character type"
+          ],
+          [
+            "points",
+            null
+          ]
+        ],
+        "palette": "character palette",
+        "palette_ref": "reference",
+        "chain": [
+          "unit",
+          "model",
+          "animation"
+        ],
+        "modes": "content/modes",
+        "mode_label": "label",
+        "missing": "model animation graph not found"
+      }
+    },
+    "ai_dialogue_vocalization": {
+      "caption": "AI Dialogue",
+      "builder": "names",
+      "block": "vocalizations",
+      "label": "vocalization",
+      "keep_empty": true
+    },
+    "object_variant": {
+      "builder": "object_variant",
+      "palettes": {
+        "scenery": "scenery palette",
+        "scenerys": "scenery palette",
+        "bipeds": "biped palette",
+        "vehicles": "vehicle palette",
+        "vehicle datum references": "vehicle palette",
+        "weapons": "weapon palette",
+        "machines": "machine palette",
+        "terminals": "terminal palette",
+        "controls": "control palette",
+        "giants": "giant palette",
+        "crates": "crate palette",
+        "arg devices": "arg device palette"
+      },
+      "type": "type",
+      "palette_ref": "name",
+      "model": "model",
+      "variants": {
+        "block": "variants",
+        "label": "name"
+      }
+    },
+    "generic_chud": {
+      "builder": "list",
+      "items": [
+        "chud_out_a",
+        "chud_out_b",
+        "chud_out_c",
+        "chud_out_d",
+        "chud_out_e",
+        "chud_out_f",
+        "chud_variant_name",
+        "chud_talking_player_name",
+        "chud_arming_meter_name",
+        "chud_time_left",
+        "chud_training_text",
+        "chud_campaign_objective_text",
+        "chud_survival_objective_text",
+        "chud_achievement_progression_toast_name1",
+        "chud_achievement_progression_toast_name2",
+        "chud_achievement_progression_toast_name3",
+        "chud_achievement_progression_toast_name4",
+        "chud_achievement_progression_toast_name5"
+      ]
+    },
+    "generic_ui_sounds": {
+      "builder": "list",
+      "items": [
+        {
+          "text": "PDA",
+          "items": [
+            "place_navpoint",
+            "clear_navpoint",
+            "cycle_points_of_interest",
+            "stick_movement_looping",
+            "stick_zoom_in_looping",
+            "stick_zoom_out_looping",
+            "cursor_over_beacon_looping"
+          ]
+        }
+      ]
+    },
+    "ai_formations": {
+      "caption": "AI Formations",
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/spawn formations",
+      "label_ref": "formation",
+      "label": "name"
+    },
+    "ai_squad_template": {
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/squad templates",
+      "label_ref": "squad_template",
+      "label": "name",
+      "unresolved": ""
+    }
   }
 }

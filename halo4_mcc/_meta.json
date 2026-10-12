@@ -651,5 +651,2373 @@
         }
       }
     }
+  },
+  "string_editors": {
+    "ai_activities": {
+      "caption": "AI Activities",
+      "builder": "ai_activities",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "activities": [
+        {
+          "name": "at_ease",
+          "postures": [
+            "act_cards",
+            "act_smoking"
+          ]
+        },
+        {
+          "name": "backup",
+          "postures": [
+            "act_backup_left",
+            "act_backup_right"
+          ]
+        },
+        {
+          "name": "captured",
+          "postures": [
+            "act_captured_cuffed_wall",
+            "act_captured_kneel",
+            "act_captured_sit_wall"
+          ]
+        },
+        {
+          "name": "cheering",
+          "postures": [
+            "act_cheering_1",
+            "act_cheering_2",
+            "act_cheering_3",
+            "act_cheering_4",
+            "act_cheering_5"
+          ]
+        },
+        {
+          "name": "combat",
+          "postures": [
+            "act_combat"
+          ]
+        },
+        {
+          "name": "cower",
+          "postures": [
+            "act_cower_1",
+            "act_cower_2"
+          ]
+        },
+        {
+          "name": "crouch"
+        },
+        {
+          "name": "crouch_drawn"
+        },
+        {
+          "name": "doze",
+          "postures": [
+            "act_doze_sit_1",
+            "act_doze_stand_1"
+          ]
+        },
+        {
+          "name": "eat",
+          "postures": [
+            "act_bugger_lunch",
+            "act_eat_1"
+          ]
+        },
+        {
+          "name": "examine",
+          "postures": [
+            "act_examine_1"
+          ]
+        },
+        {
+          "name": "gaze",
+          "postures": [
+            "act_gaze_1",
+            "act_gaze_2"
+          ]
+        },
+        {
+          "name": "guard",
+          "postures": [
+            "act_guard_1",
+            "act_guard_2",
+            "act_guard_3",
+            "act_guard_4"
+          ]
+        },
+        {
+          "name": "guard_crouch",
+          "postures": [
+            "act_guard_crouch",
+            "act_guard_crouch_1"
+          ]
+        },
+        {
+          "name": "guard_wall",
+          "postures": [
+            "act_guard_wall_1"
+          ]
+        },
+        {
+          "name": "injured",
+          "postures": [
+            "act_injured_ankle",
+            "act_injured_gut",
+            "act_injured_shoulder",
+            "act_injured_sit_wall"
+          ]
+        },
+        {
+          "name": "kneel",
+          "postures": [
+            "act_kneel_1",
+            "act_kneel_2"
+          ]
+        },
+        {
+          "name": "medic",
+          "postures": [
+            "act_medic"
+          ]
+        },
+        {
+          "name": "none"
+        },
+        {
+          "name": "patrol"
+        },
+        {
+          "name": "pee",
+          "postures": [
+            "act_pee_1"
+          ]
+        },
+        {
+          "name": "poke",
+          "postures": [
+            "act_poke_1"
+          ]
+        },
+        {
+          "name": "sleep",
+          "postures": [
+            "asleep"
+          ]
+        },
+        {
+          "name": "sniff",
+          "postures": [
+            "act_sniff_1"
+          ]
+        },
+        {
+          "name": "stand"
+        },
+        {
+          "name": "stand_drawn"
+        },
+        {
+          "name": "tai_chi",
+          "postures": [
+            "act_tai_chi"
+          ]
+        },
+        {
+          "name": "track",
+          "postures": [
+            "act_track_1"
+          ]
+        },
+        {
+          "name": "typing",
+          "postures": [
+            "act_typing"
+          ]
+        },
+        {
+          "name": "watch",
+          "postures": [
+            "act_watch_1"
+          ]
+        },
+        {
+          "name": "work",
+          "postures": [
+            "act_work",
+            "act_work_stand"
+          ]
+        }
+      ]
+    },
+    "ai_cue_template": {
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/cue templates",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "ai_dialogue_vocalization": {
+      "caption": "AI Dialogue",
+      "builder": "names",
+      "block": "vocalizations",
+      "label": "vocalization",
+      "sort": "ignore_case"
+    },
+    "ai_formations": {
+      "caption": "AI Formations",
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/spawn formations",
+      "label_ref": "formation",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "ai_performance_template": {
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/performance template folders",
+      "label": "folder name",
+      "nested": [
+        {
+          "block": "sub folders",
+          "label": "sub folder name",
+          "nested": [
+            {
+              "block": "templates",
+              "label_ref": "thespian_template",
+              "label": "name",
+              "unresolved": "INVALID"
+            }
+          ]
+        },
+        {
+          "block": "templates",
+          "label_ref": "thespian_template",
+          "label": "name",
+          "unresolved": "INVALID"
+        }
+      ],
+      "sort": "ignore_case"
+    },
+    "ai_squad_template": {
+      "builder": "names",
+      "require_group": [
+        "scenario"
+      ],
+      "fallback": [
+        "none"
+      ],
+      "source": [
+        "globals",
+        {
+          "ref": "ai globals ref"
+        }
+      ],
+      "block": "data[0]/squad template folders",
+      "label": "folder name",
+      "nested": [
+        {
+          "block": "sub folders",
+          "label": "sub folder name",
+          "nested": [
+            {
+              "block": "templates",
+              "label_ref": "squad_template",
+              "label": "name",
+              "unresolved": "INVALID"
+            }
+          ]
+        },
+        {
+          "block": "templates",
+          "label_ref": "squad_template",
+          "label": "name",
+          "unresolved": "INVALID"
+        }
+      ],
+      "sort": "ignore_case"
+    },
+    "app_selection": {
+      "builder": "names",
+      "source": [
+        {
+          "tag": "globals\\custom_app_globals",
+          "group": "capg"
+        }
+      ],
+      "block": "custom apps",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "challenge": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "challenge globals"
+        }
+      ],
+      "block": "challenge_categories",
+      "label": "category_name",
+      "nested": [
+        {
+          "block": "challenges",
+          "label": "challenge_name"
+        }
+      ],
+      "sort": "ignore_case"
+    },
+    "cheap_particle_type": {
+      "builder": "names",
+      "source": [
+        {
+          "tag": "fx\\cheap_particles\\global",
+          "group": "cptl"
+        }
+      ],
+      "block": "types",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "cinematic_object_variant": {
+      "builder": "cinematic_object_variant",
+      "require_group": [
+        "cinematic_scene"
+      ],
+      "object_block": "objects",
+      "named_in": {
+        "data": "data",
+        "block": "objects",
+        "name": "name"
+      },
+      "object": "object type",
+      "model": "model",
+      "variants": {
+        "block": "variants",
+        "label": "name",
+        "keep_empty": true
+      }
+    },
+    "commendation": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "inside": "prerequisites",
+          "when": {
+            "field": "type",
+            "equals": [
+              "aggregator"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "incident global properties"
+            },
+            {
+              "ref": "commendation globals"
+            },
+            {
+              "ref": "commendation aggregators"
+            }
+          ],
+          "block": "lists",
+          "label": "name"
+        },
+        {
+          "source": [
+            "globals",
+            {
+              "ref": "incident global properties"
+            },
+            {
+              "ref": "commendation globals"
+            }
+          ],
+          "block": "commendations",
+          "label": "name"
+        }
+      ]
+    },
+    "commendation_selection": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "when": {
+            "field": "type",
+            "equals": [
+              "aggregator"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "incident global properties"
+            },
+            {
+              "ref": "commendation globals"
+            },
+            {
+              "ref": "commendation aggregators"
+            }
+          ],
+          "block": "lists",
+          "label": "name"
+        },
+        {
+          "source": [
+            "globals",
+            {
+              "ref": "incident global properties"
+            },
+            {
+              "ref": "commendation globals"
+            }
+          ],
+          "block": "commendations",
+          "label": "name"
+        }
+      ]
+    },
+    "game_achievement": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "game achievements"
+        }
+      ],
+      "block": "achievement",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "game_avatar_award": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "game avatar awards"
+        }
+      ],
+      "block": "avatar_award",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "game_engine_event": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "game engine globals"
+        }
+      ],
+      "block": "game engine event response list",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "game_medal": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "game medal globals"
+        }
+      ],
+      "block": "medals",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "incident": {
+      "builder": "incident",
+      "built_in_title": "built in",
+      "built_in": [
+        "kill",
+        "assist",
+        "assisted",
+        "death",
+        "suicide",
+        "kill_betrayal",
+        "guardian_kill",
+        "wildlife_kill",
+        "enemy_vehicle_kill",
+        "human_turret_kill",
+        "player_quit",
+        "player_joined",
+        "player_rejoined",
+        "player_activated",
+        "player_switched_team",
+        "sticky_grenade_kill",
+        "shotgun_kill_sword",
+        "kill_from_the_grave",
+        "driver_assist_gunner",
+        "driver_assist_death",
+        "vehicle_occupant_kill_assist",
+        "highjack",
+        "skyjack",
+        "killjoy",
+        "extermination",
+        "splatter_kill",
+        "headshot_kill",
+        "revenge_kill",
+        "vengeful",
+        "player_levelup",
+        "player_score_updated",
+        "device_touched",
+        "device_dispensed_object",
+        "device_interaction_started",
+        "device_interaction_released",
+        "device_interaction_interrupted",
+        "device_interaction_finished",
+        "cinematic_new_objective",
+        "cinematic_objective_complete",
+        "cinematic_title_update",
+        "waypoint_message_fanfare",
+        "round_over",
+        "round_beginning",
+        "minutes_remaining_30",
+        "minutes_remaining_15",
+        "minutes_remaining_5",
+        "minutes_remaining_3",
+        "minutes_remaining_1",
+        "seconds_remaining_30",
+        "seconds_remaining_20",
+        "seconds_remaining_10",
+        "game_over",
+        "player_booted_player",
+        "first_blood",
+        "perfection",
+        "player_spawn",
+        "player_prespawn",
+        "team_ten_seconds_to_win",
+        "ten_seconds_to_win",
+        "team_half_minute_to_win",
+        "half_minute_to_win",
+        "team_one_minute_to_win",
+        "one_minute_to_win",
+        "teleporter_used",
+        "teleporter_blocked",
+        "respawn_tick",
+        "respawn_tick_final",
+        "gained_team_lead",
+        "gained_lead",
+        "lost_team_lead",
+        "lost_lead",
+        "tied_team_leader",
+        "tied_leader",
+        "forge_theoretical_object_limit_reached",
+        "forge_cannot_place_object",
+        "campaign_level_completed",
+        "campaign_level_completed_deathless",
+        "firefight_mission_completed",
+        "firefight_episode_completed",
+        "terminal_activated",
+        "terminal_activated_count",
+        "challenge_completed",
+        "player_challenge_complete",
+        "hero",
+        "boarded_vehicle",
+        "wingman_spawn",
+        "close_call",
+        "emp_assist",
+        "second_wind",
+        "avenged",
+        "avenger",
+        "life_saved",
+        "guardian_angel",
+        "vehicle_air_time",
+        "vehicle_destroy_assist",
+        "last_strike",
+        "drop_flag",
+        "lifesaver",
+        "terminal_velocity_assassination",
+        "recharge_health",
+        "distraction",
+        "hail_mary",
+        "airsassination",
+        "survival_skull_iron",
+        "survival_skull_black_eye",
+        "survival_skull_tough_luck",
+        "survival_skull_catch",
+        "survival_skull_fog",
+        "survival_skull_famine",
+        "survival_skull_thunderstorm",
+        "survival_skull_tilt",
+        "survival_skull_mythic",
+        "survival_skull_assassin",
+        "survival_skull_blind",
+        "survival_skull_superman",
+        "survival_skull_grunt_birthday_party",
+        "survival_skull_iwhbyd",
+        "survival_skull_red",
+        "survival_skull_yellow",
+        "survival_skull_blue",
+        "survival_skull_activation_finished",
+        "survival_skull_single",
+        "survival_skulls_multiple",
+        "survival_set_completed",
+        "survival_set_completed_deathless",
+        "survival_full_round_completed",
+        "survival_full_round_completed_deathless",
+        "survival_wave_completed",
+        "survival_wave_completed_deathless",
+        "firefight_goal_completed",
+        "firefight_goal_completed_deathless",
+        "firefight_wave_completed",
+        "firefight_wave_completed_deathless",
+        "firefight_skull_iron_off",
+        "firefight_skull_iron_on",
+        "firefight_skull_black_eye_off",
+        "firefight_skull_black_eye_on",
+        "firefight_skull_tough_luck_off",
+        "firefight_skull_tough_luck_on",
+        "firefight_skull_catch_off",
+        "firefight_skull_catch_on",
+        "firefight_skull_fog_off",
+        "firefight_skull_fog_on",
+        "firefight_skull_famine_off",
+        "firefight_skull_famine_on",
+        "firefight_skull_thunderstorm_off",
+        "firefight_skull_thunderstorm_on",
+        "firefight_skull_tilt_off",
+        "firefight_skull_tilt_on",
+        "firefight_skull_mythic_off",
+        "firefight_skull_mythic_on",
+        "firefight_skull_assassin_off",
+        "firefight_skull_assassin_on",
+        "firefight_skull_blind_off",
+        "firefight_skull_blind_on",
+        "firefight_skull_superman_off",
+        "firefight_skull_superman_on",
+        "firefight_skull_grunt_birthday_party_off",
+        "firefight_skull_grunt_birthday_party_on",
+        "firefight_skull_iwhbyd_off",
+        "firefight_skull_iwhbyd_on",
+        "firefight_skull_red_off",
+        "firefight_skull_red_on",
+        "firefight_skull_yellow_off",
+        "firefight_skull_yellow_on",
+        "firefight_skull_blue_off",
+        "firefight_skull_blue_on",
+        "firefight_skull_deactivation_finished",
+        "firefight_skull_activation_finished",
+        "ordnance_called_in",
+        "ordnance_earned",
+        "ordnance_power_weapon",
+        "ordnance_random_called_in",
+        "ordnance_remote_strike",
+        "ordnance_target_designator",
+        "ordnance_activatable",
+        "ordnance_reroll_used",
+        "ordnance_stolen",
+        "player_moved_100_units",
+        "player_drove_100_units",
+        "player_flew_100_units",
+        "player_played_30_seconds",
+        "player_scored_1000_points",
+        "player_trapped_victim_in_stasis_field",
+        "player_post_game_over",
+        "ui_customized_loadout",
+        "ui_renamed_loadout",
+        "ui_saved_screenshot",
+        "ui_uploaded_screenshot",
+        "ui_viewed_screenshot",
+        "ui_saved_film",
+        "ui_uploaded_film",
+        "ui_downloaded_film",
+        "ui_saved_variant",
+        "ui_uploaded_variant",
+        "ui_downloaded_variant",
+        "ui_saved_forge_map",
+        "ui_uploaded_forge_map",
+        "ui_downloaded_forge_map",
+        "player_activated_red_powerup",
+        "player_activated_yellow_powerup",
+        "player_activated_blue_powerup",
+        "player_activated_custom_powerup",
+        "player_deactivated_red_powerup",
+        "player_deactivated_yellow_powerup",
+        "player_deactivated_blue_powerup",
+        "player_deactivated_custom_powerup",
+        "incident_string_01",
+        "incident_string_02",
+        "incident_string_03",
+        "incident_string_04",
+        "incident_string_05",
+        "incident_string_06",
+        "incident_string_07",
+        "incident_string_08",
+        "incident_string_09",
+        "incident_string_10",
+        "incident_string_11",
+        "incident_string_12",
+        "incident_string_13",
+        "incident_string_14",
+        "incident_string_15",
+        "incident_string_16",
+        "incident_string_17",
+        "incident_string_18",
+        "incident_string_19",
+        "incident_string_20",
+        "pre_game_over"
+      ],
+      "definitions": {
+        "source": [
+          "globals",
+          {
+            "ref": "incident global properties"
+          }
+        ],
+        "reference": "incident definitions"
+      },
+      "incidents": {
+        "block": "incidents",
+        "label": "name"
+      },
+      "letter_buckets": true,
+      "sort": "ignore_case"
+    },
+    "item_permutation_selection": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "spartan helmet"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "helmet selections",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "spartan chest"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "chest selections",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "elite armor"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "elite selections",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "unused_1"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "left shoulder",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "unused_2"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "right shoulder",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "unused_3"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "arms",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "unused_4"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "legs",
+          "label": "selection name"
+        },
+        {
+          "inside": "permutations",
+          "when": {
+            "field": "model_region",
+            "equals": [
+              "unused_5"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "unused 5",
+          "label": "selection name"
+        },
+        {
+          "inside": "armor effects permutations",
+          "when": {
+            "field": "non_model_region",
+            "equals": [
+              "spartan armour effect"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "spartan armor effect selections",
+          "label": "selection name"
+        },
+        {
+          "inside": "armor effects permutations",
+          "source": [
+            "globals",
+            {
+              "ref": "player model customization globals"
+            }
+          ],
+          "block": "elite armor effect selections",
+          "label": "selection name"
+        }
+      ]
+    },
+    "location_name": {
+      "builder": "names",
+      "source": [
+        "scenario",
+        {
+          "ref": "location name globals"
+        }
+      ],
+      "block": "location names",
+      "label": "name",
+      "sort": "ignore_case"
+    },
+    "material": {
+      "caption": "Choose Material",
+      "builder": "names",
+      "source": [
+        "globals"
+      ],
+      "block": "runtime materials",
+      "label": "name",
+      "parent": "parent name",
+      "sort": "submenus_first_bytes"
+    },
+    "model_permutation_selection": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "inside": "elite selections",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "matching": {
+            "field": "name",
+            "holder_field": "region name"
+          },
+          "flatten": true,
+          "nested": [
+            {
+              "block": "permutations",
+              "label": "name"
+            }
+          ]
+        },
+        {
+          "inside": "elite armor effect selections",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "matching": {
+            "field": "name",
+            "holder_field": "region name"
+          },
+          "flatten": true,
+          "nested": [
+            {
+              "block": "permutations",
+              "label": "name"
+            }
+          ]
+        },
+        {
+          "inside": "elite model defaults",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "matching": {
+            "field": "name",
+            "holder_field": "region name"
+          },
+          "flatten": true,
+          "nested": [
+            {
+              "block": "permutations",
+              "label": "name"
+            }
+          ]
+        },
+        {
+          "source": [
+            "self",
+            {
+              "ref": "spartan render model"
+            }
+          ],
+          "block": "regions",
+          "matching": {
+            "field": "name",
+            "holder_field": "region name"
+          },
+          "flatten": true,
+          "nested": [
+            {
+              "block": "permutations",
+              "label": "name"
+            }
+          ]
+        }
+      ]
+    },
+    "model_region_selection": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "inside": "elite selections",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "label": "name"
+        },
+        {
+          "inside": "elite armor effect selections",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "label": "name"
+        },
+        {
+          "inside": "elite model defaults",
+          "source": [
+            "self",
+            {
+              "ref": "elite render model"
+            }
+          ],
+          "block": "regions",
+          "label": "name"
+        },
+        {
+          "source": [
+            "self",
+            {
+              "ref": "spartan render model"
+            }
+          ],
+          "block": "regions",
+          "label": "name"
+        }
+      ]
+    },
+    "object_function": {
+      "caption": "Object Function",
+      "own_functions": true,
+      "own": [
+        {
+          "block": "functions",
+          "label": "export name",
+          "keep_empty": true
+        },
+        {
+          "block": "function switches",
+          "label": "export name",
+          "keep_empty": true
+        }
+      ],
+      "builder": "object_function",
+      "types": {
+        "biped": [
+          "object",
+          "motor",
+          "unit",
+          "biped"
+        ],
+        "vehicle": [
+          "object",
+          "motor",
+          "unit",
+          "vehicle"
+        ],
+        "weapon": [
+          "object",
+          "item",
+          "weapon"
+        ],
+        "equipment": [
+          "object",
+          "item",
+          "equipment"
+        ],
+        "device_terminal": [
+          "object",
+          "device",
+          "terminal"
+        ],
+        "projectile": [
+          "object",
+          "projectile"
+        ],
+        "scenery": [
+          "object",
+          "scenery"
+        ],
+        "device_machine": [
+          "object",
+          "device",
+          "machine"
+        ],
+        "device_control": [
+          "object",
+          "device",
+          "control"
+        ],
+        "device_dispenser": [
+          "object",
+          "device",
+          "dispenser"
+        ],
+        "sound_scenery": [
+          "object",
+          "sound_scenery"
+        ],
+        "crate": [
+          "object",
+          "crate"
+        ],
+        "creature": [
+          "object",
+          "motor",
+          "creature"
+        ],
+        "giant": [
+          "object",
+          "motor",
+          "unit",
+          "giant"
+        ],
+        "effect_scenery": [
+          "object",
+          "effect scenery"
+        ],
+        "spawner": [
+          "object",
+          "entity",
+          "spawner"
+        ]
+      },
+      "lists": {
+        "object": [
+          "active_shield_vitality",
+          "alive",
+          "all_quiet",
+          "animation_event_function_a",
+          "animation_event_function_b",
+          "animation_event_function_c",
+          "animation_event_function_d",
+          "animation_event_function_e",
+          "animation_event_function_f",
+          "animation_event_function_g",
+          "animation_event_function_h",
+          "animation_event_function_i",
+          "animation_event_function_j",
+          "animation_event_function_k",
+          "animation_event_function_l",
+          "animation_event_function_left_grip",
+          "animation_event_function_m",
+          "animation_event_function_n",
+          "animation_event_function_o",
+          "animation_event_function_p",
+          "animation_event_function_q",
+          "animation_event_function_r",
+          "animation_event_function_right_grip",
+          "animation_event_function_s",
+          "animation_event_function_t",
+          "animation_event_function_u",
+          "animation_event_function_v",
+          "animation_event_function_w",
+          "animation_event_function_x",
+          "animation_event_function_y",
+          "animation_event_function_z",
+          "animation_object_function_a",
+          "animation_object_function_b",
+          "animation_object_function_c",
+          "animation_object_function_d",
+          "balling",
+          "balling_berserk",
+          "body_vitality",
+          "cinematic_in_progress",
+          "compass",
+          "cortana_rampancy",
+          "current_body_damage",
+          "current_shield_damage",
+          "dismembered_arm_left",
+          "dismembered_arm_right",
+          "dismembered_head",
+          "dismembered_leg_left",
+          "dismembered_leg_right",
+          "dissolving_amount",
+          "dissolving_or_camo",
+          "electrical_power",
+          "emerging",
+          "engine_value_a",
+          "engine_value_b",
+          "engine_value_c",
+          "engine_value_d",
+          "flashlights_allowed",
+          "forerunner_eye_glow",
+          "holiday",
+          "impending_reinforcement",
+          "impending_reinforcement",
+          "in_phantom",
+          "language_over_50",
+          "megalo_object_function_0",
+          "megalo_object_function_1",
+          "megalo_object_function_2",
+          "megalo_object_function_3",
+          "megalo_object_function_4",
+          "megalo_object_function_5",
+          "megalo_object_function_6",
+          "megalo_object_function_7",
+          "megalo_timer_object_function",
+          "megalo_timer_object_function_hundreds",
+          "megalo_timer_object_function_ones",
+          "megalo_timer_object_function_present",
+          "megalo_timer_object_function_tens",
+          "morse_code",
+          "object_overshield_amount",
+          "oddball_effect",
+          "one",
+          "phantom_on",
+          "phantom_power",
+          "phantom_speed",
+          "rain_intensity",
+          "random_constant",
+          "render_time",
+          "scripted_object_function_a",
+          "scripted_object_function_b",
+          "scripted_object_function_c",
+          "scripted_object_function_d",
+          "self_illum_color",
+          "self_illum_intensity",
+          "self_illum_on",
+          "shield_depleted",
+          "shield_vitality",
+          "teleporter_active",
+          "time",
+          "time_hours",
+          "time_minutes",
+          "time_seconds",
+          "var_obj_local_a",
+          "var_obj_local_b",
+          "var_obj_local_c",
+          "variant",
+          "zero"
+        ],
+        "unit": [
+          "acceleration_forward",
+          "acceleration_lateral",
+          "acceleration_magnitude",
+          "acceleration_magnitude2d",
+          "acceleration_pitch",
+          "acceleration_vertical",
+          "acceleration_yaw",
+          "active_camouflage",
+          "aim_pitch",
+          "aim_yaw",
+          "aiming_change",
+          "animation_throttle_forward",
+          "animation_throttle_lateral",
+          "animation_throttle_magnitude",
+          "animation_throttle_magnitude2d",
+          "animation_throttle_pitch",
+          "animation_throttle_vertical",
+          "animation_throttle_yaw",
+          "armory_open",
+          "audio_movement_angle",
+          "audio_movement_speed",
+          "barrel_spin",
+          "birth_progress",
+          "boost",
+          "boost_power_meter",
+          "boost_recharge",
+          "can_blink",
+          "crouch",
+          "driver_seat_occupied",
+          "driver_seat_power",
+          "emp_disabled",
+          "emp_fraction",
+          "enter_progress",
+          "exit_progress",
+          "gear_position",
+          "gunner_seat_occupied",
+          "gunner_seat_power",
+          "horizontal_aiming_change",
+          "impulse_channel_valid",
+          "integrated_light_power",
+          "jump_offset_forward",
+          "jump_offset_lateral",
+          "jump_offset_pitch",
+          "jump_offset_vertical",
+          "jump_offset_yaw",
+          "left_grip",
+          "look_pitch",
+          "look_yaw",
+          "mouth_aperture",
+          "move_offset_forward",
+          "move_offset_lateral",
+          "move_offset_pitch",
+          "move_offset_vertical",
+          "move_offset_yaw",
+          "night_vision",
+          "object_pitch",
+          "object_yaw",
+          "out_of_bounds",
+          "phase_progress",
+          "resurrect_progress",
+          "right_grip",
+          "state_channel_playback_ratio",
+          "terminal_velocity_fall_weight",
+          "throttle_forward",
+          "throttle_side",
+          "throttle_vertical",
+          "transition_channel_playback_ratio",
+          "transition_channel_valid",
+          "turning_desired_pitch",
+          "turning_desired_yaw",
+          "turning_velocity_pitch",
+          "turning_velocity_yaw",
+          "unit_closed",
+          "unit_closing",
+          "unit_open",
+          "unit_opening",
+          "velocity_forward",
+          "velocity_lateral",
+          "velocity_magnitude",
+          "velocity_magnitude2d",
+          "velocity_pitch",
+          "velocity_vertical",
+          "velocity_yaw",
+          "vertical_thrust",
+          "weapon_illumination",
+          "zoom_level"
+        ],
+        "biped": [
+          "combat_status",
+          "cortana_hud_rampancy",
+          "flight",
+          "flight_animation_mode",
+          "flying_speed",
+          "grenade_collected",
+          "jetpack_exhaust",
+          "mandibles",
+          "player_is_female",
+          "player_is_sprinting",
+          "player_is_sprinting_local",
+          "player_sprint_charge",
+          "shield_projected",
+          "stunned"
+        ],
+        "vehicle": [
+          "abs_throttle",
+          "anti_gravity_engine_position",
+          "anti_gravity_strength",
+          "auto_trigger_primary_fire",
+          "auto_trigger_secondary_fire",
+          "back_left_tire_position",
+          "back_left_tire_velocity",
+          "back_right_tire_position",
+          "back_right_tire_velocity",
+          "boost",
+          "emitting",
+          "engine_cruising",
+          "engine_power",
+          "engine_power_left",
+          "engine_power_right",
+          "engine_rpm",
+          "engine_turbo",
+          "fake_audio_speed",
+          "flying",
+          "front_left_tire_position",
+          "front_left_tire_velocity",
+          "front_right_tire_position",
+          "front_right_tire_velocity",
+          "front_wheels_ground_speed_fraction",
+          "hover",
+          "in_reverse",
+          "jump",
+          "landing",
+          "left_tread_position",
+          "left_tread_velocity",
+          "mean_antigrav",
+          "move_timer",
+          "phase",
+          "rear_wheels_ground_speed_fraction",
+          "right_tread_position",
+          "right_tread_velocity",
+          "sentry_alert",
+          "sentry_attack",
+          "sentry_idle",
+          "sentry_secondary_gun",
+          "sentry_tracking_target",
+          "slide_absolute",
+          "slide_left",
+          "slide_right",
+          "speed_absolute",
+          "speed_backward",
+          "speed_forward",
+          "speed_slide_maximum",
+          "surge",
+          "taking_off",
+          "thrust",
+          "tread_grind",
+          "turn_absolute",
+          "turn_left",
+          "turn_right",
+          "vehicle_occupied",
+          "vehicle_roll",
+          "velocity_air",
+          "velocity_forward",
+          "velocity_ground",
+          "velocity_left",
+          "velocity_up",
+          "velocity_water",
+          "wingtip_contrail",
+          "wingtip_contrail_new"
+        ],
+        "item": [
+          "in_inventory"
+        ],
+        "weapon": [
+          "acceleration_magnitude",
+          "acceleration_pitch",
+          "acceleration_yaw",
+          "active_camouflage",
+          "age",
+          "airstrike_fire_percentage",
+          "airstrike_launch_count_ones",
+          "airstrike_state",
+          "airstrike_warmup",
+          "barrel_spin",
+          "flashlight_intensity",
+          "heat",
+          "illumination",
+          "iron_sights",
+          "is_reloading",
+          "is_venting",
+          "night_vision",
+          "overheated",
+          "post_reload_timeout",
+          "power",
+          "primary_ammunition",
+          "primary_ammunition_ones",
+          "primary_ammunition_tens",
+          "primary_barrel_firing",
+          "primary_barrel_firing_dual_left",
+          "primary_barrel_firing_dual_right",
+          "primary_barrel_firing_single",
+          "primary_charged",
+          "primary_charged_with_cooldown",
+          "primary_ejection_port",
+          "primary_firing",
+          "primary_firing_ticks",
+          "primary_is_spewing",
+          "primary_rate_of_fire",
+          "primary_spew",
+          "primary_total_ammunition",
+          "primary_trigger_down",
+          "ready",
+          "scaleshot_power",
+          "secondary_ammunition",
+          "secondary_barrel_firing",
+          "secondary_charged",
+          "secondary_charged_with_cooldown",
+          "secondary_ejection_port",
+          "secondary_firing",
+          "secondary_rate_of_fire",
+          "secondary_spew",
+          "secondary_total_ammunition",
+          "secondary_trigger_down",
+          "stowed",
+          "tether_distance",
+          "tether_exploded",
+          "tether_linked_transition",
+          "tether_projectile",
+          "tether_state",
+          "tether_trigger",
+          "turned_on",
+          "turning_on",
+          "venting_time",
+          "warthog_chaingun_illumination",
+          "zoom_level"
+        ],
+        "equipment": [
+          "age",
+          "death",
+          "energy",
+          "energy_burned",
+          "evade_back",
+          "evade_front",
+          "evade_left",
+          "evade_right",
+          "jetpack_height",
+          "on"
+        ],
+        "device": [
+          "change_in_position",
+          "change_in_power",
+          "cooldown",
+          "delay",
+          "locked",
+          "position",
+          "power",
+          "ready"
+        ],
+        "projectile": [
+          "acceleration_range",
+          "bounce",
+          "damage_scale",
+          "projectile_attach",
+          "range_remaining",
+          "speed_absolute",
+          "tethered_detonation_time",
+          "tethered_to_local_player",
+          "time_remaining",
+          "tracer"
+        ],
+        "creature": [
+          "shooting"
+        ],
+        "entity": [
+          "change_in_position",
+          "change_in_power",
+          "cooldown",
+          "delay",
+          "locked",
+          "position",
+          "power",
+          "ready"
+        ]
+      },
+      "extra": [
+        {
+          "text": "seat functions",
+          "groups": [
+            "biped",
+            "vehicle",
+            "giant"
+          ],
+          "block": "seats",
+          "label": [
+            "open function name",
+            "opening function name",
+            "closing function name"
+          ]
+        },
+        {
+          "text": "biped feelers",
+          "groups": [
+            "biped"
+          ],
+          "block": "wall proximity feelers",
+          "label": "output function name"
+        }
+      ],
+      "trailing": [
+        {
+          "text": "scenario interpolators",
+          "items": [
+            "scenario_interpolator1",
+            "scenario_interpolator10",
+            "scenario_interpolator11",
+            "scenario_interpolator12",
+            "scenario_interpolator13",
+            "scenario_interpolator14",
+            "scenario_interpolator15",
+            "scenario_interpolator16",
+            "scenario_interpolator17",
+            "scenario_interpolator18",
+            "scenario_interpolator19",
+            "scenario_interpolator2",
+            "scenario_interpolator20",
+            "scenario_interpolator21",
+            "scenario_interpolator22",
+            "scenario_interpolator23",
+            "scenario_interpolator24",
+            "scenario_interpolator25",
+            "scenario_interpolator26",
+            "scenario_interpolator27",
+            "scenario_interpolator28",
+            "scenario_interpolator29",
+            "scenario_interpolator3",
+            "scenario_interpolator30",
+            "scenario_interpolator31",
+            "scenario_interpolator32",
+            "scenario_interpolator4",
+            "scenario_interpolator5",
+            "scenario_interpolator6",
+            "scenario_interpolator7",
+            "scenario_interpolator8",
+            "scenario_interpolator9"
+          ]
+        }
+      ]
+    },
+    "object_function_no_own": {
+      "own_functions": false,
+      "builder": "object_function",
+      "types": {
+        "biped": [
+          "object",
+          "motor",
+          "unit",
+          "biped"
+        ],
+        "vehicle": [
+          "object",
+          "motor",
+          "unit",
+          "vehicle"
+        ],
+        "weapon": [
+          "object",
+          "item",
+          "weapon"
+        ],
+        "equipment": [
+          "object",
+          "item",
+          "equipment"
+        ],
+        "device_terminal": [
+          "object",
+          "device",
+          "terminal"
+        ],
+        "projectile": [
+          "object",
+          "projectile"
+        ],
+        "scenery": [
+          "object",
+          "scenery"
+        ],
+        "device_machine": [
+          "object",
+          "device",
+          "machine"
+        ],
+        "device_control": [
+          "object",
+          "device",
+          "control"
+        ],
+        "device_dispenser": [
+          "object",
+          "device",
+          "dispenser"
+        ],
+        "sound_scenery": [
+          "object",
+          "sound_scenery"
+        ],
+        "crate": [
+          "object",
+          "crate"
+        ],
+        "creature": [
+          "object",
+          "motor",
+          "creature"
+        ],
+        "giant": [
+          "object",
+          "motor",
+          "unit",
+          "giant"
+        ],
+        "effect_scenery": [
+          "object",
+          "effect scenery"
+        ],
+        "spawner": [
+          "object",
+          "entity",
+          "spawner"
+        ]
+      },
+      "lists": {
+        "object": [
+          "active_shield_vitality",
+          "alive",
+          "all_quiet",
+          "animation_event_function_a",
+          "animation_event_function_b",
+          "animation_event_function_c",
+          "animation_event_function_d",
+          "animation_event_function_e",
+          "animation_event_function_f",
+          "animation_event_function_g",
+          "animation_event_function_h",
+          "animation_event_function_i",
+          "animation_event_function_j",
+          "animation_event_function_k",
+          "animation_event_function_l",
+          "animation_event_function_left_grip",
+          "animation_event_function_m",
+          "animation_event_function_n",
+          "animation_event_function_o",
+          "animation_event_function_p",
+          "animation_event_function_q",
+          "animation_event_function_r",
+          "animation_event_function_right_grip",
+          "animation_event_function_s",
+          "animation_event_function_t",
+          "animation_event_function_u",
+          "animation_event_function_v",
+          "animation_event_function_w",
+          "animation_event_function_x",
+          "animation_event_function_y",
+          "animation_event_function_z",
+          "animation_object_function_a",
+          "animation_object_function_b",
+          "animation_object_function_c",
+          "animation_object_function_d",
+          "balling",
+          "balling_berserk",
+          "body_vitality",
+          "cinematic_in_progress",
+          "compass",
+          "cortana_rampancy",
+          "current_body_damage",
+          "current_shield_damage",
+          "dismembered_arm_left",
+          "dismembered_arm_right",
+          "dismembered_head",
+          "dismembered_leg_left",
+          "dismembered_leg_right",
+          "dissolving_amount",
+          "dissolving_or_camo",
+          "electrical_power",
+          "emerging",
+          "engine_value_a",
+          "engine_value_b",
+          "engine_value_c",
+          "engine_value_d",
+          "flashlights_allowed",
+          "forerunner_eye_glow",
+          "holiday",
+          "impending_reinforcement",
+          "impending_reinforcement",
+          "in_phantom",
+          "language_over_50",
+          "megalo_object_function_0",
+          "megalo_object_function_1",
+          "megalo_object_function_2",
+          "megalo_object_function_3",
+          "megalo_object_function_4",
+          "megalo_object_function_5",
+          "megalo_object_function_6",
+          "megalo_object_function_7",
+          "megalo_timer_object_function",
+          "megalo_timer_object_function_hundreds",
+          "megalo_timer_object_function_ones",
+          "megalo_timer_object_function_present",
+          "megalo_timer_object_function_tens",
+          "morse_code",
+          "object_overshield_amount",
+          "oddball_effect",
+          "one",
+          "phantom_on",
+          "phantom_power",
+          "phantom_speed",
+          "rain_intensity",
+          "random_constant",
+          "render_time",
+          "scripted_object_function_a",
+          "scripted_object_function_b",
+          "scripted_object_function_c",
+          "scripted_object_function_d",
+          "self_illum_color",
+          "self_illum_intensity",
+          "self_illum_on",
+          "shield_depleted",
+          "shield_vitality",
+          "teleporter_active",
+          "time",
+          "time_hours",
+          "time_minutes",
+          "time_seconds",
+          "var_obj_local_a",
+          "var_obj_local_b",
+          "var_obj_local_c",
+          "variant",
+          "zero"
+        ],
+        "unit": [
+          "acceleration_forward",
+          "acceleration_lateral",
+          "acceleration_magnitude",
+          "acceleration_magnitude2d",
+          "acceleration_pitch",
+          "acceleration_vertical",
+          "acceleration_yaw",
+          "active_camouflage",
+          "aim_pitch",
+          "aim_yaw",
+          "aiming_change",
+          "animation_throttle_forward",
+          "animation_throttle_lateral",
+          "animation_throttle_magnitude",
+          "animation_throttle_magnitude2d",
+          "animation_throttle_pitch",
+          "animation_throttle_vertical",
+          "animation_throttle_yaw",
+          "armory_open",
+          "audio_movement_angle",
+          "audio_movement_speed",
+          "barrel_spin",
+          "birth_progress",
+          "boost",
+          "boost_power_meter",
+          "boost_recharge",
+          "can_blink",
+          "crouch",
+          "driver_seat_occupied",
+          "driver_seat_power",
+          "emp_disabled",
+          "emp_fraction",
+          "enter_progress",
+          "exit_progress",
+          "gear_position",
+          "gunner_seat_occupied",
+          "gunner_seat_power",
+          "horizontal_aiming_change",
+          "impulse_channel_valid",
+          "integrated_light_power",
+          "jump_offset_forward",
+          "jump_offset_lateral",
+          "jump_offset_pitch",
+          "jump_offset_vertical",
+          "jump_offset_yaw",
+          "left_grip",
+          "look_pitch",
+          "look_yaw",
+          "mouth_aperture",
+          "move_offset_forward",
+          "move_offset_lateral",
+          "move_offset_pitch",
+          "move_offset_vertical",
+          "move_offset_yaw",
+          "night_vision",
+          "object_pitch",
+          "object_yaw",
+          "out_of_bounds",
+          "phase_progress",
+          "resurrect_progress",
+          "right_grip",
+          "state_channel_playback_ratio",
+          "terminal_velocity_fall_weight",
+          "throttle_forward",
+          "throttle_side",
+          "throttle_vertical",
+          "transition_channel_playback_ratio",
+          "transition_channel_valid",
+          "turning_desired_pitch",
+          "turning_desired_yaw",
+          "turning_velocity_pitch",
+          "turning_velocity_yaw",
+          "unit_closed",
+          "unit_closing",
+          "unit_open",
+          "unit_opening",
+          "velocity_forward",
+          "velocity_lateral",
+          "velocity_magnitude",
+          "velocity_magnitude2d",
+          "velocity_pitch",
+          "velocity_vertical",
+          "velocity_yaw",
+          "vertical_thrust",
+          "weapon_illumination",
+          "zoom_level"
+        ],
+        "biped": [
+          "combat_status",
+          "cortana_hud_rampancy",
+          "flight",
+          "flight_animation_mode",
+          "flying_speed",
+          "grenade_collected",
+          "jetpack_exhaust",
+          "mandibles",
+          "player_is_female",
+          "player_is_sprinting",
+          "player_is_sprinting_local",
+          "player_sprint_charge",
+          "shield_projected",
+          "stunned"
+        ],
+        "vehicle": [
+          "abs_throttle",
+          "anti_gravity_engine_position",
+          "anti_gravity_strength",
+          "auto_trigger_primary_fire",
+          "auto_trigger_secondary_fire",
+          "back_left_tire_position",
+          "back_left_tire_velocity",
+          "back_right_tire_position",
+          "back_right_tire_velocity",
+          "boost",
+          "emitting",
+          "engine_cruising",
+          "engine_power",
+          "engine_power_left",
+          "engine_power_right",
+          "engine_rpm",
+          "engine_turbo",
+          "fake_audio_speed",
+          "flying",
+          "front_left_tire_position",
+          "front_left_tire_velocity",
+          "front_right_tire_position",
+          "front_right_tire_velocity",
+          "front_wheels_ground_speed_fraction",
+          "hover",
+          "in_reverse",
+          "jump",
+          "landing",
+          "left_tread_position",
+          "left_tread_velocity",
+          "mean_antigrav",
+          "move_timer",
+          "phase",
+          "rear_wheels_ground_speed_fraction",
+          "right_tread_position",
+          "right_tread_velocity",
+          "sentry_alert",
+          "sentry_attack",
+          "sentry_idle",
+          "sentry_secondary_gun",
+          "sentry_tracking_target",
+          "slide_absolute",
+          "slide_left",
+          "slide_right",
+          "speed_absolute",
+          "speed_backward",
+          "speed_forward",
+          "speed_slide_maximum",
+          "surge",
+          "taking_off",
+          "thrust",
+          "tread_grind",
+          "turn_absolute",
+          "turn_left",
+          "turn_right",
+          "vehicle_occupied",
+          "vehicle_roll",
+          "velocity_air",
+          "velocity_forward",
+          "velocity_ground",
+          "velocity_left",
+          "velocity_up",
+          "velocity_water",
+          "wingtip_contrail",
+          "wingtip_contrail_new"
+        ],
+        "item": [
+          "in_inventory"
+        ],
+        "weapon": [
+          "acceleration_magnitude",
+          "acceleration_pitch",
+          "acceleration_yaw",
+          "active_camouflage",
+          "age",
+          "airstrike_fire_percentage",
+          "airstrike_launch_count_ones",
+          "airstrike_state",
+          "airstrike_warmup",
+          "barrel_spin",
+          "flashlight_intensity",
+          "heat",
+          "illumination",
+          "iron_sights",
+          "is_reloading",
+          "is_venting",
+          "night_vision",
+          "overheated",
+          "post_reload_timeout",
+          "power",
+          "primary_ammunition",
+          "primary_ammunition_ones",
+          "primary_ammunition_tens",
+          "primary_barrel_firing",
+          "primary_barrel_firing_dual_left",
+          "primary_barrel_firing_dual_right",
+          "primary_barrel_firing_single",
+          "primary_charged",
+          "primary_charged_with_cooldown",
+          "primary_ejection_port",
+          "primary_firing",
+          "primary_firing_ticks",
+          "primary_is_spewing",
+          "primary_rate_of_fire",
+          "primary_spew",
+          "primary_total_ammunition",
+          "primary_trigger_down",
+          "ready",
+          "scaleshot_power",
+          "secondary_ammunition",
+          "secondary_barrel_firing",
+          "secondary_charged",
+          "secondary_charged_with_cooldown",
+          "secondary_ejection_port",
+          "secondary_firing",
+          "secondary_rate_of_fire",
+          "secondary_spew",
+          "secondary_total_ammunition",
+          "secondary_trigger_down",
+          "stowed",
+          "tether_distance",
+          "tether_exploded",
+          "tether_linked_transition",
+          "tether_projectile",
+          "tether_state",
+          "tether_trigger",
+          "turned_on",
+          "turning_on",
+          "venting_time",
+          "warthog_chaingun_illumination",
+          "zoom_level"
+        ],
+        "equipment": [
+          "age",
+          "death",
+          "energy",
+          "energy_burned",
+          "evade_back",
+          "evade_front",
+          "evade_left",
+          "evade_right",
+          "jetpack_height",
+          "on"
+        ],
+        "device": [
+          "change_in_position",
+          "change_in_power",
+          "cooldown",
+          "delay",
+          "locked",
+          "position",
+          "power",
+          "ready"
+        ],
+        "projectile": [
+          "acceleration_range",
+          "bounce",
+          "damage_scale",
+          "projectile_attach",
+          "range_remaining",
+          "speed_absolute",
+          "tethered_detonation_time",
+          "tethered_to_local_player",
+          "time_remaining",
+          "tracer"
+        ],
+        "creature": [
+          "shooting"
+        ],
+        "entity": [
+          "change_in_position",
+          "change_in_power",
+          "cooldown",
+          "delay",
+          "locked",
+          "position",
+          "power",
+          "ready"
+        ]
+      },
+      "extra": [
+        {
+          "text": "seat functions",
+          "groups": [
+            "biped",
+            "vehicle",
+            "giant"
+          ],
+          "block": "seats",
+          "label": [
+            "open function name",
+            "opening function name",
+            "closing function name"
+          ]
+        },
+        {
+          "text": "biped feelers",
+          "groups": [
+            "biped"
+          ],
+          "block": "wall proximity feelers",
+          "label": "output function name"
+        }
+      ],
+      "trailing": [
+        {
+          "text": "scenario interpolators",
+          "items": [
+            "scenario_interpolator1",
+            "scenario_interpolator10",
+            "scenario_interpolator11",
+            "scenario_interpolator12",
+            "scenario_interpolator13",
+            "scenario_interpolator14",
+            "scenario_interpolator15",
+            "scenario_interpolator16",
+            "scenario_interpolator17",
+            "scenario_interpolator18",
+            "scenario_interpolator19",
+            "scenario_interpolator2",
+            "scenario_interpolator20",
+            "scenario_interpolator21",
+            "scenario_interpolator22",
+            "scenario_interpolator23",
+            "scenario_interpolator24",
+            "scenario_interpolator25",
+            "scenario_interpolator26",
+            "scenario_interpolator27",
+            "scenario_interpolator28",
+            "scenario_interpolator29",
+            "scenario_interpolator3",
+            "scenario_interpolator30",
+            "scenario_interpolator31",
+            "scenario_interpolator32",
+            "scenario_interpolator4",
+            "scenario_interpolator5",
+            "scenario_interpolator6",
+            "scenario_interpolator7",
+            "scenario_interpolator8",
+            "scenario_interpolator9"
+          ]
+        }
+      ]
+    },
+    "object_variant": {
+      "builder": "object_variant",
+      "palettes": {
+        "scenery": "scenery palette",
+        "bipeds": "biped palette",
+        "vehicles": "vehicle palette",
+        "weapons": "weapon palette",
+        "machines": "machine palette",
+        "terminals": "terminal palette",
+        "controls": "control palette",
+        "dispensers": "dispenser palette",
+        "giants": "giant palette",
+        "spawners": "spawner palette",
+        "crates": "crate palette"
+      },
+      "type": "type",
+      "palette_ref": "name",
+      "model": "model",
+      "variants": {
+        "block": "variants",
+        "label": "name"
+      }
+    },
+    "ordnance_selection": {
+      "builder": "names",
+      "source": [
+        {
+          "tag": "globals\\ordnance_list",
+          "group": "ggol"
+        }
+      ],
+      "block": "ordnances",
+      "label": "ordnance name",
+      "sort": "ignore_case"
+    },
+    "player_item_selection": {
+      "builder": "choice",
+      "sort": "ignore_case",
+      "cases": [
+        {
+          "inside": "items",
+          "when": {
+            "field": "item_category",
+            "equals": [
+              "weapon"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "global multiplayer object type list"
+            }
+          ],
+          "block": "weapons",
+          "label_index": {
+            "field": "object type",
+            "block": "object types",
+            "label": "name"
+          }
+        },
+        {
+          "inside": "items",
+          "when": {
+            "field": "item_category",
+            "equals": [
+              "grenade"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "global multiplayer object type list"
+            }
+          ],
+          "block": "grenades",
+          "label_index": {
+            "field": "object type",
+            "block": "object types",
+            "label": "name"
+          }
+        },
+        {
+          "inside": "items",
+          "when": {
+            "field": "item_category",
+            "equals": [
+              "equipment"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "global multiplayer object type list"
+            }
+          ],
+          "block": "equipment",
+          "label_index": {
+            "field": "object type",
+            "block": "object types",
+            "label": "name"
+          }
+        },
+        {
+          "inside": "items",
+          "when": {
+            "field": "item_category",
+            "equals": [
+              "vehicle"
+            ]
+          },
+          "source": [
+            "globals",
+            {
+              "ref": "global multiplayer object type list"
+            }
+          ],
+          "block": "vehicles",
+          "label_index": {
+            "field": "object type",
+            "block": "object types",
+            "label": "name"
+          }
+        }
+      ]
+    },
+    "portrait_pose_selection": {
+      "builder": "names",
+      "source": [
+        {
+          "tag": "ui\\portrait_poses",
+          "group": "ppod"
+        }
+      ],
+      "block": "portrait poses",
+      "label": "pose name",
+      "sort": "ignore_case"
+    },
+    "style_dropshadow_selection": {
+      "builder": "names",
+      "block": "dropshadows",
+      "label": "dropshadow name",
+      "sort": "ignore_case"
+    },
+    "style_gradient_selection": {
+      "builder": "names",
+      "block": "gradients",
+      "label": "gradient name",
+      "sort": "ignore_case"
+    },
+    "style_outer_glow_selection": {
+      "builder": "names",
+      "block": "outer glows",
+      "label": "outer glow name",
+      "sort": "ignore_case"
+    },
+    "supply_depot_selection": {
+      "builder": "names",
+      "source": [
+        "globals",
+        {
+          "ref": "interface tags[0]/mainmenu ui globals"
+        },
+        {
+          "ref": "purchase globals"
+        }
+      ],
+      "block": "purchasable appearance items",
+      "label": "purchase id",
+      "sort": "ignore_case"
+    },
+    "visor_color_selection": {
+      "builder": "names",
+      "source": [
+        "globals"
+      ],
+      "block": "visor colors",
+      "label": "name",
+      "sort": "ignore_case"
+    }
   }
 }
