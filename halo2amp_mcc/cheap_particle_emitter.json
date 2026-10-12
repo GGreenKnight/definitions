@@ -67,7 +67,8 @@
         {
           "type": "string_id",
           "name": "type 0",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cheap_particle_type"
         },
         {
           "type": "real",
@@ -76,7 +77,8 @@
         {
           "type": "string_id",
           "name": "type 1",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cheap_particle_type"
         },
         {
           "type": "real",
@@ -85,7 +87,8 @@
         {
           "type": "string_id",
           "name": "type 2",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cheap_particle_type"
         },
         {
           "type": "real",
@@ -94,7 +97,8 @@
         {
           "type": "string_id",
           "name": "type 3",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cheap_particle_type"
         },
         {
           "type": "real",

@@ -3677,12 +3677,14 @@
     {
      "type": "string_id",
      "name": "new material name",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "material"
     },
     {
      "type": "string_id",
      "name": "new general material name",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "material"
     },
     {
      "type": "useless_pad",

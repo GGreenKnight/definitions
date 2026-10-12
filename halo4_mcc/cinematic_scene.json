@@ -201,7 +201,8 @@
         {
           "type": "string_id",
           "name": "variant name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cinematic_object_variant"
         },
         {
           "type": "long_flags",

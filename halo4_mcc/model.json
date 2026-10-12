@@ -899,7 +899,8 @@
         {
           "type": "string_id",
           "name": "shield material name#set this to make this damage section a shield",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "explanation",
@@ -1755,7 +1756,8 @@
         {
           "type": "string_id",
           "name": "global material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -1945,7 +1947,8 @@
         {
           "type": "string_id",
           "name": "global shield material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "real",

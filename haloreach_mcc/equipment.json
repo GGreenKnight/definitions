@@ -1136,7 +1136,8 @@
         {
           "type": "string_id",
           "name": "invincibility material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -1976,12 +1977,14 @@
         {
           "type": "string_id",
           "name": "attached effect primary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function_no_own"
         },
         {
           "type": "string_id",
           "name": "attached effect secondary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function_no_own"
         },
         {
           "type": "tag_reference",

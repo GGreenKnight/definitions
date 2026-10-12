@@ -5009,7 +5009,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "short_enum",
@@ -5073,7 +5074,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "short_enum",
@@ -5240,7 +5242,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "short_enum",

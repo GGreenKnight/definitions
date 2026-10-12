@@ -1591,12 +1591,14 @@
         {
           "type": "string_id",
           "name": "alert mode effect primary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",
           "name": "alert mode effect secondary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "block",

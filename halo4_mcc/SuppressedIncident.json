@@ -45,7 +45,8 @@
         {
           "type": "string_id",
           "name": "incident name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "incident"
         },
         {
           "type": "byte_flags",

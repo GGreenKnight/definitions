@@ -132,7 +132,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -289,7 +290,8 @@
     {
      "type": "string_id",
      "name": "vocalization name",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "word_flags",
@@ -326,7 +328,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -487,7 +490,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -648,7 +652,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -809,7 +814,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -970,7 +976,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1131,7 +1138,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1276,7 +1284,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1407,7 +1416,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1538,7 +1548,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1669,7 +1680,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1800,7 +1812,8 @@
     {
      "type": "string_id",
      "name": "parent vocalization",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_integer",
@@ -1936,7 +1949,8 @@
     {
      "type": "string_id",
      "name": "vocalization name",
-     "group_tag": "sted"
+     "group_tag": "sted",
+     "string_editor": "ai_dialogue_vocalization"
     },
     {
      "type": "short_enum",

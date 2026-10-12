@@ -830,12 +830,14 @@
         {
           "type": "string_id",
           "name": "node a material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node a",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "node b material#if you don't fill this out we will pluck the material from the first primitive, of the first rigid body attached to node b, if node b is none we use whatever material a has",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "terminator",
@@ -1336,7 +1338,8 @@
         {
           "type": "string_id",
           "name": "global material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_block_index",

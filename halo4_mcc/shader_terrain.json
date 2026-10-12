@@ -27,22 +27,26 @@
         {
           "type": "string_id",
           "name": "material name 0#defines global material type for channel 0 of the terrain shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 1#defines global material type for channel 1 of the terrain shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 2#defines global material type for channel 2 of the terrain shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 3#defines global material type for channel 3 of the terrain shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "struct",

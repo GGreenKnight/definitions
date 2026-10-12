@@ -49,7 +49,8 @@
         {
           "type": "string_id",
           "name": "challenge to increment^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "challenge"
         },
         {
           "type": "struct",
@@ -142,7 +143,8 @@
         {
           "type": "string_id",
           "name": "medal name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "game_medal"
         },
         {
           "type": "terminator",

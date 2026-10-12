@@ -344,7 +344,8 @@
         {
           "type": "string_id",
           "name": "name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "generic_ui_sounds"
         },
         {
           "type": "tag_reference",

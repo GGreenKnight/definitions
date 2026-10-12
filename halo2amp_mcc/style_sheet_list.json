@@ -324,17 +324,20 @@
         {
           "type": "string_id",
           "name": "gradient name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "style_gradient_selection"
         },
         {
           "type": "string_id",
           "name": "dropshadow name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "style_dropshadow_selection"
         },
         {
           "type": "string_id",
           "name": "outer glow name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "style_outer_glow_selection"
         },
         {
           "type": "terminator",

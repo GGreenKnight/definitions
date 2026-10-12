@@ -81,47 +81,56 @@
         {
           "type": "string_id",
           "name": "unlocked emblem fg",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked emblem bg",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked helmet",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked chest",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked left shoulder",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked right shoulder",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked arms",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked legs",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "string_id",
           "name": "unlocked visor",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "supply_depot_selection"
         },
         {
           "type": "block",

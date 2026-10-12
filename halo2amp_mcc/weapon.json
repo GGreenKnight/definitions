@@ -239,12 +239,14 @@
         {
           "type": "string_id",
           "name": "heat loss#function values sets the current heat loss per second",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",
           "name": "heat loss venting#function value sets the heat loss per second while weapon is being vented",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "real",
@@ -277,7 +279,8 @@
         {
           "type": "string_id",
           "name": "overheated heat loss#function values sets the heat loss per second when weapon is overheated",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "tag_reference",
@@ -1924,7 +1927,8 @@
         {
           "type": "string_id",
           "name": "heat generated per round function&heat generated per round#function value sets the amount of heat to add to the weapon each tick the barrel is firing",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "real_fraction",
@@ -2024,7 +2028,8 @@
         {
           "type": "string_id",
           "name": "rate of fire acceleration#function value sets the current rate of fire when the barrel is firing",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "real",
@@ -2033,7 +2038,8 @@
         {
           "type": "string_id",
           "name": "rate of fire deceleration#function value sets idle time required to return to normal rate of fire",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "real",
@@ -2792,7 +2798,8 @@
         {
           "type": "string_id",
           "name": "Function#Function to drive the RTPC",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",
@@ -2836,7 +2843,8 @@
         {
           "type": "string_id",
           "name": "Function#Function to trigger the sweetener",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "tag_reference",

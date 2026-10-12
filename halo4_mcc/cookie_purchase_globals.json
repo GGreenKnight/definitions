@@ -632,7 +632,8 @@
         {
           "type": "string_id",
           "name": "commendation id^#This must match one of the commendation names.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "commendation_selection"
         },
         {
           "type": "char_enum",
@@ -872,7 +873,8 @@
         {
           "type": "string_id",
           "name": "object_name^#This must match one of the global objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "player_item_selection"
         },
         {
           "type": "byte_integer",
@@ -899,7 +901,8 @@
         {
           "type": "string_id",
           "name": "object_name^#This must match an item in the custom app globals.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "app_selection"
         },
         {
           "type": "terminator",
@@ -1121,7 +1124,8 @@
         {
           "type": "string_id",
           "name": "ordnance_name^#This must match one of the global ordnance objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ordnance_selection"
         },
         {
           "type": "terminator",
@@ -1244,7 +1248,8 @@
         {
           "type": "string_id",
           "name": "model_customization_selection_name^#This must match one of the selections in the model customization globals (within the selected region).",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "item_permutation_selection"
         },
         {
           "type": "terminator",
@@ -1272,7 +1277,8 @@
         {
           "type": "string_id",
           "name": "non_model_customization_selection_name^#This must match one of the selections in the model customization globals (within the selected region).",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "item_permutation_selection"
         },
         {
           "type": "terminator",
@@ -1290,7 +1296,8 @@
         {
           "type": "string_id",
           "name": "visor color name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "visor_color_selection"
         },
         {
           "type": "terminator",
@@ -1325,7 +1332,8 @@
         {
           "type": "string_id",
           "name": "pose name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "portrait_pose_selection"
         },
         {
           "type": "terminator",

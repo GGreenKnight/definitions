@@ -217,7 +217,8 @@
         {
           "type": "string_id",
           "name": "incident name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "incident"
         },
         {
           "type": "byte_flags",
@@ -245,7 +246,8 @@
         {
           "type": "string_id",
           "name": "base incident^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "incident"
         },
         {
           "type": "real",
@@ -414,7 +416,8 @@
         {
           "type": "string_id",
           "name": "incident name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "incident"
         },
         {
           "type": "terminator",
@@ -453,17 +456,20 @@
         {
           "type": "string_id",
           "name": "game engine event",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "game_engine_event"
         },
         {
           "type": "string_id",
           "name": "medal",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "game_medal"
         },
         {
           "type": "string_id",
           "name": "achievement",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "game_achievement"
         },
         {
           "type": "string_id",

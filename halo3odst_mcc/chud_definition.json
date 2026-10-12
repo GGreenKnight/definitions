@@ -770,7 +770,8 @@
         {
           "type": "string_id",
           "name": "input string",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "generic_chud"
         },
         {
           "type": "terminator",

@@ -391,7 +391,8 @@
         {
           "type": "string_id",
           "name": "model_customization_selection_name^#This must match one of the selections in the model customization globals (within the selected region).",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "item_permutation_selection"
         },
         {
           "type": "terminator",
@@ -419,7 +420,8 @@
         {
           "type": "string_id",
           "name": "non_model_customization_selection_name^#This must match one of the selections in the model customization globals (within the selected region).",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "item_permutation_selection"
         },
         {
           "type": "terminator",
@@ -437,7 +439,8 @@
         {
           "type": "string_id",
           "name": "visor color name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "visor_color_selection"
         },
         {
           "type": "terminator",
@@ -472,7 +475,8 @@
         {
           "type": "string_id",
           "name": "voice name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "voice_selection"
         },
         {
           "type": "terminator",

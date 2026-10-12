@@ -5731,7 +5731,8 @@
         {
           "type": "string_id",
           "name": "template",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_squad_template"
         },
         {
           "type": "long_integer",
@@ -6736,7 +6737,8 @@
         {
           "type": "string_id",
           "name": "formation",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_formations"
         },
         {
           "type": "real",
@@ -6759,7 +6761,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "string_id",
@@ -6845,7 +6848,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "short_enum",
@@ -7023,7 +7027,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "string_id",
@@ -7268,7 +7273,8 @@
         {
           "type": "string_id",
           "name": "location name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "location_name"
         },
         {
           "type": "struct",
@@ -7554,7 +7560,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "string_id",
@@ -10129,7 +10136,8 @@
         {
           "type": "string_id",
           "name": "location name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "location_name"
         },
         {
           "type": "terminator",
@@ -11090,7 +11098,8 @@
         {
           "type": "string_id",
           "name": "template",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_cue_template"
         },
         {
           "type": "long_block_index",
@@ -15070,7 +15079,8 @@
         {
           "type": "string_id",
           "name": "template",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_performance_template"
         },
         {
           "type": "long_integer",

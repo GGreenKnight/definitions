@@ -83,7 +83,8 @@
         {
           "type": "string_id",
           "name": "shield function#shield is on when this function is greater then 0.5f, off otherwise.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "terminator",

@@ -138,7 +138,8 @@
         {
           "type": "string_id",
           "name": "app name#Which player-stats modifier should be activated when this item is equipped",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "app_selection"
         },
         {
           "type": "block",
@@ -161,12 +162,14 @@
         {
           "type": "string_id",
           "name": "region name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "model_region_selection"
         },
         {
           "type": "string_id",
           "name": "permutation name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "model_permutation_selection"
         },
         {
           "type": "byte_flags",

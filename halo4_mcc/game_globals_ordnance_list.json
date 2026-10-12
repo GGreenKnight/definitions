@@ -168,12 +168,14 @@
         {
           "type": "string_id",
           "name": "from^#This must match one of the global ordnance objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ordnance_selection"
         },
         {
           "type": "string_id",
           "name": "to^#This must match one of the global ordnance objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ordnance_selection"
         },
         {
           "type": "terminator",

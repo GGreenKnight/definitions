@@ -59,7 +59,8 @@
         {
           "type": "string_id",
           "name": "ordnance_name^#This must match one of the global ordnance objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ordnance_selection"
         },
         {
           "type": "terminator",
@@ -95,7 +96,8 @@
         {
           "type": "string",
           "name": "ordnance name^#This must match one of the global ordnance objects.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ordnance_selection"
         },
         {
           "type": "real",

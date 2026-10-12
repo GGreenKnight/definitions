@@ -534,7 +534,8 @@
         {
           "type": "string_id",
           "name": "import name#if you leave this field blank then you can set this function's input value with the hs_function object_set_function_variable",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function_no_own"
         },
         {
           "type": "string_id",
@@ -543,12 +544,14 @@
         {
           "type": "string_id",
           "name": "turn off with#if the specified function is off, so is this function",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function_no_own"
         },
         {
           "type": "string_id",
           "name": "ranged interpolation name#if you have the ranged button checked",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function_no_own"
         },
         {
           "type": "real",
@@ -726,7 +729,8 @@
         {
           "type": "string_id",
           "name": "switch function name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",
@@ -779,7 +783,8 @@
         {
           "type": "string_id",
           "name": "function name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "terminator",
@@ -853,12 +858,14 @@
         {
           "type": "string_id",
           "name": "primary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",
           "name": "secondary scale",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "terminator",
@@ -917,7 +924,8 @@
         {
           "type": "string_id",
           "name": "material^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "struct",

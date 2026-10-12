@@ -171,12 +171,14 @@
         {
           "type": "string_id",
           "name": "living material name#collision material used when character is alive",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "dead material name#collision material used when character is dead",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "useless_pad",
@@ -344,7 +346,8 @@
         {
           "type": "string_id",
           "name": "global material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_block_index",

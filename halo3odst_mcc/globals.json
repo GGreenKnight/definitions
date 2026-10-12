@@ -353,7 +353,8 @@
         {
           "type": "string_id",
           "name": "global water material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -2566,7 +2567,8 @@
         {
           "type": "string_id",
           "name": "footsteps in rain material name#When it's raining, use this as the footstep material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -2905,7 +2907,8 @@
         {
           "type": "string_id",
           "name": "underwater material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "explanation",
@@ -2915,7 +2918,8 @@
         {
           "type": "string_id",
           "name": "proxy material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",

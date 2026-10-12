@@ -27,42 +27,50 @@
         {
           "type": "string_id",
           "name": "material name 0#defines global material type for channel 0 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 1#defines global material type for channel 1 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 2#defines global material type for channel 2 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 3#defines global material type for channel 3 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 4#defines global material type for channel 4 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 5#defines global material type for channel 5 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 6#defines global material type for channel 6 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "material name 7#defines global material type for channel 7 of the mux shader",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "struct",

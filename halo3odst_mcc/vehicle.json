@@ -1895,7 +1895,8 @@
         {
           "type": "string_id",
           "name": "collision global material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",

@@ -27,7 +27,8 @@
         {
           "type": "string_id",
           "name": "material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "char_enum",

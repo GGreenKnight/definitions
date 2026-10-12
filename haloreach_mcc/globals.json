@@ -577,12 +577,14 @@
         {
           "type": "string_id",
           "name": "global water material#the default value for what material type water is",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "string_id",
           "name": "global air material#the default value for what material type air is",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -3266,7 +3268,8 @@
         {
           "type": "string_id",
           "name": "wet material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -3611,7 +3614,8 @@
         {
           "type": "string_id",
           "name": "underwater material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "explanation",
@@ -3621,7 +3625,8 @@
         {
           "type": "string_id",
           "name": "proxy material",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -3856,7 +3861,8 @@
         {
           "type": "string_id",
           "name": "incident name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "incident"
         },
         {
           "type": "real",

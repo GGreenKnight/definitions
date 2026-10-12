@@ -1469,7 +1469,8 @@
         {
           "type": "string_id",
           "name": "template",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_squad_template"
         },
         {
           "type": "long_integer",
@@ -1586,7 +1587,8 @@
         {
           "type": "string_id",
           "name": "formation",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_formations"
         },
         {
           "type": "real",
@@ -1609,7 +1611,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "custom_short_block_index",
@@ -1658,7 +1661,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "short_enum",
@@ -1859,7 +1863,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "custom_short_block_index",
@@ -2733,7 +2738,8 @@
         {
           "type": "string_id",
           "name": "activity name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "ai_activities"
         },
         {
           "type": "custom_short_block_index",

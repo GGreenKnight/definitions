@@ -139,7 +139,8 @@
         {
           "type": "string_id",
           "name": "name^",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "commendation"
         },
         {
           "type": "terminator",

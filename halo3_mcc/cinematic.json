@@ -469,7 +469,8 @@
         {
           "type": "string_id",
           "name": "variant name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "cinematic_object_variant"
         },
         {
           "type": "tag_reference",
@@ -540,7 +541,8 @@
         {
           "type": "string_id",
           "name": "object marker name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_marker"
         },
         {
           "type": "string",

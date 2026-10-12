@@ -1112,7 +1112,8 @@
         {
           "type": "string_id",
           "name": "location name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "location_name"
         },
         {
           "type": "struct",

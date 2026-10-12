@@ -595,7 +595,8 @@
         {
           "type": "string_id",
           "name": "material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -724,7 +725,8 @@
         {
           "type": "string_id",
           "name": "material name",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "material"
         },
         {
           "type": "short_integer",
@@ -944,7 +946,8 @@
         {
           "type": "string_id",
           "name": "Function#Function to drive the RTPC",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "object_function"
         },
         {
           "type": "string_id",

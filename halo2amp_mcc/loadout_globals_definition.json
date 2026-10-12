@@ -83,12 +83,14 @@
         {
           "type": "string_id",
           "name": "app1#name of an element from custom_app_globals/custom_apps.  Can be left empty.",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "app_selection"
         },
         {
           "type": "string_id",
           "name": "app2#see above",
-          "group_tag": "sted"
+          "group_tag": "sted",
+          "string_editor": "app_selection"
         },
         {
           "type": "string_id",
