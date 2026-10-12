@@ -819,7 +819,8 @@
         {
           "type": "string_id",
           "name": "variant name",
-          "group_tag": "vari"
+          "group_tag": "vari",
+          "string_editor": "object_variant"
         },
         {
           "type": "long_flags",
