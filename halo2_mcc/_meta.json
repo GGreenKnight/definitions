@@ -307,7 +307,8 @@
    ],
    "block": "vocalizations",
    "label": "vocalization",
-   "recursive": "children"
+   "recursive": "children",
+   "self_first": true
   },
   "object_function": {
    "caption": "Object Function",
