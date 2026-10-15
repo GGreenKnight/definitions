@@ -142,5 +142,16 @@
     "skel": "skeleton_model",
     "info": "tag_import_information",
     "want": "tag_dependency_list"
+  },
+  "string_text": {
+    "source": "no tool or game binary read: only && and &U+XXXX",
+    "glyphs": true,
+    "glyph_match": "longest",
+    "glyph_names": {},
+    "keywords": [],
+    "keyword_match": "exact",
+    "escapes": "none",
+    "tags": null,
+    "cui": null
   }
 }

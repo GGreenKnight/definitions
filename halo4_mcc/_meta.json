@@ -2580,5 +2580,102 @@
         }
       ]
     }
+  },
+  "string_text": {
+    "source": "halo4_tag_test.exe (no tool binary: glyph names unknown)",
+    "glyphs": true,
+    "glyph_match": "longest",
+    "glyph_names": {},
+    "keywords": [
+      "cause_object",
+      "effect_object",
+      "cause_player",
+      "effect_player",
+      "cause_team",
+      "effect_team",
+      "winning_team",
+      "winning_player",
+      "current_round",
+      "total_rounds",
+      "cause_team_score",
+      "cause_team_opponent_score",
+      "local_player_score",
+      "local_team_score",
+      "score_to_win",
+      "local_spawn_time",
+      "local_lives_remaining",
+      "switch_side_time",
+      "custom_value"
+    ],
+    "keyword_match": "exact",
+    "escapes": "color",
+    "tags": {
+      "fonts": [
+        "terminal",
+        "baksheesh_15_font",
+        "baksheesh_16_font",
+        "baksheesh_17_font",
+        "baksheesh_18_font",
+        "baksheesh_20_font",
+        "baksheesh_21_font",
+        "baksheesh_22_font",
+        "baksheesh_28_font",
+        "baksheesh_36_font",
+        "baksheesh_38_font",
+        "baksheesh_bold_16_font",
+        "baksheesh_bold_20_font",
+        "baksheesh_bold_21_font",
+        "baksheesh_bold_23_font",
+        "baksheesh_bold_24_font",
+        "baksheesh_thin_36",
+        "baksheesh_thin_42",
+        "arame_regular_16",
+        "arame_regular_18",
+        "arame_regular_23",
+        "arame_stencil_16",
+        "arame_stencil_18",
+        "arame_stencil_23",
+        "arame_thin_14",
+        "arame_thin_16",
+        "arame_thin_18",
+        "arame_thin_23",
+        "arame_extra_01",
+        "arame_extra_02",
+        "arame_extra_03"
+      ],
+      "global": [
+        "build_number",
+        "version_number",
+        "controller0_gamertag",
+        "controller1_gamertag",
+        "controller2_gamertag",
+        "controller3_gamertag",
+        "day_of_week",
+        "day",
+        "month_name",
+        "month",
+        "year",
+        "time_hms",
+        "time_hm",
+        "uui_day_of_week",
+        "uui_month_name"
+      ],
+      "save": [
+        "map_variant_name",
+        "game_variant_name",
+        "campaign_map_name",
+        "difficulty"
+      ],
+      "date": [
+        "loc_day",
+        "loc_month",
+        "loc_year"
+      ],
+      "screens": {},
+      "bad_tag": "fails_string"
+    },
+    "cui": {
+      "offset": true
+    }
   }
 }

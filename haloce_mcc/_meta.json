@@ -120,5 +120,16 @@
     ]
    }
   }
+ },
+ "string_text": {
+  "source": "tool.exe unicode-strings does no text processing; the unicode string drawer reads |n only",
+  "glyphs": false,
+  "glyph_match": "longest",
+  "glyph_names": {},
+  "keywords": [],
+  "keyword_match": "exact",
+  "escapes": "line_break",
+  "tags": null,
+  "cui": null
  }
 }
