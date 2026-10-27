@@ -405,6 +405,16 @@
     "crates": "crate palette"
   },
   "string_editors": {
+    "hud_message": {
+      "caption": "HUD Messages",
+      "builder": "string_list",
+      "source": [
+        "globals",
+        { "ref": "interface tags[0]/chud globals" },
+        { "block": "skins", "ref": "chud text" }
+      ],
+      "language": "English"
+    },
     "material": {
       "caption": "Choose Material",
       "builder": "names",
