@@ -1,16 +1,4 @@
 {
-  "string_editors": {
-    "hud_message": {
-      "caption": "HUD Messages",
-      "builder": "string_list",
-      "source": [
-        "globals",
-        { "ref": "interface tags[0]/chud globals" },
-        { "block": "skins", "ref": "chud text" }
-      ],
-      "language": "English"
-    }
-  },
   "game": "halocampaignevolved",
   "dumped_from": "HaloSimulation_tag_release.dll",
   "dumped_at": "2026-07-23",
@@ -165,5 +153,17 @@
     "escapes": "none",
     "tags": null,
     "cui": null
+  },
+  "string_editors": {
+    "hud_message": {
+      "caption": "HUD Messages",
+      "builder": "string_list",
+      "source": [
+        "globals",
+        { "ref": "interface tags[0]/chud globals" },
+        { "block": "skins", "ref": "chud text" }
+      ],
+      "language": "English"
+    }
   }
 }
