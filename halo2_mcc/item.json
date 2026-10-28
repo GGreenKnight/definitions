@@ -61,43 +61,53 @@
     },
     {
      "type": "string_id",
-     "name": "pickup message"
+     "name": "pickup message",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "swap message"
+     "name": "swap message",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "pickup or dual msg"
+     "name": "pickup or dual msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "swap or dual msg"
+     "name": "swap or dual msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "dual-only msg"
+     "name": "dual-only msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "picked up msg"
+     "name": "picked up msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "singluar quantity msg"
+     "name": "singluar quantity msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "plural quantity msg"
+     "name": "plural quantity msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "switch-to msg"
+     "name": "switch-to msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "string_id",
-     "name": "switch-to from ai msg"
+     "name": "switch-to from ai msg",
+     "string_editor": "hud_message"
     },
     {
      "type": "useless_pad",
