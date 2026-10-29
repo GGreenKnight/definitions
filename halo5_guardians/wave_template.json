@@ -1,122 +1,37 @@
 {
   "name": "wave_template",
   "tag": "wave",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 7,
+  "parent_tag": "aTag",
+  "block": "wave_template_block",
   "blocks": {
-    "wave_squad_specification_struct_3": {
-      "max_count": 16,
-      "struct": "wave_squad_specification_struct_3"
-    },
-    "root": {
+    "wave_template_block": {
       "max_count": 1,
-      "struct": "wave_template_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "wave_template_block_struct"
+    },
+    "wave_squad_specification_struct": {
+      "max_count": 16,
+      "max_count_string": "k_max_squad_specifications_per_wave",
+      "struct": "wave_squad_specification_struct_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "spawn_conditions_4": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "spawn_conditions_4_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "wave_squad_specification_struct_3": {
-      "guid": "55990120454427806feb4591a3a0a6bf",
-      "size": 44,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "squad template^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "struct",
-          "name": "spawn conditions",
-          "definition": "spawn_conditions_4"
-        },
-        {
-          "type": "short_integer",
-          "name": "weight#The relative weight given to this squad spawning"
-        },
-        {
-          "type": "custom",
-          "name": "std::min/std::max SPAWN COUNTS"
-        },
-        {
-          "type": "char_integer",
-          "name": "min spawn#Spawn AT LEAST this number of squads. Value of 0 means &quot;no minimum&quot;"
-        },
-        {
-          "type": "char_integer",
-          "name": "max spawn#Spawn NO MORE THAN this number of squads. Value of 0 means &quot;no maximum&quot;"
-        },
-        {
-          "type": "long_enum",
-          "name": "placement filter#Filter where this squad specification can spawn by matching this value with the values in squad definitions in the scenario",
-          "definition": "wave_squad_specification_struct_3_options_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "wave_template_struct_definition_1": {
-      "guid": "19b96e157598b95731a9983430014627",
+    "wave_template_block_struct": {
+      "guid": "94422eb8f241e471d4c7e49cb7766b91",
       "size": 48,
+      "size_string": "(sizeof(s_ai_wave_template_definition) - Tag::SizeInfo<s_ai_wave_template_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "block",
           "name": "squad specifications",
-          "definition": "wave_squad_specification_struct_3"
+          "definition": "wave_squad_specification_struct"
         },
         {
           "type": "pad",
@@ -124,13 +39,108 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447cc360"
+    },
+    "wave_squad_specification_struct_struct": {
+      "guid": "20019955444580276feb4591a3a0a6bf",
+      "size": 44,
+      "size_string": "sizeof(s_ai_wave_squad_definition)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "squad template^",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "sqtm"
+            ]
+          }
+        },
+        {
+          "type": "struct",
+          "name": "spawn conditions",
+          "definition": "ai_spawn_conditions_struct"
+        },
+        {
+          "type": "short_integer",
+          "name": "weight#The relative weight given to this squad spawning"
+        },
+        {
+          "type": "explanation",
+          "name": "std::min/std::max SPAWN COUNTS",
+          "definition": "When spawning a number of squads from this wave template, try and spawn at least the minimum number, and at most the maximum number. Once these min/max bounds have been met, probabilistic distribution will continue."
+        },
+        {
+          "type": "char_integer",
+          "name": "min spawn#Spawn AT LEAST this number of squads. Value of 0 means \"no minimum\""
+        },
+        {
+          "type": "char_integer",
+          "name": "max spawn#Spawn NO MORE THAN this number of squads. Value of 0 means \"no maximum\""
+        },
+        {
+          "type": "long_enum",
+          "name": "placement filter#Filter where this squad specification can spawn by matching this value with the values in squad definitions in the scenario",
+          "definition": "wave_placement_filter_enum"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447cc240"
+    },
+    "ai_spawn_conditions_struct": {
+      "guid": "6af65bf915447646112fc5b6cf15deef",
+      "size": 4,
+      "size_string": "sizeof(s_ai_spawn_conditions)",
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "global_campaign_difficulty_enum"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447bbeb0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "spawn_conditions_4_options_0": {
+    "global_campaign_difficulty_enum": {
       "options": [
         "easy",
         "normal",
@@ -138,7 +148,7 @@
         "legendary"
       ]
     },
-    "wave_squad_specification_struct_3_options_6": {
+    "wave_placement_filter_enum": {
       "options": [
         "None",
         "Heavy Infantry",
@@ -151,5 +161,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

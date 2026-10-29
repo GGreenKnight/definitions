@@ -2,464 +2,72 @@
   "name": "GroundPoundDefinitionTag",
   "tag": "sagp",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "GroundPoundDefinitionTag_block",
   "blocks": {
-    "root": {
+    "GroundPoundDefinitionTag_block": {
       "max_count": 1,
-      "struct": "GroundPoundDefinitionTag_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "GroundPoundDefinitionTag_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "GroundPoundDefinitionTag_block_struct": {
+      "guid": "6f275c28324b54b2af907b8e75e02e42",
+      "size": 1128,
+      "size_string": "(sizeof(GroundPoundDefinitionTag) - Tag::SizeInfo<GroundPoundDefinitionTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "common_ability_parameters_4": {
-      "guid": "a0b1eff4483cd954d47df188cdebb4f0",
-      "size": 44,
-      "fields": [
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "common_ability_parameters_4_options_0"
-        },
-        {
-          "type": "real_fraction",
-          "name": "activation energy cost#amount of energy required to activate the ability"
-        },
-        {
-          "type": "real",
-          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
-        },
-        {
-          "type": "tag_reference",
-          "name": "activation effect#effects triggered when player activates ability",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "common_ability_parameters_6": {
-      "guid": "a0b1eff4483cd954d47df188cdebb4f0",
-      "size": 44,
-      "fields": [
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "common_ability_parameters_6_options_0"
-        },
-        {
-          "type": "real_fraction",
-          "name": "activation energy cost#amount of energy required to activate the ability"
-        },
-        {
-          "type": "real",
-          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
-        },
-        {
-          "type": "tag_reference",
-          "name": "activation effect#effects triggered when player activates ability",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "malleable_time_limit__seconds_Max_time_stabilizer_can_remain_active_for_a_single_burst__Set_to_0_0_if_you_want_infinite__Ensure_that_the_activation_effect_can_persist_for_this_duration__7": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "malleable_time_limit__seconds_Max_time_stabilizer_can_remain_active_for_a_single_burst__Set_to_0_0_if_you_want_infinite__Ensure_that_the_activation_effect_can_persist_for_this_duration__7_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "malleable_time_scale_Time_scale_applied_to_velocity_after_stall_duration_8": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "malleable_time_scale_Time_scale_applied_to_velocity_after_stall_duration_8_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
+          "type": "struct",
           "name": "data",
-          "definition": "function_definition_data"
+          "definition": "GroundPoundDefinitionBlock_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c5260"
     },
-    "vertical_speed_boost_at_exit_wu_s_adds_this_on_to_the_player_vertical_velocity__based_on_normalized_time_spent_stabilizing_9": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_10"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "stabilizer_definition_5": {
-      "guid": "6e6506a645d56d235d7efa8e5babfafb",
-      "size": 168,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "common ability parameters",
-          "definition": "common_ability_parameters_6"
-        },
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "stabilizer_definition_5_options_1"
-        },
-        {
-          "type": "real",
-          "name": "minimum height above floor#set to negative value to disable as 0 is used in the tag post-process to set a default"
-        },
-        {
-          "type": "real",
-          "name": "activation deceleration:[0.01,+inf] wu/s per sec#Rate at which the player decelerates after activating the stabilizer"
-        },
-        {
-          "type": "real",
-          "name": "stall duration:[0.01,+inf] seconds#Duration that the player remains completely stalled in mid air before starting to fall again"
-        },
-        {
-          "type": "real",
-          "name": "time limit:seconds#Max time Stabilizer can remain active for a single burst.  Set to 0.0 if you want infinite."
-        },
-        {
-          "type": "custom",
-          "name": "malleable time limit::seconds#Max time stabilizer can remain active for a single burst. Set to 0.0 if you want infinite. Ensure that the activation effect can persist for this duration."
-        },
-        {
-          "type": "struct",
-          "name": "malleable time limit::seconds#Max time stabilizer can remain active for a single burst. Set to 0.0 if you want infinite. Ensure that the activation effect can persist for this duration.",
-          "definition": "malleable_time_limit__seconds_Max_time_stabilizer_can_remain_active_for_a_single_burst__Set_to_0_0_if_you_want_infinite__Ensure_that_the_activation_effect_can_persist_for_this_duration__7"
-        },
-        {
-          "type": "real",
-          "name": "cooldown:seconds#How much time must pass after deactivation before you can activate again."
-        },
-        {
-          "type": "real",
-          "name": "time scale#Time scale applied to velocity after stall duration"
-        },
-        {
-          "type": "custom",
-          "name": "malleable time scale#Time scale applied to velocity after stall duration"
-        },
-        {
-          "type": "struct",
-          "name": "malleable time scale#Time scale applied to velocity after stall duration",
-          "definition": "malleable_time_scale_Time_scale_applied_to_velocity_after_stall_duration_8"
-        },
-        {
-          "type": "real",
-          "name": "max horizontal speed:wu/s [0,+inf]#max horizontal speed while stabilizer is active"
-        },
-        {
-          "type": "struct",
-          "name": "vertical speed boost at exit:wu/s#adds this on to the player vertical velocity, based on normalized time spent stabilizing",
-          "definition": "vertical_speed_boost_at_exit_wu_s_adds_this_on_to_the_player_vertical_velocity__based_on_normalized_time_spent_stabilizing_9"
-        },
-        {
-          "type": "tag_reference",
-          "name": "rumble",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "charge_up_min_time_scale_scales_the_charge_up_min_time_11": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "charge_up_min_time_scale_scales_the_charge_up_min_time_11_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "charge_up_auto_release_time_scale_scales_the_charge_up_auto_release_time_12": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "charge_up_auto_release_time_scale_scales_the_charge_up_auto_release_time_12_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "pound_fall_speed__malleable__wu_s_Speed_at_which_the_character_moves_during_the_Ground_Pound_13": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "pound_fall_speed__malleable__wu_s_Speed_at_which_the_character_moves_during_the_Ground_Pound_13_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "knockback_scalar_scales_knockback__instantaneous_acceleration__effects_caused_by_ground_pound_14": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "knockback_scalar_scales_knockback__instantaneous_acceleration__effects_caused_by_ground_pound_14_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "pound_ground_damage_scalar_scales_damage_caused_by_pound_object_and_pound_ground_damage_effects_15": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "pound_ground_damage_scalar_scales_damage_caused_by_pound_object_and_pound_ground_damage_effects_15_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "pound_ground_aoe_radius_scalar_scales_the_aoe_radius_of_the_pound_ground_damage_effect_16": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "pound_ground_aoe_radius_scalar_scales_the_aoe_radius_of_the_pound_ground_damage_effect_16_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "FOV_delta_function_charge_up_17": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "data_3": {
-      "guid": "7adc9e704eae8162991e6e94c1b25cc9",
+    "GroundPoundDefinitionBlock_struct": {
+      "guid": "709edc7aae4e6281991e6e94c1b25cc9",
       "size": 1112,
+      "size_string": "sizeof(GroundPoundDefinition)",
       "fields": [
         {
           "type": "struct",
           "name": "common ability parameters",
-          "definition": "common_ability_parameters_4"
+          "definition": "SpartanAbilityCommonParametersStruct"
         },
         {
           "type": "long_flags",
           "name": "ground pound flags",
-          "definition": "data_3_options_1"
+          "definition": "GroundPoundDefinitionTagFlags"
         },
         {
           "type": "real",
           "name": "minimum height above floor#set to negative value to disable as 0 is used in the tag post-process to set a default"
         },
         {
-          "type": "custom",
-          "name": "Stabilization/Charge up"
+          "type": "explanation",
+          "name": "Stabilization/Charge up",
+          "definition": "Parameters used for the charge up phase. Note that some fields are not used (energy related ones and the cooldown timer)"
         },
         {
           "type": "struct",
           "name": "stabilizer definition",
-          "definition": "stabilizer_definition_5"
+          "definition": "StabilizerDefinitionBlock_struct"
         },
         {
-          "type": "custom",
-          "name": "Charge Up Settings"
+          "type": "explanation",
+          "name": "Charge Up Settings",
+          "definition": ""
         },
         {
           "type": "real",
@@ -475,36 +83,41 @@
         },
         {
           "type": "custom",
-          "name": "charge up min time scale#scales the charge up min time"
+          "name": "charge up min time scale#scales the charge up min time",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "charge up min time scale#scales the charge up min time",
-          "definition": "charge_up_min_time_scale_scales_the_charge_up_min_time_11"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "charge up auto release time scale#scales the charge up auto release time"
+          "name": "charge up auto release time scale#scales the charge up auto release time",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "charge up auto release time scale#scales the charge up auto release time",
-          "definition": "charge_up_auto_release_time_scale_scales_the_charge_up_auto_release_time_12"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "real_fraction",
           "name": "charge up damage acceleration scalar#reduces the amount of acceleration applied when stabilizing during the charge up stage (default is 0.5)"
         },
         {
-          "type": "custom",
-          "name": "Launch"
+          "type": "explanation",
+          "name": "Launch",
+          "definition": ""
         },
         {
           "type": "tag_reference",
           "name": "launch ready effect#played as soon as the player is able to launch",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -512,7 +125,9 @@
           "name": "launch post ready effect#played between the launch ready and the launch (see fraction below)",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -528,7 +143,9 @@
           "name": "launch effect#this obeys the one-shot flag in the common ability parameters at the top",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -536,7 +153,9 @@
           "name": "launch fail effect#used in latch mode if the fail flag is set when trying tp launch",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -548,25 +167,30 @@
           "name": "launch continuous rumble",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "rmbl"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "Aiming"
+          "type": "explanation",
+          "name": "Aiming",
+          "definition": ""
         },
         {
           "type": "tag_reference",
           "name": "aim effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
           "type": "long_enum",
           "name": "aim vector fail selector",
-          "definition": "data_3_options_25"
+          "definition": "GroundPoundFailSelectorEnum"
         },
         {
           "type": "real",
@@ -613,8 +237,9 @@
           "name": "aim vector interpolation exit stage time limit:seconds#If > 0 will stop applying the limit after this amount of time in the exit stage to give player control back earlier."
         },
         {
-          "type": "custom",
-          "name": "Collision"
+          "type": "explanation",
+          "name": "Collision",
+          "definition": ""
         },
         {
           "type": "real",
@@ -633,8 +258,9 @@
           "name": "hit sphere start point offset:wu#how far back from the sphere position to start the moving sphere hit test (should be positive, default = 0.25)"
         },
         {
-          "type": "custom",
-          "name": "Motion"
+          "type": "explanation",
+          "name": "Motion",
+          "definition": ""
         },
         {
           "type": "angle",
@@ -645,17 +271,28 @@
           "name": "max opposing contact angle:degrees#pound if the angle between the negated pound direction and the contact normal is less than this"
         },
         {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
           "type": "real",
           "name": "pound fall speed:wu/s [0.01,+inf]#Speed at which the character moves during the Ground Pound"
         },
         {
           "type": "custom",
-          "name": "pound fall speed (malleable):wu/s#Speed at which the character moves during the Ground Pound"
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "custom",
+          "name": "pound fall speed (malleable):wu/s#Speed at which the character moves during the Ground Pound",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "pound fall speed (malleable):wu/s#Speed at which the character moves during the Ground Pound",
-          "definition": "pound_fall_speed__malleable__wu_s_Speed_at_which_the_character_moves_during_the_Ground_Pound_13"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "real",
@@ -670,8 +307,9 @@
           "name": "pound exit no collision damage duration:seconds [0.0,+inf]#How long to prevent collision damage (most likely as a result of the pound) during the exit (default = 0.3)"
         },
         {
-          "type": "custom",
-          "name": "Impact"
+          "type": "explanation",
+          "name": "Impact",
+          "definition": ""
         },
         {
           "type": "real",
@@ -683,41 +321,47 @@
         },
         {
           "type": "custom",
-          "name": "knockback scalar#scales knockback (instantaneous acceleration) effects caused by ground pound"
+          "name": "knockback scalar#scales knockback (instantaneous acceleration) effects caused by ground pound",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "knockback scalar#scales knockback (instantaneous acceleration) effects caused by ground pound",
-          "definition": "knockback_scalar_scales_knockback__instantaneous_acceleration__effects_caused_by_ground_pound_14"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "pound ground damage scalar#scales damage caused by pound object and pound ground damage effects"
+          "name": "pound ground damage scalar#scales damage caused by pound object and pound ground damage effects",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "pound ground damage scalar#scales damage caused by pound object and pound ground damage effects",
-          "definition": "pound_ground_damage_scalar_scales_damage_caused_by_pound_object_and_pound_ground_damage_effects_15"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "pound ground aoe radius scalar#scales the aoe radius of the pound ground damage effect"
+          "name": "pound ground aoe radius scalar#scales the aoe radius of the pound ground damage effect",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "pound ground aoe radius scalar#scales the aoe radius of the pound ground damage effect",
-          "definition": "pound_ground_aoe_radius_scalar_scales_the_aoe_radius_of_the_pound_ground_damage_effect_16"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
-          "type": "custom",
-          "name": "Damage effects (regular)"
+          "type": "explanation",
+          "name": "Damage effects (regular)",
+          "definition": ""
         },
         {
           "type": "tag_reference",
           "name": "pound object damage effect#Damage effect applied to an object that gets pounded",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -725,7 +369,9 @@
           "name": "pound object clang damage effect#Damage effect applied to an object that gets pounded",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -733,7 +379,9 @@
           "name": "pound ground damage effect#Damage effect applied when character pounds ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -741,7 +389,9 @@
           "name": "pound ground clang damage effect#Damage effect applied when character pounds ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -749,7 +399,9 @@
           "name": "pound object instigator effect#applied to character that performed the ground pound to generate rumble and other such effects when hitting an object",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -757,19 +409,24 @@
           "name": "pound ground instigator effect#applied to character that performed the ground pound to generate rumble and other such effects when hitting the ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "Damage effects (weak)"
+          "type": "explanation",
+          "name": "Damage effects (weak)",
+          "definition": ""
         },
         {
           "type": "tag_reference",
           "name": "pound object damage effect (weak)#Damage effect applied to an object that gets pounded",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -777,7 +434,9 @@
           "name": "pound object clang damage effect (weak)#Damage effect applied to an object that gets pounded",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -785,7 +444,9 @@
           "name": "pound ground damage effect (weak)#Damage effect applied when character pounds ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -793,7 +454,9 @@
           "name": "pound ground clang damage effect (weak)#Damage effect applied when character pounds ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "jpt!"
+            ]
           }
         },
         {
@@ -801,7 +464,9 @@
           "name": "pound object instigator effect (weak)#applied to character that performed the ground pound to generate rumble and other such effects when hitting an object",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -809,7 +474,9 @@
           "name": "pound ground instigator effect (weak)#applied to character that performed the ground pound to generate rumble and other such effects when hitting the ground",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -817,8 +484,9 @@
           "name": "time to switch from weak to regular:seconds#switch to regular damage from weak after flying for this long (set to zero to disable this feature)"
         },
         {
-          "type": "custom",
-          "name": "Animations"
+          "type": "explanation",
+          "name": "Animations",
+          "definition": ""
         },
         {
           "type": "string_id",
@@ -839,7 +507,7 @@
         {
           "type": "short_enum",
           "name": "pound hit AI sound level#intensity of AI sound notification",
-          "definition": "data_3_options_80"
+          "definition": "ai_sound_volume_enum"
         },
         {
           "type": "pad",
@@ -847,8 +515,9 @@
           "definition": 2
         },
         {
-          "type": "custom",
-          "name": "Aim Assist"
+          "type": "explanation",
+          "name": "Aim Assist",
+          "definition": ""
         },
         {
           "type": "angle",
@@ -887,13 +556,18 @@
           "name": "maximum assist angular velocity:degrees/second#maximum angular velocity that can be introduced by the assist system"
         },
         {
+          "type": "explanation",
+          "name": "FOV delta function (charge up)",
+          "definition": "Use this curve to define how the FOV is modified while the character is charging up ground pound. The x axis measures time from the beginning of the charge up to the min charge up time. Y axis is the amount (in degrees) that the FOV is modified at the given time. Remember that you want a negative number to shrink the FOV."
+        },
+        {
           "type": "custom",
-          "name": "FOV delta function (charge up)"
+          "name": null
         },
         {
           "type": "struct",
           "name": "FOV delta function charge up",
-          "definition": "FOV_delta_function_charge_up_17"
+          "definition": "mapping_function"
         },
         {
           "type": "real_fraction",
@@ -904,36 +578,255 @@
           "name": "looks speed scalar (launched)"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c44c0"
     },
-    "GroundPoundDefinitionTag_struct_definition_1": {
-      "guid": "66f4fd4a5257ad9188e0fd5746bfc34f",
-      "size": 1128,
+    "SpartanAbilityCommonParametersStruct": {
+      "guid": "f4efb1a03c4854d9d47df188cdebb4f0",
+      "size": 44,
+      "size_string": "sizeof(SpartanAbilityCommonParameters)",
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "SpartanAbilityDefinitionTagFlags"
+        },
+        {
+          "type": "real_fraction",
+          "name": "activation energy cost#amount of energy required to activate the ability"
+        },
+        {
+          "type": "real",
+          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
+        },
+        {
+          "type": "tag_reference",
+          "name": "activation effect#effects triggered when player activates ability",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "effe"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449e94d0"
+    },
+    "StabilizerDefinitionBlock_struct": {
+      "guid": "a606656ed545236d5d7efa8e5babfafb",
+      "size": 168,
+      "size_string": "sizeof(StabilizerDefinition)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "common ability parameters",
+          "definition": "SpartanAbilityCommonParametersStruct"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "StabilizerDefinitionTagFlags"
+        },
+        {
+          "type": "real",
+          "name": "minimum height above floor#set to negative value to disable as 0 is used in the tag post-process to set a default"
+        },
+        {
+          "type": "real",
+          "name": "activation deceleration:[0.01,+inf] wu/s per sec#Rate at which the player decelerates after activating the stabilizer"
+        },
+        {
+          "type": "real",
+          "name": "stall duration:[0.01,+inf] seconds#Duration that the player remains completely stalled in mid air before starting to fall again"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "real",
+          "name": "time limit:seconds#Max time Stabilizer can remain active for a single burst.  Set to 0.0 if you want infinite."
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "custom",
+          "name": "malleable time limit::seconds#Max time stabilizer can remain active for a single burst. Set to 0.0 if you want infinite. Ensure that the activation effect can persist for this duration.",
+          "group_tag": "mpfi"
+        },
+        {
+          "type": "struct",
+          "name": "malleable time limit::seconds#Max time stabilizer can remain active for a single burst. Set to 0.0 if you want infinite. Ensure that the activation effect can persist for this duration.",
+          "definition": "MalleablePropertyBaseFloatStruct"
+        },
+        {
+          "type": "real",
+          "name": "cooldown:seconds#How much time must pass after deactivation before you can activate again."
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "real",
+          "name": "time scale#Time scale applied to velocity after stall duration"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "custom",
+          "name": "malleable time scale#Time scale applied to velocity after stall duration",
+          "group_tag": "mpfi"
+        },
+        {
+          "type": "struct",
+          "name": "malleable time scale#Time scale applied to velocity after stall duration",
+          "definition": "MalleablePropertyBaseFloatStruct"
+        },
+        {
+          "type": "real",
+          "name": "max horizontal speed:wu/s [0,+inf]#max horizontal speed while stabilizer is active"
+        },
+        {
+          "type": "struct",
+          "name": "vertical speed boost at exit:wu/s#adds this on to the player vertical velocity, based on normalized time spent stabilizing",
+          "definition": "scalar_function_named_struct"
+        },
+        {
+          "type": "tag_reference",
+          "name": "rumble",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rmbl"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449c7d10"
+    },
+    "MalleablePropertyBaseFloatStruct": {
+      "guid": "a1b4d8f8e64063dbbb8cea978b2eae63",
+      "size": 16,
+      "size_string": "sizeof(i343::MalleableProperty::BaseDefinition<float>)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "MalleablePropertyCombiner"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447369c0"
+    },
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "data",
-          "definition": "data_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "common_ability_parameters_4_options_0": {
+    "SpartanAbilityDefinitionTagFlags": {
       "options": [
         "Use 3rd Person Camera When Active",
         "Hide Reticle When Active",
@@ -943,7 +836,7 @@
         "Does Not Appear In Extended Motion Tracker Range"
       ]
     },
-    "data_3_options_1": {
+    "GroundPoundDefinitionTagFlags": {
       "options": [
         "Limit Aim Vector Pitch When Charging",
         "Limit Aim Vector Pitch When Launching",
@@ -959,24 +852,14 @@
         "Don't Render Aim Effect If RayCast Fails"
       ]
     },
-    "common_ability_parameters_6_options_0": {
-      "options": [
-        "Use 3rd Person Camera When Active",
-        "Hide Reticle When Active",
-        "Is Motion Tracked (By Enemies) When Active",
-        "One-Shot Activation Effect#Effect kills itself rather than being explicitly killed when the ability deactivates",
-        "Can be activated when weapon state is relaxed",
-        "Does Not Appear In Extended Motion Tracker Range"
-      ]
-    },
-    "stabilizer_definition_5_options_1": {
+    "StabilizerDefinitionTagFlags": {
       "options": [
         "Toggle stabilizer off if activated with ADS active",
         "Must land again after activating",
         "Auto activate only if already in the air"
       ]
     },
-    "malleable_time_limit__seconds_Max_time_stabilizer_can_remain_active_for_a_single_burst__Set_to_0_0_if_you_want_infinite__Ensure_that_the_activation_effect_can_persist_for_this_duration__7_options_2": {
+    "MalleablePropertyCombiner": {
       "options": [
         "sequential#applies the percentages one after another on the base",
         "total percentage#adds up all of the percentages and applies them to the base",
@@ -984,70 +867,14 @@
         "product#multiplies the values one after another on to the base"
       ]
     },
-    "malleable_time_scale_Time_scale_applied_to_velocity_after_stall_duration_8_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "charge_up_min_time_scale_scales_the_charge_up_min_time_11_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "charge_up_auto_release_time_scale_scales_the_charge_up_auto_release_time_12_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "data_3_options_25": {
+    "GroundPoundFailSelectorEnum": {
       "options": [
         "Off",
         "DistanceXYZ",
         "DistanceZ"
       ]
     },
-    "pound_fall_speed__malleable__wu_s_Speed_at_which_the_character_moves_during_the_Ground_Pound_13_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "knockback_scalar_scales_knockback__instantaneous_acceleration__effects_caused_by_ground_pound_14_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "pound_ground_damage_scalar_scales_damage_caused_by_pound_object_and_pound_ground_damage_effects_15_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "pound_ground_aoe_radius_scalar_scales_the_aoe_radius_of_the_pound_ground_damage_effect_16_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "data_3_options_80": {
+    "ai_sound_volume_enum": {
       "options": [
         "silent#ai will not respond to this sound",
         "quiet",
@@ -1058,6 +885,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

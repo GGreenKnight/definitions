@@ -2,57 +2,104 @@
   "name": "vectorart_asset",
   "tag": "vaas",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "vectorart_asset_block",
   "blocks": {
-    "polyartVertexBlock_3": {
+    "vectorart_asset_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "vectorart_asset_block_struct"
+    },
+    "polyartVertexBlock": {
       "max_count": 32768,
-      "struct": "polyartVertexBlock_3"
+      "max_count_string": "k_chudPolyArtVertexMaxCount",
+      "struct": "polyartVertexBlock"
     },
-    "polyartIndexBlock_4": {
+    "polyartIndexBlock": {
       "max_count": 32768,
-      "struct": "polyartIndexBlock_4"
+      "max_count_string": "PolyartIndex::k_chudPolyArtIndexMaxCount",
+      "struct": "polyartIndexBlock"
     },
-    "vertexBuffersBlock_5": {
+    "vertexBuffersBlock": {
       "max_count": 1,
-      "struct": "vertexBuffersBlock_5"
+      "max_count_string": "1",
+      "struct": "vertexBuffersBlock_struct"
     },
-    "indexBuffersBlock_6": {
+    "indexBuffersBlock": {
       "max_count": 1,
-      "struct": "indexBuffersBlock_6"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "vectorart_asset_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "indexBuffersBlock_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "vectorart_asset_block_struct": {
+      "guid": "1599ad6a9442315b83200b83825be01f",
+      "size": 152,
+      "size_string": "(sizeof(VectorartAsset) - Tag::SizeInfo<VectorartAsset::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "char_enum",
+          "name": "runtime flags*!",
+          "definition": "g_polyartAssetStateFlags"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "name": "MERP",
+          "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "real",
+          "name": "antialiasing extent size"
+        },
+        {
+          "type": "real",
+          "name": "import fudge factor (suggested 0.5)"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "bounds*"
+        },
+        {
+          "type": "real",
+          "name": "curve smoothness"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "polyartVertexBlock"
+        },
+        {
+          "type": "block",
+          "name": "indices*",
+          "definition": "polyartIndexBlock"
+        },
+        {
+          "type": "block",
+          "name": "pc vertex buffers*",
+          "definition": "vertexBuffersBlock"
+        },
+        {
+          "type": "block",
+          "name": "pc index buffers*",
+          "definition": "indexBuffersBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448c5fe0"
     },
-    "polyartVertexBlock_3": {
-      "guid": "118494c34b9bb73fdc4d74a49b327406",
+    "polyartVertexBlock": {
+      "guid": "c39484119b4b3fb7dc4d74a49b327406",
       "size": 12,
+      "size_string": "sizeof(PolyartVertex_Full)",
       "fields": [
         {
           "type": "short_integer",
@@ -79,26 +126,32 @@
           "name": "half v*"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448e02e0"
     },
-    "polyartIndexBlock_4": {
-      "guid": "a4c7cb014d142540a27fa2b5f24d7693",
+    "polyartIndexBlock": {
+      "guid": "01cbc7a4144d4025a27fa2b5f24d7693",
       "size": 2,
+      "size_string": "sizeof(PolyartIndex)",
       "fields": [
         {
           "type": "short_integer",
           "name": "index*"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448e0410"
     },
-    "vertexBuffersBlock_5": {
-      "guid": "f38916ab435eca2ab153b3bc3e0d1357",
+    "vertexBuffersBlock_struct": {
+      "guid": "ab1689f35e432acab153b3bc3e0d1357",
       "size": 80,
+      "size_string": "sizeof(c_rasterizer_vertex_buffer)",
       "fields": [
         {
           "type": "byte_integer",
@@ -124,24 +177,30 @@
         },
         {
           "type": "int64_integer",
-          "name": "ptr d3d*"
+          "name": "ptr d3d*\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "int64_integer",
-          "name": "ptr d3d SRV*"
+          "name": "ptr d3d SRV*\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "int64_integer",
-          "name": "ptr d3d cpu copy*"
+          "name": "ptr d3d cpu copy*\u0001",
+          "group_tag": "nuke"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448e0520"
     },
-    "indexBuffersBlock_6": {
-      "guid": "fb7aa38b46253ce503006cb9bc2b8160",
+    "indexBuffersBlock_struct": {
+      "guid": "8ba37afb2546e53c03006cb9bc2b8160",
       "size": 72,
+      "size_string": "sizeof(c_rasterizer_index_buffer)",
       "fields": [
         {
           "type": "byte_integer",
@@ -167,89 +226,56 @@
         },
         {
           "type": "int64_integer",
-          "name": "ptr d3d*"
+          "name": "ptr d3d*\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "int64_integer",
-          "name": "ptr d3d cpu copy*"
+          "name": "ptr d3d cpu copy*\u0001",
+          "group_tag": "nuke"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448e0640"
     },
-    "vectorart_asset_struct_definition_1": {
-      "guid": "c3a5effc4f94e20f269af5fbe9827f91",
-      "size": 152,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "char_enum",
-          "name": "runtime flags*!",
-          "definition": "vectorart_asset_struct_definition_1_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "MERP",
-          "definition": 3
-        },
-        {
-          "type": "real",
-          "name": "antialiasing extent size"
-        },
-        {
-          "type": "real",
-          "name": "import fudge factor (suggested 0.5)"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "bounds*"
-        },
-        {
-          "type": "real",
-          "name": "curve smoothness"
-        },
-        {
-          "type": "block",
-          "name": "vertices*",
-          "definition": "polyartVertexBlock_3"
-        },
-        {
-          "type": "block",
-          "name": "indices*",
-          "definition": "polyartIndexBlock_4"
-        },
-        {
-          "type": "block",
-          "name": "pc vertex buffers*",
-          "definition": "vertexBuffersBlock_5"
-        },
-        {
-          "type": "block",
-          "name": "pc index buffers*",
-          "definition": "indexBuffersBlock_6"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "vectorart_asset_struct_definition_1_options_2": {
+    "g_polyartAssetStateFlags": {
       "options": [
         "processed*!",
         "available*!"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

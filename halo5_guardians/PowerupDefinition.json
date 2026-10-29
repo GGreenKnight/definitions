@@ -2,75 +2,31 @@
   "name": "PowerupDefinition",
   "tag": "pugm",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "PowerupDefinition_block",
   "blocks": {
-    "genericModifier_3": {
-      "max_count": 32,
-      "struct": "genericModifier_3"
-    },
-    "root": {
+    "PowerupDefinition_block": {
       "max_count": 1,
-      "struct": "PowerupDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "PowerupDefinition_block_struct"
+    },
+    "genericModifier": {
+      "max_count": 32,
+      "max_count_string": "32",
+      "struct": "genericModifier"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "genericModifier_3": {
-      "guid": "0f9304be472aa4307021aba4b3c77452",
-      "size": 12,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "malleable property name"
-        },
-        {
-          "type": "real",
-          "name": "scalar#scales the movement speed"
-        },
-        {
-          "type": "real",
-          "name": "duration#how long the scale is applied"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "PowerupDefinition_struct_definition_1": {
-      "guid": "059a02c3efb1681cca11ba8b6cfa1d7b",
+    "PowerupDefinition_block_struct": {
+      "guid": "624f588544488e739b0c248f70829083",
       "size": 80,
+      "size_string": "(sizeof(i343::PowerUp::PowerupDefinition) - Tag::SizeInfo<i343::PowerUp::PowerupDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "real_rgb_color",
@@ -87,14 +43,66 @@
         {
           "type": "block",
           "name": "properties",
-          "definition": "genericModifier_3"
+          "definition": "genericModifier"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c8b20"
+    },
+    "genericModifier": {
+      "guid": "be04930f2a4730a47021aba4b3c77452",
+      "size": 12,
+      "size_string": "sizeof(Modifier)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "malleable property name"
+        },
+        {
+          "type": "real",
+          "name": "scalar#scales the movement speed"
+        },
+        {
+          "type": "real",
+          "name": "duration#how long the scale is applied"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449c8a00"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

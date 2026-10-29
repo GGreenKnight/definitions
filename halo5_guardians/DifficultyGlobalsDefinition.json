@@ -2,53 +2,63 @@
   "name": "DifficultyGlobalsDefinition",
   "tag": "gldi",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "DifficultyGlobalsDefinition_block",
   "blocks": {
-    "difficulty_block_3": {
+    "DifficultyGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "difficulty_block_3"
+      "max_count_string": "1",
+      "struct": "DifficultyGlobalsDefinition_block_struct"
     },
-    "coop_difficulty_block_4": {
+    "difficulty_block": {
       "max_count": 1,
-      "struct": "coop_difficulty_block_4"
+      "max_count_string": "1",
+      "struct": "difficulty_block_struct"
     },
-    "root": {
+    "coop_difficulty_block": {
       "max_count": 1,
-      "struct": "DifficultyGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "coop_difficulty_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "DifficultyGlobalsDefinition_block_struct": {
+      "guid": "36d2071a1a4b09c056f3a588b7ac811c",
+      "size": 72,
+      "size_string": "(sizeof(i343::DifficultyGlobals) - Tag::SizeInfo<i343::DifficultyGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "block",
+          "name": "difficulty",
+          "definition": "difficulty_block"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "co-op difficulty",
+          "definition": "coop_difficulty_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448293f0"
     },
-    "difficulty_block_3": {
-      "guid": "9c84698c40b5a3cf696073b46b01d1ab",
+    "difficulty_block_struct": {
+      "guid": "8c69849cb540cfa3696073b46b01d1ab",
       "size": 640,
+      "size_string": "sizeof(s_game_globals_difficulty_information)",
       "fields": [
         {
-          "type": "custom",
-          "name": "health"
+          "type": "explanation",
+          "name": "health",
+          "definition": "scale values for enemy health and damage settings"
         },
         {
           "type": "real",
@@ -189,8 +199,9 @@
           "definition": 16
         },
         {
-          "type": "custom",
-          "name": "ranged fire"
+          "type": "explanation",
+          "name": "ranged fire",
+          "definition": "difficulty-affecting values for enemy ranged combat settings"
         },
         {
           "type": "real",
@@ -390,8 +401,9 @@
           "definition": 16
         },
         {
-          "type": "custom",
-          "name": "grenades"
+          "type": "explanation",
+          "name": "grenades",
+          "definition": "difficulty-affecting values for enemy grenade behavior"
         },
         {
           "type": "real",
@@ -474,8 +486,9 @@
           "name": "imposs. grenade velocity scale#scale factor affecting how fast grenades are initially thrown on impossible difficulty"
         },
         {
-          "type": "custom",
-          "name": "placement"
+          "type": "explanation",
+          "name": "placement",
+          "definition": "difficulty-affecting values for enemy placement"
         },
         {
           "type": "real",
@@ -526,8 +539,9 @@
           "name": "imposs. major upgrade (many)#fraction of actors upgraded to their major variant when mix = many. on impossible difficulty"
         },
         {
-          "type": "custom",
-          "name": "vehicles"
+          "type": "explanation",
+          "name": "vehicles",
+          "definition": "difficulty-affecting values for vehicle driving/combat"
         },
         {
           "type": "real",
@@ -578,8 +592,9 @@
           "name": "imposs. vehicle boarding chance#Enables a ranom dice roll for vehicle boarding (1.0 is the default behavior of no dice roll as long as all other conditions are met) on impossible difficulty"
         },
         {
-          "type": "custom",
-          "name": "cover"
+          "type": "explanation",
+          "name": "cover",
+          "definition": "difficulty-affecting values for cover and bunkering"
         },
         {
           "type": "real",
@@ -667,17 +682,21 @@
           "definition": 16
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144835980"
     },
-    "coop_difficulty_block_4": {
-      "guid": "77c244054f7cca61bdd3929145809188",
+    "coop_difficulty_block_struct": {
+      "guid": "0544c2777c4f61cabdd3929145809188",
       "size": 156,
+      "size_string": "sizeof(s_game_globals_coop_difficulty_information)",
       "fields": [
         {
-          "type": "custom",
-          "name": "vitality"
+          "type": "explanation",
+          "name": "vitality",
+          "definition": "scale values for enemy health and shield settings"
         },
         {
           "type": "real",
@@ -704,8 +723,9 @@
           "name": "Warzone shield recharge timer{six-player shield recharge timer}#multiplier on enemy shield recharge timer in Warzone or with 6+ coop players"
         },
         {
-          "type": "custom",
-          "name": "movement"
+          "type": "explanation",
+          "name": "movement",
+          "definition": "scale values for enemy movement properties"
         },
         {
           "type": "real",
@@ -732,8 +752,9 @@
           "name": "Warzone armor lock chance{six-player armor lock chance}#multiplier on enemy armor lock chance in Warzone or with 6+ coop players"
         },
         {
-          "type": "custom",
-          "name": "evasion"
+          "type": "explanation",
+          "name": "evasion",
+          "definition": "scale values for enemy evasion settings"
         },
         {
           "type": "real",
@@ -772,8 +793,9 @@
           "name": "Warzone evasion chance{six-player evasion chance}#multiplier on enemy evasion chance in Warzone or with 6+ coop players"
         },
         {
-          "type": "custom",
-          "name": "shooting"
+          "type": "explanation",
+          "name": "shooting",
+          "definition": "scale values for enemy shooting settings"
         },
         {
           "type": "real",
@@ -812,8 +834,9 @@
           "name": "Warzone damage modifier{six-player damage modifier}#multipler on the enemy shooting damage multiplier in Warzone or with 6+ coop players"
         },
         {
-          "type": "custom",
-          "name": "projectile"
+          "type": "explanation",
+          "name": "projectile",
+          "definition": "scale values for enemy projectile settings"
         },
         {
           "type": "real",
@@ -840,8 +863,9 @@
           "name": "Warzone grenade throw chance{six-player grenade throw chance}#scalar multiplier on chance AI will throw grenades in Warzone or with 6+ coop players"
         },
         {
-          "type": "custom",
-          "name": "other"
+          "type": "explanation",
+          "name": "other",
+          "definition": "other coop difficulty values"
         },
         {
           "type": "real",
@@ -856,39 +880,39 @@
           "name": "Warzone AI upgrade additional chance{six-player AI upgrade additional chance}#additive value on chance AI will upgrade (in addition to normal chance) in Warzone or with 6+ coop players"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144836e00"
     },
-    "DifficultyGlobalsDefinition_struct_definition_1": {
-      "guid": "850563d1cb774bfac10b8616d4550702",
-      "size": 72,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "difficulty",
-          "definition": "difficulty_block_3"
-        },
-        {
-          "type": "block",
-          "name": "co-op difficulty",
-          "definition": "coop_difficulty_block_4"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

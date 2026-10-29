@@ -1,46 +1,54 @@
 {
   "name": "scenario_required_resource",
   "tag": "sdzg",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "scenario_required_resource_block",
   "blocks": {
-    "scenario_budget_references_block_3": {
-      "max_count": 4096,
-      "struct": "scenario_budget_references_block_3"
-    },
-    "root": {
+    "scenario_required_resource_block": {
       "max_count": 1,
-      "struct": "scenario_required_resource_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "scenario_required_resource_block_struct"
+    },
+    "scenario_budget_references_block": {
+      "max_count": 4096,
+      "max_count_string": "k_maximum_budget_references_per_scenario",
+      "struct": "scenario_budget_references_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "scenario_required_resource_block_struct": {
+      "guid": "b80bb9a92b4b68c5dd6fcda902667c9b",
+      "size": 48,
+      "size_string": "(sizeof(s_scenario_required_resources) - Tag::SizeInfo<s_scenario_required_resources::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "resources",
+          "definition": "scenario_budget_references_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144764020"
     },
-    "scenario_budget_references_block_3": {
-      "guid": "236e8b7d45de9d0d74ebea9c8233dafe",
+    "scenario_budget_references_block": {
+      "guid": "7d8b6e23de450d9d74ebea9c8233dafe",
       "size": 32,
+      "size_string": "sizeof(s_scenario_budget_reference)",
       "fields": [
         {
           "type": "tag_reference",
@@ -51,39 +59,39 @@
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144763f00"
     },
-    "scenario_required_resource_struct_definition_1": {
-      "guid": "7efaf0abf0749cc3967ab2cb2a25c854",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "resources",
-          "definition": "scenario_budget_references_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

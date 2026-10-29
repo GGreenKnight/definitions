@@ -1,210 +1,37 @@
 {
   "name": "cheap_light",
   "tag": "gldf",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "cheap_light_block",
   "blocks": {
-    "root": {
+    "cheap_light_block": {
       "max_count": 1,
-      "struct": "cheap_light_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "cheap_light_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_4": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "color_3": {
-      "guid": "3dbb8f1a4fd054f991da249d78307a29",
-      "size": 44,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "short_enum",
-          "name": "Output Modifier!",
-          "definition": "color_3_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 2
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_6": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "intensity_5": {
-      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
-      "size": 44,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "short_enum",
-          "name": "Output Modifier!",
-          "definition": "intensity_5_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 2
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_8": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Falloff_End_radius__7": {
-      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
-      "size": 44,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "short_enum",
-          "name": "Output Modifier!",
-          "definition": "Falloff_End_radius__7_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 2
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cheap_light_struct_definition_1": {
-      "guid": "b6f2d225fd7999d378e968729972c2e0",
+    "cheap_light_block_struct": {
+      "guid": "f2b21e6a2d4faff6257f2d9caee5b6e4",
       "size": 176,
+      "size_string": "(sizeof(s_cheap_light_definition) - Tag::SizeInfo<s_cheap_light_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "custom",
-          "name": "Cheap Lights"
+          "type": "explanation",
+          "name": "Cheap Lights",
+          "definition": "These are the cheapest light possible. They are spherical, have a color with an intensity and a radius - and that's it. They should be small: 0.5 or smaller if you can get close to them. That's why they are so cheap."
         },
         {
           "type": "char_enum",
           "name": "function input",
-          "definition": "cheap_light_struct_definition_1_options_3"
+          "definition": "cheapLightFunctionInputEnum"
         },
         {
           "type": "pad",
@@ -212,27 +39,29 @@
           "definition": 3
         },
         {
-          "type": "custom",
-          "name": "COLOR"
+          "type": "explanation",
+          "name": "COLOR",
+          "definition": "color and intensity of the light"
         },
         {
           "type": "struct",
           "name": "color",
-          "definition": "color_3"
+          "definition": "light_color_function_struct"
         },
         {
           "type": "struct",
           "name": "intensity",
-          "definition": "intensity_5"
+          "definition": "light_scalar_function_struct"
         },
         {
-          "type": "custom",
-          "name": "SIZE"
+          "type": "explanation",
+          "name": "SIZE",
+          "definition": "radius of the spherical light"
         },
         {
           "type": "struct",
           "name": "Falloff End{radius}",
-          "definition": "Falloff_End_radius__7"
+          "definition": "light_scalar_function_struct"
         },
         {
           "type": "real",
@@ -259,34 +88,165 @@
           "name": "specular scalar:[0-1]#Controls amount of specular lighting"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144986680"
+    },
+    "light_color_function_struct": {
+      "guid": "1a8fbb3dd04ff95491da249d78307a29",
+      "size": 44,
+      "size_string": "sizeof(LightFunction)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "group_tag": "fnop",
+          "definition": "output_mod_enum"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!",
+          "group_tag": "fnom"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449848b0"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "light_scalar_function_struct": {
+      "guid": "834aaa264a43b442cba3ac93cd20a908",
+      "size": 44,
+      "size_string": "sizeof(LightFunction)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "group_tag": "fnop",
+          "definition": "output_mod_enum"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!",
+          "group_tag": "fnom"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449847a0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "cheap_light_struct_definition_1_options_3": {
+    "cheapLightFunctionInputEnum": {
       "options": [
         "time/age",
         "scale A",
         "scale B"
       ]
     },
-    "color_3_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "intensity_5_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "Falloff_End_radius__7_options_2": {
+    "output_mod_enum": {
       "options": [
         " ",
         "Plus",
@@ -295,6 +255,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

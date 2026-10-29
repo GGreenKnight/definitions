@@ -2,51 +2,53 @@
   "name": "effect_global_force",
   "tag": "egfd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "effect_global_force_block",
   "blocks": {
-    "root": {
+    "effect_global_force_block": {
       "max_count": 1,
-      "struct": "effect_global_force_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "effect_global_force_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "effect_global_force_block_struct": {
+      "guid": "e11f720dbb48b175519d018b67e8dc0c",
+      "size": 56,
+      "size_string": "(sizeof(EffectGlobalForceDefinitionTag) - Tag::SizeInfo<EffectGlobalForceDefinitionTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "struct",
+          "name": "force",
+          "definition": "effectGlobalForceStruct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447071a0"
     },
-    "force_3": {
-      "guid": "395eddae4b02769f2b0835bfe1c7581d",
+    "effectGlobalForceStruct": {
+      "guid": "aedd5e39024b9f762b0835bfe1c7581d",
       "size": 40,
+      "size_string": "sizeof(EffectGlobalForceDefinition)",
       "fields": [
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "force_3_options_0"
+          "definition": "globalForceFlags"
         },
         {
           "type": "char_enum",
           "name": "shape",
-          "definition": "force_3_options_1"
+          "definition": "globalForceShape"
         },
         {
           "type": "byte_integer",
@@ -86,43 +88,44 @@
           "name": "direction override"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144707090"
     },
-    "effect_global_force_struct_definition_1": {
-      "guid": "26c5bce0ab9e566ba61ec7117009261b",
-      "size": 56,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "force",
-          "definition": "force_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "force_3_options_0": {
+    "globalForceFlags": {
       "options": [
         "is infinitely long cylinder!",
         "multiply force by attached object speed",
         "override force direction"
       ]
     },
-    "force_3_options_1": {
+    "globalForceShape": {
       "options": [
         "sphere",
         "cylinder",
@@ -130,5 +133,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

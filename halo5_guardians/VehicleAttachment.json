@@ -2,45 +2,85 @@
   "name": "VehicleAttachment",
   "tag": "vatc",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "VehicleAttachment_block",
   "blocks": {
-    "VehicleVitalityPropertyModifiers_4": {
+    "VehicleAttachment_block": {
       "max_count": 1,
-      "struct": "VehicleVitalityPropertyModifiers_4"
+      "max_count_string": "1",
+      "struct": "VehicleAttachment_block_struct"
     },
-    "root": {
+    "VehicleVitalityPropertyModifiers": {
       "max_count": 1,
-      "struct": "VehicleAttachment_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "VehicleVitalityPropertyModifiers_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "VehicleAttachment_block_struct": {
+      "guid": "ad81d059f14cd273949995937ffdd4ed",
+      "size": 48,
+      "size_string": "(sizeof(i343::Vehicle::VehicleAttachment) - Tag::SizeInfo<i343::Vehicle::VehicleAttachment::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "struct",
+          "name": "properties",
+          "definition": "VehicleModifier"
         },
         {
-          "type": "terminator"
+          "type": "explanation",
+          "name": "Attachment Name",
+          "definition": "Used for damage reporting - we want to know what attachments something has when it deals damage"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "AttachmentNameDefinitionStruct"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449a9490"
     },
-    "VehicleVitalityPropertyModifiers_4": {
-      "guid": "72fad036492a22b7137a9a80e9200afe",
+    "VehicleModifier": {
+      "guid": "70f0c999b84b7450b23639ad020c989b",
+      "size": 28,
+      "size_string": "sizeof(i343::Vehicle::VehicleModifiers)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Vehicle Attachment",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "block",
+          "name": "maximum vitality",
+          "definition": "VehicleVitalityPropertyModifiers"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449a9370"
+    },
+    "VehicleVitalityPropertyModifiers_struct": {
+      "guid": "36d0fa722a49b722137a9a80e9200afe",
       "size": 8,
+      "size_string": "sizeof(i343::Vehicle::VehicleVitalityPropertyModifiersDefinition)",
       "fields": [
         {
           "type": "real",
@@ -52,74 +92,55 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449e7df0"
     },
-    "properties_3": {
-      "guid": "99c9f0704bb85074b23639ad020c989b",
-      "size": 28,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Vehicle Attachment"
-        },
-        {
-          "type": "block",
-          "name": "maximum vitality",
-          "definition": "VehicleVitalityPropertyModifiers_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "attachmentName_5": {
-      "guid": "7166d96b409060fc1c2ebf9c91f0157d",
+    "AttachmentNameDefinitionStruct": {
+      "guid": "6bd966719040fc601c2ebf9c91f0157d",
       "size": 4,
+      "size_string": "sizeof(AttachmentNameDefinition)",
       "fields": [
         {
           "type": "string_id",
           "name": "Attachment Name"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144983ff0"
     },
-    "VehicleAttachment_struct_definition_1": {
-      "guid": "f034eb3d71efaaafbdc50a153e4a16bf",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "properties",
-          "definition": "properties_3"
-        },
-        {
-          "type": "custom",
-          "name": "Attachment Name"
-        },
-        {
-          "type": "struct",
-          "name": "attachmentName",
-          "definition": "attachmentName_5"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

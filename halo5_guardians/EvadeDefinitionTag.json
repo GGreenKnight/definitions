@@ -2,220 +2,53 @@
   "name": "EvadeDefinitionTag",
   "tag": "saev",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "EvadeDefinitionTag_block",
   "blocks": {
-    "root": {
+    "EvadeDefinitionTag_block": {
       "max_count": 1,
-      "struct": "EvadeDefinitionTag_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "EvadeDefinitionTag_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "EvadeDefinitionTag_block_struct": {
+      "guid": "837a28bcf8478257e9ef2396c596e251",
+      "size": 360,
+      "size_string": "(sizeof(EvadeDefinitionTag) - Tag::SizeInfo<EvadeDefinitionTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "common_ability_parameters_4": {
-      "guid": "a0b1eff4483cd954d47df188cdebb4f0",
-      "size": 44,
-      "fields": [
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "common_ability_parameters_4_options_0"
-        },
-        {
-          "type": "real_fraction",
-          "name": "activation energy cost#amount of energy required to activate the ability"
-        },
-        {
-          "type": "real",
-          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
-        },
-        {
-          "type": "tag_reference",
-          "name": "activation effect#effects triggered when player activates ability",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "speed_function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
+          "type": "struct",
           "name": "data",
-          "definition": "function_definition_data"
+          "definition": "EvadeDefinitionBlock_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c3bf0"
     },
-    "speed_function_scalar_scale_applied_to_the_result_of_the_speed_function_6": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "speed_function_scalar_scale_applied_to_the_result_of_the_speed_function_6_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ground_speed_modifier_function_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "air_speed_modifier_function_8": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "horizontal_camera_offset_function_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camera_tilt_ROLL_function_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camera_tilt_PITCH_function_11": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "FOV_delta_function_12": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "overlay_animation_function_13": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "data_3": {
-      "guid": "87d9002e4ac337df559646b66b28bf87",
+    "EvadeDefinitionBlock_struct": {
+      "guid": "2e00d987c34adf37559646b66b28bf87",
       "size": 344,
+      "size_string": "sizeof(EvadeDefinition)",
       "fields": [
         {
           "type": "struct",
           "name": "common ability parameters",
-          "definition": "common_ability_parameters_4"
+          "definition": "SpartanAbilityCommonParametersStruct"
         },
         {
           "type": "long_flags",
           "name": "evade flags",
-          "definition": "data_3_options_1"
+          "definition": "EvadeDefinitionTagFlags"
         },
         {
           "type": "real_fraction",
@@ -250,26 +83,33 @@
           "name": "evade melee interrupt fraction:[0,1]#Player will be able to interrupt to perform a melee at this fraction through the evade"
         },
         {
+          "type": "explanation",
+          "name": "speed function",
+          "definition": "Use this curve to define the character's speed over the course of an evade performed while the character is on the ground. The x axis measures time from the beginning of the evade to the end. Y axis is the speed of the character (wu/s) in the evade direction at the given time."
+        },
+        {
           "type": "custom",
-          "name": "speed function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "speed function",
-          "definition": "speed_function_5"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "speed function scalar",
+          "definition": "malleable property scale applied to the result of the speed function"
         },
         {
           "type": "custom",
-          "name": "speed function scalar"
-        },
-        {
-          "type": "custom",
-          "name": "speed function scalar#scale applied to the result of the speed function"
+          "name": "speed function scalar#scale applied to the result of the speed function",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "speed function scalar#scale applied to the result of the speed function",
-          "definition": "speed_function_scalar_scale_applied_to_the_result_of_the_speed_function_6"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "pad",
@@ -285,67 +125,102 @@
           "name": "speed modifier values:wu/s#Used to map values onto ground and air speed modifier functions below."
         },
         {
+          "type": "explanation",
+          "name": "ground speed modifier function",
+          "definition": "Use this curve to define a modifier on the 'speed function' above when evading on the ground. The x axis measures the players entry speed in direction of the evade, clamped to the floor/ceiling defined above. Y axis is the percent of 'speed function' to use."
+        },
+        {
           "type": "custom",
-          "name": "ground speed modifier function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "ground speed modifier function",
-          "definition": "ground_speed_modifier_function_7"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "air speed modifier function",
+          "definition": "Use this curve to define a speed modifier on the 'speed function' above when evading in the air. The x axis measures the players entry speed in direction of the evade, clamped to the floor/ceiling defined above. Y axis is the percent of 'speed function' to use."
         },
         {
           "type": "custom",
-          "name": "air speed modifier function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "air speed modifier function",
-          "definition": "air_speed_modifier_function_8"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "horizontal camera offset function",
+          "definition": "Use this curve to define how the camera moves horizontally while the character is evading left or right. The x axis measures time from the beginning of the evade to the end. Y axis is the distance that the camera is offset horizontally from the center of the pill at the given time."
         },
         {
           "type": "custom",
-          "name": "horizontal camera offset function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "horizontal camera offset function",
-          "definition": "horizontal_camera_offset_function_9"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "camera tilt ROLL function",
+          "definition": "Use these curves to define how the camera tilts when the character evades left/right. The x axis measures time from the beginning of the evade to the end. Y axis is angle (in degrees) that the camera is tilted in the direction of the evade at the given time"
         },
         {
           "type": "custom",
-          "name": "camera tilt ROLL function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "camera tilt ROLL function",
-          "definition": "camera_tilt_ROLL_function_10"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "camera tilt PITCH function",
+          "definition": "Use these curves to define how the camera tilts when the character evades forward/backward. The x axis measures time from the beginning of the evade to the end. Y axis is angle (in degrees) that the camera is tilted in the direction of the evade at the given time"
         },
         {
           "type": "custom",
-          "name": "camera tilt PITCH function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "camera tilt PITCH function",
-          "definition": "camera_tilt_PITCH_function_11"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "FOV delta function",
+          "definition": "Use this curve to define how the FOV is modified while the character is evading forward or backward. The x axis measures time from the beginning of the evade to the end. Y axis is the amount (in degrees) that the FOV is modified at the given time. Remember that you want a negative number to shrink the FOV."
         },
         {
           "type": "custom",
-          "name": "FOV delta function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "FOV delta function",
-          "definition": "FOV_delta_function_12"
+          "definition": "mapping_function"
+        },
+        {
+          "type": "explanation",
+          "name": "overlay animation function",
+          "definition": "Use this curve to define the blend weight of the evade overlay animation over the course of the evade. The x axis measures time from the beginning of the evade to the end. The Y axis measures the blend weight of the overlay animation at the given time."
         },
         {
           "type": "custom",
-          "name": "overlay animation function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "overlay animation function",
-          "definition": "overlay_animation_function_13"
+          "definition": "mapping_function"
         },
         {
           "type": "real",
@@ -356,36 +231,129 @@
           "name": "maximum vertical impulse speed threshold:world units/second#Threshold speed used to scale vertical impulse; max impulse is applied at or above this speed."
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c3570"
     },
-    "EvadeDefinitionTag_struct_definition_1": {
-      "guid": "2fa720245ce7c3021a85e5b00428deca",
-      "size": 360,
+    "SpartanAbilityCommonParametersStruct": {
+      "guid": "f4efb1a03c4854d9d47df188cdebb4f0",
+      "size": 44,
+      "size_string": "sizeof(SpartanAbilityCommonParameters)",
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "SpartanAbilityDefinitionTagFlags"
+        },
+        {
+          "type": "real_fraction",
+          "name": "activation energy cost#amount of energy required to activate the ability"
+        },
+        {
+          "type": "real",
+          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
+        },
+        {
+          "type": "tag_reference",
+          "name": "activation effect#effects triggered when player activates ability",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "effe"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449e94d0"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "MalleablePropertyBaseFloatStruct": {
+      "guid": "a1b4d8f8e64063dbbb8cea978b2eae63",
+      "size": 16,
+      "size_string": "sizeof(i343::MalleableProperty::BaseDefinition<float>)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "MalleablePropertyCombiner"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447369c0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "data",
-          "definition": "data_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "common_ability_parameters_4_options_0": {
+    "SpartanAbilityDefinitionTagFlags": {
       "options": [
         "Use 3rd Person Camera When Active",
         "Hide Reticle When Active",
@@ -395,12 +363,12 @@
         "Does Not Appear In Extended Motion Tracker Range"
       ]
     },
-    "data_3_options_1": {
+    "EvadeDefinitionTagFlags": {
       "options": [
         "Can cancel when using charge up"
       ]
     },
-    "speed_function_scalar_scale_applied_to_the_result_of_the_speed_function_6_options_2": {
+    "MalleablePropertyCombiner": {
       "options": [
         "sequential#applies the percentages one after another on the base",
         "total percentage#adds up all of the percentages and applies them to the base",
@@ -410,6 +378,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

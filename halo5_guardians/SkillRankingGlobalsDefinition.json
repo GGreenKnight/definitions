@@ -2,49 +2,87 @@
   "name": "SkillRankingGlobalsDefinition",
   "tag": "glsa",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "SkillRankingGlobalsDefinition_block",
   "blocks": {
-    "skill_rank_tier_block_4": {
-      "max_count": 10,
-      "struct": "skill_rank_tier_block_4"
-    },
-    "skill_ranking_globals_block_3": {
-      "max_count": 10,
-      "struct": "skill_ranking_globals_block_3"
-    },
-    "root": {
+    "SkillRankingGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "SkillRankingGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "SkillRankingGlobalsDefinition_block_struct"
+    },
+    "skill_ranking_globals_block": {
+      "max_count": 10,
+      "max_count_string": "10",
+      "struct": "skill_ranking_globals_block"
+    },
+    "skill_rank_tier_block": {
+      "max_count": 10,
+      "max_count_string": "10",
+      "struct": "skill_rank_tier_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "SkillRankingGlobalsDefinition_block_struct": {
+      "guid": "a8ffcf34014e59b1dc1c77bed4b8c72b",
+      "size": 48,
+      "size_string": "(sizeof(SkillRankingGlobals) - Tag::SizeInfo<SkillRankingGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
           "type": "long_integer",
-          "name": "global tag ID!"
+          "name": "number of games to qualify for CSR"
+        },
+        {
+          "type": "block",
+          "name": "skill ranking globals",
+          "definition": "skill_ranking_globals_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14482d130"
+    },
+    "skill_ranking_globals_block": {
+      "guid": "38fbe684ba47718f008867805c6d0210",
+      "size": 40,
+      "size_string": "sizeof(SkillRankingDefinition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display_name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "icon_index"
+        },
+        {
+          "type": "block",
+          "name": "tier",
+          "definition": "skill_rank_tier_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482d010"
     },
-    "skill_rank_tier_block_4": {
-      "guid": "4c1dfa8f42aa204e1b859bada5e2677c",
+    "skill_rank_tier_block": {
+      "guid": "8ffa1d4caa424e201b859bada5e2677c",
       "size": 12,
+      "size_string": "sizeof(SkillRankingTierDefinition)",
       "fields": [
         {
           "type": "string_id",
@@ -60,65 +98,39 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482cee0"
     },
-    "skill_ranking_globals_block_3": {
-      "guid": "84e6fb3847ba8f71008867805c6d0210",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "display_name^"
-        },
-        {
-          "type": "long_integer",
-          "name": "icon_index"
-        },
-        {
-          "type": "block",
-          "name": "tier",
-          "definition": "skill_rank_tier_block_4"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "SkillRankingGlobalsDefinition_struct_definition_1": {
-      "guid": "7b5854aea55d95eeed753d4e49b9f49e",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "long_integer",
-          "name": "number of games to qualify for CSR"
-        },
-        {
-          "type": "block",
-          "name": "skill ranking globals",
-          "definition": "skill_ranking_globals_block_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

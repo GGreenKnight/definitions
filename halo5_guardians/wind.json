@@ -1,224 +1,62 @@
 {
   "name": "wind",
   "tag": "wind",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "wind_block",
   "blocks": {
-    "root": {
+    "wind_block": {
       "max_count": 1,
-      "struct": "wind_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "wind_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_4": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "direction_3": {
-      "guid": "c19f77f74b5ebde78f59baa428a38f19",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_6": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "speed_5": {
-      "guid": "c19f77f74b5ebde78f59baa428a38f19",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_8": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "bend_7": {
-      "guid": "c19f77f74b5ebde78f59baa428a38f19",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "oscillation_9": {
-      "guid": "c19f77f74b5ebde78f59baa428a38f19",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_10"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_12": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "frequency_11": {
-      "guid": "c19f77f74b5ebde78f59baa428a38f19",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_12"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "wind_struct_definition_1": {
-      "guid": "d97bde26362a2d9027d7af11231aa667",
+    "wind_block_struct": {
+      "guid": "75d2544f454503398cdd99a0c27b64b8",
       "size": 192,
+      "size_string": "(sizeof(s_wind_definition) - Tag::SizeInfo<s_wind_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "custom",
-          "name": "WIND DIRECTION"
+          "type": "explanation",
+          "name": "WIND DIRECTION",
+          "definition": "Speed is in MPH, direction is in degrees:\n   0\u00b0  North\n  90\u00b0  East\n 180\u00b0  South\n 270\u00b0  West\n"
         },
         {
           "type": "struct",
           "name": "direction",
-          "definition": "direction_3"
+          "definition": "wind_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "speed",
-          "definition": "speed_5"
+          "definition": "wind_scalar_function_struct"
         },
         {
-          "type": "custom",
-          "name": "DECORATOR WIND MOTION"
+          "type": "explanation",
+          "name": "DECORATOR WIND MOTION",
+          "definition": "These are all a function of the wind speed (between 0 MPH on the left and 200 MPH on the right)\n\nbend: how much the decorators bend - 0.0 is standing straight up, 10.0 is super-flattened\noscillation: how much the decorators 'oscillate' at a given speed\nfrequency: how fast the oscillation waves each decorator\ngust size: big gusts move large areas of decorators in sync.  small gusts give more variation\n"
         },
         {
           "type": "struct",
           "name": "bend",
-          "definition": "bend_7"
+          "definition": "wind_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "oscillation",
-          "definition": "oscillation_9"
+          "definition": "wind_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "frequency",
-          "definition": "frequency_11"
+          "definition": "wind_scalar_function_struct"
         },
         {
           "type": "real",
@@ -229,17 +67,101 @@
           "name": "gust noise bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144775f80"
+    },
+    "wind_scalar_function_struct": {
+      "guid": "f7779fc15e4be7bd8f59baa428a38f19",
+      "size": 28,
+      "size_string": "sizeof(s_wind_function)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144775e00"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

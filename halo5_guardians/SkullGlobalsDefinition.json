@@ -2,115 +2,83 @@
   "name": "SkullGlobalsDefinition",
   "tag": "glsk",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "SkullGlobalsDefinition_block",
   "blocks": {
-    "campaign_metagame_style_type_block_4": {
+    "SkullGlobalsDefinition_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "SkullGlobalsDefinition_block_struct"
+    },
+    "campaign_metagame_globals_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "campaign_metagame_globals_block"
+    },
+    "campaign_metagame_style_type_block": {
       "max_count": 100,
-      "struct": "campaign_metagame_style_type_block_4"
+      "max_count_string": "100",
+      "struct": "campaign_metagame_style_type_block"
     },
-    "campaign_metagame_difficulty_scale_block_5": {
+    "campaign_metagame_difficulty_scale_block": {
       "max_count": 4,
-      "struct": "campaign_metagame_difficulty_scale_block_5"
+      "max_count_string": "StaticCast<long>(i343::NetProtocol::GameOptions::DifficultyLevel::k_count)",
+      "struct": "campaign_metagame_difficulty_scale_block"
     },
-    "campaign_metagame_skull_block_6": {
+    "campaign_metagame_skull_block": {
       "max_count": 20,
-      "struct": "campaign_metagame_skull_block_6"
-    },
-    "campaign_metagame_globals_block_3": {
-      "max_count": 1,
-      "struct": "campaign_metagame_globals_block_3"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "SkullGlobalsDefinition_struct_definition_1"
+      "max_count_string": "s_campaign_metagame_skull_data::k_maximumSupportedSkulls",
+      "struct": "campaign_metagame_skull_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "SkullGlobalsDefinition_block_struct": {
+      "guid": "a8ffcf34014e56b1dc1c67bec4b8c72b",
+      "size": 48,
+      "size_string": "(sizeof(SkullGlobals) - Tag::SizeInfo<SkullGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "campaign metagame globals",
+          "definition": "campaign_metagame_globals_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482d930"
     },
-    "campaign_metagame_style_type_block_4": {
-      "guid": "5dfa123046538a3d75d8939e4248d3af",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "incident name^"
-        },
-        {
-          "type": "real",
-          "name": "style multiplier"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "campaign_metagame_difficulty_scale_block_5": {
-      "guid": "4c1dfa8f4eaa201e1b858bad95e2677d",
-      "size": 4,
-      "fields": [
-        {
-          "type": "real",
-          "name": "difficulty multiplier"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "campaign_metagame_skull_block_6": {
-      "guid": "8f1530d94c93c5cc139373a6aebac8d5",
-      "size": 4,
-      "fields": [
-        {
-          "type": "real",
-          "name": "difficulty multiplier"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "campaign_metagame_globals_block_3": {
-      "guid": "84d6cb3847ba9f71008847805c6d0200",
+    "campaign_metagame_globals_block": {
+      "guid": "38cbd684ba47719f008847805c6d0200",
       "size": 120,
+      "size_string": "sizeof(s_campaign_metagame_globals)",
       "fields": [
         {
           "type": "block",
           "name": "styles",
-          "definition": "campaign_metagame_style_type_block_4"
+          "definition": "campaign_metagame_style_type_block"
         },
         {
           "type": "block",
           "name": "difficulty",
-          "definition": "campaign_metagame_difficulty_scale_block_5"
+          "definition": "campaign_metagame_difficulty_scale_block"
         },
         {
           "type": "block",
           "name": "skulls{Primary Skulls}",
-          "definition": "campaign_metagame_skull_block_6"
+          "definition": "campaign_metagame_skull_block"
         },
         {
           "type": "long_integer",
@@ -149,39 +117,91 @@
           "name": "Score delta display seconds (incremental)#How long to extend the timer when displaying accumulated points, extended every time accumulated points increases"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144807e70"
     },
-    "SkullGlobalsDefinition_struct_definition_1": {
-      "guid": "e5da3e2fcbb5aefc206322f9a98af759",
-      "size": 48,
+    "campaign_metagame_style_type_block": {
+      "guid": "3012fa5d53463d8a75d8939e4248d3af",
+      "size": 8,
+      "size_string": "sizeof(s_campaign_metagame_style_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "incident name^"
+        },
+        {
+          "type": "real",
+          "name": "style multiplier"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144807ab0"
+    },
+    "campaign_metagame_difficulty_scale_block": {
+      "guid": "8ffa1d4caa4e1e201b858bad95e2677d",
+      "size": 4,
+      "size_string": "sizeof(s_campaign_metagame_difficulty)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "difficulty multiplier"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144807be0"
+    },
+    "campaign_metagame_skull_block": {
+      "guid": "d930158f934cccc5139373a6aebac8d5",
+      "size": 4,
+      "size_string": "sizeof(s_campaign_metagame_skull_data)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "difficulty multiplier"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144807d40"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "campaign metagame globals",
-          "definition": "campaign_metagame_globals_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

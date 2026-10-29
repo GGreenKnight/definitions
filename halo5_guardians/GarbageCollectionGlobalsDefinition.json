@@ -2,70 +2,86 @@
   "name": "GarbageCollectionGlobalsDefinition",
   "tag": "glga",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "GarbageCollectionGlobalsDefinition_block",
   "blocks": {
-    "havok_cleanup_resources_block_3": {
+    "GarbageCollectionGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "havok_cleanup_resources_block_3"
+      "max_count_string": "1",
+      "struct": "GarbageCollectionGlobalsDefinition_block_struct"
     },
-    "garbage_collection_block_4": {
+    "havok_cleanup_resources_block": {
       "max_count": 1,
-      "struct": "garbage_collection_block_4"
+      "max_count_string": "1",
+      "struct": "havok_cleanup_resources_block"
     },
-    "root": {
+    "garbage_collection_block": {
       "max_count": 1,
-      "struct": "GarbageCollectionGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "garbage_collection_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "GarbageCollectionGlobalsDefinition_block_struct": {
+      "guid": "512a2fbe704dca5d83301882fbcab8cb",
+      "size": 72,
+      "size_string": "(sizeof(i343::GarbageCollectionGlobals) - Tag::SizeInfo<i343::GarbageCollectionGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "block",
+          "name": "havok cleanup resources",
+          "definition": "havok_cleanup_resources_block"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "garbage collection",
+          "group_tag": "slap",
+          "definition": "garbage_collection_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482a430"
     },
-    "havok_cleanup_resources_block_3": {
-      "guid": "1158b5b84d5afbfc592286b47beb91cb",
+    "havok_cleanup_resources_block": {
+      "guid": "b8b558115a4dfcfb592286b47beb91cb",
       "size": 32,
+      "size_string": "sizeof(s_game_globals_havok_cleanup_resources)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "object cleanup effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144803750"
     },
-    "garbage_collection_block_4": {
-      "guid": "49b147e04847863caa4813be7e2dc96b",
+    "garbage_collection_block": {
+      "guid": "e047b14947483c86aa4813be7e2dc96b",
       "size": 36,
+      "size_string": "sizeof(s_garbage_collection_globals)",
       "fields": [
         {
-          "type": "custom",
-          "name": "Garbage Times"
+          "type": "explanation",
+          "name": "Garbage Times",
+          "definition": "time before the game considers that following entities as garbage"
         },
         {
           "type": "real",
@@ -104,39 +120,39 @@
           "name": "Max dead body count #above this number, overloaded mp time is used to garbage collect dead bodies"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449898b0"
     },
-    "GarbageCollectionGlobalsDefinition_struct_definition_1": {
-      "guid": "3b9ea2bbf53862320e9d2c9c8846fd23",
-      "size": 72,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "havok cleanup resources",
-          "definition": "havok_cleanup_resources_block_3"
-        },
-        {
-          "type": "block",
-          "name": "garbage collection",
-          "definition": "garbage_collection_block_4"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

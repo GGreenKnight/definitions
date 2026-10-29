@@ -2,136 +2,83 @@
   "name": "GameplayObjectGlobalsDefinition",
   "tag": "glgo",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "GameplayObjectGlobalsDefinition_block",
   "blocks": {
-    "hologramLightingGlobalsBlock_3": {
+    "GameplayObjectGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "hologramLightingGlobalsBlock_3"
+      "max_count_string": "1",
+      "struct": "GameplayObjectGlobalsDefinition_block_struct"
     },
-    "active_camo_level_definition_block_18": {
+    "hologramLightingGlobalsBlock": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "hologramLightingGlobalsBlock"
+    },
+    "active_camo_globals_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "active_camo_globals_block"
+    },
+    "active_camo_level_definition_block": {
       "max_count": 5,
-      "struct": "active_camo_level_definition_block_18"
+      "max_count_string": "static_cast<int>(eActiveCamoBySpeedFunctionIndex::count)",
+      "struct": "active_camo_level_definition_block"
     },
-    "active_camo_globals_block_7": {
+    "shield_boost_block": {
       "max_count": 1,
-      "struct": "active_camo_globals_block_7"
-    },
-    "shield_boost_block_21": {
-      "max_count": 1,
-      "struct": "shield_boost_block_21"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "GameplayObjectGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "shield_boost_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "GameplayObjectGlobalsDefinition_block_struct": {
+      "guid": "bd62c63561404e25eaa20e8cb1de0415",
+      "size": 104,
+      "size_string": "(sizeof(i343::GameplayObjectGlobals) - Tag::SizeInfo<i343::GameplayObjectGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Hologram Lighting",
+          "definition": "hologramLightingGlobalsBlock"
+        },
+        {
+          "type": "block",
+          "name": "active camo",
+          "definition": "active_camo_globals_block"
+        },
+        {
+          "type": "block",
+          "name": "shield boost",
+          "definition": "shield_boost_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144829c30"
     },
-    "Key_Light_Functions_4": {
-      "guid": "8a25927642a4aa5552b42789b1be500a",
-      "size": 16,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Intensity"
-        },
-        {
-          "type": "string_id",
-          "name": "Forward"
-        },
-        {
-          "type": "string_id",
-          "name": "Right"
-        },
-        {
-          "type": "string_id",
-          "name": "Up"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Fill_Light_Functions_5": {
-      "guid": "8a25927642a4aa5552b42789b1be500a",
-      "size": 16,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Intensity"
-        },
-        {
-          "type": "string_id",
-          "name": "Forward"
-        },
-        {
-          "type": "string_id",
-          "name": "Right"
-        },
-        {
-          "type": "string_id",
-          "name": "Up"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Rim_Light_Functions_6": {
-      "guid": "8a25927642a4aa5552b42789b1be500a",
-      "size": 16,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Intensity"
-        },
-        {
-          "type": "string_id",
-          "name": "Forward"
-        },
-        {
-          "type": "string_id",
-          "name": "Right"
-        },
-        {
-          "type": "string_id",
-          "name": "Up"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "hologramLightingGlobalsBlock_3": {
-      "guid": "8e264b3b47459fd18ed7bc83ac73bb9f",
+    "hologramLightingGlobalsBlock": {
+      "guid": "3b4b268e4547d19f8ed7bc83ac73bb9f",
       "size": 52,
+      "size_string": "sizeof(HologramLightingGlobals)",
       "fields": [
         {
           "type": "custom",
-          "name": "HOLOGRAM FUNCTIONS"
+          "name": "HOLOGRAM FUNCTIONS",
+          "group_tag": "fgrb"
         },
         {
           "type": "string_id",
@@ -139,237 +86,93 @@
         },
         {
           "type": "custom",
-          "name": "KEY LIGHT FUNCTIONS"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "KEY LIGHT FUNCTIONS",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Key Light Functions",
-          "definition": "Key_Light_Functions_4"
+          "definition": "hologramLightFunctions"
         },
         {
           "type": "custom",
-          "name": "FILL LIGHT FUNCTIONS"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "FILL LIGHT FUNCTIONS",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Fill Light Functions",
-          "definition": "Fill_Light_Functions_5"
+          "definition": "hologramLightFunctions"
         },
         {
           "type": "custom",
-          "name": "RIM LIGHT FUNCTIONS"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "RIM LIGHT FUNCTIONS",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Rim Light Functions",
-          "definition": "Rim_Light_Functions_6"
+          "definition": "hologramLightFunctions"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144980a10"
     },
-    "function_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
+    "hologramLightFunctions": {
+      "guid": "7692258aa44255aa52b42789b1be500a",
+      "size": 16,
+      "size_string": "sizeof(HologramLightFunctions)",
       "fields": [
         {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
+          "type": "string_id",
+          "name": "Intensity"
         },
         {
-          "type": "terminator"
+          "type": "string_id",
+          "name": "Forward"
+        },
+        {
+          "type": "string_id",
+          "name": "Right"
+        },
+        {
+          "type": "string_id",
+          "name": "Up"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449808e0"
     },
-    "camo_value_to_distortion_8": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_11": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camo_value_to_transparency_maps_active_camo_percentage_to_alpha_for_THIRD_PERSON_rendering_10": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_11"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_13": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camo_value_to_fp_transparency_maps_active_camo_percentage_to_alpha_for_FIRST_PERSON_rendering_12": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_13"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_15": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camo_distortion_texture_strength_14": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_15"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_17": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camo_depth_bias_function_This_is_used_to_deal_with_ugly_rendering_artifacts_when_camo_is_not_fully_on_16": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_17"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_20": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "speed_to_maximum_camo_19": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_20"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "active_camo_level_definition_block_18": {
-      "guid": "e283deaa46ffd17b69f6028077e386f1",
-      "size": 44,
-      "fields": [
-        {
-          "type": "real",
-          "name": "grenade throw penalty:0..1!*#reduces camo value by this much when throwing a grenade"
-        },
-        {
-          "type": "real",
-          "name": "melee penalty:0..1!*#reduces camo by this much when meleeing"
-        },
-        {
-          "type": "real",
-          "name": "minimum dinged value!*#when taking damage or doing other actions that reduce camo, we will never drop below this value"
-        },
-        {
-          "type": "real",
-          "name": "interpolation time:s!*#time it takes to interpolate from 0.0 to 1.0"
-        },
-        {
-          "type": "struct",
-          "name": "speed to maximum camo",
-          "definition": "speed_to_maximum_camo_19"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "active_camo_globals_block_7": {
-      "guid": "4034ff5e4c2d39d8fba46c91bc83790c",
+    "active_camo_globals_block": {
+      "guid": "5eff34402d4cd839fba46c91bc83790c",
       "size": 240,
+      "size_string": "sizeof(s_active_camo_globals)",
       "fields": [
         {
           "type": "real",
@@ -394,22 +197,22 @@
         {
           "type": "struct",
           "name": "camo value to distortion",
-          "definition": "camo_value_to_distortion_8"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "camo value to transparency#maps active-camo percentage to alpha for THIRD PERSON rendering",
-          "definition": "camo_value_to_transparency_maps_active_camo_percentage_to_alpha_for_THIRD_PERSON_rendering_10"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "camo value to fp transparency#maps active-camo percentage to alpha for FIRST PERSON rendering",
-          "definition": "camo_value_to_fp_transparency_maps_active_camo_percentage_to_alpha_for_FIRST_PERSON_rendering_12"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "camo distortion texture strength",
-          "definition": "camo_distortion_texture_strength_14"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "real_vector_2d",
@@ -424,7 +227,9 @@
           "name": "camo distortion texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -434,25 +239,110 @@
         {
           "type": "struct",
           "name": "camo depth bias function#This is used to deal with ugly rendering artifacts when camo is not fully on",
-          "definition": "camo_depth_bias_function_This_is_used_to_deal_with_ugly_rendering_artifacts_when_camo_is_not_fully_on_16"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "block",
           "name": "camo levels",
-          "definition": "active_camo_level_definition_block_18"
+          "definition": "active_camo_level_definition_block"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144837400"
     },
-    "shield_boost_block_21": {
-      "guid": "c8a4d40e49e4830f712296907c8fdc1f",
-      "size": 12,
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
       "fields": [
         {
           "type": "custom",
-          "name": "shield boosting"
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "active_camo_level_definition_block": {
+      "guid": "aade83e2ff467bd169f6028077e386f1",
+      "size": 44,
+      "size_string": "sizeof(s_active_camo_level_definition)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "grenade throw penalty:0..1!*#reduces camo value by this much when throwing a grenade"
+        },
+        {
+          "type": "real",
+          "name": "melee penalty:0..1!*#reduces camo by this much when meleeing"
+        },
+        {
+          "type": "real",
+          "name": "minimum dinged value!*#when taking damage or doing other actions that reduce camo, we will never drop below this value"
+        },
+        {
+          "type": "real",
+          "name": "interpolation time:s!*#time it takes to interpolate from 0.0 to 1.0"
+        },
+        {
+          "type": "struct",
+          "name": "speed to maximum camo",
+          "definition": "scalar_function_named_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448372d0"
+    },
+    "shield_boost_block": {
+      "guid": "0ed4a4c8e4490f83712296907c8fdc1f",
+      "size": 12,
+      "size_string": "sizeof(s_game_globals_shield_boost)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "shield boosting",
+          "definition": "This feature was implemented for the engineer character in atlas. Shield dynamics overrides for when shields are being 'boosted' by an external source"
         },
         {
           "type": "real",
@@ -467,51 +357,47 @@
           "name": "shield boost stun time#stun time when getting boosted"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144834eb0"
     },
-    "GameplayObjectGlobalsDefinition_struct_definition_1": {
-      "guid": "474e314c6499274af746b64d0b888790",
-      "size": 104,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Hologram Lighting",
-          "definition": "hologramLightingGlobalsBlock_3"
-        },
-        {
-          "type": "block",
-          "name": "active camo",
-          "definition": "active_camo_globals_block_7"
-        },
-        {
-          "type": "block",
-          "name": "shield boost",
-          "definition": "shield_boost_block_21"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

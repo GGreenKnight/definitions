@@ -2,148 +2,190 @@
   "name": "death_program_selector",
   "tag": "bdpd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "death_program_selector_block",
   "blocks": {
-    "death_program_damage_region_reporting_block_6": {
-      "max_count": 11,
-      "struct": "death_program_damage_region_reporting_block_6"
-    },
-    "ragdoll_blend_function_block_8": {
-      "max_count": 127,
-      "struct": "ragdoll_blend_function_block_8"
-    },
-    "death_program_velocity_gate_block_7": {
-      "max_count": 2,
-      "struct": "death_program_velocity_gate_block_7"
-    },
-    "death_program_damage_reporting_block_4": {
-      "max_count": 64,
-      "struct": "death_program_damage_reporting_block_4"
-    },
-    "death_program_special_block_3": {
-      "max_count": 7,
-      "struct": "death_program_special_block_3"
-    },
-    "root": {
+    "death_program_selector_block": {
       "max_count": 1,
-      "struct": "death_program_selector_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "death_program_selector_block_struct"
+    },
+    "death_program_special_block": {
+      "max_count": 7,
+      "max_count_string": "k_maximum_death_program_special_types",
+      "struct": "death_program_special_block"
+    },
+    "death_program_damage_reporting_block": {
+      "max_count": 64,
+      "max_count_string": "k_maximum_death_program_damage_types",
+      "struct": "death_program_damage_reporting_block"
+    },
+    "death_program_damage_region_reporting_block": {
+      "max_count": 11,
+      "max_count_string": "NUMBER_OF_DAMAGE_PARTS",
+      "struct": "death_program_damage_region_reporting_block"
+    },
+    "death_program_velocity_gate_block": {
+      "max_count": 2,
+      "max_count_string": "k_maximum_death_program_velocity_gates",
+      "struct": "death_program_velocity_gate_block_struct"
+    },
+    "ragdoll_blend_function_block": {
+      "max_count": 127,
+      "max_count_string": "kMaximumDeadProgramRagdollDeathBlendFunctions",
+      "struct": "ragdoll_blend_function_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "death_program_selector_block_struct": {
+      "guid": "f3d71740e848a8789f7bb3905b0aae63",
+      "size": 80,
+      "size_string": "(sizeof(s_death_program_selector) - Tag::SizeInfo<s_death_program_selector::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "explanation",
+          "name": "Death Program Selection",
+          "definition": "There are 3 levels of filtering for this.  Certain combinations of the first two levels are either impossible or redundant.  This is because they come from different places in the damage code. I will try to make that clearer here:\n\nThe first level of filtering is a special damage type (none, headshot, melee, collision).  Previously, this was the only data that was used to determine if a dead body ragdolled immediately or not.  These filters should be pretty self-explanatory.\n\nThe second level of filtering is the damage reporting info.  This includes every weapon as well as general categories like melee and explosions.  You should probably only use this to filter for specific weapons and ignore those categories because they are somewhat redundant with the first level of filtering.\n\nThe last level of filtering is a velocity gate.  If the biped being killed is traveling faster than this value, then the specified death program will be used.  When there is more than one velocity gate, the largest one will be used.\n\nThe output of the filtering system (which is part of the last level of filtering) is a death program and a scale value.  The death programs are (animate then ragdoll, headshot ragdoll program, melee ragdoll program, default ragdoll program).  The scale value only affects the ragdoll programs, not the animation.  If the scale value is 0, then the object\u0092s default acceleration scale will be used.\n\nHeadshot ragdoll program: accelerates the body upwards and torques it back in the direction the damage came from.  Scales the effect based on the dying biped\u0092s speed and direction relative to damage\n\nMelee ragdoll program: accelerates ragdoll nodes in the direction of damage, applying more acceleration to the bodies closer to the point of impact.  Also torques the body from the point of impact.\n\nDefault ragdoll program: similar to melee program, but torque is different depending on how far from the center of mass the killing blow came from.\n\nThe headshot program is good for, well, headshots; the melee program is good for melees and collisions and possibly shotguns; and the default program is good for mostly everything else.\n\nInheritance:\n\nCurrently there is only one level of inheritance for each of the first two filters.  If the type of death was collision but none of the collision filters match, then it will search through \"none\" as well.  For the second level, if there is a filter for the weapon type but the velocity gate didn\u0092t match, it will search though \"the guardians\" as well.  The second filtering level looks like it has a lot of opportunity for inheritance relationships, but I didn\u0092t want to implement any without getting some input on what those should be."
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "tag_reference",
+          "name": "parent",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "bdpd"
+            ]
+          }
+        },
+        {
+          "type": "block",
+          "name": "special type",
+          "definition": "death_program_special_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_dps_0",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14498fdd0"
     },
-    "damageSource_5": {
-      "guid": "c31a245d433dff8727bbe58fe63e1849",
+    "death_program_special_block": {
+      "guid": "8098a70724475113e5a95dbfa7aa258c",
+      "size": 32,
+      "size_string": "sizeof(s_death_program_selector_special)",
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "special type^",
+          "definition": "object_damage_aftermath_special_damage_type_enum"
+        },
+        {
+          "type": "block",
+          "name": "damage type",
+          "definition": "death_program_damage_reporting_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14498fcc0"
+    },
+    "death_program_damage_reporting_block": {
+      "guid": "09ca1124f64a036faf79669082942d01",
+      "size": 60,
+      "size_string": "sizeof(s_death_program_selector_damage_type)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "Triggering Damage Source",
+          "definition": "Damage must have come from this source to trigger this death program. Leave blank to allow any damage source"
+        },
+        {
+          "type": "struct",
+          "name": "damageSource",
+          "definition": "DamageSourceDefinitionStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "Damaged Regions",
+          "definition": "Only trigger this death programs if one of the following body parts were the ones damaged.  If nothing is present, any body part will trigger this death program"
+        },
+        {
+          "type": "block",
+          "name": "damage regions",
+          "definition": "death_program_damage_region_reporting_block"
+        },
+        {
+          "type": "block",
+          "name": "velocity",
+          "definition": "death_program_velocity_gate_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14498fb90"
+    },
+    "DamageSourceDefinitionStruct": {
+      "guid": "5d241ac33d4387ff27bbe58fe63e1849",
       "size": 4,
+      "size_string": "sizeof(DamageSourceDefinition)",
       "fields": [
         {
           "type": "string_id",
           "name": "Damage Source Name"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144983d20"
     },
-    "death_program_damage_region_reporting_block_6": {
-      "guid": "82489f884420977acc3abfbc91a0176c",
+    "death_program_damage_region_reporting_block": {
+      "guid": "889f488220447a97cc3abfbc91a0176c",
       "size": 1,
+      "size_string": "sizeof(DeathDamageRegion)",
       "fields": [
         {
           "type": "char_enum",
           "name": "Damaged Region#Damaged region of the body",
-          "definition": "death_program_damage_region_reporting_block_6_options_0"
+          "definition": "damaged_body_part_enum_definition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14498f9a0"
     },
-    "function_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "blend_function_9": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_10"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ragdoll_blend_function_block_8": {
-      "guid": "614056244fdcea07ebb454899025b332",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "ragdoll_blend_function_block_8_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad_bf",
-          "definition": 3
-        },
-        {
-          "type": "struct",
-          "name": "blend function",
-          "definition": "blend_function_9"
-        },
-        {
-          "type": "string_id",
-          "name": "ragdoll subgroup#Which ragdoll group (defined in the physics model) this function affects.  If empty, this is a global fallback function."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "death_program_velocity_gate_block_7": {
-      "guid": "500a180d4ebb000479aa40b918fdba9e",
+    "death_program_velocity_gate_block_struct": {
+      "guid": "0d180a50bb4e040079aa40b918fdba9e",
       "size": 76,
+      "size_string": "sizeof(s_death_program_selector_velocity_gate)",
       "fields": [
         {
           "type": "real",
@@ -152,7 +194,7 @@
         {
           "type": "long_enum",
           "name": "death program",
-          "definition": "death_program_velocity_gate_block_7_options_1"
+          "definition": "death_program_result_enum"
         },
         {
           "type": "real",
@@ -181,7 +223,7 @@
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "death_program_velocity_gate_block_7_options_8"
+          "definition": "velocityGateFlags"
         },
         {
           "type": "pad",
@@ -190,7 +232,8 @@
         },
         {
           "type": "custom",
-          "name": "Animate-then-ragdoll"
+          "name": "Animate-then-ragdoll",
+          "group_tag": "fgrb"
         },
         {
           "type": "angle",
@@ -203,124 +246,149 @@
         },
         {
           "type": "custom",
-          "name": "Powered-ragdoll"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Powered-ragdoll",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
           "name": "Blend duration:Length of time the animation blends into ragdoll, in seconds#At runtime we chose the lesser of this, and the duration of the animation"
         },
         {
-          "type": "custom",
-          "name": "Blend functions"
+          "type": "explanation",
+          "name": "Blend functions",
+          "definition": "Functions defining the strength of the animation over the blend duration.  1.0 means fully driven by animation, 0.0 means pure ragdoll"
         },
         {
           "type": "block",
           "name": "Blend functions",
-          "definition": "ragdoll_blend_function_block_8"
+          "group_tag": "slap",
+          "definition": "ragdoll_blend_function_block"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14498f5e0"
     },
-    "death_program_damage_reporting_block_4": {
-      "guid": "2411ca094af66f03af79669082942d01",
-      "size": 60,
+    "ragdoll_blend_function_block": {
+      "guid": "24564061dc4f07eaebb454899025b332",
+      "size": 40,
+      "size_string": "sizeof(RagdollDeathBlendFunction)",
       "fields": [
         {
-          "type": "custom",
-          "name": "Triggering Damage Source"
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "poweredRagdollBlendFlags"
+        },
+        {
+          "type": "pad",
+          "name": "pad_bf",
+          "definition": 3
         },
         {
           "type": "struct",
-          "name": "damageSource",
-          "definition": "damageSource_5"
+          "name": "blend function",
+          "definition": "scalar_function_named_struct"
+        },
+        {
+          "type": "string_id",
+          "name": "ragdoll subgroup#Which ragdoll group (defined in the physics model) this function affects.  If empty, this is a global fallback function."
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14498f4d0"
+    },
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
         },
         {
           "type": "custom",
-          "name": "Damaged Regions"
+          "name": null,
+          "group_tag": "edih"
         },
         {
-          "type": "block",
-          "name": "damage regions",
-          "definition": "death_program_damage_region_reporting_block_6"
-        },
-        {
-          "type": "block",
-          "name": "velocity",
-          "definition": "death_program_velocity_gate_block_7"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144738b10"
     },
-    "death_program_special_block_3": {
-      "guid": "07a7988047241351e5a95dbfa7aa258c",
-      "size": 32,
-      "fields": [
-        {
-          "type": "long_enum",
-          "name": "special type^",
-          "definition": "death_program_special_block_3_options_0"
-        },
-        {
-          "type": "block",
-          "name": "damage type",
-          "definition": "death_program_damage_reporting_block_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "death_program_selector_struct_definition_1": {
-      "guid": "c9b94577e8db9976fd9e37568bbe7a35",
-      "size": 80,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "Explanation"
-        },
-        {
-          "type": "custom",
-          "name": "Death Program Selection"
-        },
-        {
-          "type": "tag_reference",
-          "name": "parent",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "block",
-          "name": "special type",
-          "definition": "death_program_special_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_dps_0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "death_program_special_block_3_options_0": {
+    "object_damage_aftermath_special_damage_type_enum": {
       "options": [
         "none",
         "headshot",
@@ -331,7 +399,7 @@
         "groundpound"
       ]
     },
-    "death_program_damage_region_reporting_block_6_options_0": {
+    "damaged_body_part_enum_definition": {
       "options": [
         "gut",
         "chest",
@@ -346,7 +414,7 @@
         "right foot"
       ]
     },
-    "death_program_velocity_gate_block_7_options_1": {
+    "death_program_result_enum": {
       "options": [
         "animate then ragdoll",
         "default ragdoll program",
@@ -356,7 +424,7 @@
         "vehicle ragdoll program"
       ]
     },
-    "death_program_velocity_gate_block_7_options_8": {
+    "velocityGateFlags": {
       "options": [
         "conservatively ragdoll#If there is any risk of the NPC intersecting with world geometry during death animations, go straight to ragdoll",
         "continue current animation#Do not play ping, continue whatever animation the character was playing while engaging powered ragdoll",
@@ -364,7 +432,7 @@
         "force soft ping overlay"
       ]
     },
-    "ragdoll_blend_function_block_8_options_1": {
+    "poweredRagdollBlendFlags": {
       "options": [
         "affects translation#The blend function controls translation (you probably want this)",
         "affects orientation#The blend function controls orientation (you probably want this)"
@@ -372,6 +440,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

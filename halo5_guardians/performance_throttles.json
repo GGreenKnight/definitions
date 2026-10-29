@@ -1,51 +1,64 @@
 {
   "name": "performance_throttles",
   "tag": "perf",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "performance_throttles_block",
   "blocks": {
-    "performane_throttle_block_3": {
-      "max_count": 7,
-      "struct": "performane_throttle_block_3"
-    },
-    "root": {
+    "performance_throttles_block": {
       "max_count": 1,
-      "struct": "performance_throttles_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "performance_throttles_block_struct"
+    },
+    "performane_throttle_block": {
+      "max_count": 7,
+      "max_count_string": "7",
+      "struct": "performane_throttle_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "performance_throttles_block_struct": {
+      "guid": "63454a0454481326de1d4ea50348f172",
+      "size": 48,
+      "size_string": "(sizeof(c_performance_throttles) - Tag::SizeInfo<c_performance_throttles::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "explanation",
+          "name": "Performance Throttles",
+          "definition": "Split-screen throttle settings should be more aggressive than non-local co-op settings\nblock index 0:\tdefault non split screen\nblock index 1: two way split screen\nblock index 2: three way split screen\nblock index 3: four way split screen\nblock index 4: one additional non-local player\nblock index 5: two additional non-local players\nblock index 6: three additional non-local players\n\n"
+        },
+        {
+          "type": "block",
+          "name": "Performance Throttles",
+          "definition": "performane_throttle_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144862300"
     },
-    "performane_throttle_block_3": {
-      "guid": "85d1510540b38b6788fd82a3e37ca3d1",
+    "performane_throttle_block": {
+      "guid": "0551d185b340678b88fd82a3e37ca3d1",
       "size": 76,
+      "size_string": "sizeof(s_performance_throttles)",
       "fields": [
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "performane_throttle_block_3_options_0"
+          "definition": "performance_throttle_flags"
         },
         {
           "type": "real",
@@ -61,7 +74,8 @@
         },
         {
           "type": "custom",
-          "name": "Object settings"
+          "name": "Object settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -81,7 +95,13 @@
         },
         {
           "type": "custom",
-          "name": "LOD settings"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "LOD settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -97,7 +117,13 @@
         },
         {
           "type": "custom",
-          "name": "Dynamic light settings"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Dynamic light settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "long_integer",
@@ -121,7 +147,13 @@
         },
         {
           "type": "custom",
-          "name": "Shadow settings"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Shadow settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "long_integer",
@@ -136,45 +168,42 @@
           "name": "floating shadow quality lod#scales resolution of floating shadow:[0.0 to 1.0], 0 = off"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448621e0"
     },
-    "performance_throttles_struct_definition_1": {
-      "guid": "07bf8fbcebafe8ac8fee12a3f930cf41",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "Performance Throttles"
-        },
-        {
-          "type": "block",
-          "name": "Performance Throttles",
-          "definition": "performane_throttle_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "performane_throttle_block_3_options_0": {
+    "performance_throttle_flags": {
       "options": [
         "disable object attachment lights",
         "disable first person shadow",
@@ -196,5 +225,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

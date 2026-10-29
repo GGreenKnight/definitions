@@ -1,54 +1,117 @@
 {
   "name": "camera_animation_graph",
   "tag": "camg",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 4194306,
+  "parent_tag": "aTag",
+  "block": "camera_animation_graph_block",
   "blocks": {
-    "cameraTrackControlPointBlock_5": {
-      "max_count": 2000,
-      "struct": "cameraTrackControlPointBlock_5"
-    },
-    "cameraTrackLensBlock_6": {
-      "max_count": 2000,
-      "struct": "cameraTrackLensBlock_6"
-    },
-    "cameraTrackAnimationBlock_3": {
-      "max_count": 1024,
-      "struct": "cameraTrackAnimationBlock_3"
-    },
-    "root": {
+    "camera_animation_graph_block": {
       "max_count": 1,
-      "struct": "camera_animation_graph_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "camera_animation_graph_block_struct"
+    },
+    "cameraTrackAnimationBlock": {
+      "max_count": 1024,
+      "max_count_string": "MAX_CAMERA_TRACK_ANIMATIONS",
+      "struct": "cameraTrackAnimationBlock"
+    },
+    "cameraTrackControlPointBlock": {
+      "max_count": 2000,
+      "max_count_string": "k_cameraTrackMaxControlPoints",
+      "struct": "cameraTrackControlPointBlock_struct"
+    },
+    "cameraTrackLensBlock": {
+      "max_count": 2000,
+      "max_count_string": "k_cameraTrackMaxControlPoints",
+      "struct": "cameraTrackLensBlock_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "camera_animation_graph_block_struct": {
+      "guid": "fcd2b3c6524f3a40de00bc88b898d1e1",
+      "size": 48,
+      "size_string": "(sizeof(CameraAnimationGraph) - Tag::SizeInfo<CameraAnimationGraph::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Animations",
+          "definition": "cameraTrackAnimationBlock"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "EXPLICIT_PAD!",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447a04b0"
     },
-    "cameraTrackControlPointBlock_5": {
-      "guid": "cd7602fd4e94e438b85a47b9e207f745",
+    "cameraTrackAnimationBlock": {
+      "guid": "17002285e54c7672ae018a8b0b83d37e",
+      "size": 64,
+      "size_string": "sizeof(CameraTrackAnimation)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name^"
+        },
+        {
+          "type": "struct",
+          "name": "Track",
+          "definition": "cameraTrackStruct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447a0390"
+    },
+    "cameraTrackStruct": {
+      "guid": "00aa6869ea4b754b277808808f4f4201",
+      "size": 60,
+      "size_string": "sizeof(CameraTrack)",
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "cameraTrackFlags"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "Control Points",
+          "definition": "cameraTrackControlPointBlock"
+        },
+        {
+          "type": "block",
+          "name": "Lenses",
+          "definition": "cameraTrackLensBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1446edd50"
+    },
+    "cameraTrackControlPointBlock_struct": {
+      "guid": "fd0276cd944e38e4b85a47b9e207f745",
       "size": 28,
+      "size_string": "sizeof(CameraTrackControlPoint)",
       "fields": [
         {
           "type": "real_vector_3d",
@@ -59,18 +122,21 @@
           "name": "orientation"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446edc30"
     },
-    "cameraTrackLensBlock_6": {
-      "guid": "38defdd940ba91f49d02fea1c0cd72c9",
+    "cameraTrackLensBlock_struct": {
+      "guid": "d9fdde38ba40f4919d02fea1c0cd72c9",
       "size": 16,
+      "size_string": "sizeof(CameraTrackLens)",
       "fields": [
         {
           "type": "byte_flags",
           "name": "Flags",
-          "definition": "cameraTrackLensBlock_6_options_0"
+          "definition": "cameraTrackLensFlags"
         },
         {
           "type": "pad",
@@ -90,97 +156,51 @@
           "name": "FStop"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446edb20"
     },
-    "Track_4": {
-      "guid": "6968aa004bea4b75277808808f4f4201",
-      "size": 60,
-      "fields": [
-        {
-          "type": "byte_flags",
-          "name": "Flags",
-          "definition": "Track_4_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "PAD1!",
-          "definition": 3
-        },
-        {
-          "type": "block",
-          "name": "Control Points",
-          "definition": "cameraTrackControlPointBlock_5"
-        },
-        {
-          "type": "block",
-          "name": "Lenses",
-          "definition": "cameraTrackLensBlock_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cameraTrackAnimationBlock_3": {
-      "guid": "852200174ce57276ae018a8b0b83d37e",
-      "size": 64,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Name^"
-        },
-        {
-          "type": "struct",
-          "name": "Track",
-          "definition": "Track_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camera_animation_graph_struct_definition_1": {
-      "guid": "8ba90b739285de7873fce116d83341be",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Animations",
-          "definition": "cameraTrackAnimationBlock_3"
-        },
-        {
-          "type": "pad",
-          "name": "EXPLICIT_PAD!",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "Track_4_options_0": {
+    "cameraTrackFlags": {
       "options": [
         "Lens Enabled"
       ]
     },
-    "cameraTrackLensBlock_6_options_0": {
+    "cameraTrackLensFlags": {
       "options": [
         "Depth Of Field Enabled"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

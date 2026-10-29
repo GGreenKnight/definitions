@@ -3,75 +3,35 @@
   "tag": "LMMg",
   "version": 0,
   "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "parent_tag": "aTag",
+  "block": "lightmap_model_globals_block",
   "blocks": {
-    "lightmap_model_reference_block_3": {
-      "max_count": 32767,
-      "struct": "lightmap_model_reference_block_3"
-    },
-    "root": {
+    "lightmap_model_globals_block": {
       "max_count": 1,
-      "struct": "lightmap_model_globals_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "lightmap_model_globals_block_struct"
+    },
+    "lightmap_model_reference_block": {
+      "max_count": 32767,
+      "max_count_string": "32767",
+      "struct": "lightmap_model_reference_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "lightmap_model_reference_block_3": {
-      "guid": "d9134e313145ee31d4ec559a8baaae75",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "Model Reference^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "lightmap_model_globals_struct_definition_1": {
-      "guid": "5384de6f4622345799a28243c33e6cef",
+    "lightmap_model_globals_block_struct": {
+      "guid": "5aa08c6bd24523d02bb28cab33ee3412",
       "size": 48,
+      "size_string": "(sizeof(s_lightmap_model_globals) - Tag::SizeInfo<s_lightmap_model_globals::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "block",
           "name": "Lightmapped Models",
-          "definition": "lightmap_model_reference_block_3"
+          "definition": "lightmap_model_reference_block"
         },
         {
           "type": "pad",
@@ -79,11 +39,61 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144753940"
+    },
+    "lightmap_model_reference_block": {
+      "guid": "314e13d9453131eed4ec559a8baaae75",
+      "size": 32,
+      "size_string": "sizeof(s_lightmap_model_reference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Model Reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "hlmt"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144753830"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

@@ -1,57 +1,68 @@
 {
   "name": "sound_global_propagation",
   "tag": "sgp!",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "sound_global_propagation_block",
   "blocks": {
-    "root": {
+    "sound_global_propagation_block": {
       "max_count": 1,
-      "struct": "sound_global_propagation_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "sound_global_propagation_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "sound_global_propagation_block_struct": {
+      "guid": "887cafc52e4d86a7697420a2beb0eda4",
+      "size": 152,
+      "size_string": "(sizeof(s_sound_global_propagation_definition) - Tag::SizeInfo<s_sound_global_propagation_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "explanation",
+          "name": "underwater propagation globals",
+          "definition": ""
         },
         {
-          "type": "terminator"
+          "type": "struct",
+          "name": "underwater propagation",
+          "definition": "sound_propagation_definition_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144782750"
     },
-    "underwater_propagation_3": {
-      "guid": "de42e80749529f17692262a271306655",
+    "sound_propagation_definition_struct": {
+      "guid": "07e842de5249179f692262a271306655",
       "size": 136,
+      "size_string": "sizeof(s_sound_propagation_definition)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "sound environment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "snde"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "background sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "lsnd"
+            ]
           }
         },
         {
@@ -66,51 +77,56 @@
           "type": "tag_reference",
           "name": "entry sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "exit sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144782640"
     },
-    "sound_global_propagation_struct_definition_1": {
-      "guid": "e912b6a5479b6ebcd0833ca5492575b5",
-      "size": 152,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "underwater propagation globals"
-        },
-        {
-          "type": "struct",
-          "name": "underwater propagation",
-          "definition": "underwater_propagation_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

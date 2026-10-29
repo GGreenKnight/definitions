@@ -2,57 +2,78 @@
   "name": "structure_meta",
   "tag": "smet",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "structure_meta_block",
   "blocks": {
-    "structureBspFxMarkerBlock_3": {
-      "max_count": 1024,
-      "struct": "structureBspFxMarkerBlock_3"
-    },
-    "structureMetadataLightConeMarkerBlock_4": {
-      "max_count": 1024,
-      "struct": "structureMetadataLightConeMarkerBlock_4"
-    },
-    "structure_bsp_environment_object_palette_block_5": {
-      "max_count": 1024,
-      "struct": "structure_bsp_environment_object_palette_block_5"
-    },
-    "structure_bsp_environment_object_block_6": {
-      "max_count": 16384,
-      "struct": "structure_bsp_environment_object_block_6"
-    },
-    "root": {
+    "structure_meta_block": {
       "max_count": 1,
-      "struct": "structure_meta_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "structure_meta_block_struct"
+    },
+    "structureBspFxMarkerBlock": {
+      "max_count": 1024,
+      "max_count_string": "MAXIMUM_MARKERS_PER_STRUCTURE",
+      "struct": "structureBspFxMarkerBlock"
+    },
+    "structureMetadataLightConeMarkerBlock": {
+      "max_count": 1024,
+      "max_count_string": "MAXIMUM_MARKERS_PER_STRUCTURE",
+      "struct": "structureMetadataLightConeMarkerBlock"
+    },
+    "structure_bsp_environment_object_palette_block": {
+      "max_count": 1024,
+      "max_count_string": "MAXIMUM_ENVIRONMENT_OBJECT_PALETTE_ENTRIES_PER_STRUCTURE",
+      "struct": "structure_bsp_environment_object_palette_block"
+    },
+    "structure_bsp_environment_object_block": {
+      "max_count": 16384,
+      "max_count_string": "MAXIMUM_ENVIRONMENT_OBJECTS_PER_STRUCTURE",
+      "struct": "structure_bsp_environment_object_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "structure_meta_block_struct": {
+      "guid": "b921f0aa2a4356e6de391e9754dfa10b",
+      "size": 128,
+      "size_string": "(sizeof(StructureMetadata) - Tag::SizeInfo<StructureMetadata::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "block",
+          "name": "Effects markers*",
+          "definition": "structureBspFxMarkerBlock"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "Light Cones*",
+          "definition": "structureMetadataLightConeMarkerBlock"
+        },
+        {
+          "type": "block",
+          "name": "Object Palette*",
+          "definition": "structure_bsp_environment_object_palette_block"
+        },
+        {
+          "type": "block",
+          "name": "Objects*",
+          "definition": "structure_bsp_environment_object_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144754a60"
     },
-    "structureBspFxMarkerBlock_3": {
-      "guid": "025d71c34bf15053991c33b151a5ea25",
+    "structureBspFxMarkerBlock": {
+      "guid": "c3715d02f14b5350991c33b151a5ea25",
       "size": 92,
+      "size_string": "sizeof(StructureFxPlacementMarker)",
       "fields": [
         {
           "type": "string",
@@ -71,17 +92,23 @@
           "name": "optional attached effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe",
+              "lens"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144754bb0"
     },
-    "structureMetadataLightConeMarkerBlock_4": {
-      "guid": "5497309544dd6f234d5112a0f7a5c23d",
+    "structureMetadataLightConeMarkerBlock": {
+      "guid": "95309754dd44236f4d5112a0f7a5c23d",
       "size": 120,
+      "size_string": "sizeof(StructureMetadataLightConeMarker)",
       "fields": [
         {
           "type": "string",
@@ -116,32 +143,41 @@
           "name": "light cone tag",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "licn"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144754ce0"
     },
-    "structure_bsp_environment_object_palette_block_5": {
-      "guid": "37d2fc4a43f82e62debe35b211be7677",
+    "structure_bsp_environment_object_palette_block": {
+      "guid": "4afcd237f843622edebe35b211be7677",
       "size": 68,
+      "size_string": "sizeof(structure_environment_object_palette_entry)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "definition^",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 18,
+            "allowed": [
+              "obje"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "model",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 18,
+            "allowed": [
+              "mode"
+            ]
           }
         },
         {
@@ -149,13 +185,16 @@
           "name": "GVEYN!"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144791410"
     },
-    "structure_bsp_environment_object_block_6": {
-      "guid": "1cdf634d476ffd90daf133917f241bcc",
+    "structure_bsp_environment_object_block": {
+      "guid": "4d63df1c6f4790fddaf133917f241bcc",
       "size": 84,
+      "size_string": "sizeof(structure_environment_object)",
       "fields": [
         {
           "type": "string",
@@ -174,13 +213,14 @@
           "name": "scale"
         },
         {
-          "type": "short_integer",
-          "name": "palette_index"
+          "type": "short_block_index",
+          "name": "palette_index",
+          "definition": "structure_bsp_environment_object_palette_block"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "structure_bsp_environment_object_block_6_options_5"
+          "definition": "environmentObjectFlagsDefinition"
         },
         {
           "type": "pad",
@@ -204,55 +244,46 @@
           "name": "variant name"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144791540"
     },
-    "structure_meta_struct_definition_1": {
-      "guid": "49682a7fdbfeded06b2fe54d169a57ba",
-      "size": 128,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Effects markers*",
-          "definition": "structureBspFxMarkerBlock_3"
-        },
-        {
-          "type": "block",
-          "name": "Light Cones*",
-          "definition": "structureMetadataLightConeMarkerBlock_4"
-        },
-        {
-          "type": "block",
-          "name": "Object Palette*",
-          "definition": "structure_bsp_environment_object_palette_block_5"
-        },
-        {
-          "type": "block",
-          "name": "Objects*",
-          "definition": "structure_bsp_environment_object_block_6"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "structure_bsp_environment_object_block_6_options_5": {
+    "environmentObjectFlagsDefinition": {
       "options": [
         "scripts always run"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

@@ -2,62 +2,48 @@
   "name": "weapon_configuration",
   "tag": "wcfg",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "ocfg",
+  "block": "weapon_configuration_block",
   "blocks": {
-    "WeaponGenericAttachment_4": {
-      "max_count": 2,
-      "struct": "WeaponGenericAttachment_4"
-    },
-    "root": {
+    "weapon_configuration_block": {
       "max_count": 1,
-      "struct": "weapon_configuration_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "weapon_configuration_block_struct"
+    },
+    "WeaponGenericAttachment": {
+      "max_count": 2,
+      "max_count_string": "i343::Weapon::k_maxGenericAttachments",
+      "struct": "WeaponGenericAttachment_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "weapon_configuration_block_struct": {
+      "guid": "605a2fa10f4086f0c32157a20cd34e88",
+      "size": 312,
+      "size_string": "(sizeof(i343::Weapon::WeaponConfigurationDefinition) - Tag::SizeInfo<i343::Weapon::WeaponConfigurationDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "object_configuration",
+          "definition": "_base_object_configuration"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "struct",
+          "name": "weapon",
+          "definition": "weapon_configuration_internal"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449a68c0"
     },
-    "WeaponGenericAttachment_4": {
-      "guid": "6dd1d13d42c5d1c47d4101a250bce220",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "attachment",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "weapon_3": {
-      "guid": "d71bdb814b2974278628da9b90718539",
+    "weapon_configuration_internal": {
+      "guid": "81db1bd7294b27748628da9b90718539",
       "size": 288,
+      "size_string": "sizeof(i343::Weapon::WeaponConfigurationDefinitionInternal)",
       "fields": [
         {
           "type": "string_id",
@@ -66,14 +52,16 @@
         {
           "type": "block",
           "name": "generic attachments",
-          "definition": "WeaponGenericAttachment_4"
+          "definition": "WeaponGenericAttachment"
         },
         {
           "type": "tag_reference",
           "name": "barrel attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "weab"
+            ]
           }
         },
         {
@@ -81,7 +69,9 @@
           "name": "magazine attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "weam"
+            ]
           }
         },
         {
@@ -89,7 +79,9 @@
           "name": "melee attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "weme"
+            ]
           }
         },
         {
@@ -97,7 +89,9 @@
           "name": "sight attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "west"
+            ]
           }
         },
         {
@@ -105,7 +99,9 @@
           "name": "target tracking attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "wett"
+            ]
           }
         },
         {
@@ -113,19 +109,24 @@
           "name": "trigger attachment",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "wetr"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "WARNING"
+          "type": "explanation",
+          "name": "WARNING",
+          "definition": "\"unit modifier set\" This has unresponsive networking.  Only exposed for special/rare weapons.  Do not use in standard tuning of a weapon"
         },
         {
           "type": "tag_reference",
           "name": "unit modifier set",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "gmpm"
+            ]
           }
         },
         {
@@ -133,26 +134,71 @@
           "name": "UI Display Info",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "uiwi"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449a67b0"
     },
-    "weapon_configuration_struct_definition_1": {
-      "guid": "238834de5040f06583b7db105629b411",
-      "size": 312,
+    "WeaponGenericAttachment_struct": {
+      "guid": "3dd1d16dc542c4d17d4101a250bce220",
+      "size": 32,
+      "size_string": "sizeof(i343::Weapon::GenericAttachmentDefinition)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "attachment",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "weat"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449a0760"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
+    },
+    "_base_object_configuration": {
+      "guid": "200b57140e481a715073629ecb620960",
+      "size": 24,
+      "size_string": "(sizeof(i343::Objects::ObjectConfigurationDefinition) - Tag::SizeInfo<i343::Objects::ObjectConfigurationDefinition::ParentType>::k_tagSize)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "pad",
@@ -160,16 +206,17 @@
           "definition": 8
         },
         {
-          "type": "struct",
-          "name": "weapon",
-          "definition": "weapon_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144999b50"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

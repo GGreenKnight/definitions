@@ -1,71 +1,106 @@
 {
   "name": "musketeer_toe_definition_tag",
   "tag": "mtrd",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "musketeer_toe_definition_tag_block",
   "blocks": {
-    "MusketeerDefinitionBlock_4": {
-      "max_count": 32,
-      "struct": "MusketeerDefinitionBlock_4"
+    "musketeer_toe_definition_tag_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "musketeer_toe_definition_tag_block_struct"
     },
-    "MusketeerDifficultyTuningSetBlock_6": {
+    "MusketeerTeamDefinitionBlock": {
+      "max_count": 32,
+      "max_count_string": "32",
+      "struct": "MusketeerTeamDefinitionBlock"
+    },
+    "MusketeerDefinitionBlock": {
+      "max_count": 32,
+      "max_count_string": "32",
+      "struct": "MusketeerDefinitionBlock"
+    },
+    "MusketeerDifficultyTuningsBlock": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "MusketeerDifficultyTuningsBlock"
+    },
+    "MusketeerDifficultyTuningSetBlock": {
       "max_count": 10,
-      "struct": "MusketeerDifficultyTuningSetBlock_6"
-    },
-    "MusketeerDifficultyTuningsBlock_5": {
-      "max_count": 1,
-      "struct": "MusketeerDifficultyTuningsBlock_5"
-    },
-    "MusketeerTeamDefinitionBlock_3": {
-      "max_count": 32,
-      "struct": "MusketeerTeamDefinitionBlock_3"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "musketeer_toe_definition_tag_struct_definition_1"
+      "max_count_string": "static_cast<long>(i343::Musketeer::Difficulty::TuningSetType::Count)",
+      "struct": "MusketeerDifficultyTuningSetBlock_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "musketeer_toe_definition_tag_block_struct": {
+      "guid": "7d4b154bbf48daf6bbc85a8a69faa578",
+      "size": 48,
+      "size_string": "(sizeof(MusketeerTOEDefinition) - Tag::SizeInfo<MusketeerTOEDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Musketeer Teams",
+          "definition": "MusketeerTeamDefinitionBlock"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "post teams",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d3090"
     },
-    "MusketeerDefinitionBlock_4": {
-      "guid": "acc36aae41afd75dd29c768dce5c763f",
+    "MusketeerTeamDefinitionBlock": {
+      "guid": "3748246ad64afcc672bdb7a4af36a0fc",
+      "size": 56,
+      "size_string": "sizeof(MusketeerTeamDefinition)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "Musketeer",
+          "definition": "MusketeerDefinitionBlock"
+        },
+        {
+          "type": "block",
+          "name": "Difficulty Tunings",
+          "definition": "MusketeerDifficultyTuningsBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447d2f70"
+    },
+    "MusketeerDefinitionBlock": {
+      "guid": "ae6ac3acaf415dd7d29c768dce5c763f",
       "size": 36,
+      "size_string": "sizeof(MusketeerDefinition)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "character",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "char"
+            ]
           }
         },
         {
           "type": "char_enum",
           "name": "avatar name",
-          "definition": "MusketeerDefinitionBlock_4_options_1"
+          "definition": "AvatarNameEnum"
         },
         {
           "type": "pad",
@@ -73,22 +108,56 @@
           "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d2e40"
     },
-    "MusketeerDifficultyTuningSetBlock_6": {
-      "guid": "e07b541d40030c3c17380189a5ea6267",
+    "MusketeerDifficultyTuningsBlock": {
+      "guid": "7f60a1cca4496c7bf024bfbd2fb4c4cd",
+      "size": 36,
+      "size_string": "sizeof(i343::Musketeer::Difficulty::Tunings)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "Tuning Sets",
+          "definition": "MusketeerDifficultyTuningSetBlock"
+        },
+        {
+          "type": "explanation",
+          "name": "clamps",
+          "definition": "clamps for musketeer data"
+        },
+        {
+          "type": "real",
+          "name": "minimum value for starting accuracy"
+        },
+        {
+          "type": "real",
+          "name": "minimum value for ending accuracy"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447fb2d0"
+    },
+    "MusketeerDifficultyTuningSetBlock_struct": {
+      "guid": "1d547be003403c0c17380189a5ea6267",
       "size": 332,
+      "size_string": "sizeof(i343::Musketeer::Difficulty::TuningSet)",
       "fields": [
         {
           "type": "long_enum",
           "name": "Type",
-          "definition": "MusketeerDifficultyTuningSetBlock_6_options_0"
+          "definition": "TuningSetTypeEnum"
         },
         {
-          "type": "custom",
-          "name": "health"
+          "type": "explanation",
+          "name": "health",
+          "definition": "scale values for enemy health and damage settings"
         },
         {
           "type": "real",
@@ -165,8 +234,9 @@
           "definition": 8
         },
         {
-          "type": "custom",
-          "name": "ranged fire"
+          "type": "explanation",
+          "name": "ranged fire",
+          "definition": "difficulty-affecting values for enemy ranged combat settings"
         },
         {
           "type": "real",
@@ -270,8 +340,9 @@
           "definition": 8
         },
         {
-          "type": "custom",
-          "name": "grenades"
+          "type": "explanation",
+          "name": "grenades",
+          "definition": "difficulty-affecting values for enemy grenade behavior"
         },
         {
           "type": "real",
@@ -314,8 +385,9 @@
           "name": "MIN grenade velocity scale#min incomming value (set to 0 to keep unchanged, used to override any multipliers that has set the value to 0)"
         },
         {
-          "type": "custom",
-          "name": "placement"
+          "type": "explanation",
+          "name": "placement",
+          "definition": "difficulty-affecting values for enemy placement"
         },
         {
           "type": "real",
@@ -342,8 +414,9 @@
           "name": "MIN major upgrade (many)#min incomming value (set to 0 to keep unchanged, used to override any multipliers that has set the value to 0)"
         },
         {
-          "type": "custom",
-          "name": "vehicles"
+          "type": "explanation",
+          "name": "vehicles",
+          "definition": "difficulty-affecting values for vehicle driving/combat"
         },
         {
           "type": "real",
@@ -370,8 +443,9 @@
           "name": "MIN vehicle boarding chance#min incomming value (set to 0 to keep unchanged, used to override any multipliers that has set the value to 0)"
         },
         {
-          "type": "custom",
-          "name": "cover"
+          "type": "explanation",
+          "name": "cover",
+          "definition": "difficulty-affecting values for cover and bunkering"
         },
         {
           "type": "real",
@@ -419,8 +493,9 @@
           "definition": 8
         },
         {
-          "type": "custom",
-          "name": "Damage Scaling"
+          "type": "explanation",
+          "name": "Damage Scaling",
+          "definition": "scale damage"
         },
         {
           "type": "real",
@@ -431,86 +506,37 @@
           "name": "MIN Damage received from enemy AI#min incomming value (set to 0 to keep unchanged, used to override any multipliers that has set the value to 0)"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447fb190"
     },
-    "MusketeerDifficultyTuningsBlock_5": {
-      "guid": "cca1607f49a47b6cf024bfbd2fb4c4cd",
-      "size": 36,
-      "fields": [
-        {
-          "type": "block",
-          "name": "Tuning Sets",
-          "definition": "MusketeerDifficultyTuningSetBlock_6"
-        },
-        {
-          "type": "custom",
-          "name": "clamps"
-        },
-        {
-          "type": "real",
-          "name": "minimum value for starting accuracy"
-        },
-        {
-          "type": "real",
-          "name": "minimum value for ending accuracy"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "MusketeerTeamDefinitionBlock_3": {
-      "guid": "6a2448374ad6c6fc72bdb7a4af36a0fc",
-      "size": 56,
-      "fields": [
-        {
-          "type": "block",
-          "name": "Musketeer",
-          "definition": "MusketeerDefinitionBlock_4"
-        },
-        {
-          "type": "block",
-          "name": "Difficulty Tunings",
-          "definition": "MusketeerDifficultyTuningsBlock_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "musketeer_toe_definition_tag_struct_definition_1": {
-      "guid": "e99538ad8da6ef2e5c67ec066101baf5",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Musketeer Teams",
-          "definition": "MusketeerTeamDefinitionBlock_3"
-        },
-        {
-          "type": "pad",
-          "name": "post teams",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "MusketeerDefinitionBlock_4_options_1": {
+    "AvatarNameEnum": {
       "options": [
         "None",
         "Masterchief",
@@ -523,7 +549,7 @@
         "Vale"
       ]
     },
-    "MusketeerDifficultyTuningSetBlock_6_options_0": {
+    "TuningSetTypeEnum": {
       "options": [
         "Target visible to any player",
         "Actor gunning for any player",
@@ -538,5 +564,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

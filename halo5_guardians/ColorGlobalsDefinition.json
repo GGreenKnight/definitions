@@ -2,70 +2,120 @@
   "name": "ColorGlobalsDefinition",
   "tag": "glco",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "ColorGlobalsDefinition_block",
   "blocks": {
-    "multiplayer_color_block_3": {
-      "max_count": 63,
-      "struct": "multiplayer_color_block_3"
-    },
-    "harmonyBlock_5": {
-      "max_count": 7,
-      "struct": "harmonyBlock_5"
-    },
-    "harmonyGroupBlock_4": {
-      "max_count": 33,
-      "struct": "harmonyGroupBlock_4"
-    },
-    "visor_color_block_6": {
-      "max_count": 63,
-      "struct": "visor_color_block_6"
-    },
-    "root": {
+    "ColorGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "ColorGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "ColorGlobalsDefinition_block_struct"
+    },
+    "multiplayer_color_block": {
+      "max_count": 63,
+      "max_count_string": "k_maximumNumberOfPlayerColors",
+      "struct": "multiplayer_color_block"
+    },
+    "harmonyGroupBlock": {
+      "max_count": 33,
+      "max_count_string": "k_numberOfEmblemHarmonyGroups",
+      "struct": "harmonyGroupBlock"
+    },
+    "harmonyBlock": {
+      "max_count": 7,
+      "max_count_string": "k_numberOfEmblemHarmoniesPerGroup",
+      "struct": "harmonyBlock"
+    },
+    "visor_color_block": {
+      "max_count": 63,
+      "max_count_string": "k_maximumNumberOfVisorColors",
+      "struct": "visor_color_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "ColorGlobalsDefinition_block_struct": {
+      "guid": "0b2100612b43e7f0bf67b59c7d651c69",
+      "size": 128,
+      "size_string": "(sizeof(ColorGlobals) - Tag::SizeInfo<ColorGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "profile colors",
+          "definition": "multiplayer_color_block"
+        },
+        {
+          "type": "block",
+          "name": "emblem colors",
+          "definition": "harmonyGroupBlock"
+        },
+        {
+          "type": "block",
+          "name": "visor colors",
+          "definition": "visor_color_block"
+        },
+        {
+          "type": "struct",
+          "name": "elite specular color",
+          "definition": "elite_specular_color_struct"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144827be0"
     },
-    "multiplayer_color_block_3": {
-      "guid": "0a6c97564866f0e2e9f308a76219c4c9",
+    "multiplayer_color_block": {
+      "guid": "56976c0a6648e2f0e9f308a76219c4c9",
       "size": 12,
+      "size_string": "sizeof(real_rgb_color)",
       "fields": [
         {
           "type": "real_rgb_color",
           "name": "color"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144803eb0"
     },
-    "harmonyBlock_5": {
-      "guid": "5f0c6cda004151ab3f8434b6ab2be4c8",
+    "harmonyGroupBlock": {
+      "guid": "57a9af4743dbd9e3535b1bb8fe3c7932",
+      "size": 32,
+      "size_string": "sizeof(EmblemHarmonyGroup)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "harmony group name"
+        },
+        {
+          "type": "block",
+          "name": "harmonies",
+          "definition": "harmonyBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144827ad0"
+    },
+    "harmonyBlock": {
+      "guid": "da6c0c5f4100ab513f8434b6ab2be4c8",
       "size": 40,
+      "size_string": "sizeof(EmblemHarmony)",
       "fields": [
         {
           "type": "string_id",
@@ -84,31 +134,16 @@
           "name": "tertiary color"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448279a0"
     },
-    "harmonyGroupBlock_4": {
-      "guid": "47afa957db43e3d9535b1bb8fe3c7932",
-      "size": 32,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "harmony group name"
-        },
-        {
-          "type": "block",
-          "name": "harmonies",
-          "definition": "harmonyBlock_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "visor_color_block_6": {
-      "guid": "91c73ac247bd84f2ad0b3b933b13db26",
+    "visor_color_block": {
+      "guid": "c23ac791bd47f284ad0b3b933b13db26",
       "size": 28,
+      "size_string": "sizeof(s_multiplayer_visor_color)",
       "fields": [
         {
           "type": "string_id",
@@ -123,13 +158,16 @@
           "name": "quaternary color"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144803fe0"
     },
-    "elite_specular_color_7": {
-      "guid": "1935844441d061ac194e138b1b3ac626",
+    "elite_specular_color_struct": {
+      "guid": "44843519d041ac61194e138b1b3ac626",
       "size": 24,
+      "size_string": "sizeof(s_elite_specular_color)",
       "fields": [
         {
           "type": "real_rgb_color",
@@ -140,54 +178,39 @@
           "name": "quaternary color"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448040f0"
     },
-    "ColorGlobalsDefinition_struct_definition_1": {
-      "guid": "4b9a7c19ba31915262aa9e25c77a8f00",
-      "size": 128,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "profile colors",
-          "definition": "multiplayer_color_block_3"
-        },
-        {
-          "type": "block",
-          "name": "emblem colors",
-          "definition": "harmonyGroupBlock_4"
-        },
-        {
-          "type": "block",
-          "name": "visor colors",
-          "definition": "visor_color_block_6"
-        },
-        {
-          "type": "struct",
-          "name": "elite specular color",
-          "definition": "elite_specular_color_7"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

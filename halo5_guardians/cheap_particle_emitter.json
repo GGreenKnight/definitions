@@ -2,91 +2,31 @@
   "name": "cheap_particle_emitter",
   "tag": "cpem",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "cheap_particle_emitter_block",
   "blocks": {
-    "root": {
+    "cheap_particle_emitter_block": {
       "max_count": 1,
-      "struct": "cheap_particle_emitter_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "cheap_particle_emitter_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_4": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "spawnrate_3": {
-      "guid": "e439295b4f7fed02947b3dba184f3d39",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cheap_particle_emitter_struct_definition_1": {
-      "guid": "bc499a4306bb6bfe24f293b7c29c29dd",
+    "cheap_particle_emitter_block_struct": {
+      "guid": "f28e57039ba21fe33af4ba53ca27e400",
       "size": 344,
+      "size_string": "(sizeof(CheapParticleEmitter) - Tag::SizeInfo<CheapParticleEmitter::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "cheap_particle_emitter_struct_definition_1_options_2"
+          "definition": "cheap_particle_emitter_flags"
         },
         {
           "type": "word_integer",
@@ -97,17 +37,19 @@
           "name": "spawn rate!:particles per second"
         },
         {
-          "type": "custom",
-          "name": "SPAWN RATE"
+          "type": "explanation",
+          "name": "SPAWN RATE",
+          "definition": "how many particles to spawn per second"
         },
         {
           "type": "struct",
           "name": "spawnrate",
-          "definition": "spawnrate_3"
+          "definition": "cheap_particle_scalar_object_function_struct"
         },
         {
-          "type": "custom",
-          "name": "LOD"
+          "type": "explanation",
+          "name": "LOD",
+          "definition": "reduces the number of particles at distance"
         },
         {
           "type": "real",
@@ -118,16 +60,19 @@
           "name": "distance fade end:world units#the distance where the number of spawned particles is zero"
         },
         {
-          "type": "custom",
-          "name": "TYPES"
+          "type": "explanation",
+          "name": "TYPES",
+          "definition": "types of particles to spawn, from the global particle type library"
         },
         {
           "type": "custom",
-          "name": "types"
+          "name": "types",
+          "group_tag": "fgrb"
         },
         {
           "type": "string_id",
-          "name": "type 0"
+          "name": "type 0",
+          "group_tag": "sted"
         },
         {
           "type": "real",
@@ -135,7 +80,8 @@
         },
         {
           "type": "string_id",
-          "name": "type 1"
+          "name": "type 1",
+          "group_tag": "sted"
         },
         {
           "type": "real",
@@ -143,7 +89,8 @@
         },
         {
           "type": "string_id",
-          "name": "type 2"
+          "name": "type 2",
+          "group_tag": "sted"
         },
         {
           "type": "real",
@@ -151,7 +98,8 @@
         },
         {
           "type": "string_id",
-          "name": "type 3"
+          "name": "type 3",
+          "group_tag": "sted"
         },
         {
           "type": "real",
@@ -159,22 +107,31 @@
         },
         {
           "type": "custom",
-          "name": "LIFETIME"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "explanation",
+          "name": "LIFETIME",
+          "definition": "how long the spawned particles will last"
         },
         {
           "type": "real_bounds",
           "name": "lifetime:seconds"
         },
         {
-          "type": "custom",
-          "name": "EMITTER PARAMETERS"
+          "type": "explanation",
+          "name": "EMITTER PARAMETERS",
+          "definition": "controls where a particle spawns, and its initial velocity"
         },
         {
           "type": "tag_reference",
           "name": "position texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -190,7 +147,9 @@
           "name": "velocity texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -206,8 +165,9 @@
           "name": "subframe offset:frames#spawns particle at subframe time"
         },
         {
-          "type": "custom",
-          "name": "PARTICLE PARAMETERS"
+          "type": "explanation",
+          "name": "PARTICLE PARAMETERS",
+          "definition": "controls randomized rotation and size"
         },
         {
           "type": "real",
@@ -218,8 +178,9 @@
           "name": "particle scale modifier:[0-2]#modifies the inherent scale of the particles"
         },
         {
-          "type": "custom",
-          "name": "LIGHTING PARAMETERS"
+          "type": "explanation",
+          "name": "LIGHTING PARAMETERS",
+          "definition": "controls the effects of lighting on this particle\nNOTE: only monochrome lighting is supported in neuticles"
         },
         {
           "type": "real",
@@ -262,7 +223,9 @@
           "name": "global type library!",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "cptl"
+            ]
           }
         },
         {
@@ -271,13 +234,95 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447048a0"
+    },
+    "cheap_particle_scalar_object_function_struct": {
+      "guid": "5b2939e47f4f02ed947b3dba184f3d39",
+      "size": 36,
+      "size_string": "sizeof(FunctionDefinitionWithInputs)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144704090"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "cheap_particle_emitter_struct_definition_1_options_2": {
+    "cheap_particle_emitter_flags": {
       "options": [
         "correlate position and velocity",
         "position texture in local space",
@@ -288,6 +333,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

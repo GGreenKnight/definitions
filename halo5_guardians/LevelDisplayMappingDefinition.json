@@ -2,49 +2,85 @@
   "name": "LevelDisplayMappingDefinition",
   "tag": "ludg",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "LevelDisplayMappingDefinition_block",
   "blocks": {
-    "LevelImageBlockDefinition_4": {
-      "max_count": 10,
-      "struct": "LevelImageBlockDefinition_4"
-    },
-    "LevelDisplayInformationDefinition_3": {
-      "max_count": 100,
-      "struct": "LevelDisplayInformationDefinition_3"
-    },
-    "root": {
+    "LevelDisplayMappingDefinition_block": {
       "max_count": 1,
-      "struct": "LevelDisplayMappingDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "LevelDisplayMappingDefinition_block_struct"
+    },
+    "LevelDisplayInformationDefinition": {
+      "max_count": 100,
+      "max_count_string": "k_maximumFrontEndLevels",
+      "struct": "LevelDisplayInformationDefinition"
+    },
+    "LevelImageBlockDefinition": {
+      "max_count": 10,
+      "max_count_string": "k_maximumImagesPerLevel",
+      "struct": "LevelImageBlockDefinition"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "LevelDisplayMappingDefinition_block_struct": {
+      "guid": "d5363305c244923d355126888256fcc1",
+      "size": 48,
+      "size_string": "(sizeof(LevelUIDisplayGlobals) - Tag::SizeInfo<LevelUIDisplayGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Level UI Data",
+          "definition": "LevelDisplayInformationDefinition"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad0",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448dcf50"
     },
-    "LevelImageBlockDefinition_4": {
-      "guid": "887b2d7a4b721aec1429fa9038116114",
+    "LevelDisplayInformationDefinition": {
+      "guid": "e799580b3d4f5b176513b989ef29398a",
+      "size": 60,
+      "size_string": "sizeof(LevelDisplayInformation)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "scenario",
+          "definition": {
+            "flags": 1,
+            "allowed": [
+              "scnr"
+            ]
+          }
+        },
+        {
+          "type": "block",
+          "name": "images",
+          "definition": "LevelImageBlockDefinition"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dce30"
+    },
+    "LevelImageBlockDefinition": {
+      "guid": "7a2d7b88724bec1a1429fa9038116114",
       "size": 40,
+      "size_string": "sizeof(LevelImageBlock)",
       "fields": [
         {
           "type": "string_id",
@@ -55,7 +91,9 @@
           "name": "sprite",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -68,61 +106,39 @@
           "definition": 2
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448dcd00"
     },
-    "LevelDisplayInformationDefinition_3": {
-      "guid": "0b5899e74f3d175b6513b989ef29398a",
-      "size": 60,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "scenario",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "block",
-          "name": "images",
-          "definition": "LevelImageBlockDefinition_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "LevelDisplayMappingDefinition_struct_definition_1": {
-      "guid": "0842a1605e5bde69c04118fcc83bc716",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Level UI Data",
-          "definition": "LevelDisplayInformationDefinition_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

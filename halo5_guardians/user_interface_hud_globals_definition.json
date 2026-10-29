@@ -1,419 +1,72 @@
 {
   "name": "user_interface_hud_globals_definition",
   "tag": "uihg",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "user_interface_hud_globals_definition_block",
   "blocks": {
-    "NavPointParametersTagBlockDefinition_3": {
-      "max_count": 256,
-      "struct": "NavPointParametersTagBlockDefinition_3"
-    },
-    "string_file_references_10": {
-      "max_count": 64,
-      "struct": "string_file_references_10"
-    },
-    "player_training_entry_data_block_11": {
-      "max_count": 34,
-      "struct": "player_training_entry_data_block_11"
-    },
-    "ParallaxParams_12": {
-      "max_count": 32,
-      "struct": "ParallaxParams_12"
-    },
-    "WarpParams_13": {
-      "max_count": 32,
-      "struct": "WarpParams_13"
-    },
-    "ChromaticAberrationParams_14": {
-      "max_count": 32,
-      "struct": "ChromaticAberrationParams_14"
-    },
-    "HighContrastParams_15": {
-      "max_count": 32,
-      "struct": "HighContrastParams_15"
-    },
-    "root": {
+    "user_interface_hud_globals_definition_block": {
       "max_count": 1,
-      "struct": "user_interface_hud_globals_definition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "user_interface_hud_globals_definition_block_struct"
+    },
+    "NavPointParametersTagBlockDefinition": {
+      "max_count": 256,
+      "max_count_string": "NavPointParametersTagBlock::k_maxCount",
+      "struct": "NavPointParametersTagBlockDefinition"
+    },
+    "string_file_references": {
+      "max_count": 64,
+      "max_count_string": "64",
+      "struct": "string_file_references"
+    },
+    "player_training_entry_data_block": {
+      "max_count": 34,
+      "max_count_string": "k_player_training_count",
+      "struct": "player_training_entry_data_block"
+    },
+    "ParallaxParams": {
+      "max_count": 32,
+      "max_count_string": "HUDParallaxParamsBlock::k_maxCount",
+      "struct": "ParallaxParams_struct"
+    },
+    "WarpParams": {
+      "max_count": 32,
+      "max_count_string": "HUDWarpParamsBlock::k_maxCount",
+      "struct": "WarpParams_struct"
+    },
+    "ChromaticAberrationParams": {
+      "max_count": 32,
+      "max_count_string": "HUDChromaticAberrationParamsBlock::k_maxCount",
+      "struct": "ChromaticAberrationParams_struct"
+    },
+    "HighContrastParams": {
+      "max_count": 32,
+      "max_count_string": "HUDHighContrastParamsBlock::k_maxCount",
+      "struct": "HighContrastParams_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "NavPointParametersTagBlockDefinition_3": {
-      "guid": "9aa7632f423f18d2f2dc9e8ed2a364b6",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "tag_reference",
-          "name": "navpoint tag",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "opacity_time_function_Defines_opacity_as_a_function_of_time_4": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "size_time_function_Defines_blob_screen_space_size_as_a_function_of_time_6": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_7"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "size_damage_function_Defines_effect_size_as_a_function_of_damage_received_8": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "string_file_references_10": {
-      "guid": "f35ba8a64cec4ca52270709422e51721",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "string list",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "player_training_entry_data_block_11": {
-      "guid": "02521b324819611c6a7b06a1bf773d68",
-      "size": 20,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "display string#comes out of the HUD text globals"
-        },
-        {
-          "type": "word_integer",
-          "name": "max display time#how long the message can be on screen before being hidden"
-        },
-        {
-          "type": "word_integer",
-          "name": "display count#how many times a training message will get displayed (0-3 only!)"
-        },
-        {
-          "type": "word_integer",
-          "name": "dissapear delay#how long a displayed but untriggered message stays up"
-        },
-        {
-          "type": "word_integer",
-          "name": "redisplay delay#how long after display this message will stay hidden"
-        },
-        {
-          "type": "real",
-          "name": "display delay (s)#how long the event can be triggered before it's displayed"
-        },
-        {
-          "type": "word_flags",
-          "name": "flags",
-          "definition": "player_training_entry_data_block_11_options_6"
-        },
-        {
-          "type": "pad",
-          "name": "HURLUV",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ParallaxParams_12": {
-      "guid": "272f07a64baeecc922dae881c780f15a",
-      "size": 84,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real",
-          "name": "parallax falloff time#changes how much influence older frames have vs new ones"
-        },
-        {
-          "type": "real",
-          "name": "parallax camera velocity factor#change how much influence camera movement has on parallax movement"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "parallax movement multiplier#scales the parallax movement"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "parallax clamp min"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "parallax clamp max"
-        },
-        {
-          "type": "real_euler_angles_3d",
-          "name": "parallax angular multiplier#scales the parallax rotation"
-        },
-        {
-          "type": "real_euler_angles_3d",
-          "name": "parallax angle clamp min"
-        },
-        {
-          "type": "real_euler_angles_3d",
-          "name": "parallax angle clamp max"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "WarpParams_13": {
-      "guid": "743ad28a44700937c0e03bb8bc5dc835",
-      "size": 52,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "ellipsoid scale"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "ellipsoid center"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "output offset"
-        },
-        {
-          "type": "long_integer",
-          "name": "tessellation X"
-        },
-        {
-          "type": "long_integer",
-          "name": "tessellation Y"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "WarpParams_13_options_6"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ChromaticAberrationParams_14": {
-      "guid": "cb32f4194c799ef524582d9aa2154e54",
-      "size": 44,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real",
-          "name": "base mix"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "center offset"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "red aberration scale"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "green aberration scale"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "blue aberration scale"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "ChromaticAberrationParams_14_options_6"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "HighContrastParams_15": {
-      "guid": "d5b5b15943647549ff41eaa3c0fad791",
-      "size": 20,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real",
-          "name": "dynamic threshold min"
-        },
-        {
-          "type": "real",
-          "name": "dynamic threshold max"
-        },
-        {
-          "type": "real",
-          "name": "dynamic threshold clamp"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "HighContrastParams_15_options_4"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "user_interface_hud_globals_definition_struct_definition_1": {
-      "guid": "b3a16d1bed8334e6585314a98050b6ce",
+    "user_interface_hud_globals_definition_block_struct": {
+      "guid": "9c3a87268742162c663686a3fc3cd1db",
       "size": 912,
+      "size_string": "(sizeof(UserInterfaceHUDGlobalsDefinitions) - Tag::SizeInfo<UserInterfaceHUDGlobalsDefinitions::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "custom",
-          "name": "Motion sensor globals"
+          "type": "explanation",
+          "name": "Motion sensor globals",
+          "definition": "Misc settings for the motion sensor"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "user_interface_hud_globals_definition_struct_definition_1_options_3"
+          "definition": "HUDMotionSensorGlobalsFlags"
         },
         {
           "type": "pad",
@@ -481,8 +134,9 @@
           "name": "Pelican Parallax Velocity Override"
         },
         {
-          "type": "custom",
-          "name": "Fanfare and Messaging globals"
+          "type": "explanation",
+          "name": "Fanfare and Messaging globals",
+          "definition": "Misc settings for fanfares and messages"
         },
         {
           "type": "real",
@@ -501,8 +155,9 @@
           "name": "medal score message restart time #time to reset message to when messages collide (seconds)"
         },
         {
-          "type": "custom",
-          "name": "Remote motion sensor globals"
+          "type": "explanation",
+          "name": "Remote motion sensor globals",
+          "definition": "Misc settings for the remote motion sensor"
         },
         {
           "type": "real",
@@ -517,8 +172,9 @@
           "name": "remote sensor failure distance#distance at which the remote sensor completely fails (meters)"
         },
         {
-          "type": "custom",
-          "name": "Navpoints globals"
+          "type": "explanation",
+          "name": "Navpoints globals",
+          "definition": "Settings for navpoints."
         },
         {
           "type": "real",
@@ -535,11 +191,12 @@
         {
           "type": "block",
           "name": "navpoint parameters",
-          "definition": "NavPointParametersTagBlockDefinition_3"
+          "definition": "NavPointParametersTagBlockDefinition"
         },
         {
-          "type": "custom",
-          "name": "Damage globals"
+          "type": "explanation",
+          "name": "Damage globals",
+          "definition": "HUD damage settings"
         },
         {
           "type": "real",
@@ -558,7 +215,9 @@
           "name": "tiled mesh seen when hit in 1st person",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -570,13 +229,14 @@
           "name": "total intensity cap (0..1)"
         },
         {
-          "type": "custom",
-          "name": "Screen blob globals"
+          "type": "explanation",
+          "name": "Screen blob globals",
+          "definition": "Settings for HUD shield impact blob"
         },
         {
           "type": "byte_flags",
           "name": "screen blob flags",
-          "definition": "user_interface_hud_globals_definition_struct_definition_1_options_42"
+          "definition": "HUDScreenBlobFlags"
         },
         {
           "type": "pad",
@@ -618,24 +278,26 @@
         {
           "type": "struct",
           "name": "opacity-time function#Defines opacity as a function of time",
-          "definition": "opacity_time_function_Defines_opacity_as_a_function_of_time_4"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "size-time function#Defines blob screen space size as a function of time",
-          "definition": "size_time_function_Defines_blob_screen_space_size_as_a_function_of_time_6"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "size-damage function#Defines effect size as a function of damage received",
-          "definition": "size_damage_function_Defines_effect_size_as_a_function_of_damage_received_8"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "tag_reference",
           "name": "pattern shield texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -643,7 +305,9 @@
           "name": "mask 0 texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -651,7 +315,9 @@
           "name": "mask 1 texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -659,7 +325,9 @@
           "name": "mask 2 texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -667,37 +335,45 @@
           "name": "mask 3 texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "Reticule globals"
+          "type": "explanation",
+          "name": "Reticule globals",
+          "definition": "Settings for the weapon reticules"
         },
         {
           "type": "real",
           "name": "Reticule maximum spread angle:degrees#Maximum spread for all weapon reticules. This should be set to the largest spread angle of all the weapons."
         },
         {
-          "type": "custom",
-          "name": "Sounds"
+          "type": "explanation",
+          "name": "Sounds",
+          "definition": "misc global audio stuff"
         },
         {
           "type": "tag_reference",
           "name": "banned vehicle entrance sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "lsnd",
+              "snd!"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "High Contrast globals"
+          "type": "explanation",
+          "name": "High Contrast globals",
+          "definition": "Settings controlling the high contrast hud rendering"
         },
         {
           "type": "byte_flags",
           "name": "High Contrast Flags",
-          "definition": "user_interface_hud_globals_definition_struct_definition_1_options_65"
+          "definition": "high_contrast_flags"
         },
         {
           "type": "pad",
@@ -705,8 +381,9 @@
           "definition": 3
         },
         {
-          "type": "custom",
-          "name": "Dynamic Contrast Settings"
+          "type": "explanation",
+          "name": "Dynamic Contrast Settings",
+          "definition": "Settings controlling the dynamic contrast"
         },
         {
           "type": "real",
@@ -721,8 +398,9 @@
           "name": "Clamp Threshold#Clamped brightness value. Can be used to limit the intensity of the dynamic contrast, or enable over strength contrast."
         },
         {
-          "type": "custom",
-          "name": "Double Draw Settings"
+          "type": "explanation",
+          "name": "Double Draw Settings",
+          "definition": "Settings controlling the double draw"
         },
         {
           "type": "real",
@@ -733,28 +411,33 @@
           "name": "Brighten Factor#Overbrightness factor to apply to the additive layer."
         },
         {
-          "type": "custom",
-          "name": "Text"
+          "type": "explanation",
+          "name": "Text",
+          "definition": "Text-related settings"
         },
         {
           "type": "block",
           "name": "string references",
-          "definition": "string_file_references_10"
+          "definition": "string_file_references"
         },
         {
           "type": "tag_reference",
           "name": "Interact Message Appear Sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "Interact Message Disappear Sound ",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
@@ -802,17 +485,19 @@
           "name": "neutral kill feed color #The color of the name of a player that is neutral towards your team"
         },
         {
-          "type": "custom",
-          "name": "Player Training"
+          "type": "explanation",
+          "name": "Player Training",
+          "definition": ""
         },
         {
           "type": "block",
           "name": "player training data",
-          "definition": "player_training_entry_data_block_11"
+          "definition": "player_training_entry_data_block"
         },
         {
-          "type": "custom",
-          "name": "Grenade Indicator Globals"
+          "type": "explanation",
+          "name": "Grenade Indicator Globals",
+          "definition": "Settings for the grenade indicator"
         },
         {
           "type": "real",
@@ -823,8 +508,9 @@
           "name": "grenade indicator lifetime dampener #prevents a newly thrown grenade from showing up in the grenade indicator"
         },
         {
-          "type": "custom",
-          "name": "Parallax globals"
+          "type": "explanation",
+          "name": "Parallax globals",
+          "definition": "Settings related to parallax"
         },
         {
           "type": "real",
@@ -833,34 +519,37 @@
         {
           "type": "block",
           "name": "parallax params",
-          "definition": "ParallaxParams_12"
+          "definition": "ParallaxParams"
         },
         {
-          "type": "custom",
-          "name": "Warp params"
+          "type": "explanation",
+          "name": "Warp params",
+          "definition": "Settings related to warp"
         },
         {
           "type": "block",
           "name": "warp params",
-          "definition": "WarpParams_13"
+          "definition": "WarpParams"
         },
         {
-          "type": "custom",
-          "name": "Chromatic aberration params"
+          "type": "explanation",
+          "name": "Chromatic aberration params",
+          "definition": "Settings related to chromatic aberration"
         },
         {
           "type": "block",
           "name": "chromatic aberration params",
-          "definition": "ChromaticAberrationParams_14"
+          "definition": "ChromaticAberrationParams"
         },
         {
-          "type": "custom",
-          "name": "High contrast globals"
+          "type": "explanation",
+          "name": "High contrast globals",
+          "definition": "Settings related to high contrast"
         },
         {
           "type": "block",
           "name": "high contrast params",
-          "definition": "HighContrastParams_15"
+          "definition": "HighContrastParams"
         },
         {
           "type": "pad",
@@ -868,51 +557,396 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d1ef0"
+    },
+    "NavPointParametersTagBlockDefinition": {
+      "guid": "2f63a79a3f42d218f2dc9e8ed2a364b6",
+      "size": 36,
+      "size_string": "sizeof(NavPointParametersTagBlock)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "navpoint tag",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "navp"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d1970"
+    },
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "string_file_references": {
+      "guid": "a6a85bf3ec4ca54c2270709422e51721",
+      "size": 32,
+      "size_string": "sizeof(s_tag_reference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "string list",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "unic"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448db1f0"
+    },
+    "player_training_entry_data_block": {
+      "guid": "321b520219481c616a7b06a1bf773d68",
+      "size": 20,
+      "size_string": "sizeof(struct s_player_training_entry_data)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display string#comes out of the HUD text globals"
+        },
+        {
+          "type": "word_integer",
+          "name": "max display time#how long the message can be on screen before being hidden"
+        },
+        {
+          "type": "word_integer",
+          "name": "display count#how many times a training message will get displayed (0-3 only!)"
+        },
+        {
+          "type": "word_integer",
+          "name": "dissapear delay#how long a displayed but untriggered message stays up"
+        },
+        {
+          "type": "word_integer",
+          "name": "redisplay delay#how long after display this message will stay hidden"
+        },
+        {
+          "type": "real",
+          "name": "display delay (s)#how long the event can be triggered before it's displayed"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "player_training_flags"
+        },
+        {
+          "type": "pad",
+          "name": "HURLUV",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144805840"
+    },
+    "ParallaxParams_struct": {
+      "guid": "a6072f27ae4bc9ec22dae881c780f15a",
+      "size": 84,
+      "size_string": "sizeof(HUDParallaxParamsBlock)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "parallax falloff time#changes how much influence older frames have vs new ones"
+        },
+        {
+          "type": "real",
+          "name": "parallax camera velocity factor#change how much influence camera movement has on parallax movement"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "parallax movement multiplier#scales the parallax movement"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "parallax clamp min"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "parallax clamp max"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "parallax angular multiplier#scales the parallax rotation"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "parallax angle clamp min"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "parallax angle clamp max"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d1a80"
+    },
+    "WarpParams_struct": {
+      "guid": "8ad23a7470443709c0e03bb8bc5dc835",
+      "size": 52,
+      "size_string": "sizeof(HUDWarpParamsBlock)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "ellipsoid scale"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "ellipsoid center"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "output offset"
+        },
+        {
+          "type": "long_integer",
+          "name": "tessellation X"
+        },
+        {
+          "type": "long_integer",
+          "name": "tessellation Y"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "EnabledFlags"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d1ba0"
+    },
+    "ChromaticAberrationParams_struct": {
+      "guid": "19f432cb794cf59e24582d9aa2154e54",
+      "size": 44,
+      "size_string": "sizeof(HUDChromaticAberrationParamsBlock)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "base mix"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "center offset"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "red aberration scale"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "green aberration scale"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "blue aberration scale"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "EnabledFlags"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d1cb0"
+    },
+    "HighContrastParams_struct": {
+      "guid": "59b1b5d564434975ff41eaa3c0fad791",
+      "size": 20,
+      "size_string": "sizeof(HUDHighContrastParamsBlock)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "dynamic threshold min"
+        },
+        {
+          "type": "real",
+          "name": "dynamic threshold max"
+        },
+        {
+          "type": "real",
+          "name": "dynamic threshold clamp"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "EnabledFlags"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d1dd0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "user_interface_hud_globals_definition_struct_definition_1_options_3": {
+    "HUDMotionSensorGlobalsFlags": {
       "options": [
         "show scripted pings at any distance",
         "enable north indicator"
       ]
     },
-    "user_interface_hud_globals_definition_struct_definition_1_options_42": {
+    "HUDScreenBlobFlags": {
       "options": [
         "enable effect"
       ]
     },
-    "user_interface_hud_globals_definition_struct_definition_1_options_65": {
+    "high_contrast_flags": {
       "options": [
         "disable dynamic contrast",
         "disable double draw"
       ]
     },
-    "player_training_entry_data_block_11_options_6": {
+    "player_training_flags": {
       "options": [
         "not in multiplayer"
       ]
     },
-    "WarpParams_13_options_6": {
-      "options": [
-        "enabled"
-      ]
-    },
-    "ChromaticAberrationParams_14_options_6": {
-      "options": [
-        "enabled"
-      ]
-    },
-    "HighContrastParams_15_options_4": {
+    "EnabledFlags": {
       "options": [
         "enabled"
       ]
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

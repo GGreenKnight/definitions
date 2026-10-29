@@ -2,87 +2,31 @@
   "name": "requisition_deployable",
   "tag": "rbdd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "requisition_deployable_block",
   "blocks": {
-    "requisition_ImageData_3": {
+    "requisition_deployable_block": {
       "max_count": 1,
-      "struct": "requisition_ImageData_3"
+      "max_count_string": "1",
+      "struct": "requisition_deployable_block_struct"
     },
-    "root": {
+    "requisition_ImageData": {
       "max_count": 1,
-      "struct": "requisition_deployable_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "requisition_ImageData"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "requisition_ImageData_3": {
-      "guid": "2304e8de4100e5146d6589b8ed3f21d4",
-      "size": 72,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "icon bitmap",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "long_integer",
-          "name": "icon sprite index"
-        },
-        {
-          "type": "tag_reference",
-          "name": "small icon bitmap",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "long_integer",
-          "name": "small icon sprite index"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "requisition_deployable_struct_definition_1": {
-      "guid": "173a1db30a80bc95cc9df2b09ef5fb7e",
+    "requisition_deployable_block_struct": {
+      "guid": "5f0010a7a44ea57c0743afabf8cce002",
       "size": 616,
+      "size_string": "(sizeof(RequisitionDeployableDefinition) - Tag::SizeInfo<RequisitionDeployableDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "string_id",
@@ -94,14 +38,17 @@
         },
         {
           "type": "custom",
-          "name": "Automated Photo Data"
+          "name": "Automated Photo Data",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "Asset Spec Block",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "apab"
+            ]
           }
         },
         {
@@ -109,7 +56,9 @@
           "name": "Lighting Spec Block",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "aplt"
+            ]
           }
         },
         {
@@ -117,24 +66,34 @@
           "name": "Photo Spec",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "appt"
+            ]
           }
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "block",
           "name": "Override Image Data",
-          "definition": "requisition_ImageData_3"
+          "definition": "requisition_ImageData"
         },
         {
           "type": "custom",
-          "name": "Generated Icons"
+          "name": "Generated Icons",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "icon bitmap*",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -150,7 +109,9 @@
           "name": "small icon bitmap*",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -159,7 +120,13 @@
         },
         {
           "type": "custom",
-          "name": "Default Display Properties (changes will not be reflected in CMS)"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Default Display Properties (changes will not be reflected in CMS)",
+          "group_tag": "fgrb"
         },
         {
           "type": "string",
@@ -171,14 +138,22 @@
         },
         {
           "type": "custom",
-          "name": "Deployable Object"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Deployable Object",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "object",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "obje"
+            ]
           }
         },
         {
@@ -190,20 +165,35 @@
           "name": "object configuration",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "ocfg"
+            ]
           }
         },
         {
           "type": "custom",
-          "name": "Armor Mod"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Armor Mod",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "armor mod",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "gmpm"
+            ]
           }
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "pad",
@@ -211,11 +201,79 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14474ad90"
+    },
+    "requisition_ImageData": {
+      "guid": "dee80423004114e56d6589b8ed3f21d4",
+      "size": 72,
+      "size_string": "sizeof(RequisitionImageData)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "bitm"
+            ]
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "icon sprite index"
+        },
+        {
+          "type": "tag_reference",
+          "name": "small icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "bitm"
+            ]
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "small icon sprite index"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14474ab50"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

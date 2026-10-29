@@ -2,225 +2,72 @@
   "name": "gobo_setting",
   "tag": "GobS",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "gobo_setting_block",
   "blocks": {
-    "goboAnimationParameterBlock_4": {
-      "max_count": 32767,
-      "struct": "goboAnimationParameterBlock_4"
-    },
-    "goboAnimationParameterBlock_7": {
-      "max_count": 32767,
-      "struct": "goboAnimationParameterBlock_7"
-    },
-    "goboBlock_3": {
-      "max_count": 4,
-      "struct": "goboBlock_3"
-    },
-    "root": {
+    "gobo_setting_block": {
       "max_count": 1,
-      "struct": "gobo_setting_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "gobo_setting_block_struct"
+    },
+    "goboBlock": {
+      "max_count": 4,
+      "max_count_string": "RenderLights::maxGoboLayers",
+      "struct": "goboBlock"
+    },
+    "goboAnimationParameterBlock": {
+      "max_count": 32767,
+      "max_count_string": "32767",
+      "struct": "goboAnimationParameterBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "gobo_setting_block_struct": {
+      "guid": "21a44e0926c1df09decadf09ee01df09",
+      "size": 48,
+      "size_string": "(sizeof(GoboSetting) - Tag::SizeInfo<GoboSetting::ParentType>::k_tagSize)",
       "fields": [
+        {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "explanation",
+          "name": "Gobos",
+          "definition": ""
+        },
+        {
+          "type": "block",
+          "name": "Gobos",
+          "definition": "goboBlock"
+        },
         {
           "type": "long_integer",
-          "name": "global tag ID!"
+          "name": "Resolution"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449bec50"
     },
-    "Mapping_6": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_5": {
-      "guid": "26aa4a944bba42b4dba3ac93cd31a908",
-      "size": 44,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Gobo Parameters"
-        },
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "short_enum",
-          "name": "Output Modifier!",
-          "definition": "function_5_options_3"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 2
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "goboAnimationParameterBlock_4": {
-      "guid": "0295746eee717e12de0cbcba6bc39979",
-      "size": 56,
-      "fields": [
-        {
-          "type": "long_enum",
-          "name": "type^",
-          "definition": "goboAnimationParameterBlock_4_options_0"
-        },
-        {
-          "type": "real",
-          "name": "origin x:normalized#for rotations"
-        },
-        {
-          "type": "real",
-          "name": "origin y:normalized#for rotations"
-        },
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_8": {
-      "guid": "26aa4a944bba42b4dba3ac93cd31a908",
-      "size": 44,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Gobo Parameters"
-        },
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "short_enum",
-          "name": "Output Modifier!",
-          "definition": "function_8_options_3"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 2
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "goboAnimationParameterBlock_7": {
-      "guid": "0295746eee717e12de0cbcba6bc39979",
-      "size": 56,
-      "fields": [
-        {
-          "type": "long_enum",
-          "name": "type^",
-          "definition": "goboAnimationParameterBlock_7_options_0"
-        },
-        {
-          "type": "real",
-          "name": "origin x:normalized#for rotations"
-        },
-        {
-          "type": "real",
-          "name": "origin y:normalized#for rotations"
-        },
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "goboBlock_3": {
-      "guid": "094ea2e1c12609dbdecaca09ee99df09",
+    "goboBlock": {
+      "guid": "e1a24e0926c1db09decaca09ee99df09",
       "size": 124,
+      "size_string": "sizeof(GoboDefinition)",
       "fields": [
         {
           "type": "char_enum",
           "name": "bitmap address mode",
-          "definition": "goboBlock_3_options_0"
+          "definition": "material_bitmap_address_mode_enum"
         },
         {
           "type": "char_enum",
           "name": "displacement bitmap address mode",
-          "definition": "goboBlock_3_options_1"
+          "definition": "material_bitmap_address_mode_enum"
         },
         {
           "type": "pad",
@@ -232,66 +79,170 @@
           "name": "Bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
           "type": "block",
           "name": "animation parameters",
-          "definition": "goboAnimationParameterBlock_4"
+          "definition": "goboAnimationParameterBlock"
         },
         {
           "type": "tag_reference",
           "name": "Displacement Bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
           "type": "block",
           "name": "displacement animation parameters",
-          "definition": "goboAnimationParameterBlock_7"
+          "definition": "goboAnimationParameterBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449beb30"
     },
-    "gobo_setting_struct_definition_1": {
-      "guid": "d56be32258030577bec15e1dbb3b1972",
-      "size": 48,
+    "goboAnimationParameterBlock": {
+      "guid": "6e74950271ee127ede0cbcba6bc39979",
+      "size": 56,
+      "size_string": "sizeof(GoboAnimationParameter)",
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "GoboAnimationParameterTypeEnum"
+        },
+        {
+          "type": "real",
+          "name": "origin x:normalized#for rotations",
+          "group_tag": "fn**"
+        },
+        {
+          "type": "real",
+          "name": "origin y:normalized#for rotations",
+          "group_tag": "fn**"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "gobo_scalar_function_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449bea00"
+    },
+    "gobo_scalar_function_struct": {
+      "guid": "944aaa26ba4bb442dba3ac93cd31a908",
+      "size": 44,
+      "size_string": "sizeof(LightFunction)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "Gobo Parameters",
+          "definition": ""
+        },
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "group_tag": "fnop",
+          "definition": "output_mod_enum"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!",
+          "group_tag": "fnom"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449be760"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "Gobos"
-        },
-        {
-          "type": "block",
-          "name": "Gobos",
-          "definition": "goboBlock_3"
-        },
-        {
-          "type": "long_integer",
-          "name": "Resolution"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "goboBlock_3_options_0": {
+    "material_bitmap_address_mode_enum": {
       "options": [
         "wrap",
         "clamp",
@@ -301,17 +252,7 @@
         "mirroronce border"
       ]
     },
-    "goboBlock_3_options_1": {
-      "options": [
-        "wrap",
-        "clamp",
-        "mirror",
-        "black border",
-        "mirroronce",
-        "mirroronce border"
-      ]
-    },
-    "goboAnimationParameterBlock_4_options_0": {
+    "GoboAnimationParameterTypeEnum": {
       "options": [
         "offset u",
         "offset v",
@@ -321,24 +262,7 @@
         "scale v (tiling)"
       ]
     },
-    "function_5_options_3": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "goboAnimationParameterBlock_7_options_0": {
-      "options": [
-        "offset u",
-        "offset v",
-        "rotation",
-        "offset w (animation)",
-        "scale u (tiling)",
-        "scale v (tiling)"
-      ]
-    },
-    "function_8_options_3": {
+    "output_mod_enum": {
       "options": [
         " ",
         "Plus",
@@ -347,6 +271,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

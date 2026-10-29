@@ -2,87 +2,58 @@
   "name": "VehicleConfiguration",
   "tag": "vcdd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "ocfg",
+  "block": "VehicleConfiguration_block",
   "blocks": {
-    "VehicleAttachmentReferenceDefinition_4": {
-      "max_count": 2,
-      "struct": "VehicleAttachmentReferenceDefinition_4"
-    },
-    "VehicleWeaponConfiguration_5": {
-      "max_count": 4,
-      "struct": "VehicleWeaponConfiguration_5"
-    },
-    "root": {
+    "VehicleConfiguration_block": {
       "max_count": 1,
-      "struct": "VehicleConfiguration_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "VehicleConfiguration_block_struct"
+    },
+    "VehicleAttachmentReferenceDefinition": {
+      "max_count": 2,
+      "max_count_string": "i343::Vehicle::k_maxGenericAttachments",
+      "struct": "VehicleAttachmentReferenceDefinition_struct"
+    },
+    "VehicleWeaponConfiguration": {
+      "max_count": 4,
+      "max_count_string": "4",
+      "struct": "VehicleWeaponConfiguration_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "VehicleConfiguration_block_struct": {
+      "guid": "ddc3f63a064d33a6b452db99496f8c94",
+      "size": 120,
+      "size_string": "(sizeof(i343::Vehicle::VehicleConfigurationDefinition) - Tag::SizeInfo<i343::Vehicle::VehicleConfigurationDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "object_configuration",
+          "definition": "_base_object_configuration"
+        },
+        {
+          "type": "struct",
+          "name": "vehicle",
+          "definition": "vehicleConfigurationInternal"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad0",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449a89c0"
     },
-    "VehicleAttachmentReferenceDefinition_4": {
-      "guid": "6d2a5a9c430a643fcbdc6bb98a17adff",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "attachment",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "VehicleWeaponConfiguration_5": {
-      "guid": "1bca1da142d250aa1edd9ca53f0fe85d",
-      "size": 36,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "weapon configuration",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "string_id",
-          "name": "Weapon name#Corresponds with weapon in model tag"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "vehicle_3": {
-      "guid": "fed24fd5425b8a446fc5a2a13e287cd2",
+    "vehicleConfigurationInternal": {
+      "guid": "d54fd2fe5b42448a6fc5a2a13e287cd2",
       "size": 92,
+      "size_string": "sizeof(i343::Vehicle::VehicleConfigurationDefinitionInternal)",
       "fields": [
         {
           "type": "string_id",
@@ -91,38 +62,109 @@
         {
           "type": "block",
           "name": "generic attachments",
-          "definition": "VehicleAttachmentReferenceDefinition_4"
+          "definition": "VehicleAttachmentReferenceDefinition"
         },
         {
           "type": "block",
           "name": "weapon configurations",
-          "definition": "VehicleWeaponConfiguration_5"
+          "definition": "VehicleWeaponConfiguration"
         },
         {
           "type": "tag_reference",
           "name": "UI Display Info",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "uivi"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449a88a0"
     },
-    "VehicleConfiguration_struct_definition_1": {
-      "guid": "4c751802ecb9e00bfa9e597c9f69a26d",
-      "size": 120,
+    "VehicleAttachmentReferenceDefinition_struct": {
+      "guid": "9c5a2a6d0a433f64cbdc6bb98a17adff",
+      "size": 32,
+      "size_string": "sizeof(i343::Vehicle::VehicleAttachmentReference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "attachment",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "vatc"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449a91d0"
+    },
+    "VehicleWeaponConfiguration_struct": {
+      "guid": "a11dca1bd242aa501edd9ca53f0fe85d",
+      "size": 36,
+      "size_string": "sizeof(i343::Vehicle::WeaponConfigurationGroup)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "weapon configuration",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "wcfg"
+            ]
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Weapon name#Corresponds with weapon in model tag"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449a86e0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
+    },
+    "_base_object_configuration": {
+      "guid": "200b57140e481a715073629ecb620960",
+      "size": 24,
+      "size_string": "(sizeof(i343::Objects::ObjectConfigurationDefinition) - Tag::SizeInfo<i343::Objects::ObjectConfigurationDefinition::ParentType>::k_tagSize)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "pad",
@@ -130,21 +172,17 @@
           "definition": 8
         },
         {
-          "type": "struct",
-          "name": "vehicle",
-          "definition": "vehicle_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144999b50"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

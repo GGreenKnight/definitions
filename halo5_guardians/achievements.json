@@ -1,63 +1,59 @@
 {
   "name": "achievements",
   "tag": "achi",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "achievements_block",
   "blocks": {
-    "single_achievement_restricted_level_block_4": {
-      "max_count": 5,
-      "struct": "single_achievement_restricted_level_block_4"
-    },
-    "single_achievement_definition_block_3": {
-      "max_count": 256,
-      "struct": "single_achievement_definition_block_3"
-    },
-    "root": {
+    "achievements_block": {
       "max_count": 1,
-      "struct": "achievements_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "achievements_block_struct"
+    },
+    "single_achievement_definition_block": {
+      "max_count": 256,
+      "max_count_string": "k_maximum_achievements",
+      "struct": "single_achievement_definition_block"
+    },
+    "single_achievement_restricted_level_block": {
+      "max_count": 5,
+      "max_count_string": "s_single_achivement_restricted_level_definition::k_maximum_count",
+      "struct": "single_achievement_restricted_level_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "achievements_block_struct": {
+      "guid": "ac12ea210a4c162998218991894d72d2",
+      "size": 48,
+      "size_string": "(sizeof(s_game_achievements_definition) - Tag::SizeInfo<s_game_achievements_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "achievement",
+          "definition": "single_achievement_definition_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_gad_0",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14481c8c0"
     },
-    "single_achievement_restricted_level_block_4": {
-      "guid": "55cef75045985141432f6b96e5236c4a",
-      "size": 4,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "level name^#Compared to map name in scenario"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "single_achievement_definition_block_3": {
-      "guid": "7549688b4edfd7d7ef71ac92f5943d57",
+    "single_achievement_definition_block": {
+      "guid": "8b684975df4ed7d7ef71ac92f5943d57",
       "size": 36,
+      "size_string": "sizeof(s_single_achievement_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -66,12 +62,12 @@
         {
           "type": "char_enum",
           "name": "type",
-          "definition": "single_achievement_definition_block_3_options_1"
+          "definition": "global_achievement_enum"
         },
         {
           "type": "byte_flags",
           "name": "difficulty",
-          "definition": "single_achievement_definition_block_3_options_2"
+          "definition": "global_campaign_difficulty_flags"
         },
         {
           "type": "pad",
@@ -81,44 +77,56 @@
         {
           "type": "block",
           "name": "restricted levels",
-          "definition": "single_achievement_restricted_level_block_4"
+          "definition": "single_achievement_restricted_level_block"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14481c7a0"
     },
-    "achievements_struct_definition_1": {
-      "guid": "e21af8b50dc930fc9901fda81b9fa7ff",
-      "size": 48,
+    "single_achievement_restricted_level_block": {
+      "guid": "50f7ce5598454151432f6b96e5236c4a",
+      "size": 4,
+      "size_string": "sizeof(s_single_achivement_restricted_level_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "level name^#Compared to map name in scenario"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14481c670"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "achievement",
-          "definition": "single_achievement_definition_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_gad_0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "single_achievement_definition_block_3_options_1": {
+    "global_achievement_enum": {
       "options": [
         "m10_complete",
         "m20_complete",
@@ -179,7 +187,7 @@
         "special_delivery"
       ]
     },
-    "single_achievement_definition_block_3_options_2": {
+    "global_campaign_difficulty_flags": {
       "options": [
         "easy",
         "normal",
@@ -188,5 +196,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

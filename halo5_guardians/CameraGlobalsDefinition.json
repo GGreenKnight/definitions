@@ -2,131 +2,83 @@
   "name": "CameraGlobalsDefinition",
   "tag": "glca",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "CameraGlobalsDefinition_block",
   "blocks": {
-    "camera_block_3": {
+    "CameraGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "camera_block_3"
+      "max_count_string": "1",
+      "struct": "CameraGlobalsDefinition_block_struct"
     },
-    "global_camera_impulse_block_7": {
+    "camera_block": {
       "max_count": 1,
-      "struct": "global_camera_impulse_block_7"
+      "max_count_string": "1",
+      "struct": "camera_block"
     },
-    "root": {
+    "global_camera_impulse_block": {
       "max_count": 1,
-      "struct": "CameraGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "global_camera_impulse_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "pitch_to_vertical_offset_4": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
+    "CameraGlobalsDefinition_block_struct": {
+      "guid": "aea0672a5c46c54c26591bb2f9e94722",
+      "size": 72,
+      "size_string": "(sizeof(i343::CameraGlobals) - Tag::SizeInfo<i343::CameraGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
           "type": "struct",
-          "name": "function",
-          "definition": "function_5"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "camera",
+          "definition": "camera_block"
+        },
+        {
+          "type": "block",
+          "name": "camera impulse",
+          "definition": "global_camera_impulse_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144825b80"
     },
-    "obstruction_6": {
-      "guid": "3a9d370f4b3b57742fae3c86cca8f293",
-      "size": 24,
-      "fields": [
-        {
-          "type": "real_fraction",
-          "name": "cylinder fraction#controls how far from the focus point the outer raycasts start.  0 == cone, 1 == cylinder"
-        },
-        {
-          "type": "angle",
-          "name": "obstruction test angle:degrees#how wide of a cone to test"
-        },
-        {
-          "type": "real",
-          "name": "obstruction max inward accel:1.0/s/s#how quickly the camera moves inward when it anticipates a collision"
-        },
-        {
-          "type": "real",
-          "name": "obstruction max outward accel:1.0/s/s#how quickly the camera returns to a normal position when its anticipated distance is further than its current"
-        },
-        {
-          "type": "real",
-          "name": "obstruction max velocity:1.0/s#maximum speed the camera can move"
-        },
-        {
-          "type": "real",
-          "name": "obstruction return delay:s#when the camera wants to start moving back out, wait this long before doing so"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "camera_block_3": {
-      "guid": "5544fb064476f3d057621fa5e234a66b",
+    "camera_block": {
+      "guid": "06fb44557644d0f357621fa5e234a66b",
       "size": 256,
+      "size_string": "sizeof(s_game_globals_camera)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "default unit camera track",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "trak"
+            ]
           }
         },
         {
-          "type": "custom",
-          "name": "SANDBOX"
+          "type": "explanation",
+          "name": "SANDBOX",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "pitch to vertical offset",
-          "definition": "pitch_to_vertical_offset_4"
+          "definition": "scalar_function_named_struct"
         },
         {
-          "type": "custom",
-          "name": "CAMERA UNIVERSALS"
+          "type": "explanation",
+          "name": "CAMERA UNIVERSALS",
+          "definition": ""
         },
         {
           "type": "real",
@@ -153,8 +105,9 @@
           "name": "up scale"
         },
         {
-          "type": "custom",
-          "name": "DEAD CAMERA"
+          "type": "explanation",
+          "name": "DEAD CAMERA",
+          "definition": ""
         },
         {
           "type": "real",
@@ -205,8 +158,9 @@
           "name": "dead camera minimum falling velocity#minimum velocity to switch to fell to death behavior (when biped is not actually falling to death)"
         },
         {
-          "type": "custom",
-          "name": "FLYING CAMERA"
+          "type": "explanation",
+          "name": "FLYING CAMERA",
+          "definition": ""
         },
         {
           "type": "real",
@@ -219,7 +173,7 @@
         {
           "type": "short_enum",
           "name": "boost function",
-          "definition": "camera_block_3_options_26"
+          "definition": "global_transition_functions_enum"
         },
         {
           "type": "pad",
@@ -253,7 +207,7 @@
         {
           "type": "short_enum",
           "name": "vertical movement function",
-          "definition": "camera_block_3_options_34"
+          "definition": "global_transition_functions_enum"
         },
         {
           "type": "pad",
@@ -261,8 +215,9 @@
           "definition": 2
         },
         {
-          "type": "custom",
-          "name": "ORBITING CAMERA"
+          "type": "explanation",
+          "name": "ORBITING CAMERA",
+          "definition": ""
         },
         {
           "type": "real",
@@ -305,8 +260,9 @@
           "name": "orbit cam transition to targets facing direction delay"
         },
         {
-          "type": "custom",
-          "name": "SAVED FILMS"
+          "type": "explanation",
+          "name": "SAVED FILMS",
+          "definition": ""
         },
         {
           "type": "real",
@@ -321,8 +277,9 @@
           "name": "fade in time:seconds#see above"
         },
         {
-          "type": "custom",
-          "name": "IN GAME"
+          "type": "explanation",
+          "name": "IN GAME",
+          "definition": ""
         },
         {
           "type": "real",
@@ -333,90 +290,152 @@
           "name": "exit vehicle transition time:seconds#see above"
         },
         {
-          "type": "custom",
-          "name": "CAMERA OBSTRUCTION"
+          "type": "explanation",
+          "name": "CAMERA OBSTRUCTION",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "obstruction",
-          "definition": "obstruction_6"
+          "definition": "camera_obstruction_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446ecd60"
     },
-    "mapping_8": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
       "size": 28,
+      "size_string": "sizeof(c_function_definition)",
       "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
         {
           "type": "data",
           "name": "data",
           "definition": "function_definition_data"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144738b10"
     },
-    "global_camera_impulse_block_7": {
-      "guid": "57f3934545650b82b0c443a3479aadfd",
-      "size": 28,
+    "camera_obstruction_struct": {
+      "guid": "0f379d3a3b4b74572fae3c86cca8f293",
+      "size": 24,
+      "size_string": "sizeof(s_camera_obstruction_parameters)",
       "fields": [
+        {
+          "type": "real_fraction",
+          "name": "cylinder fraction#controls how far from the focus point the outer raycasts start.  0 == cone, 1 == cylinder"
+        },
+        {
+          "type": "angle",
+          "name": "obstruction test angle:degrees#how wide of a cone to test"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max inward accel:1.0/s/s#how quickly the camera moves inward when it anticipates a collision"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max outward accel:1.0/s/s#how quickly the camera returns to a normal position when its anticipated distance is further than its current"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max velocity:1.0/s#maximum speed the camera can move"
+        },
+        {
+          "type": "real",
+          "name": "obstruction return delay:s#when the camera wants to start moving back out, wait this long before doing so"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1446ee140"
+    },
+    "global_camera_impulse_block": {
+      "guid": "4593f3576545820bb0c443a3479aadfd",
+      "size": 28,
+      "size_string": "sizeof(s_camera_impulse_globals)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
         {
           "type": "struct",
           "name": "mapping",
-          "definition": "mapping_8"
+          "definition": "mapping_function"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144701d00"
     },
-    "CameraGlobalsDefinition_struct_definition_1": {
-      "guid": "43e65e73ada00f99a3f7a5cbe1358f81",
-      "size": 72,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "camera",
-          "definition": "camera_block_3"
-        },
-        {
-          "type": "block",
-          "name": "camera impulse",
-          "definition": "global_camera_impulse_block_7"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "camera_block_3_options_26": {
-      "options": [
-        "linear",
-        "early",
-        "very early",
-        "late",
-        "very late",
-        "cosine",
-        "one",
-        "zero"
-      ]
-    },
-    "camera_block_3_options_34": {
+    "global_transition_functions_enum": {
       "options": [
         "linear",
         "early",
@@ -430,6 +449,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

@@ -1,219 +1,297 @@
 {
   "name": "cui_logic",
   "tag": "culo",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "cui_logic_block",
   "blocks": {
-    "template_instantiation_block_definition_4": {
-      "max_count": 8192,
-      "struct": "template_instantiation_block_definition_4"
-    },
-    "component_definition_5": {
-      "max_count": 8192,
-      "struct": "component_definition_5"
-    },
-    "component_index_block_definition_6": {
-      "max_count": 8192,
-      "struct": "component_index_block_definition_6"
-    },
-    "property_long_value_10": {
-      "max_count": 8192,
-      "struct": "property_long_value_10"
-    },
-    "property_real_value_11": {
-      "max_count": 8192,
-      "struct": "property_real_value_11"
-    },
-    "property_string_id_value_12": {
-      "max_count": 8192,
-      "struct": "property_string_id_value_12"
-    },
-    "propertyComponentPtrValue_13": {
-      "max_count": 8192,
-      "struct": "propertyComponentPtrValue_13"
-    },
-    "property_tag_reference_value_14": {
-      "max_count": 8192,
-      "struct": "property_tag_reference_value_14"
-    },
-    "property_text_value_15": {
-      "max_count": 8192,
-      "struct": "property_text_value_15"
-    },
-    "property_argb_color_value_16": {
-      "max_count": 8192,
-      "struct": "property_argb_color_value_16"
-    },
-    "component_properties_definition_8": {
-      "max_count": 8192,
-      "struct": "component_properties_definition_8"
-    },
-    "animation_property_keyframe_real_value_20": {
-      "max_count": 8192,
-      "struct": "animation_property_keyframe_real_value_20"
-    },
-    "animation_component_real_property_19": {
-      "max_count": 8192,
-      "struct": "animation_component_real_property_19"
-    },
-    "animation_property_keyframe_argb_color_value_24": {
-      "max_count": 8192,
-      "struct": "animation_property_keyframe_argb_color_value_24"
-    },
-    "animation_component_argb_color_property_23": {
-      "max_count": 8192,
-      "struct": "animation_component_argb_color_property_23"
-    },
-    "animation_component_definition_18": {
-      "max_count": 8192,
-      "struct": "animation_component_definition_18"
-    },
-    "animation_definition_17": {
-      "max_count": 8192,
-      "struct": "animation_definition_17"
-    },
-    "overlay_definition_7": {
-      "max_count": 24,
-      "struct": "overlay_definition_7"
-    },
-    "property_editor_only_definition_29": {
-      "max_count": 8192,
-      "struct": "property_editor_only_definition_29"
-    },
-    "component_editor_only_definition_28": {
-      "max_count": 8192,
-      "struct": "component_editor_only_definition_28"
-    },
-    "property_editor_only_definition_32": {
-      "max_count": 8192,
-      "struct": "property_editor_only_definition_32"
-    },
-    "component_editor_only_definition_31": {
-      "max_count": 8192,
-      "struct": "component_editor_only_definition_31"
-    },
-    "animation_editor_only_definition_30": {
-      "max_count": 8192,
-      "struct": "animation_editor_only_definition_30"
-    },
-    "overlay_editor_only_definition_27": {
-      "max_count": 24,
-      "struct": "overlay_editor_only_definition_27"
-    },
-    "property_binding_33": {
-      "max_count": 1024,
-      "struct": "property_binding_33"
-    },
-    "binding_conversion_long_comparison_block_definition_34": {
-      "max_count": 1024,
-      "struct": "binding_conversion_long_comparison_block_definition_34"
-    },
-    "static_data_column_37": {
-      "max_count": 128,
-      "struct": "static_data_column_37"
-    },
-    "property_long_value_39": {
-      "max_count": 8192,
-      "struct": "property_long_value_39"
-    },
-    "property_real_value_40": {
-      "max_count": 8192,
-      "struct": "property_real_value_40"
-    },
-    "property_string_id_value_41": {
-      "max_count": 8192,
-      "struct": "property_string_id_value_41"
-    },
-    "propertyComponentPtrValue_42": {
-      "max_count": 8192,
-      "struct": "propertyComponentPtrValue_42"
-    },
-    "property_tag_reference_value_43": {
-      "max_count": 8192,
-      "struct": "property_tag_reference_value_43"
-    },
-    "property_text_value_44": {
-      "max_count": 8192,
-      "struct": "property_text_value_44"
-    },
-    "property_argb_color_value_45": {
-      "max_count": 8192,
-      "struct": "property_argb_color_value_45"
-    },
-    "static_data_row_38": {
-      "max_count": 256,
-      "struct": "static_data_row_38"
-    },
-    "static_data_table_35": {
-      "max_count": 128,
-      "struct": "static_data_table_35"
-    },
-    "expression_step_47": {
-      "max_count": 32,
-      "struct": "expression_step_47"
-    },
-    "expression_46": {
-      "max_count": 128,
-      "struct": "expression_46"
-    },
-    "static_data_column_49": {
-      "max_count": 128,
-      "struct": "static_data_column_49"
-    },
-    "encapsulatedProperties_48": {
-      "max_count": 64,
-      "struct": "encapsulatedProperties_48"
-    },
-    "root": {
+    "cui_logic_block": {
       "max_count": 1,
-      "struct": "cui_logic_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "cui_logic_block_struct"
+    },
+    "template_instantiation_block_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "template_instantiation_block_definition"
+    },
+    "component_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "component_definition"
+    },
+    "component_index_block_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "component_index_block_definition"
+    },
+    "overlay_definition": {
+      "max_count": 24,
+      "max_count_string": "k_cui_max_overlay_count",
+      "struct": "overlay_definition"
+    },
+    "component_properties_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "component_properties_definition"
+    },
+    "property_long_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_long_value"
+    },
+    "property_real_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_real_value"
+    },
+    "property_string_id_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_string_id_value"
+    },
+    "propertyComponentPtrValue": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "propertyComponentPtrValue"
+    },
+    "property_tag_reference_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_tag_reference_value"
+    },
+    "property_text_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_text_value"
+    },
+    "property_argb_color_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "property_argb_color_value"
+    },
+    "animation_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_animation_count",
+      "struct": "animation_definition"
+    },
+    "animation_component_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "animation_component_definition"
+    },
+    "animation_component_real_property": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "animation_component_real_property"
+    },
+    "animation_property_keyframe_real_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "animation_property_keyframe_real_value"
+    },
+    "animation_component_argb_color_property": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "animation_component_argb_color_property"
+    },
+    "animation_property_keyframe_argb_color_value": {
+      "max_count": 8192,
+      "max_count_string": "8*k_kilo",
+      "struct": "animation_property_keyframe_argb_color_value"
+    },
+    "overlay_editor_only_definition": {
+      "max_count": 24,
+      "max_count_string": "k_cui_max_overlay_count",
+      "struct": "overlay_editor_only_definition"
+    },
+    "component_editor_only_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_component_count",
+      "struct": "component_editor_only_definition"
+    },
+    "property_editor_only_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_property_count",
+      "struct": "property_editor_only_definition"
+    },
+    "animation_editor_only_definition": {
+      "max_count": 8192,
+      "max_count_string": "k_cui_max_animation_count",
+      "struct": "animation_editor_only_definition"
+    },
+    "property_binding": {
+      "max_count": 1024,
+      "max_count_string": "k_cui_max_property_binding_count",
+      "struct": "property_binding"
+    },
+    "binding_conversion_long_comparison_block_definition": {
+      "max_count": 1024,
+      "max_count_string": "k_cui_max_property_binding_count",
+      "struct": "binding_conversion_long_comparison_block_definition"
+    },
+    "static_data_table": {
+      "max_count": 128,
+      "max_count_string": "128",
+      "struct": "static_data_table"
+    },
+    "static_data_column": {
+      "max_count": 128,
+      "max_count_string": "128",
+      "struct": "static_data_column"
+    },
+    "static_data_row": {
+      "max_count": 256,
+      "max_count_string": "256",
+      "struct": "properties_struct"
+    },
+    "expression": {
+      "max_count": 128,
+      "max_count_string": "128",
+      "struct": "expression"
+    },
+    "expression_step": {
+      "max_count": 32,
+      "max_count_string": "s_cui_expression_step_definition::k_maximum_step_count",
+      "struct": "expression_step"
+    },
+    "encapsulatedProperties": {
+      "max_count": 64,
+      "max_count_string": "k_cuiMaxEncapsulationCount",
+      "struct": "encapsulatedProperties"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "cui_logic_block_struct": {
+      "guid": "0600d8aa4f4acb5632f57e9d2598c0ae",
+      "size": 336,
+      "size_string": "(sizeof(CuiLogicDefinition) - Tag::SizeInfo<CuiLogicDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "string_id",
+          "name": "logic name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "string list",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "unic"
+            ]
+          }
+        },
+        {
+          "type": "struct",
+          "name": "system",
+          "definition": "cui_system"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448dc260"
     },
-    "template_instantiation_block_definition_4": {
-      "guid": "147959fc43bbbee9e461e5bb8f08818e",
+    "cui_system": {
+      "guid": "1c723e92874f15fef31f088ce5e8e02c",
+      "size": 280,
+      "size_string": "sizeof(CuiSystemDefinition)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "template instantiations",
+          "definition": "template_instantiation_block_definition"
+        },
+        {
+          "type": "block",
+          "name": "components",
+          "definition": "component_definition"
+        },
+        {
+          "type": "block",
+          "name": "component indices",
+          "definition": "component_index_block_definition"
+        },
+        {
+          "type": "block",
+          "name": "overlays",
+          "definition": "overlay_definition"
+        },
+        {
+          "type": "block",
+          "name": "overlays editor only",
+          "definition": "overlay_editor_only_definition"
+        },
+        {
+          "type": "block",
+          "name": "property bindings",
+          "definition": "property_binding"
+        },
+        {
+          "type": "block",
+          "name": "binding conversion long comparisons",
+          "definition": "binding_conversion_long_comparison_block_definition"
+        },
+        {
+          "type": "block",
+          "name": "static data tables",
+          "definition": "static_data_table"
+        },
+        {
+          "type": "block",
+          "name": "expressions",
+          "definition": "expression"
+        },
+        {
+          "type": "block",
+          "name": "encapsulated properties",
+          "definition": "encapsulatedProperties"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dc140"
+    },
+    "template_instantiation_block_definition": {
+      "guid": "fc597914bb43e9bee461e5bb8f08818e",
       "size": 32,
+      "size_string": "sizeof(s_cui_template_instantiation_definition)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "screen reference",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "cusc"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db6b0"
     },
-    "component_definition_5": {
-      "guid": "bd11bc6f4a691329c5d205a3fa325109",
+    "component_definition": {
+      "guid": "6fbc11bd694a2913c5d205a3fa325109",
       "size": 16,
+      "size_string": "sizeof(s_cui_component_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -230,28 +308,33 @@
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "component_definition_5_options_3"
+          "definition": "component_definition_flags"
         },
         {
-          "type": "short_integer",
-          "name": "template instantiation index"
+          "type": "short_block_index",
+          "name": "template instantiation index",
+          "definition": "template_instantiation_block_definition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db7e0"
     },
-    "component_index_block_definition_6": {
-      "guid": "a6d04b81418850743127e9859e1129cd",
+    "component_index_block_definition": {
+      "guid": "814bd0a6884174503127e9859e1129cd",
       "size": 8,
+      "size_string": "sizeof(s_cui_component_index_definition)",
       "fields": [
         {
           "type": "string_id",
           "name": "name^"
         },
         {
-          "type": "short_integer",
-          "name": "component definition index"
+          "type": "short_block_index",
+          "name": "component definition index",
+          "definition": "component_definition"
         },
         {
           "type": "pad",
@@ -259,13 +342,114 @@
           "definition": 2
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db910"
     },
-    "property_long_value_10": {
-      "guid": "63dd28294d14d1f152793896fc1fcc8f",
+    "overlay_definition": {
+      "guid": "8bd536880a6f6a4aa33d7366f95acb9b",
+      "size": 64,
+      "size_string": "sizeof(s_cui_overlay_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "resolution"
+        },
+        {
+          "type": "string_id",
+          "name": "theme"
+        },
+        {
+          "type": "block",
+          "name": "components",
+          "definition": "component_properties_definition"
+        },
+        {
+          "type": "block",
+          "name": "animations",
+          "definition": "animation_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dbb70"
+    },
+    "component_properties_definition": {
+      "guid": "cff72084238c8c439c91c7faf7fee1f4",
+      "size": 200,
+      "size_string": "sizeof(s_cui_component_properties_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "struct",
+          "name": "property values",
+          "definition": "properties_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dba40"
+    },
+    "properties_struct": {
+      "guid": "45eca7b19e433dbca4f1d9a6af5709a3",
+      "size": 196,
+      "size_string": "sizeof(s_cui_properties_definition)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "long properties",
+          "definition": "property_long_value"
+        },
+        {
+          "type": "block",
+          "name": "real properties",
+          "definition": "property_real_value"
+        },
+        {
+          "type": "block",
+          "name": "string_id properties",
+          "definition": "property_string_id_value"
+        },
+        {
+          "type": "block",
+          "name": "component ptr properties",
+          "definition": "propertyComponentPtrValue"
+        },
+        {
+          "type": "block",
+          "name": "tag reference properties",
+          "definition": "property_tag_reference_value"
+        },
+        {
+          "type": "block",
+          "name": "string properties",
+          "definition": "property_text_value"
+        },
+        {
+          "type": "block",
+          "name": "argb color properties",
+          "definition": "property_argb_color_value"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448da2a0"
+    },
+    "property_long_value": {
+      "guid": "2928dd63144df1d152793896fc1fcc8f",
       "size": 8,
+      "size_string": "sizeof(s_cui_property_value_long_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -276,13 +460,16 @@
           "name": "value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d9a60"
     },
-    "property_real_value_11": {
-      "guid": "758da8a4409059126254fba1693c45d2",
+    "property_real_value": {
+      "guid": "a4a88d75904012596254fba1693c45d2",
       "size": 8,
+      "size_string": "sizeof(s_cui_property_value_real_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -293,13 +480,16 @@
           "name": "value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d9b90"
     },
-    "property_string_id_value_12": {
-      "guid": "63caf9704ea90faf2cb1feb315007ca4",
+    "property_string_id_value": {
+      "guid": "70f9ca63a94eaf0f2cb1feb315007ca4",
       "size": 8,
+      "size_string": "sizeof(s_cui_property_value_string_id_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -310,13 +500,16 @@
           "name": "value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d9cc0"
     },
-    "propertyComponentPtrValue_13": {
-      "guid": "b824c8c944af9fe40e33aaa4b60e0b97",
+    "propertyComponentPtrValue": {
+      "guid": "c9c824b8af44e49f0e33aaa4b60e0b97",
       "size": 12,
+      "size_string": "sizeof(CuiPropertyValueComponentPtrDefinition)",
       "fields": [
         {
           "type": "string_id",
@@ -329,7 +522,7 @@
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "propertyComponentPtrValue_13_options_2"
+          "definition": "propertyComponentPtrFlags"
         },
         {
           "type": "pad",
@@ -337,13 +530,16 @@
           "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d9df0"
     },
-    "property_tag_reference_value_14": {
-      "guid": "caa80a1445b59b12f5403aa52e4ca4ff",
+    "property_tag_reference_value": {
+      "guid": "140aa8cab545129bf5403aa52e4ca4ff",
       "size": 36,
+      "size_string": "sizeof(s_cui_property_value_tag_reference_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -358,13 +554,16 @@
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448d9f20"
     },
-    "property_text_value_15": {
-      "guid": "9b80dcd34f46d0f843607aafda9d5497",
+    "property_text_value": {
+      "guid": "d3dc809b464ff8d043607aafda9d5497",
       "size": 260,
+      "size_string": "sizeof(s_cui_property_value_text_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -375,13 +574,16 @@
           "name": "value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da050"
     },
-    "property_argb_color_value_16": {
-      "guid": "a86fc89b4bac478a446bed97b89a09c3",
+    "property_argb_color_value": {
+      "guid": "9bc86fa8ac4b8a47446bed97b89a09c3",
       "size": 20,
+      "size_string": "sizeof(s_cui_property_value_argb_color_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -392,276 +594,16 @@
           "name": "value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da180"
     },
-    "property_values_9": {
-      "guid": "b1a7ec45439ebc3da4f1d9a6af5709a3",
-      "size": 196,
-      "fields": [
-        {
-          "type": "block",
-          "name": "long properties",
-          "definition": "property_long_value_10"
-        },
-        {
-          "type": "block",
-          "name": "real properties",
-          "definition": "property_real_value_11"
-        },
-        {
-          "type": "block",
-          "name": "string_id properties",
-          "definition": "property_string_id_value_12"
-        },
-        {
-          "type": "block",
-          "name": "component ptr properties",
-          "definition": "propertyComponentPtrValue_13"
-        },
-        {
-          "type": "block",
-          "name": "tag reference properties",
-          "definition": "property_tag_reference_value_14"
-        },
-        {
-          "type": "block",
-          "name": "string properties",
-          "definition": "property_text_value_15"
-        },
-        {
-          "type": "block",
-          "name": "argb color properties",
-          "definition": "property_argb_color_value_16"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "component_properties_definition_8": {
-      "guid": "8420f7cf8c23438c9c91c7faf7fee1f4",
-      "size": 200,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "struct",
-          "name": "property values",
-          "definition": "property_values_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "scalar_function_22": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "transition_function_21": {
-      "guid": "93df74921688416aae919c60ee87d1c3",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "scalar function",
-          "definition": "scalar_function_22"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_property_keyframe_real_value_20": {
-      "guid": "b060749906c247b48cf63ab2fe7a143d",
-      "size": 36,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "duration:milliseconds#the amount of time from the previous keyframe to this keyframe"
-        },
-        {
-          "type": "real",
-          "name": "value#the value when the current time is on this keyframe"
-        },
-        {
-          "type": "struct",
-          "name": "transition function",
-          "definition": "transition_function_21"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_component_real_property_19": {
-      "guid": "ad69e8116a19433fa8c37d38891bda5f",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "short_enum",
-          "name": "composition",
-          "definition": "animation_component_real_property_19_options_1"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "animation_component_real_property_19_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 1
-        },
-        {
-          "type": "long_integer",
-          "name": "total milliseconds"
-        },
-        {
-          "type": "block",
-          "name": "real keyframes",
-          "definition": "animation_property_keyframe_real_value_20"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "scalar_function_26": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "transition_function_25": {
-      "guid": "93df74921688416aae919c60ee87d1c3",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "scalar function",
-          "definition": "scalar_function_26"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_property_keyframe_argb_color_value_24": {
-      "guid": "f1eb204454ea455ab27137856111cc0e",
-      "size": 48,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "duration:milliseconds#the amount of time from the previous keyframe to this keyframe"
-        },
-        {
-          "type": "real_argb_color",
-          "name": "color#the value when the current time is on this keyframe"
-        },
-        {
-          "type": "struct",
-          "name": "transition function",
-          "definition": "transition_function_25"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_component_argb_color_property_23": {
-      "guid": "f78ae30c15b44001af85f680ec811ae1",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "short_enum",
-          "name": "composition",
-          "definition": "animation_component_argb_color_property_23_options_1"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "animation_component_argb_color_property_23_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 1
-        },
-        {
-          "type": "long_integer",
-          "name": "total milliseconds"
-        },
-        {
-          "type": "block",
-          "name": "argb color keyframes",
-          "definition": "animation_property_keyframe_argb_color_value_24"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_component_definition_18": {
-      "guid": "37944a2fb91645b18b52723e392682be",
-      "size": 64,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "long_integer",
-          "name": "total milliseconds"
-        },
-        {
-          "type": "block",
-          "name": "real properties",
-          "definition": "animation_component_real_property_19"
-        },
-        {
-          "type": "block",
-          "name": "argb color properties",
-          "definition": "animation_component_argb_color_property_23"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "animation_definition_17": {
-      "guid": "28c2d946394048189778322850a4c019",
+    "animation_definition": {
+      "guid": "46d9c228403918489778322850a4c019",
       "size": 44,
+      "size_string": "sizeof(s_cui_animation_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -678,7 +620,7 @@
         {
           "type": "char_enum",
           "name": "animation input",
-          "definition": "animation_definition_17_options_3"
+          "definition": "animationInputType"
         },
         {
           "type": "pad",
@@ -688,143 +630,223 @@
         {
           "type": "block",
           "name": "components",
-          "definition": "animation_component_definition_18"
+          "definition": "animation_component_definition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448dac20"
     },
-    "overlay_definition_7": {
-      "guid": "8836d58b6f0a4a6aa33d7366f95acb9b",
+    "animation_component_definition": {
+      "guid": "2f4a943716b9b1458b52723e392682be",
       "size": 64,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "resolution"
-        },
-        {
-          "type": "string_id",
-          "name": "theme"
-        },
-        {
-          "type": "block",
-          "name": "components",
-          "definition": "component_properties_definition_8"
-        },
-        {
-          "type": "block",
-          "name": "animations",
-          "definition": "animation_definition_17"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_editor_only_definition_29": {
-      "guid": "4f28b89c002a45cea9c3fce2dedd80c0",
-      "size": 8,
+      "size_string": "sizeof(s_cui_animation_component_definition)",
       "fields": [
         {
           "type": "string_id",
           "name": "name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "total milliseconds"
+        },
+        {
+          "type": "block",
+          "name": "real properties",
+          "definition": "animation_component_real_property"
+        },
+        {
+          "type": "block",
+          "name": "argb color properties",
+          "definition": "animation_component_argb_color_property"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448daaf0"
+    },
+    "animation_component_real_property": {
+      "guid": "11e869ad196a3f43a8c37d38891bda5f",
+      "size": 40,
+      "size_string": "sizeof(s_cui_animation_component_property_real_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "short_enum",
+          "name": "composition",
+          "definition": "animation_property_composition_type"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "property_editor_only_definition_29_options_1"
+          "definition": "animation_property_flags"
         },
         {
           "type": "pad",
           "name": "pad0",
-          "definition": 3
+          "definition": 1
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "component_editor_only_definition_28": {
-      "guid": "6f53bef3a37e4ab6bf15c8f038edde45",
-      "size": 32,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
+          "type": "long_integer",
+          "name": "total milliseconds"
         },
         {
           "type": "block",
-          "name": "properties editor only",
-          "definition": "property_editor_only_definition_29"
+          "name": "real keyframes",
+          "definition": "animation_property_keyframe_real_value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da890"
     },
-    "property_editor_only_definition_32": {
-      "guid": "4f28b89c002a45cea9c3fce2dedd80c0",
-      "size": 8,
+    "animation_property_keyframe_real_value": {
+      "guid": "997460b0c206b4478cf63ab2fe7a143d",
+      "size": 36,
+      "size_string": "sizeof(s_cui_animation_property_keyframe_value_real_definition)",
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "duration:milliseconds#the amount of time from the previous keyframe to this keyframe"
+        },
+        {
+          "type": "real",
+          "name": "value#the value when the current time is on this keyframe"
+        },
+        {
+          "type": "struct",
+          "name": "transition function",
+          "definition": "animation_scalar_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448da630"
+    },
+    "animation_scalar_function": {
+      "guid": "9274df9388166a41ae919c60ee87d1c3",
+      "size": 28,
+      "size_string": "sizeof(s_cui_animation_scalar_function)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "scalar function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448d9920"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "animation_component_argb_color_property": {
+      "guid": "0ce38af7b4150140af85f680ec811ae1",
+      "size": 40,
+      "size_string": "sizeof(s_cui_animation_component_property_argb_color_definition)",
       "fields": [
         {
           "type": "string_id",
           "name": "name^"
+        },
+        {
+          "type": "short_enum",
+          "name": "composition",
+          "definition": "animation_property_composition_type"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "property_editor_only_definition_32_options_1"
+          "definition": "animation_property_flags"
         },
         {
           "type": "pad",
           "name": "pad0",
-          "definition": 3
+          "definition": 1
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "component_editor_only_definition_31": {
-      "guid": "6f53bef3a37e4ab6bf15c8f038edde45",
-      "size": 32,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
+          "type": "long_integer",
+          "name": "total milliseconds"
         },
         {
           "type": "block",
-          "name": "properties editor only",
-          "definition": "property_editor_only_definition_32"
+          "name": "argb color keyframes",
+          "definition": "animation_property_keyframe_argb_color_value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da9c0"
     },
-    "animation_editor_only_definition_30": {
-      "guid": "c40bec3665d34c90bec59261f689ae9c",
-      "size": 32,
+    "animation_property_keyframe_argb_color_value": {
+      "guid": "4420ebf1ea545a45b27137856111cc0e",
+      "size": 48,
+      "size_string": "sizeof(s_cui_animation_property_keyframe_value_argb_color_definition)",
       "fields": [
         {
-          "type": "string_id",
-          "name": "name^"
+          "type": "long_integer",
+          "name": "duration:milliseconds#the amount of time from the previous keyframe to this keyframe"
         },
         {
-          "type": "block",
-          "name": "components editor only",
-          "definition": "component_editor_only_definition_31"
+          "type": "real_argb_color",
+          "name": "color#the value when the current time is on this keyframe"
         },
         {
-          "type": "terminator"
+          "type": "struct",
+          "name": "transition function",
+          "definition": "animation_scalar_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da760"
     },
-    "overlay_editor_only_definition_27": {
-      "guid": "e972b73f3e114678abea165d97b8d1c2",
+    "overlay_editor_only_definition": {
+      "guid": "3fb772e9113e7846abea165d97b8d1c2",
       "size": 68,
+      "size_string": "sizeof(s_cui_overlay_editor_only_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -837,7 +859,7 @@
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "overlay_editor_only_definition_27_options_2"
+          "definition": "editor_overlay_info_flags"
         },
         {
           "type": "pad",
@@ -847,31 +869,102 @@
         {
           "type": "block",
           "name": "components editor only",
-          "definition": "component_editor_only_definition_28"
+          "definition": "component_editor_only_definition"
         },
         {
           "type": "block",
           "name": "animations editor only",
-          "definition": "animation_editor_only_definition_30"
+          "definition": "animation_editor_only_definition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448dc030"
     },
-    "property_binding_33": {
-      "guid": "4888cd37410ff2efc9c0bbb02e58f1d9",
+    "component_editor_only_definition": {
+      "guid": "f3be536f7ea3b64abf15c8f038edde45",
+      "size": 32,
+      "size_string": "sizeof(s_cui_component_editor_only_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "properties editor only",
+          "definition": "property_editor_only_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dbdd0"
+    },
+    "property_editor_only_definition": {
+      "guid": "9cb8284f2a00ce45a9c3fce2dedd80c0",
+      "size": 8,
+      "size_string": "sizeof(s_cui_property_editor_only_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "editor_property_info_flags"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dbca0"
+    },
+    "animation_editor_only_definition": {
+      "guid": "36ec0bc4d365904cbec59261f689ae9c",
+      "size": 32,
+      "size_string": "sizeof(s_cui_animation_editor_only_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "components editor only",
+          "definition": "component_editor_only_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dbf00"
+    },
+    "property_binding": {
+      "guid": "37cd88480f41eff2c9c0bbb02e58f1d9",
       "size": 20,
+      "size_string": "sizeof(s_cui_property_binding_definition)",
       "fields": [
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "property_binding_33_options_0"
+          "definition": "property_binding_flags"
         },
         {
           "type": "short_enum",
           "name": "conversion function",
-          "definition": "property_binding_33_options_1"
+          "definition": "binding_conversion_function_enum_definition"
         },
         {
           "type": "string_id",
@@ -890,13 +983,16 @@
           "name": "target property name"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da3d0"
     },
-    "binding_conversion_long_comparison_block_definition_34": {
-      "guid": "6d6e504346d713d053f80db490e3c4d5",
+    "binding_conversion_long_comparison_block_definition": {
+      "guid": "43506e6dd746d01353f80db490e3c4d5",
       "size": 16,
+      "size_string": "sizeof(s_cui_binding_conversion_long_comparison_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -909,7 +1005,7 @@
         {
           "type": "char_enum",
           "name": "comparison operator",
-          "definition": "binding_conversion_long_comparison_block_definition_34_options_2"
+          "definition": "binding_conversion_comparison_operator_enum_definition"
         },
         {
           "type": "pad",
@@ -921,232 +1017,16 @@
           "name": "comparison value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448da500"
     },
-    "static_data_column_37": {
-      "guid": "1fc0b0414409cfb90693b2bed14c8905",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "short_enum",
-          "name": "type",
-          "definition": "static_data_column_37_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_long_value_39": {
-      "guid": "63dd28294d14d1f152793896fc1fcc8f",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "long_integer",
-          "name": "value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_real_value_40": {
-      "guid": "758da8a4409059126254fba1693c45d2",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real",
-          "name": "value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_string_id_value_41": {
-      "guid": "63caf9704ea90faf2cb1feb315007ca4",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "string_id",
-          "name": "value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "propertyComponentPtrValue_42": {
-      "guid": "b824c8c944af9fe40e33aaa4b60e0b97",
-      "size": 12,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "string_id",
-          "name": "value"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "propertyComponentPtrValue_42_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_tag_reference_value_43": {
-      "guid": "caa80a1445b59b12f5403aa52e4ca4ff",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "tag_reference",
-          "name": "value",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_text_value_44": {
-      "guid": "9b80dcd34f46d0f843607aafda9d5497",
-      "size": 260,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "long_string",
-          "name": "value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "property_argb_color_value_45": {
-      "guid": "a86fc89b4bac478a446bed97b89a09c3",
-      "size": 20,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "real_argb_color",
-          "name": "value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "static_data_row_38": {
-      "guid": "b1a7ec45439ebc3da4f1d9a6af5709a3",
-      "size": 196,
-      "fields": [
-        {
-          "type": "block",
-          "name": "long properties",
-          "definition": "property_long_value_39"
-        },
-        {
-          "type": "block",
-          "name": "real properties",
-          "definition": "property_real_value_40"
-        },
-        {
-          "type": "block",
-          "name": "string_id properties",
-          "definition": "property_string_id_value_41"
-        },
-        {
-          "type": "block",
-          "name": "component ptr properties",
-          "definition": "propertyComponentPtrValue_42"
-        },
-        {
-          "type": "block",
-          "name": "tag reference properties",
-          "definition": "property_tag_reference_value_43"
-        },
-        {
-          "type": "block",
-          "name": "string properties",
-          "definition": "property_text_value_44"
-        },
-        {
-          "type": "block",
-          "name": "argb color properties",
-          "definition": "property_argb_color_value_45"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "static_data_36": {
-      "guid": "2618e512442b8ff9b2ff939f1f12b890",
-      "size": 56,
-      "fields": [
-        {
-          "type": "block",
-          "name": "columns",
-          "definition": "static_data_column_37"
-        },
-        {
-          "type": "block",
-          "name": "rows",
-          "definition": "static_data_row_38"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "static_data_table_35": {
-      "guid": "5f2ad34a4c65125ee634919e7118e6d3",
+    "static_data_table": {
+      "guid": "4ad32a5f654c5e12e634919e7118e6d3",
       "size": 64,
+      "size_string": "sizeof(s_cui_static_data_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -1159,31 +1039,107 @@
         {
           "type": "struct",
           "name": "static data",
-          "definition": "static_data_36"
+          "definition": "static_data_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db0c0"
     },
-    "expression_step_47": {
-      "guid": "cc3b2db94a839a254f99a28c2b432ef9",
+    "static_data_struct": {
+      "guid": "12e518262b44f98fb2ff939f1f12b890",
+      "size": 56,
+      "size_string": "sizeof(s_cui_static_data)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "columns",
+          "definition": "static_data_column"
+        },
+        {
+          "type": "block",
+          "name": "rows",
+          "definition": "static_data_row"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dae70"
+    },
+    "static_data_column": {
+      "guid": "41b0c01f0944b9cf0693b2bed14c8905",
+      "size": 8,
+      "size_string": "sizeof(s_cui_static_data_column_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "short_enum",
+          "name": "type",
+          "definition": "property_type"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448dad50"
+    },
+    "expression": {
+      "guid": "87b190f0dd4c749d527a3a8c99e86b1d",
+      "size": 288,
+      "size_string": "sizeof(s_cui_expression_definition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "long_string",
+          "name": "expression text"
+        },
+        {
+          "type": "block",
+          "name": "steps",
+          "definition": "expression_step"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448db450"
+    },
+    "expression_step": {
+      "guid": "b92d3bcc834a259a4f99a28c2b432ef9",
       "size": 12,
+      "size_string": "sizeof(s_cui_expression_step_definition)",
       "fields": [
         {
           "type": "char_enum",
           "name": "step type^",
-          "definition": "expression_step_47_options_0"
+          "definition": "step_type"
         },
         {
           "type": "char_enum",
           "name": "operator",
-          "definition": "expression_step_47_options_1"
+          "definition": "step_operator"
         },
         {
           "type": "char_enum",
           "name": "variable",
-          "definition": "expression_step_47_options_2"
+          "definition": "step_variable"
         },
         {
           "type": "pad",
@@ -1199,58 +1155,16 @@
           "name": "string id value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db320"
     },
-    "expression_46": {
-      "guid": "f090b1874cdd9d74527a3a8c99e86b1d",
-      "size": 288,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "long_string",
-          "name": "expression text"
-        },
-        {
-          "type": "block",
-          "name": "steps",
-          "definition": "expression_step_47"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "static_data_column_49": {
-      "guid": "1fc0b0414409cfb90693b2bed14c8905",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "short_enum",
-          "name": "type",
-          "definition": "static_data_column_49_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "encapsulatedProperties_48": {
-      "guid": "926e43164436caa29d6ccba481eb9f7e",
+    "encapsulatedProperties": {
+      "guid": "16436e923644a2ca9d6ccba481eb9f7e",
       "size": 32,
+      "size_string": "sizeof(CuiEncapsulatedProperties)",
       "fields": [
         {
           "type": "string_id",
@@ -1259,184 +1173,92 @@
         {
           "type": "block",
           "name": "properties",
-          "definition": "static_data_column_49"
+          "definition": "static_data_column"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448db580"
     },
-    "system_3": {
-      "guid": "923e721c4f87fe15f31f088ce5e8e02c",
-      "size": 280,
-      "fields": [
-        {
-          "type": "block",
-          "name": "template instantiations",
-          "definition": "template_instantiation_block_definition_4"
-        },
-        {
-          "type": "block",
-          "name": "components",
-          "definition": "component_definition_5"
-        },
-        {
-          "type": "block",
-          "name": "component indices",
-          "definition": "component_index_block_definition_6"
-        },
-        {
-          "type": "block",
-          "name": "overlays",
-          "definition": "overlay_definition_7"
-        },
-        {
-          "type": "block",
-          "name": "overlays editor only",
-          "definition": "overlay_editor_only_definition_27"
-        },
-        {
-          "type": "block",
-          "name": "property bindings",
-          "definition": "property_binding_33"
-        },
-        {
-          "type": "block",
-          "name": "binding conversion long comparisons",
-          "definition": "binding_conversion_long_comparison_block_definition_34"
-        },
-        {
-          "type": "block",
-          "name": "static data tables",
-          "definition": "static_data_table_35"
-        },
-        {
-          "type": "block",
-          "name": "expressions",
-          "definition": "expression_46"
-        },
-        {
-          "type": "block",
-          "name": "encapsulated properties",
-          "definition": "encapsulatedProperties_48"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cui_logic_struct_definition_1": {
-      "guid": "a1c18927aa0c11d6249f48d7aa822819",
-      "size": 336,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "string_id",
-          "name": "logic name"
-        },
-        {
-          "type": "tag_reference",
-          "name": "string list",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "struct",
-          "name": "system",
-          "definition": "system_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "component_definition_5_options_3": {
+    "component_definition_flags": {
       "options": [
         "hidden to tools user"
       ]
     },
-    "propertyComponentPtrValue_13_options_2": {
+    "propertyComponentPtrFlags": {
       "options": [
         "source is in external system"
       ]
     },
-    "animation_definition_17_options_3": {
+    "animationInputType": {
       "options": [
         "time",
         "binding"
       ]
     },
-    "animation_component_real_property_19_options_1": {
+    "animation_property_composition_type": {
       "options": [
         "relative to current",
         "absolute to screen",
         "absolute to parent"
       ]
     },
-    "animation_component_real_property_19_options_2": {
+    "animation_property_flags": {
       "options": [
         "loop"
       ]
     },
-    "animation_component_argb_color_property_23_options_1": {
-      "options": [
-        "relative to current",
-        "absolute to screen",
-        "absolute to parent"
-      ]
-    },
-    "animation_component_argb_color_property_23_options_2": {
-      "options": [
-        "loop"
-      ]
-    },
-    "overlay_editor_only_definition_27_options_2": {
+    "editor_overlay_info_flags": {
       "options": [
         "exclude overlay"
       ]
     },
-    "property_editor_only_definition_29_options_1": {
+    "editor_property_info_flags": {
       "options": [
         "default value"
       ]
     },
-    "property_editor_only_definition_32_options_1": {
-      "options": [
-        "default value"
-      ]
-    },
-    "property_binding_33_options_0": {
+    "property_binding_flags": {
       "options": [
         "source is in external screen",
         "source is in external system",
         "target is in external system"
       ]
     },
-    "property_binding_33_options_1": {
+    "binding_conversion_function_enum_definition": {
       "options": [
         "none",
         "negate bool",
         "compare long"
       ]
     },
-    "binding_conversion_long_comparison_block_definition_34_options_2": {
+    "binding_conversion_comparison_operator_enum_definition": {
       "options": [
         "equality",
         "inequality",
@@ -1446,7 +1268,7 @@
         "greater than"
       ]
     },
-    "static_data_column_37_options_1": {
+    "property_type": {
       "options": [
         "boolean",
         "long",
@@ -1459,12 +1281,7 @@
         "emblem info"
       ]
     },
-    "propertyComponentPtrValue_42_options_2": {
-      "options": [
-        "source is in external system"
-      ]
-    },
-    "expression_step_47_options_0": {
+    "step_type": {
       "options": [
         "operator",
         "variable",
@@ -1472,7 +1289,7 @@
         "string id value"
       ]
     },
-    "expression_step_47_options_1": {
+    "step_operator": {
       "options": [
         "add",
         "subtract",
@@ -1491,7 +1308,7 @@
         "mod"
       ]
     },
-    "expression_step_47_options_2": {
+    "step_variable": {
       "options": [
         "variable a",
         "variable b",
@@ -1502,22 +1319,20 @@
         "variable g",
         "variable h"
       ]
-    },
-    "static_data_column_49_options_1": {
-      "options": [
-        "boolean",
-        "long",
-        "real",
-        "string",
-        "component",
-        "tag reference",
-        "string id",
-        "argb color",
-        "emblem info"
-      ]
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

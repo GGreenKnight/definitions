@@ -2,74 +2,62 @@
   "name": "object_dispenser_component",
   "tag": "odis",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "object_dispenser_component_block",
   "blocks": {
-    "dispense_slot_4": {
-      "max_count": 2,
-      "struct": "dispense_slot_4"
-    },
-    "root": {
+    "object_dispenser_component_block": {
       "max_count": 1,
-      "struct": "object_dispenser_component_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "object_dispenser_component_block_struct"
+    },
+    "dispense_slot": {
+      "max_count": 2,
+      "max_count_string": "k_maxSlotCount",
+      "struct": "dispense_slot_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "object_dispenser_component_block_struct": {
+      "guid": "7c8648e749499f586ff804b06f212fa8",
+      "size": 168,
+      "size_string": "(sizeof(DispenserComponentDefinition) - Tag::SizeInfo<DispenserComponentDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "struct",
+          "name": "object dispenser component",
+          "definition": "object_dispenser_component_internal"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449b9e00"
     },
-    "dispense_slot_4": {
-      "guid": "2dd3032b4e2bf022dd817d93ac1686a1",
-      "size": 8,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "slot name"
-        },
-        {
-          "type": "string_id",
-          "name": "slot marker"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "object_dispenser_component_3": {
-      "guid": "f5015a2a4168aee7300620bebbf04ec9",
+    "object_dispenser_component_internal": {
+      "guid": "2a5a01f56841e7ae300620bebbf04ec9",
       "size": 152,
+      "size_string": "sizeof(DispenserComponentInternalDefinition)",
       "fields": [
         {
           "type": "block",
           "name": "dispense slots",
-          "definition": "dispense_slot_4"
+          "definition": "dispense_slot"
         },
         {
           "type": "tag_reference",
           "name": "incoming creation effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -77,7 +65,9 @@
           "name": "ready effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -87,12 +77,12 @@
         {
           "type": "char_enum",
           "name": "respawn type",
-          "definition": "object_dispenser_component_3_options_4"
+          "definition": "ObjectDispenserRespawnType"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "object_dispenser_component_3_options_5"
+          "definition": "ObjectDispenserFlags"
         },
         {
           "type": "pad",
@@ -137,7 +127,8 @@
         },
         {
           "type": "custom",
-          "name": "Terminal"
+          "name": "Terminal",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -146,11 +137,16 @@
         {
           "type": "long_flags",
           "name": "Requisition Card Dispensable Types",
-          "definition": "object_dispenser_component_3_options_18"
+          "definition": "CardTypeFlagsDefinition"
         },
         {
           "type": "string_id",
           "name": "terminal navpoint UI screen"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "pad",
@@ -158,48 +154,69 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449b9ce0"
     },
-    "object_dispenser_component_struct_definition_1": {
-      "guid": "c7a69cfb1d6bf8ea3db9057645cb88d6",
-      "size": 168,
+    "dispense_slot_struct": {
+      "guid": "2b03d32d2b4e22f0dd817d93ac1686a1",
+      "size": 8,
+      "size_string": "sizeof(DispenseSlotDefinition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "slot name"
+        },
+        {
+          "type": "string_id",
+          "name": "slot marker"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449b9bc0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "object dispenser component",
-          "definition": "object_dispenser_component_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "object_dispenser_component_3_options_4": {
+    "ObjectDispenserRespawnType": {
       "options": [
         "frequency#respawns ever x seconds",
         "on object removed",
         "script controlled#game script will reset the respawn time"
       ]
     },
-    "object_dispenser_component_3_options_5": {
+    "ObjectDispenserFlags": {
       "options": [
         "disable collision for readied objects"
       ]
     },
-    "object_dispenser_component_3_options_18": {
+    "CardTypeFlagsDefinition": {
       "options": [
         "Boost",
         "Prototype",
@@ -209,5 +226,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

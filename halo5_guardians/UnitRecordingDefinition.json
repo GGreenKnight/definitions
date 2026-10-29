@@ -2,41 +2,48 @@
   "name": "UnitRecordingDefinition",
   "tag": "urcd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "UnitRecordingDefinition_block",
   "blocks": {
-    "root": {
+    "UnitRecordingDefinition_block": {
       "max_count": 1,
-      "struct": "UnitRecordingDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "UnitRecordingDefinition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "UnitRecordingDefinition_block_struct": {
+      "guid": "5ea2c673c8484efcecf039b4586a7c45",
+      "size": 128,
+      "size_string": "(sizeof(UnitRecordingDefinition) - Tag::SizeInfo<UnitRecordingDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "struct",
+          "name": "recording",
+          "definition": "UnitRecordingStruct"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad0",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14497f920"
     },
-    "recording_3": {
-      "guid": "4a067db44aa22aad6259afa09b520b69",
+    "UnitRecordingStruct": {
+      "guid": "b47d064aa24aad2a6259afa09b520b69",
       "size": 108,
+      "size_string": "sizeof(Recording)",
       "fields": [
         {
           "type": "string_id",
@@ -61,17 +68,17 @@
         {
           "type": "data",
           "name": "recording data*!",
-          "definition": "tag_data"
+          "definition": "RecordingDataDefinition"
         },
         {
           "type": "char_enum",
           "name": "team",
-          "definition": "recording_3_options_6"
+          "definition": "global_multiplayer_team_designator_enum_definition"
         },
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "recording_3_options_7"
+          "definition": "UnitRecorderFlagsDefinition"
         },
         {
           "type": "pad",
@@ -82,8 +89,10 @@
           "type": "tag_reference",
           "name": "vehicle definition",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 1,
+            "allowed": [
+              "vehi"
+            ]
           }
         },
         {
@@ -95,41 +104,37 @@
           "name": "finalLinearVelocity*"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14497f810"
     },
-    "UnitRecordingDefinition_struct_definition_1": {
-      "guid": "75526945f8ee369d35e2e26eb25ed84c",
-      "size": 128,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "recording",
-          "definition": "recording_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "recording_3_options_6": {
+    "global_multiplayer_team_designator_enum_definition": {
       "options": [
         "defender",
         "attacker",
@@ -142,7 +147,7 @@
         "neutral"
       ]
     },
-    "recording_3_options_7": {
+    "UnitRecorderFlagsDefinition": {
       "options": [
         "Set Physics To Default On Completion",
         "Is Player Spawn Intro Recording",
@@ -151,6 +156,17 @@
     }
   },
   "datas": {
-    "tag_data": {}
+    "RecordingDataDefinition": {
+      "alignment": 0,
+      "flags": 0,
+      "max_size": 4194304,
+      "max_size_string": "k_maximum_unit_recording_data_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

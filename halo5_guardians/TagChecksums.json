@@ -2,51 +2,59 @@
   "name": "TagChecksums",
   "tag": "rtcl",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "TagChecksums_block",
   "blocks": {
-    "TagChecksumBlock_3": {
-      "max_count": 65536,
-      "struct": "TagChecksumBlock_3"
-    },
-    "root": {
+    "TagChecksums_block": {
       "max_count": 1,
-      "struct": "TagChecksums_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "TagChecksums_block_struct"
+    },
+    "TagChecksumBlock": {
+      "max_count": 65536,
+      "max_count_string": "k_MaxTagChecksums",
+      "struct": "TagChecksumBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "TagChecksums_block_struct": {
+      "guid": "47137c2acb4c7211fe3505a372a155d6",
+      "size": 48,
+      "size_string": "(sizeof(TagChecksumsDefinition) - Tag::SizeInfo<TagChecksumsDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "items",
+          "definition": "TagChecksumBlock"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14474c090"
     },
-    "TagChecksumBlock_3": {
-      "guid": "1eb7344142afd7b0cd07e991f1b483b8",
+    "TagChecksumBlock": {
+      "guid": "4134b71eaf42b0d7cd07e991f1b483b8",
       "size": 36,
+      "size_string": "sizeof(TagChecksum)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "tag^",
           "definition": {
-            "flags": 0,
+            "flags": 1,
             "allowed": []
           }
         },
@@ -55,39 +63,39 @@
           "name": "checksum"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14474bf70"
     },
-    "TagChecksums_struct_definition_1": {
-      "guid": "99d1f71d601b803bc4d1c81076c6372e",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "items",
-          "definition": "TagChecksumBlock_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

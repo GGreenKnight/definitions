@@ -2,141 +2,41 @@
   "name": "prototype_requisition_pack",
   "tag": "rppd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "prototype_requisition_pack_block",
   "blocks": {
-    "prototype_requisition_pack_card_entry_4": {
-      "max_count": 64,
-      "struct": "prototype_requisition_pack_card_entry_4"
-    },
-    "prototype_requisition_pack_card_pool_entry_5": {
-      "max_count": 64,
-      "struct": "prototype_requisition_pack_card_pool_entry_5"
-    },
-    "prototype_requisition_pack_slot_definition_3": {
-      "max_count": 64,
-      "struct": "prototype_requisition_pack_slot_definition_3"
-    },
-    "root": {
+    "prototype_requisition_pack_block": {
       "max_count": 1,
-      "struct": "prototype_requisition_pack_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "prototype_requisition_pack_block_struct"
+    },
+    "prototype_requisition_pack_slot_definition": {
+      "max_count": 64,
+      "max_count_string": "k_maxCardsPerPack",
+      "struct": "prototype_requisition_pack_slot_definition_struct"
+    },
+    "prototype_requisition_pack_card_entry": {
+      "max_count": 64,
+      "max_count_string": "k_maxCardsPerPack",
+      "struct": "prototype_requisition_pack_card_entry_struct"
+    },
+    "prototype_requisition_pack_card_pool_entry": {
+      "max_count": 64,
+      "max_count_string": "k_maxCardsPerPack",
+      "struct": "prototype_requisition_pack_card_pool_entry_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_pack_card_entry_4": {
-      "guid": "f7541eb84e3ded067f11efbd6133a76d",
-      "size": 40,
-      "fields": [
-        {
-          "type": "real",
-          "name": "weight"
-        },
-        {
-          "type": "tag_reference",
-          "name": "card",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "char_integer",
-          "name": "count"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_pack_card_pool_entry_5": {
-      "guid": "7d249fd24d7cf497f31f56afcf97005e",
-      "size": 40,
-      "fields": [
-        {
-          "type": "real",
-          "name": "weight"
-        },
-        {
-          "type": "tag_reference",
-          "name": "pool",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "char_integer",
-          "name": "count"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_pack_slot_definition_3": {
-      "guid": "56aacae24385b1797539e7abfa533710",
-      "size": 56,
-      "fields": [
-        {
-          "type": "block",
-          "name": "cards",
-          "definition": "prototype_requisition_pack_card_entry_4"
-        },
-        {
-          "type": "block",
-          "name": "pools",
-          "definition": "prototype_requisition_pack_card_pool_entry_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_pack_struct_definition_1": {
-      "guid": "4cfcc27428339d226aa4eadfab410c72",
+    "prototype_requisition_pack_block_struct": {
+      "guid": "bcc3fda44243fb4960c61abd48c8f2d1",
       "size": 384,
+      "size_string": "(sizeof(PrototypeRequisitionPackDefinition) - Tag::SizeInfo<PrototypeRequisitionPackDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "string",
@@ -151,7 +51,9 @@
           "name": "icon bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -161,12 +63,12 @@
         {
           "type": "block",
           "name": "slots",
-          "definition": "prototype_requisition_pack_slot_definition_3"
+          "definition": "prototype_requisition_pack_slot_definition"
         },
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "prototype_requisition_pack_struct_definition_1_options_7"
+          "definition": "packFlagsField"
         },
         {
           "type": "long_integer",
@@ -181,13 +83,129 @@
           "name": "display sort order"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144749310"
+    },
+    "prototype_requisition_pack_slot_definition_struct": {
+      "guid": "e2caaa56854379b17539e7abfa533710",
+      "size": 56,
+      "size_string": "sizeof(PrototypeRequisitionPackSlotDefinition)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "cards",
+          "definition": "prototype_requisition_pack_card_entry"
+        },
+        {
+          "type": "block",
+          "name": "pools",
+          "definition": "prototype_requisition_pack_card_pool_entry"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447491f0"
+    },
+    "prototype_requisition_pack_card_entry_struct": {
+      "guid": "b81e54f73d4e06ed7f11efbd6133a76d",
+      "size": 40,
+      "size_string": "sizeof(PrototypeRequisitionPackCardEntryDefinition)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "weight"
+        },
+        {
+          "type": "tag_reference",
+          "name": "card",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rpcd"
+            ]
+          }
+        },
+        {
+          "type": "char_integer",
+          "name": "count"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144748fc0"
+    },
+    "prototype_requisition_pack_card_pool_entry_struct": {
+      "guid": "d29f247d7c4d97f4f31f56afcf97005e",
+      "size": 40,
+      "size_string": "sizeof(PrototypeRequisitionPackPoolEntryDefinition)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "weight"
+        },
+        {
+          "type": "tag_reference",
+          "name": "pool",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rpcp"
+            ]
+          }
+        },
+        {
+          "type": "char_integer",
+          "name": "count"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447490d0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "prototype_requisition_pack_struct_definition_1_options_7": {
+    "packFlagsField": {
       "options": [
         "Can Purchase With Credits",
         "Can Purchase With Currency",
@@ -195,5 +213,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

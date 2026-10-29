@@ -2,57 +2,35 @@
   "name": "ui_vehicle_node_definition",
   "tag": "uivn",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "ui_vehicle_node_definition_block",
   "blocks": {
-    "root": {
+    "ui_vehicle_node_definition_block": {
       "max_count": 1,
-      "struct": "ui_vehicle_node_definition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "ui_vehicle_node_definition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ui_vehicle_node_definition_struct_definition_1": {
-      "guid": "cddb79f2abe77853956c7bd6365ec858",
+    "ui_vehicle_node_definition_block_struct": {
+      "guid": "faaebe60644156d694b87ab3033cd98c",
       "size": 56,
+      "size_string": "(sizeof(UIVehicleNodeDefinition) - Tag::SizeInfo<UIVehicleNodeDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "tag_reference",
           "name": "vehicle default screen reference",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "wpfs"
+            ]
           }
         },
         {
@@ -65,11 +43,39 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14489a790"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

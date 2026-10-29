@@ -1,99 +1,51 @@
 {
   "name": "style",
   "tag": "styl",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "style_block",
   "blocks": {
-    "special_movement_block_3": {
+    "style_block": {
       "max_count": 1,
-      "struct": "special_movement_block_3"
+      "max_count_string": "1",
+      "struct": "style_block_struct"
     },
-    "behavior_names_block_4": {
+    "special_movement_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "special_movement_block"
+    },
+    "behavior_names_block": {
       "max_count": 256,
-      "struct": "behavior_names_block_4"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "style_struct_definition_1"
+      "max_count_string": "k_maximum_behavior_count",
+      "struct": "behavior_names_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "special_movement_block_3": {
-      "guid": "5af3129542abe49dbc9d9aa4c3496b8b",
-      "size": 4,
-      "fields": [
-        {
-          "type": "long_flags",
-          "name": "Special movement 1",
-          "definition": "special_movement_block_3_options_0"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "behavior_names_block_4": {
-      "guid": "3b1809cc413571be0eeb09a5508e3542",
-      "size": 32,
-      "fields": [
-        {
-          "type": "string",
-          "name": "behavior name*^"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "style_struct_definition_1": {
-      "guid": "c0ff93442c61de5044f3464382662c9a",
+    "style_block_struct": {
+      "guid": "deb759acc844564508f0689254cd748b",
       "size": 144,
+      "size_string": "(sizeof(style_definition) - Tag::SizeInfo<style_definition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "string",
           "name": "name^"
         },
         {
-          "type": "custom",
-          "name": "Combat status decay options"
+          "type": "explanation",
+          "name": "Combat status decay options",
+          "definition": "Controls how combat status is allowed to be automatically reduced in the absence of combat stimuli. 'Latch at X' means that once the level of x is attained (and/or surpassed) the combat status never falls below it. Not applicable when style is applied to a character tag."
         },
         {
           "type": "short_enum",
           "name": "Combat status decay options",
-          "definition": "style_struct_definition_1_options_4"
+          "definition": "combat_status_enum"
         },
         {
           "type": "pad",
@@ -101,85 +53,151 @@
           "definition": 2
         },
         {
-          "type": "custom",
-          "name": "Style Behavior Control"
+          "type": "explanation",
+          "name": "Style Behavior Control",
+          "definition": "Check the appropriate box to turn on/off the given behavior"
         },
         {
           "type": "long_flags",
           "name": "Style control",
-          "definition": "style_struct_definition_1_options_7"
+          "definition": "style_control_flags"
         },
         {
           "type": "long_flags",
           "name": "Behaviors1",
-          "definition": "style_struct_definition_1_options_8"
+          "group_tag": "dumb",
+          "definition": "behavior_set1"
         },
         {
           "type": "long_flags",
           "name": "Behaviors2",
-          "definition": "style_struct_definition_1_options_9"
+          "group_tag": "dumb",
+          "definition": "behavior_set2"
         },
         {
           "type": "long_flags",
           "name": "Behaviors3",
-          "definition": "style_struct_definition_1_options_10"
+          "group_tag": "dumb",
+          "definition": "behavior_set3"
         },
         {
           "type": "long_flags",
           "name": "Behaviors4",
-          "definition": "style_struct_definition_1_options_11"
+          "group_tag": "dumb",
+          "definition": "behavior_set4"
         },
         {
           "type": "long_flags",
           "name": "Behaviors5",
-          "definition": "style_struct_definition_1_options_12"
+          "group_tag": "dumb",
+          "definition": "behavior_set5"
         },
         {
           "type": "long_flags",
           "name": "Behaviors6",
-          "definition": "style_struct_definition_1_options_13"
+          "group_tag": "dumb",
+          "definition": "behavior_set6"
         },
         {
           "type": "long_flags",
           "name": "Behaviors7",
-          "definition": "style_struct_definition_1_options_14"
+          "group_tag": "dumb",
+          "definition": "behavior_set7"
         },
         {
           "type": "long_flags",
           "name": "Behaviors8",
-          "definition": "style_struct_definition_1_options_15"
+          "group_tag": "dumb",
+          "definition": "behavior_set8"
         },
         {
           "type": "block",
           "name": "Special movement",
-          "definition": "special_movement_block_3"
+          "definition": "special_movement_block"
         },
         {
           "type": "block",
           "name": "Behavior list",
-          "definition": "behavior_names_block_4"
+          "definition": "behavior_names_block"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447cdd00"
+    },
+    "special_movement_block": {
+      "guid": "9512f35aab429de4bc9d9aa4c3496b8b",
+      "size": 4,
+      "size_string": "sizeof(struct special_movement_definition)",
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Special movement 1",
+          "definition": "special_movement_flags"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447c9d20"
+    },
+    "behavior_names_block": {
+      "guid": "cc09183b3541be710eeb09a5508e3542",
+      "size": 32,
+      "size_string": "sizeof(struct style_behavior_name)",
+      "fields": [
+        {
+          "type": "string",
+          "name": "behavior name*^"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447cdbe0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "style_struct_definition_1_options_4": {
+    "combat_status_enum": {
       "options": [
         "Latch at Idle",
         "Latch at Alert",
         "Latch at Combat"
       ]
     },
-    "style_struct_definition_1_options_7": {
+    "style_control_flags": {
       "options": [
         "New behaviors default to ON",
         "Do not force on default behaviors"
       ]
     },
-    "style_struct_definition_1_options_8": {
+    "behavior_set1": {
       "options": [
         "------GENERAL------",
         "root",
@@ -215,7 +233,7 @@
         "fight_circle"
       ]
     },
-    "style_struct_definition_1_options_9": {
+    "behavior_set2": {
       "options": [
         "hamstring_charge",
         "gravity_jump",
@@ -251,7 +269,7 @@
         "search_by_fire"
       ]
     },
-    "style_struct_definition_1_options_10": {
+    "behavior_set3": {
       "options": [
         "search_by_fire_execute",
         "leap_on_cover",
@@ -287,7 +305,7 @@
         "retreat"
       ]
     },
-    "style_struct_definition_1_options_11": {
+    "behavior_set4": {
       "options": [
         "retreat_grenade",
         "flee",
@@ -323,7 +341,7 @@
         "damage_vehicle_cover"
       ]
     },
-    "style_struct_definition_1_options_12": {
+    "behavior_set5": {
       "options": [
         "exposed_rear_cover_impulse",
         "player_endagered_cover_impulse",
@@ -359,7 +377,7 @@
         "engineer_control@free"
       ]
     },
-    "style_struct_definition_1_options_13": {
+    "behavior_set6": {
       "options": [
         "engineer_control@equipment",
         "engineer_explode",
@@ -395,7 +413,7 @@
         "arrange sync action"
       ]
     },
-    "style_struct_definition_1_options_14": {
+    "behavior_set7": {
       "options": [
         "protect allies",
         "activate item",
@@ -431,7 +449,7 @@
         "Planning Catch A Ride Impulse"
       ]
     },
-    "style_struct_definition_1_options_15": {
+    "behavior_set8": {
       "options": [
         "MoveTowardGoal",
         "CatchUpToPlayer",
@@ -443,7 +461,7 @@
         "MusketeerCureIsolationBehavior"
       ]
     },
-    "special_movement_block_3_options_0": {
+    "special_movement_flags": {
       "options": [
         "jump",
         "climb",
@@ -454,5 +472,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

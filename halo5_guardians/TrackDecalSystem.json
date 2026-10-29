@@ -1,63 +1,42 @@
 {
   "name": "TrackDecalSystem",
   "tag": "trds",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "TrackDecalSystem_block",
   "blocks": {
-    "root": {
+    "TrackDecalSystem_block": {
       "max_count": 1,
-      "struct": "TrackDecalSystem_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "TrackDecalSystem_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "TrackDecalSystem_struct_definition_1": {
-      "guid": "00db9d57cb683f1ff83a9703dd56402e",
+    "TrackDecalSystem_block_struct": {
+      "guid": "d88cbff38342d081b095f4a921b3049a",
       "size": 80,
+      "size_string": "(sizeof(TrackDecalSystemDefinition) - Tag::SizeInfo<TrackDecalSystemDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "tag_reference",
           "name": "Decal system",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "decs"
+            ]
           }
         },
         {
           "type": "custom",
-          "name": "Distance Between Vertices"
+          "name": "Distance Between Vertices",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -73,7 +52,13 @@
         },
         {
           "type": "custom",
-          "name": "Velocity-based Offset"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Velocity-based Offset",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -85,7 +70,13 @@
         },
         {
           "type": "custom",
-          "name": "Contact Patch"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Contact Patch",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -96,15 +87,48 @@
           "name": "Contact patch length:world units#the amount of the tire that contacts the surface from front to back. This length is used when the tire is sliding sideways instead of the width"
         },
         {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
           "type": "real",
           "name": "Texture U repeat length:world units#the length of tire track before the texture repeats in the U direction"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447210a0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

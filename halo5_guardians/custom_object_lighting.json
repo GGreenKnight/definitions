@@ -2,473 +2,73 @@
   "name": "custom_object_lighting",
   "tag": "colt",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 514,
+  "parent_tag": "aTag",
+  "block": "custom_object_lighting_block",
   "blocks": {
-    "authored_light_probe_lights_block_5": {
+    "custom_object_lighting_block": {
       "max_count": 1,
-      "struct": "authored_light_probe_lights_block_5"
+      "max_count_string": "1",
+      "struct": "custom_object_lighting_block_struct"
     },
-    "authored_light_probe_block_4": {
+    "authored_light_probe_block": {
       "max_count": 4,
-      "struct": "authored_light_probe_block_4"
+      "max_count_string": "4",
+      "struct": "authored_light_probe_block_struct"
     },
-    "root": {
+    "authored_light_probe_lights_block": {
       "max_count": 1,
-      "struct": "custom_object_lighting_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "authored_light_probe_lights_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "custom_object_lighting_block_struct": {
+      "guid": "4a0f14f1e078ae57361f859102c4b9c1",
+      "size": 80,
+      "size_string": "(sizeof(CustomObjectLightingTag) - Tag::SizeInfo<CustomObjectLightingTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "authored_light_probe_lights_block_5": {
-      "guid": "c2ea80adc6ade1b9bed37e66ffa3a679",
-      "size": 104,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Authored Light Probe"
-        },
-        {
-          "type": "custom",
-          "name": "Direction 1&Direction(D)"
-        },
-        {
-          "type": "real",
-          "name": "Direction 1&Direction(D)"
-        },
-        {
-          "type": "custom",
-          "name": "Front-Back 1&Front-Back(D)"
-        },
-        {
-          "type": "real",
-          "name": "Front-Back 1&Front-Back(D)"
-        },
-        {
-          "type": "real_rgb_color",
-          "name": "Direct color 1"
-        },
-        {
-          "type": "custom",
-          "name": "Direct intensity 1"
-        },
-        {
-          "type": "real",
-          "name": "Direct intensity 1"
-        },
-        {
-          "type": "custom",
-          "name": "Direction 2&Direction(D)"
-        },
-        {
-          "type": "real",
-          "name": "Direction 2&Direction(D)"
-        },
-        {
-          "type": "custom",
-          "name": "Front-Back 2&Front-Back(D)"
-        },
-        {
-          "type": "real",
-          "name": "Front-Back 2&Front-Back(D)"
-        },
-        {
-          "type": "real_rgb_color",
-          "name": "Direct color 2"
-        },
-        {
-          "type": "custom",
-          "name": "Direct intensity 2"
-        },
-        {
-          "type": "real",
-          "name": "Direct intensity 2"
-        },
-        {
-          "type": "real_rgb_color",
-          "name": "Ambient Color"
-        },
-        {
-          "type": "custom",
-          "name": "Ambient intensity"
-        },
-        {
-          "type": "real",
-          "name": "Ambient intensity"
-        },
-        {
-          "type": "real_rgb_color",
-          "name": "Sun Color"
-        },
-        {
-          "type": "custom",
-          "name": "Sun intensity"
-        },
-        {
-          "type": "real",
-          "name": "Sun intensity"
-        },
-        {
-          "type": "real_rgb_color",
-          "name": "Cubemap Scale Color"
-        },
-        {
-          "type": "custom",
-          "name": "Cubemap Scale intensity"
-        },
-        {
-          "type": "real",
-          "name": "Cubemap Scale intensity"
-        },
-        {
-          "type": "custom",
-          "name": "Authored Light Probe Intensity Scale"
-        },
-        {
-          "type": "real",
-          "name": "Authored Light Probe Intensity Scale"
-        },
-        {
-          "type": "custom",
-          "name": "Generated Air Probe Intensity Scale"
-        },
-        {
-          "type": "real",
-          "name": "Generated Air Probe Intensity Scale"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "raw_sh_data__6": {
-      "guid": "46000558d15b51cb11fde4ac38e146ca",
-      "size": 108,
-      "fields": [
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "per_frame_sh_data____7": {
-      "guid": "ee02f0a832adf4a3901271ae82a6f3e4",
-      "size": 108,
-      "fields": [
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "real",
-          "name": "sh data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "authored_light_probe_block_4": {
-      "guid": "1202400ee5695a0d15ea96e69adfd5f0",
-      "size": 276,
-      "fields": [
-        {
-          "type": "block",
-          "name": "Lights*",
-          "definition": "authored_light_probe_lights_block_5"
-        },
-        {
-          "type": "custom",
-          "name": "Generated Air Probe Intensity Scale!"
-        },
-        {
-          "type": "real",
-          "name": "Generated Air Probe Intensity Scale!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "struct",
-          "name": "raw sh data!",
-          "definition": "raw_sh_data__6"
+          "name": "Probe",
+          "definition": "custom_object_lighting_struct"
         },
         {
-          "type": "struct",
-          "name": "per frame sh data*!~",
-          "definition": "per_frame_sh_data____7"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "Sun Color!"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "Cubemap Scale!"
-        },
-        {
-          "type": "word_flags",
-          "name": "Flags",
-          "definition": "authored_light_probe_block_4_options_7"
-        },
-        {
-          "type": "pad",
-          "name": "fapply",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485f810"
     },
-    "Probe_3": {
-      "guid": "53c77191349471cd89720ed57d4a4127",
+    "custom_object_lighting_struct": {
+      "guid": "9171c7539434cd7189720ed57d4a4127",
       "size": 64,
+      "size_string": "sizeof(struct CustomObjectLighting)",
       "fields": [
         {
-          "type": "custom",
-          "name": "Character Lighting"
+          "type": "explanation",
+          "name": "Character Lighting",
+          "definition": "\n"
         },
         {
           "type": "block",
           "name": "Authored Light Probes",
-          "definition": "authored_light_probe_block_4"
+          "definition": "authored_light_probe_block"
         },
         {
           "type": "char_enum",
           "name": "Is Camera-space",
-          "definition": "Probe_3_options_2"
+          "definition": "midnight_boolean_enum_definition"
         },
         {
           "type": "byte_flags",
           "name": "Flags",
-          "definition": "Probe_3_options_3"
+          "definition": "customObjectLightingFlagEnumDefinition"
         },
         {
           "type": "pad",
@@ -480,57 +80,415 @@
           "name": "cubemap override",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485f6f0"
     },
-    "custom_object_lighting_struct_definition_1": {
-      "guid": "67a43977bb1de45651149415c3f65029",
-      "size": 80,
+    "authored_light_probe_block_struct": {
+      "guid": "0e40021269e50d5a15ea96e69adfd5f0",
+      "size": 276,
+      "size_string": "sizeof(AuthoredLightProbe)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "Lights*",
+          "definition": "authored_light_probe_lights_block"
+        },
+        {
+          "type": "custom",
+          "name": "Generated Air Probe Intensity Scale!",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Generated Air Probe Intensity Scale!",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "array",
+          "name": "raw sh data!",
+          "definition": "real_rgb_lightprobe_array"
+        },
+        {
+          "type": "array",
+          "name": "per frame sh data*!~",
+          "definition": "real_rgb_lightprobe_array"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Sun Color!"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Cubemap Scale!"
+        },
+        {
+          "type": "explanation",
+          "name": "",
+          "definition": "These flags only matter when the authored lighting is applied to a 3D volume or BSP, not per-object or in cinema"
+        },
+        {
+          "type": "word_flags",
+          "name": "Flags",
+          "definition": "authoredLightProbeFlagEnumDefinition"
+        },
+        {
+          "type": "pad",
+          "name": "fapply",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14485f5d0"
+    },
+    "authored_light_probe_lights_block": {
+      "guid": "ad80eac2adc6b9e1bed37e66ffa3a679",
+      "size": 104,
+      "size_string": "sizeof(AuthoredLightProbeLights)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Authored Light Probe",
+          "group_tag": "aulp"
+        },
+        {
+          "type": "custom",
+          "name": "Direction 1&Direction(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Direction 1&Direction(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Front-Back 1&Front-Back(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Front-Back 1&Front-Back(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Direct color 1"
+        },
+        {
+          "type": "custom",
+          "name": "Direct intensity 1",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Direct intensity 1",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Direction 2&Direction(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Direction 2&Direction(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Front-Back 2&Front-Back(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Front-Back 2&Front-Back(D)",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Direct color 2"
+        },
+        {
+          "type": "custom",
+          "name": "Direct intensity 2",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Direct intensity 2",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Ambient Color"
+        },
+        {
+          "type": "custom",
+          "name": "Ambient intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Ambient intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Sun Color"
+        },
+        {
+          "type": "custom",
+          "name": "Sun intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Sun intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Cubemap Scale Color"
+        },
+        {
+          "type": "custom",
+          "name": "Cubemap Scale intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Cubemap Scale intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Authored Light Probe Intensity Scale",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 10.0,
+            "step": 0.2
+          }
+        },
+        {
+          "type": "real",
+          "name": "Authored Light Probe Intensity Scale",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 10.0,
+            "step": 0.2
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Generated Air Probe Intensity Scale",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 10.0,
+            "step": 0.2
+          }
+        },
+        {
+          "type": "real",
+          "name": "Generated Air Probe Intensity Scale",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 10.0,
+            "step": 0.2
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14485f390"
+    },
+    "real_rgb_lightprobe_array": {
+      "guid": "1459f8e821a49be474ab161211716d0b",
+      "size": 4,
+      "size_string": "sizeof(float)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "sh data"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14485f4c0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "Probe",
-          "definition": "Probe_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
+    }
+  },
+  "arrays": {
+    "real_rgb_lightprobe_array": {
+      "count": 27,
+      "count_string": "((3)*(3)) * 3",
+      "struct": "real_rgb_lightprobe_array"
     }
   },
   "enums_flags": {
-    "authored_light_probe_block_4_options_7": {
+    "authoredLightProbeFlagEnumDefinition": {
       "options": [
         "Characters",
         "First Person Geometry",
         "Vehicles"
       ]
     },
-    "Probe_3_options_2": {
+    "midnight_boolean_enum_definition": {
       "options": [
         "Off",
         "On"
       ]
     },
-    "Probe_3_options_3": {
+    "customObjectLightingFlagEnumDefinition": {
       "options": [
         "Force Always Sun#Will still get dynamic shadows"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

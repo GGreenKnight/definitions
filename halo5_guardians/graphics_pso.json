@@ -2,806 +2,40 @@
   "name": "graphics_pso",
   "tag": "psog",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "graphics_pso_block",
   "blocks": {
-    "root": {
+    "graphics_pso_block": {
       "max_count": 1,
-      "struct": "graphics_pso_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "graphics_pso_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_4": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_5": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_6": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_7": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_8": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_9": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_10": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_11": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_12": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_13": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_14": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_15": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_16": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_17": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_18": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_element_19": {
-      "guid": "616e92895ff539495a0e02f140e80e9d",
-      "size": 280,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Input element"
-        },
-        {
-          "type": "long_string",
-          "name": "Semantic name"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Semantic index"
-        },
-        {
-          "type": "dword_integer",
-          "name": "DXGI Format"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Aligned offset"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Input slot class"
-        },
-        {
-          "type": "dword_integer",
-          "name": "Instance data step rate"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Input_elements_3": {
-      "guid": "106ddb8adc0aa85b3e8896f24a637b5d",
-      "size": 4480,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_4"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_5"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_6"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_7"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_8"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_9"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_10"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_11"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_12"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_13"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_14"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_15"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_16"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_17"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_18"
-        },
-        {
-          "type": "struct",
-          "name": "Input element",
-          "definition": "Input_element_19"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "graphics_pso_struct_definition_1": {
-      "guid": "4174d5b9d51e96a0dae408a50cd45d03",
+    "graphics_pso_block_struct": {
+      "guid": "14e3a5105cd72d6bd7ddf2bfd36d3eca",
       "size": 4584,
+      "size_string": "(sizeof(GraphicsPipelineStateTag) - Tag::SizeInfo<GraphicsPipelineStateTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "custom",
-          "name": "Shader references"
+          "name": "Shader references",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "Shader bank",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "mtsb"
+            ]
           }
         },
         {
@@ -826,21 +60,32 @@
         },
         {
           "type": "custom",
-          "name": "Input layout"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Input layout",
+          "group_tag": "fgrb"
         },
         {
           "type": "dword_integer",
           "name": "Input element count"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "Input elements",
-          "definition": "Input_elements_3"
+          "definition": "InputLayoutElements_array"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "data",
           "name": "PSO descriptor",
-          "definition": "tag_data"
+          "definition": "GraphicsPSODefinition_DescriptorDataRef"
         },
         {
           "type": "pad",
@@ -848,13 +93,121 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14486be90"
+    },
+    "InputLayoutElements_array": {
+      "guid": "1739b26ad56a575d6e62e1818d017f97",
+      "size": 280,
+      "size_string": "sizeof(FixedInputElement)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Input element",
+          "definition": "InputLayoutElement_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14486bd80"
+    },
+    "InputLayoutElement_struct": {
+      "guid": "89926e61f55f49395a0e02f140e80e9d",
+      "size": 280,
+      "size_string": "sizeof(FixedInputElement)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Input element",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "long_string",
+          "name": "Semantic name"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Semantic index"
+        },
+        {
+          "type": "dword_integer",
+          "name": "DXGI Format"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Input slot"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Aligned offset"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Input slot class"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Instance data step rate"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14486bc50"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
+  "arrays": {
+    "InputLayoutElements_array": {
+      "count": 16,
+      "count_string": "16",
+      "struct": "InputLayoutElements_array"
+    }
+  },
   "datas": {
-    "tag_data": {}
+    "GraphicsPSODefinition_DescriptorDataRef": {
+      "alignment": 0,
+      "flags": 0,
+      "max_size": 1024,
+      "max_size_string": "1024"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

@@ -2,50 +2,57 @@
   "name": "music_control",
   "tag": "musc",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "music_control_block",
   "blocks": {
-    "MusicActionBlock_3": {
-      "max_count": 16,
-      "struct": "MusicActionBlock_3"
-    },
-    "root": {
+    "music_control_block": {
       "max_count": 1,
-      "struct": "music_control_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "music_control_block_struct"
+    },
+    "MusicActionBlock": {
+      "max_count": 16,
+      "max_count_string": "k_maximumMusicActionsPerTag",
+      "struct": "MusicActionBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "music_control_block_struct": {
+      "guid": "1b0a44fe1548467a2ef2d5b38e332e38",
+      "size": 48,
+      "size_string": "(sizeof(MusicControlDefinition) - Tag::SizeInfo<MusicControlDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Music action list#List of music actions to perform. All will be performed when the tag is called.",
+          "definition": "MusicActionBlock"
+        },
+        {
           "type": "long_integer",
-          "name": "global tag ID!"
+          "name": "Event priority#0s will always play until a higher number is set, then only an even higher number will play after that until a reset from the sound marker occurs"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144785750"
     },
-    "MusicActionBlock_3": {
-      "guid": "ba6c3a6640c5f2b20ae0b38dbfdc2961",
+    "MusicActionBlock": {
+      "guid": "663a6cbac540b2f20ae0b38dbfdc2961",
       "size": 20,
+      "size_string": "sizeof(MusicActionBlockDefinition)",
       "fields": [
         {
           "type": "long_enum",
           "name": "Music action",
-          "definition": "MusicActionBlock_3_options_0"
+          "definition": "MusicActionSettingDefinition"
         },
         {
           "type": "string_id",
@@ -64,40 +71,37 @@
           "name": "rtpc value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144785630"
     },
-    "music_control_struct_definition_1": {
-      "guid": "4c3acf7bb26a92a071bd5d5a944592a3",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Music action list#List of music actions to perform. All will be performed when the tag is called.",
-          "definition": "MusicActionBlock_3"
-        },
-        {
-          "type": "long_integer",
-          "name": "Event priority#0s will always play until a higher number is set, then only an even higher number will play after that until a reset from the sound marker occurs"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "MusicActionBlock_3_options_0": {
+    "MusicActionSettingDefinition": {
       "options": [
         "NoAction#Take no action",
         "StartEvent#Saved  event to start music. Will call a wwise event. Restored on load",
@@ -112,5 +116,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

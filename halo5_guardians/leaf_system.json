@@ -2,45 +2,107 @@
   "name": "leaf_system",
   "tag": "lswd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "leaf_system_block",
   "blocks": {
-    "leaf_type_block_3": {
-      "max_count": 16,
-      "struct": "leaf_type_block_3"
-    },
-    "root": {
+    "leaf_system_block": {
       "max_count": 1,
-      "struct": "leaf_system_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "leaf_system_block_struct"
+    },
+    "leaf_type_block": {
+      "max_count": 16,
+      "max_count_string": "k_maximum_leaf_type_definitions",
+      "struct": "leaf_type_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "leaf_system_block_struct": {
+      "guid": "23fc09064c659416a19db1868ba4c000",
+      "size": 136,
+      "size_string": "(sizeof(s_leaf_system_definition) - Tag::SizeInfo<s_leaf_system_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "long_flags",
+          "name": "flags!",
+          "definition": "leaf_flags"
         },
         {
-          "type": "terminator"
+          "type": "string_id",
+          "name": "marker attach name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap sprite plate",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "bitm"
+            ]
+          }
+        },
+        {
+          "type": "real_bounds",
+          "name": "emission rate#seconds"
+        },
+        {
+          "type": "real",
+          "name": "lifetime"
+        },
+        {
+          "type": "real_bounds",
+          "name": "wind min/max#default 0,0"
+        },
+        {
+          "type": "real",
+          "name": "wind scale"
+        },
+        {
+          "type": "real",
+          "name": "time scale"
+        },
+        {
+          "type": "real_bounds",
+          "name": "fade distance!#from maximum movement range (10+). default 0!"
+        },
+        {
+          "type": "real",
+          "name": "emissions sphere radius"
+        },
+        {
+          "type": "real",
+          "name": "movement cylinder radius"
+        },
+        {
+          "type": "real",
+          "name": "fade in time!"
+        },
+        {
+          "type": "real",
+          "name": "fade out time!"
+        },
+        {
+          "type": "block",
+          "name": "leaf types",
+          "definition": "leaf_type_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14498c380"
     },
-    "leaf_type_block_3": {
-      "guid": "9cb09d254521b339fd8222bc55ed4afa",
+    "leaf_type_block": {
+      "guid": "259db09c214539b3fd8222bc55ed4afa",
       "size": 60,
+      "size_string": "sizeof(s_leaf_type)",
       "fields": [
         {
           "type": "short_integer",
@@ -100,93 +162,37 @@
           "name": "air friction XY and Z"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14498c270"
     },
-    "leaf_system_struct_definition_1": {
-      "guid": "a2e66983b68a13b59f4020dc6d29979f",
-      "size": 136,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "long_flags",
-          "name": "flags!",
-          "definition": "leaf_system_struct_definition_1_options_2"
-        },
-        {
-          "type": "string_id",
-          "name": "marker attach name"
-        },
-        {
-          "type": "tag_reference",
-          "name": "bitmap sprite plate",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "real_bounds",
-          "name": "emission rate#seconds"
-        },
-        {
-          "type": "real",
-          "name": "lifetime"
-        },
-        {
-          "type": "real_bounds",
-          "name": "wind min/max#default 0,0"
-        },
-        {
-          "type": "real",
-          "name": "wind scale"
-        },
-        {
-          "type": "real",
-          "name": "time scale"
-        },
-        {
-          "type": "real_bounds",
-          "name": "fade distance!#from maximum movement range (10+). default 0!"
-        },
-        {
-          "type": "real",
-          "name": "emissions sphere radius"
-        },
-        {
-          "type": "real",
-          "name": "movement cylinder radius"
-        },
-        {
-          "type": "real",
-          "name": "fade in time!"
-        },
-        {
-          "type": "real",
-          "name": "fade out time!"
-        },
-        {
-          "type": "block",
-          "name": "leaf types",
-          "definition": "leaf_type_block_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "leaf_system_struct_definition_1_options_2": {
+    "leaf_flags": {
       "options": [
         "collides structure",
         "collides objects",
@@ -195,5 +201,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

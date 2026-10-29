@@ -2,109 +2,125 @@
   "name": "pso_globals",
   "tag": "gpso",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "pso_globals_block",
   "blocks": {
-    "GraphicsPSOBlock_3": {
-      "max_count": 10240,
-      "struct": "GraphicsPSOBlock_3"
-    },
-    "ComputePSOBlock_4": {
-      "max_count": 10240,
-      "struct": "ComputePSOBlock_4"
-    },
-    "root": {
+    "pso_globals_block": {
       "max_count": 1,
-      "struct": "pso_globals_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "pso_globals_block_struct"
+    },
+    "GraphicsPSOBlock": {
+      "max_count": 10240,
+      "max_count_string": "10 * k_kilo",
+      "struct": "GraphicsPSORef_struct"
+    },
+    "ComputePSOBlock": {
+      "max_count": 10240,
+      "max_count_string": "10 * k_kilo",
+      "struct": "ComputePSORef_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "GraphicsPSOBlock_3": {
-      "guid": "6d51b13cdc05761958ada32588e98501",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "PSO reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ComputePSOBlock_4": {
-      "guid": "5099945a9869d9b06b01d4ae3a446380",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "PSO reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "pso_globals_struct_definition_1": {
-      "guid": "6a80b533d75ff8c0f05df00e51ecc22b",
+    "pso_globals_block_struct": {
+      "guid": "69b4b43992fe2fa057369c1d71ce8514",
       "size": 72,
+      "size_string": "(sizeof(PipelineStateGlobalsTag) - Tag::SizeInfo<PipelineStateGlobalsTag::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "block",
           "name": "Graphics pipeline states",
-          "definition": "GraphicsPSOBlock_3"
+          "definition": "GraphicsPSOBlock"
         },
         {
           "type": "block",
           "name": "Compute pipeline states",
-          "definition": "ComputePSOBlock_4"
+          "definition": "ComputePSOBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14486caf0"
+    },
+    "GraphicsPSORef_struct": {
+      "guid": "3cb1516d05dc197658ada32588e98501",
+      "size": 32,
+      "size_string": "sizeof(GraphicsPipelineStateReference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "PSO reference",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "psog"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14486c8c0"
+    },
+    "ComputePSORef_struct": {
+      "guid": "5a9499506998b0d96b01d4ae3a446380",
+      "size": 32,
+      "size_string": "sizeof(ComputePipelineStateReference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "PSO reference",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "psoc"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14486c9d0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

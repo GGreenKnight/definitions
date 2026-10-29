@@ -2,45 +2,53 @@
   "name": "NarrativeGlobals",
   "tag": "narg",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "NarrativeGlobals_block",
   "blocks": {
-    "NarrativeFlagDefinitionBlock_3": {
-      "max_count": 64,
-      "struct": "NarrativeFlagDefinitionBlock_3"
-    },
-    "root": {
+    "NarrativeGlobals_block": {
       "max_count": 1,
-      "struct": "NarrativeGlobals_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "NarrativeGlobals_block_struct"
+    },
+    "NarrativeFlagDefinitionBlock": {
+      "max_count": 64,
+      "max_count_string": "64",
+      "struct": "NarrativeFlagDefinitionBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "NarrativeGlobals_block_struct": {
+      "guid": "abda1f0f954aa01e23466c956c35deed",
+      "size": 48,
+      "size_string": "(sizeof(NarrativeGlobals) - Tag::SizeInfo<NarrativeGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "Narrative Flag Definitions",
+          "definition": "NarrativeFlagDefinitionBlock"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144820c50"
     },
-    "NarrativeFlagDefinitionBlock_3": {
-      "guid": "b43281fc42684c5e804ee38495dd6a24",
+    "NarrativeFlagDefinitionBlock": {
+      "guid": "fc8132b468425e4c804ee38495dd6a24",
       "size": 8,
+      "size_string": "sizeof(NarrativeFlagDefinition)",
       "fields": [
         {
           "type": "long_integer",
@@ -49,7 +57,7 @@
         {
           "type": "char_enum",
           "name": "Type",
-          "definition": "NarrativeFlagDefinitionBlock_3_options_1"
+          "definition": "NarrativeFlagTypeEnum"
         },
         {
           "type": "pad",
@@ -57,46 +65,47 @@
           "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144820b30"
     },
-    "NarrativeGlobals_struct_definition_1": {
-      "guid": "d407192879707c8a649ca014d6b9589b",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Narrative Flag Definitions",
-          "definition": "NarrativeFlagDefinitionBlock_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "NarrativeFlagDefinitionBlock_3_options_1": {
+    "NarrativeFlagTypeEnum": {
       "options": [
         "Unknown",
         "Terminal"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

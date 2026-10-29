@@ -1,242 +1,27 @@
 {
   "name": "NavPointLayoutDefinition",
   "tag": "navl",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "NavPointLayoutDefinition_block",
   "blocks": {
-    "root": {
+    "NavPointLayoutDefinition_block": {
       "max_count": 1,
-      "struct": "NavPointLayoutDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "NavPointLayoutDefinition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "center_sprite_bg_3": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "center_sprite_fg_4": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "center_radial_progress_bar_5": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "top_sprite_6": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "top_label_7": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_progress_bar_8": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_progress_bar_2_9": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_label_10": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_timer_11": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "left_timer_12": {
-      "guid": "fedabd31456d08b7611c8685dd945617",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "yaw_sprite_13": {
-      "guid": "9a36508d43cb5dec3587e8b9266fc263",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real_point_2d",
-          "name": "width and height"
-        },
-        {
-          "type": "real",
-          "name": "alpha"
-        },
-        {
-          "type": "real",
-          "name": "pivot offset"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "NavPointLayoutDefinition_struct_definition_1": {
-      "guid": "88a15274341e718cc81d67f8a875a11d",
+    "NavPointLayoutDefinition_block_struct": {
+      "guid": "5aac14cbba43390acc443cadb4a8da87",
       "size": 176,
+      "size_string": "(sizeof(NavPointLayoutDefinition) - Tag::SizeInfo<NavPointLayoutDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "real",
@@ -251,103 +36,114 @@
           "name": "center box width height"
         },
         {
-          "type": "custom",
-          "name": "center sprite bg"
+          "type": "explanation",
+          "name": "center sprite bg",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "center sprite bg",
-          "definition": "center_sprite_bg_3"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "center sprite fg"
+          "type": "explanation",
+          "name": "center sprite fg",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "center sprite fg",
-          "definition": "center_sprite_fg_4"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "center radial progress bar"
+          "type": "explanation",
+          "name": "center radial progress bar",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "center radial progress bar",
-          "definition": "center_radial_progress_bar_5"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "top sprite"
+          "type": "explanation",
+          "name": "top sprite",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "top sprite",
-          "definition": "top_sprite_6"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "top label"
+          "type": "explanation",
+          "name": "top label",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "top label",
-          "definition": "top_label_7"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "right progress bar"
+          "type": "explanation",
+          "name": "right progress bar",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "right progress bar",
-          "definition": "right_progress_bar_8"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "right progress bar 2"
+          "type": "explanation",
+          "name": "right progress bar 2",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "right progress bar 2",
-          "definition": "right_progress_bar_2_9"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "right label"
+          "type": "explanation",
+          "name": "right label",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "right label",
-          "definition": "right_label_10"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "right timer"
+          "type": "explanation",
+          "name": "right timer",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "right timer",
-          "definition": "right_timer_11"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "left timer"
+          "type": "explanation",
+          "name": "left timer",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "left timer",
-          "definition": "left_timer_12"
+          "definition": "GenericLayoutStruct"
         },
         {
-          "type": "custom",
-          "name": "yaw sprite"
+          "type": "explanation",
+          "name": "yaw sprite",
+          "definition": ""
         },
         {
           "type": "struct",
           "name": "yaw sprite",
-          "definition": "yaw_sprite_13"
+          "definition": "RotatedSpriteLayoutStruct"
         },
         {
           "type": "pad",
@@ -355,11 +151,83 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144895c40"
+    },
+    "GenericLayoutStruct": {
+      "guid": "31bddafe6d45b708611c8685dd945617",
+      "size": 12,
+      "size_string": "sizeof(GenericLayout)",
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144895a10"
+    },
+    "RotatedSpriteLayoutStruct": {
+      "guid": "8d50369acb43ec5d3587e8b9266fc263",
+      "size": 16,
+      "size_string": "sizeof(RotatedSpriteLayout)",
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "real",
+          "name": "pivot offset"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144895b20"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

@@ -1,72 +1,68 @@
 {
   "name": "formation",
   "tag": "form",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "formation_block",
   "blocks": {
-    "formation_point_definition_4": {
-      "max_count": 8,
-      "struct": "formation_point_definition_4"
-    },
-    "formation_primitive_definition_3": {
-      "max_count": 4,
-      "struct": "formation_primitive_definition_3"
-    },
-    "root": {
+    "formation_block": {
       "max_count": 1,
-      "struct": "formation_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "formation_block_struct"
+    },
+    "formation_primitive_definition": {
+      "max_count": 4,
+      "max_count_string": "k_max_primitives_per_formation",
+      "struct": "formation_primitive_definition"
+    },
+    "formation_point_definition": {
+      "max_count": 8,
+      "max_count_string": "k_max_points_per_primitive",
+      "struct": "formation_point_definition"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "formation_block_struct": {
+      "guid": "703d815dc84d0f9064c3679110a32b5a",
+      "size": 48,
+      "size_string": "(sizeof(s_formation_definition) - Tag::SizeInfo<s_formation_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "string_id",
+          "name": "name^"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "primitives",
+          "definition": "formation_primitive_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d0660"
     },
-    "formation_point_definition_4": {
-      "guid": "23abaab1407ea50442a82ea083647b82",
-      "size": 8,
-      "fields": [
-        {
-          "type": "angle",
-          "name": "angle"
-        },
-        {
-          "type": "real",
-          "name": "offset"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "formation_primitive_definition_3": {
-      "guid": "8fa0d7084f88b9f3228145853321cacc",
+    "formation_primitive_definition": {
+      "guid": "08d7a08f884ff3b9228145853321cacc",
       "size": 52,
+      "size_string": "sizeof(struct s_formation_primitive)",
       "fields": [
+        {
+          "type": "explanation",
+          "name": "",
+          "definition": ""
+        },
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "formation_primitive_definition_3_options_0"
+          "definition": "formation_primitive_flags"
         },
         {
           "type": "short_integer",
@@ -100,48 +96,75 @@
         {
           "type": "block",
           "name": "points",
-          "definition": "formation_point_definition_4"
+          "definition": "formation_point_definition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d0550"
     },
-    "formation_struct_definition_1": {
-      "guid": "f2d6705587d8bf2b12c6baac49cbca8b",
-      "size": 48,
+    "formation_point_definition": {
+      "guid": "b1aaab237e4004a542a82ea083647b82",
+      "size": 8,
+      "size_string": "sizeof(struct s_formation_point)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "",
+          "definition": ""
+        },
+        {
+          "type": "angle",
+          "name": "angle"
+        },
+        {
+          "type": "real",
+          "name": "offset"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447d0420"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "block",
-          "name": "primitives",
-          "definition": "formation_primitive_definition_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "formation_primitive_definition_3_options_0": {
+    "formation_primitive_flags": {
       "options": [
         "radial",
         "leader"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

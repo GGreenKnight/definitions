@@ -1,281 +1,68 @@
 {
   "name": "squad_template",
   "tag": "sqtm",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 7,
+  "parent_tag": "aTag",
+  "block": "squad_template_block",
   "blocks": {
-    "character_ref_choice_block_5": {
-      "max_count": 8,
-      "struct": "character_ref_choice_block_5"
-    },
-    "weapon_ref_choice_block_7": {
-      "max_count": 8,
-      "struct": "weapon_ref_choice_block_7"
-    },
-    "weapon_ref_choice_block_9": {
-      "max_count": 8,
-      "struct": "weapon_ref_choice_block_9"
-    },
-    "equipment_ref_choice_block_11": {
-      "max_count": 8,
-      "struct": "equipment_ref_choice_block_11"
-    },
-    "cell_template_block_3": {
-      "max_count": 10,
-      "struct": "cell_template_block_3"
-    },
-    "root": {
+    "squad_template_block": {
       "max_count": 1,
-      "struct": "squad_template_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "squad_template_block_struct"
+    },
+    "cell_template_block": {
+      "max_count": 10,
+      "max_count_string": "k_maximum_cells_per_squad",
+      "struct": "cell_template_block_struct"
+    },
+    "character_ref_choice_block": {
+      "max_count": 8,
+      "max_count_string": "k_maximum_palette_choices",
+      "struct": "character_ref_choice_block_struct"
+    },
+    "weapon_ref_choice_block": {
+      "max_count": 8,
+      "max_count_string": "k_maximum_palette_choices",
+      "struct": "weapon_ref_choice_block_struct"
+    },
+    "equipment_ref_choice_block": {
+      "max_count": 8,
+      "max_count_string": "k_maximum_palette_choices",
+      "struct": "equipment_ref_choice_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "place_on_4": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "place_on_4_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "place_on_6": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "place_on_6_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "character_ref_choice_block_5": {
-      "guid": "01e52f154df871c367ea8fa501f63d4e",
-      "size": 40,
+    "squad_template_block_struct": {
+      "guid": "ffc4fe1cb84c5fe864324d8178e28407",
+      "size": 48,
+      "size_string": "(sizeof(s_squad_template_definition) - Tag::SizeInfo<s_squad_template_definition::ParentType>::k_tagSize)",
       "fields": [
         {
           "type": "struct",
-          "name": "place on",
-          "definition": "place_on_6"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "tag_reference",
-          "name": "character type^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
+          "type": "string_id",
+          "name": "name^"
         },
         {
-          "type": "short_integer",
-          "name": "chance"
+          "type": "block",
+          "name": "cell templates",
+          "definition": "cell_template_block"
         },
         {
-          "type": "pad",
-          "name": "post-chance",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d71c0"
     },
-    "place_on_8": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "place_on_8_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "weapon_ref_choice_block_7": {
-      "guid": "75ee09284fc6d53e8e2ada834fc9df7c",
-      "size": 40,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "place on",
-          "definition": "place_on_8"
-        },
-        {
-          "type": "tag_reference",
-          "name": "weapon type^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "short_integer",
-          "name": "chance"
-        },
-        {
-          "type": "pad",
-          "name": "post-chance",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "place_on_10": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "place_on_10_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "weapon_ref_choice_block_9": {
-      "guid": "75ee09284fc6d53e8e2ada834fc9df7c",
-      "size": 40,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "place on",
-          "definition": "place_on_10"
-        },
-        {
-          "type": "tag_reference",
-          "name": "weapon type^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "short_integer",
-          "name": "chance"
-        },
-        {
-          "type": "pad",
-          "name": "post-chance",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "place_on_12": {
-      "guid": "f95bf66a44154676112fc5b6cf15deef",
-      "size": 4,
-      "fields": [
-        {
-          "type": "word_flags",
-          "name": "difficulty flags",
-          "definition": "place_on_12_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "post-difficulty-flags-padding",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "equipment_ref_choice_block_11": {
-      "guid": "adf3a9b84ea7faca316d2caa394970df",
-      "size": 40,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "place on",
-          "definition": "place_on_12"
-        },
-        {
-          "type": "tag_reference",
-          "name": "equipment type^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "short_integer",
-          "name": "chance"
-        },
-        {
-          "type": "pad",
-          "name": "post-chance",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cell_template_block_3": {
-      "guid": "847535684d622bd1fdc1f8b1689c89be",
+    "cell_template_block_struct": {
+      "guid": "68357584624dd12bfdc1f8b1689c89be",
       "size": 168,
+      "size_string": "sizeof(s_cell_template_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -284,7 +71,7 @@
         {
           "type": "struct",
           "name": "place on",
-          "definition": "place_on_4"
+          "definition": "ai_spawn_conditions_struct"
         },
         {
           "type": "short_integer",
@@ -293,36 +80,41 @@
         {
           "type": "short_enum",
           "name": "major upgrade",
-          "definition": "cell_template_block_3_options_3"
+          "definition": "major_upgrade_enum"
         },
         {
-          "type": "custom",
-          "name": "Character Build"
+          "type": "explanation",
+          "name": "Character Build",
+          "definition": "Specify the distribution of characters and weapons in the following blocks"
         },
         {
           "type": "block",
           "name": "character type",
-          "definition": "character_ref_choice_block_5"
+          "group_tag": "grid",
+          "definition": "character_ref_choice_block"
         },
         {
           "type": "block",
           "name": "initial weapon",
-          "definition": "weapon_ref_choice_block_7"
+          "group_tag": "grid",
+          "definition": "weapon_ref_choice_block"
         },
         {
           "type": "block",
           "name": "initial secondary weapon",
-          "definition": "weapon_ref_choice_block_9"
+          "group_tag": "grid",
+          "definition": "weapon_ref_choice_block"
         },
         {
           "type": "block",
           "name": "initial equipment",
-          "definition": "equipment_ref_choice_block_11"
+          "group_tag": "grid",
+          "definition": "equipment_ref_choice_block"
         },
         {
           "type": "short_enum",
           "name": "grenade type",
-          "definition": "cell_template_block_3_options_9"
+          "definition": "global_ai_grenade_type_enum"
         },
         {
           "type": "pad",
@@ -333,8 +125,10 @@
           "type": "tag_reference",
           "name": "vehicle type",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 1,
+            "allowed": [
+              "vehi"
+            ]
           }
         },
         {
@@ -343,43 +137,171 @@
         },
         {
           "type": "string_id",
-          "name": "activity name"
+          "name": "activity name",
+          "group_tag": "sted"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447d6ec0"
     },
-    "squad_template_struct_definition_1": {
-      "guid": "9a7e8057a6322498af01591bbdadaeb1",
-      "size": 48,
+    "ai_spawn_conditions_struct": {
+      "guid": "6af65bf915447646112fc5b6cf15deef",
+      "size": 4,
+      "size_string": "sizeof(s_ai_spawn_conditions)",
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "global_campaign_difficulty_enum"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447bbeb0"
+    },
+    "character_ref_choice_block_struct": {
+      "guid": "152fe501f84dc37167ea8fa501f63d4e",
+      "size": 40,
+      "size_string": "sizeof(s_cell_ref_choice)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "ai_spawn_conditions_struct"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character type^",
+          "definition": {
+            "flags": 1,
+            "allowed": [
+              "char"
+            ]
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447d6b80"
+    },
+    "weapon_ref_choice_block_struct": {
+      "guid": "2809ee75c64f3ed58e2ada834fc9df7c",
+      "size": 40,
+      "size_string": "sizeof(s_cell_ref_choice)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "ai_spawn_conditions_struct"
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon type^",
+          "definition": {
+            "flags": 1,
+            "allowed": [
+              "weap"
+            ]
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447d6c90"
+    },
+    "equipment_ref_choice_block_struct": {
+      "guid": "b8a9f3ada74ecafa316d2caa394970df",
+      "size": 40,
+      "size_string": "sizeof(s_cell_ref_choice)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "ai_spawn_conditions_struct"
+        },
+        {
+          "type": "tag_reference",
+          "name": "equipment type^",
+          "definition": {
+            "flags": 1,
+            "allowed": [
+              "eqip"
+            ]
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447d6db0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "block",
-          "name": "cell templates",
-          "definition": "cell_template_block_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "place_on_4_options_0": {
+    "global_campaign_difficulty_enum": {
       "options": [
         "easy",
         "normal",
@@ -387,7 +309,7 @@
         "legendary"
       ]
     },
-    "cell_template_block_3_options_3": {
+    "major_upgrade_enum": {
       "options": [
         "normal",
         "few",
@@ -396,39 +318,7 @@
         "all"
       ]
     },
-    "place_on_6_options_0": {
-      "options": [
-        "easy",
-        "normal",
-        "heroic",
-        "legendary"
-      ]
-    },
-    "place_on_8_options_0": {
-      "options": [
-        "easy",
-        "normal",
-        "heroic",
-        "legendary"
-      ]
-    },
-    "place_on_10_options_0": {
-      "options": [
-        "easy",
-        "normal",
-        "heroic",
-        "legendary"
-      ]
-    },
-    "place_on_12_options_0": {
-      "options": [
-        "easy",
-        "normal",
-        "heroic",
-        "legendary"
-      ]
-    },
-    "cell_template_block_3_options_9": {
+    "global_ai_grenade_type_enum": {
       "options": [
         "NONE",
         "Human grenade",
@@ -438,5 +328,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

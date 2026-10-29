@@ -1,80 +1,42 @@
 {
   "name": "lua_script",
   "tag": "luas",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "lua_script_block",
   "blocks": {
-    "LuaScriptReferenceBlock_3": {
-      "max_count": 32,
-      "struct": "LuaScriptReferenceBlock_3"
-    },
-    "root": {
+    "lua_script_block": {
       "max_count": 1,
-      "struct": "lua_script_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "lua_script_block_struct"
+    },
+    "LuaScriptReferenceBlock": {
+      "max_count": 32,
+      "max_count_string": "32",
+      "struct": "LuaScriptReferenceBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "LuaScriptReferenceBlock_3": {
-      "guid": "9e51f865470a57076dfb5e8ed56ebeb2",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "script*",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "lua_script_struct_definition_1": {
-      "guid": "7aad937ddfdee871de71fd5dba805290",
+    "lua_script_block_struct": {
+      "guid": "1a1a1d0e4d41194795e5c3b26e9bdbc8",
       "size": 336,
+      "size_string": "(sizeof(LuaScriptTagDefinition) - Tag::SizeInfo<LuaScriptTagDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "custom",
-          "name": "import - directory"
+          "name": "import - directory",
+          "group_tag": "tcwd"
         },
         {
           "type": "custom",
-          "name": "import - single file"
+          "name": "import - single file",
+          "group_tag": "ctcd"
         },
         {
           "type": "string_id",
@@ -83,7 +45,7 @@
         {
           "type": "data",
           "name": "luaFileData*",
-          "definition": "tag_data"
+          "definition": "lua_file_data_def"
         },
         {
           "type": "long_string",
@@ -92,7 +54,7 @@
         {
           "type": "block",
           "name": "referencedScripts*",
-          "definition": "LuaScriptReferenceBlock_3"
+          "definition": "LuaScriptReferenceBlock"
         },
         {
           "type": "pad",
@@ -100,13 +62,69 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144890b10"
+    },
+    "LuaScriptReferenceBlock": {
+      "guid": "65f8519e0a4707576dfb5e8ed56ebeb2",
+      "size": 32,
+      "size_string": "sizeof(LuaScriptContainer)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "script*",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "luas"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448909f0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
   "datas": {
-    "tag_data": {}
+    "lua_file_data_def": {
+      "alignment": 104,
+      "flags": 0,
+      "max_size": 65536,
+      "max_size_string": "MAXIMUM_LUA_FILE_SIZE"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

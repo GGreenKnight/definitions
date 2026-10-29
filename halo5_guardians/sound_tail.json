@@ -2,151 +2,96 @@
   "name": "sound_tail",
   "tag": "stai",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "sound_tail_block",
   "blocks": {
-    "root": {
+    "sound_tail_block": {
       "max_count": 1,
-      "struct": "sound_tail_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "sound_tail_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Tail_3": {
-      "guid": "f81899c9ad1f5058660641405e836368",
-      "size": 320,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "tail sound",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "sound_tail_struct_definition_1": {
-      "guid": "c8f639dae9a3192921560e0ee4d376e8",
+    "sound_tail_block_struct": {
+      "guid": "1b1a44fe1548437a2ef2d5b38e332e38",
       "size": 336,
+      "size_string": "(sizeof(SoundTailDefinition) - Tag::SizeInfo<SoundTailDefinition::ParentType>::k_tagSize)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "array",
+          "name": "Tail",
+          "definition": "sound_tail_per_room"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447859a0"
+    },
+    "sound_tail_per_room": {
+      "guid": "a4ab0f0e059af751acd22b855b3703da",
+      "size": 32,
+      "size_string": "sizeof(Tag::Reference<AnyTag>)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tail sound",
+          "definition": {
+            "flags": 8,
+            "allowed": [
+              "lsnd",
+              "snd!"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144785880"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "Tail",
-          "definition": "Tail_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "arrays": {
+    "sound_tail_per_room": {
+      "count": 10,
+      "count_string": "eSoundClassAcousticType::eSoundClassAcousticType_Count",
+      "struct": "sound_tail_per_room"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

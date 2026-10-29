@@ -2,526 +2,36 @@
   "name": "simulation_interpolation",
   "tag": "siin",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "simulation_interpolation_block",
   "blocks": {
-    "root": {
+    "simulation_interpolation_block": {
       "max_count": 1,
-      "struct": "simulation_interpolation_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "simulation_interpolation_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "velocity_bumps_4": {
-      "guid": "e01ed32b49234ac4d01382a32b729885",
-      "size": 20,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN VELOCITY BUMPS"
-        },
-        {
-          "type": "real",
-          "name": "velocity_scale#Fraction of delta that becomes the velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_min:WU or degrees per second#Minimum size of any given velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_max:WU or degrees per second#Maximum size of any given velocity bump"
-        },
-        {
-          "type": "custom",
-          "name": "Velocity Bump Suppression"
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_ignore_threshold:WU or degrees per second#The new velocity must differ from the old velocity by less than this to allow suppression."
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_absolute_ignore_threshold:WU or degrees#The new position/rotation must differ from the old position/rotation by less than this to allow suppression."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "blending_5": {
-      "guid": "47e921d44ebe65ab41ef718ab1104422",
-      "size": 24,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN BLENDING CONFIGURATION"
-        },
-        {
-          "type": "real",
-          "name": "min_object_speed:WU or degrees per second#Approximate minimum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "max_object_speed:WU or degrees per second#Approximate maximum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_min_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_max_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or above max_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_min_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_max_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or above max_object_speed. Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "position_while_controlled_All_speeds_in_here_are_WU_s_3": {
-      "guid": "e844485c42a778250a6552b8c7a1c83e",
-      "size": 56,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN INTERPOLATION"
-        },
-        {
-          "type": "real",
-          "name": "discrepancy_threshold_above_which_we_use_blending:WU or degrees#Below this threshold we use velocity bumps."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_speed:WU/s or degrees/s#When our velocity is below this threshold, we will consider using a blend to minimize at-rest error."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_maximum_ignorable_error:WU or degrees#We will use a blend when our speed is below the coming_to_rest_speed and our error is greater than this."
-        },
-        {
-          "type": "custom",
-          "name": "Velocity bumps"
-        },
-        {
-          "type": "struct",
-          "name": "velocity bumps",
-          "definition": "velocity_bumps_4"
-        },
-        {
-          "type": "custom",
-          "name": "Blending"
-        },
-        {
-          "type": "struct",
-          "name": "blending",
-          "definition": "blending_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "velocity_bumps_7": {
-      "guid": "e01ed32b49234ac4d01382a32b729885",
-      "size": 20,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN VELOCITY BUMPS"
-        },
-        {
-          "type": "real",
-          "name": "velocity_scale#Fraction of delta that becomes the velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_min:WU or degrees per second#Minimum size of any given velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_max:WU or degrees per second#Maximum size of any given velocity bump"
-        },
-        {
-          "type": "custom",
-          "name": "Velocity Bump Suppression"
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_ignore_threshold:WU or degrees per second#The new velocity must differ from the old velocity by less than this to allow suppression."
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_absolute_ignore_threshold:WU or degrees#The new position/rotation must differ from the old position/rotation by less than this to allow suppression."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "blending_8": {
-      "guid": "47e921d44ebe65ab41ef718ab1104422",
-      "size": 24,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN BLENDING CONFIGURATION"
-        },
-        {
-          "type": "real",
-          "name": "min_object_speed:WU or degrees per second#Approximate minimum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "max_object_speed:WU or degrees per second#Approximate maximum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_min_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_max_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or above max_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_min_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_max_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or above max_object_speed. Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "rotation_while_controlled_All_speeds_in_here_are_degrees_s_6": {
-      "guid": "e844485c42a778250a6552b8c7a1c83e",
-      "size": 56,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN INTERPOLATION"
-        },
-        {
-          "type": "real",
-          "name": "discrepancy_threshold_above_which_we_use_blending:WU or degrees#Below this threshold we use velocity bumps."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_speed:WU/s or degrees/s#When our velocity is below this threshold, we will consider using a blend to minimize at-rest error."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_maximum_ignorable_error:WU or degrees#We will use a blend when our speed is below the coming_to_rest_speed and our error is greater than this."
-        },
-        {
-          "type": "custom",
-          "name": "Velocity bumps"
-        },
-        {
-          "type": "struct",
-          "name": "velocity bumps",
-          "definition": "velocity_bumps_7"
-        },
-        {
-          "type": "custom",
-          "name": "Blending"
-        },
-        {
-          "type": "struct",
-          "name": "blending",
-          "definition": "blending_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "velocity_bumps_10": {
-      "guid": "e01ed32b49234ac4d01382a32b729885",
-      "size": 20,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN VELOCITY BUMPS"
-        },
-        {
-          "type": "real",
-          "name": "velocity_scale#Fraction of delta that becomes the velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_min:WU or degrees per second#Minimum size of any given velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_max:WU or degrees per second#Maximum size of any given velocity bump"
-        },
-        {
-          "type": "custom",
-          "name": "Velocity Bump Suppression"
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_ignore_threshold:WU or degrees per second#The new velocity must differ from the old velocity by less than this to allow suppression."
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_absolute_ignore_threshold:WU or degrees#The new position/rotation must differ from the old position/rotation by less than this to allow suppression."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "blending_11": {
-      "guid": "47e921d44ebe65ab41ef718ab1104422",
-      "size": 24,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN BLENDING CONFIGURATION"
-        },
-        {
-          "type": "real",
-          "name": "min_object_speed:WU or degrees per second#Approximate minimum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "max_object_speed:WU or degrees per second#Approximate maximum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_min_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_max_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or above max_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_min_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_max_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or above max_object_speed. Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "position_while_uncontrolled_All_speeds_in_here_are_WU_s_9": {
-      "guid": "e844485c42a778250a6552b8c7a1c83e",
-      "size": 56,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN INTERPOLATION"
-        },
-        {
-          "type": "real",
-          "name": "discrepancy_threshold_above_which_we_use_blending:WU or degrees#Below this threshold we use velocity bumps."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_speed:WU/s or degrees/s#When our velocity is below this threshold, we will consider using a blend to minimize at-rest error."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_maximum_ignorable_error:WU or degrees#We will use a blend when our speed is below the coming_to_rest_speed and our error is greater than this."
-        },
-        {
-          "type": "custom",
-          "name": "Velocity bumps"
-        },
-        {
-          "type": "struct",
-          "name": "velocity bumps",
-          "definition": "velocity_bumps_10"
-        },
-        {
-          "type": "custom",
-          "name": "Blending"
-        },
-        {
-          "type": "struct",
-          "name": "blending",
-          "definition": "blending_11"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "velocity_bumps_13": {
-      "guid": "e01ed32b49234ac4d01382a32b729885",
-      "size": 20,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN VELOCITY BUMPS"
-        },
-        {
-          "type": "real",
-          "name": "velocity_scale#Fraction of delta that becomes the velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_min:WU or degrees per second#Minimum size of any given velocity bump"
-        },
-        {
-          "type": "real",
-          "name": "velocity_max:WU or degrees per second#Maximum size of any given velocity bump"
-        },
-        {
-          "type": "custom",
-          "name": "Velocity Bump Suppression"
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_ignore_threshold:WU or degrees per second#The new velocity must differ from the old velocity by less than this to allow suppression."
-        },
-        {
-          "type": "real",
-          "name": "velocity_difference_absolute_ignore_threshold:WU or degrees#The new position/rotation must differ from the old position/rotation by less than this to allow suppression."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "blending_14": {
-      "guid": "47e921d44ebe65ab41ef718ab1104422",
-      "size": 24,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN BLENDING CONFIGURATION"
-        },
-        {
-          "type": "real",
-          "name": "min_object_speed:WU or degrees per second#Approximate minimum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "max_object_speed:WU or degrees per second#Approximate maximum speed for this object (either controlled or uncontrolled)."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_min_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "fraction_at_max_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or above max_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_min_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or below min_object_speed.  Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "real",
-          "name": "min_speed_at_max_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or above max_object_speed. Linterp is executed at intermediate object speeds."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "rotation_while_uncontrolled_All_speeds_in_here_are_degrees_s_12": {
-      "guid": "e844485c42a778250a6552b8c7a1c83e",
-      "size": 56,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "SINGLE DOMAIN INTERPOLATION"
-        },
-        {
-          "type": "real",
-          "name": "discrepancy_threshold_above_which_we_use_blending:WU or degrees#Below this threshold we use velocity bumps."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_speed:WU/s or degrees/s#When our velocity is below this threshold, we will consider using a blend to minimize at-rest error."
-        },
-        {
-          "type": "real",
-          "name": "coming_to_rest_maximum_ignorable_error:WU or degrees#We will use a blend when our speed is below the coming_to_rest_speed and our error is greater than this."
-        },
-        {
-          "type": "custom",
-          "name": "Velocity bumps"
-        },
-        {
-          "type": "struct",
-          "name": "velocity bumps",
-          "definition": "velocity_bumps_13"
-        },
-        {
-          "type": "custom",
-          "name": "Blending"
-        },
-        {
-          "type": "struct",
-          "name": "blending",
-          "definition": "blending_14"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "simulation_interpolation_struct_definition_1": {
-      "guid": "132179561e345f66397e6dcf744bcb87",
+    "simulation_interpolation_block_struct": {
+      "guid": "f0ceac2f324a3b5c51c5f18d4a3f9a34",
       "size": 264,
+      "size_string": "(sizeof(s_simulation_interpolation_definition) - Tag::SizeInfo<s_simulation_interpolation_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "explanation",
+          "name": "SIMULATION INTERPOLATION",
+          "definition": "This tag defines interpolation that will be used to smooth the motion of objects in distributed multiplayer games.  In bandwidth-constrained multiplayer games (i.e. most games), we will receive only one or two updates per second for faraway objects.  Even near objects may frequently be dropped to <5 updates per second, especially crates, garbage bits, and similar less important elements of the simulation.  Between updates, each peer predicts the motion of each object.  These predictions are often wrong (by anything from an inch to dozens of feet).  The simulation interpolation system is responsible for correcting these mispredictions in as aesthetically pleasing a way as possible, without harming the integrity of the game.  The details of the technical implementation are beyond the scope of this explanation, but various configuration parameters are exposed here.  \n\nThe tooltips for each configuration parameter should be helpful.  Please see daldridge w/ questions or bugs."
         },
         {
           "type": "custom",
-          "name": "SIMULATION INTERPOLATION"
-        },
-        {
-          "type": "custom",
-          "name": "High level settings"
+          "name": "High level settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -533,11 +43,13 @@
         },
         {
           "type": "custom",
-          "name": "Warp Thresholds"
+          "name": "Warp Thresholds",
+          "group_tag": "fgrb"
         },
         {
-          "type": "custom",
-          "name": "WARP THRESHOLDS"
+          "type": "explanation",
+          "name": "WARP THRESHOLDS",
+          "definition": "If any of the warp thresholds (position or rotation, global or xy) are exceeded, a warp in all domains (position and rotation) is executed."
         },
         {
           "type": "real",
@@ -553,39 +65,73 @@
         },
         {
           "type": "custom",
-          "name": "Position while controlled"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Position while controlled",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "position_while_controlled#All speeds in here are WU/s",
-          "definition": "position_while_controlled_All_speeds_in_here_are_WU_s_3"
+          "definition": "single_domain_configuration_struct"
         },
         {
           "type": "custom",
-          "name": "Rotation while controlled"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Rotation while controlled",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "rotation_while_controlled#All speeds in here are degrees/s",
-          "definition": "rotation_while_controlled_All_speeds_in_here_are_degrees_s_6"
+          "definition": "single_domain_configuration_struct"
         },
         {
           "type": "custom",
-          "name": "Position while not controlled"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Position while not controlled",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "position_while_uncontrolled#All speeds in here are WU/s",
-          "definition": "position_while_uncontrolled_All_speeds_in_here_are_WU_s_9"
+          "definition": "single_domain_configuration_struct"
         },
         {
           "type": "custom",
-          "name": "Rotation while not controlled"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Rotation while not controlled",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "rotation_while_uncontrolled#All speeds in here are degrees/s",
-          "definition": "rotation_while_uncontrolled_All_speeds_in_here_are_degrees_s_12"
+          "definition": "single_domain_configuration_struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "pad",
@@ -593,11 +139,181 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448e9720"
+    },
+    "single_domain_configuration_struct": {
+      "guid": "5c4844e8a74225780a6552b8c7a1c83e",
+      "size": 56,
+      "size_string": "sizeof(struct s_simulation_single_domain_interpolation_configuration)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "SINGLE DOMAIN INTERPOLATION",
+          "definition": "Note that if either the position or rotation discrepancy thresholds above which we use blending are exceeded, we will blend in both domains (because blending is more accurate and once we blend in either domain, we are forced to warp the physics representation of the object, which is the main downside of blending.  Therefore, the second domain is essentially \"free\" after we pay for the first w/ a physics warp.\n\nNote also that this discrepancy threshold is either WU or degrees, depending on context.  Check your context!"
+        },
+        {
+          "type": "real",
+          "name": "discrepancy_threshold_above_which_we_use_blending:WU or degrees#Below this threshold we use velocity bumps."
+        },
+        {
+          "type": "real",
+          "name": "coming_to_rest_speed:WU/s or degrees/s#When our velocity is below this threshold, we will consider using a blend to minimize at-rest error."
+        },
+        {
+          "type": "real",
+          "name": "coming_to_rest_maximum_ignorable_error:WU or degrees#We will use a blend when our speed is below the coming_to_rest_speed and our error is greater than this."
+        },
+        {
+          "type": "custom",
+          "name": "Velocity bumps",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "struct",
+          "name": "velocity bumps",
+          "definition": "single_domain_velocity_bumps_configuration_struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Blending",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "struct",
+          "name": "blending",
+          "definition": "single_domain_blending_configuration_struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448e9610"
+    },
+    "single_domain_velocity_bumps_configuration_struct": {
+      "guid": "2bd31ee02349c44ad01382a32b729885",
+      "size": 20,
+      "size_string": "sizeof(struct s_simulation_single_domain_velocity_bumps_configuration)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "SINGLE DOMAIN VELOCITY BUMPS",
+          "definition": "Velocity bumps are used for small mis-predictions because they are more visually pleasing than straight blending. However, they are less accurate, less consistent, and harder to tune."
+        },
+        {
+          "type": "real",
+          "name": "velocity_scale#Fraction of delta that becomes the velocity bump"
+        },
+        {
+          "type": "real",
+          "name": "velocity_min:WU or degrees per second#Minimum size of any given velocity bump"
+        },
+        {
+          "type": "real",
+          "name": "velocity_max:WU or degrees per second#Maximum size of any given velocity bump"
+        },
+        {
+          "type": "explanation",
+          "name": "Velocity Bump Suppression",
+          "definition": "We suppress velocity bumps when the object is \"close enough\" to encourage objects to come to rest. Both of the below conditions must be satisfied to suppress velocity bumps."
+        },
+        {
+          "type": "real",
+          "name": "velocity_difference_ignore_threshold:WU or degrees per second#The new velocity must differ from the old velocity by less than this to allow suppression."
+        },
+        {
+          "type": "real",
+          "name": "velocity_difference_absolute_ignore_threshold:WU or degrees#The new position/rotation must differ from the old position/rotation by less than this to allow suppression."
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448e94f0"
+    },
+    "single_domain_blending_configuration_struct": {
+      "guid": "d421e947be4eab6541ef718ab1104422",
+      "size": 24,
+      "size_string": "sizeof(struct s_simulation_single_domain_blending_configuration)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "SINGLE DOMAIN BLENDING CONFIGURATION",
+          "definition": "Whether these speeds are linear or angular depends on the context - check context before modifying."
+        },
+        {
+          "type": "real",
+          "name": "min_object_speed:WU or degrees per second#Approximate minimum speed for this object (either controlled or uncontrolled)."
+        },
+        {
+          "type": "real",
+          "name": "max_object_speed:WU or degrees per second#Approximate maximum speed for this object (either controlled or uncontrolled)."
+        },
+        {
+          "type": "real",
+          "name": "fraction_at_min_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or below min_object_speed.  Linterp is executed at intermediate object speeds."
+        },
+        {
+          "type": "real",
+          "name": "fraction_at_max_object_speed#Fraction of misprediction error consumed each tick if object is traveling at or above max_object_speed.  Linterp is executed at intermediate object speeds."
+        },
+        {
+          "type": "real",
+          "name": "min_speed_at_min_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or below min_object_speed.  Linterp is executed at intermediate object speeds."
+        },
+        {
+          "type": "real",
+          "name": "min_speed_at_max_object_speed:WU or degrees per second#Minimum misprediction error consumption speed if object is at or above max_object_speed. Linterp is executed at intermediate object speeds."
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448e93e0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

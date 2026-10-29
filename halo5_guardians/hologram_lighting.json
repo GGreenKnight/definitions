@@ -1,213 +1,69 @@
 {
   "name": "hologram_lighting",
   "tag": "holt",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "hologram_lighting_block",
   "blocks": {
-    "root": {
+    "hologram_lighting_block": {
       "max_count": 1,
-      "struct": "hologram_lighting_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "hologram_lighting_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "hologram_lighting_block_struct": {
+      "guid": "42b04ae427434f0c0b2e9ca66246aa8c",
+      "size": 112,
+      "size_string": "(sizeof(HologramLightingTag) - Tag::SizeInfo<HologramLightingTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "struct",
+          "name": "Hologram Lighting",
+          "definition": "hologramLightingStruct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144980d50"
     },
-    "Key_Light_4": {
-      "guid": "3906da3245a6fc3c84c2edad952c291b",
-      "size": 28,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Hologram Light"
-        },
-        {
-          "type": "custom",
-          "name": "Direction"
-        },
-        {
-          "type": "real",
-          "name": "Direction"
-        },
-        {
-          "type": "custom",
-          "name": "Front-Back"
-        },
-        {
-          "type": "real",
-          "name": "Front-Back"
-        },
-        {
-          "type": "custom",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity Input!"
-        },
-        {
-          "type": "real",
-          "name": "Forward Input!"
-        },
-        {
-          "type": "real",
-          "name": "Right Input!"
-        },
-        {
-          "type": "real",
-          "name": "Up Input!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Fill_Light_5": {
-      "guid": "3906da3245a6fc3c84c2edad952c291b",
-      "size": 28,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Hologram Light"
-        },
-        {
-          "type": "custom",
-          "name": "Direction"
-        },
-        {
-          "type": "real",
-          "name": "Direction"
-        },
-        {
-          "type": "custom",
-          "name": "Front-Back"
-        },
-        {
-          "type": "real",
-          "name": "Front-Back"
-        },
-        {
-          "type": "custom",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity Input!"
-        },
-        {
-          "type": "real",
-          "name": "Forward Input!"
-        },
-        {
-          "type": "real",
-          "name": "Right Input!"
-        },
-        {
-          "type": "real",
-          "name": "Up Input!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Rim_Light_6": {
-      "guid": "3906da3245a6fc3c84c2edad952c291b",
-      "size": 28,
-      "fields": [
-        {
-          "type": "custom",
-          "name": "Hologram Light"
-        },
-        {
-          "type": "custom",
-          "name": "Direction"
-        },
-        {
-          "type": "real",
-          "name": "Direction"
-        },
-        {
-          "type": "custom",
-          "name": "Front-Back"
-        },
-        {
-          "type": "real",
-          "name": "Front-Back"
-        },
-        {
-          "type": "custom",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Intensity Input!"
-        },
-        {
-          "type": "real",
-          "name": "Forward Input!"
-        },
-        {
-          "type": "real",
-          "name": "Right Input!"
-        },
-        {
-          "type": "real",
-          "name": "Up Input!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Hologram_Lighting_3": {
-      "guid": "797b8137405397b995c38d92a45d737a",
+    "hologramLightingStruct": {
+      "guid": "37817b795340b99795c38d92a45d737a",
       "size": 96,
+      "size_string": "sizeof(HologramLighting)",
       "fields": [
         {
           "type": "custom",
-          "name": "HOLOGRAM"
+          "name": "HOLOGRAM",
+          "group_tag": "fgrb"
         },
         {
           "type": "custom",
-          "name": "Intensity"
+          "name": "Intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
         },
         {
           "type": "real",
-          "name": "Intensity"
+          "name": "Intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
         },
         {
           "type": "real",
@@ -216,7 +72,7 @@
         {
           "type": "char_enum",
           "name": "Transparency Mode",
-          "definition": "Hologram_Lighting_3_options_4"
+          "definition": "hologramTransparencyMode"
         },
         {
           "type": "pad",
@@ -225,67 +81,189 @@
         },
         {
           "type": "custom",
-          "name": "KEY LIGHT"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "KEY LIGHT",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Key Light",
-          "definition": "Key_Light_4"
+          "definition": "hologramLight"
         },
         {
           "type": "custom",
-          "name": "FILL LIGHT"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "FILL LIGHT",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Fill Light",
-          "definition": "Fill_Light_5"
+          "definition": "hologramLight"
         },
         {
           "type": "custom",
-          "name": "RIM LIGHT"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "RIM LIGHT",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Rim Light",
-          "definition": "Rim_Light_6"
+          "definition": "hologramLight"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144980c40"
     },
-    "hologram_lighting_struct_definition_1": {
-      "guid": "b3b18de45864242314b39f1deeb40c9a",
-      "size": 112,
+    "hologramLight": {
+      "guid": "32da0639a6453cfc84c2edad952c291b",
+      "size": 28,
+      "size_string": "sizeof(HologramLight)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Hologram Light",
+          "group_tag": "holl"
+        },
+        {
+          "type": "custom",
+          "name": "Direction",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Direction",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 360.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Front-Back",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "real",
+          "name": "Front-Back",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 180.0,
+            "step": 1.0
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Intensity",
+          "group_tag": "sled",
+          "definition": {
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.01
+          }
+        },
+        {
+          "type": "real",
+          "name": "Intensity Input!"
+        },
+        {
+          "type": "real",
+          "name": "Forward Input!"
+        },
+        {
+          "type": "real",
+          "name": "Right Input!"
+        },
+        {
+          "type": "real",
+          "name": "Up Input!"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144980b20"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "Hologram Lighting",
-          "definition": "Hologram_Lighting_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "Hologram_Lighting_3_options_4": {
+    "hologramTransparencyMode": {
       "options": [
         "cheap",
         "expensive"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

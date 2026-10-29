@@ -1,58 +1,210 @@
 {
   "name": "node_graph_stack",
   "tag": "ngst",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "node_graph_stack_block",
   "blocks": {
-    "transition_definition_5": {
-      "max_count": 64,
-      "struct": "transition_definition_5"
-    },
-    "node_graph_stack_reference_definition_6": {
-      "max_count": 32,
-      "struct": "node_graph_stack_reference_definition_6"
-    },
-    "node_definition_4": {
-      "max_count": 128,
-      "struct": "node_definition_4"
-    },
-    "node_graph_definition_3": {
-      "max_count": 32,
-      "struct": "node_graph_definition_3"
-    },
-    "root": {
+    "node_graph_stack_block": {
       "max_count": 1,
-      "struct": "node_graph_stack_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "node_graph_stack_block_struct"
+    },
+    "node_graph_definition": {
+      "max_count": 32,
+      "max_count_string": "NodeGraphDefinition::k_maxCount",
+      "struct": "node_graph_definition"
+    },
+    "node_definition": {
+      "max_count": 128,
+      "max_count_string": "NodeDefinition::k_maxCount",
+      "struct": "node_definition"
+    },
+    "transition_definition": {
+      "max_count": 64,
+      "max_count_string": "TransitionDefinition::k_maxCount",
+      "struct": "transition_definition"
+    },
+    "node_graph_stack_reference_definition": {
+      "max_count": 32,
+      "max_count_string": "NodeGraphStackReferenceDefinition::k_maxCount",
+      "struct": "node_graph_stack_reference_definition"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "node_graph_stack_block_struct": {
+      "guid": "e5599a9c1f4f96f6dc5e84b2dbf1fdc2",
+      "size": 72,
+      "size_string": "(sizeof(NodeGraphStackDefinition) - Tag::SizeInfo<NodeGraphStackDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "string_id",
+          "name": "name^#NodeGraph stack name"
         },
         {
-          "type": "terminator"
+          "type": "long_enum",
+          "name": "transform method",
+          "definition": "TransformMethodType"
+        },
+        {
+          "type": "long_enum",
+          "name": "projection method",
+          "definition": "ProjectionMethodType"
+        },
+        {
+          "type": "long_enum",
+          "name": "render mode",
+          "definition": "StackRenderMode"
+        },
+        {
+          "type": "string_id",
+          "name": "markerName^"
+        },
+        {
+          "type": "real",
+          "name": "scale"
+        },
+        {
+          "type": "long_enum",
+          "name": "loading mode",
+          "definition": "LoadingMode"
+        },
+        {
+          "type": "block",
+          "name": "node graphs",
+          "definition": "node_graph_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14489a550"
     },
-    "transition_definition_5": {
-      "guid": "232b0ca94f18f1af12305b8e69b42772",
+    "node_graph_definition": {
+      "guid": "70b0bff24847a85ac7afc98b8fd861a8",
+      "size": 36,
+      "size_string": "sizeof(NodeGraphDefinition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#NodeGraph name"
+        },
+        {
+          "type": "string_id",
+          "name": "initial node"
+        },
+        {
+          "type": "block",
+          "name": "nodes",
+          "group_tag": "gnvb",
+          "definition": "node_definition"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14489a440"
+    },
+    "node_definition": {
+      "guid": "0c7fc857b143b6f9578093a26a13c4c3",
+      "size": 156,
+      "size_string": "sizeof(NodeDefinition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#Node name"
+        },
+        {
+          "type": "string_id",
+          "name": "Placement Node name"
+        },
+        {
+          "type": "block",
+          "name": "transitions",
+          "definition": "transition_definition"
+        },
+        {
+          "type": "long_enum",
+          "name": "screen wrapper",
+          "definition": "screen_wrapper_type_enum"
+        },
+        {
+          "type": "tag_reference",
+          "name": "screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "cusc",
+              "wpfs",
+              "ngst",
+              "uiwn",
+              "uivn",
+              "fuis"
+            ]
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "fui screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "fuis"
+            ]
+          }
+        },
+        {
+          "type": "long_enum",
+          "name": "loading mode",
+          "definition": "LoadingMode"
+        },
+        {
+          "type": "block",
+          "name": "child stacks",
+          "definition": "node_graph_stack_reference_definition"
+        },
+        {
+          "type": "long_flags",
+          "name": "state flags",
+          "definition": "window_type_flags"
+        },
+        {
+          "type": "real",
+          "name": "editor pos x!"
+        },
+        {
+          "type": "real",
+          "name": "editor pos y!"
+        },
+        {
+          "type": "long_flags",
+          "name": "editor flags!",
+          "definition": "node_editor_flags"
+        },
+        {
+          "type": "long_enum",
+          "name": "editor shape!",
+          "definition": "shape_enum"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14489a310"
+    },
+    "transition_definition": {
+      "guid": "a90c2b23184faff112305b8e69b42772",
       "size": 108,
+      "size_string": "sizeof(TransitionDefinition)",
       "fields": [
         {
           "type": "string_id",
@@ -73,7 +225,7 @@
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "transition_definition_5_options_4"
+          "definition": "transition_definition_flags"
         },
         {
           "type": "real",
@@ -108,183 +260,59 @@
           "name": "editor caption y!"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14489a080"
     },
-    "node_graph_stack_reference_definition_6": {
-      "guid": "8833880e45d0ae1e504cfc82ec5c0159",
+    "node_graph_stack_reference_definition": {
+      "guid": "0e883388d0451eae504cfc82ec5c0159",
       "size": 32,
+      "size_string": "sizeof(NodeGraphStackReferenceDefinition)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "child stack reference",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "ngst"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14489a1b0"
     },
-    "node_definition_4": {
-      "guid": "57c87f0c43b1f9b6578093a26a13c4c3",
-      "size": 156,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^#Node name"
-        },
-        {
-          "type": "string_id",
-          "name": "Placement Node name"
-        },
-        {
-          "type": "block",
-          "name": "transitions",
-          "definition": "transition_definition_5"
-        },
-        {
-          "type": "long_enum",
-          "name": "screen wrapper",
-          "definition": "node_definition_4_options_3"
-        },
-        {
-          "type": "tag_reference",
-          "name": "screen reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "fui screen reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "long_enum",
-          "name": "loading mode",
-          "definition": "node_definition_4_options_6"
-        },
-        {
-          "type": "block",
-          "name": "child stacks",
-          "definition": "node_graph_stack_reference_definition_6"
-        },
-        {
-          "type": "long_flags",
-          "name": "state flags",
-          "definition": "node_definition_4_options_8"
-        },
-        {
-          "type": "real",
-          "name": "editor pos x!"
-        },
-        {
-          "type": "real",
-          "name": "editor pos y!"
-        },
-        {
-          "type": "long_flags",
-          "name": "editor flags!",
-          "definition": "node_definition_4_options_11"
-        },
-        {
-          "type": "long_enum",
-          "name": "editor shape!",
-          "definition": "node_definition_4_options_12"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "node_graph_definition_3": {
-      "guid": "f2bfb07047485aa8c7afc98b8fd861a8",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^#NodeGraph name"
-        },
-        {
-          "type": "string_id",
-          "name": "initial node"
-        },
-        {
-          "type": "block",
-          "name": "nodes",
-          "definition": "node_definition_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "node_graph_stack_struct_definition_1": {
-      "guid": "5bff5e037a7319e63e4415e7d3a675ee",
-      "size": 72,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "string_id",
-          "name": "name^#NodeGraph stack name"
-        },
-        {
-          "type": "long_enum",
-          "name": "transform method",
-          "definition": "node_graph_stack_struct_definition_1_options_3"
-        },
-        {
-          "type": "long_enum",
-          "name": "projection method",
-          "definition": "node_graph_stack_struct_definition_1_options_4"
-        },
-        {
-          "type": "long_enum",
-          "name": "render mode",
-          "definition": "node_graph_stack_struct_definition_1_options_5"
-        },
-        {
-          "type": "string_id",
-          "name": "markerName^"
-        },
-        {
-          "type": "real",
-          "name": "scale"
-        },
-        {
-          "type": "long_enum",
-          "name": "loading mode",
-          "definition": "node_graph_stack_struct_definition_1_options_8"
-        },
-        {
-          "type": "block",
-          "name": "node graphs",
-          "definition": "node_graph_definition_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "node_graph_stack_struct_definition_1_options_3": {
+    "TransformMethodType": {
       "options": [
         "Default 2D",
         "Object Marker 3D",
@@ -294,31 +322,31 @@
         "Weapon Reticle"
       ]
     },
-    "node_graph_stack_struct_definition_1_options_4": {
+    "ProjectionMethodType": {
       "options": [
         "Default 2D",
         "Player View",
         "Inherited"
       ]
     },
-    "node_graph_stack_struct_definition_1_options_5": {
+    "StackRenderMode": {
       "options": [
         "2D",
         "3D In World"
       ]
     },
-    "node_graph_stack_struct_definition_1_options_8": {
+    "LoadingMode": {
       "options": [
         "LoadWhenActive",
         "Preload"
       ]
     },
-    "transition_definition_5_options_4": {
+    "transition_definition_flags": {
       "options": [
         "Override Default"
       ]
     },
-    "node_definition_4_options_3": {
+    "screen_wrapper_type_enum": {
       "options": [
         "guess from screen tag",
         "none",
@@ -331,13 +359,7 @@
         "FUI"
       ]
     },
-    "node_definition_4_options_6": {
-      "options": [
-        "LoadWhenActive",
-        "Preload"
-      ]
-    },
-    "node_definition_4_options_8": {
+    "window_type_flags": {
       "options": [
         "Allow Input Fall Through",
         "Matchmaking status should appear on top of this",
@@ -347,12 +369,12 @@
         "Allow Gameplay Input"
       ]
     },
-    "node_definition_4_options_11": {
+    "node_editor_flags": {
       "options": [
         "locked"
       ]
     },
-    "node_definition_4_options_12": {
+    "shape_enum": {
       "options": [
         "rectangle",
         "hexagon",
@@ -362,5 +384,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

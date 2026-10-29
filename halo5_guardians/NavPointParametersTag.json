@@ -2,41 +2,173 @@
   "name": "NavPointParametersTag",
   "tag": "navp",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "NavPointParametersTag_block",
   "blocks": {
-    "root": {
+    "NavPointParametersTag_block": {
       "max_count": 1,
-      "struct": "NavPointParametersTag_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "NavPointParametersTag_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "NavPointParametersTag_block_struct": {
+      "guid": "1e44d7f4434028003822f187fd14df42",
+      "size": 408,
+      "size_string": "(sizeof(NavPointParametersTagDefinition) - Tag::SizeInfo<NavPointParametersTagDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "tag_reference",
+          "name": "navpoint tag",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "navp"
+            ]
+          }
         },
         {
-          "type": "terminator"
+          "type": "long_flags",
+          "name": "navpoint flags",
+          "definition": "datumFlags"
+        },
+        {
+          "type": "explanation",
+          "name": "center sprite bg",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "center sprite bg",
+          "definition": "SpriteParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "center sprite fg",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "center sprite fg",
+          "definition": "SpriteParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "center radial progress bar",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "center radial progress bar",
+          "definition": "RadialProgressBarParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "top sprite",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "top sprite",
+          "definition": "SpriteParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "top label",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "top label",
+          "definition": "LabelParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "right progress bar",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar",
+          "definition": "ProgressBarParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "right progress bar 2",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar 2",
+          "definition": "ProgressBarParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "right label",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "right label",
+          "definition": "LabelParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "right timer",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "right timer",
+          "definition": "NumericParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "left timer",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "left timer",
+          "definition": "NumericParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "yaw sprite",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "yaw sprite",
+          "definition": "RotatedSpriteParametersTagStruct"
+        },
+        {
+          "type": "explanation",
+          "name": "animation",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "animation",
+          "definition": "AnimationParametersTagStruct"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144896970"
     },
-    "center_sprite_bg_3": {
-      "guid": "3767749b47d171d1038c8da2c502cd2a",
+    "SpriteParametersTagStruct": {
+      "guid": "9b746737d147d171038c8da2c502cd2a",
       "size": 32,
+      "size_string": "sizeof(SpriteParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -45,12 +177,12 @@
         {
           "type": "long_enum",
           "name": "sequence index",
-          "definition": "center_sprite_bg_3_options_1"
+          "definition": "tagSpriteAndFlipbookSequence"
         },
         {
           "type": "long_enum",
           "name": "flipbook loop type",
-          "definition": "center_sprite_bg_3_options_2"
+          "definition": "tagLooping"
         },
         {
           "type": "real",
@@ -59,48 +191,19 @@
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "center_sprite_bg_3_options_4"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448961c0"
     },
-    "center_sprite_fg_4": {
-      "guid": "3767749b47d171d1038c8da2c502cd2a",
-      "size": 32,
-      "fields": [
-        {
-          "type": "real_argb_color",
-          "name": "color"
-        },
-        {
-          "type": "long_enum",
-          "name": "sequence index",
-          "definition": "center_sprite_fg_4_options_1"
-        },
-        {
-          "type": "long_enum",
-          "name": "flipbook loop type",
-          "definition": "center_sprite_fg_4_options_2"
-        },
-        {
-          "type": "real",
-          "name": "flipbook delay before looping"
-        },
-        {
-          "type": "long_flags",
-          "name": "drawing flags",
-          "definition": "center_sprite_fg_4_options_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "center_radial_progress_bar_5": {
-      "guid": "3e47d156424b6d2d9ce040b9a838b915",
+    "RadialProgressBarParametersTagStruct": {
+      "guid": "56d1473e4b422d6d9ce040b9a838b915",
       "size": 44,
+      "size_string": "sizeof(RadialProgressBarParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -113,7 +216,7 @@
         {
           "type": "long_enum",
           "name": "sequenceIndex",
-          "definition": "center_radial_progress_bar_5_options_2"
+          "definition": "tagSpriteSequence"
         },
         {
           "type": "real",
@@ -122,48 +225,19 @@
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "center_radial_progress_bar_5_options_4"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144896510"
     },
-    "top_sprite_6": {
-      "guid": "3767749b47d171d1038c8da2c502cd2a",
-      "size": 32,
-      "fields": [
-        {
-          "type": "real_argb_color",
-          "name": "color"
-        },
-        {
-          "type": "long_enum",
-          "name": "sequence index",
-          "definition": "top_sprite_6_options_1"
-        },
-        {
-          "type": "long_enum",
-          "name": "flipbook loop type",
-          "definition": "top_sprite_6_options_2"
-        },
-        {
-          "type": "real",
-          "name": "flipbook delay before looping"
-        },
-        {
-          "type": "long_flags",
-          "name": "drawing flags",
-          "definition": "top_sprite_6_options_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "top_label_7": {
-      "guid": "359334254d02a80b136e60bcacce1553",
+    "LabelParametersTagStruct": {
+      "guid": "25349335024d0ba8136e60bcacce1553",
       "size": 24,
+      "size_string": "sizeof(LabelParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -176,16 +250,19 @@
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "top_label_7_options_2"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144896620"
     },
-    "right_progress_bar_8": {
-      "guid": "6a211e5b4f906de50192dcb3c8afa0e8",
+    "ProgressBarParametersTagStruct": {
+      "guid": "5b1e216a904fe56d0192dcb3c8afa0e8",
       "size": 40,
+      "size_string": "sizeof(ProgressBarParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -202,64 +279,19 @@
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "right_progress_bar_8_options_3"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448963f0"
     },
-    "right_progress_bar_2_9": {
-      "guid": "6a211e5b4f906de50192dcb3c8afa0e8",
-      "size": 40,
-      "fields": [
-        {
-          "type": "real_argb_color",
-          "name": "left color"
-        },
-        {
-          "type": "real_argb_color",
-          "name": "right color"
-        },
-        {
-          "type": "real",
-          "name": "fraction"
-        },
-        {
-          "type": "long_flags",
-          "name": "drawing flags",
-          "definition": "right_progress_bar_2_9_options_3"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_label_10": {
-      "guid": "359334254d02a80b136e60bcacce1553",
-      "size": 24,
-      "fields": [
-        {
-          "type": "real_argb_color",
-          "name": "color"
-        },
-        {
-          "type": "string_id",
-          "name": "label"
-        },
-        {
-          "type": "long_flags",
-          "name": "drawing flags",
-          "definition": "right_label_10_options_2"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "right_timer_11": {
-      "guid": "185e70904b249d3795f1b0b58bb4fd35",
+    "NumericParametersTagStruct": {
+      "guid": "90705e18244b379d95f1b0b58bb4fd35",
       "size": 28,
+      "size_string": "sizeof(NumericParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -268,7 +300,7 @@
         {
           "type": "long_enum",
           "name": "number format",
-          "definition": "right_timer_11_options_1"
+          "definition": "numberFormat"
         },
         {
           "type": "real",
@@ -277,43 +309,19 @@
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "right_timer_11_options_3"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144896740"
     },
-    "left_timer_12": {
-      "guid": "185e70904b249d3795f1b0b58bb4fd35",
-      "size": 28,
-      "fields": [
-        {
-          "type": "real_argb_color",
-          "name": "color"
-        },
-        {
-          "type": "long_enum",
-          "name": "number format",
-          "definition": "left_timer_12_options_1"
-        },
-        {
-          "type": "real",
-          "name": "number"
-        },
-        {
-          "type": "long_flags",
-          "name": "drawing flags",
-          "definition": "left_timer_12_options_3"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "yaw_sprite_13": {
-      "guid": "345fe9f94b0cb08d9274dea49b48ccb0",
+    "RotatedSpriteParametersTagStruct": {
+      "guid": "f9e95f340c4b8db09274dea49b48ccb0",
       "size": 24,
+      "size_string": "sizeof(RotatedSpriteParametersTag)",
       "fields": [
         {
           "type": "real_argb_color",
@@ -322,184 +330,72 @@
         {
           "type": "long_enum",
           "name": "sequence index",
-          "definition": "yaw_sprite_13_options_1"
+          "definition": "tagSpriteSequence"
         },
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "yaw_sprite_13_options_2"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448962e0"
     },
-    "animation_14": {
-      "guid": "d7a914fb4bb30d3f130777a66d020d41",
+    "AnimationParametersTagStruct": {
+      "guid": "fb14a9d7b34b3f0d130777a66d020d41",
       "size": 8,
+      "size_string": "sizeof(AnimationParametersTag)",
       "fields": [
         {
           "type": "long_enum",
           "name": "animation type",
-          "definition": "animation_14_options_0"
+          "definition": "animation"
         },
         {
           "type": "long_flags",
           "name": "drawing flags",
-          "definition": "animation_14_options_1"
+          "definition": "drawWhenFlags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144896850"
     },
-    "NavPointParametersTag_struct_definition_1": {
-      "guid": "bdb4bc58ae55eb89c90dfa5f3b0b3674",
-      "size": 408,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "tag_reference",
-          "name": "navpoint tag",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "long_flags",
-          "name": "navpoint flags",
-          "definition": "NavPointParametersTag_struct_definition_1_options_3"
-        },
-        {
-          "type": "custom",
-          "name": "center sprite bg"
-        },
-        {
-          "type": "struct",
-          "name": "center sprite bg",
-          "definition": "center_sprite_bg_3"
-        },
-        {
-          "type": "custom",
-          "name": "center sprite fg"
-        },
-        {
-          "type": "struct",
-          "name": "center sprite fg",
-          "definition": "center_sprite_fg_4"
-        },
-        {
-          "type": "custom",
-          "name": "center radial progress bar"
-        },
-        {
-          "type": "struct",
-          "name": "center radial progress bar",
-          "definition": "center_radial_progress_bar_5"
-        },
-        {
-          "type": "custom",
-          "name": "top sprite"
-        },
-        {
-          "type": "struct",
-          "name": "top sprite",
-          "definition": "top_sprite_6"
-        },
-        {
-          "type": "custom",
-          "name": "top label"
-        },
-        {
-          "type": "struct",
-          "name": "top label",
-          "definition": "top_label_7"
-        },
-        {
-          "type": "custom",
-          "name": "right progress bar"
-        },
-        {
-          "type": "struct",
-          "name": "right progress bar",
-          "definition": "right_progress_bar_8"
-        },
-        {
-          "type": "custom",
-          "name": "right progress bar 2"
-        },
-        {
-          "type": "struct",
-          "name": "right progress bar 2",
-          "definition": "right_progress_bar_2_9"
-        },
-        {
-          "type": "custom",
-          "name": "right label"
-        },
-        {
-          "type": "struct",
-          "name": "right label",
-          "definition": "right_label_10"
-        },
-        {
-          "type": "custom",
-          "name": "right timer"
-        },
-        {
-          "type": "struct",
-          "name": "right timer",
-          "definition": "right_timer_11"
-        },
-        {
-          "type": "custom",
-          "name": "left timer"
-        },
-        {
-          "type": "struct",
-          "name": "left timer",
-          "definition": "left_timer_12"
-        },
-        {
-          "type": "custom",
-          "name": "yaw sprite"
-        },
-        {
-          "type": "struct",
-          "name": "yaw sprite",
-          "definition": "yaw_sprite_13"
-        },
-        {
-          "type": "custom",
-          "name": "animation"
-        },
-        {
-          "type": "struct",
-          "name": "animation",
-          "definition": "animation_14"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "NavPointParametersTag_struct_definition_1_options_3": {
+    "datumFlags": {
       "options": [
         "Draw clamped to gutter if offscreen"
       ]
     },
-    "center_sprite_bg_3_options_1": {
+    "tagSpriteAndFlipbookSequence": {
       "options": [
         "TacticalObjective",
         "SubObjective",
@@ -580,7 +476,7 @@
         "Flipbook24"
       ]
     },
-    "center_sprite_bg_3_options_2": {
+    "tagLooping": {
       "options": [
         "LoopForward",
         "LoopReversed",
@@ -589,111 +485,14 @@
         "PlayOnceReversedThenHold"
       ]
     },
-    "center_sprite_bg_3_options_4": {
+    "drawWhenFlags": {
       "options": [
         "Draw when onscreen",
         "Draw when offscreen",
         "Draw when under reticule"
       ]
     },
-    "center_sprite_fg_4_options_1": {
-      "options": [
-        "TacticalObjective",
-        "SubObjective",
-        "MainObjective",
-        "SupplyCache",
-        "MoveToIndicator",
-        "ChatterIndicator",
-        "AttackCommandFg",
-        "ReviveFg",
-        "ReviveBg",
-        "BleedoutTimerStroke",
-        "ReviveCommand",
-        "ReviveHelpPulse",
-        "WzBossFg",
-        "WzBossBg",
-        "WzReqFg",
-        "WzHomeBaseFg",
-        "AttackFg",
-        "DefendFg",
-        "CircleBg",
-        "DiamondBg",
-        "SquareBg",
-        "HexBg",
-        "CircleStroke",
-        "DiamondStroke",
-        "SquareStroke",
-        "HexStroke",
-        "ExclamationFg",
-        "DeadIndicator",
-        "SpeakingIndicator",
-        "WeaponPadFg",
-        "CubeFg",
-        "FlagFg",
-        "LetterAFg",
-        "LetterBFg",
-        "LetterCFg",
-        "BombFg",
-        "CrownFg",
-        "SmallOffscreenArrow",
-        "FriendlyArrow",
-        "EnemyArrow",
-        "SeekIndicator",
-        "LockOnIndicator",
-        "ReqBg",
-        "Num0Fg",
-        "Num1Fg",
-        "Num2Fg",
-        "Num3Fg",
-        "Num4Fg",
-        "Num5Fg",
-        "Num6Fg",
-        "Num7Fg",
-        "Num8Fg",
-        "Num9Fg",
-        "Flipbook1",
-        "Flipbook2",
-        "Flipbook3",
-        "Flipbook4",
-        "Flipbook5",
-        "Flipbook6",
-        "Flipbook7",
-        "Flipbook8",
-        "Flipbook9",
-        "Flipbook10",
-        "Flipbook11",
-        "Flipbook12",
-        "Flipbook13",
-        "Flipbook14",
-        "Flipbook15",
-        "Flipbook16",
-        "Flipbook17",
-        "Flipbook18",
-        "Flipbook19",
-        "Flipbook20",
-        "Flipbook21",
-        "Flipbook22",
-        "Flipbook23",
-        "Flipbook24"
-      ]
-    },
-    "center_sprite_fg_4_options_2": {
-      "options": [
-        "LoopForward",
-        "LoopReversed",
-        "LoopForwardThenReversed",
-        "PlayOnceThenHold",
-        "PlayOnceReversedThenHold"
-      ]
-    },
-    "center_sprite_fg_4_options_4": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "center_radial_progress_bar_5_options_2": {
+    "tagSpriteSequence": {
       "options": [
         "TacticalObjective",
         "SubObjective",
@@ -750,229 +549,13 @@
         "Num9Fg"
       ]
     },
-    "center_radial_progress_bar_5_options_4": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "top_sprite_6_options_1": {
-      "options": [
-        "TacticalObjective",
-        "SubObjective",
-        "MainObjective",
-        "SupplyCache",
-        "MoveToIndicator",
-        "ChatterIndicator",
-        "AttackCommandFg",
-        "ReviveFg",
-        "ReviveBg",
-        "BleedoutTimerStroke",
-        "ReviveCommand",
-        "ReviveHelpPulse",
-        "WzBossFg",
-        "WzBossBg",
-        "WzReqFg",
-        "WzHomeBaseFg",
-        "AttackFg",
-        "DefendFg",
-        "CircleBg",
-        "DiamondBg",
-        "SquareBg",
-        "HexBg",
-        "CircleStroke",
-        "DiamondStroke",
-        "SquareStroke",
-        "HexStroke",
-        "ExclamationFg",
-        "DeadIndicator",
-        "SpeakingIndicator",
-        "WeaponPadFg",
-        "CubeFg",
-        "FlagFg",
-        "LetterAFg",
-        "LetterBFg",
-        "LetterCFg",
-        "BombFg",
-        "CrownFg",
-        "SmallOffscreenArrow",
-        "FriendlyArrow",
-        "EnemyArrow",
-        "SeekIndicator",
-        "LockOnIndicator",
-        "ReqBg",
-        "Num0Fg",
-        "Num1Fg",
-        "Num2Fg",
-        "Num3Fg",
-        "Num4Fg",
-        "Num5Fg",
-        "Num6Fg",
-        "Num7Fg",
-        "Num8Fg",
-        "Num9Fg",
-        "Flipbook1",
-        "Flipbook2",
-        "Flipbook3",
-        "Flipbook4",
-        "Flipbook5",
-        "Flipbook6",
-        "Flipbook7",
-        "Flipbook8",
-        "Flipbook9",
-        "Flipbook10",
-        "Flipbook11",
-        "Flipbook12",
-        "Flipbook13",
-        "Flipbook14",
-        "Flipbook15",
-        "Flipbook16",
-        "Flipbook17",
-        "Flipbook18",
-        "Flipbook19",
-        "Flipbook20",
-        "Flipbook21",
-        "Flipbook22",
-        "Flipbook23",
-        "Flipbook24"
-      ]
-    },
-    "top_sprite_6_options_2": {
-      "options": [
-        "LoopForward",
-        "LoopReversed",
-        "LoopForwardThenReversed",
-        "PlayOnceThenHold",
-        "PlayOnceReversedThenHold"
-      ]
-    },
-    "top_sprite_6_options_4": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "top_label_7_options_2": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "right_progress_bar_8_options_3": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "right_progress_bar_2_9_options_3": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "right_label_10_options_2": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "right_timer_11_options_1": {
+    "numberFormat": {
       "options": [
         "Timer",
         "Distance"
       ]
     },
-    "right_timer_11_options_3": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "left_timer_12_options_1": {
-      "options": [
-        "Timer",
-        "Distance"
-      ]
-    },
-    "left_timer_12_options_3": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "yaw_sprite_13_options_1": {
-      "options": [
-        "TacticalObjective",
-        "SubObjective",
-        "MainObjective",
-        "SupplyCache",
-        "MoveToIndicator",
-        "ChatterIndicator",
-        "AttackCommandFg",
-        "ReviveFg",
-        "ReviveBg",
-        "BleedoutTimerStroke",
-        "ReviveCommand",
-        "ReviveHelpPulse",
-        "WzBossFg",
-        "WzBossBg",
-        "WzReqFg",
-        "WzHomeBaseFg",
-        "AttackFg",
-        "DefendFg",
-        "CircleBg",
-        "DiamondBg",
-        "SquareBg",
-        "HexBg",
-        "CircleStroke",
-        "DiamondStroke",
-        "SquareStroke",
-        "HexStroke",
-        "ExclamationFg",
-        "DeadIndicator",
-        "SpeakingIndicator",
-        "WeaponPadFg",
-        "CubeFg",
-        "FlagFg",
-        "LetterAFg",
-        "LetterBFg",
-        "LetterCFg",
-        "BombFg",
-        "CrownFg",
-        "SmallOffscreenArrow",
-        "FriendlyArrow",
-        "EnemyArrow",
-        "SeekIndicator",
-        "LockOnIndicator",
-        "ReqBg",
-        "Num0Fg",
-        "Num1Fg",
-        "Num2Fg",
-        "Num3Fg",
-        "Num4Fg",
-        "Num5Fg",
-        "Num6Fg",
-        "Num7Fg",
-        "Num8Fg",
-        "Num9Fg"
-      ]
-    },
-    "yaw_sprite_13_options_2": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
-    },
-    "animation_14_options_0": {
+    "animation": {
       "options": [
         "PlayerFiring",
         "PlayerDamaged",
@@ -1007,14 +590,12 @@
         "Animation31",
         "Animation32"
       ]
-    },
-    "animation_14_options_1": {
-      "options": [
-        "Draw when onscreen",
-        "Draw when offscreen",
-        "Draw when under reticule"
-      ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

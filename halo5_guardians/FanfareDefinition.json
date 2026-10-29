@@ -1,56 +1,32 @@
 {
   "name": "FanfareDefinition",
   "tag": "fanf",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "FanfareDefinition_block",
   "blocks": {
-    "root": {
+    "FanfareDefinition_block": {
       "max_count": 1,
-      "struct": "FanfareDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "FanfareDefinition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "FanfareDefinition_struct_definition_1": {
-      "guid": "8dc6c4b3b0f97f19081fde73b22d79bd",
+    "FanfareDefinition_block_struct": {
+      "guid": "443ec61c2040945316185691cb08387d",
       "size": 96,
+      "size_string": "(sizeof(FanfareDefinition) - Tag::SizeInfo<FanfareDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "char_enum",
           "name": "Type",
-          "definition": "FanfareDefinition_struct_definition_1_options_2"
+          "definition": "incident_fanfare_queue_type"
         },
         {
           "type": "pad",
@@ -78,7 +54,9 @@
           "name": "Screen",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "cusc"
+            ]
           }
         },
         {
@@ -86,17 +64,43 @@
           "name": "Sound",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "sgrp"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144823f90"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "FanfareDefinition_struct_definition_1_options_2": {
+    "incident_fanfare_queue_type": {
       "options": [
         "personal score",
         "game score",
@@ -107,5 +111,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

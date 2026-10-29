@@ -1,132 +1,64 @@
 {
   "name": "bsp_volumes",
   "tag": "bspv",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "bsp_volumes_block",
   "blocks": {
-    "genericVolumePointBlock_5": {
-      "max_count": 32,
-      "struct": "genericVolumePointBlock_5"
-    },
-    "editorMetadataBlock_6": {
-      "max_count": 1024,
-      "struct": "editorMetadataBlock_6"
-    },
-    "scenarioBakedPVSVolumesBlock_3": {
-      "max_count": 128,
-      "struct": "scenarioBakedPVSVolumesBlock_3"
-    },
-    "root": {
+    "bsp_volumes_block": {
       "max_count": 1,
-      "struct": "bsp_volumes_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "bsp_volumes_block_struct"
+    },
+    "scenarioBakedPVSVolumesBlock": {
+      "max_count": 128,
+      "max_count_string": "128",
+      "struct": "scenarioBakedPVSVolumesBlock"
+    },
+    "genericVolumePointBlock": {
+      "max_count": 32,
+      "max_count_string": "k_maximum_points_per_sector",
+      "struct": "genericVolumePointBlock"
+    },
+    "editorMetadataBlock": {
+      "max_count": 1024,
+      "max_count_string": "MAXIMUM_EDITOR_METADATA_ENTRIES",
+      "struct": "editorMetadataBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "bsp_volumes_block_struct": {
+      "guid": "d3864163814a70667b7b97aa6d59b39c",
+      "size": 48,
+      "size_string": "(sizeof(BspVolumes) - Tag::SizeInfo<BspVolumes::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "genericVolumePointBlock_5": {
-      "guid": "66dd021f42b767e469b744af5c73a047",
-      "size": 20,
-      "fields": [
-        {
-          "type": "real_point_3d",
-          "name": "position"
-        },
-        {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Volume_4": {
-      "guid": "879af445458c5fd82be1c39216d26f81",
-      "size": 56,
-      "fields": [
         {
           "type": "block",
-          "name": "Points",
-          "definition": "genericVolumePointBlock_5"
-        },
-        {
-          "type": "real",
-          "name": "height"
-        },
-        {
-          "type": "real",
-          "name": "sink"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "center point!"
-        },
-        {
-          "type": "real",
-          "name": "trivial cull radius squared!"
+          "name": "Baked PVS Volumes",
+          "definition": "scenarioBakedPVSVolumesBlock"
         },
         {
           "type": "pad",
-          "name": "gvolpad",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14474d960"
     },
-    "editorMetadataBlock_6": {
-      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
-      "size": 520,
-      "fields": [
-        {
-          "type": "long_string",
-          "name": "data name"
-        },
-        {
-          "type": "long_enum",
-          "name": "data type",
-          "definition": "editorMetadataBlock_6_options_1"
-        },
-        {
-          "type": "long_integer",
-          "name": "parent index"
-        },
-        {
-          "type": "long_string",
-          "name": "data value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "scenarioBakedPVSVolumesBlock_3": {
-      "guid": "d00b9d944abcde37c0a4edb31382e16a",
+    "scenarioBakedPVSVolumesBlock": {
+      "guid": "949d0bd0bc4a37dec0a4edb31382e16a",
       "size": 120,
+      "size_string": "sizeof(ScenarioBakedPVSVolume)",
       "fields": [
         {
           "type": "string_id",
@@ -134,32 +66,38 @@
         },
         {
           "type": "custom",
-          "name": "Volume settings"
+          "name": "Volume settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Volume",
-          "definition": "Volume_4"
+          "definition": "genericVolumeStruct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "short_enum",
           "name": "Use vertical beam count override",
-          "definition": "scenarioBakedPVSVolumesBlock_3_options_3"
+          "definition": "scenarioBakedPVSVolumeBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Use beam height overrides",
-          "definition": "scenarioBakedPVSVolumesBlock_3_options_4"
+          "definition": "scenarioBakedPVSVolumeBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Pin the beams to the top of the volume",
-          "definition": "scenarioBakedPVSVolumesBlock_3_options_5"
+          "definition": "scenarioBakedPVSVolumeBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Add beams even if there is no collision",
-          "definition": "scenarioBakedPVSVolumesBlock_3_options_6"
+          "definition": "scenarioBakedPVSVolumeBooleanEnumDefinition"
         },
         {
           "type": "long_integer",
@@ -188,68 +126,133 @@
         {
           "type": "block",
           "name": "Editor Metadata!",
-          "definition": "editorMetadataBlock_6"
+          "definition": "editorMetadataBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14474de20"
     },
-    "bsp_volumes_struct_definition_1": {
-      "guid": "24dd66b872b4a556ede3378245a7dde7",
-      "size": 48,
+    "genericVolumeStruct": {
+      "guid": "45f49a878c45d85f2be1c39216d26f81",
+      "size": 56,
+      "size_string": "sizeof(GenericVolume)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "Points",
+          "definition": "genericVolumePointBlock"
+        },
+        {
+          "type": "real",
+          "name": "height"
+        },
+        {
+          "type": "real",
+          "name": "sink"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "center point!"
+        },
+        {
+          "type": "real",
+          "name": "trivial cull radius squared!"
+        },
+        {
+          "type": "pad",
+          "name": "gvolpad",
+          "definition": 4
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144756470"
+    },
+    "genericVolumePointBlock": {
+      "guid": "1f02dd66b742e46769b744af5c73a047",
+      "size": 20,
+      "size_string": "sizeof(VolumeSectorPoint)",
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144756350"
+    },
+    "editorMetadataBlock": {
+      "guid": "106d5649e63ebeef6d8c8eb1db3d0368",
+      "size": 520,
+      "size_string": "sizeof(EditorMetadata)",
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorDataTypesEnum"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144700050"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Baked PVS Volumes",
-          "definition": "scenarioBakedPVSVolumesBlock_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "scenarioBakedPVSVolumesBlock_3_options_3": {
+    "scenarioBakedPVSVolumeBooleanEnumDefinition": {
       "options": [
         "No",
         "Yes"
       ]
     },
-    "scenarioBakedPVSVolumesBlock_3_options_4": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "scenarioBakedPVSVolumesBlock_3_options_5": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "scenarioBakedPVSVolumesBlock_3_options_6": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "editorMetadataBlock_6_options_1": {
+    "editorDataTypesEnum": {
       "options": [
         "class",
         "array",
@@ -259,5 +262,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

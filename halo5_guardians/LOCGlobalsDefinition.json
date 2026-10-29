@@ -2,55 +2,31 @@
   "name": "LOCGlobalsDefinition",
   "tag": "gllo",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "LOCGlobalsDefinition_block",
   "blocks": {
-    "root": {
+    "LOCGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "LOCGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "LOCGlobalsDefinition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "LOCGlobalsDefinition_struct_definition_1": {
-      "guid": "e808ebf3ff079bce7fadfe722bf3662e",
+    "LOCGlobalsDefinition_block_struct": {
+      "guid": "3c1f2186c440ab47da71419e858f7ac7",
       "size": 24,
+      "size_string": "(sizeof(i343::LOCGlobals) - Tag::SizeInfo<i343::LOCGlobals::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "long_enum",
           "name": "language",
-          "definition": "LOCGlobalsDefinition_struct_definition_1_options_2"
+          "definition": "language_enum"
         },
         {
           "type": "pad",
@@ -58,13 +34,37 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482b430"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "LOCGlobalsDefinition_struct_definition_1_options_2": {
+    "language_enum": {
       "options": [
         "english",
         "japanese",
@@ -86,5 +86,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

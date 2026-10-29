@@ -1,50 +1,84 @@
 {
   "name": "ai_mission_dialogue",
   "tag": "mdlg",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "ai_mission_dialogue_block",
   "blocks": {
-    "mission_dialogue_variants_block_4": {
-      "max_count": 10,
-      "struct": "mission_dialogue_variants_block_4"
-    },
-    "mission_dialogue_lines_block_3": {
-      "max_count": 500,
-      "struct": "mission_dialogue_lines_block_3"
-    },
-    "root": {
+    "ai_mission_dialogue_block": {
       "max_count": 1,
-      "struct": "ai_mission_dialogue_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "ai_mission_dialogue_block_struct"
+    },
+    "mission_dialogue_lines_block": {
+      "max_count": 500,
+      "max_count_string": "k_max_lines_per_scenario",
+      "struct": "mission_dialogue_lines_block"
+    },
+    "mission_dialogue_variants_block": {
+      "max_count": 10,
+      "max_count_string": "k_max_variants_per_line",
+      "struct": "mission_dialogue_variants_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "ai_mission_dialogue_block_struct": {
+      "guid": "b4352d7a0d4553cd27b2b0aef4c14069",
+      "size": 48,
+      "size_string": "(sizeof(ai_mission_dialogue) - Tag::SizeInfo<ai_mission_dialogue::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "lines",
+          "definition": "mission_dialogue_lines_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447ee260"
     },
-    "mission_dialogue_variants_block_4": {
-      "guid": "5de3b90c4de3abbb07fc0e8780aab27b",
+    "mission_dialogue_lines_block": {
+      "guid": "7fd25bb9a145655b94003db837332d92",
+      "size": 36,
+      "size_string": "sizeof(mission_dialogue_line)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "variants",
+          "definition": "mission_dialogue_variants_block"
+        },
+        {
+          "type": "string_id",
+          "name": "default sound effect"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447ee140"
+    },
+    "mission_dialogue_variants_block": {
+      "guid": "0cb9e35de34dbbab07fc0e8780aab27b",
       "size": 40,
+      "size_string": "sizeof(mission_dialogue_variant)",
       "fields": [
         {
           "type": "string_id",
@@ -54,8 +88,10 @@
           "type": "tag_reference",
           "name": "sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
@@ -63,61 +99,39 @@
           "name": "sound effect"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447ee010"
     },
-    "mission_dialogue_lines_block_3": {
-      "guid": "b95bd27f45a15b6594003db837332d92",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^"
-        },
-        {
-          "type": "block",
-          "name": "variants",
-          "definition": "mission_dialogue_variants_block_4"
-        },
-        {
-          "type": "string_id",
-          "name": "default sound effect"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ai_mission_dialogue_struct_definition_1": {
-      "guid": "3bb02ca123651ecf47515777bcf3ea09",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "lines",
-          "definition": "mission_dialogue_lines_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

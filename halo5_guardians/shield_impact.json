@@ -1,456 +1,37 @@
 {
   "name": "shield_impact",
   "tag": "shit",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "shield_impact_block",
   "blocks": {
-    "root": {
+    "shield_impact_block": {
       "max_count": 1,
-      "struct": "shield_impact_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "shield_impact_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_4": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Edge_Glow_Color_3": {
-      "guid": "bdac1b154adf794f702edea49ffabb63",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_4"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_6": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Edge_Glow_Intensity_5": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_8": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Plasma_Center_Color_7": {
-      "guid": "bdac1b154adf794f702edea49ffabb63",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Plasma_Center_Intensity_9": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_10"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_12": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Plasma_Edge_Color_11": {
-      "guid": "bdac1b154adf794f702edea49ffabb63",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_12"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_14": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Plasma_Edge_Intensity_13": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_14"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_16": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Extrusion_Amount_15": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_16"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_18": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Oscillation_Amplitude_17": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_18"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_20": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Hit_Color_19": {
-      "guid": "bdac1b154adf794f702edea49ffabb63",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_20"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_22": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Hit_Intensity_21": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_22"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_24": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Hit_Radius_23": {
-      "guid": "efddc6314736eab14e73109ca3199e60",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_24"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "shield_impact_struct_definition_1": {
-      "guid": "d796ffd54f38b44c93735f9fc793b01d",
+    "shield_impact_block_struct": {
+      "guid": "3679620cfa42663cfd412dad2f9b723f",
       "size": 712,
+      "size_string": "(sizeof(s_shield_parameters) - Tag::SizeInfo<s_shield_parameters::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "custom",
-          "name": "Shield Controls"
+          "type": "explanation",
+          "name": "Shield Controls",
+          "definition": "You can use the following variables as inputs to the functions here, in addition to any object variables\n    shield_vitality        percentage of shield remaining\n    shield_intensity       mixture of recent and current damage (see below)\n    current_shield_damage\n    recent_shield_damage\n"
         },
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "shield_impact_struct_definition_1_options_3"
+          "definition": "shield_flags"
         },
         {
           "type": "short_integer",
@@ -458,11 +39,13 @@
         },
         {
           "type": "custom",
-          "name": "Shield Intensity"
+          "name": "Shield Intensity",
+          "group_tag": "fgrb"
         },
         {
-          "type": "custom",
-          "name": "Shield Intensity"
+          "type": "explanation",
+          "name": "Shield Intensity",
+          "definition": "Shield intensity is a combination of recent damage and current damage.\nThese controls let you adjust the relative intensity contribution from each.\n'shield_intensity' can be used as an input to any of the animation function curves below."
         },
         {
           "type": "real",
@@ -474,11 +57,18 @@
         },
         {
           "type": "custom",
-          "name": "Shield Edge"
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "custom",
-          "name": "Shield Edge"
+          "name": "Shield Edge",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "explanation",
+          "name": "Shield Edge",
+          "definition": "These controls allow you to define the location and width of the shield edges.\nThe edge is faded as a function of the surface normal with respect to the camera.\nRadius 1.0 corresponds to the glancing edges of the surface (the silhouette edges).\nRadius 0.0 corresponds to the area of the surface directly facing the camera (the center).\nYou can control separately the inner and outer fades."
         },
         {
           "type": "real",
@@ -499,20 +89,27 @@
         {
           "type": "struct",
           "name": "Edge Glow Color",
-          "definition": "Edge_Glow_Color_3"
+          "definition": "shield_color_function_struct"
         },
         {
           "type": "struct",
           "name": "Edge Glow Intensity",
-          "definition": "Edge_Glow_Intensity_5"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "custom",
-          "name": "Plasma"
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "custom",
-          "name": "Plasma"
+          "name": "Plasma",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "explanation",
+          "name": "Plasma",
+          "definition": "These controls allow you to define the appearance of the plasma effect.\nThe plasma is calculated using the standard formula (1-abs(tex0-tex1))^(sharpness).\nTiling scale controls the spatial tiling of the plasma textures.\nScroll speed controls how fast the textures scroll on the surface.\nYou can specify separate sharpness values for the edge and the center.\n"
         },
         {
           "type": "real",
@@ -523,7 +120,9 @@
           "name": "Plasma Noise Texture 0",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -531,7 +130,9 @@
           "name": "Plasma Noise Texture 1",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -565,37 +166,46 @@
         {
           "type": "struct",
           "name": "Plasma Center Color",
-          "definition": "Plasma_Center_Color_7"
+          "definition": "shield_color_function_struct"
         },
         {
           "type": "struct",
           "name": "Plasma Center Intensity",
-          "definition": "Plasma_Center_Intensity_9"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "Plasma Edge Color",
-          "definition": "Plasma_Edge_Color_11"
+          "definition": "shield_color_function_struct"
         },
         {
           "type": "struct",
           "name": "Plasma Edge Intensity",
-          "definition": "Plasma_Edge_Intensity_13"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "custom",
-          "name": "Extrusion Oscillation"
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "custom",
-          "name": "Extrusion Oscillation"
+          "name": "Extrusion Oscillation",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "explanation",
+          "name": "Extrusion Oscillation",
+          "definition": "These controls allow you to define the oscillation in the extrusion.\nThese textures are tiled and scrolled in the xy and yz planes, and their red channel is applied as an offset to the extrusion\nTiling scale controls the spatial tiling of the plasma textures.\nScroll speed controls how fast the textures scroll on the surface.\nYou can specify separate sharpness values for the edge and the center.\n"
         },
         {
           "type": "tag_reference",
           "name": "Oscillation Texture 0",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -603,7 +213,9 @@
           "name": "Oscillation Texture 1",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -617,20 +229,27 @@
         {
           "type": "struct",
           "name": "Extrusion Amount",
-          "definition": "Extrusion_Amount_15"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "Oscillation Amplitude",
-          "definition": "Oscillation_Amplitude_17"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "custom",
-          "name": "Hit Response"
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "custom",
-          "name": "Hit Response"
+          "name": "Hit Response",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "explanation",
+          "name": "Hit Response",
+          "definition": "These controls allow you to define the color variation in the area surrounding projectile impacts.\nYou can control the color, and the size of the colored area.\nThe default input is time since impact.\n"
         },
         {
           "type": "real",
@@ -639,25 +258,32 @@
         {
           "type": "struct",
           "name": "Hit Color",
-          "definition": "Hit_Color_19"
+          "definition": "shield_color_function_struct"
         },
         {
           "type": "struct",
           "name": "Hit Intensity",
-          "definition": "Hit_Intensity_21"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "struct",
           "name": "Hit Radius",
-          "definition": "Hit_Radius_23"
+          "definition": "shield_scalar_function_struct"
         },
         {
           "type": "tag_reference",
           "name": "hit blob texture (adds significant cost)",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "real_quaternion",
@@ -681,13 +307,118 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14471d5f0"
+    },
+    "shield_color_function_struct": {
+      "guid": "151bacbddf4a4f79702edea49ffabb63",
+      "size": 36,
+      "size_string": "sizeof(s_shield_function)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471d4d0"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "shield_scalar_function_struct": {
+      "guid": "31c6ddef3647b1ea4e73109ca3199e60",
+      "size": 36,
+      "size_string": "sizeof(s_shield_function)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471d3c0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "shield_impact_struct_definition_1_options_3": {
+    "shield_flags": {
       "options": [
         "render always",
         "render first person",
@@ -696,6 +427,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

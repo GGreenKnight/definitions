@@ -1,67 +1,45 @@
 {
   "name": "bink",
   "tag": "bink",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 4098,
+  "parent_tag": "aTag",
+  "block": "bink_block",
   "blocks": {
-    "root": {
+    "bink_block": {
       "max_count": 1,
-      "struct": "bink_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "bink_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "bink_struct_definition_1": {
-      "guid": "500a4bb736f6ff57f805e3e206ba572d",
+    "bink_block_struct": {
+      "guid": "45602a4f674aff63bda8f2813a1d49cf",
       "size": 72,
+      "size_string": "(sizeof(s_bink_definition) - Tag::SizeInfo<s_bink_definition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "long_integer",
           "name": "frame count*"
         },
         {
-          "type": "pad",
+          "type": "tag_resource",
           "name": "bink resource",
-          "definition": 16
+          "definition": "bink_resource"
         },
         {
           "type": "tag_reference",
           "name": "external sound track^",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
@@ -70,11 +48,70 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14479f940"
+    },
+    "bink_resource_struct": {
+      "guid": "e8ccb4d0eb4fc6768a004ca5cd245d6d",
+      "size": 28,
+      "size_string": "sizeof(s_bink_resource_definition)",
+      "fields": [
+        {
+          "type": "data",
+          "name": "bink data",
+          "definition": "bink_resource_data"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14479f820"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "datas": {
+    "bink_resource_data": {
+      "alignment": 0,
+      "flags": 0,
+      "max_size": 2147483647,
+      "max_size_string": "k_bink_resource_data_maximum_size"
+    }
+  },
+  "resources": {
+    "bink_resource": {
+      "flags": 0,
+      "struct": "bink_resource_struct"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

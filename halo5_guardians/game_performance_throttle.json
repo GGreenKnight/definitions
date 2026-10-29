@@ -1,59 +1,92 @@
 {
   "name": "game_performance_throttle",
   "tag": "gptd",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 6,
+  "parent_tag": "aTag",
+  "block": "game_performance_throttle_block",
   "blocks": {
-    "game_performance_throttle_entries_block_3": {
-      "max_count": 32,
-      "struct": "game_performance_throttle_entries_block_3"
-    },
-    "root": {
+    "game_performance_throttle_block": {
       "max_count": 1,
-      "struct": "game_performance_throttle_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "game_performance_throttle_block_struct"
+    },
+    "game_performance_throttle_entries_block": {
+      "max_count": 32,
+      "max_count_string": "32",
+      "struct": "game_performance_throttle_entries_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "game_performance_throttle_block_struct": {
+      "guid": "e0ab7310bb47143dfcb4e089b163bdb0",
+      "size": 48,
+      "size_string": "(sizeof(s_game_performance_throttle_definitions) - Tag::SizeInfo<s_game_performance_throttle_definitions::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "entries",
+          "definition": "game_performance_throttle_entries_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14480b2b0"
     },
-    "filter_4": {
-      "guid": "aaa4cf0549590843920dc3c00e07ab12",
+    "game_performance_throttle_entries_block": {
+      "guid": "03a99571a549be695e30cdc5dc8f8657",
+      "size": 28,
+      "size_string": "sizeof(s_game_performance_throttle_entry)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "filter",
+          "definition": "game_performance_throttle_filter_struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile",
+          "definition": "game_performance_throttle_profile_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14480b190"
+    },
+    "game_performance_throttle_filter_struct": {
+      "guid": "05cfa4aa59494308920dc3c00e07ab12",
       "size": 4,
+      "size_string": "sizeof(s_game_performance_throttle_filter)",
       "fields": [
         {
           "type": "long_integer",
           "name": "minimum player count"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14480af50"
     },
-    "profile_5": {
-      "guid": "a9a4cf0549598843920dc3b00e07ab16",
+    "game_performance_throttle_profile_struct": {
+      "guid": "05cfa4a959494388920dc3b00e07ab16",
       "size": 24,
+      "size_string": "sizeof(s_game_performance_throttle_profile)",
       "fields": [
         {
           "type": "long_integer",
@@ -80,58 +113,39 @@
           "name": "Actor LOD, Number of concurrent LOD actors to tick"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14480b060"
     },
-    "game_performance_throttle_entries_block_3": {
-      "guid": "7195a90349a569be5e30cdc5dc8f8657",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "filter",
-          "definition": "filter_4"
-        },
-        {
-          "type": "struct",
-          "name": "profile",
-          "definition": "profile_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "game_performance_throttle_struct_definition_1": {
-      "guid": "b9bc829f55d6e4e9c8a34f3eef6ccb87",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "entries",
-          "definition": "game_performance_throttle_entries_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

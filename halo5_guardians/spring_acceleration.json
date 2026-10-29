@@ -1,102 +1,74 @@
 {
   "name": "spring_acceleration",
   "tag": "sadt",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "spring_acceleration_block",
   "blocks": {
-    "spring_linear_acceleration_block_3": {
-      "max_count": 3,
-      "struct": "spring_linear_acceleration_block_3"
-    },
-    "root": {
+    "spring_acceleration_block": {
       "max_count": 1,
-      "struct": "spring_acceleration_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "spring_acceleration_block_struct"
+    },
+    "spring_linear_acceleration_block": {
+      "max_count": 3,
+      "max_count_string": "k_dimensions_in_3d_count",
+      "struct": "spring_linear_acceleration_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "spring_acceleration_block_struct": {
+      "guid": "e0ab7310bb4794adffb41089b163cd30",
+      "size": 56,
+      "size_string": "(sizeof(s_spring_acceleration_definition) - Tag::SizeInfo<s_spring_acceleration_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "linear acceleartions",
+          "definition": "spring_linear_acceleration_block"
+        },
+        {
+          "type": "short_block_index",
+          "name": "x-axis",
+          "definition": "spring_linear_acceleration_block"
+        },
+        {
+          "type": "short_block_index",
+          "name": "y-axis",
+          "definition": "spring_linear_acceleration_block"
+        },
+        {
+          "type": "short_block_index",
+          "name": "z-axis",
+          "definition": "spring_linear_acceleration_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448490a0"
     },
-    "function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "spring_damping_4": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "spring_acceleration_6": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_7"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "spring_linear_acceleration_block_3": {
-      "guid": "1c23aaac444913238310abae8a0d17d9",
+    "spring_linear_acceleration_block": {
+      "guid": "acaa231c494423138310abae8a0d17d9",
       "size": 72,
+      "size_string": "sizeof(s_spring_acceleration_linear_definition)",
       "fields": [
         {
           "type": "real",
@@ -111,13 +83,14 @@
           "name": "world acceleration scale#0 defaults to 1, scale the acceleration the object itself applies on this system."
         },
         {
-          "type": "custom",
-          "name": "damping"
+          "type": "explanation",
+          "name": "damping",
+          "definition": "feed velocity into this function and damp by the value that comes out"
         },
         {
           "type": "struct",
           "name": "spring damping",
-          "definition": "spring_damping_4"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "real",
@@ -126,61 +99,98 @@
         {
           "type": "struct",
           "name": "spring acceleration",
-          "definition": "spring_acceleration_6"
+          "definition": "scalar_function_named_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144848f80"
     },
-    "spring_acceleration_struct_definition_1": {
-      "guid": "a02808b03a2f53acd2188dcedc5e1517",
-      "size": 56,
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "linear acceleartions",
-          "definition": "spring_linear_acceleration_block_3"
-        },
-        {
-          "type": "short_integer",
-          "name": "x-axis"
-        },
-        {
-          "type": "short_integer",
-          "name": "y-axis"
-        },
-        {
-          "type": "short_integer",
-          "name": "z-axis"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 2
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

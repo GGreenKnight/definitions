@@ -2,45 +2,67 @@
   "name": "reactive_scenery",
   "tag": "rscn",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "reactive_scenery_block",
   "blocks": {
-    "reactive_animation_3": {
-      "max_count": 8,
-      "struct": "reactive_animation_3"
-    },
-    "root": {
+    "reactive_scenery_block": {
       "max_count": 1,
-      "struct": "reactive_scenery_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "reactive_scenery_block_struct"
+    },
+    "reactive_animation": {
+      "max_count": 8,
+      "max_count_string": "ReactiveScenery::k_maxAnimations",
+      "struct": "reactive_animation"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "reactive_scenery_block_struct": {
+      "guid": "51fe185dd44c5ff89db80187ef1720db",
+      "size": 56,
+      "size_string": "(sizeof(ReactiveSceneryDefinition) - Tag::SizeInfo<ReactiveSceneryDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "explanation",
+          "name": "Reactive Scenery",
+          "definition": "Scenery object that plays client-side animations in reaction to simple events."
+        },
+        {
+          "type": "block",
+          "name": "Animations#The animations this object will play in reaction to events.",
+          "definition": "reactive_animation"
+        },
+        {
+          "type": "real",
+          "name": "proximity distance:world units#How close a player must be to trigger a Proximity animation."
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "ReactiveSceneryFlags"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c17f0"
     },
-    "reactive_animation_3": {
-      "guid": "c2ef79c04f2008001355289984c2c463",
+    "reactive_animation": {
+      "guid": "c079efc2204f00081355289984c2c463",
       "size": 20,
+      "size_string": "sizeof(ReactiveScenery::AnimationDefinition)",
       "fields": [
         {
           "type": "string_id",
@@ -65,69 +87,52 @@
         {
           "type": "char_enum",
           "name": "behavior",
-          "definition": "reactive_animation_3_options_5"
+          "definition": "AnimationBehaviorEnum"
         },
         {
           "type": "char_enum",
           "name": "type#Animation type. Ambient plays on top of other animations.",
-          "definition": "reactive_animation_3_options_6"
+          "definition": "ReactiveAnimationTypeEnum"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c16d0"
     },
-    "reactive_scenery_struct_definition_1": {
-      "guid": "9bb3d263d6d80a38a94688c8bcb1eee1",
-      "size": 56,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "Reactive Scenery"
-        },
-        {
-          "type": "block",
-          "name": "Animations#The animations this object will play in reaction to events.",
-          "definition": "reactive_animation_3"
-        },
-        {
-          "type": "real",
-          "name": "proximity distance:world units#How close a player must be to trigger a Proximity animation."
-        },
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "reactive_scenery_struct_definition_1_options_5"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "reactive_animation_3_options_5": {
+    "AnimationBehaviorEnum": {
       "options": [
         "Stopping",
         "Looping",
         "Bouncing"
       ]
     },
-    "reactive_animation_3_options_6": {
+    "ReactiveAnimationTypeEnum": {
       "options": [
         "Idle",
         "Proximity",
@@ -136,11 +141,16 @@
         "Ambient"
       ]
     },
-    "reactive_scenery_struct_definition_1_options_5": {
+    "ReactiveSceneryFlags": {
       "options": [
         "halt Ambient animation during Damage animation"
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

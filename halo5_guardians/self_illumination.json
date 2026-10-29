@@ -2,133 +2,58 @@
   "name": "self_illumination",
   "tag": "sict",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "self_illumination_block",
   "blocks": {
-    "self_illumination_state_3": {
-      "max_count": 16,
-      "struct": "self_illumination_state_3"
-    },
-    "root": {
+    "self_illumination_block": {
       "max_count": 1,
-      "struct": "self_illumination_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "self_illumination_block_struct"
+    },
+    "self_illumination_state": {
+      "max_count": 16,
+      "max_count_string": "SelfIlluminationDefinition::MAX_STATES",
+      "struct": "self_illumination_state"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "self_illumination_block_struct": {
+      "guid": "ef50ad5229447aed3d0f8089341a77f2",
+      "size": 48,
+      "size_string": "(sizeof(SelfIlluminationDefinition) - Tag::SizeInfo<SelfIlluminationDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "States",
+          "definition": "self_illumination_state"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c22b0"
     },
-    "function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Intensity__Animates_intensity_over_time__0___Min_Intensity___1___Max_Intensity_4": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_5"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Color__Animates_color_over_time___0___White___1___Full_Color_6": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_7"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Activation__Animates_On_Off_state_over_time__0___Off__1___On_8": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "self_illumination_state_3": {
-      "guid": "a95f36714a146eca4f393287faf4a9c5",
+    "self_illumination_state": {
+      "guid": "71365fa9144aca6e4f393287faf4a9c5",
       "size": 100,
+      "size_string": "sizeof(SelfIlluminationState)",
       "fields": [
         {
-          "type": "custom",
-          "name": "Self-Illumination State"
+          "type": "explanation",
+          "name": "Self-Illumination State",
+          "definition": "An animated self-illumination controller state."
         },
         {
           "type": "string_id",
@@ -137,7 +62,7 @@
         {
           "type": "long_flags",
           "name": "Flags",
-          "definition": "self_illumination_state_3_options_2"
+          "definition": "self_illumination_flags"
         },
         {
           "type": "real",
@@ -150,54 +75,98 @@
         {
           "type": "struct",
           "name": "Intensity #Animates intensity over time. 0 - Min Intensity.  1 - Max Intensity",
-          "definition": "Intensity__Animates_intensity_over_time__0___Min_Intensity___1___Max_Intensity_4"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "Color #Animates color over time.  0 - White.  1 - Full Color",
-          "definition": "Color__Animates_color_over_time___0___White___1___Full_Color_6"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "struct",
           "name": "Activation #Animates On/Off state over time. 0 - Off. 1 - On",
-          "definition": "Activation__Animates_On_Off_state_over_time__0___Off__1___On_8"
+          "definition": "scalar_function_named_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c2190"
     },
-    "self_illumination_struct_definition_1": {
-      "guid": "35d5def3b11c7a3bba4d90debf676a9e",
-      "size": 48,
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "States",
-          "definition": "self_illumination_state_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "self_illumination_state_3_options_2": {
+    "self_illumination_flags": {
       "options": [
         "Looping",
         "Triggered By AI State",
@@ -207,6 +176,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

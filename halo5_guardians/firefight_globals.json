@@ -2,45 +2,68 @@
   "name": "firefight_globals",
   "tag": "ffgd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "firefight_globals_block",
   "blocks": {
-    "firefightWaveTemplatesBlock_3": {
-      "max_count": 128,
-      "struct": "firefightWaveTemplatesBlock_3"
-    },
-    "root": {
+    "firefight_globals_block": {
       "max_count": 1,
-      "struct": "firefight_globals_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "firefight_globals_block_struct"
+    },
+    "firefightWaveTemplatesBlock": {
+      "max_count": 128,
+      "max_count_string": "FirefightWaveTemplateDefinition::k_maximumAIWaveTemplates",
+      "struct": "firefightWaveTemplatesBlock_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "firefight_globals_block_struct": {
+      "guid": "b86331ea5b4423a315221494dd68a89c",
+      "size": 80,
+      "size_string": "(sizeof(FirefightGlobalsDefinition) - Tag::SizeInfo<FirefightGlobalsDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "wave templates",
+          "definition": "firefightWaveTemplatesBlock"
+        },
+        {
+          "type": "explanation",
+          "name": "PLAYER SPAWN INFLUENCERS",
+          "definition": "These are the default spawn influencer settings which can be overridden by scenario tags"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Influencer default spawn settings",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "ssdf"
+            ]
+          }
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "tag_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144825370"
     },
-    "firefightWaveTemplatesBlock_3": {
-      "guid": "0b9922fa452f18810340d2b463440b5c",
+    "firefightWaveTemplatesBlock_struct": {
+      "guid": "fa22990b2f4581180340d2b463440b5c",
       "size": 36,
+      "size_string": "sizeof(FirefightWaveTemplateDefinition)",
       "fields": [
         {
           "type": "string_id",
@@ -51,55 +74,45 @@
           "name": "wave template",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "wave"
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144825250"
     },
-    "firefight_globals_struct_definition_1": {
-      "guid": "8f441e23288c511d02e7f9ed064345ce",
-      "size": 80,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "wave templates",
-          "definition": "firefightWaveTemplatesBlock_3"
-        },
-        {
-          "type": "custom",
-          "name": "PLAYER SPAWN INFLUENCERS"
-        },
-        {
-          "type": "tag_reference",
-          "name": "Influencer default spawn settings",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "pad",
-          "name": "tag_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

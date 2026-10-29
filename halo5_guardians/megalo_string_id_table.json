@@ -1,63 +1,75 @@
 {
   "name": "megalo_string_id_table",
   "tag": "msit",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "megalo_string_id_table_block",
   "blocks": {
-    "megalo_string_id_block_3": {
-      "max_count": 512,
-      "struct": "megalo_string_id_block_3"
-    },
-    "megalo_string_id_to_sprite_index_block_4": {
-      "max_count": 256,
-      "struct": "megalo_string_id_to_sprite_index_block_4"
-    },
-    "root": {
+    "megalo_string_id_table_block": {
       "max_count": 1,
-      "struct": "megalo_string_id_table_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "megalo_string_id_table_block_struct"
+    },
+    "megalo_string_id_block": {
+      "max_count": 512,
+      "max_count_string": "512",
+      "struct": "megalo_string_id_block"
+    },
+    "megalo_string_id_to_sprite_index_block": {
+      "max_count": 256,
+      "max_count_string": "256",
+      "struct": "megalo_string_id_to_sprite_index_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "megalo_string_id_table_block_struct": {
+      "guid": "71250fae504ba9f83ddf2383e7b8214d",
+      "size": 72,
+      "size_string": "(sizeof(s_megalo_string_id_table_definition) - Tag::SizeInfo<s_megalo_string_id_table_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
+          "type": "block",
+          "name": "megalo string_ids",
+          "definition": "megalo_string_id_block"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "megalo string_ids sprite mapping",
+          "definition": "megalo_string_id_to_sprite_index_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14481d450"
     },
-    "megalo_string_id_block_3": {
-      "guid": "6b7821874e8d32c279e317be962b77eb",
+    "megalo_string_id_block": {
+      "guid": "8721786b8d4ec23279e317be962b77eb",
       "size": 4,
+      "size_string": "sizeof(string_id)",
       "fields": [
         {
           "type": "string_id",
           "name": "string_id^"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14481d200"
     },
-    "megalo_string_id_to_sprite_index_block_4": {
-      "guid": "fc7d7ac94548adf8cbb51980adfdc6c6",
+    "megalo_string_id_to_sprite_index_block": {
+      "guid": "c97a7dfc4845f8adcbb51980adfdc6c6",
       "size": 8,
+      "size_string": "sizeof(MegaloStringIdSpriteMappingTableDefinition)",
       "fields": [
         {
           "type": "long_integer",
@@ -68,39 +80,39 @@
           "name": "loadout menu sprite frame"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14481d330"
     },
-    "megalo_string_id_table_struct_definition_1": {
-      "guid": "42085d075968a85544fb2b3ef2a2fdfa",
-      "size": 72,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "megalo string_ids",
-          "definition": "megalo_string_id_block_3"
-        },
-        {
-          "type": "block",
-          "name": "megalo string_ids sprite mapping",
-          "definition": "megalo_string_id_to_sprite_index_block_4"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

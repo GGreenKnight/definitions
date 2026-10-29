@@ -1,50 +1,96 @@
 {
   "name": "lua",
-  "tag": "hsc_",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "tag": "hsc*",
+  "version": 1,
+  "flags": 6146,
+  "parent_tag": "aTag",
+  "block": "SCRIPT_FILE_EXTENSION_RAW_block",
   "blocks": {
-    "hs_references_block_4": {
-      "max_count": 1024,
-      "struct": "hs_references_block_4"
-    },
-    "hs_name_hashes_block_5": {
-      "max_count": 1024,
-      "struct": "hs_name_hashes_block_5"
-    },
-    "root": {
+    "SCRIPT_FILE_EXTENSION_RAW_block": {
       "max_count": 1,
-      "struct": "lua_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "SCRIPT_FILE_EXTENSION_RAW_block_struct"
+    },
+    "hs_references_block": {
+      "max_count": 1024,
+      "max_count_string": "k_maximum_hs_references_per_context",
+      "struct": "hs_references_block"
+    },
+    "hs_name_hashes_block": {
+      "max_count": 1024,
+      "max_count_string": "k_maximum_hs_references_per_context",
+      "struct": "hs_name_hashes_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "SCRIPT_FILE_EXTENSION_RAW_block_struct": {
+      "guid": "359c8bd4614ec9a507c777b4a7738ca8",
+      "size": 136,
+      "size_string": "(sizeof(HsSourceFileTag) - Tag::SizeInfo<HsSourceFileTag::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "struct",
+          "name": "source file",
+          "definition": "hs_source_files_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144774a50"
+    },
+    "hs_source_files_struct": {
+      "guid": "831506cb30418c07c3da1da23213725c",
+      "size": 120,
+      "size_string": "sizeof(hs_source_file)",
+      "fields": [
+        {
+          "type": "data",
+          "name": "source*",
+          "definition": "hs_source_data_definition"
+        },
+        {
+          "type": "block",
+          "name": "references*",
+          "definition": "hs_references_block"
+        },
+        {
+          "type": "block",
+          "name": "name hashes*",
+          "definition": "hs_name_hashes_block"
+        },
+        {
+          "type": "tag_reference",
+          "name": "prototype script*",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "hsc*"
+            ]
+          }
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1447330a0"
     },
-    "hs_references_block_4": {
-      "guid": "d5081a5a49b0aaae215cdda38b1a4c98",
+    "hs_references_block": {
+      "guid": "5a1a08d5b049aeaa215cdda38b1a4c98",
       "size": 32,
+      "size_string": "sizeof(s_tag_reference)",
       "fields": [
         {
           "type": "tag_reference",
@@ -55,86 +101,63 @@
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144732e50"
     },
-    "hs_name_hashes_block_5": {
-      "guid": "747462124042bb674741c0befe85efc6",
+    "hs_name_hashes_block": {
+      "guid": "12627474424067bb4741c0befe85efc6",
       "size": 8,
+      "size_string": "sizeof(uint64)",
       "fields": [
         {
           "type": "int64_integer",
           "name": "hash*"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144732f80"
     },
-    "source_file_3": {
-      "guid": "cb0615834130078cc3da1da23213725c",
-      "size": 120,
-      "fields": [
-        {
-          "type": "data",
-          "name": "source*",
-          "definition": "tag_data"
-        },
-        {
-          "type": "block",
-          "name": "references*",
-          "definition": "hs_references_block_4"
-        },
-        {
-          "type": "block",
-          "name": "name hashes*",
-          "definition": "hs_name_hashes_block_5"
-        },
-        {
-          "type": "tag_reference",
-          "name": "prototype script*",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "lua_struct_definition_1": {
-      "guid": "93e783d0143260cca2fddcd1b2e88104",
-      "size": 136,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "struct",
-          "name": "source file",
-          "definition": "source_file_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
   "datas": {
-    "tag_data": {}
+    "hs_source_data_definition": {
+      "alignment": 2,
+      "flags": 0,
+      "max_size": 1048576,
+      "max_size_string": "k_maximum_hs_source_data_per_file"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

@@ -2,131 +2,31 @@
   "name": "SpartanAbilityComponentDefinition",
   "tag": "spab",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "SpartanAbilityComponentDefinition_block",
   "blocks": {
-    "root": {
+    "SpartanAbilityComponentDefinition_block": {
       "max_count": 1,
-      "struct": "SpartanAbilityComponentDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "SpartanAbilityComponentDefinition_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "recharge_base_duration_seconds_amount_of_time_it_takes_to_fully_charge_energy_from_empty_3": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "recharge_base_duration_seconds_amount_of_time_it_takes_to_fully_charge_energy_from_empty_3_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "recharge_base_delay_seconds_time_that_elapses_after_last_ability_use_before_recharging_begins_4": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "recharge_base_delay_seconds_time_that_elapses_after_last_ability_use_before_recharging_begins_4_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "activation_energy_cost_scalar_scales_how_much_energy_activating_any_ability_that_requires_energy_to_activate_consumes_5": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "activation_energy_cost_scalar_scales_how_much_energy_activating_any_ability_that_requires_energy_to_activate_consumes_5_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "SpartanAbilityComponentDefinition_struct_definition_1": {
-      "guid": "3dfa2f56eb57d260ba3d5ed875fd7701",
+    "SpartanAbilityComponentDefinition_block_struct": {
+      "guid": "4061b9d111496d7c9456e6b253b78bef",
       "size": 344,
+      "size_string": "(sizeof(SpartanAbilityComponentDefinition) - Tag::SizeInfo<SpartanAbilityComponentDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
         },
         {
           "type": "real",
@@ -138,37 +38,47 @@
         },
         {
           "type": "custom",
-          "name": "recharge base duration:seconds#amount of time it takes to fully charge energy from empty"
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "custom",
+          "name": "recharge base duration:seconds#amount of time it takes to fully charge energy from empty",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "recharge base duration:seconds#amount of time it takes to fully charge energy from empty",
-          "definition": "recharge_base_duration_seconds_amount_of_time_it_takes_to_fully_charge_energy_from_empty_3"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "recharge base delay:seconds#time that elapses after last ability use before recharging begins"
+          "name": "recharge base delay:seconds#time that elapses after last ability use before recharging begins",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "recharge base delay:seconds#time that elapses after last ability use before recharging begins",
-          "definition": "recharge_base_delay_seconds_time_that_elapses_after_last_ability_use_before_recharging_begins_4"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "activation energy cost scalar#scales how much energy activating any ability that requires energy to activate consumes"
+          "name": "activation energy cost scalar#scales how much energy activating any ability that requires energy to activate consumes",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "activation energy cost scalar#scales how much energy activating any ability that requires energy to activate consumes",
-          "definition": "activation_energy_cost_scalar_scales_how_much_energy_activating_any_ability_that_requires_energy_to_activate_consumes_5"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "tag_reference",
           "name": "ability activation failure effect#effect played when an ability wants to activate but fails to do so (usually due to inadequate energy)",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -176,7 +86,9 @@
           "name": "overheat effect#effects triggered when thrusters overheat",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -184,7 +96,9 @@
           "name": "cooldown effect#effects triggered when thrusters cooldown",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -204,7 +118,9 @@
           "name": "evade ref",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "saev"
+            ]
           }
         },
         {
@@ -212,7 +128,9 @@
           "name": "stabilizer ref",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "sast"
+            ]
           }
         },
         {
@@ -220,7 +138,9 @@
           "name": "shoulder bash ref",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "sasb"
+            ]
           }
         },
         {
@@ -228,7 +148,9 @@
           "name": "ground pound ref",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "sagp"
+            ]
           }
         },
         {
@@ -236,7 +158,9 @@
           "name": "sprint ref",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "sasp"
+            ]
           }
         },
         {
@@ -245,29 +169,67 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449c2a90"
+    },
+    "MalleablePropertyBaseFloatStruct": {
+      "guid": "a1b4d8f8e64063dbbb8cea978b2eae63",
+      "size": 16,
+      "size_string": "sizeof(i343::MalleableProperty::BaseDefinition<float>)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "MalleablePropertyCombiner"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447369c0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "recharge_base_duration_seconds_amount_of_time_it_takes_to_fully_charge_energy_from_empty_3_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "recharge_base_delay_seconds_time_that_elapses_after_last_ability_use_before_recharging_begins_4_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "activation_energy_cost_scalar_scales_how_much_energy_activating_any_ability_that_requires_energy_to_activate_consumes_5_options_2": {
+    "MalleablePropertyCombiner": {
       "options": [
         "sequential#applies the percentages one after another on the base",
         "total percentage#adds up all of the percentages and applies them to the base",
@@ -276,5 +238,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

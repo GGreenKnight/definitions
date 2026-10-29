@@ -2,177 +2,51 @@
   "name": "prototype_requisition_card",
   "tag": "rpcd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "prototype_requisition_card_block",
   "blocks": {
-    "prototype_requisition_card_loadout_part_3": {
+    "prototype_requisition_card_block": {
       "max_count": 1,
-      "struct": "prototype_requisition_card_loadout_part_3"
+      "max_count_string": "1",
+      "struct": "prototype_requisition_card_block_struct"
     },
-    "prototype_requisition_deployable_block_5": {
+    "prototype_requisition_card_loadout_part": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "prototype_requisition_card_loadout_part_struct"
+    },
+    "prototype_requisition_card_consumable_part": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "prototype_requisition_card_consumable_part_struct"
+    },
+    "prototype_requisition_deployable_block": {
       "max_count": 4,
-      "struct": "prototype_requisition_deployable_block_5"
+      "max_count_string": "4",
+      "struct": "prototype_requisition_deployable_block_struct"
     },
-    "prototype_requisition_random_card_slot_part_6": {
+    "prototype_requisition_random_card_slot_part": {
       "max_count": 50,
-      "struct": "prototype_requisition_random_card_slot_part_6"
+      "max_count_string": "50",
+      "struct": "prototype_requisition_random_card_slot_part_struct"
     },
-    "prototype_requisition_card_consumable_part_4": {
+    "prototype_requisition_card_cosmetic_part": {
       "max_count": 1,
-      "struct": "prototype_requisition_card_consumable_part_4"
-    },
-    "prototype_requisition_card_cosmetic_part_7": {
-      "max_count": 1,
-      "struct": "prototype_requisition_card_cosmetic_part_7"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "prototype_requisition_card_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "prototype_requisition_card_cosmetic_part_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_card_loadout_part_3": {
-      "guid": "668ccc654e4a270bea9c8c9ebfe5ba31",
-      "size": 36,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "deployable",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "byte_flags",
-          "name": "slots",
-          "definition": "prototype_requisition_card_loadout_part_3_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_deployable_block_5": {
-      "guid": "dbffc8304860400dbaaa15af3e65dc67",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "deployable^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_random_card_slot_part_6": {
-      "guid": "83526ab497587dc1af6458970251b279",
-      "size": 36,
-      "fields": [
-        {
-          "type": "real",
-          "name": "weight"
-        },
-        {
-          "type": "tag_reference",
-          "name": "card",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_card_consumable_part_4": {
-      "guid": "1899a02a483354be393a03bbbff214c5",
-      "size": 60,
-      "fields": [
-        {
-          "type": "block",
-          "name": "deployables",
-          "definition": "prototype_requisition_deployable_block_5"
-        },
-        {
-          "type": "real",
-          "name": "consumable cooldown"
-        },
-        {
-          "type": "block",
-          "name": "random cards",
-          "definition": "prototype_requisition_random_card_slot_part_6"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_card_cosmetic_part_7": {
-      "guid": "5201e29742c72dcc8eedf6bfa0896a12",
-      "size": 4,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "cosmetic slot",
-          "definition": "prototype_requisition_card_cosmetic_part_7_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "prototype_requisition_card_struct_definition_1": {
-      "guid": "ba0d81581e77ae3e15b3ec0a06d85fc7",
+    "prototype_requisition_card_block_struct": {
+      "guid": "474019eb9d405ce0e2a793ad2980b500",
       "size": 504,
+      "size_string": "(sizeof(PrototypeRequisitionCardDefinition) - Tag::SizeInfo<PrototypeRequisitionCardDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "string",
@@ -187,7 +61,9 @@
           "name": "icon bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -199,7 +75,9 @@
           "name": "small icon bitmap",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -211,18 +89,20 @@
           "name": "category",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "rpca"
+            ]
           }
         },
         {
           "type": "char_enum",
           "name": "rarity{tier}",
-          "definition": "prototype_requisition_card_struct_definition_1_options_9"
+          "definition": "cardTierEnumField"
         },
         {
           "type": "char_enum",
           "name": "type",
-          "definition": "prototype_requisition_card_struct_definition_1_options_10"
+          "definition": "cardTypeEnumField"
         },
         {
           "type": "char_integer",
@@ -235,7 +115,7 @@
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "prototype_requisition_card_struct_definition_1_options_13"
+          "definition": "cardFlagsField"
         },
         {
           "type": "pad",
@@ -245,17 +125,17 @@
         {
           "type": "block",
           "name": "loadout properties",
-          "definition": "prototype_requisition_card_loadout_part_3"
+          "definition": "prototype_requisition_card_loadout_part"
         },
         {
           "type": "block",
           "name": "consumable properties",
-          "definition": "prototype_requisition_card_consumable_part_4"
+          "definition": "prototype_requisition_card_consumable_part"
         },
         {
           "type": "block",
           "name": "cosmetic properties",
-          "definition": "prototype_requisition_card_cosmetic_part_7"
+          "definition": "prototype_requisition_card_cosmetic_part"
         },
         {
           "type": "pad",
@@ -263,13 +143,165 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144748b50"
+    },
+    "prototype_requisition_card_loadout_part_struct": {
+      "guid": "65cc8c664a4e0b27ea9c8c9ebfe5ba31",
+      "size": 36,
+      "size_string": "sizeof(PrototypeRequisitionCardDefinitionLoadoutPart)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "deployable",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rbdd"
+            ]
+          }
+        },
+        {
+          "type": "byte_flags",
+          "name": "slots",
+          "definition": "loadoutSlotFlagsField"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447486f0"
+    },
+    "prototype_requisition_card_consumable_part_struct": {
+      "guid": "2aa099183348be54393a03bbbff214c5",
+      "size": 60,
+      "size_string": "sizeof(PrototypeRequisitionCardDefinitionConsumablePart)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "deployables",
+          "definition": "prototype_requisition_deployable_block"
+        },
+        {
+          "type": "real",
+          "name": "consumable cooldown"
+        },
+        {
+          "type": "block",
+          "name": "random cards",
+          "definition": "prototype_requisition_random_card_slot_part"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144748920"
+    },
+    "prototype_requisition_deployable_block_struct": {
+      "guid": "30c8ffdb60480d40baaa15af3e65dc67",
+      "size": 32,
+      "size_string": "sizeof(Tag::Reference<i343::RequisitionBackend::RequisitionDeployableDefinition>)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "deployable^",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rbdd"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447485d0"
+    },
+    "prototype_requisition_random_card_slot_part_struct": {
+      "guid": "b46a52835897c17daf6458970251b279",
+      "size": 36,
+      "size_string": "sizeof(PrototypeRandomCardSlotPart)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "weight"
+        },
+        {
+          "type": "tag_reference",
+          "name": "card",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "rpcd"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144748800"
+    },
+    "prototype_requisition_card_cosmetic_part_struct": {
+      "guid": "97e20152c742cc2d8eedf6bfa0896a12",
+      "size": 4,
+      "size_string": "sizeof(PrototypeRequisitionCardDefinitionCosmeticPart)",
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "cosmetic slot",
+          "definition": "cosmeticSlotField"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144748a30"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "prototype_requisition_card_struct_definition_1_options_9": {
+    "cardTierEnumField": {
       "options": [
         "Common",
         "Uncommon",
@@ -278,7 +310,7 @@
         "Ultra Rare"
       ]
     },
-    "prototype_requisition_card_struct_definition_1_options_10": {
+    "cardTypeEnumField": {
       "options": [
         "Consumable",
         "Loadout",
@@ -289,12 +321,12 @@
         "Random - DO NOT USE"
       ]
     },
-    "prototype_requisition_card_struct_definition_1_options_13": {
+    "cardFlagsField": {
       "options": [
         "Is Legendary"
       ]
     },
-    "prototype_requisition_card_loadout_part_3_options_1": {
+    "loadoutSlotFlagsField": {
       "options": [
         "Primary",
         "Secondary",
@@ -302,7 +334,7 @@
         "Vehicle"
       ]
     },
-    "prototype_requisition_card_cosmetic_part_7_options_0": {
+    "cosmeticSlotField": {
       "options": [
         "Helmet",
         "Body",
@@ -315,5 +347,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

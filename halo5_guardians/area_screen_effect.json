@@ -1,166 +1,59 @@
 {
   "name": "area_screen_effect",
   "tag": "sefc",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "area_screen_effect_block",
   "blocks": {
-    "single_screen_effect_3": {
-      "max_count": 8,
-      "struct": "single_screen_effect_3"
-    },
-    "root": {
+    "area_screen_effect_block": {
       "max_count": 1,
-      "struct": "area_screen_effect_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "area_screen_effect_block_struct"
+    },
+    "single_screen_effect": {
+      "max_count": 8,
+      "max_count_string": "s_area_screen_effect_definition::k_maximum_effects_per_tag",
+      "struct": "single_screen_effect"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "distance_falloff_4": {
-      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
-      "size": 28,
+    "area_screen_effect_block_struct": {
+      "guid": "d49550e24643e857abb715aa1e098880",
+      "size": 48,
+      "size_string": "(sizeof(s_area_screen_effect_definition) - Tag::SizeInfo<s_area_screen_effect_definition::ParentType>::k_tagSize)",
       "fields": [
         {
           "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_5"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "terminator"
+          "type": "word_flags",
+          "name": "global flags",
+          "definition": "area_screen_effect_global_flags_definition"
+        },
+        {
+          "type": "word_flags",
+          "name": "global hidden flags!",
+          "definition": "area_screen_effect_global_hidden_flags_definition"
+        },
+        {
+          "type": "block",
+          "name": "screen effects",
+          "definition": "single_screen_effect"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14471c3b0"
     },
-    "Mapping_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "time_falloff_6": {
-      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_7"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "angle_falloff_8": {
-      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_11": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "object_falloff_10": {
-      "guid": "92c128e646654b427b70e1801ddb6cce",
-      "size": 36,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Input Variable!"
-        },
-        {
-          "type": "string_id",
-          "name": "Range Variable!"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_11"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "single_screen_effect_3": {
-      "guid": "2e559b3646a74e35291eaea19f23aa90",
+    "single_screen_effect": {
+      "guid": "369b552ea746354e291eaea19f23aa90",
       "size": 344,
+      "size_string": "sizeof(s_single_screen_effect_definition)",
       "fields": [
         {
           "type": "string_id",
@@ -169,16 +62,17 @@
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "single_screen_effect_3_options_1"
+          "definition": "area_screen_effect_flags_definition"
         },
         {
           "type": "word_flags",
           "name": "hidden flags!",
-          "definition": "single_screen_effect_3_options_2"
+          "definition": "area_screen_effect_hidden_flags_definition"
         },
         {
-          "type": "custom",
-          "name": "DISTANCE FALLOFF"
+          "type": "explanation",
+          "name": "DISTANCE FALLOFF",
+          "definition": "controls the maximum distance and the distance falloff of this effect\nNOTE: not used for scenario global effects"
         },
         {
           "type": "real",
@@ -187,11 +81,12 @@
         {
           "type": "struct",
           "name": "distance falloff",
-          "definition": "distance_falloff_4"
+          "definition": "screen_effect_scalar_function_struct"
         },
         {
-          "type": "custom",
-          "name": "TIME EVOLUTION"
+          "type": "explanation",
+          "name": "TIME EVOLUTION",
+          "definition": "controls the lifetime and time falloff of this effect\nNOTE: not used for scenario global effects"
         },
         {
           "type": "real",
@@ -204,36 +99,41 @@
         {
           "type": "struct",
           "name": "time falloff",
-          "definition": "time_falloff_6"
+          "definition": "screen_effect_scalar_function_struct"
         },
         {
-          "type": "custom",
-          "name": "ANGLE FALLOFF"
+          "type": "explanation",
+          "name": "ANGLE FALLOFF",
+          "definition": "controls the falloff of this effect based on how close you are to looking directly at it\nNOTE: not used for scenario global effects"
         },
         {
           "type": "struct",
           "name": "angle falloff",
-          "definition": "angle_falloff_8"
+          "definition": "screen_effect_scalar_function_struct"
         },
         {
-          "type": "custom",
-          "name": "OBJECT FALLOFF"
+          "type": "explanation",
+          "name": "OBJECT FALLOFF",
+          "definition": "applies a falloff based on an object function - ignored if the effect is not attached to an object"
         },
         {
           "type": "struct",
           "name": "object falloff",
-          "definition": "object_falloff_10"
+          "definition": "screen_effect_scalar_object_function_struct"
         },
         {
-          "type": "custom",
-          "name": "EFFECTS"
+          "type": "explanation",
+          "name": "EFFECTS",
+          "definition": "a selection of effects to choose from\nin the case of overlapping effects, the maximum will be taken"
         },
         {
           "type": "tag_reference",
           "name": "color grading look-up-texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -349,50 +249,114 @@
           "name": "shader effect#applies this shader to the entire screen",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "mat "
+            ]
           }
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14471c2a0"
     },
-    "area_screen_effect_struct_definition_1": {
-      "guid": "0809399aa7a701a297d3bb9b0aee0df6",
-      "size": 48,
+    "screen_effect_scalar_function_struct": {
+      "guid": "b8c2d2d25943d2a3d87d128dd8f3b77e",
+      "size": 28,
+      "size_string": "sizeof(s_screen_effect_scalar_function)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471c050"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "screen_effect_scalar_object_function_struct": {
+      "guid": "e628c1926546424b7b70e1801ddb6cce",
+      "size": 36,
+      "size_string": "sizeof(FunctionDefinitionWithInputs)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471c160"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "word_flags",
-          "name": "global flags",
-          "definition": "area_screen_effect_struct_definition_1_options_2"
-        },
-        {
-          "type": "word_flags",
-          "name": "global hidden flags!",
-          "definition": "area_screen_effect_struct_definition_1_options_3"
-        },
-        {
-          "type": "block",
-          "name": "screen effects",
-          "definition": "single_screen_effect_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "area_screen_effect_struct_definition_1_options_2": {
+    "area_screen_effect_global_flags_definition": {
       "options": [
         "play sequentially - ignore delay settings",
         "debug this screen effect",
@@ -401,13 +365,13 @@
         "force looping (dangerous; lasts forever)"
       ]
     },
-    "area_screen_effect_struct_definition_1_options_3": {
+    "area_screen_effect_global_hidden_flags_definition": {
       "options": [
         "update thread",
         "render thread"
       ]
     },
-    "single_screen_effect_3_options_1": {
+    "area_screen_effect_flags_definition": {
       "options": [
         "debug disable",
         "allow effect outside radius",
@@ -420,7 +384,7 @@
         "use player travel direction"
       ]
     },
-    "single_screen_effect_3_options_2": {
+    "area_screen_effect_hidden_flags_definition": {
       "options": [
         "update thread",
         "render thread"
@@ -428,6 +392,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

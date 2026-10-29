@@ -2,125 +2,128 @@
   "name": "PlayerGlobalsDefinition",
   "tag": "glpa",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "PlayerGlobalsDefinition_block",
   "blocks": {
-    "player_information_block_3": {
-      "max_count": 3,
-      "struct": "player_information_block_3"
-    },
-    "CameraGlobalsBlockDefinition_6": {
+    "PlayerGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "CameraGlobalsBlockDefinition_6"
+      "max_count_string": "1",
+      "struct": "PlayerGlobalsDefinition_block_struct"
     },
-    "firstPersonpHiddenBodyRegionsBlock_14": {
+    "player_information_block": {
+      "max_count": 3,
+      "max_count_string": "k_player_character_type_count",
+      "struct": "player_information_block"
+    },
+    "CameraGlobalsBlockDefinition": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "CameraGlobalsBlockDefinition"
+    },
+    "player_representation_block": {
+      "max_count": 3,
+      "max_count_string": "k_player_character_type_count",
+      "struct": "player_representation_block"
+    },
+    "firstPersonpHiddenBodyRegionsBlock": {
       "max_count": 32,
-      "struct": "firstPersonpHiddenBodyRegionsBlock_14"
+      "max_count_string": "32",
+      "struct": "firstPersonpHiddenBodyRegionsBlock"
     },
-    "firstPersonpHiddenBodyRegionsBlock_17": {
-      "max_count": 32,
-      "struct": "firstPersonpHiddenBodyRegionsBlock_17"
+    "CoopTeamRepresentationBlock": {
+      "max_count": 3,
+      "max_count_string": "static_cast<long>(CoopCharacterTeams::count)",
+      "struct": "CoopTeamRepresentationBlock"
     },
-    "CoopCharacterRepresentationBlock_16": {
+    "CoopCharacterRepresentationBlock": {
       "max_count": 4,
-      "struct": "CoopCharacterRepresentationBlock_16"
+      "max_count_string": "4",
+      "struct": "CoopCharacterRepresentationBlock"
     },
-    "CoopTeamRepresentationBlock_15": {
-      "max_count": 3,
-      "struct": "CoopTeamRepresentationBlock_15"
-    },
-    "player_representation_block_13": {
-      "max_count": 3,
-      "struct": "player_representation_block_13"
-    },
-    "player_traits_vitality_block_19": {
+    "game_engine_player_traits_block": {
       "max_count": 1,
-      "struct": "player_traits_vitality_block_19"
+      "max_count_string": "1",
+      "struct": "game_engine_player_traits_block"
     },
-    "grenade_block_21": {
+    "player_traits_vitality_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "player_traits_vitality_block"
+    },
+    "player_traits_weapons_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "player_traits_weapons_block"
+    },
+    "grenade_block": {
       "max_count": 16,
-      "struct": "grenade_block_21"
+      "max_count_string": "16",
+      "struct": "grenade_block"
     },
-    "player_traits_weapons_block_20": {
+    "player_traits_movement_block": {
       "max_count": 1,
-      "struct": "player_traits_weapons_block_20"
+      "max_count_string": "1",
+      "struct": "player_traits_movement_block"
     },
-    "player_traits_movement_block_22": {
+    "player_traits_appearance_block": {
       "max_count": 1,
-      "struct": "player_traits_movement_block_22"
+      "max_count_string": "1",
+      "struct": "player_traits_appearance_block"
     },
-    "player_traits_appearance_block_23": {
+    "player_traits_sensors_block": {
       "max_count": 1,
-      "struct": "player_traits_appearance_block_23"
-    },
-    "player_traits_sensors_block_24": {
-      "max_count": 1,
-      "struct": "player_traits_sensors_block_24"
-    },
-    "game_engine_player_traits_block_18": {
-      "max_count": 1,
-      "struct": "game_engine_player_traits_block_18"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "PlayerGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "player_traits_sensors_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "grenade_aiming_determines_the_distance_along_the_aiming_vector_to_orient_the_grenade_based_on_the_camera_pitch_4": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
+    "PlayerGlobalsDefinition_block_struct": {
+      "guid": "dd47af89dc478ab31468299d524719af",
+      "size": 224,
+      "size_string": "(sizeof(i343::PlayerGlobals) - Tag::SizeInfo<i343::PlayerGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
           "type": "struct",
-          "name": "function",
-          "definition": "function_5"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "@player information",
+          "definition": "player_information_block"
+        },
+        {
+          "type": "block",
+          "name": "@player camera",
+          "definition": "CameraGlobalsBlockDefinition"
+        },
+        {
+          "type": "block",
+          "name": "@player representation",
+          "definition": "player_representation_block"
+        },
+        {
+          "type": "block",
+          "name": "default player traits",
+          "definition": "game_engine_player_traits_block"
+        },
+        {
+          "type": "struct",
+          "name": "player malleable properties",
+          "definition": "PlayerProperties"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482c490"
     },
-    "player_information_block_3": {
-      "guid": "45af4745477d4d242c7005a2e7ebcae5",
+    "player_information_block": {
+      "guid": "4547af457d47244d2c7005a2e7ebcae5",
       "size": 336,
+      "size_string": "sizeof(s_game_globals_player_information)",
       "fields": [
         {
           "type": "real",
@@ -189,7 +192,7 @@
         {
           "type": "struct",
           "name": "grenade aiming#determines the distance along the aiming vector to orient the grenade based on the camera pitch",
-          "definition": "grenade_aiming_determines_the_distance_along_the_aiming_vector_to_orient_the_grenade_based_on_the_camera_pitch_4"
+          "definition": "scalar_function_named_struct"
         },
         {
           "type": "real_bounds",
@@ -203,16 +206,20 @@
           "type": "tag_reference",
           "name": "coop countdown sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "coop respawn sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
@@ -220,7 +227,9 @@
           "name": "coop respawn effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -228,7 +237,9 @@
           "name": "hologram death effect",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "effe"
+            ]
           }
         },
         {
@@ -243,16 +254,20 @@
           "type": "tag_reference",
           "name": "night vision on{flashlight on}",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "night vision off{flashlight off}",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
@@ -276,400 +291,205 @@
           "name": "fire team cone angle: in degrees"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482ecb0"
     },
-    "pitch_values_7": {
-      "guid": "ae0596e725e7b3cae232c51fffbe8ce3",
-      "size": 40,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "yaw_values_8": {
-      "guid": "3b480f4069fea2648db81f6e9945a67b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "flying_camera_pitch_values_9": {
-      "guid": "7a0fe9ef6964e06f7abf174a2a66dd31",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "flying_camera_yaw_values_10": {
-      "guid": "0440dc2efdcd5a3044488b1bdc1ab800",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "Angular velocity#degrees per second"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "flying_camera_speed_values_11": {
-      "guid": "b186a081e2afc595dd7197ed08d3136a",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Speed"
-        },
-        {
-          "type": "real",
-          "name": "Speed"
-        },
-        {
-          "type": "real",
-          "name": "Speed"
-        },
-        {
-          "type": "real",
-          "name": "Speed"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "flying_camera_thrust_values_12": {
-      "guid": "dec3164cb133beee3d5a110e281f854f",
-      "size": 12,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Thrust"
-        },
-        {
-          "type": "real",
-          "name": "Thrust"
-        },
-        {
-          "type": "real",
-          "name": "Thrust"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "CameraGlobalsBlockDefinition_6": {
-      "guid": "4c73792c41f6c46744aa4a8d794cbb50",
-      "size": 140,
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
       "fields": [
         {
           "type": "custom",
-          "name": "Pitch values"
+          "name": null
         },
         {
           "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "CameraGlobalsBlockDefinition": {
+      "guid": "2c79734cf64167c444aa4a8d794cbb50",
+      "size": 140,
+      "size_string": "sizeof(i343::Players::CameraGlobals)",
+      "fields": [
+        {
+          "type": "explanation",
+          "name": "Pitch values",
+          "definition": "How fast the first person camera rotates up and down based on the sensitivity preference"
+        },
+        {
+          "type": "array",
           "name": "pitch values",
-          "definition": "pitch_values_7"
+          "definition": "LookSensitivityArrayDefinition"
         },
         {
-          "type": "custom",
-          "name": "Yaw values"
+          "type": "explanation",
+          "name": "Yaw values",
+          "definition": "How fast the first person camera rotates left and right based on the sensitivity preference"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "yaw values",
-          "definition": "yaw_values_8"
+          "definition": "LookSensitivityArrayDefinition"
         },
         {
-          "type": "custom",
-          "name": "Flying camera pitch values"
+          "type": "explanation",
+          "name": "Flying camera pitch values",
+          "definition": "How fast the flying person camera rotates up and down based on the sensitivity preference"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "flying camera pitch values",
-          "definition": "flying_camera_pitch_values_9"
+          "definition": "FlyingLookSensitivityArrayDefinition"
         },
         {
-          "type": "custom",
-          "name": "Flying camera yaw values"
+          "type": "explanation",
+          "name": "Flying camera yaw values",
+          "definition": "How fast the flying person camera rotates left and right based on the sensitivity preference"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "flying camera yaw values",
-          "definition": "flying_camera_yaw_values_10"
+          "definition": "FlyingLookSensitivityArrayDefinition"
         },
         {
-          "type": "custom",
-          "name": "Flying camera speed values"
+          "type": "explanation",
+          "name": "Flying camera speed values",
+          "definition": "Scales movement speed"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "flying camera speed values",
-          "definition": "flying_camera_speed_values_11"
+          "definition": "FlyingSpeedArrayDefinition"
         },
         {
-          "type": "custom",
-          "name": "Flying camera thrust values"
+          "type": "explanation",
+          "name": "Flying camera thrust values",
+          "definition": "Scales thrust speed"
         },
         {
-          "type": "struct",
+          "type": "array",
           "name": "flying camera thrust values",
-          "definition": "flying_camera_thrust_values_12"
+          "definition": "FlyingThrustArrayDefinition"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448320b0"
     },
-    "firstPersonpHiddenBodyRegionsBlock_14": {
-      "guid": "b6c7f81f4d112d748fb3a99cc52bf350",
-      "size": 8,
+    "LookSensitivityArrayDefinition": {
+      "guid": "2410ceb62c42a85f3ac7c6921852d1d1",
+      "size": 4,
+      "size_string": "sizeof(float)",
       "fields": [
         {
-          "type": "string_id",
-          "name": "hidden region^"
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
         },
         {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "firstPersonpHiddenBodyRegionsBlock_14_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144831bf0"
     },
-    "firstPersonpHiddenBodyRegionsBlock_17": {
-      "guid": "b6c7f81f4d112d748fb3a99cc52bf350",
-      "size": 8,
+    "FlyingLookSensitivityArrayDefinition": {
+      "guid": "359688b604401fb40d70a18dfa3dcec9",
+      "size": 4,
+      "size_string": "sizeof(float)",
       "fields": [
         {
-          "type": "string_id",
-          "name": "hidden region^"
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
         },
         {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "firstPersonpHiddenBodyRegionsBlock_17_options_1"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144831d20"
     },
-    "CoopCharacterRepresentationBlock_16": {
-      "guid": "1a65f8581d94bd46df48b6e81d52a380",
-      "size": 140,
+    "FlyingSpeedArrayDefinition": {
+      "guid": "adb339f5fc468b5596638492cfb342e8",
+      "size": 4,
+      "size_string": "sizeof(float)",
       "fields": [
         {
-          "type": "tag_reference",
-          "name": "character first person hands model",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
+          "type": "real",
+          "name": "Speed"
         },
         {
-          "type": "string_id",
-          "name": "character first person hands variant name"
-        },
-        {
-          "type": "tag_reference",
-          "name": "character first person body (legs) model",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "string_id",
-          "name": "character first person body (legs) variant name"
-        },
-        {
-          "type": "tag_reference",
-          "name": "character third person unit",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "string_id",
-          "name": "character third person unit variant name"
-        },
-        {
-          "type": "char_enum",
-          "name": "character avatar name",
-          "definition": "CoopCharacterRepresentationBlock_16_options_6"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 3
-        },
-        {
-          "type": "block",
-          "name": "hidden regions override#Applied to the first person body (legs) model. If this is left empty, will use the global hidden fpBody regions defined in playerglobals instead.",
-          "definition": "firstPersonpHiddenBodyRegionsBlock_17"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144831e50"
     },
-    "CoopTeamRepresentationBlock_15": {
-      "guid": "b17a8ec31a80b7ab14ca66bbf54bf982",
-      "size": 32,
+    "FlyingThrustArrayDefinition": {
+      "guid": "1ab3ca074846d37f84e1dca1e3cb5b82",
+      "size": 4,
+      "size_string": "sizeof(float)",
       "fields": [
         {
-          "type": "long_enum",
-          "name": "Fireteam type",
-          "definition": "CoopTeamRepresentationBlock_15_options_0"
+          "type": "real",
+          "name": "Thrust"
         },
         {
-          "type": "block",
-          "name": "Coop player representation#The visual representation a character in the fireteam",
-          "definition": "CoopCharacterRepresentationBlock_16"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144831f80"
     },
-    "player_representation_block_13": {
-      "guid": "4f35e23a43d1facb26d7c690b796c449",
+    "player_representation_block": {
+      "guid": "3ae2354fd143cbfa26d7c690b796c449",
       "size": 268,
+      "size_string": "sizeof(s_game_globals_player_representation)",
       "fields": [
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "player_representation_block_13_options_0"
+          "definition": "player_representation_flags"
         },
         {
           "type": "pad",
@@ -681,7 +501,9 @@
           "name": "hud screen reference",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "cusc"
+            ]
           }
         },
         {
@@ -689,7 +511,9 @@
           "name": "first person hands model",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "hlmt"
+            ]
           }
         },
         {
@@ -701,7 +525,9 @@
           "name": "first person body model",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "hlmt"
+            ]
           }
         },
         {
@@ -711,14 +537,16 @@
         {
           "type": "block",
           "name": "hidden fpBody regions",
-          "definition": "firstPersonpHiddenBodyRegionsBlock_14"
+          "definition": "firstPersonpHiddenBodyRegionsBlock"
         },
         {
           "type": "tag_reference",
           "name": "third person unit",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "unit"
+            ]
           }
         },
         {
@@ -729,44 +557,207 @@
           "type": "tag_reference",
           "name": "binoculars zoom in sound",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
           "type": "tag_reference",
           "name": "binoculars zoom out sounds",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 8,
+            "allowed": [
+              "snd!"
+            ]
           }
         },
         {
-          "type": "long_integer",
-          "name": "player information"
+          "type": "long_block_index",
+          "name": "player information",
+          "definition": "player_information_block"
         },
         {
           "type": "block",
           "name": "Coop teams#The visual representation for the coop fireteams in campaign",
-          "definition": "CoopTeamRepresentationBlock_15"
+          "definition": "CoopTeamRepresentationBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14482f170"
     },
-    "player_traits_vitality_block_19": {
-      "guid": "8f23b52b46507e5674d26ebde86fa6d5",
+    "firstPersonpHiddenBodyRegionsBlock": {
+      "guid": "1ff8c7b6114d742d8fb3a99cc52bf350",
+      "size": 8,
+      "size_string": "sizeof(FirstPersonHiddenBodyRegion)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "hidden region^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "FpBodyRegionFlags"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14482ede0"
+    },
+    "CoopTeamRepresentationBlock": {
+      "guid": "c38e7ab1801aabb714ca66bbf54bf982",
+      "size": 32,
+      "size_string": "sizeof(CoopCharacterTeamRepresentation)",
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "Fireteam type",
+          "definition": "coopCharacterTeamEnum"
+        },
+        {
+          "type": "block",
+          "name": "Coop player representation#The visual representation a character in the fireteam",
+          "definition": "CoopCharacterRepresentationBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14482f040"
+    },
+    "CoopCharacterRepresentationBlock": {
+      "guid": "58f8651a941d46bddf48b6e81d52a380",
+      "size": 140,
+      "size_string": "sizeof(CoopCharacterRepresentation)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "character first person hands model",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "hlmt"
+            ]
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character first person hands variant name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character first person body (legs) model",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "hlmt"
+            ]
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character first person body (legs) variant name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character third person unit",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "unit"
+            ]
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character third person unit variant name"
+        },
+        {
+          "type": "char_enum",
+          "name": "character avatar name",
+          "definition": "AvatarNameEnum"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "hidden regions override#Applied to the first person body (legs) model. If this is left empty, will use the global hidden fpBody regions defined in playerglobals instead.",
+          "definition": "firstPersonpHiddenBodyRegionsBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14482ef10"
+    },
+    "game_engine_player_traits_block": {
+      "guid": "4efacdaefd47417581e799aa907f53f6",
+      "size": 140,
+      "size_string": "sizeof(s_game_engine_player_traits)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "vitality traits",
+          "definition": "player_traits_vitality_block"
+        },
+        {
+          "type": "block",
+          "name": "weapon traits",
+          "definition": "player_traits_weapons_block"
+        },
+        {
+          "type": "block",
+          "name": "movement traits",
+          "definition": "player_traits_movement_block"
+        },
+        {
+          "type": "block",
+          "name": "appearance traits",
+          "definition": "player_traits_appearance_block"
+        },
+        {
+          "type": "block",
+          "name": "sensor traits",
+          "definition": "player_traits_sensors_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448315d0"
+    },
+    "player_traits_vitality_block": {
+      "guid": "2bb5238f5046567e74d26ebde86fa6d5",
       "size": 64,
+      "size_string": "sizeof(c_player_traits_vitality)",
       "fields": [
         {
           "type": "long_flags",
           "name": "should apply trait",
-          "definition": "player_traits_vitality_block_19_options_0"
+          "definition": "player_traits_vitality_float_flags"
         },
         {
-          "type": "custom",
-          "name": "damage resistance"
+          "type": "explanation",
+          "name": "damage resistance",
+          "definition": "Any damage taken is divided by this number.  If you put -1, that means \"invulnerable\"."
         },
         {
           "type": "real",
@@ -823,27 +814,27 @@
         {
           "type": "char_enum",
           "name": "headshot immunity",
-          "definition": "player_traits_vitality_block_19_options_15"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "assassination immunity",
-          "definition": "player_traits_vitality_block_19_options_16"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "deathless",
-          "definition": "player_traits_vitality_block_19_options_17"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "fast track armor",
-          "definition": "player_traits_vitality_block_19_options_18"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "powerup cancellation",
-          "definition": "player_traits_vitality_block_19_options_19"
+          "definition": "player_trait_powerup_cancellation_enum"
         },
         {
           "type": "pad",
@@ -851,44 +842,21 @@
           "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144830640"
     },
-    "grenade_block_21": {
-      "guid": "5819a7ec4fc46525f005c197a4decad8",
-      "size": 36,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "grenade reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "char_integer",
-          "name": "count"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "player_traits_weapons_block_20": {
-      "guid": "b29d76d042893a959dd081ab6107a9c0",
+    "player_traits_weapons_block": {
+      "guid": "d0769db28942953a9dd081ab6107a9c0",
       "size": 152,
+      "size_string": "sizeof(s_player_traits_weapons)",
       "fields": [
         {
           "type": "long_flags",
           "name": "should apply trait",
-          "definition": "player_traits_weapons_block_20_options_0"
+          "definition": "player_traits_weapons_float_flags"
         },
         {
           "type": "real",
@@ -977,7 +945,7 @@
         {
           "type": "char_enum",
           "name": "weapon pickup allowed",
-          "definition": "player_traits_weapons_block_20_options_22"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "pad",
@@ -987,52 +955,52 @@
         {
           "type": "block",
           "name": "initial grenade count",
-          "definition": "grenade_block_21"
+          "definition": "grenade_block"
         },
         {
           "type": "char_enum",
           "name": "infinite ammo",
-          "definition": "player_traits_weapons_block_20_options_25"
+          "definition": "player_trait_infinite_ammo_enum"
         },
         {
           "type": "char_enum",
           "name": "equipment usage",
-          "definition": "player_traits_weapons_block_20_options_26"
+          "definition": "player_trait_equipment_usage_enum"
         },
         {
           "type": "char_enum",
           "name": "equipment usage excepting auto turret#false will disable all equipment except auto turret",
-          "definition": "player_traits_weapons_block_20_options_27"
+          "definition": "player_trait_equipment_usage_enum"
         },
         {
           "type": "char_enum",
           "name": "equipment drop",
-          "definition": "player_traits_weapons_block_20_options_28"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "infinite equipment",
-          "definition": "player_traits_weapons_block_20_options_29"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "weapons ammopack",
-          "definition": "player_traits_weapons_block_20_options_30"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "weapons grenadier",
-          "definition": "player_traits_weapons_block_20_options_31"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "weapons explode on death armormod#spawns projectile specified in globals.globals",
-          "definition": "player_traits_weapons_block_20_options_32"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "weapons well equipped",
-          "definition": "player_traits_weapons_block_20_options_33"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "pad",
@@ -1040,8 +1008,9 @@
           "definition": 3
         },
         {
-          "type": "custom",
-          "name": "initial weapons/equipment"
+          "type": "explanation",
+          "name": "initial weapons/equipment",
+          "definition": "Type any string from the relevant sections of multiplayer/globals.multiplayer_object_type_list."
         },
         {
           "type": "string_id",
@@ -1064,18 +1033,52 @@
           "name": "initial support upgrade"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144830cb0"
     },
-    "player_traits_movement_block_22": {
-      "guid": "4f62673d46f66d614d68a6a3b367c138",
+    "grenade_block": {
+      "guid": "eca71958c44f2565f005c197a4decad8",
+      "size": 36,
+      "size_string": "sizeof(s_initial_grenade)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "grenade reference",
+          "definition": {
+            "flags": 1,
+            "allowed": [
+              "obje"
+            ]
+          }
+        },
+        {
+          "type": "char_integer",
+          "name": "count"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144830250"
+    },
+    "player_traits_movement_block": {
+      "guid": "3d67624ff646616d4d68a6a3b367c138",
       "size": 32,
+      "size_string": "sizeof(c_player_traits_movement)",
       "fields": [
         {
           "type": "long_flags",
           "name": "should apply trait",
-          "definition": "player_traits_movement_block_22_options_0"
+          "definition": "player_traits_movement_float_flags"
         },
         {
           "type": "real",
@@ -1096,47 +1099,47 @@
         {
           "type": "char_enum",
           "name": "vehicle usage",
-          "definition": "player_traits_movement_block_22_options_5"
+          "definition": "player_trait_vehicle_usage"
         },
         {
           "type": "char_enum",
           "name": "double jump",
-          "definition": "player_traits_movement_block_22_options_6"
+          "definition": "player_trait_double_jump"
         },
         {
           "type": "char_enum",
           "name": "sprint usage",
-          "definition": "player_traits_movement_block_22_options_7"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "automatic momentum usage",
-          "definition": "player_traits_movement_block_22_options_8"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "vaulting enabled",
-          "definition": "player_traits_movement_block_22_options_9"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "stealthy",
-          "definition": "player_traits_movement_block_22_options_10"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "clamber enabled",
-          "definition": "player_traits_movement_block_22_options_11"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "thrusters enabled",
-          "definition": "player_traits_movement_block_22_options_12"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "stabilizer enabled",
-          "definition": "player_traits_movement_block_22_options_13"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "pad",
@@ -1144,37 +1147,41 @@
           "definition": 3
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144830fe0"
     },
-    "player_traits_appearance_block_23": {
-      "guid": "3f91581241dcea75a641bca001fc1ce8",
+    "player_traits_appearance_block": {
+      "guid": "1258913fdc4175eaa641bca001fc1ce8",
       "size": 12,
+      "size_string": "sizeof(s_player_traits_appearance)",
       "fields": [
         {
           "type": "char_enum",
           "name": "active camo",
-          "definition": "player_traits_appearance_block_23_options_0"
+          "definition": "player_trait_active_camo"
         },
         {
           "type": "char_enum",
           "name": "waypoint",
-          "definition": "player_traits_appearance_block_23_options_1"
+          "definition": "player_trait_waypoint"
         },
         {
           "type": "char_enum",
           "name": "gamertag visible",
-          "definition": "player_traits_appearance_block_23_options_2"
+          "definition": "player_trait_waypoint"
         },
         {
           "type": "char_enum",
           "name": "aura",
-          "definition": "player_traits_appearance_block_23_options_3"
+          "definition": "player_trait_aura"
         },
         {
-          "type": "custom",
-          "name": "death effect/attached effect"
+          "type": "explanation",
+          "name": "death effect/attached effect",
+          "definition": "Type any string from the relevant sections of multiplayer/megalo/multiplayer_effects.multiplayereffects."
         },
         {
           "type": "string_id",
@@ -1185,18 +1192,21 @@
           "name": "attached effect"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144831210"
     },
-    "player_traits_sensors_block_24": {
-      "guid": "e4c40b0c4b60e067713310aaaa5dfe9b",
+    "player_traits_sensors_block": {
+      "guid": "0c0bc4e4604b67e0713310aaaa5dfe9b",
       "size": 16,
+      "size_string": "sizeof(c_player_traits_sensors)",
       "fields": [
         {
           "type": "long_flags",
           "name": "should apply trait",
-          "definition": "player_traits_sensors_block_24_options_0"
+          "definition": "player_traits_sensors_float_flags"
         },
         {
           "type": "real",
@@ -1205,37 +1215,37 @@
         {
           "type": "char_enum",
           "name": "motion tracker",
-          "definition": "player_traits_sensors_block_24_options_2"
+          "definition": "player_trait_motion_tracker"
         },
         {
           "type": "char_enum",
           "name": "motion tracker while zoomed",
-          "definition": "player_traits_sensors_block_24_options_3"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "directional damage indicator",
-          "definition": "player_traits_sensors_block_24_options_4"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "vision mode",
-          "definition": "player_traits_sensors_block_24_options_5"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "battle awareness",
-          "definition": "player_traits_sensors_block_24_options_6"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "threat view",
-          "definition": "player_traits_sensors_block_24_options_7"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "char_enum",
           "name": "aural enhancement",
-          "definition": "player_traits_sensors_block_24_options_8"
+          "definition": "player_trait_bool_enum"
         },
         {
           "type": "pad",
@@ -1243,332 +1253,178 @@
           "definition": 1
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448314a0"
     },
-    "game_engine_player_traits_block_18": {
-      "guid": "aecdfa4e47fd754181e799aa907f53f6",
-      "size": 140,
-      "fields": [
-        {
-          "type": "block",
-          "name": "vitality traits",
-          "definition": "player_traits_vitality_block_19"
-        },
-        {
-          "type": "block",
-          "name": "weapon traits",
-          "definition": "player_traits_weapons_block_20"
-        },
-        {
-          "type": "block",
-          "name": "movement traits",
-          "definition": "player_traits_movement_block_22"
-        },
-        {
-          "type": "block",
-          "name": "appearance traits",
-          "definition": "player_traits_appearance_block_23"
-        },
-        {
-          "type": "block",
-          "name": "sensor traits",
-          "definition": "player_traits_sensors_block_24"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31": {
-      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "Base Value"
-        },
-        {
-          "type": "real_bounds",
-          "name": "Value Bounds"
-        },
-        {
-          "type": "char_enum",
-          "name": "Combiner",
-          "definition": "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31_options_2"
-        },
-        {
-          "type": "pad",
-          "name": "padEnd",
-          "definition": 3
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "player_malleable_properties_25": {
-      "guid": "8fd758404ad657b7c63ff199c38ecbd6",
+    "PlayerProperties": {
+      "guid": "4058d78fd64ab757c63ff199c38ecbd6",
       "size": 96,
+      "size_string": "sizeof(i343::Player::MalleablePropertiesDefinition)",
       "fields": [
         {
           "type": "custom",
-          "name": "motion tracker normal range#distance at which objects appear on the motion tracker"
+          "name": "motion tracker normal range#distance at which objects appear on the motion tracker",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker normal range#distance at which objects appear on the motion tracker",
-          "definition": "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "motion tracker extended range#distance at which objects appear on the motion tracker"
+          "name": "motion tracker extended range#distance at which objects appear on the motion tracker",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker extended range#distance at which objects appear on the motion tracker",
-          "definition": "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "motion tracker vehicle range#distance at which objects appear on the motion tracker"
+          "name": "motion tracker vehicle range#distance at which objects appear on the motion tracker",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker vehicle range#distance at which objects appear on the motion tracker",
-          "definition": "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "motion tracker threshold speed (friendly):world units per second#speed above which friendly/neutral objects appear on the player's motion tracker"
+          "name": "motion tracker threshold speed (friendly):world units per second#speed above which friendly/neutral objects appear on the player's motion tracker",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker threshold speed (friendly):world units per second#speed above which friendly/neutral objects appear on the player's motion tracker",
-          "definition": "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "motion tracker threshold speed (enemy):world units per second#speed above which enemy objects appear on the player's motion tracker"
+          "name": "motion tracker threshold speed (enemy):world units per second#speed above which enemy objects appear on the player's motion tracker",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker threshold speed (enemy):world units per second#speed above which enemy objects appear on the player's motion tracker",
-          "definition": "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
           "type": "custom",
-          "name": "motion tracker visibility scalar#scales how fast this player will appear to be moving to other motion trackers (does not scale the actual speed)"
+          "name": "motion tracker visibility scalar#scales how fast this player will appear to be moving to other motion trackers (does not scale the actual speed)",
+          "group_tag": "mpfi"
         },
         {
           "type": "struct",
           "name": "motion tracker visibility scalar#scales how fast this player will appear to be moving to other motion trackers (does not scale the actual speed)",
-          "definition": "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31"
+          "definition": "MalleablePropertyBaseFloatStruct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144804c20"
     },
-    "PlayerGlobalsDefinition_struct_definition_1": {
-      "guid": "5b755586375bea498d6ae7a83e29dd2a",
-      "size": 224,
+    "MalleablePropertyBaseFloatStruct": {
+      "guid": "a1b4d8f8e64063dbbb8cea978b2eae63",
+      "size": 16,
+      "size_string": "sizeof(i343::MalleableProperty::BaseDefinition<float>)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "MalleablePropertyCombiner"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447369c0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "@player information",
-          "definition": "player_information_block_3"
-        },
-        {
-          "type": "block",
-          "name": "@player camera",
-          "definition": "CameraGlobalsBlockDefinition_6"
-        },
-        {
-          "type": "block",
-          "name": "@player representation",
-          "definition": "player_representation_block_13"
-        },
-        {
-          "type": "block",
-          "name": "default player traits",
-          "definition": "game_engine_player_traits_block_18"
-        },
-        {
-          "type": "struct",
-          "name": "player malleable properties",
-          "definition": "player_malleable_properties_25"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
+    }
+  },
+  "arrays": {
+    "LookSensitivityArrayDefinition": {
+      "count": 10,
+      "count_string": "i343::Players::CameraGlobals::k_lookSensitivityCount",
+      "struct": "LookSensitivityArrayDefinition"
+    },
+    "FlyingLookSensitivityArrayDefinition": {
+      "count": 4,
+      "count_string": "i343::Players::CameraGlobals::k_flyingLookSensitivityCount",
+      "struct": "FlyingLookSensitivityArrayDefinition"
+    },
+    "FlyingSpeedArrayDefinition": {
+      "count": 4,
+      "count_string": "i343::Players::CameraGlobals::k_flyingMovementSpeedCount",
+      "struct": "FlyingSpeedArrayDefinition"
+    },
+    "FlyingThrustArrayDefinition": {
+      "count": 3,
+      "count_string": "i343::Players::CameraGlobals::k_flyingThrustCount",
+      "struct": "FlyingThrustArrayDefinition"
     }
   },
   "enums_flags": {
-    "player_representation_block_13_options_0": {
+    "player_representation_flags": {
       "options": [
         "can use health packs"
       ]
     },
-    "firstPersonpHiddenBodyRegionsBlock_14_options_1": {
+    "FpBodyRegionFlags": {
       "options": [
         "visible in ICS"
       ]
     },
-    "CoopTeamRepresentationBlock_15_options_0": {
+    "coopCharacterTeamEnum": {
       "options": [
         "Chief (Blue team)",
         "Locke (Osiris Team)",
         "Chief (cracked visor and blue team)"
       ]
     },
-    "CoopCharacterRepresentationBlock_16_options_6": {
+    "AvatarNameEnum": {
       "options": [
         "None",
         "Masterchief",
@@ -1581,12 +1437,7 @@
         "Vale"
       ]
     },
-    "firstPersonpHiddenBodyRegionsBlock_17_options_1": {
-      "options": [
-        "visible in ICS"
-      ]
-    },
-    "player_traits_vitality_block_19_options_0": {
+    "player_traits_vitality_float_flags": {
       "options": [
         "damage resistance",
         "shield multiplier",
@@ -1603,42 +1454,21 @@
         "fall damage multiplier"
       ]
     },
-    "player_traits_vitality_block_19_options_15": {
+    "player_trait_bool_enum": {
       "options": [
         "unchanged",
         "false",
         "true"
       ]
     },
-    "player_traits_vitality_block_19_options_16": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_vitality_block_19_options_17": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_vitality_block_19_options_18": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_vitality_block_19_options_19": {
+    "player_trait_powerup_cancellation_enum": {
       "options": [
         "unchanged",
         "none",
         "no_overshield"
       ]
     },
-    "player_traits_weapons_block_20_options_0": {
+    "player_traits_weapons_float_flags": {
       "options": [
         "damage multiplier",
         "melee damage multiplier",
@@ -1663,14 +1493,7 @@
         "assassination speed modifier"
       ]
     },
-    "player_traits_weapons_block_20_options_22": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_25": {
+    "player_trait_infinite_ammo_enum": {
       "options": [
         "unchanged",
         "off",
@@ -1678,7 +1501,7 @@
         "bottomless_clip"
       ]
     },
-    "player_traits_weapons_block_20_options_26": {
+    "player_trait_equipment_usage_enum": {
       "options": [
         "unchanged",
         "off",
@@ -1686,57 +1509,7 @@
         "on"
       ]
     },
-    "player_traits_weapons_block_20_options_27": {
-      "options": [
-        "unchanged",
-        "off",
-        "not with objectives",
-        "on"
-      ]
-    },
-    "player_traits_weapons_block_20_options_28": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_29": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_30": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_31": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_32": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_weapons_block_20_options_33": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_0": {
+    "player_traits_movement_float_flags": {
       "options": [
         "speed",
         "gravity multiplier",
@@ -1744,7 +1517,7 @@
         "turn speed multiplier"
       ]
     },
-    "player_traits_movement_block_22_options_5": {
+    "player_trait_vehicle_usage": {
       "options": [
         "unchanged",
         "none",
@@ -1757,7 +1530,7 @@
         "full"
       ]
     },
-    "player_traits_movement_block_22_options_6": {
+    "player_trait_double_jump": {
       "options": [
         "unchanged",
         "off",
@@ -1765,56 +1538,7 @@
         "on_plus_lunge"
       ]
     },
-    "player_traits_movement_block_22_options_7": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_8": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_9": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_10": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_11": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_12": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_movement_block_22_options_13": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_appearance_block_23_options_0": {
+    "player_trait_active_camo": {
       "options": [
         "unchanged",
         "off",
@@ -1824,7 +1548,7 @@
         "invisible"
       ]
     },
-    "player_traits_appearance_block_23_options_1": {
+    "player_trait_waypoint": {
       "options": [
         "unchanged",
         "off",
@@ -1832,15 +1556,7 @@
         "all"
       ]
     },
-    "player_traits_appearance_block_23_options_2": {
-      "options": [
-        "unchanged",
-        "off",
-        "allies",
-        "all"
-      ]
-    },
-    "player_traits_appearance_block_23_options_3": {
+    "player_trait_aura": {
       "options": [
         "unchanged",
         "off",
@@ -1849,12 +1565,12 @@
         "white"
       ]
     },
-    "player_traits_sensors_block_24_options_0": {
+    "player_traits_sensors_float_flags": {
       "options": [
         "motion tracker range"
       ]
     },
-    "player_traits_sensors_block_24_options_2": {
+    "player_trait_motion_tracker": {
       "options": [
         "unchanged",
         "off",
@@ -1863,89 +1579,7 @@
         "all_bipeds_moving_vehicles"
       ]
     },
-    "player_traits_sensors_block_24_options_3": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_sensors_block_24_options_4": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_sensors_block_24_options_5": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_sensors_block_24_options_6": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_sensors_block_24_options_7": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "player_traits_sensors_block_24_options_8": {
-      "options": [
-        "unchanged",
-        "false",
-        "true"
-      ]
-    },
-    "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30_options_2": {
-      "options": [
-        "sequential#applies the percentages one after another on the base",
-        "total percentage#adds up all of the percentages and applies them to the base",
-        "addition#adds on all of the modifiers to the base",
-        "product#multiplies the values one after another on to the base"
-      ]
-    },
-    "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31_options_2": {
+    "MalleablePropertyCombiner": {
       "options": [
         "sequential#applies the percentages one after another on the base",
         "total percentage#adds up all of the percentages and applies them to the base",
@@ -1955,6 +1589,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

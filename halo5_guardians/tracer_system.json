@@ -1,722 +1,641 @@
 {
   "name": "tracer_system",
   "tag": "trac",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "tracer_system_block",
   "blocks": {
-    "material_shader_function_parameter_block_24": {
-      "max_count": 267,
-      "struct": "material_shader_function_parameter_block_24"
-    },
-    "material_shader_parameter_block_23": {
-      "max_count": 267,
-      "struct": "material_shader_parameter_block_23"
-    },
-    "material_postprocess_texture_block_27": {
-      "max_count": 32,
-      "struct": "material_postprocess_texture_block_27"
-    },
-    "material_shader_function_parameter_block_28": {
-      "max_count": 267,
-      "struct": "material_shader_function_parameter_block_28"
-    },
-    "functionParameterBlock_30": {
-      "max_count": 255,
-      "struct": "functionParameterBlock_30"
-    },
-    "externParameterBlock_31": {
-      "max_count": 255,
-      "struct": "externParameterBlock_31"
-    },
-    "materialConstantBlock_32": {
-      "max_count": 255,
-      "struct": "materialConstantBlock_32"
-    },
-    "materialConstantBlock_33": {
-      "max_count": 255,
-      "struct": "materialConstantBlock_33"
-    },
-    "material_postprocess_block_26": {
+    "tracer_system_block": {
       "max_count": 1,
-      "struct": "material_postprocess_block_26"
+      "max_count_string": "1",
+      "struct": "tracer_system_block_struct"
     },
-    "gpu_property_block_48": {
-      "max_count": 20,
-      "struct": "gpu_property_block_48"
-    },
-    "gpu_function_block_50": {
-      "max_count": 28,
-      "struct": "gpu_function_block_50"
-    },
-    "gpu_color_block_52": {
-      "max_count": 8,
-      "struct": "gpu_color_block_52"
-    },
-    "tracerDefinitionBlock_3": {
+    "tracerDefinitionBlock": {
       "max_count": 16,
-      "struct": "tracerDefinitionBlock_3"
+      "max_count_string": "TracerSystemDefinition::k_maxTracers",
+      "struct": "tracerDefinitionBlock"
     },
-    "root": {
+    "material_shader_parameter_block": {
+      "max_count": 267,
+      "max_count_string": "s_material_shader_parameter::k_max_material_shader_parameters",
+      "struct": "material_shader_parameter_block"
+    },
+    "material_shader_function_parameter_block": {
+      "max_count": 267,
+      "max_count_string": "s_material_shader_parameter::k_max_material_shader_parameters",
+      "struct": "material_shader_function_parameter_block"
+    },
+    "material_postprocess_block": {
       "max_count": 1,
-      "struct": "tracer_system_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "material_postprocess_block_struct"
+    },
+    "material_postprocess_texture_block": {
+      "max_count": 32,
+      "max_count_string": "c_material::k_maximum_postprocess_textures",
+      "struct": "material_postprocess_texture_block"
+    },
+    "functionParameterBlock": {
+      "max_count": 255,
+      "max_count_string": "k_uint8_max",
+      "struct": "functionParameterBlock"
+    },
+    "externParameterBlock": {
+      "max_count": 255,
+      "max_count_string": "k_uint8_max",
+      "struct": "externParameterBlock"
+    },
+    "materialConstantBlock": {
+      "max_count": 255,
+      "max_count_string": "k_uint8_max",
+      "struct": "materialConstantBlock"
+    },
+    "g_null_block": {
+      "max_count": 0,
+      "max_count_string": "0",
+      "struct": "g_null_block"
+    },
+    "gpu_property_block": {
+      "max_count": 20,
+      "max_count_string": "k_max_gpu_properties",
+      "struct": "gpu_property_block"
+    },
+    "gpu_function_block": {
+      "max_count": 28,
+      "max_count_string": "k_max_gpu_functions",
+      "struct": "gpu_function_block"
+    },
+    "gpu_color_block": {
+      "max_count": 8,
+      "max_count_string": "k_max_gpu_colors",
+      "struct": "gpu_color_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_5": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_lifespan_seconds_4": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_lifespan_seconds_4_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_lifespan_seconds_4_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_lifespan_seconds_4_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_lifespan_seconds_4_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_5"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_7": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_self_acceleration_world_units_per_second_squared_6": {
-      "guid": "be4687b34b16c8b7acd1f286347b1327",
+    "tracer_system_block_struct": {
+      "guid": "7d1699d5ce493490cf5c78941630f02d",
       "size": 64,
+      "size_string": "(sizeof(TracerSystemDefinition) - Tag::SizeInfo<TracerSystemDefinition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_self_acceleration_world_units_per_second_squared_6_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_self_acceleration_world_units_per_second_squared_6_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_self_acceleration_world_units_per_second_squared_6_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_self_acceleration_world_units_per_second_squared_6_options_3"
-        },
-        {
           "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_7"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "long_flags",
+          "name": "tracer system flags",
+          "definition": "tracerSystemFlags"
+        },
+        {
+          "type": "explanation",
+          "name": "far lod",
+          "definition": "These don't actually do anything unless you use \"tracer lod\" in one of your curves."
         },
         {
           "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "real_vector_3d",
-          "name": "Starting interpolant"
-        },
-        {
-          "type": "real_vector_3d",
-          "name": "Ending interpolant"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_9": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "length_world_units_8": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "length_world_units_8_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "length_world_units_8_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "length_world_units_8_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "length_world_units_8_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_9"
+          "name": "far lod start"
         },
         {
           "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_11": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "offset_world_units_10": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "offset_world_units_10_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "offset_world_units_10_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "offset_world_units_10_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "offset_world_units_10_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_11"
+          "name": "far lod end"
         },
         {
           "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_13": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_size_world_units_12": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_size_world_units_12_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_size_world_units_12_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_size_world_units_12_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_size_world_units_12_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_13"
+          "name": "far lod start value"
         },
         {
           "type": "real",
-          "name": "runtime m_constant_value!"
+          "name": "far lod end value"
         },
         {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
+          "type": "block",
+          "name": "tracers",
+          "definition": "tracerDefinitionBlock"
         },
         {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144720550"
     },
-    "Mapping_15": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
+    "tracerDefinitionBlock": {
+      "guid": "cd3d8281e342aedf19a963a697b415b7",
+      "size": 900,
+      "size_string": "sizeof(TracerDefinition)",
       "fields": [
         {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_density_profiles_per_world_unit_14": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_density_profiles_per_world_unit_14_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_density_profiles_per_world_unit_14_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_density_profiles_per_world_unit_14_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_density_profiles_per_world_unit_14_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_15"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_17": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_offset_world_units_16": {
-      "guid": "0837f421425d974289a50cb36163c60d",
-      "size": 56,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_offset_world_units_16_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_offset_world_units_16_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_offset_world_units_16_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_offset_world_units_16_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_17"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "real_vector_2d",
-          "name": "Starting interpolant"
-        },
-        {
-          "type": "real_vector_2d",
-          "name": "Ending interpolant"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_19": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_rotation_degrees_18": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_rotation_degrees_18_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_rotation_degrees_18_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_rotation_degrees_18_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_rotation_degrees_18_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_19"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_21": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_rotation_rate_degrees_per_second_20": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_rotation_rate_degrees_per_second_20_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_rotation_rate_degrees_per_second_20_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_rotation_rate_degrees_per_second_20_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_rotation_rate_degrees_per_second_20_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_21"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_25": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "material_shader_function_parameter_block_24": {
-      "guid": "5471f0e34472f54d16a555aded7b009a",
-      "size": 52,
-      "fields": [
-        {
-          "type": "long_enum",
-          "name": "type^",
-          "definition": "material_shader_function_parameter_block_24_options_0"
+          "type": "custom",
+          "name": null,
+          "group_tag": "ifp+"
         },
         {
           "type": "string_id",
-          "name": "input name"
+          "name": "tracer name^"
         },
         {
-          "type": "string_id",
-          "name": "range name"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier!",
-          "definition": "material_shader_function_parameter_block_24_options_3"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 3
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "real",
-          "name": "time period:seconds"
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "tracerFlags"
         },
         {
           "type": "custom",
-          "name": "FUNCTION"
+          "name": "Tracer Shape",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "char_enum",
+          "name": "profile shape",
+          "definition": "tracerProfileShapeEnum"
+        },
+        {
+          "type": "byte_integer",
+          "name": "number of n-gon sides"
+        },
+        {
+          "type": "pad",
+          "name": "tracpad",
+          "definition": 1
+        },
+        {
+          "type": "real",
+          "name": "origin fade range{origin fade distance}:world units#distance beyond cutoff over which tracers fade"
+        },
+        {
+          "type": "real",
+          "name": "origin fade cutoff:world units#distance from tracer origin where fade begins"
+        },
+        {
+          "type": "real",
+          "name": "edge fade range:degrees#degrees beyond cutoff over which tracers fade"
+        },
+        {
+          "type": "real",
+          "name": "edge fade cutoff:degrees#degrees away from edge-on where fade is total"
         },
         {
           "type": "struct",
-          "name": "function",
-          "definition": "function_25"
+          "name": "profile lifespan#seconds",
+          "definition": "tracerProperty_float_Struct"
         },
         {
-          "type": "terminator"
+          "type": "struct",
+          "name": "profile self acceleration#world units per second-squared",
+          "definition": "tracerProperty_real_vector3d_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "length#world units",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "offset#world units",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile size#world units",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile density#profiles per world unit",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile offset#world units",
+          "definition": "tracerProperty_real_point2d_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile rotation#degrees",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile rotation rate#degrees per second",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "Tracer Appearance",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "word_flags",
+          "name": "appearance flags",
+          "definition": "tracerAppearanceFlags"
+        },
+        {
+          "type": "short_integer",
+          "name": "sort bias#use values between -10 and 10 to move closer and farther from camera (positive is closer)"
+        },
+        {
+          "type": "custom",
+          "name": "material",
+          "group_tag": "tmpl"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "struct",
+          "name": "actual material?",
+          "definition": "material_struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "uv tiling:u lengthwise, v crosswise#u is tiles/world unit, v is absolute tiles"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "uv scrolling:tiles per second"
+        },
+        {
+          "type": "real",
+          "name": "angle fade range:degrees#radial (from tracer axis) degrees beyond beginning angle over which tracer fades"
+        },
+        {
+          "type": "real",
+          "name": "angle fade begin:degrees#radial (from tracer axis) degrees away from face-on where fade begins"
+        },
+        {
+          "type": "struct",
+          "name": "profile color",
+          "definition": "tracerProperty_real_rgb_color_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile alpha",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile alpha2",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile black point",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile palette",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "struct",
+          "name": "profile intensity",
+          "definition": "tracerProperty_float_Struct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "ifp-"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_constantPerProfileProperties!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_usedStates!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_maxProfileCount!"
+        },
+        {
+          "type": "struct",
+          "name": "runtime m_gpuData!",
+          "definition": "gpu_property_function_color_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144720440"
     },
-    "material_shader_parameter_block_23": {
-      "guid": "5e4b3e06473618a83f96cfbe9dd6ca42",
+    "tracerProperty_float_Struct": {
+      "guid": "4e3a5191bb4ca32095ba229762fe663b",
+      "size": 40,
+      "size_string": "sizeof(TracerProperty_real)",
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "group_tag": "fnin",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "group_tag": "fnir",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "group_tag": "fnop",
+          "definition": "tracerStateOutputModEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "group_tag": "fnom",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471ebb0"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "tracerProperty_real_vector3d_Struct": {
+      "guid": "b38746be164bb7c8acd1f286347b1327",
+      "size": 64,
+      "size_string": "sizeof(TracerProperty_real_vector3d)",
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "group_tag": "fnin",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "group_tag": "fnir",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "group_tag": "fnop",
+          "definition": "tracerStateOutputModEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "group_tag": "fnom",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "Starting interpolant"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "Ending interpolant"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471f770"
+    },
+    "tracerProperty_real_point2d_Struct": {
+      "guid": "21f437085d42429789a50cb36163c60d",
+      "size": 56,
+      "size_string": "sizeof(TracerProperty_real_point2d)",
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "group_tag": "fnin",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "group_tag": "fnir",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "group_tag": "fnop",
+          "definition": "tracerStateOutputModEnum"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "group_tag": "fnom",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "Starting interpolant"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "Ending interpolant"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14471f660"
+    },
+    "material_struct": {
+      "guid": "230d81130644153c599476aa073df0a7",
+      "size": 112,
+      "size_string": "sizeof(c_material)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "material shader",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "mats"
+            ]
+          }
+        },
+        {
+          "type": "block",
+          "name": "material parameters",
+          "definition": "material_shader_parameter_block"
+        },
+        {
+          "type": "block",
+          "name": "postprocess definition!",
+          "definition": "material_postprocess_block"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 2",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 3",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 4",
+          "group_tag": "sted"
+        },
+        {
+          "type": "real",
+          "name": "sort offset"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "alpha_blend_mode_enum"
+        },
+        {
+          "type": "char_enum",
+          "name": "sort layer*",
+          "definition": "global_sort_layer_enum_defintion"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags!",
+          "definition": "materialFlags"
+        },
+        {
+          "type": "byte_flags",
+          "name": "render flags!",
+          "definition": "materialRenderFlags"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14485d8f0"
+    },
+    "material_shader_parameter_block": {
+      "guid": "063e4b5e3647a8183f96cfbe9dd6ca42",
       "size": 232,
+      "size_string": "sizeof(s_material_shader_parameter)",
       "fields": [
         {
           "type": "string_id",
@@ -725,7 +644,7 @@
         {
           "type": "long_enum",
           "name": "parameter type*",
-          "definition": "material_shader_parameter_block_23_options_1"
+          "definition": "material_shader_parameter_type_enum"
         },
         {
           "type": "long_integer",
@@ -735,8 +654,10 @@
           "type": "tag_reference",
           "name": "bitmap",
           "definition": {
-            "flags": 0,
-            "allowed": []
+            "flags": 18,
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -810,22 +731,22 @@
         {
           "type": "block",
           "name": "function parameters",
-          "definition": "material_shader_function_parameter_block_24"
+          "definition": "material_shader_function_parameter_block"
         },
         {
           "type": "data",
           "name": "display name*",
-          "definition": "tag_data"
+          "definition": "help_text_block"
         },
         {
           "type": "data",
           "name": "display group*",
-          "definition": "tag_data"
+          "definition": "help_text_block"
         },
         {
           "type": "data",
           "name": "display help text*",
-          "definition": "tag_data"
+          "definition": "help_text_block"
         },
         {
           "type": "real",
@@ -844,20 +765,163 @@
           "name": "register size*!"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448875a0"
     },
-    "material_postprocess_texture_block_27": {
-      "guid": "cd9812ec4be13cd648fe3bb396a5bc0b",
+    "material_shader_function_parameter_block": {
+      "guid": "e3f0715472444df516a555aded7b009a",
+      "size": 52,
+      "size_string": "sizeof(s_material_shader_function_parameter)",
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "material_animated_parameter_type_enum"
+        },
+        {
+          "type": "string_id",
+          "name": "input name",
+          "group_tag": "fnin"
+        },
+        {
+          "type": "string_id",
+          "name": "range name",
+          "group_tag": "fnir"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier!",
+          "group_tag": "fnop",
+          "definition": "materialFunctionOutputModEnum"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!",
+          "group_tag": "fnom"
+        },
+        {
+          "type": "real",
+          "name": "time period:seconds",
+          "group_tag": "fn**"
+        },
+        {
+          "type": "explanation",
+          "name": "FUNCTION",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144887470"
+    },
+    "material_postprocess_block_struct": {
+      "guid": "c3d0501dc04152c857905b9ea3f398ce",
+      "size": 200,
+      "size_string": "sizeof(s_material_postprocess_definition)",
+      "fields": [
+        {
+          "type": "block",
+          "name": "textures",
+          "definition": "material_postprocess_texture_block"
+        },
+        {
+          "type": "long_integer",
+          "name": "textures to clear"
+        },
+        {
+          "type": "block",
+          "name": "functions",
+          "definition": "material_shader_function_parameter_block"
+        },
+        {
+          "type": "block",
+          "name": "function parameters",
+          "definition": "functionParameterBlock"
+        },
+        {
+          "type": "block",
+          "name": "extern parameters",
+          "definition": "externParameterBlock"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "alpha_blend_mode_enum"
+        },
+        {
+          "type": "char_enum",
+          "name": "layer blend mode",
+          "definition": "layerBlendModeEnum"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "materialPostprocessFlags"
+        },
+        {
+          "type": "block",
+          "name": "material constants!~",
+          "definition": "materialConstantBlock"
+        },
+        {
+          "type": "block",
+          "name": "alternate constants!~",
+          "definition": "materialConstantBlock"
+        },
+        {
+          "type": "int64_integer",
+          "name": "materialConstantBuffer!~\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "int64_integer",
+          "name": "alternateConstantBuffer!~\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "dword_integer",
+          "name": "material constant shader stage mask"
+        },
+        {
+          "type": "array",
+          "name": "runtime queryable properties table",
+          "definition": "runtime_queryable_properties"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x14485d6b0"
+    },
+    "material_postprocess_texture_block": {
+      "guid": "ec1298cde14bd63c48fe3bb396a5bc0b",
       "size": 56,
+      "size_string": "sizeof(s_material_postprocess_texture)",
       "fields": [
         {
           "type": "tag_reference",
           "name": "bitmap reference",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -891,79 +955,20 @@
         },
         {
           "type": "int64_integer",
-          "name": "SamplerState!~"
+          "name": "SamplerState!~\u0001",
+          "group_tag": "nuke"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485cfc0"
     },
-    "function_29": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "material_shader_function_parameter_block_28": {
-      "guid": "5471f0e34472f54d16a555aded7b009a",
-      "size": 52,
-      "fields": [
-        {
-          "type": "long_enum",
-          "name": "type^",
-          "definition": "material_shader_function_parameter_block_28_options_0"
-        },
-        {
-          "type": "string_id",
-          "name": "input name"
-        },
-        {
-          "type": "string_id",
-          "name": "range name"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier!",
-          "definition": "material_shader_function_parameter_block_28_options_3"
-        },
-        {
-          "type": "pad",
-          "name": "BVCG",
-          "definition": 3
-        },
-        {
-          "type": "string_id",
-          "name": "Output Modifier Input!"
-        },
-        {
-          "type": "real",
-          "name": "time period:seconds"
-        },
-        {
-          "type": "custom",
-          "name": "FUNCTION"
-        },
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_29"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "functionParameterBlock_30": {
-      "guid": "25a1ecc04cbeb81fe266949fdbcfa980",
+    "functionParameterBlock": {
+      "guid": "c0eca125be4c1fb8e266949fdbcfa980",
       "size": 8,
+      "size_string": "sizeof(s_materialFunctionParameter)",
       "fields": [
         {
           "type": "byte_integer",
@@ -987,13 +992,16 @@
           "name": "render phase mask"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485d0f0"
     },
-    "externParameterBlock_31": {
-      "guid": "721182364f91b22cafda45a6bba5e7ab",
+    "externParameterBlock": {
+      "guid": "36821172914f2cb2afda45a6bba5e7ab",
       "size": 8,
+      "size_string": "sizeof(s_materialExternParameter)",
       "fields": [
         {
           "type": "byte_integer",
@@ -1017,245 +1025,98 @@
           "name": "render phase mask"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485d220"
     },
-    "materialConstantBlock_32": {
-      "guid": "8333766c49c69913871f34aef2fb867f",
+    "materialConstantBlock": {
+      "guid": "6c763383c6491399871f34aef2fb867f",
       "size": 16,
+      "size_string": "sizeof(i343::Float4)",
       "fields": [
         {
           "type": "real_quaternion",
           "name": "register"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485d350"
     },
-    "materialConstantBlock_33": {
-      "guid": "8333766c49c69913871f34aef2fb867f",
-      "size": 16,
+    "runtime_queryable_properties": {
+      "guid": "71d3c8c7b14b1a1e30c49fbebedec7be",
+      "size": 1,
+      "size_string": "sizeof(uint8)",
       "fields": [
         {
-          "type": "real_quaternion",
-          "name": "register"
+          "type": "char_block_index",
+          "name": "index",
+          "definition": "g_null_block"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14485d480"
     },
-    "runtime_queryable_properties_table_34": {
-      "guid": "1077ba6db9ad8a177c54ec35cd4cc45f",
-      "size": 4,
+    "g_null_block": {
+      "guid": "a6487e75bc4cac9c1ca146bcf3e2f763",
+      "size": 0,
+      "size_string": "0",
       "fields": [
         {
-          "type": "char_integer",
-          "name": "index"
+          "type": "custom",
+          "name": null
         },
         {
-          "type": "char_integer",
-          "name": "index"
-        },
-        {
-          "type": "char_integer",
-          "name": "index"
-        },
-        {
-          "type": "char_integer",
-          "name": "index"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449ec0c0"
     },
-    "material_postprocess_block_26": {
-      "guid": "1d50d0c341c0c85257905b9ea3f398ce",
-      "size": 200,
-      "fields": [
-        {
-          "type": "block",
-          "name": "textures",
-          "definition": "material_postprocess_texture_block_27"
-        },
-        {
-          "type": "long_integer",
-          "name": "textures to clear"
-        },
-        {
-          "type": "block",
-          "name": "functions",
-          "definition": "material_shader_function_parameter_block_28"
-        },
-        {
-          "type": "block",
-          "name": "function parameters",
-          "definition": "functionParameterBlock_30"
-        },
-        {
-          "type": "block",
-          "name": "extern parameters",
-          "definition": "externParameterBlock_31"
-        },
-        {
-          "type": "char_enum",
-          "name": "alpha blend mode",
-          "definition": "material_postprocess_block_26_options_5"
-        },
-        {
-          "type": "char_enum",
-          "name": "layer blend mode",
-          "definition": "material_postprocess_block_26_options_6"
-        },
-        {
-          "type": "word_flags",
-          "name": "flags",
-          "definition": "material_postprocess_block_26_options_7"
-        },
-        {
-          "type": "block",
-          "name": "material constants!~",
-          "definition": "materialConstantBlock_32"
-        },
-        {
-          "type": "block",
-          "name": "alternate constants!~",
-          "definition": "materialConstantBlock_33"
-        },
-        {
-          "type": "int64_integer",
-          "name": "materialConstantBuffer!~"
-        },
-        {
-          "type": "int64_integer",
-          "name": "alternateConstantBuffer!~"
-        },
-        {
-          "type": "dword_integer",
-          "name": "material constant shader stage mask"
-        },
-        {
-          "type": "struct",
-          "name": "runtime queryable properties table",
-          "definition": "runtime_queryable_properties_table_34"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "actual_material__22": {
-      "guid": "13810d2344063c15599476aa073df0a7",
-      "size": 112,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "material shader",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "block",
-          "name": "material parameters",
-          "definition": "material_shader_parameter_block_23"
-        },
-        {
-          "type": "block",
-          "name": "postprocess definition!",
-          "definition": "material_postprocess_block_26"
-        },
-        {
-          "type": "string_id",
-          "name": "physics material name"
-        },
-        {
-          "type": "string_id",
-          "name": "physics material name 2"
-        },
-        {
-          "type": "string_id",
-          "name": "physics material name 3"
-        },
-        {
-          "type": "string_id",
-          "name": "physics material name 4"
-        },
-        {
-          "type": "real",
-          "name": "sort offset"
-        },
-        {
-          "type": "char_enum",
-          "name": "alpha blend mode",
-          "definition": "actual_material__22_options_8"
-        },
-        {
-          "type": "char_enum",
-          "name": "sort layer*",
-          "definition": "actual_material__22_options_9"
-        },
-        {
-          "type": "byte_flags",
-          "name": "flags!",
-          "definition": "actual_material__22_options_10"
-        },
-        {
-          "type": "byte_flags",
-          "name": "render flags!",
-          "definition": "actual_material__22_options_11"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_36": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_color_35": {
-      "guid": "fd7b022d4f52c01e192b869d06f9cbc6",
+    "tracerProperty_real_rgb_color_Struct": {
+      "guid": "2d027bfd524f1ec0192b869d06f9cbc6",
       "size": 40,
+      "size_string": "sizeof(TracerProperty_real_rgb_color)",
       "fields": [
         {
           "type": "char_enum",
           "name": "Input Variable",
-          "definition": "profile_color_35_options_0"
+          "group_tag": "fnin",
+          "definition": "tracerStateInputEnum"
         },
         {
           "type": "char_enum",
           "name": "Range Variable",
-          "definition": "profile_color_35_options_1"
+          "group_tag": "fnir",
+          "definition": "tracerStateInputEnum"
         },
         {
           "type": "char_enum",
           "name": "Output Modifier",
-          "definition": "profile_color_35_options_2"
+          "group_tag": "fnop",
+          "definition": "tracerStateOutputModEnum"
         },
         {
           "type": "char_enum",
           "name": "Output Modifier Input",
-          "definition": "profile_color_35_options_3"
+          "group_tag": "fnom",
+          "definition": "tracerStateInputEnum"
+        },
+        {
+          "type": "custom",
+          "name": null
         },
         {
           "type": "struct",
           "name": "Mapping",
-          "definition": "Mapping_36"
+          "definition": "mapping_function"
         },
         {
           "type": "real",
@@ -1271,750 +1132,198 @@
           "definition": 2
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14471eaa0"
     },
-    "Mapping_38": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_alpha_37": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_alpha_37_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_alpha_37_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_alpha_37_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_alpha_37_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_38"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_40": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_alpha2_39": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_alpha2_39_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_alpha2_39_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_alpha2_39_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_alpha2_39_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_40"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_42": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_black_point_41": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_black_point_41_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_black_point_41_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_black_point_41_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_black_point_41_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_42"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_44": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_palette_43": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_palette_43_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_palette_43_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_palette_43_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_palette_43_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_44"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Mapping_46": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "profile_intensity_45": {
-      "guid": "91513a4e4cbb20a395ba229762fe663b",
-      "size": 40,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "Input Variable",
-          "definition": "profile_intensity_45_options_0"
-        },
-        {
-          "type": "char_enum",
-          "name": "Range Variable",
-          "definition": "profile_intensity_45_options_1"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier",
-          "definition": "profile_intensity_45_options_2"
-        },
-        {
-          "type": "char_enum",
-          "name": "Output Modifier Input",
-          "definition": "profile_intensity_45_options_3"
-        },
-        {
-          "type": "struct",
-          "name": "Mapping",
-          "definition": "Mapping_46"
-        },
-        {
-          "type": "real",
-          "name": "runtime m_constant_value!"
-        },
-        {
-          "type": "word_integer",
-          "name": "runtime m_flags!"
-        },
-        {
-          "type": "pad",
-          "name": "DSFDSGLKJ",
-          "definition": 2
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "runtime_gpu_property_sub_array__49": {
-      "guid": "eaf4f7caf302085ba641dcca9eb58bf8",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "runtime gpu_property_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_property_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_property_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_property_real!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gpu_property_block_48": {
-      "guid": "a49c08234b6246cf47395ba40eda112d",
-      "size": 16,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "runtime gpu_property_sub_array!",
-          "definition": "runtime_gpu_property_sub_array__49"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "runtime_gpu_function_sub_array__51": {
-      "guid": "2a0cb2886cf9b9d479db6ba3b63c2406",
-      "size": 64,
-      "fields": [
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_function_real!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gpu_function_block_50": {
-      "guid": "e4f4c1fd4521776deaf4ccaacd0b3551",
-      "size": 64,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "runtime gpu_function_sub_array!",
-          "definition": "runtime_gpu_function_sub_array__51"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "runtime_gpu_color_sub_array__53": {
-      "guid": "042e154b51a39bf1c7ad8a90cbcba904",
-      "size": 16,
-      "fields": [
-        {
-          "type": "real",
-          "name": "runtime gpu_color_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_color_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_color_real!"
-        },
-        {
-          "type": "real",
-          "name": "runtime gpu_color_real!"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gpu_color_block_52": {
-      "guid": "77a26ffb43190c16d3c4e4814937dc69",
-      "size": 16,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "runtime gpu_color_sub_array!",
-          "definition": "runtime_gpu_color_sub_array__53"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "runtime_m_gpuData__47": {
-      "guid": "33de233642c57c62318c5aadea782c99",
+    "gpu_property_function_color_struct": {
+      "guid": "3623de33c542627c318c5aadea782c99",
       "size": 84,
+      "size_string": "sizeof(c_particle_emitter_definition::s_gpu_data)",
       "fields": [
         {
           "type": "block",
           "name": "runtime gpu_property_block!",
-          "definition": "gpu_property_block_48"
+          "definition": "gpu_property_block"
         },
         {
           "type": "block",
           "name": "runtime gpu_functions_block!",
-          "definition": "gpu_function_block_50"
+          "definition": "gpu_function_block"
         },
         {
           "type": "block",
           "name": "runtime gpu_colors_block!",
-          "definition": "gpu_color_block_52"
+          "definition": "gpu_color_block"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14471a020"
     },
-    "tracerDefinitionBlock_3": {
-      "guid": "81823dcd42e3dfae19a963a697b415b7",
-      "size": 900,
+    "gpu_property_block": {
+      "guid": "23089ca4624bcf4647395ba40eda112d",
+      "size": 16,
+      "size_string": "sizeof(c_particle_emitter_definition::s_gpu_data::s_property)",
       "fields": [
         {
-          "type": "string_id",
-          "name": "tracer name^"
+          "type": "array",
+          "name": "runtime gpu_property_sub_array!",
+          "definition": "gpu_property_sub_array"
         },
         {
-          "type": "byte_flags",
-          "name": "flags",
-          "definition": "tracerDefinitionBlock_3_options_1"
-        },
-        {
-          "type": "custom",
-          "name": "Tracer Shape"
-        },
-        {
-          "type": "char_enum",
-          "name": "profile shape",
-          "definition": "tracerDefinitionBlock_3_options_3"
-        },
-        {
-          "type": "byte_integer",
-          "name": "number of n-gon sides"
-        },
-        {
-          "type": "pad",
-          "name": "tracpad",
-          "definition": 1
-        },
-        {
-          "type": "real",
-          "name": "origin fade range{origin fade distance}:world units#distance beyond cutoff over which tracers fade"
-        },
-        {
-          "type": "real",
-          "name": "origin fade cutoff:world units#distance from tracer origin where fade begins"
-        },
-        {
-          "type": "real",
-          "name": "edge fade range:degrees#degrees beyond cutoff over which tracers fade"
-        },
-        {
-          "type": "real",
-          "name": "edge fade cutoff:degrees#degrees away from edge-on where fade is total"
-        },
-        {
-          "type": "struct",
-          "name": "profile lifespan#seconds",
-          "definition": "profile_lifespan_seconds_4"
-        },
-        {
-          "type": "struct",
-          "name": "profile self acceleration#world units per second-squared",
-          "definition": "profile_self_acceleration_world_units_per_second_squared_6"
-        },
-        {
-          "type": "struct",
-          "name": "length#world units",
-          "definition": "length_world_units_8"
-        },
-        {
-          "type": "struct",
-          "name": "offset#world units",
-          "definition": "offset_world_units_10"
-        },
-        {
-          "type": "struct",
-          "name": "profile size#world units",
-          "definition": "profile_size_world_units_12"
-        },
-        {
-          "type": "struct",
-          "name": "profile density#profiles per world unit",
-          "definition": "profile_density_profiles_per_world_unit_14"
-        },
-        {
-          "type": "struct",
-          "name": "profile offset#world units",
-          "definition": "profile_offset_world_units_16"
-        },
-        {
-          "type": "struct",
-          "name": "profile rotation#degrees",
-          "definition": "profile_rotation_degrees_18"
-        },
-        {
-          "type": "struct",
-          "name": "profile rotation rate#degrees per second",
-          "definition": "profile_rotation_rate_degrees_per_second_20"
-        },
-        {
-          "type": "custom",
-          "name": "Tracer Appearance"
-        },
-        {
-          "type": "word_flags",
-          "name": "appearance flags",
-          "definition": "tracerDefinitionBlock_3_options_20"
-        },
-        {
-          "type": "short_integer",
-          "name": "sort bias#use values between -10 and 10 to move closer and farther from camera (positive is closer)"
-        },
-        {
-          "type": "custom",
-          "name": "material"
-        },
-        {
-          "type": "struct",
-          "name": "actual material?",
-          "definition": "actual_material__22"
-        },
-        {
-          "type": "real_vector_2d",
-          "name": "uv tiling:u lengthwise, v crosswise#u is tiles/world unit, v is absolute tiles"
-        },
-        {
-          "type": "real_vector_2d",
-          "name": "uv scrolling:tiles per second"
-        },
-        {
-          "type": "real",
-          "name": "angle fade range:degrees#radial (from tracer axis) degrees beyond beginning angle over which tracer fades"
-        },
-        {
-          "type": "real",
-          "name": "angle fade begin:degrees#radial (from tracer axis) degrees away from face-on where fade begins"
-        },
-        {
-          "type": "struct",
-          "name": "profile color",
-          "definition": "profile_color_35"
-        },
-        {
-          "type": "struct",
-          "name": "profile alpha",
-          "definition": "profile_alpha_37"
-        },
-        {
-          "type": "struct",
-          "name": "profile alpha2",
-          "definition": "profile_alpha2_39"
-        },
-        {
-          "type": "struct",
-          "name": "profile black point",
-          "definition": "profile_black_point_41"
-        },
-        {
-          "type": "struct",
-          "name": "profile palette",
-          "definition": "profile_palette_43"
-        },
-        {
-          "type": "struct",
-          "name": "profile intensity",
-          "definition": "profile_intensity_45"
-        },
-        {
-          "type": "dword_integer",
-          "name": "runtime m_constantPerProfileProperties!"
-        },
-        {
-          "type": "dword_integer",
-          "name": "runtime m_usedStates!"
-        },
-        {
-          "type": "dword_integer",
-          "name": "runtime m_maxProfileCount!"
-        },
-        {
-          "type": "struct",
-          "name": "runtime m_gpuData!",
-          "definition": "runtime_m_gpuData__47"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144719f00"
     },
-    "tracer_system_struct_definition_1": {
-      "guid": "771a92b45adaca4c04397c169378f8f1",
+    "gpu_property_sub_array": {
+      "guid": "b1cd565e2b4034ec1def36bfba68749b",
+      "size": 4,
+      "size_string": "sizeof(float)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_property_real!"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144719dd0"
+    },
+    "gpu_function_block": {
+      "guid": "fdc1f4e421456d77eaf4ccaacd0b3551",
       "size": 64,
+      "size_string": "sizeof(c_particle_emitter_definition::s_gpu_data::s_function)",
+      "fields": [
+        {
+          "type": "array",
+          "name": "runtime gpu_function_sub_array!",
+          "definition": "gpu_function_sub_array"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144719a40"
+    },
+    "gpu_function_sub_array": {
+      "guid": "310926d6a24191e0d91145989985d7a3",
+      "size": 4,
+      "size_string": "sizeof(float)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144719910"
+    },
+    "gpu_color_block": {
+      "guid": "fb6fa2771943160cd3c4e4814937dc69",
+      "size": 16,
+      "size_string": "sizeof(c_particle_emitter_definition::s_gpu_data::s_color)",
+      "fields": [
+        {
+          "type": "array",
+          "name": "runtime gpu_color_sub_array!",
+          "definition": "gpu_color_sub_array"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144719ca0"
+    },
+    "gpu_color_sub_array": {
+      "guid": "b01fccebd441f1840fb084a54360ff8e",
+      "size": 4,
+      "size_string": "sizeof(float)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_color_real!"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144719b70"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "long_flags",
-          "name": "tracer system flags",
-          "definition": "tracer_system_struct_definition_1_options_2"
-        },
-        {
-          "type": "custom",
-          "name": "far lod"
-        },
-        {
-          "type": "real",
-          "name": "far lod start"
-        },
-        {
-          "type": "real",
-          "name": "far lod end"
-        },
-        {
-          "type": "real",
-          "name": "far lod start value"
-        },
-        {
-          "type": "real",
-          "name": "far lod end value"
-        },
-        {
-          "type": "block",
-          "name": "tracers",
-          "definition": "tracerDefinitionBlock_3"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
+    }
+  },
+  "arrays": {
+    "runtime_queryable_properties": {
+      "count": 4,
+      "count_string": "s_material_postprocess_definition::k_runtime_queryable_properties_count",
+      "struct": "runtime_queryable_properties"
+    },
+    "gpu_property_sub_array": {
+      "count": 4,
+      "count_string": "c_particle_emitter_gpu::_sizeof_gpu_property/sizeof(float)",
+      "struct": "gpu_property_sub_array"
+    },
+    "gpu_function_sub_array": {
+      "count": 16,
+      "count_string": "c_particle_emitter_gpu::_sizeof_gpu_function/sizeof(float)",
+      "struct": "gpu_function_sub_array"
+    },
+    "gpu_color_sub_array": {
+      "count": 4,
+      "count_string": "c_particle_emitter_gpu::_sizeof_gpu_color/sizeof(float)",
+      "struct": "gpu_color_sub_array"
     }
   },
   "enums_flags": {
-    "tracer_system_struct_definition_1_options_2": {
+    "tracerSystemFlags": {
       "options": [
         "point-to-point#skips the update step, and ignores lifespan, for point-to-point effects",
-        "draw in first person pass (dangerous)#use this only if the entire tracer is in &quot;first person space&quot;; can lead to depth artifacts if misused",
+        "draw in first person pass (dangerous)#use this only if the entire tracer is in \"first person space\"; can lead to depth artifacts if misused",
         "disable when zoomed",
         "enabled only when zoomed"
       ]
     },
-    "tracerDefinitionBlock_3_options_1": {
+    "tracerFlags": {
       "options": [
         "disabled for debugging"
       ]
     },
-    "tracerDefinitionBlock_3_options_3": {
+    "tracerProfileShapeEnum": {
       "options": [
         "aligned ribbon",
         "cross",
@@ -2023,7 +1332,7 @@
         "vertical"
       ]
     },
-    "profile_lifespan_seconds_4_options_0": {
+    "tracerStateInputEnum": {
       "options": [
         "profile age",
         "profile position",
@@ -2046,668 +1355,14 @@
         "invalid state --- please set again"
       ]
     },
-    "profile_lifespan_seconds_4_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_lifespan_seconds_4_options_2": {
+    "tracerStateOutputModEnum": {
       "options": [
         " ",
         "Plus",
         "Times"
       ]
     },
-    "profile_lifespan_seconds_4_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_self_acceleration_world_units_per_second_squared_6_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_self_acceleration_world_units_per_second_squared_6_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_self_acceleration_world_units_per_second_squared_6_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_self_acceleration_world_units_per_second_squared_6_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "length_world_units_8_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "length_world_units_8_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "length_world_units_8_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "length_world_units_8_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "offset_world_units_10_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "offset_world_units_10_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "offset_world_units_10_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "offset_world_units_10_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_size_world_units_12_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_size_world_units_12_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_size_world_units_12_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_size_world_units_12_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_density_profiles_per_world_unit_14_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_density_profiles_per_world_unit_14_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_density_profiles_per_world_unit_14_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_density_profiles_per_world_unit_14_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_offset_world_units_16_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_offset_world_units_16_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_offset_world_units_16_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_offset_world_units_16_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_degrees_18_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_degrees_18_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_degrees_18_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_rotation_degrees_18_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_rate_degrees_per_second_20_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_rate_degrees_per_second_20_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_rotation_rate_degrees_per_second_20_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_rotation_rate_degrees_per_second_20_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "tracerDefinitionBlock_3_options_20": {
+    "tracerAppearanceFlags": {
       "options": [
         "tint from lightmap",
         "double-sided",
@@ -2717,7 +1372,7 @@
         "can render low res"
       ]
     },
-    "material_shader_parameter_block_23_options_1": {
+    "material_shader_parameter_type_enum": {
       "options": [
         "bitmap",
         "real",
@@ -2726,7 +1381,7 @@
         "color"
       ]
     },
-    "material_shader_function_parameter_block_24_options_0": {
+    "material_animated_parameter_type_enum": {
       "options": [
         "value",
         "color",
@@ -2739,34 +1394,14 @@
         "alpha"
       ]
     },
-    "material_shader_function_parameter_block_24_options_3": {
+    "materialFunctionOutputModEnum": {
       "options": [
         " ",
         "Add",
         "Multiply"
       ]
     },
-    "material_shader_function_parameter_block_28_options_0": {
-      "options": [
-        "value",
-        "color",
-        "scale uniform",
-        "scale u",
-        "scale v",
-        "offset u",
-        "offset v",
-        "frame index",
-        "alpha"
-      ]
-    },
-    "material_shader_function_parameter_block_28_options_3": {
-      "options": [
-        " ",
-        "Add",
-        "Multiply"
-      ]
-    },
-    "material_postprocess_block_26_options_5": {
+    "alpha_blend_mode_enum": {
       "options": [
         "opaque",
         "additive",
@@ -2826,14 +1461,14 @@
         "composite_UI"
       ]
     },
-    "material_postprocess_block_26_options_6": {
+    "layerBlendModeEnum": {
       "options": [
         "none",
         "blended",
         "layered"
       ]
     },
-    "material_postprocess_block_26_options_7": {
+    "materialPostprocessFlags": {
       "options": [
         "has material constant functions",
         "has texture frame functions",
@@ -2844,67 +1479,7 @@
         "has at least one extern texture used"
       ]
     },
-    "actual_material__22_options_8": {
-      "options": [
-        "opaque",
-        "additive",
-        "multiply",
-        "alpha_blend",
-        "double_multiply",
-        "pre_multiplied_alpha",
-        "maximum",
-        "multiply_add",
-        "add_src_times_dstalpha",
-        "add_src_times_srcalpha",
-        "inv_alpha_blend",
-        "motion_blur_static",
-        "motion_blur_inhibit",
-        "alpha_blend_constant",
-        "overdraw_apply",
-        "wet_screen_effect",
-        "minimum",
-        "revsubtract",
-        "forge_lightmap",
-        "forge_lightmap_inv",
-        "replace_all_channels",
-        "alpha_blend_max",
-        "opaque_alpha_blend",
-        "alpha_blend_additive_transparent",
-        "floating shadow",
-        "decal_alpha_blend",
-        "decal_add_src_times_src_alpha",
-        "decal_multiply_add",
-        "wpf_blend_mode",
-        "wpf_no_color_blend_mode",
-        "blend forge analytic red",
-        "blend factor green only",
-        "blend forge analytic blue",
-        "blend factor alpha only",
-        "multiply red green only",
-        "multiply blue alpha only",
-        "decal opaque",
-        "accumulate_pre_multiplied_alpha",
-        "accumulate_multiply_add",
-        "accumulate_alpha_blend",
-        "accumulate_inverse_alpha_blend",
-        "accumulate_additive",
-        "accumulate_additive_transparent",
-        "accumulate_add_src_times_srcalpha",
-        "accumulate_multiply",
-        "ssao_multiply",
-        "ssao_alpha_channel_only",
-        "depth_peeling_blend_mode",
-        "depth_peeling_Z_pass",
-        "wpf_additive_blend_mode",
-        "forge_normalize",
-        "depth_peeling_accumulate_alpha",
-        "alpha_blend_for_display_planes",
-        "forge_light",
-        "forge_light_inverse",
-        "composite_UI"
-      ]
-    },
-    "actual_material__22_options_9": {
+    "global_sort_layer_enum_defintion": {
       "options": [
         "invalid",
         "pre-pass",
@@ -2912,478 +1487,38 @@
         "post-pass"
       ]
     },
-    "actual_material__22_options_10": {
+    "materialFlags": {
       "options": [
         "converted from shader",
         "decal post lighting"
       ]
     },
-    "actual_material__22_options_11": {
+    "materialRenderFlags": {
       "options": [
         "no atmosphere fog",
         "cull shields",
         "cull active camo"
       ]
-    },
-    "profile_color_35_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_color_35_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_color_35_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_color_35_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha_37_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha_37_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha_37_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_alpha_37_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha2_39_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha2_39_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_alpha2_39_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_alpha2_39_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_black_point_41_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_black_point_41_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_black_point_41_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_black_point_41_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_palette_43_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_palette_43_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_palette_43_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_palette_43_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_intensity_45_options_0": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_intensity_45_options_1": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
-    },
-    "profile_intensity_45_options_2": {
-      "options": [
-        " ",
-        "Plus",
-        "Times"
-      ]
-    },
-    "profile_intensity_45_options_3": {
-      "options": [
-        "profile age",
-        "profile position",
-        "unused",
-        "profile random",
-        "profile correlation 1",
-        "profile correlation 2",
-        "profile correlation 3",
-        "profile correlation 4",
-        "game time",
-        "tracer random",
-        "tracer correlation 1",
-        "tracer correlation 2",
-        "tracer speed",
-        "tracer length",
-        "system age",
-        "system lod",
-        "effect a scale",
-        "effect b scale",
-        "invalid state --- please set again"
-      ]
     }
   },
   "datas": {
-    "function_definition_data": {},
-    "tag_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    },
+    "help_text_block": {
+      "alignment": 10,
+      "flags": 0,
+      "max_size": 65535,
+      "max_size_string": "UNSIGNED_SHORT_MAX"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

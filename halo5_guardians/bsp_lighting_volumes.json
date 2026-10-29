@@ -1,172 +1,94 @@
 {
   "name": "bsp_lighting_volumes",
   "tag": "blvo",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 770,
+  "parent_tag": "aTag",
+  "block": "bsp_lighting_volumes_block",
   "blocks": {
-    "genericVolumePointBlock_5": {
-      "max_count": 32,
-      "struct": "genericVolumePointBlock_5"
-    },
-    "editorMetadataBlock_6": {
-      "max_count": 1024,
-      "struct": "editorMetadataBlock_6"
-    },
-    "lightmapPriVolumesBlock_3": {
-      "max_count": 16384,
-      "struct": "lightmapPriVolumesBlock_3"
-    },
-    "genericVolumePointBlock_9": {
-      "max_count": 32,
-      "struct": "genericVolumePointBlock_9"
-    },
-    "editorMetadataBlock_10": {
-      "max_count": 1024,
-      "struct": "editorMetadataBlock_10"
-    },
-    "airProbeDensityVolumesBlock_7": {
-      "max_count": 16384,
-      "struct": "airProbeDensityVolumesBlock_7"
-    },
-    "genericVolumePointBlock_13": {
-      "max_count": 32,
-      "struct": "genericVolumePointBlock_13"
-    },
-    "editorMetadataBlock_14": {
-      "max_count": 1024,
-      "struct": "editorMetadataBlock_14"
-    },
-    "airProbeRegionVolumesBlock_11": {
-      "max_count": 4,
-      "struct": "airProbeRegionVolumesBlock_11"
-    },
-    "dumpling_point_block_17": {
-      "max_count": 32,
-      "struct": "dumpling_point_block_17"
-    },
-    "dumpling_point_block_18": {
-      "max_count": 32,
-      "struct": "dumpling_point_block_18"
-    },
-    "editorMetadataBlock_19": {
-      "max_count": 1024,
-      "struct": "editorMetadataBlock_19"
-    },
-    "cubemapVolumesBlock_15": {
-      "max_count": 64,
-      "struct": "cubemapVolumesBlock_15"
-    },
-    "root": {
+    "bsp_lighting_volumes_block": {
       "max_count": 1,
-      "struct": "bsp_lighting_volumes_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "bsp_lighting_volumes_block_struct"
+    },
+    "lightmapPriVolumesBlock": {
+      "max_count": 16384,
+      "max_count_string": "k_max_areas_per_zone * k_max_zones_per_map",
+      "struct": "lightmapPriVolumesBlock"
+    },
+    "genericVolumePointBlock": {
+      "max_count": 32,
+      "max_count_string": "k_maximum_points_per_sector",
+      "struct": "genericVolumePointBlock"
+    },
+    "editorMetadataBlock": {
+      "max_count": 1024,
+      "max_count_string": "MAXIMUM_EDITOR_METADATA_ENTRIES",
+      "struct": "editorMetadataBlock"
+    },
+    "airProbeDensityVolumesBlock": {
+      "max_count": 16384,
+      "max_count_string": "k_max_areas_per_zone * k_max_zones_per_map",
+      "struct": "airProbeDensityVolumesBlock"
+    },
+    "airProbeRegionVolumesBlock": {
+      "max_count": 4,
+      "max_count_string": "4",
+      "struct": "airProbeRegionVolumesBlock"
+    },
+    "cubemapVolumesBlock": {
+      "max_count": 64,
+      "max_count_string": "64",
+      "struct": "cubemapVolumesBlock"
+    },
+    "dumpling_point_block": {
+      "max_count": 32,
+      "max_count_string": "k_maximum_points_per_sector",
+      "struct": "dumpling_point_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "bsp_lighting_volumes_block_struct": {
+      "guid": "3b2b94b2d74f22235c50c59145c076e6",
+      "size": 128,
+      "size_string": "(sizeof(BspLightingVolumes) - Tag::SizeInfo<BspLightingVolumes::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "genericVolumePointBlock_5": {
-      "guid": "66dd021f42b767e469b744af5c73a047",
-      "size": 20,
-      "fields": [
-        {
-          "type": "real_point_3d",
-          "name": "position"
-        },
-        {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Volume_4": {
-      "guid": "879af445458c5fd82be1c39216d26f81",
-      "size": 56,
-      "fields": [
         {
           "type": "block",
-          "name": "Points",
-          "definition": "genericVolumePointBlock_5"
+          "name": "Lightmap Priority Volumes",
+          "definition": "lightmapPriVolumesBlock"
         },
         {
-          "type": "real",
-          "name": "height"
+          "type": "block",
+          "name": "Air Probe Density Volumes",
+          "definition": "airProbeDensityVolumesBlock"
         },
         {
-          "type": "real",
-          "name": "sink"
+          "type": "block",
+          "name": "Air Probe Region Volumes",
+          "definition": "airProbeRegionVolumesBlock"
         },
         {
-          "type": "real_point_3d",
-          "name": "center point!"
+          "type": "block",
+          "name": "Cubemap Volumes",
+          "definition": "cubemapVolumesBlock"
         },
         {
-          "type": "real",
-          "name": "trivial cull radius squared!"
-        },
-        {
-          "type": "pad",
-          "name": "gvolpad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144729df0"
     },
-    "editorMetadataBlock_6": {
-      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
-      "size": 520,
-      "fields": [
-        {
-          "type": "long_string",
-          "name": "data name"
-        },
-        {
-          "type": "long_enum",
-          "name": "data type",
-          "definition": "editorMetadataBlock_6_options_1"
-        },
-        {
-          "type": "long_integer",
-          "name": "parent index"
-        },
-        {
-          "type": "long_string",
-          "name": "data value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "lightmapPriVolumesBlock_3": {
-      "guid": "9d0b0b8342ac3daa4af1afb1f9c040e5",
+    "lightmapPriVolumesBlock": {
+      "guid": "830b0b9dac42aa3d4af1afb1f9c040e5",
       "size": 104,
+      "size_string": "sizeof(LightmapPriorityVolume)",
       "fields": [
         {
           "type": "string_id",
@@ -174,12 +96,18 @@
         },
         {
           "type": "custom",
-          "name": "Volume settings"
+          "name": "Volume settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Volume",
-          "definition": "Volume_4"
+          "definition": "genericVolumeStruct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "real",
@@ -192,58 +120,44 @@
         {
           "type": "short_enum",
           "name": "Exclude Shadow Geometry",
-          "definition": "lightmapPriVolumesBlock_3_options_5"
+          "definition": "lightmapExclusionBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Exclude Per Pixel Lighting",
-          "definition": "lightmapPriVolumesBlock_3_options_6"
+          "definition": "lightmapExclusionBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Exclude Analytic Sun Contribution",
-          "definition": "lightmapPriVolumesBlock_3_options_7"
+          "definition": "lightmapExclusionBooleanEnumDefinition"
         },
         {
           "type": "short_enum",
           "name": "Exclude Analytic Light Contribution",
-          "definition": "lightmapPriVolumesBlock_3_options_8"
+          "definition": "lightmapExclusionBooleanEnumDefinition"
         },
         {
           "type": "block",
           "name": "Editor Metadata!",
-          "definition": "editorMetadataBlock_6"
+          "definition": "editorMetadataBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14472a600"
     },
-    "genericVolumePointBlock_9": {
-      "guid": "66dd021f42b767e469b744af5c73a047",
-      "size": 20,
-      "fields": [
-        {
-          "type": "real_point_3d",
-          "name": "position"
-        },
-        {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Volume_8": {
-      "guid": "879af445458c5fd82be1c39216d26f81",
+    "genericVolumeStruct": {
+      "guid": "45f49a878c45d85f2be1c39216d26f81",
       "size": 56,
+      "size_string": "sizeof(GenericVolume)",
       "fields": [
         {
           "type": "block",
           "name": "Points",
-          "definition": "genericVolumePointBlock_9"
+          "definition": "genericVolumePointBlock"
         },
         {
           "type": "real",
@@ -267,13 +181,36 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144756470"
     },
-    "editorMetadataBlock_10": {
-      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+    "genericVolumePointBlock": {
+      "guid": "1f02dd66b742e46769b744af5c73a047",
+      "size": 20,
+      "size_string": "sizeof(VolumeSectorPoint)",
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144756350"
+    },
+    "editorMetadataBlock": {
+      "guid": "106d5649e63ebeef6d8c8eb1db3d0368",
       "size": 520,
+      "size_string": "sizeof(EditorMetadata)",
       "fields": [
         {
           "type": "long_string",
@@ -282,7 +219,7 @@
         {
           "type": "long_enum",
           "name": "data type",
-          "definition": "editorMetadataBlock_10_options_1"
+          "definition": "editorDataTypesEnum"
         },
         {
           "type": "long_integer",
@@ -293,13 +230,16 @@
           "name": "data value"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144700050"
     },
-    "airProbeDensityVolumesBlock_7": {
-      "guid": "a564e8684a151faf4fa0dd99a6214c35",
+    "airProbeDensityVolumesBlock": {
+      "guid": "68e864a5154aaf1f4fa0dd99a6214c35",
       "size": 92,
+      "size_string": "sizeof(AirProbeDensityVolume)",
       "fields": [
         {
           "type": "string_id",
@@ -307,12 +247,18 @@
         },
         {
           "type": "custom",
-          "name": "Volume settings"
+          "name": "Volume settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Volume",
-          "definition": "Volume_8"
+          "definition": "genericVolumeStruct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "real",
@@ -321,94 +267,19 @@
         {
           "type": "block",
           "name": "Editor Metadata!",
-          "definition": "editorMetadataBlock_10"
+          "definition": "editorMetadataBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14472a840"
     },
-    "genericVolumePointBlock_13": {
-      "guid": "66dd021f42b767e469b744af5c73a047",
-      "size": 20,
-      "fields": [
-        {
-          "type": "real_point_3d",
-          "name": "position"
-        },
-        {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Volume_12": {
-      "guid": "879af445458c5fd82be1c39216d26f81",
-      "size": 56,
-      "fields": [
-        {
-          "type": "block",
-          "name": "Points",
-          "definition": "genericVolumePointBlock_13"
-        },
-        {
-          "type": "real",
-          "name": "height"
-        },
-        {
-          "type": "real",
-          "name": "sink"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "center point!"
-        },
-        {
-          "type": "real",
-          "name": "trivial cull radius squared!"
-        },
-        {
-          "type": "pad",
-          "name": "gvolpad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "editorMetadataBlock_14": {
-      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
-      "size": 520,
-      "fields": [
-        {
-          "type": "long_string",
-          "name": "data name"
-        },
-        {
-          "type": "long_enum",
-          "name": "data type",
-          "definition": "editorMetadataBlock_14_options_1"
-        },
-        {
-          "type": "long_integer",
-          "name": "parent index"
-        },
-        {
-          "type": "long_string",
-          "name": "data value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "airProbeRegionVolumesBlock_11": {
-      "guid": "531729e84fa0b942df8b54962472edf4",
+    "airProbeRegionVolumesBlock": {
+      "guid": "e8291753a04f42b9df8b54962472edf4",
       "size": 88,
+      "size_string": "sizeof(AirProbeRegionVolume)",
       "fields": [
         {
           "type": "string_id",
@@ -416,70 +287,125 @@
         },
         {
           "type": "custom",
-          "name": "Volume settings"
+          "name": "Volume settings",
+          "group_tag": "fgrb"
         },
         {
           "type": "struct",
           "name": "Volume",
-          "definition": "Volume_12"
+          "definition": "genericVolumeStruct"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
         },
         {
           "type": "block",
           "name": "Editor Metadata!",
-          "definition": "editorMetadataBlock_14"
+          "definition": "editorMetadataBlock"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144729530"
     },
-    "dumpling_point_block_17": {
-      "guid": "5b797cb149319aad827fd6a4efb8e03a",
-      "size": 20,
+    "cubemapVolumesBlock": {
+      "guid": "437d18ba1a48ced18b9c6cbc3c5171be",
+      "size": 220,
+      "size_string": "sizeof(CubemapVolume)",
       "fields": [
         {
+          "type": "string_id",
+          "name": "Name"
+        },
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "cubemapFlagsDefinition"
+        },
+        {
+          "type": "struct",
+          "name": "Dumpling",
+          "definition": "scenario_dumpling_struct"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Cubemap Bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "bitm"
+            ]
+          }
+        },
+        {
+          "type": "short_enum",
+          "name": "Enable Parallax Correction",
+          "definition": "cubemapBooleanEnumDefinition"
+        },
+        {
+          "type": "short_integer",
+          "name": "Cubemap Volume Priority"
+        },
+        {
           "type": "real_point_3d",
-          "name": "position"
+          "name": "Cubemap Origin"
         },
         {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
+          "type": "real_vector_3d",
+          "name": "Depth Positive"
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "dumpling_point_block_18": {
-      "guid": "5b797cb149319aad827fd6a4efb8e03a",
-      "size": 20,
-      "fields": [
+          "type": "real_vector_3d",
+          "name": "Depth Negative{Depth Negative Z}"
+        },
+        {
+          "type": "short_enum",
+          "name": "Active Volume",
+          "definition": "cubemapBooleanEnumDefinition"
+        },
+        {
+          "type": "short_enum",
+          "name": "Maximum cubemap size",
+          "definition": "cubemapSizeEnum"
+        },
         {
           "type": "real_point_3d",
-          "name": "position"
+          "name": "Intensity"
         },
         {
-          "type": "real_euler_angles_2d",
-          "name": "normal"
+          "type": "real",
+          "name": "Self-illum Scale Down"
         },
         {
-          "type": "terminator"
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14472a2f0"
     },
-    "Dumpling_16": {
-      "guid": "2ff9a01b4edab376fe640bb7ad957f1e",
+    "scenario_dumpling_struct": {
+      "guid": "1ba0f92fda4e76b3fe640bb7ad957f1e",
       "size": 92,
+      "size_string": "sizeof(s_scenario_dumpling)",
       "fields": [
         {
           "type": "block",
           "name": "inner points",
-          "definition": "dumpling_point_block_17"
+          "definition": "dumpling_point_block"
         },
         {
           "type": "block",
           "name": "outer points",
-          "definition": "dumpling_point_block_18"
+          "definition": "dumpling_point_block"
         },
         {
           "type": "real",
@@ -510,176 +436,63 @@
           "name": "bound volume"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144765de0"
     },
-    "editorMetadataBlock_19": {
-      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
-      "size": 520,
+    "dumpling_point_block": {
+      "guid": "b17c795b3149ad9a827fd6a4efb8e03a",
+      "size": 20,
+      "size_string": "sizeof(s_dumpling_sector_point)",
       "fields": [
         {
-          "type": "long_string",
-          "name": "data name"
-        },
-        {
-          "type": "long_enum",
-          "name": "data type",
-          "definition": "editorMetadataBlock_19_options_1"
-        },
-        {
-          "type": "long_integer",
-          "name": "parent index"
-        },
-        {
-          "type": "long_string",
-          "name": "data value"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "cubemapVolumesBlock_15": {
-      "guid": "ba187d43481ad1ce8b9c6cbc3c5171be",
-      "size": 220,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Name"
-        },
-        {
-          "type": "long_flags",
-          "name": "Flags",
-          "definition": "cubemapVolumesBlock_15_options_1"
-        },
-        {
-          "type": "struct",
-          "name": "Dumpling",
-          "definition": "Dumpling_16"
-        },
-        {
-          "type": "tag_reference",
-          "name": "Cubemap Bitmap",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "short_enum",
-          "name": "Enable Parallax Correction",
-          "definition": "cubemapVolumesBlock_15_options_4"
-        },
-        {
-          "type": "short_integer",
-          "name": "Cubemap Volume Priority"
-        },
-        {
           "type": "real_point_3d",
-          "name": "Cubemap Origin"
+          "name": "position"
         },
         {
-          "type": "real_vector_3d",
-          "name": "Depth Positive"
+          "type": "real_euler_angles_2d",
+          "name": "normal"
         },
         {
-          "type": "real_vector_3d",
-          "name": "Depth Negative{Depth Negative Z}"
-        },
-        {
-          "type": "short_enum",
-          "name": "Active Volume",
-          "definition": "cubemapVolumesBlock_15_options_9"
-        },
-        {
-          "type": "short_enum",
-          "name": "Maximum cubemap size",
-          "definition": "cubemapVolumesBlock_15_options_10"
-        },
-        {
-          "type": "real_point_3d",
-          "name": "Intensity"
-        },
-        {
-          "type": "real",
-          "name": "Self-illum Scale Down"
-        },
-        {
-          "type": "block",
-          "name": "Editor Metadata!",
-          "definition": "editorMetadataBlock_19"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144765cc0"
     },
-    "bsp_lighting_volumes_struct_definition_1": {
-      "guid": "dce2aa410aaaeea1881b1333b45a1fc6",
-      "size": 128,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "Lightmap Priority Volumes",
-          "definition": "lightmapPriVolumesBlock_3"
-        },
-        {
-          "type": "block",
-          "name": "Air Probe Density Volumes",
-          "definition": "airProbeDensityVolumesBlock_7"
-        },
-        {
-          "type": "block",
-          "name": "Air Probe Region Volumes",
-          "definition": "airProbeRegionVolumesBlock_11"
-        },
-        {
-          "type": "block",
-          "name": "Cubemap Volumes",
-          "definition": "cubemapVolumesBlock_15"
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "lightmapPriVolumesBlock_3_options_5": {
+    "lightmapExclusionBooleanEnumDefinition": {
       "options": [
         "No",
         "Yes"
       ]
     },
-    "lightmapPriVolumesBlock_3_options_6": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "lightmapPriVolumesBlock_3_options_7": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "lightmapPriVolumesBlock_3_options_8": {
-      "options": [
-        "No",
-        "Yes"
-      ]
-    },
-    "editorMetadataBlock_6_options_1": {
+    "editorDataTypesEnum": {
       "options": [
         "class",
         "array",
@@ -688,59 +501,31 @@
         "int"
       ]
     },
-    "editorMetadataBlock_10_options_1": {
-      "options": [
-        "class",
-        "array",
-        "string",
-        "bool",
-        "int"
-      ]
-    },
-    "editorMetadataBlock_14_options_1": {
-      "options": [
-        "class",
-        "array",
-        "string",
-        "bool",
-        "int"
-      ]
-    },
-    "cubemapVolumesBlock_15_options_1": {
+    "cubemapFlagsDefinition": {
       "options": [
         "Enable Intensity Correction",
         "Capture With Effects",
         "Affects Adjacent Bsps"
       ]
     },
-    "cubemapVolumesBlock_15_options_4": {
+    "cubemapBooleanEnumDefinition": {
       "options": [
         "Off",
         "On"
       ]
     },
-    "cubemapVolumesBlock_15_options_9": {
-      "options": [
-        "Off",
-        "On"
-      ]
-    },
-    "cubemapVolumesBlock_15_options_10": {
+    "cubemapSizeEnum": {
       "options": [
         "128x128",
         "256x256",
         "512x512"
       ]
-    },
-    "editorMetadataBlock_19_options_1": {
-      "options": [
-        "class",
-        "array",
-        "string",
-        "bool",
-        "int"
-      ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

@@ -1,46 +1,54 @@
 {
   "name": "color_table",
   "tag": "colo",
-  "version": 0,
+  "version": 1,
   "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "parent_tag": "aTag",
+  "block": "color_table_block",
   "blocks": {
-    "color_block_3": {
-      "max_count": 512,
-      "struct": "color_block_3"
-    },
-    "root": {
+    "color_table_block": {
       "max_count": 1,
-      "struct": "color_table_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "color_table_block_struct"
+    },
+    "color_block": {
+      "max_count": 512,
+      "max_count_string": "MAXIMUM_COLORS_PER_COLOR_TABLE_GROUP",
+      "struct": "color_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "color_table_block_struct": {
+      "guid": "c7004fd57d499f01d40f2ba0fa1a6927",
+      "size": 48,
+      "size_string": "(sizeof(color_table) - Tag::SizeInfo<color_table::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "colors",
+          "definition": "color_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad_tp",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446ec3c0"
     },
-    "color_block_3": {
-      "guid": "68fbd3a8413c3c766842568cd15d1466",
+    "color_block": {
+      "guid": "a8d3fb683c41763c6842568cd15d1466",
       "size": 48,
+      "size_string": "sizeof(struct color_table_color)",
       "fields": [
         {
           "type": "string",
@@ -51,39 +59,39 @@
           "name": "color"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446ec2a0"
     },
-    "color_table_struct_definition_1": {
-      "guid": "42fc0702a26c856f4b071eb593612863",
-      "size": 48,
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "colors",
-          "definition": "color_block_3"
-        },
-        {
-          "type": "pad",
-          "name": "pad_tp",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

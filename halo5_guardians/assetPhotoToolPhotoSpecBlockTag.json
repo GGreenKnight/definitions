@@ -2,76 +2,36 @@
   "name": "assetPhotoToolPhotoSpecBlockTag",
   "tag": "appb",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "assetPhotoToolPhotoSpecBlockTag_block",
   "blocks": {
-    "photoSpecBlock_3": {
-      "max_count": 128,
-      "struct": "photoSpecBlock_3"
-    },
-    "root": {
+    "assetPhotoToolPhotoSpecBlockTag_block": {
       "max_count": 1,
-      "struct": "assetPhotoToolPhotoSpecBlockTag_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "assetPhotoToolPhotoSpecBlockTag_block_struct"
+    },
+    "photoSpecBlock": {
+      "max_count": 128,
+      "max_count_string": "k_maxPhotos",
+      "struct": "photoSpecBlock_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "photoSpecBlock_3": {
-      "guid": "72d73bb7450fdfa4f030ea83cb2919ed",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "photo spec reference",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "assetPhotoToolPhotoSpecBlockTag_struct_definition_1": {
-      "guid": "38852ccbc7384f692a4216b53909ea90",
+    "assetPhotoToolPhotoSpecBlockTag_block_struct": {
+      "guid": "616bb40246446f555550ca833b35d614",
       "size": 48,
+      "size_string": "(sizeof(PhotoSpecBlockTag) - Tag::SizeInfo<PhotoSpecBlockTag::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "block",
           "name": "photo specs",
-          "definition": "photoSpecBlock_3"
+          "definition": "photoSpecBlock"
         },
         {
           "type": "pad",
@@ -79,11 +39,61 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1446e7b30"
+    },
+    "photoSpecBlock_struct": {
+      "guid": "b73bd7720f45a4dff030ea83cb2919ed",
+      "size": 32,
+      "size_string": "sizeof(Tag::Reference<PhotoSpecTag>)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "photo spec reference",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "appt"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1446e7a10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

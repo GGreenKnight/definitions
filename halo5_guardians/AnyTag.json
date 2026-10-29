@@ -1,24 +1,43 @@
 {
   "name": "AnyTag",
   "tag": "aTag",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 65535,
+  "flags": 1,
+  "block": "AnyTag_block",
   "blocks": {
-    "root": {
+    "AnyTag_block": {
       "max_count": 1,
-      "struct": "AnyTag_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "AnyTag_struct_definition"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
+    "AnyTag_struct_definition": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
+    },
+    "s_anyTagGuts": {
+      "guid": "46011d159c471f183970ec869043bc33",
       "size": 8,
+      "size_string": "sizeof(AnyTagGuts)",
       "fields": [
         {
           "type": "long_integer",
@@ -30,29 +49,17 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
-    },
-    "AnyTag_struct_definition_1": {
-      "guid": "faca538868636b3c075d34384c916105",
-      "size": 16,
-      "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
-        {
-          "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
+      ],
+      "__addr": "0x1449eb340"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

@@ -1,94 +1,456 @@
 {
   "name": "big_battle_creature",
   "tag": "bbcr",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 3,
+  "parent_tag": "aTag",
+  "block": "big_battle_creature_block",
   "blocks": {
-    "havok_primitive_block_5": {
-      "max_count": 16384,
-      "struct": "havok_primitive_block_5"
-    },
-    "havok_shapes_block_4": {
-      "max_count": 16384,
-      "struct": "havok_shapes_block_4"
-    },
-    "havok_primitive_block_7": {
-      "max_count": 16384,
-      "struct": "havok_primitive_block_7"
-    },
-    "havok_shapes_block_6": {
-      "max_count": 16384,
-      "struct": "havok_shapes_block_6"
-    },
-    "havok_primitive_block_9": {
-      "max_count": 16384,
-      "struct": "havok_primitive_block_9"
-    },
-    "havok_shapes_block_8": {
-      "max_count": 16384,
-      "struct": "havok_shapes_block_8"
-    },
-    "havok_primitive_block_11": {
-      "max_count": 16384,
-      "struct": "havok_primitive_block_11"
-    },
-    "havok_shapes_block_10": {
-      "max_count": 16384,
-      "struct": "havok_shapes_block_10"
-    },
-    "havok_primitive_block_13": {
-      "max_count": 16384,
-      "struct": "havok_primitive_block_13"
-    },
-    "havok_shapes_block_12": {
-      "max_count": 16384,
-      "struct": "havok_shapes_block_12"
-    },
-    "campaign_metagame_bucket_block_21": {
+    "big_battle_creature_block": {
       "max_count": 1,
-      "struct": "campaign_metagame_bucket_block_21"
+      "max_count_string": "1",
+      "struct": "big_battle_creature_block_struct"
     },
-    "SoundRTPCBlock_22": {
+    "havok_shapes_block": {
+      "max_count": 16384,
+      "max_count_string": "k_maximum_shapes_per_physics_model",
+      "struct": "havok_shapes_block"
+    },
+    "havok_primitive_block": {
+      "max_count": 16384,
+      "max_count_string": "k_maximum_shapes_per_physics_model",
+      "struct": "havok_primitive_block_struct"
+    },
+    "materials_block": {
+      "max_count": 128,
+      "max_count_string": "k_maximum_materials_per_physics_model",
+      "struct": "materials_block_struct"
+    },
+    "phantom_types_block": {
+      "max_count": 12,
+      "max_count_string": "k_maximum_phantom_types_per_physics_model",
+      "struct": "phantom_types_block_struct"
+    },
+    "campaign_metagame_bucket_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "campaign_metagame_bucket_block"
+    },
+    "SoundRTPCBlock": {
       "max_count": 32,
-      "struct": "SoundRTPCBlock_22"
+      "max_count_string": "k_maxSoundRTPCBlocks",
+      "struct": "SoundRTPCBlock_struct"
     },
-    "creature_scalar_timing_block_23": {
-      "max_count": 1,
-      "struct": "creature_scalar_timing_block_23"
+    "global_object_attachment_block": {
+      "max_count": 48,
+      "max_count_string": "k_maximum_number_of_attachments_per_object",
+      "struct": "global_object_attachment_block"
     },
-    "root": {
+    "creature_scalar_timing_block": {
       "max_count": 1,
-      "struct": "big_battle_creature_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "creature_scalar_timing_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "big_battle_creature_block_struct": {
+      "guid": "3faa9c0c0a4b54e601300a97277c8bc8",
+      "size": 888,
+      "size_string": "(sizeof(s_big_battle_creature_definition) - Tag::SizeInfo<s_big_battle_creature_definition::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "custom",
+          "name": "CREATURE",
+          "group_tag": "fgrb"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "creature_definition_flags"
+        },
+        {
+          "type": "short_enum",
+          "name": "default team",
+          "definition": "unit_default_teams"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "PAD0",
+          "definition": 2
+        },
+        {
+          "type": "angle",
+          "name": "turning velocity maximum (ground creatures only):degrees per second"
+        },
+        {
+          "type": "angle",
+          "name": "turning acceleration maximum (ground creatures only):degrees per second squared"
+        },
+        {
+          "type": "real_fraction",
+          "name": "casual turning modifier (ground creatures only):[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "autoaim width:world units"
+        },
+        {
+          "type": "struct",
+          "name": "physics",
+          "definition": "character_physics_struct"
+        },
+        {
+          "type": "explanation",
+          "name": "New creature flying physics",
+          "definition": "Will only be used by creatures with no animation"
+        },
+        {
+          "type": "angle",
+          "name": "yaw acceleration:degrees per second squared"
+        },
+        {
+          "type": "angle",
+          "name": "yaw max velocity:degrees per second"
+        },
+        {
+          "type": "angle",
+          "name": "pitch acceleration:degrees per second squared"
+        },
+        {
+          "type": "angle",
+          "name": "pitch max velocity:degrees per second"
+        },
+        {
+          "type": "angle",
+          "name": "roll acceleration:degrees per second squared"
+        },
+        {
+          "type": "angle",
+          "name": "roll max velocity:degrees per second"
+        },
+        {
+          "type": "angle",
+          "name": "maximum pitch angle:degrees per second"
+        },
+        {
+          "type": "angle",
+          "name": "maximum roll angle:degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "max forward velocity:wu per second"
+        },
+        {
+          "type": "real",
+          "name": "max non directional vertical velocity:wu per second"
+        },
+        {
+          "type": "real",
+          "name": "forward acceleration:wu per second squared"
+        },
+        {
+          "type": "real",
+          "name": "non directional vertical acceleration:wu per second squared"
+        },
+        {
+          "type": "tag_reference",
+          "name": "impact damage",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "jpt!"
+            ]
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "impact shield damage#if not specified, uses 'impact damage'",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "jpt!"
+            ]
+          }
+        },
+        {
+          "type": "block",
+          "name": "campaign metagame bucket",
+          "definition": "campaign_metagame_bucket_block"
+        },
+        {
+          "type": "block",
+          "name": "Sound RTPCs",
+          "definition": "SoundRTPCBlock"
+        },
+        {
+          "type": "explanation",
+          "name": "death and destruction",
+          "definition": ""
+        },
+        {
+          "type": "real_bounds",
+          "name": "destroy after death time:seconds#if non-zero, the creature will destroy itself upon death after this much time"
+        },
+        {
+          "type": "explanation",
+          "name": "big battle",
+          "definition": "The following fields only affect creatures configured as boids for big battle"
+        },
+        {
+          "type": "long_flags",
+          "name": "big battle flags",
+          "definition": "creature_big_battle_definition_flags"
+        },
+        {
+          "type": "tag_reference",
+          "name": "big battle weapon emitter",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "cpem"
+            ]
+          }
+        },
+        {
+          "type": "real_point_3d",
+          "name": "big battle weapon offset"
+        },
+        {
+          "type": "tag_reference",
+          "name": "big battle weapon emitter 2#if you leave this empty, only the first emitter will fire",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "cpem"
+            ]
+          }
+        },
+        {
+          "type": "real_point_3d",
+          "name": "big battle weapon offset 2"
+        },
+        {
+          "type": "block",
+          "name": "big battle weapon fire timing",
+          "definition": "creature_scalar_timing_block"
+        },
+        {
+          "type": "tag_reference",
+          "name": "big battle expensive weapon effect#this fires a full effect from location up, oriented along vehicle's forward and up axes",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "effe"
+            ]
+          }
+        },
+        {
+          "type": "real_bounds",
+          "name": "expensive weapon fire time:seconds"
+        },
+        {
+          "type": "tag_reference",
+          "name": "big battle death effect",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "effe"
+            ]
+          }
+        },
+        {
+          "type": "pad",
+          "name": "PAD",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14499c440"
     },
-    "havok_primitive_block_5": {
-      "guid": "c9ec329940e7288636f52697b1dc2c04",
+    "character_physics_struct": {
+      "guid": "543fe92be64bb82c0dcbd7a2c16c2599",
+      "size": 476,
+      "size_string": "sizeof(s_character_physics_definition)",
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "character_physics_flags"
+        },
+        {
+          "type": "real",
+          "name": "height standing"
+        },
+        {
+          "type": "real",
+          "name": "height crouching"
+        },
+        {
+          "type": "real",
+          "name": "radius"
+        },
+        {
+          "type": "real",
+          "name": "mass"
+        },
+        {
+          "type": "real",
+          "name": "revive downed player mass"
+        },
+        {
+          "type": "char_enum",
+          "name": "maximum rigid body size override",
+          "definition": "rigid_body_size_enum"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "living material name#collision material used when character is alive",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "dead material name#collision material used when character is dead",
+          "group_tag": "sted"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime global material type!"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime dead global material type!"
+        },
+        {
+          "type": "block",
+          "name": "dead sphere shapes*#don't edit!",
+          "definition": "havok_shapes_block"
+        },
+        {
+          "type": "block",
+          "name": "transformed dead sphere shapes*#don't edit!",
+          "definition": "havok_shapes_block"
+        },
+        {
+          "type": "block",
+          "name": "pill shapes*#don't edit!",
+          "definition": "havok_shapes_block"
+        },
+        {
+          "type": "block",
+          "name": "sphere shapes*#don't edit!",
+          "definition": "havok_shapes_block"
+        },
+        {
+          "type": "block",
+          "name": "compund sphere shapes*#don't edit!",
+          "definition": "havok_shapes_block"
+        },
+        {
+          "type": "explanation",
+          "name": "ground",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "ground physics",
+          "definition": "character_physics_ground_struct"
+        },
+        {
+          "type": "explanation",
+          "name": "flying",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "flying physics",
+          "definition": "character_physics_flying_struct"
+        },
+        {
+          "type": "explanation",
+          "name": "clambering",
+          "definition": ""
+        },
+        {
+          "type": "struct",
+          "name": "clambering parameters",
+          "definition": "characterPhysicsClamberingParameters"
+        },
+        {
+          "type": "struct",
+          "name": "airborne stabilization",
+          "definition": "AirborneStabilizationSettingsStruct"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448515b0"
+    },
+    "havok_shapes_block": {
+      "guid": "9c70c5808041da378a278fa8ee3e942f",
+      "size": 96,
+      "size_string": "sizeof(HavokSerializedShape)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "field pointer skip!~\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "block",
+          "name": "primitive^*!",
+          "definition": "havok_primitive_block"
+        },
+        {
+          "type": "data",
+          "name": "Packfile Data*!",
+          "definition": "HavokSerializableDataDefinition"
+        },
+        {
+          "type": "data",
+          "name": "TagFile Data*!",
+          "definition": "HavokSerializableDataDefinition"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144851bc0"
+    },
+    "havok_primitive_block_struct": {
+      "guid": "9932ecc9e740862836f52697b1dc2c04",
       "size": 40,
+      "size_string": "sizeof(Primitive)",
       "fields": [
         {
           "type": "string_id",
@@ -115,21 +477,23 @@
           "name": "mass*!"
         },
         {
-          "type": "long_integer",
-          "name": "phantom*"
+          "type": "long_block_index",
+          "name": "phantom*",
+          "definition": "havok_shapes_block"
         },
         {
           "type": "short_integer",
           "name": "runtime material type*~!"
         },
         {
-          "type": "char_integer",
-          "name": "material*"
+          "type": "char_block_index",
+          "name": "material*",
+          "definition": "materials_block"
         },
         {
           "type": "byte_flags",
           "name": "material flags*",
-          "definition": "havok_primitive_block_5_options_9"
+          "definition": "physics_material_flags"
         },
         {
           "type": "short_integer",
@@ -140,478 +504,207 @@
           "name": "should use"
         },
         {
-          "type": "custom",
-          "name": "collision layer override"
+          "type": "explanation",
+          "name": "collision layer override",
+          "definition": "This value overrides the default, model, and rigid body layer."
         },
         {
           "type": "string_id",
-          "name": "collision layer"
+          "name": "collision layer",
+          "group_tag": "sted"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144855c90"
     },
-    "havok_shapes_block_4": {
-      "guid": "80c5709c418037da8a278fa8ee3e942f",
-      "size": 96,
-      "fields": [
-        {
-          "type": "int64_integer",
-          "name": "field pointer skip!~"
-        },
-        {
-          "type": "block",
-          "name": "primitive^*!",
-          "definition": "havok_primitive_block_5"
-        },
-        {
-          "type": "data",
-          "name": "Packfile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "data",
-          "name": "TagFile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_primitive_block_7": {
-      "guid": "c9ec329940e7288636f52697b1dc2c04",
-      "size": 40,
+    "materials_block_struct": {
+      "guid": "ddea2cb45c4c5a133b6fe7b913a951fb",
+      "size": 24,
+      "size_string": "sizeof(Material)",
       "fields": [
         {
           "type": "string_id",
           "name": "name^*!"
         },
         {
-          "type": "real",
-          "name": "relative mass scale"
-        },
-        {
-          "type": "real_fraction",
-          "name": "friction"
-        },
-        {
-          "type": "real_fraction",
-          "name": "restitution"
-        },
-        {
-          "type": "real",
-          "name": "volume *"
-        },
-        {
-          "type": "real",
-          "name": "mass*!"
-        },
-        {
-          "type": "long_integer",
-          "name": "phantom*"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime material type*~!"
-        },
-        {
-          "type": "char_integer",
-          "name": "material*"
-        },
-        {
           "type": "byte_flags",
-          "name": "material flags*",
-          "definition": "havok_primitive_block_7_options_9"
-        },
-        {
-          "type": "short_integer",
-          "name": "mass distribution index!"
-        },
-        {
-          "type": "short_integer",
-          "name": "should use"
-        },
-        {
-          "type": "custom",
-          "name": "collision layer override"
-        },
-        {
-          "type": "string_id",
-          "name": "collision layer"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_shapes_block_6": {
-      "guid": "80c5709c418037da8a278fa8ee3e942f",
-      "size": 96,
-      "fields": [
-        {
-          "type": "int64_integer",
-          "name": "field pointer skip!~"
-        },
-        {
-          "type": "block",
-          "name": "primitive^*!",
-          "definition": "havok_primitive_block_7"
-        },
-        {
-          "type": "data",
-          "name": "Packfile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "data",
-          "name": "TagFile Data*!",
-          "definition": "tag_data"
+          "name": "flags",
+          "definition": "physics_material_flags"
         },
         {
           "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_primitive_block_9": {
-      "guid": "c9ec329940e7288636f52697b1dc2c04",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^*!"
-        },
-        {
-          "type": "real",
-          "name": "relative mass scale"
-        },
-        {
-          "type": "real_fraction",
-          "name": "friction"
-        },
-        {
-          "type": "real_fraction",
-          "name": "restitution"
-        },
-        {
-          "type": "real",
-          "name": "volume *"
-        },
-        {
-          "type": "real",
-          "name": "mass*!"
-        },
-        {
-          "type": "long_integer",
-          "name": "phantom*"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime material type*~!"
-        },
-        {
-          "type": "char_integer",
-          "name": "material*"
-        },
-        {
-          "type": "byte_flags",
-          "name": "material flags*",
-          "definition": "havok_primitive_block_9_options_9"
-        },
-        {
-          "type": "short_integer",
-          "name": "mass distribution index!"
-        },
-        {
-          "type": "short_integer",
-          "name": "should use"
-        },
-        {
-          "type": "custom",
-          "name": "collision layer override"
+          "name": "flags pad",
+          "definition": 3
         },
         {
           "type": "string_id",
-          "name": "collision layer"
+          "name": "global material name",
+          "group_tag": "sted"
         },
         {
-          "type": "terminator"
+          "type": "long_block_index",
+          "name": "phantom type",
+          "definition": "phantom_types_block"
+        },
+        {
+          "type": "explanation",
+          "name": "collision layer override",
+          "definition": "This value overrides the default collision layer.  It is overridden by any values specified rigid bodies block that overlap. Values set here can be overridden per shape through the shape primitive blocks."
+        },
+        {
+          "type": "string_id",
+          "name": "collision layer",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "runtime collision layer*!"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144855640"
     },
-    "havok_shapes_block_8": {
-      "guid": "80c5709c418037da8a278fa8ee3e942f",
-      "size": 96,
+    "phantom_types_block_struct": {
+      "guid": "5bb932471f46f63dc018eb8606e14ddd",
+      "size": 116,
+      "size_string": "sizeof(PhantomType)",
       "fields": [
         {
-          "type": "int64_integer",
-          "name": "field pointer skip!~"
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "PhantomFlags"
         },
         {
-          "type": "block",
-          "name": "primitive^*!",
-          "definition": "havok_primitive_block_9"
+          "type": "real",
+          "name": "brittle timer:seconds#objects in this phantom volume will be set to brittle collision damage for this amount of time."
         },
         {
-          "type": "data",
-          "name": "Packfile Data*!",
-          "definition": "tag_data"
+          "type": "char_enum",
+          "name": "minimum size",
+          "definition": "rigid_body_size_enum"
         },
         {
-          "type": "data",
-          "name": "TagFile Data*!",
-          "definition": "tag_data"
+          "type": "char_enum",
+          "name": "maximum size",
+          "definition": "rigid_body_size_enum"
         },
         {
           "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_primitive_block_11": {
-      "guid": "c9ec329940e7288636f52697b1dc2c04",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^*!"
-        },
-        {
-          "type": "real",
-          "name": "relative mass scale"
-        },
-        {
-          "type": "real_fraction",
-          "name": "friction"
-        },
-        {
-          "type": "real_fraction",
-          "name": "restitution"
-        },
-        {
-          "type": "real",
-          "name": "volume *"
-        },
-        {
-          "type": "real",
-          "name": "mass*!"
-        },
-        {
-          "type": "long_integer",
-          "name": "phantom*"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime material type*~!"
-        },
-        {
-          "type": "char_integer",
-          "name": "material*"
-        },
-        {
-          "type": "byte_flags",
-          "name": "material flags*",
-          "definition": "havok_primitive_block_11_options_9"
-        },
-        {
-          "type": "short_integer",
-          "name": "mass distribution index!"
-        },
-        {
-          "type": "short_integer",
-          "name": "should use"
+          "name": "OF",
+          "definition": 2
         },
         {
           "type": "custom",
-          "name": "collision layer override"
+          "name": null,
+          "group_tag": "amkr"
         },
         {
           "type": "string_id",
-          "name": "collision layer"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_shapes_block_10": {
-      "guid": "80c5709c418037da8a278fa8ee3e942f",
-      "size": 96,
-      "fields": [
-        {
-          "type": "int64_integer",
-          "name": "field pointer skip!~"
-        },
-        {
-          "type": "block",
-          "name": "primitive^*!",
-          "definition": "havok_primitive_block_11"
-        },
-        {
-          "type": "data",
-          "name": "Packfile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "data",
-          "name": "TagFile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_primitive_block_13": {
-      "guid": "c9ec329940e7288636f52697b1dc2c04",
-      "size": 40,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "name^*!"
-        },
-        {
-          "type": "real",
-          "name": "relative mass scale"
-        },
-        {
-          "type": "real_fraction",
-          "name": "friction"
-        },
-        {
-          "type": "real_fraction",
-          "name": "restitution"
-        },
-        {
-          "type": "real",
-          "name": "volume *"
-        },
-        {
-          "type": "real",
-          "name": "mass*!"
-        },
-        {
-          "type": "long_integer",
-          "name": "phantom*"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime material type*~!"
-        },
-        {
-          "type": "char_integer",
-          "name": "material*"
-        },
-        {
-          "type": "byte_flags",
-          "name": "material flags*",
-          "definition": "havok_primitive_block_13_options_9"
-        },
-        {
-          "type": "short_integer",
-          "name": "mass distribution index!"
-        },
-        {
-          "type": "short_integer",
-          "name": "should use"
+          "name": "marker name#you don't need this if you're just generating effects.  If empty it defaults to the up of the object"
         },
         {
           "type": "custom",
-          "name": "collision layer override"
+          "name": null,
+          "group_tag": "amkr"
         },
         {
           "type": "string_id",
-          "name": "collision layer"
+          "name": "alignment marker name#you don't need this if you're just generating effects.  If empty it defaults to \"marker name\""
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "havok_shapes_block_12": {
-      "guid": "80c5709c418037da8a278fa8ee3e942f",
-      "size": 96,
-      "fields": [
-        {
-          "type": "int64_integer",
-          "name": "field pointer skip!~"
-        },
-        {
-          "type": "block",
-          "name": "primitive^*!",
-          "definition": "havok_primitive_block_13"
-        },
-        {
-          "type": "data",
-          "name": "Packfile Data*!",
-          "definition": "tag_data"
-        },
-        {
-          "type": "data",
-          "name": "TagFile Data*!",
-          "definition": "tag_data"
+          "type": "explanation",
+          "name": "Linear Motion",
+          "definition": "0 - means do nothing\nCENTER: motion towards marker position \nAXIS: motion towards marker axis, such that object is on the axis\nDIRECTION: motion along marker direction"
         },
         {
           "type": "pad",
-          "name": "pad",
-          "definition": 4
+          "name": "WTBFO",
+          "definition": 8
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Slide_distance_function_15": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
+          "type": "real",
+          "name": "hookes law e#0 if you don't want this to behave like spring.  1 is a good starting point if you do."
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "Slide_speed_function_16": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
+          "type": "real",
+          "name": "linear dead radius#radius from linear motion origin in which acceleration is dead."
         },
         {
-          "type": "terminator"
+          "type": "real",
+          "name": "center acc"
+        },
+        {
+          "type": "real",
+          "name": "center max vel"
+        },
+        {
+          "type": "real",
+          "name": "axis acc"
+        },
+        {
+          "type": "real",
+          "name": "axis max vel"
+        },
+        {
+          "type": "real",
+          "name": "direction acc"
+        },
+        {
+          "type": "real",
+          "name": "direction max vel"
+        },
+        {
+          "type": "real",
+          "name": "orbit acc#negative values spin the opposite direction from positive ones"
+        },
+        {
+          "type": "real",
+          "name": "orbit max vel"
+        },
+        {
+          "type": "pad",
+          "name": "TF",
+          "definition": 28
+        },
+        {
+          "type": "explanation",
+          "name": "Angular Motion",
+          "definition": "0 - means do nothing\nALIGNMENT: algin objects in the phantom with the marker\nSPIN: spin the object about the marker axis"
+        },
+        {
+          "type": "real",
+          "name": "alignment hookes law e#0 if you don't want this to behave like spring.  1 is a good starting point if you do."
+        },
+        {
+          "type": "real",
+          "name": "alignment acc"
+        },
+        {
+          "type": "real",
+          "name": "alignment max vel"
+        },
+        {
+          "type": "pad",
+          "name": "TYXJL",
+          "definition": 8
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144855110"
     },
-    "ground_physics_14": {
-      "guid": "e61d5093453d77e5a005ec908b777b8b",
+    "character_physics_ground_struct": {
+      "guid": "93501de63d45e577a005ec908b777b8b",
       "size": 148,
+      "size_string": "sizeof(s_character_physics_ground_definition)",
       "fields": [
         {
           "type": "angle",
@@ -690,13 +783,18 @@
           "name": "minimum slide trigger sprint fraction:wu/s#character must be moving at least this fast to start sliding"
         },
         {
+          "type": "explanation",
+          "name": "Slide distance function",
+          "definition": "Determines the distance travelled based on the initial sprint fraction"
+        },
+        {
           "type": "custom",
-          "name": "Slide distance function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "Slide distance function",
-          "definition": "Slide_distance_function_15"
+          "definition": "mapping_function"
         },
         {
           "type": "real",
@@ -716,22 +814,57 @@
           "name": "maximum turn during slide:degrees#maximum amount that the character's aim can turn about the up axis before the slide is aborted"
         },
         {
+          "type": "explanation",
+          "name": "Slide speed function",
+          "definition": "Defines the character's speed over the course of a slide to crouch. 1.0 on the y axis is the speed at which the character entered the slide. 0.0 on the y axis is a full stop."
+        },
+        {
           "type": "custom",
-          "name": "Slide speed function"
+          "name": null
         },
         {
           "type": "struct",
           "name": "Slide speed function",
-          "definition": "Slide_speed_function_16"
+          "definition": "mapping_function"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144850f20"
     },
-    "flying_physics_17": {
-      "guid": "692e7bdd483f59f46d3cbfaec31e5e64",
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "character_physics_flying_struct": {
+      "guid": "dd7b2e693f48f4596d3cbfaec31e5e64",
       "size": 48,
+      "size_string": "sizeof(s_character_physics_flying_definition)",
       "fields": [
         {
           "type": "angle",
@@ -780,73 +913,19 @@
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "flying_physics_17_options_11"
+          "definition": "flying_physics_flags"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144851040"
     },
-    "common_parameters_19": {
-      "guid": "b72fd7a9414c7ff2914a95a6c1499c86",
-      "size": 48,
-      "fields": [
-        {
-          "type": "real",
-          "name": "initial button press hold time to trigger:seconds#in order to trigger the mobility action with the same button press that triggered the jump, the player must continue to hold the button for this amount of time"
-        },
-        {
-          "type": "real_fraction",
-          "name": "minimum forward throttle#throttle must be at least this far forward to trigger the mobility action"
-        },
-        {
-          "type": "angle",
-          "name": "maximum ledge slope:degrees#the steepest ledge that can be moved onto by this mobility mode"
-        },
-        {
-          "type": "angle",
-          "name": "minimum edge sharpness:degrees#minimum angle between normals of vertical and horizontal faces of ledge"
-        },
-        {
-          "type": "real",
-          "name": "maximum backward reach:world units#maximum distance behind the character of the apex of a path up to a ledge"
-        },
-        {
-          "type": "real",
-          "name": "apex vertical offset:world units#for paths up to a ledge, the vertical offset of the apex from the destination point on the ledge"
-        },
-        {
-          "type": "real",
-          "name": "max exit speed:world units per second#maximum speed at which the character can exit the mobility action"
-        },
-        {
-          "type": "real",
-          "name": "min entry time:seconds#minimum time it can take for the entry phase of the mobility action (&quot;catching the ledge&quot;)"
-        },
-        {
-          "type": "real",
-          "name": "max entry time:seconds#maximum time it can take for the entry phase of the mobility action (&quot;catching the ledge&quot;)"
-        },
-        {
-          "type": "real",
-          "name": "min movement time:seconds#minimum time it can take to perform the mobility action"
-        },
-        {
-          "type": "real",
-          "name": "max movement time:seconds#maximum time it can take to perform the mobility action"
-        },
-        {
-          "type": "real",
-          "name": "max anchor object relative speed:world units/sec#if an object is moving faster than this relative to us we cannot use it as an anchor for the mobility action"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "clambering_parameters_18": {
-      "guid": "ec5d052743a1ff31c6fcf483f1e4f334",
+    "characterPhysicsClamberingParameters": {
+      "guid": "27055deca14331ffc6fcf483f1e4f334",
       "size": 80,
+      "size_string": "sizeof(ClamberingParameters)",
       "fields": [
         {
           "type": "real",
@@ -884,20 +963,84 @@
         {
           "type": "struct",
           "name": "common parameters",
-          "definition": "common_parameters_19"
+          "definition": "characterPhysicsCommonMobilityParameters"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144855b00"
     },
-    "airborne_stabilization_20": {
-      "guid": "e02b276b4e2028ab7c750d99e662d7df",
+    "characterPhysicsCommonMobilityParameters": {
+      "guid": "a9d72fb74c41f27f914a95a6c1499c86",
+      "size": 48,
+      "size_string": "sizeof(CommonMobilityParameters)",
+      "fields": [
+        {
+          "type": "real",
+          "name": "initial button press hold time to trigger:seconds#in order to trigger the mobility action with the same button press that triggered the jump, the player must continue to hold the button for this amount of time"
+        },
+        {
+          "type": "real_fraction",
+          "name": "minimum forward throttle#throttle must be at least this far forward to trigger the mobility action"
+        },
+        {
+          "type": "angle",
+          "name": "maximum ledge slope:degrees#the steepest ledge that can be moved onto by this mobility mode"
+        },
+        {
+          "type": "angle",
+          "name": "minimum edge sharpness:degrees#minimum angle between normals of vertical and horizontal faces of ledge"
+        },
+        {
+          "type": "real",
+          "name": "maximum backward reach:world units#maximum distance behind the character of the apex of a path up to a ledge"
+        },
+        {
+          "type": "real",
+          "name": "apex vertical offset:world units#for paths up to a ledge, the vertical offset of the apex from the destination point on the ledge"
+        },
+        {
+          "type": "real",
+          "name": "max exit speed:world units per second#maximum speed at which the character can exit the mobility action"
+        },
+        {
+          "type": "real",
+          "name": "min entry time:seconds#minimum time it can take for the entry phase of the mobility action (\"catching the ledge\")"
+        },
+        {
+          "type": "real",
+          "name": "max entry time:seconds#maximum time it can take for the entry phase of the mobility action (\"catching the ledge\")"
+        },
+        {
+          "type": "real",
+          "name": "min movement time:seconds#minimum time it can take to perform the mobility action"
+        },
+        {
+          "type": "real",
+          "name": "max movement time:seconds#maximum time it can take to perform the mobility action"
+        },
+        {
+          "type": "real",
+          "name": "max anchor object relative speed:world units/sec#if an object is moving faster than this relative to us we cannot use it as an anchor for the mobility action"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144856160"
+    },
+    "AirborneStabilizationSettingsStruct": {
+      "guid": "6b272be0204eab287c750d99e662d7df",
       "size": 16,
+      "size_string": "sizeof(AirborneStabilizationSettings)",
       "fields": [
         {
           "type": "custom",
-          "name": "airborne stabilization"
+          "name": "airborne stabilization",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -916,150 +1059,36 @@
           "name": "air stabilization time scale#slows down time for the character's motion"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144851150"
     },
-    "physics_3": {
-      "guid": "2be93f544be62cb80dcbd7a2c16c2599",
-      "size": 476,
-      "fields": [
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "physics_3_options_0"
-        },
-        {
-          "type": "real",
-          "name": "height standing"
-        },
-        {
-          "type": "real",
-          "name": "height crouching"
-        },
-        {
-          "type": "real",
-          "name": "radius"
-        },
-        {
-          "type": "real",
-          "name": "mass"
-        },
-        {
-          "type": "real",
-          "name": "revive downed player mass"
-        },
-        {
-          "type": "char_enum",
-          "name": "maximum rigid body size override",
-          "definition": "physics_3_options_6"
-        },
-        {
-          "type": "pad",
-          "name": "pad1",
-          "definition": 3
-        },
-        {
-          "type": "string_id",
-          "name": "living material name#collision material used when character is alive"
-        },
-        {
-          "type": "string_id",
-          "name": "dead material name#collision material used when character is dead"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime global material type!"
-        },
-        {
-          "type": "short_integer",
-          "name": "runtime dead global material type!"
-        },
-        {
-          "type": "block",
-          "name": "dead sphere shapes*#don't edit!",
-          "definition": "havok_shapes_block_4"
-        },
-        {
-          "type": "block",
-          "name": "transformed dead sphere shapes*#don't edit!",
-          "definition": "havok_shapes_block_6"
-        },
-        {
-          "type": "block",
-          "name": "pill shapes*#don't edit!",
-          "definition": "havok_shapes_block_8"
-        },
-        {
-          "type": "block",
-          "name": "sphere shapes*#don't edit!",
-          "definition": "havok_shapes_block_10"
-        },
-        {
-          "type": "block",
-          "name": "compund sphere shapes*#don't edit!",
-          "definition": "havok_shapes_block_12"
-        },
-        {
-          "type": "custom",
-          "name": "ground"
-        },
-        {
-          "type": "struct",
-          "name": "ground physics",
-          "definition": "ground_physics_14"
-        },
-        {
-          "type": "custom",
-          "name": "flying"
-        },
-        {
-          "type": "struct",
-          "name": "flying physics",
-          "definition": "flying_physics_17"
-        },
-        {
-          "type": "custom",
-          "name": "clambering"
-        },
-        {
-          "type": "struct",
-          "name": "clambering parameters",
-          "definition": "clambering_parameters_18"
-        },
-        {
-          "type": "struct",
-          "name": "airborne stabilization",
-          "definition": "airborne_stabilization_20"
-        },
-        {
-          "type": "pad",
-          "name": "pad0",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "campaign_metagame_bucket_block_21": {
-      "guid": "63d7ee664d6fcfe4718e5abc62e52871",
+    "campaign_metagame_bucket_block": {
+      "guid": "66eed7636f4de4cf718e5abc62e52871",
       "size": 8,
+      "size_string": "sizeof(s_campaign_metagame_bucket)",
       "fields": [
         {
           "type": "byte_flags",
           "name": "flags",
-          "definition": "campaign_metagame_bucket_block_21_options_0"
+          "definition": "campaign_metagame_bucket_flags"
         },
         {
           "type": "char_enum",
           "name": "type",
-          "definition": "campaign_metagame_bucket_block_21_options_1"
+          "definition": "campaign_metagame_bucket_type_enum"
         },
         {
           "type": "char_enum",
           "name": "class",
-          "definition": "campaign_metagame_bucket_block_21_options_2"
+          "definition": "campaign_metagame_bucket_class_enum"
         },
         {
           "type": "pad",
@@ -1076,21 +1105,26 @@
           "definition": 2
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144807720"
     },
-    "SoundRTPCBlock_22": {
-      "guid": "6edcfd7841771147644d27b8b574d61d",
+    "SoundRTPCBlock_struct": {
+      "guid": "78fddc6e77414711644d27b8b574d61d",
       "size": 16,
+      "size_string": "sizeof(SoundRTPCBlockDefinition)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "Attachment Index#Sound attachment to affect"
+          "type": "long_block_index",
+          "name": "Attachment Index#Sound attachment to affect",
+          "definition": "global_object_attachment_block"
         },
         {
           "type": "string_id",
-          "name": "Function#Function to drive the RTPC"
+          "name": "Function#Function to drive the RTPC",
+          "group_tag": "sted"
         },
         {
           "type": "string_id",
@@ -1101,262 +1135,157 @@
           "name": "RTPC name hash value*!"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144786280"
     },
-    "function_25": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
+    "global_object_attachment_block": {
+      "guid": "577209119c42754733d975a73f4575ee",
+      "size": 80,
+      "size_string": "sizeof(struct object_attachment_definition)",
       "fields": [
         {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
+          "type": "tag_reference",
+          "name": "type^",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "ligh",
+              "gldf",
+              "ltvl",
+              "effe",
+              "lsnd",
+              "lens",
+              "cpem",
+              "egfd",
+              "decs"
+            ]
+          }
         },
         {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_curve_24": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_25"
+          "type": "tag_reference",
+          "name": "override type#this attachment will override the attachment on the object that shares this ",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "ligh",
+              "gldf",
+              "ltvl",
+              "effe",
+              "lsnd",
+              "lens",
+              "cpem",
+              "egfd",
+              "decs"
+            ]
+          }
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "amkr"
+        },
+        {
+          "type": "string_id",
+          "name": "marker"
+        },
+        {
+          "type": "char_enum",
+          "name": "change color",
+          "definition": "global_object_change_color_enum"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "object_attachment_flags"
+        },
+        {
+          "type": "pad",
+          "name": "DPKP",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "primary scale",
+          "group_tag": "sted"
+        },
+        {
+          "type": "string_id",
+          "name": "secondary scale",
+          "group_tag": "sted"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144997cd0"
     },
-    "creature_scalar_timing_block_23": {
-      "guid": "3bf7e06644f4d7b2e592a3a9cf91c10b",
+    "creature_scalar_timing_block": {
+      "guid": "66e0f73bf444b2d7e592a3a9cf91c10b",
       "size": 28,
+      "size_string": "sizeof(c_function_definition)",
       "fields": [
         {
           "type": "struct",
           "name": "function_curve",
-          "definition": "function_curve_24"
+          "definition": "scalar_function_named_struct"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x14499bce0"
     },
-    "big_battle_creature_struct_definition_1": {
-      "guid": "cbcbfd3dee8b35356d3d8429792599a3",
-      "size": 888,
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "custom",
-          "name": "CREATURE"
-        },
-        {
-          "type": "long_flags",
-          "name": "flags",
-          "definition": "big_battle_creature_struct_definition_1_options_3"
-        },
-        {
-          "type": "short_enum",
-          "name": "default team",
-          "definition": "big_battle_creature_struct_definition_1_options_4"
-        },
-        {
-          "type": "pad",
-          "name": "PAD0",
-          "definition": 2
-        },
-        {
-          "type": "angle",
-          "name": "turning velocity maximum (ground creatures only):degrees per second"
-        },
-        {
-          "type": "angle",
-          "name": "turning acceleration maximum (ground creatures only):degrees per second squared"
-        },
-        {
-          "type": "real_fraction",
-          "name": "casual turning modifier (ground creatures only):[0,1]"
-        },
-        {
-          "type": "real",
-          "name": "autoaim width:world units"
-        },
-        {
-          "type": "struct",
-          "name": "physics",
-          "definition": "physics_3"
-        },
-        {
-          "type": "custom",
-          "name": "New creature flying physics"
-        },
-        {
-          "type": "angle",
-          "name": "yaw acceleration:degrees per second squared"
-        },
-        {
-          "type": "angle",
-          "name": "yaw max velocity:degrees per second"
-        },
-        {
-          "type": "angle",
-          "name": "pitch acceleration:degrees per second squared"
-        },
-        {
-          "type": "angle",
-          "name": "pitch max velocity:degrees per second"
-        },
-        {
-          "type": "angle",
-          "name": "roll acceleration:degrees per second squared"
-        },
-        {
-          "type": "angle",
-          "name": "roll max velocity:degrees per second"
-        },
-        {
-          "type": "angle",
-          "name": "maximum pitch angle:degrees per second"
-        },
-        {
-          "type": "angle",
-          "name": "maximum roll angle:degrees per second"
-        },
-        {
-          "type": "real",
-          "name": "max forward velocity:wu per second"
-        },
-        {
-          "type": "real",
-          "name": "max non directional vertical velocity:wu per second"
-        },
-        {
-          "type": "real",
-          "name": "forward acceleration:wu per second squared"
-        },
-        {
-          "type": "real",
-          "name": "non directional vertical acceleration:wu per second squared"
-        },
-        {
-          "type": "tag_reference",
-          "name": "impact damage",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "tag_reference",
-          "name": "impact shield damage#if not specified, uses 'impact damage'",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "block",
-          "name": "campaign metagame bucket",
-          "definition": "campaign_metagame_bucket_block_21"
-        },
-        {
-          "type": "block",
-          "name": "Sound RTPCs",
-          "definition": "SoundRTPCBlock_22"
-        },
-        {
-          "type": "custom",
-          "name": "death and destruction"
-        },
-        {
-          "type": "real_bounds",
-          "name": "destroy after death time:seconds#if non-zero, the creature will destroy itself upon death after this much time"
-        },
-        {
-          "type": "custom",
-          "name": "big battle"
-        },
-        {
-          "type": "long_flags",
-          "name": "big battle flags",
-          "definition": "big_battle_creature_struct_definition_1_options_31"
-        },
-        {
-          "type": "tag_reference",
-          "name": "big battle weapon emitter",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "real_point_3d",
-          "name": "big battle weapon offset"
-        },
-        {
-          "type": "tag_reference",
-          "name": "big battle weapon emitter 2#if you leave this empty, only the first emitter will fire",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "real_point_3d",
-          "name": "big battle weapon offset 2"
-        },
-        {
-          "type": "block",
-          "name": "big battle weapon fire timing",
-          "definition": "creature_scalar_timing_block_23"
-        },
-        {
-          "type": "tag_reference",
-          "name": "big battle expensive weapon effect#this fires a full effect from location up, oriented along vehicle's forward and up axes",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "real_bounds",
-          "name": "expensive weapon fire time:seconds"
-        },
-        {
-          "type": "tag_reference",
-          "name": "big battle death effect",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "pad",
-          "name": "PAD",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "big_battle_creature_struct_definition_1_options_3": {
+    "creature_definition_flags": {
       "options": [
         "unused",
         "immune to falling damage",
@@ -1367,7 +1296,7 @@
         "force ground movement"
       ]
     },
-    "big_battle_creature_struct_definition_1_options_4": {
+    "unit_default_teams": {
       "options": [
         "default",
         "player",
@@ -1381,7 +1310,7 @@
         "neutral"
       ]
     },
-    "physics_3_options_0": {
+    "character_physics_flags": {
       "options": [
         "centered_at_origin",
         "shape spherical",
@@ -1399,7 +1328,7 @@
         "aligns with ground"
       ]
     },
-    "physics_3_options_6": {
+    "rigid_body_size_enum": {
       "options": [
         "default",
         "tiny",
@@ -1410,47 +1339,57 @@
         "extra huge"
       ]
     },
-    "havok_primitive_block_5_options_9": {
+    "physics_material_flags": {
       "options": [
         "supresses effects",
         "force enable collision with player#enables collision with the player regardless of the collision group"
       ]
     },
-    "havok_primitive_block_7_options_9": {
+    "PhantomFlags": {
       "options": [
-        "supresses effects",
-        "force enable collision with player#enables collision with the player regardless of the collision group"
+        "UNUSED",
+        "use acc as force",
+        "negates gravity",
+        "ignores players",
+        "ignores nonplayers",
+        "ignores bipeds",
+        "ignores vehicles",
+        "ignores weapons",
+        "ignores equipment",
+        "ignores projectiles",
+        "ignores scenery",
+        "ignores devices",
+        "ignores crates",
+        "ignores creatures",
+        "ignores giants",
+        "ignores entities",
+        "ignores mechs",
+        "ignores team objects",
+        "smart directional acceleration",
+        "ignores grounded bipeds",
+        "localizes physics",
+        "disable linear damping",
+        "disable angular damping",
+        "ignores dead bipeds",
+        "ignores live bipeds",
+        "latching disabled",
+        "mirrored axis",
+        "activate ragdolls",
+        "ignores forge editor",
+        "accelerate along input direction"
       ]
     },
-    "havok_primitive_block_9_options_9": {
-      "options": [
-        "supresses effects",
-        "force enable collision with player#enables collision with the player regardless of the collision group"
-      ]
-    },
-    "havok_primitive_block_11_options_9": {
-      "options": [
-        "supresses effects",
-        "force enable collision with player#enables collision with the player regardless of the collision group"
-      ]
-    },
-    "havok_primitive_block_13_options_9": {
-      "options": [
-        "supresses effects",
-        "force enable collision with player#enables collision with the player regardless of the collision group"
-      ]
-    },
-    "flying_physics_17_options_11": {
+    "flying_physics_flags": {
       "options": [
         "use world up"
       ]
     },
-    "campaign_metagame_bucket_block_21_options_0": {
+    "campaign_metagame_bucket_flags": {
       "options": [
         "only counts with riders"
       ]
     },
-    "campaign_metagame_bucket_block_21_options_1": {
+    "campaign_metagame_bucket_type_enum": {
       "options": [
         "brute",
         "grunt",
@@ -1501,7 +1440,7 @@
         "cavalier"
       ]
     },
-    "campaign_metagame_bucket_block_21_options_2": {
+    "campaign_metagame_bucket_class_enum": {
       "options": [
         "infantry",
         "leader",
@@ -1513,7 +1452,22 @@
         "standard vehicle"
       ]
     },
-    "big_battle_creature_struct_definition_1_options_31": {
+    "global_object_change_color_enum": {
+      "options": [
+        "none",
+        "primary",
+        "secondary",
+        "tertiary",
+        "quaternary"
+      ]
+    },
+    "object_attachment_flags": {
+      "options": [
+        "force always on#when this flag is clear we only create the attachment when the function object function is active or set to empty string",
+        "effect size scale from object scale"
+      ]
+    },
+    "creature_big_battle_definition_flags": {
       "options": [
         "boid aims at big battle target#setting this forces boid to aim at target instead of firing straight ahead",
         "boids fly with no pitch#flying boids will always stay level when changing altitude",
@@ -1522,7 +1476,23 @@
     }
   },
   "datas": {
-    "tag_data": {},
-    "function_definition_data": {}
+    "HavokSerializableDataDefinition": {
+      "alignment": 256,
+      "flags": 4,
+      "max_size": 10485760,
+      "max_size_string": "10*k_meg"
+    },
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

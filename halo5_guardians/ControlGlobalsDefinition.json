@@ -2,89 +2,83 @@
   "name": "ControlGlobalsDefinition",
   "tag": "glcn",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "ControlGlobalsDefinition_block",
   "blocks": {
-    "controller_input_block_3": {
+    "ControlGlobalsDefinition_block": {
       "max_count": 1,
-      "struct": "controller_input_block_3"
+      "max_count_string": "1",
+      "struct": "ControlGlobalsDefinition_block_struct"
     },
-    "controller_input_block_4": {
+    "controller_input_block": {
       "max_count": 1,
-      "struct": "controller_input_block_4"
+      "max_count_string": "1",
+      "struct": "controller_input_block"
     },
-    "controller_mapping_reference_block_6": {
+    "player_control_block": {
+      "max_count": 1,
+      "max_count_string": "1",
+      "struct": "player_control_block"
+    },
+    "controller_mapping_reference_block": {
       "max_count": 10,
-      "struct": "controller_mapping_reference_block_6"
+      "max_count_string": "StaticCast<long>(i343::NetProtocol::Profile::ButtonPreset::k_count)",
+      "struct": "controller_mapping_reference_block"
     },
-    "input_mapping_function_block_8": {
+    "gamepad_stick_info_block": {
       "max_count": 1,
-      "struct": "input_mapping_function_block_8"
+      "max_count_string": "1",
+      "struct": "gamepad_stick_info_block"
     },
-    "gamepad_stick_info_block_7": {
+    "input_mapping_function_block": {
       "max_count": 1,
-      "struct": "gamepad_stick_info_block_7"
-    },
-    "input_mapping_function_block_12": {
-      "max_count": 1,
-      "struct": "input_mapping_function_block_12"
-    },
-    "gamepad_stick_info_block_11": {
-      "max_count": 1,
-      "struct": "gamepad_stick_info_block_11"
-    },
-    "input_mapping_function_block_16": {
-      "max_count": 1,
-      "struct": "input_mapping_function_block_16"
-    },
-    "gamepad_stick_info_block_15": {
-      "max_count": 1,
-      "struct": "gamepad_stick_info_block_15"
-    },
-    "input_mapping_function_block_20": {
-      "max_count": 1,
-      "struct": "input_mapping_function_block_20"
-    },
-    "gamepad_stick_info_block_19": {
-      "max_count": 1,
-      "struct": "gamepad_stick_info_block_19"
-    },
-    "player_control_block_5": {
-      "max_count": 1,
-      "struct": "player_control_block_5"
-    },
-    "root": {
-      "max_count": 1,
-      "struct": "ControlGlobalsDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "input_mapping_function_block"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
+    "ControlGlobalsDefinition_block_struct": {
+      "guid": "d58b9766ac4377770622a286ca1f8b44",
+      "size": 104,
+      "size_string": "(sizeof(i343::ControlGlobals) - Tag::SizeInfo<i343::ControlGlobals::ParentType>::k_tagSize)",
       "fields": [
         {
-          "type": "long_integer",
-          "name": "global tag ID!"
+          "type": "struct",
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
+        },
+        {
+          "type": "block",
+          "name": "controller input (Xbox360){controller input}",
+          "definition": "controller_input_block"
+        },
+        {
+          "type": "block",
+          "name": "controller input (Xbone)",
+          "definition": "controller_input_block"
+        },
+        {
+          "type": "block",
+          "name": "player control",
+          "definition": "player_control_block"
         },
         {
           "type": "pad",
-          "name": "local tag handle!~",
+          "name": "pad",
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1448086e0"
     },
-    "controller_input_block_3": {
-      "guid": "056079c54d1cbd19824154b7add2a4d8",
+    "controller_input_block": {
+      "guid": "c57960051c4d19bd824154b7add2a4d8",
       "size": 8,
+      "size_string": "sizeof(s_game_globals_input_abstraction)",
       "fields": [
         {
           "type": "real",
@@ -95,400 +89,41 @@
           "name": "radial dead zone"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144833590"
     },
-    "controller_input_block_4": {
-      "guid": "056079c54d1cbd19824154b7add2a4d8",
-      "size": 8,
-      "fields": [
-        {
-          "type": "real",
-          "name": "axial dead zone"
-        },
-        {
-          "type": "real",
-          "name": "radial dead zone"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "controller_mapping_reference_block_6": {
-      "guid": "6d1c4d664c4e921cc3f6a0b2bfac6aec",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "mapping",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_10": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_9": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_10"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "input_mapping_function_block_8": {
-      "guid": "aaeebf6345536aa01ba3daa517373760",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_9"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gamepad_stick_info_block_7": {
-      "guid": "d34174064b5ff47e157c3c95abbe64d3",
-      "size": 56,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "input shape",
-          "definition": "gamepad_stick_info_block_7_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "F",
-          "definition": 3
-        },
-        {
-          "type": "real_fraction",
-          "name": "peg threshold [0,1]#magnitude of analog input for pegged acceleration to kick in"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged time#time for a pegged look to reach maximum effect"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged scale#the maximum effect achieved over the duration of the pegged time."
-        },
-        {
-          "type": "angle",
-          "name": "peg max angular velocity:degrees per sec#the maximum turning speed during peg"
-        },
-        {
-          "type": "block",
-          "name": "input mapping function",
-          "definition": "input_mapping_function_block_8"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_14": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_13": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_14"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "input_mapping_function_block_12": {
-      "guid": "aaeebf6345536aa01ba3daa517373760",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_13"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gamepad_stick_info_block_11": {
-      "guid": "d34174064b5ff47e157c3c95abbe64d3",
-      "size": 56,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "input shape",
-          "definition": "gamepad_stick_info_block_11_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "F",
-          "definition": 3
-        },
-        {
-          "type": "real_fraction",
-          "name": "peg threshold [0,1]#magnitude of analog input for pegged acceleration to kick in"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged time#time for a pegged look to reach maximum effect"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged scale#the maximum effect achieved over the duration of the pegged time."
-        },
-        {
-          "type": "angle",
-          "name": "peg max angular velocity:degrees per sec#the maximum turning speed during peg"
-        },
-        {
-          "type": "block",
-          "name": "input mapping function",
-          "definition": "input_mapping_function_block_12"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_18": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_17": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_18"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "input_mapping_function_block_16": {
-      "guid": "aaeebf6345536aa01ba3daa517373760",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_17"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gamepad_stick_info_block_15": {
-      "guid": "d34174064b5ff47e157c3c95abbe64d3",
-      "size": 56,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "input shape",
-          "definition": "gamepad_stick_info_block_15_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "F",
-          "definition": 3
-        },
-        {
-          "type": "real_fraction",
-          "name": "peg threshold [0,1]#magnitude of analog input for pegged acceleration to kick in"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged time#time for a pegged look to reach maximum effect"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged scale#the maximum effect achieved over the duration of the pegged time."
-        },
-        {
-          "type": "angle",
-          "name": "peg max angular velocity:degrees per sec#the maximum turning speed during peg"
-        },
-        {
-          "type": "block",
-          "name": "input mapping function",
-          "definition": "input_mapping_function_block_16"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_22": {
-      "guid": "5a14a98f448453fad46810809e45f10a",
-      "size": 28,
-      "fields": [
-        {
-          "type": "data",
-          "name": "data",
-          "definition": "function_definition_data"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "function_21": {
-      "guid": "72cb9289481e027651a36794187c6df5",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_22"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "input_mapping_function_block_20": {
-      "guid": "aaeebf6345536aa01ba3daa517373760",
-      "size": 28,
-      "fields": [
-        {
-          "type": "struct",
-          "name": "function",
-          "definition": "function_21"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "gamepad_stick_info_block_19": {
-      "guid": "d34174064b5ff47e157c3c95abbe64d3",
-      "size": 56,
-      "fields": [
-        {
-          "type": "char_enum",
-          "name": "input shape",
-          "definition": "gamepad_stick_info_block_19_options_0"
-        },
-        {
-          "type": "pad",
-          "name": "F",
-          "definition": 3
-        },
-        {
-          "type": "real_fraction",
-          "name": "peg threshold [0,1]#magnitude of analog input for pegged acceleration to kick in"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged time#time for a pegged look to reach maximum effect"
-        },
-        {
-          "type": "real_point_2d",
-          "name": "pegged scale#the maximum effect achieved over the duration of the pegged time."
-        },
-        {
-          "type": "angle",
-          "name": "peg max angular velocity:degrees per sec#the maximum turning speed during peg"
-        },
-        {
-          "type": "block",
-          "name": "input mapping function",
-          "definition": "input_mapping_function_block_20"
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "player_control_block_5": {
-      "guid": "afad74144a9608fef6bce494fceec239",
+    "player_control_block": {
+      "guid": "1474adaf964afe08f6bce494fceec239",
       "size": 384,
+      "size_string": "sizeof(s_game_globals_player_control)",
       "fields": [
         {
           "type": "block",
           "name": "controller button mappings",
-          "definition": "controller_mapping_reference_block_6"
+          "definition": "controller_mapping_reference_block"
         },
         {
           "type": "block",
           "name": "move stick info (Xbox360){move stick info}",
-          "definition": "gamepad_stick_info_block_7"
+          "definition": "gamepad_stick_info_block"
         },
         {
           "type": "block",
           "name": "look stick info (Xbox360){look stick info}",
-          "definition": "gamepad_stick_info_block_11"
+          "definition": "gamepad_stick_info_block"
         },
         {
           "type": "block",
           "name": "move stick info (Xbone)",
-          "definition": "gamepad_stick_info_block_15"
+          "definition": "gamepad_stick_info_block"
         },
         {
           "type": "block",
           "name": "look stick info (Xbone)",
-          "definition": "gamepad_stick_info_block_19"
+          "definition": "gamepad_stick_info_block"
         },
         {
           "type": "real_fraction",
@@ -511,24 +146,27 @@
           "name": "ads magnetism adhesion#how much the crosshair sticks to enemies when in ads"
         },
         {
-          "type": "custom",
-          "name": "crosshair"
+          "type": "explanation",
+          "name": "crosshair",
+          "definition": ""
         },
         {
           "type": "real_point_2d",
           "name": "crosshair location#-1..1, 0 is middle of the screen"
         },
         {
-          "type": "custom",
-          "name": "fireteam"
+          "type": "explanation",
+          "name": "fireteam",
+          "definition": ""
         },
         {
           "type": "real",
           "name": "fireteam command mode duration:seconds#How long is command mode on after you initially attempt to issue an order"
         },
         {
-          "type": "custom",
-          "name": "looking"
+          "type": "explanation",
+          "name": "looking",
+          "definition": ""
         },
         {
           "type": "real",
@@ -552,8 +190,9 @@
           "name": "minimum angle for vehicle flipping#0 means the vehicle's up vector is along the ground, 90 means the up vector is pointing straight up:degrees"
         },
         {
-          "type": "custom",
-          "name": "weapons may optionally be set to require extra button hold time (e.g. ordnance power weapon drops)"
+          "type": "explanation",
+          "name": "weapons may optionally be set to require extra button hold time (e.g. ordnance power weapon drops)",
+          "definition": ""
         },
         {
           "type": "real",
@@ -584,8 +223,9 @@
           "name": "accidental stick click threshold look stick#defaults to 0.8"
         },
         {
-          "type": "custom",
-          "name": "double/triple jump"
+          "type": "explanation",
+          "name": "double/triple jump",
+          "definition": ""
         },
         {
           "type": "real",
@@ -604,8 +244,9 @@
           "name": "triple jump velocity:aiming, vertical"
         },
         {
-          "type": "custom",
-          "name": "stick throws"
+          "type": "explanation",
+          "name": "stick throws",
+          "definition": ""
         },
         {
           "type": "real",
@@ -752,72 +393,167 @@
           "name": "jump_stationary_height"
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144833820"
     },
-    "ControlGlobalsDefinition_struct_definition_1": {
-      "guid": "13abc08721614dc40e377dd860d1c4b1",
-      "size": 104,
+    "controller_mapping_reference_block": {
+      "guid": "664d1c6d4e4c1c92c3f6a0b2bfac6aec",
+      "size": 32,
+      "size_string": "sizeof(s_controller_mapping_reference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "mapping",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "cnmp"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1448336c0"
+    },
+    "gamepad_stick_info_block": {
+      "guid": "067441d35f4b7ef4157c3c95abbe64d3",
+      "size": 56,
+      "size_string": "sizeof(s_gamepad_stick_settings)",
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "input shape",
+          "definition": "input_mapping_shape_enum"
+        },
+        {
+          "type": "pad",
+          "name": "F",
+          "definition": 3
+        },
+        {
+          "type": "real_fraction",
+          "name": "peg threshold [0,1]#magnitude of analog input for pegged acceleration to kick in"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "pegged time#time for a pegged look to reach maximum effect"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "pegged scale#the maximum effect achieved over the duration of the pegged time."
+        },
+        {
+          "type": "angle",
+          "name": "peg max angular velocity:degrees per sec#the maximum turning speed during peg"
+        },
+        {
+          "type": "block",
+          "name": "input mapping function",
+          "definition": "input_mapping_function_block"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144833460"
+    },
+    "input_mapping_function_block": {
+      "guid": "63bfeeaa5345a06a1ba3daa517373760",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "scalar_function_named_struct"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144833330"
+    },
+    "scalar_function_named_struct": {
+      "guid": "8992cb721e48760251a36794187c6df5",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "mapping_function"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738e30"
+    },
+    "mapping_function": {
+      "guid": "8fa9145a8444fa53d46810809e45f10a",
+      "size": 28,
+      "size_string": "sizeof(c_function_definition)",
+      "fields": [
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "hide"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "custom",
+          "name": null,
+          "group_tag": "edih"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144738b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
       "fields": [
         {
           "type": "int64_integer",
-          "name": "vtable space*~!"
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
         },
         {
           "type": "struct",
           "name": "internal struct",
-          "definition": "internal_struct_2"
+          "definition": "s_anyTagGuts"
         },
         {
-          "type": "block",
-          "name": "controller input (Xbox360){controller input}",
-          "definition": "controller_input_block_3"
-        },
-        {
-          "type": "block",
-          "name": "controller input (Xbone)",
-          "definition": "controller_input_block_4"
-        },
-        {
-          "type": "block",
-          "name": "player control",
-          "definition": "player_control_block_5"
-        },
-        {
-          "type": "pad",
-          "name": "pad",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "gamepad_stick_info_block_7_options_0": {
-      "options": [
-        "none",
-        "unit_circle",
-        "unit_square"
-      ]
-    },
-    "gamepad_stick_info_block_11_options_0": {
-      "options": [
-        "none",
-        "unit_circle",
-        "unit_square"
-      ]
-    },
-    "gamepad_stick_info_block_15_options_0": {
-      "options": [
-        "none",
-        "unit_circle",
-        "unit_square"
-      ]
-    },
-    "gamepad_stick_info_block_19_options_0": {
+    "input_mapping_shape_enum": {
       "options": [
         "none",
         "unit_circle",
@@ -826,6 +562,17 @@
     }
   },
   "datas": {
-    "function_definition_data": {}
+    "function_definition_data": {
+      "alignment": 4,
+      "flags": 2,
+      "max_size": 872,
+      "max_size_string": "k_max_function_size"
+    }
+  },
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
   }
 }

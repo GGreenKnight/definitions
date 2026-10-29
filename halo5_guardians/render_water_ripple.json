@@ -2,63 +2,41 @@
   "name": "render_water_ripple",
   "tag": "rwrd",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "render_water_ripple_block",
   "blocks": {
-    "root": {
+    "render_water_ripple_block": {
       "max_count": 1,
-      "struct": "render_water_ripple_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "render_water_ripple_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "render_water_ripple_struct_definition_1": {
-      "guid": "f96147bee76ff44052beb514e6f7a1fd",
+    "render_water_ripple_block_struct": {
+      "guid": "88d060cb75472e88948c3c8858cde78c",
       "size": 96,
+      "size_string": "(sizeof(s_render_water_ripple_definition) - Tag::SizeInfo<s_render_water_ripple_definition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
-          "type": "custom",
-          "name": "TYPE FLAGS"
+          "type": "explanation",
+          "name": "TYPE FLAGS",
+          "definition": ""
         },
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "render_water_ripple_struct_definition_1_options_3"
+          "definition": "ripple_behavior_flags"
         },
         {
-          "type": "custom",
-          "name": "INITIAL SETTINGS"
+          "type": "explanation",
+          "name": "INITIAL SETTINGS",
+          "definition": ""
         },
         {
           "type": "real",
@@ -85,8 +63,9 @@
           "name": "max visibility distance"
         },
         {
-          "type": "custom",
-          "name": "LIFE SETTINGS"
+          "type": "explanation",
+          "name": "LIFE SETTINGS",
+          "definition": "what happens during the ripple life. damping should be always larger than 0."
         },
         {
           "type": "real",
@@ -103,16 +82,17 @@
         {
           "type": "short_enum",
           "name": "rise function",
-          "definition": "render_water_ripple_struct_definition_1_options_15"
+          "definition": "transition_function_enum"
         },
         {
           "type": "short_enum",
           "name": "descend function",
-          "definition": "render_water_ripple_struct_definition_1_options_16"
+          "definition": "transition_function_enum"
         },
         {
-          "type": "custom",
-          "name": "PENDULUM SETTINGS"
+          "type": "explanation",
+          "name": "PENDULUM SETTINGS",
+          "definition": "Only valid in case of the predulum flag has been checked."
         },
         {
           "type": "real",
@@ -123,8 +103,9 @@
           "name": "phase repeat along radius"
         },
         {
-          "type": "custom",
-          "name": "SHAPE TRANSITION"
+          "type": "explanation",
+          "name": "SHAPE TRANSITION",
+          "definition": "interpolate between shapes in ripple pattern array"
         },
         {
           "type": "real",
@@ -137,7 +118,7 @@
         {
           "type": "short_enum",
           "name": "pattern transition",
-          "definition": "render_water_ripple_struct_definition_1_options_23"
+          "definition": "transition_function_enum"
         },
         {
           "type": "pad",
@@ -145,8 +126,9 @@
           "definition": 2
         },
         {
-          "type": "custom",
-          "name": "FOAM"
+          "type": "explanation",
+          "name": "FOAM",
+          "definition": "quick flashed foam"
         },
         {
           "type": "real",
@@ -163,7 +145,7 @@
         {
           "type": "short_enum",
           "name": "foam fade function",
-          "definition": "render_water_ripple_struct_definition_1_options_29"
+          "definition": "transition_function_enum"
         },
         {
           "type": "pad",
@@ -171,13 +153,37 @@
           "definition": 2
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144862f80"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "render_water_ripple_struct_definition_1_options_3": {
+    "ripple_behavior_flags": {
       "options": [
         "ripple drifted by flow",
         "amplitude changed by pendulum function",
@@ -185,43 +191,7 @@
         "foam size defined in game unit"
       ]
     },
-    "render_water_ripple_struct_definition_1_options_15": {
-      "options": [
-        "linear",
-        "early",
-        "very early",
-        "late",
-        "very late",
-        "cosine",
-        "one",
-        "zero"
-      ]
-    },
-    "render_water_ripple_struct_definition_1_options_16": {
-      "options": [
-        "linear",
-        "early",
-        "very early",
-        "late",
-        "very late",
-        "cosine",
-        "one",
-        "zero"
-      ]
-    },
-    "render_water_ripple_struct_definition_1_options_23": {
-      "options": [
-        "linear",
-        "early",
-        "very early",
-        "late",
-        "very late",
-        "cosine",
-        "one",
-        "zero"
-      ]
-    },
-    "render_water_ripple_struct_definition_1_options_29": {
+    "transition_function_enum": {
       "options": [
         "linear",
         "early",
@@ -234,5 +204,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

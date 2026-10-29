@@ -1,72 +1,32 @@
 {
   "name": "ScreenDefinition",
   "tag": "fuis",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "ScreenDefinition_block",
   "blocks": {
-    "ScreenComponentsBlock_3": {
-      "max_count": 32,
-      "struct": "ScreenComponentsBlock_3"
-    },
-    "root": {
+    "ScreenDefinition_block": {
       "max_count": 1,
-      "struct": "ScreenDefinition_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "ScreenDefinition_block_struct"
+    },
+    "ScreenComponentsBlock": {
+      "max_count": 32,
+      "max_count_string": "k_maximum_components_per_fui_screen",
+      "struct": "ScreenComponentsBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ScreenComponentsBlock_3": {
-      "guid": "bc0d2ebc45f611191bebe28bc230cff7",
-      "size": 32,
-      "fields": [
-        {
-          "type": "tag_reference",
-          "name": "reference^",
-          "definition": {
-            "flags": 0,
-            "allowed": []
-          }
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "ScreenDefinition_struct_definition_1": {
-      "guid": "e7efe5bc87878da8268f3d3a7ce03a15",
+    "ScreenDefinition_block_struct": {
+      "guid": "d647b9fa104fe55becce1a89a22e830b",
       "size": 64,
+      "size_string": "(sizeof(ScreenDefinition) - Tag::SizeInfo<ScreenDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "string_id",
@@ -87,7 +47,7 @@
         {
           "type": "block",
           "name": "components#all UI components to include as a part of this screen",
-          "definition": "ScreenComponentsBlock_3"
+          "definition": "ScreenComponentsBlock"
         },
         {
           "type": "pad",
@@ -95,11 +55,61 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144892d60"
+    },
+    "ScreenComponentsBlock": {
+      "guid": "bc2e0dbcf64519111bebe28bc230cff7",
+      "size": 32,
+      "size_string": "sizeof(ScreenComponentReference)",
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": [
+              "fuic"
+            ]
+          }
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x144892c40"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
-  "enums_flags": {},
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

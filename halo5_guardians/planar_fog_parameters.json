@@ -1,56 +1,32 @@
 {
   "name": "planar_fog_parameters",
   "tag": "pfpt",
-  "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "version": 1,
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "planar_fog_parameters_block",
   "blocks": {
-    "root": {
+    "planar_fog_parameters_block": {
       "max_count": 1,
-      "struct": "planar_fog_parameters_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "planar_fog_parameters_block_struct"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "planar_fog_parameters_struct_definition_1": {
-      "guid": "9beb77ce3edeceb57a936c6c896d1695",
+    "planar_fog_parameters_block_struct": {
+      "guid": "2ae09f9efc4fdc81db7a109df4bcf00f",
       "size": 184,
+      "size_string": "(sizeof(s_planar_fog_parameters) - Tag::SizeInfo<s_planar_fog_parameters::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "word_flags",
           "name": "flags",
-          "definition": "planar_fog_parameters_struct_definition_1_options_2"
+          "definition": "planar_fog_flags"
         },
         {
           "type": "pad",
@@ -82,19 +58,24 @@
           "name": "palette texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
           "type": "custom",
-          "name": "patchy effect"
+          "name": "patchy effect",
+          "group_tag": "fgrb"
         },
         {
           "type": "tag_reference",
           "name": "patchy texture",
           "definition": {
             "flags": 0,
-            "allowed": []
+            "allowed": [
+              "bitm"
+            ]
           }
         },
         {
@@ -143,7 +124,13 @@
         },
         {
           "type": "custom",
-          "name": "LoD settings (N/A yet)"
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "custom",
+          "name": "LoD settings (N/A yet)",
+          "group_tag": "fgrb"
         },
         {
           "type": "real",
@@ -158,13 +145,42 @@
           "name": "patchy fade end distance:world units"
         },
         {
-          "type": "terminator"
+          "type": "custom",
+          "name": null,
+          "group_tag": "fgre"
+        },
+        {
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144868b10"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "planar_fog_parameters_struct_definition_1_options_2": {
+    "planar_fog_flags": {
       "options": [
         "enable patchy effect",
         "enable color palette",
@@ -173,5 +189,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }

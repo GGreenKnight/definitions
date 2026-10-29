@@ -2,82 +2,46 @@
   "name": "soundbank",
   "tag": "sbnk",
   "version": 0,
-  "flags": 0,
-  "block": "root",
-  "field_type_sizes": {
-    "block": 28,
-    "data": 28,
-    "tag reference": 32
-  },
+  "flags": 2,
+  "parent_tag": "aTag",
+  "block": "soundbank_block",
   "blocks": {
-    "SoundBankBlock_3": {
-      "max_count": 8,
-      "struct": "SoundBankBlock_3"
-    },
-    "root": {
+    "soundbank_block": {
       "max_count": 1,
-      "struct": "soundbank_struct_definition_1"
+      "max_count_string": "1",
+      "struct": "soundbank_block_struct"
+    },
+    "SoundBankBlock": {
+      "max_count": 8,
+      "max_count_string": "k_maximumSoundBanksPerTag",
+      "struct": "SoundBankBlock"
     }
   },
   "structs": {
-    "internal_struct_2": {
-      "guid": "151d0146479c181f3970ec869043bc33",
-      "size": 8,
-      "fields": [
-        {
-          "type": "long_integer",
-          "name": "global tag ID!"
-        },
-        {
-          "type": "pad",
-          "name": "local tag handle!~",
-          "definition": 4
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "SoundBankBlock_3": {
-      "guid": "ba6c3a6640c5f2b20ae0b38db6dc2961",
-      "size": 4,
-      "fields": [
-        {
-          "type": "string_id",
-          "name": "Sound bank name#Name of the main sound bank."
-        },
-        {
-          "type": "terminator"
-        }
-      ]
-    },
-    "soundbank_struct_definition_1": {
-      "guid": "b7891ddb9bbe9a9cda64b4412a1e3258",
+    "soundbank_block_struct": {
+      "guid": "1b0a44fe1548467a2ef2d5b380332e38",
       "size": 64,
+      "size_string": "(sizeof(SoundBankDefinition) - Tag::SizeInfo<SoundBankDefinition::ParentType>::k_tagSize)",
       "fields": [
-        {
-          "type": "int64_integer",
-          "name": "vtable space*~!"
-        },
         {
           "type": "struct",
-          "name": "internal struct",
-          "definition": "internal_struct_2"
+          "name": "AnyTag",
+          "definition": "_base_AnyTag"
         },
         {
           "type": "long_flags",
           "name": "flags",
-          "definition": "soundbank_struct_definition_1_options_2"
+          "definition": "SoundBankDefinitionFlags"
         },
         {
           "type": "long_enum",
           "name": "sound bank class",
-          "definition": "soundbank_struct_definition_1_options_3"
+          "definition": "SoundBankClassEnumDefinition"
         },
         {
           "type": "block",
           "name": "Sound bank list#List of names of soundbanks. If more than one, one will be randomly chosen at load",
-          "definition": "SoundBankBlock_3"
+          "definition": "SoundBankBlock"
         },
         {
           "type": "long_integer",
@@ -93,13 +57,53 @@
           "definition": 4
         },
         {
-          "type": "terminator"
+          "type": "terminator",
+          "name": null
         }
-      ]
+      ],
+      "__addr": "0x144785500"
+    },
+    "SoundBankBlock": {
+      "guid": "663a6cbac540b2f20ae0b38db6dc2961",
+      "size": 4,
+      "size_string": "sizeof(SoundBankBlockDefinition)",
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Sound bank name#Name of the main sound bank."
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1447853e0"
+    },
+    "_base_AnyTag": {
+      "guid": "e5ba8c9d3e4a63a931e5dcac24456ec0",
+      "size": 16,
+      "size_string": "sizeof(AnyTag)",
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!\u0001",
+          "group_tag": "nuke"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "s_anyTagGuts"
+        },
+        {
+          "type": "terminator",
+          "name": null
+        }
+      ],
+      "__addr": "0x1449eb470"
     }
   },
   "enums_flags": {
-    "soundbank_struct_definition_1_options_2": {
+    "SoundBankDefinitionFlags": {
       "options": [
         "Don't use FP bank in split-screen#don't use the high quality first person bank in split-screen",
         "Deterministic#Bank contains deterministic sounds (voices)",
@@ -109,7 +113,7 @@
         "Ground forces sound bank#Don't load this bank if player is in a vehicle (ie bipeds, footsteps)"
       ]
     },
-    "soundbank_struct_definition_1_options_3": {
+    "SoundBankClassEnumDefinition": {
       "options": [
         "Default#Default main pool",
         "Weapon",
@@ -118,5 +122,10 @@
       ]
     }
   },
-  "datas": {}
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32,
+    "pageable resource": 16
+  }
 }
