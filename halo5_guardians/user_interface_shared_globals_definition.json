@@ -1,0 +1,1351 @@
+{
+  "name": "user_interface_shared_globals_definition",
+  "tag": "wigl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "color_presets_block_3": {
+      "max_count": 1024,
+      "struct": "color_presets_block_3"
+    },
+    "color_list_block_5": {
+      "max_count": 63,
+      "struct": "color_list_block_5"
+    },
+    "color_list_block_6": {
+      "max_count": 63,
+      "struct": "color_list_block_6"
+    },
+    "color_list_block_7": {
+      "max_count": 63,
+      "struct": "color_list_block_7"
+    },
+    "color_list_block_8": {
+      "max_count": 63,
+      "struct": "color_list_block_8"
+    },
+    "tint_colors_block_4": {
+      "max_count": 1,
+      "struct": "tint_colors_block_4"
+    },
+    "gui_alert_description_block_9": {
+      "max_count": 512,
+      "struct": "gui_alert_description_block_9"
+    },
+    "gui_dialog_description_block_10": {
+      "max_count": 256,
+      "struct": "gui_dialog_description_block_10"
+    },
+    "gui_luaUserLibraryBlock_11": {
+      "max_count": 32,
+      "struct": "gui_luaUserLibraryBlock_11"
+    },
+    "WpfWidgetReferenceBlockDefinition_14": {
+      "max_count": 512,
+      "struct": "WpfWidgetReferenceBlockDefinition_14"
+    },
+    "font_set_reference_block_definition_15": {
+      "max_count": 256,
+      "struct": "font_set_reference_block_definition_15"
+    },
+    "bitmap_dictionary_reference_block_definition_16": {
+      "max_count": 256,
+      "struct": "bitmap_dictionary_reference_block_definition_16"
+    },
+    "pgcr_incident_block_17": {
+      "max_count": 50,
+      "struct": "pgcr_incident_block_17"
+    },
+    "FontMappingBlock_22": {
+      "max_count": 32,
+      "struct": "FontMappingBlock_22"
+    },
+    "FontMappingSetBlock_21": {
+      "max_count": 32,
+      "struct": "FontMappingSetBlock_21"
+    },
+    "EmblemAndNameplateBlockDefinition_23": {
+      "max_count": 1024,
+      "struct": "EmblemAndNameplateBlockDefinition_23"
+    },
+    "KeyboardLanguageBitmapBlockDefinition_24": {
+      "max_count": 32,
+      "struct": "KeyboardLanguageBitmapBlockDefinition_24"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "user_interface_shared_globals_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_presets_block_3": {
+      "guid": "26b5a836412e22514a453ea2dedc3900",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_list_block_5": {
+      "guid": "0f5f62c74a78c6a27abbcfbccd917bf4",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_list_block_6": {
+      "guid": "0f5f62c74a78c6a27abbcfbccd917bf4",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_list_block_7": {
+      "guid": "0f5f62c74a78c6a27abbcfbccd917bf4",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_list_block_8": {
+      "guid": "0f5f62c74a78c6a27abbcfbccd917bf4",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "tint_colors_block_4": {
+      "guid": "60c481ee46a2800008da048372c351ac",
+      "size": 528,
+      "fields": [
+        {
+          "type": "block",
+          "name": "text player",
+          "definition": "color_list_block_5"
+        },
+        {
+          "type": "block",
+          "name": "text team",
+          "definition": "color_list_block_6"
+        },
+        {
+          "type": "block",
+          "name": "bitmap player",
+          "definition": "color_list_block_7"
+        },
+        {
+          "type": "block",
+          "name": "bitmap team",
+          "definition": "color_list_block_8"
+        },
+        {
+          "type": "custom",
+          "name": "Affiliation"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "bitmap friend"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "bitmap enemy"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "bitmap neutral"
+        },
+        {
+          "type": "custom",
+          "name": "Affiliation Motion Tracker"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "motion tracker bitmap friend"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "motion tracker bitmap enemy"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "motion tracker bitmap neutral"
+        },
+        {
+          "type": "custom",
+          "name": "Flood Team Colors"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "bitmap flood"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "bitmap spartans"
+        },
+        {
+          "type": "custom",
+          "name": "NavPoint Colors"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Hud blue"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "White"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Black"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Red"
+        },
+        {
+          "type": "custom",
+          "name": "Controller Button Colors"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "A"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "B"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "X"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Y"
+        },
+        {
+          "type": "custom",
+          "name": "Character HUD Colors"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "MP"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Warzone"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Chief"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Fred"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Linda"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Kelly"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Locke"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Vale"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Tanaka"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Buck"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Monitor"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gui_alert_description_block_9": {
+      "guid": "be222e1947747f2bdbfc4383773d291e",
+      "size": 16,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "error name^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "gui_alert_description_block_9_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "error category",
+          "definition": "gui_alert_description_block_9_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "error icon",
+          "definition": "gui_alert_description_block_9_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 1
+        },
+        {
+          "type": "string_id",
+          "name": "title"
+        },
+        {
+          "type": "string_id",
+          "name": "message"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gui_dialog_description_block_10": {
+      "guid": "7c5393a44f3894742d1ec58cf4fb9d29",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "dialog name^"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "gui_dialog_description_block_10_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "title"
+        },
+        {
+          "type": "string_id",
+          "name": "message"
+        },
+        {
+          "type": "string_id",
+          "name": "first_item"
+        },
+        {
+          "type": "string_id",
+          "name": "second_item"
+        },
+        {
+          "type": "string_id",
+          "name": "third_item"
+        },
+        {
+          "type": "string_id",
+          "name": "fourth_item"
+        },
+        {
+          "type": "string_id",
+          "name": "button key"
+        },
+        {
+          "type": "short_enum",
+          "name": "default item",
+          "definition": "gui_dialog_description_block_10_options_10"
+        },
+        {
+          "type": "short_enum",
+          "name": "b button action",
+          "definition": "gui_dialog_description_block_10_options_11"
+        },
+        {
+          "type": "short_integer",
+          "name": "maximum text input"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gui_luaUserLibraryBlock_11": {
+      "guid": "38464d8541b87370802a6194759fcbb3",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "lua library",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spinner_tab_speed_function_12": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_distance_function_13": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WpfWidgetReferenceBlockDefinition_14": {
+      "guid": "254027334e4c9e38cce464b5c9e085b9",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "wpf widget name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "wpf widget tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "font_set_reference_block_definition_15": {
+      "guid": "39753fd64ad2f3dac89f599ce1b140df",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "wpf font set tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_dictionary_reference_block_definition_16": {
+      "guid": "cd4a6b7f4148d3c91ee90887f0c7c745",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap dictionary",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_incident_block_17": {
+      "guid": "177fa8b34622d2612e9fdfbbb998c500",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "incident name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "maximum stat count*#number of times this can happen before the PGCR stops tracking them"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Matchmade_Character_Select_Behavior_18": {
+      "guid": "f7b0d2db4daa3cd4cb7ce687df1cb2a8",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "Matchmade_Character_Select_Behavior_18_options_0"
+        },
+        {
+          "type": "long_integer",
+          "name": "initial selection overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "initial selection lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "join in progress overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "join in progress lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "main character replacement overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "main character replacement lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "auto assigned wait time:seconds"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Non_Matchmade_Character_Select_Behavior_19": {
+      "guid": "f7b0d2db4daa3cd4cb7ce687df1cb2a8",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "Non_Matchmade_Character_Select_Behavior_19_options_0"
+        },
+        {
+          "type": "long_integer",
+          "name": "initial selection overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "initial selection lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "join in progress overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "join in progress lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "main character replacement overall time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "main character replacement lockin time:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "auto assigned wait time:seconds"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Reticle_Over_Player_Behavior_20": {
+      "guid": "b71451ea4b0a8f0e47ef65bf00918825",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real",
+          "name": "firstTierAngle: angle in degrees of the inner cone"
+        },
+        {
+          "type": "real",
+          "name": "firstTierDistance: distance the inner cone extends (multiplied by zoom level)"
+        },
+        {
+          "type": "real",
+          "name": "secondTierAngle: angle in degrees of the outer cone"
+        },
+        {
+          "type": "real",
+          "name": "secondTierDistance: distance the outer cone extends (multiplied by zoom level)"
+        },
+        {
+          "type": "real",
+          "name": "vehicleDistanceScalar: multiply the normal first and second tier distance when the reticled over player is in a vehicle"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FontMappingBlock_22": {
+      "guid": "bb96cda14e8f948e9626e4a339fd9f0c",
+      "size": 512,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "original name^"
+        },
+        {
+          "type": "long_string",
+          "name": "remapped name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FontMappingSetBlock_21": {
+      "guid": "126f79eb4a263def5b5889b5ad17e283",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "language^",
+          "definition": "FontMappingSetBlock_21_options_0"
+        },
+        {
+          "type": "block",
+          "name": "mappings",
+          "definition": "FontMappingBlock_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "EmblemAndNameplateBlockDefinition_23": {
+      "guid": "f688077f9b4d7f01f20255ac05af1c45",
+      "size": 108,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "emblem bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "nameplate bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "symbol bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "byte_integer",
+          "name": "default primary color index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "default secondary color index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "default tertiary color index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "quaternary color index#only used when type is FourthColor"
+        },
+        {
+          "type": "char_enum",
+          "name": "emblem type",
+          "definition": "EmblemAndNameplateBlockDefinition_23_options_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "KeyboardLanguageBitmapBlockDefinition_24": {
+      "guid": "e9507d6a41a2b08a60544c9b6179c303",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "identifier"
+        },
+        {
+          "type": "tag_reference",
+          "name": "keyboard bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_interface_shared_globals_definition_struct_definition_1": {
+      "guid": "d9adb7d6aa22cac319bc165285b5b24e",
+      "size": 1128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "UI Rendering Globals"
+        },
+        {
+          "type": "short_integer",
+          "name": "inc. text update period:milliseconds"
+        },
+        {
+          "type": "short_integer",
+          "name": "inc. text block character:ASCII code"
+        },
+        {
+          "type": "real",
+          "name": "near clip plane distance:objects closer than this are not drawn"
+        },
+        {
+          "type": "real",
+          "name": "projection plane distance:distance at which objects are rendered when z=0 (normal size)"
+        },
+        {
+          "type": "real",
+          "name": "far clip plane distance:objects farther than this are not drawn"
+        },
+        {
+          "type": "custom",
+          "name": "Global Text Strings"
+        },
+        {
+          "type": "tag_reference",
+          "name": "unicode string list tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "unicode damage reporting string list tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "unicode fire team member name string list{unicode fire team member string list tag}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "unicode fire team member service tag string list",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Main menu music"
+        },
+        {
+          "type": "tag_reference",
+          "name": "main menu music",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "main menu alternate music",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "music fade time:milliseconds"
+        },
+        {
+          "type": "custom",
+          "name": "Default Text and Shadow Colors"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "text color"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "shadow color"
+        },
+        {
+          "type": "custom",
+          "name": "Color presets"
+        },
+        {
+          "type": "block",
+          "name": "color presets",
+          "definition": "color_presets_block_3"
+        },
+        {
+          "type": "custom",
+          "name": "Tint colors"
+        },
+        {
+          "type": "block",
+          "name": "tint colors",
+          "definition": "tint_colors_block_4"
+        },
+        {
+          "type": "custom",
+          "name": "User interface sounds"
+        },
+        {
+          "type": "tag_reference",
+          "name": "default sounds",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "HaloX Alerts"
+        },
+        {
+          "type": "block",
+          "name": "alert descriptions",
+          "definition": "gui_alert_description_block_9"
+        },
+        {
+          "type": "custom",
+          "name": "HaloX Dialogs"
+        },
+        {
+          "type": "block",
+          "name": "dialog descriptions",
+          "definition": "gui_dialog_description_block_10"
+        },
+        {
+          "type": "custom",
+          "name": "Lua User Libraries"
+        },
+        {
+          "type": "block",
+          "name": "lua user libraries",
+          "definition": "gui_luaUserLibraryBlock_11"
+        },
+        {
+          "type": "custom",
+          "name": "Content Aspect Ratio Scaling"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "16x9"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "4x3"
+        },
+        {
+          "type": "custom",
+          "name": "Blur Constants"
+        },
+        {
+          "type": "real",
+          "name": "horizontal blur factor"
+        },
+        {
+          "type": "real",
+          "name": "vertical blur factor"
+        },
+        {
+          "type": "custom",
+          "name": "Appearance Model Names"
+        },
+        {
+          "type": "string_id",
+          "name": "mc biped name"
+        },
+        {
+          "type": "string",
+          "name": "mc ai squad name"
+        },
+        {
+          "type": "string_id",
+          "name": "mc ai start pos"
+        },
+        {
+          "type": "string_id",
+          "name": "elite biped name"
+        },
+        {
+          "type": "string",
+          "name": "elite ai squad name"
+        },
+        {
+          "type": "string_id",
+          "name": "elite ai start pos"
+        },
+        {
+          "type": "custom",
+          "name": "Player Portrait Model Names"
+        },
+        {
+          "type": "string_id",
+          "name": "spartan portrait biped name"
+        },
+        {
+          "type": "string_id",
+          "name": "elite portrait biped name"
+        },
+        {
+          "type": "custom",
+          "name": "UI Navigation speed"
+        },
+        {
+          "type": "long_integer",
+          "name": "navigation tab delay msec"
+        },
+        {
+          "type": "long_integer",
+          "name": "navigation tab fast wait msec"
+        },
+        {
+          "type": "long_integer",
+          "name": "navigation tab fast delay msec"
+        },
+        {
+          "type": "custom",
+          "name": "Spinner tab speed"
+        },
+        {
+          "type": "struct",
+          "name": "spinner tab speed function",
+          "definition": "spinner_tab_speed_function_12"
+        },
+        {
+          "type": "long_integer",
+          "name": "max input time (x) on the graph (msec)"
+        },
+        {
+          "type": "custom",
+          "name": "Motion Tracker Functions"
+        },
+        {
+          "type": "custom",
+          "name": "Distance Scale Function"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker distance function",
+          "definition": "motion_tracker_distance_function_13"
+        },
+        {
+          "type": "custom",
+          "name": "Attract Mode Settings"
+        },
+        {
+          "type": "long_integer",
+          "name": "delay:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "WPF settings"
+        },
+        {
+          "type": "tag_reference",
+          "name": "WPF app resources tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "WPF widget set",
+          "definition": "WpfWidgetReferenceBlockDefinition_14"
+        },
+        {
+          "type": "block",
+          "name": "wpf font sets",
+          "definition": "font_set_reference_block_definition_15"
+        },
+        {
+          "type": "block",
+          "name": "bitmap dictionaries#allow bitmap tags to be referenced using ampersand notation in HaloTextBlocks",
+          "definition": "bitmap_dictionary_reference_block_definition_16"
+        },
+        {
+          "type": "block",
+          "name": "PGCR per player tracked incidents",
+          "definition": "pgcr_incident_block_17"
+        },
+        {
+          "type": "custom",
+          "name": "Loading Screen"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Loading screen tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "fade from level to loading screen (seconds)"
+        },
+        {
+          "type": "real",
+          "name": "fade from level to blocking load (seconds)"
+        },
+        {
+          "type": "real",
+          "name": "fade in to loading screen (seconds)"
+        },
+        {
+          "type": "real",
+          "name": "fade out from loading screen (seconds)"
+        },
+        {
+          "type": "custom",
+          "name": "Matchmade Char Select"
+        },
+        {
+          "type": "struct",
+          "name": "Matchmade Character Select Behavior",
+          "definition": "Matchmade_Character_Select_Behavior_18"
+        },
+        {
+          "type": "custom",
+          "name": "Non-MM Char Select"
+        },
+        {
+          "type": "struct",
+          "name": "Non-Matchmade Character Select Behavior",
+          "definition": "Non_Matchmade_Character_Select_Behavior_19"
+        },
+        {
+          "type": "custom",
+          "name": "Reticle Over Player Behavior"
+        },
+        {
+          "type": "struct",
+          "name": "Reticle Over Player Behavior",
+          "definition": "Reticle_Over_Player_Behavior_20"
+        },
+        {
+          "type": "custom",
+          "name": "Localized font mappings"
+        },
+        {
+          "type": "block",
+          "name": "font mappings",
+          "definition": "FontMappingSetBlock_21"
+        },
+        {
+          "type": "custom",
+          "name": "FastHud Font Fake Bitmap"
+        },
+        {
+          "type": "tag_reference",
+          "name": "FastHud Font Fake Bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Campaign Fire Team"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Fire Team icon",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "Fire Team Osiris sprite index"
+        },
+        {
+          "type": "short_integer",
+          "name": "Fire Team Blue sprite index"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Team Osiris icon Color"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "Team Blue icon Color"
+        },
+        {
+          "type": "custom",
+          "name": "Emblem and Nameplate Data"
+        },
+        {
+          "type": "block",
+          "name": "emblem and nameplate data",
+          "definition": "EmblemAndNameplateBlockDefinition_23"
+        },
+        {
+          "type": "custom",
+          "name": "4K Resolution Range"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "min resolution for 4K assets"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "max resolution for 4K assets"
+        },
+        {
+          "type": "tag_reference",
+          "name": "English keyboard bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "keyboard bitmap list for different languages",
+          "definition": "KeyboardLanguageBitmapBlockDefinition_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "gui_alert_description_block_9_options_1": {
+      "options": [
+        "allow auto dismissal",
+        "show spinner",
+        "show close application button"
+      ]
+    },
+    "gui_alert_description_block_9_options_2": {
+      "options": [
+        "default",
+        "networking",
+        "storage (reading/writing failure)",
+        "controller"
+      ]
+    },
+    "gui_alert_description_block_9_options_3": {
+      "options": [
+        "default alert",
+        "downloading",
+        "paused",
+        "uploading",
+        "completed"
+      ]
+    },
+    "gui_dialog_description_block_10_options_1": {
+      "options": [
+        "unused",
+        "has_text_input",
+        "countdown_timer"
+      ]
+    },
+    "gui_dialog_description_block_10_options_10": {
+      "options": [
+        "first item",
+        "second item",
+        "third item",
+        "fourth item"
+      ]
+    },
+    "gui_dialog_description_block_10_options_11": {
+      "options": [
+        "dismisses dialog",
+        "button ignored",
+        "first item activates",
+        "second item activates",
+        "third item activates",
+        "fourth item activates"
+      ]
+    },
+    "Matchmade_Character_Select_Behavior_18_options_0": {
+      "options": [
+        "initial selection time limit ignored",
+        "join in progress time limit ignored",
+        "main character replacement time limit ignored"
+      ]
+    },
+    "Non_Matchmade_Character_Select_Behavior_19_options_0": {
+      "options": [
+        "initial selection time limit ignored",
+        "join in progress time limit ignored",
+        "main character replacement time limit ignored"
+      ]
+    },
+    "FontMappingSetBlock_21_options_0": {
+      "options": [
+        "english",
+        "japanese",
+        "german",
+        "french",
+        "spanish",
+        "mexican spanish",
+        "italian",
+        "korean",
+        "chinese-traditional",
+        "chinese-simplified",
+        "portuguese",
+        "polish",
+        "russian",
+        "danish",
+        "finnish",
+        "dutch",
+        "norwegian"
+      ]
+    },
+    "EmblemAndNameplateBlockDefinition_23_options_8": {
+      "options": [
+        "Normal",
+        "FourthColor",
+        "TwoTone",
+        "TwoToneClamp1",
+        "TwoToneClamp2",
+        "RawColor"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "name": "assetPhotoToolPhotoSpecBlockTag",
+  "tag": "appb",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "photoSpecBlock_3": {
+      "max_count": 128,
+      "struct": "photoSpecBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "assetPhotoToolPhotoSpecBlockTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "photoSpecBlock_3": {
+      "guid": "72d73bb7450fdfa4f030ea83cb2919ed",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "photo spec reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "assetPhotoToolPhotoSpecBlockTag_struct_definition_1": {
+      "guid": "38852ccbc7384f692a4216b53909ea90",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "photo specs",
+          "definition": "photoSpecBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,102 @@
+{
+  "name": "pgcr_damage_type_image_mapping_definition",
+  "tag": "pdti",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "pgcr_damage_type_image_block_3": {
+      "max_count": 1,
+      "struct": "pgcr_damage_type_image_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "pgcr_damage_type_image_mapping_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_damage_type_image_block_3": {
+      "guid": "a58519cd479abdfafbcc03ad05f36d83",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "sprite index"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_damage_type_image_mapping_definition_struct_definition_1": {
+      "guid": "e1646e8f2dc01178761960aba0cbaab7",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "damage type mapping",
+          "definition": "pgcr_damage_type_image_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,183 @@
+{
+  "name": "flinch_impulse",
+  "tag": "flni",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "flinch_impulse_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gun_flinch_4": {
+      "guid": "606318224d02c1f88a66f984116f0604",
+      "size": 16,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "flinch direction",
+          "definition": "gun_flinch_4_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "flinch mapping",
+          "definition": "gun_flinch_4_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "angle_bounds",
+          "name": "magnitude range:degrees#scales the direction by a random value defined by the range"
+        },
+        {
+          "type": "angle",
+          "name": "random rotation:degrees#rotates the direction by a random value defined by the range of this value positive and negative"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "view_flinch_5": {
+      "guid": "606318224d02c1f88a66f984116f0604",
+      "size": 16,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "flinch direction",
+          "definition": "view_flinch_5_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "flinch mapping",
+          "definition": "view_flinch_5_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "angle_bounds",
+          "name": "magnitude range:degrees#scales the direction by a random value defined by the range"
+        },
+        {
+          "type": "angle",
+          "name": "random rotation:degrees#rotates the direction by a random value defined by the range of this value positive and negative"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flinch_impulse_3": {
+      "guid": "db9f05b142bb58454dd278b6250501a6",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Gun Flinch"
+        },
+        {
+          "type": "struct",
+          "name": "gun flinch",
+          "definition": "gun_flinch_4"
+        },
+        {
+          "type": "custom",
+          "name": "View Flinch"
+        },
+        {
+          "type": "struct",
+          "name": "view flinch",
+          "definition": "view_flinch_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flinch_impulse_struct_definition_1": {
+      "guid": "f90eaba80fd80ba10859409ea9f4c283",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "flinch impulse",
+          "definition": "flinch_impulse_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "gun_flinch_4_options_0": {
+      "options": [
+        "hit direction",
+        "inverse hit direction",
+        "attacker to victim",
+        "victim to attacker"
+      ]
+    },
+    "gun_flinch_4_options_1": {
+      "options": [
+        "top down",
+        "camera"
+      ]
+    },
+    "view_flinch_5_options_0": {
+      "options": [
+        "hit direction",
+        "inverse hit direction",
+        "attacker to victim",
+        "victim to attacker"
+      ]
+    },
+    "view_flinch_5_options_1": {
+      "options": [
+        "top down",
+        "camera"
+      ]
+    }
+  },
+  "datas": {}
+}

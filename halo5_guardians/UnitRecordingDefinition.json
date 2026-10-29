@@ -1,0 +1,156 @@
+{
+  "name": "UnitRecordingDefinition",
+  "tag": "urcd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "UnitRecordingDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "recording_3": {
+      "guid": "4a067db44aa22aad6259afa09b520b69",
+      "size": 108,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "type"
+        },
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real",
+          "name": "time per sample:seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "num samples*"
+        },
+        {
+          "type": "long_integer",
+          "name": "unit recording version*!"
+        },
+        {
+          "type": "data",
+          "name": "recording data*!",
+          "definition": "tag_data"
+        },
+        {
+          "type": "char_enum",
+          "name": "team",
+          "definition": "recording_3_options_6"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "recording_3_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "tag_reference",
+          "name": "vehicle definition",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "finalAngularVelocity*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "finalLinearVelocity*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitRecordingDefinition_struct_definition_1": {
+      "guid": "75526945f8ee369d35e2e26eb25ed84c",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "recording",
+          "definition": "recording_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "recording_3_options_6": {
+      "options": [
+        "defender",
+        "attacker",
+        "third party",
+        "fourth party",
+        "fifth party",
+        "sixth party",
+        "seventh party",
+        "eighth party{eigth party}",
+        "neutral"
+      ]
+    },
+    "recording_3_options_7": {
+      "options": [
+        "Set Physics To Default On Completion",
+        "Is Player Spawn Intro Recording",
+        "Preserve Final Playback Motion"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

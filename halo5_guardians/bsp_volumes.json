@@ -1,0 +1,263 @@
+{
+  "name": "bsp_volumes",
+  "tag": "bspv",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "genericVolumePointBlock_5": {
+      "max_count": 32,
+      "struct": "genericVolumePointBlock_5"
+    },
+    "editorMetadataBlock_6": {
+      "max_count": 1024,
+      "struct": "editorMetadataBlock_6"
+    },
+    "scenarioBakedPVSVolumesBlock_3": {
+      "max_count": 128,
+      "struct": "scenarioBakedPVSVolumesBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "bsp_volumes_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "genericVolumePointBlock_5": {
+      "guid": "66dd021f42b767e469b744af5c73a047",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Volume_4": {
+      "guid": "879af445458c5fd82be1c39216d26f81",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Points",
+          "definition": "genericVolumePointBlock_5"
+        },
+        {
+          "type": "real",
+          "name": "height"
+        },
+        {
+          "type": "real",
+          "name": "sink"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "center point!"
+        },
+        {
+          "type": "real",
+          "name": "trivial cull radius squared!"
+        },
+        {
+          "type": "pad",
+          "name": "gvolpad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "editorMetadataBlock_6": {
+      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+      "size": 520,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorMetadataBlock_6_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenarioBakedPVSVolumesBlock_3": {
+      "guid": "d00b9d944abcde37c0a4edb31382e16a",
+      "size": 120,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name"
+        },
+        {
+          "type": "custom",
+          "name": "Volume settings"
+        },
+        {
+          "type": "struct",
+          "name": "Volume",
+          "definition": "Volume_4"
+        },
+        {
+          "type": "short_enum",
+          "name": "Use vertical beam count override",
+          "definition": "scenarioBakedPVSVolumesBlock_3_options_3"
+        },
+        {
+          "type": "short_enum",
+          "name": "Use beam height overrides",
+          "definition": "scenarioBakedPVSVolumesBlock_3_options_4"
+        },
+        {
+          "type": "short_enum",
+          "name": "Pin the beams to the top of the volume",
+          "definition": "scenarioBakedPVSVolumesBlock_3_options_5"
+        },
+        {
+          "type": "short_enum",
+          "name": "Add beams even if there is no collision",
+          "definition": "scenarioBakedPVSVolumesBlock_3_options_6"
+        },
+        {
+          "type": "long_integer",
+          "name": "Vertical beam count override"
+        },
+        {
+          "type": "real",
+          "name": "Beam 1 height override"
+        },
+        {
+          "type": "real",
+          "name": "Beam 2 height override"
+        },
+        {
+          "type": "real",
+          "name": "Beam 3 height override"
+        },
+        {
+          "type": "real",
+          "name": "Beam 4 and above height override"
+        },
+        {
+          "type": "long_integer",
+          "name": "Volume importance override value"
+        },
+        {
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp_volumes_struct_definition_1": {
+      "guid": "24dd66b872b4a556ede3378245a7dde7",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Baked PVS Volumes",
+          "definition": "scenarioBakedPVSVolumesBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "scenarioBakedPVSVolumesBlock_3_options_3": {
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    "scenarioBakedPVSVolumesBlock_3_options_4": {
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    "scenarioBakedPVSVolumesBlock_3_options_5": {
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    "scenarioBakedPVSVolumesBlock_3_options_6": {
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    "editorMetadataBlock_6_options_1": {
+      "options": [
+        "class",
+        "array",
+        "string",
+        "bool",
+        "int"
+      ]
+    }
+  },
+  "datas": {}
+}

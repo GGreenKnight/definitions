@@ -1,0 +1,102 @@
+{
+  "name": "NarrativeGlobals",
+  "tag": "narg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "NarrativeFlagDefinitionBlock_3": {
+      "max_count": 64,
+      "struct": "NarrativeFlagDefinitionBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "NarrativeGlobals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NarrativeFlagDefinitionBlock_3": {
+      "guid": "b43281fc42684c5e804ee38495dd6a24",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "Index"
+        },
+        {
+          "type": "char_enum",
+          "name": "Type",
+          "definition": "NarrativeFlagDefinitionBlock_3_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "fsarewrsda",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NarrativeGlobals_struct_definition_1": {
+      "guid": "d407192879707c8a649ca014d6b9589b",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Narrative Flag Definitions",
+          "definition": "NarrativeFlagDefinitionBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "NarrativeFlagDefinitionBlock_3_options_1": {
+      "options": [
+        "Unknown",
+        "Terminal"
+      ]
+    }
+  },
+  "datas": {}
+}

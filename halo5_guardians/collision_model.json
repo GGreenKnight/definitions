@@ -1,0 +1,2757 @@
+{
+  "name": "collision_model",
+  "tag": "coll",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "error_report_vertices_block_5": {
+      "max_count": 1048576,
+      "struct": "error_report_vertices_block_5"
+    },
+    "error_report_vectors_block_9": {
+      "max_count": 1048576,
+      "struct": "error_report_vectors_block_9"
+    },
+    "error_report_lines_block_13": {
+      "max_count": 1048576,
+      "struct": "error_report_lines_block_13"
+    },
+    "error_report_triangles_block_21": {
+      "max_count": 1048576,
+      "struct": "error_report_triangles_block_21"
+    },
+    "error_report_quads_block_32": {
+      "max_count": 1048576,
+      "struct": "error_report_quads_block_32"
+    },
+    "error_report_comments_block_46": {
+      "max_count": 1048576,
+      "struct": "error_report_comments_block_46"
+    },
+    "error_reports_block_4": {
+      "max_count": 1048576,
+      "struct": "error_reports_block_4"
+    },
+    "global_error_report_categories_block_3": {
+      "max_count": 512,
+      "struct": "global_error_report_categories_block_3"
+    },
+    "collision_model_material_block_50": {
+      "max_count": 32,
+      "struct": "collision_model_material_block_50"
+    },
+    "bsp3d_nodes_block_55": {
+      "max_count": 8388608,
+      "struct": "bsp3d_nodes_block_55"
+    },
+    "bsp3d_kd_supdernodes_block_56": {
+      "max_count": 2048,
+      "struct": "bsp3d_kd_supdernodes_block_56"
+    },
+    "planes_block_57": {
+      "max_count": 536870911,
+      "struct": "planes_block_57"
+    },
+    "leaves_block_58": {
+      "max_count": 8388608,
+      "struct": "leaves_block_58"
+    },
+    "bsp2d_references_block_59": {
+      "max_count": 196608,
+      "struct": "bsp2d_references_block_59"
+    },
+    "bsp2d_nodes_block_60": {
+      "max_count": 32767,
+      "struct": "bsp2d_nodes_block_60"
+    },
+    "surfaces_block_61": {
+      "max_count": 32767,
+      "struct": "surfaces_block_61"
+    },
+    "edges_block_62": {
+      "max_count": 65535,
+      "struct": "edges_block_62"
+    },
+    "vertices_block_63": {
+      "max_count": 131072,
+      "struct": "vertices_block_63"
+    },
+    "collision_model_bsp_block_53": {
+      "max_count": 64,
+      "struct": "collision_model_bsp_block_53"
+    },
+    "mopp_code_data_definition_block_65": {
+      "max_count": 16777216,
+      "struct": "mopp_code_data_definition_block_65"
+    },
+    "mopp_code_definition_block_64": {
+      "max_count": 32767,
+      "struct": "mopp_code_definition_block_64"
+    },
+    "collision_model_permutation_block_52": {
+      "max_count": 1023,
+      "struct": "collision_model_permutation_block_52"
+    },
+    "collision_model_region_block_51": {
+      "max_count": 32,
+      "struct": "collision_model_region_block_51"
+    },
+    "bsp3d_nodes_block_70": {
+      "max_count": 8388608,
+      "struct": "bsp3d_nodes_block_70"
+    },
+    "bsp3d_kd_supdernodes_block_71": {
+      "max_count": 2048,
+      "struct": "bsp3d_kd_supdernodes_block_71"
+    },
+    "planes_block_72": {
+      "max_count": 536870911,
+      "struct": "planes_block_72"
+    },
+    "leaves_block_73": {
+      "max_count": 8388608,
+      "struct": "leaves_block_73"
+    },
+    "bsp2d_references_block_74": {
+      "max_count": 196608,
+      "struct": "bsp2d_references_block_74"
+    },
+    "bsp2d_nodes_block_75": {
+      "max_count": 32767,
+      "struct": "bsp2d_nodes_block_75"
+    },
+    "surfaces_block_76": {
+      "max_count": 32767,
+      "struct": "surfaces_block_76"
+    },
+    "edges_block_77": {
+      "max_count": 65535,
+      "struct": "edges_block_77"
+    },
+    "vertices_block_78": {
+      "max_count": 131072,
+      "struct": "vertices_block_78"
+    },
+    "collision_model_bsp_block_68": {
+      "max_count": 64,
+      "struct": "collision_model_bsp_block_68"
+    },
+    "mopp_code_data_definition_block_80": {
+      "max_count": 16777216,
+      "struct": "mopp_code_data_definition_block_80"
+    },
+    "mopp_code_definition_block_79": {
+      "max_count": 32767,
+      "struct": "mopp_code_definition_block_79"
+    },
+    "collision_model_permutation_block_67": {
+      "max_count": 1023,
+      "struct": "collision_model_permutation_block_67"
+    },
+    "collision_model_region_block_66": {
+      "max_count": 32,
+      "struct": "collision_model_region_block_66"
+    },
+    "collision_model_pathfinding_sphere_block_81": {
+      "max_count": 256,
+      "struct": "collision_model_pathfinding_sphere_block_81"
+    },
+    "collision_model_node_block_82": {
+      "max_count": 255,
+      "struct": "collision_model_node_block_82"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "collision_model_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__7": {
+      "guid": "518533c1a9e98193b38e833b99d9c9b1",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__8": {
+      "guid": "a1802f3b5049242b100be8ca8807b277",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_6": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__7"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_vertices_block_5": {
+      "guid": "b44d11d1463da884132555b95004390e",
+      "size": 52,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_6"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "real",
+          "name": "screen size*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__11": {
+      "guid": "92e8b59c1fe9f06f5041c59596a6bc0a",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__12": {
+      "guid": "386fc2943cfd43717bf610e9e9b2672b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_10": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__11"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_vectors_block_9": {
+      "guid": "f617e0384e8d0b4eb9864faf1f5e7402",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_10"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "normal*"
+        },
+        {
+          "type": "real",
+          "name": "screen length*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__16": {
+      "guid": "0a16396dc4e645459a04f865c932d95f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__17": {
+      "guid": "c4a80506a6068be510e20f5fc7354ac5",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_15": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__16"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__17"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__19": {
+      "guid": "ebcdc3b322d447a7234c4f0d2ea13450",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__20": {
+      "guid": "8526d165824bd05a5317d3bf59a8c9d7",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_18": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__19"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__20"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "points__14": {
+      "guid": "93eac8b0ad5dc3a599957ae0347a8025",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_15"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_lines_block_13": {
+      "guid": "1c172d3c4356604a48de1b8f8482cae0",
+      "size": 80,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "points*",
+          "definition": "points__14"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__24": {
+      "guid": "54068d40e4062c5a4e50b375256aa181",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__25": {
+      "guid": "e2df22e8f710af9502ad0fa23d5ca420",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_23": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__24"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__27": {
+      "guid": "c8df30215248a55d37e5a012bbadb793",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__28": {
+      "guid": "25b08cc4471baf252b51660937128e73",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_26": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__27"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__28"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__30": {
+      "guid": "8b0d2c5f50aeda04048816af35284e30",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__31": {
+      "guid": "37664f5fd251c1728b1739e2f2dc2803",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_29": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__30"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__31"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "points__22": {
+      "guid": "12549ce8e6452fd1ffa7c32fb82c0b92",
+      "size": 96,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_23"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_26"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_triangles_block_21": {
+      "guid": "f926e76144e30012163117857a34962b",
+      "size": 112,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "points*",
+          "definition": "points__22"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__35": {
+      "guid": "92922382d27f87c33ee681cf9104c459",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__36": {
+      "guid": "0005a91f810b5df0ca02fa0efafa7ec0",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_34": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__35"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__36"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__38": {
+      "guid": "c8c6043c6a0020bd07f3dd559744decf",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__39": {
+      "guid": "85def818aa0843beba0e31e216739e1d",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_37": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__38"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__41": {
+      "guid": "fb2a58fd6a6b3f2662a2f97a46685e4a",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__42": {
+      "guid": "cae52d197325be7b8d3996388efc1648",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_40": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__41"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__42"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__44": {
+      "guid": "9bfe9f4d1eddf6c06b1e937c9e8af41a",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__45": {
+      "guid": "5e0a2b5a76b2990385d4fa2b00da4c58",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_43": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__44"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__45"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "points__33": {
+      "guid": "6f69fd7d4580da38d7815052067e08b6",
+      "size": 128,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_34"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_37"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_40"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_43"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_quads_block_32": {
+      "guid": "d10716214305e7d8cc9fea8abf5529c5",
+      "size": 144,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "points*",
+          "definition": "points__33"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_indices__48": {
+      "guid": "6a42a680da33bf6b62424c4fde36c927",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "char_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_weights__49": {
+      "guid": "b97c565364480cc1160c5bd56d4c14e5",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "real",
+          "name": "node weight*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_47": {
+      "guid": "b6c2368c4a6278530cf48298f51e18e2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "struct",
+          "name": "node indices*",
+          "definition": "node_indices__48"
+        },
+        {
+          "type": "struct",
+          "name": "node weights*",
+          "definition": "node_weights__49"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_report_comments_block_46": {
+      "guid": "709a95664617dea3b950ff8a50e96ddb",
+      "size": 76,
+      "fields": [
+        {
+          "type": "data",
+          "name": "text*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "struct",
+          "name": "point",
+          "definition": "point_47"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "error_reports_block_4": {
+      "guid": "ee6aab20499f3227d60845919eaafc40",
+      "size": 288,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "type*",
+          "definition": "error_reports_block_4_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "source*",
+          "definition": "error_reports_block_4_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags*",
+          "definition": "error_reports_block_4_options_2"
+        },
+        {
+          "type": "data",
+          "name": "text*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "long_integer",
+          "name": "source identifier*"
+        },
+        {
+          "type": "string",
+          "name": "source filename*"
+        },
+        {
+          "type": "long_integer",
+          "name": "source line number*"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "error_report_vertices_block_5"
+        },
+        {
+          "type": "block",
+          "name": "vectors*",
+          "definition": "error_report_vectors_block_9"
+        },
+        {
+          "type": "block",
+          "name": "lines*",
+          "definition": "error_report_lines_block_13"
+        },
+        {
+          "type": "block",
+          "name": "triangles*",
+          "definition": "error_report_triangles_block_21"
+        },
+        {
+          "type": "block",
+          "name": "quads*",
+          "definition": "error_report_quads_block_32"
+        },
+        {
+          "type": "block",
+          "name": "comments*",
+          "definition": "error_report_comments_block_46"
+        },
+        {
+          "type": "long_integer",
+          "name": "report key*"
+        },
+        {
+          "type": "long_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "real_bounds",
+          "name": "bounds x*"
+        },
+        {
+          "type": "real_bounds",
+          "name": "bounds y*"
+        },
+        {
+          "type": "real_bounds",
+          "name": "bounds z*"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_error_report_categories_block_3": {
+      "guid": "3cbb78d54d83ca071a29948996f4138e",
+      "size": 296,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^*"
+        },
+        {
+          "type": "short_enum",
+          "name": "report type*",
+          "definition": "global_error_report_categories_block_3_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags*",
+          "definition": "global_error_report_categories_block_3_options_2"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime generation flags!"
+        },
+        {
+          "type": "pad",
+          "name": "WVTP",
+          "definition": 2
+        },
+        {
+          "type": "long_integer",
+          "name": "runtime something~!"
+        },
+        {
+          "type": "block",
+          "name": "reports*",
+          "definition": "error_reports_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_material_block_50": {
+      "guid": "7b10ba4447a9cca15cd000ba73b2b022",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp3d_nodes_block_55": {
+      "guid": "b5d8fc2148e7ff8e521f6192a371733e",
+      "size": 8,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "node data designator!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp3d_kd_supdernodes_block_56": {
+      "guid": "abcdc2014fa91012b40a40a7bcb41ae0",
+      "size": 128,
+      "fields": [
+        {
+          "type": "real",
+          "name": "plane 0*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 1*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 2*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 3*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 4*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 5*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 6*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 7*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 8*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 9*!"
+        },
+        {
+          "type": "real",
+          "name": "plane10*!"
+        },
+        {
+          "type": "real",
+          "name": "plane11*!"
+        },
+        {
+          "type": "real",
+          "name": "plane12*!"
+        },
+        {
+          "type": "real",
+          "name": "plane13*!"
+        },
+        {
+          "type": "real",
+          "name": "plane14*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "plane dimensions*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 0*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 1*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 2*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 3*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 4*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 5*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 6*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 7*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 8*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 9*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index10*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index11*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index12*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index13*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index14*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index15*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "planes_block_57": {
+      "guid": "5d188a8d4e0d719cdaa61580eb42e322",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_plane_3d",
+          "name": "plane*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "leaves_block_58": {
+      "guid": "a5fd8ee34ecc9a64fbf2eb9ca10c0345",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "leaves_block_58_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 1
+        },
+        {
+          "type": "word_integer",
+          "name": "bsp2d reference count*"
+        },
+        {
+          "type": "dword_integer",
+          "name": "first bsp2d reference*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp2d_references_block_59": {
+      "guid": "591e809e445f8c386fde89b8ff74543b",
+      "size": 4,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "plane*"
+        },
+        {
+          "type": "short_integer",
+          "name": "bsp2d node*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp2d_nodes_block_60": {
+      "guid": "6cd60c8c4124c73b8c4039b3bed36a96",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_plane_2d",
+          "name": "plane*"
+        },
+        {
+          "type": "short_integer",
+          "name": "left child*"
+        },
+        {
+          "type": "short_integer",
+          "name": "right child*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "surfaces_block_61": {
+      "guid": "7ab819354b88010a80de12ab3991cd85",
+      "size": 8,
+      "fields": [
+        {
+          "type": "word_integer",
+          "name": "plane index*"
+        },
+        {
+          "type": "word_integer",
+          "name": "first edge*"
+        },
+        {
+          "type": "short_integer",
+          "name": "material*"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "surfaces_block_61_options_3"
+        },
+        {
+          "type": "byte_integer",
+          "name": "best plane calculation vertex index *!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "edges_block_62": {
+      "guid": "b51da6354400ec53338cb581fdcadcd1",
+      "size": 12,
+      "fields": [
+        {
+          "type": "word_integer",
+          "name": "start vertex*"
+        },
+        {
+          "type": "word_integer",
+          "name": "end vertex*"
+        },
+        {
+          "type": "word_integer",
+          "name": "forward edge*"
+        },
+        {
+          "type": "word_integer",
+          "name": "reverse edge*"
+        },
+        {
+          "type": "word_integer",
+          "name": "left surface*"
+        },
+        {
+          "type": "word_integer",
+          "name": "right surface*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vertices_block_63": {
+      "guid": "6c3f6a604c6a1fce65e2898f602f6de5",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "point*"
+        },
+        {
+          "type": "word_integer",
+          "name": "first edge*"
+        },
+        {
+          "type": "short_integer",
+          "name": "sink*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp__54": {
+      "guid": "130d16e94a1ea468ad5819a9eca7da3b",
+      "size": 252,
+      "fields": [
+        {
+          "type": "block",
+          "name": "bsp3d nodes*",
+          "definition": "bsp3d_nodes_block_55"
+        },
+        {
+          "type": "block",
+          "name": "bsp3d supernodes*",
+          "definition": "bsp3d_kd_supdernodes_block_56"
+        },
+        {
+          "type": "block",
+          "name": "planes*",
+          "definition": "planes_block_57"
+        },
+        {
+          "type": "block",
+          "name": "leaves*",
+          "definition": "leaves_block_58"
+        },
+        {
+          "type": "block",
+          "name": "bsp2d references*",
+          "definition": "bsp2d_references_block_59"
+        },
+        {
+          "type": "block",
+          "name": "bsp2d nodes*",
+          "definition": "bsp2d_nodes_block_60"
+        },
+        {
+          "type": "block",
+          "name": "surfaces*",
+          "definition": "surfaces_block_61"
+        },
+        {
+          "type": "block",
+          "name": "edges*",
+          "definition": "edges_block_62"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "vertices_block_63"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_bsp_block_53": {
+      "guid": "036840d248c1531643727f884fb840b1",
+      "size": 256,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "pad",
+          "name": "KXGCEIEI",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "bsp*",
+          "definition": "bsp__54"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mopp_code_data_definition_block_65": {
+      "guid": "0eab741f4408f5d7e1325a9d6dfdd412",
+      "size": 1,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "mopp data*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mopp_code_definition_block_64": {
+      "guid": "ee2bc8984e988ad1e55143b676f65c63",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "field pointer skip!~"
+        },
+        {
+          "type": "short_integer",
+          "name": "size*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "count~*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "v.i*!"
+        },
+        {
+          "type": "real",
+          "name": "v.j*!"
+        },
+        {
+          "type": "real",
+          "name": "v.k*!"
+        },
+        {
+          "type": "real",
+          "name": "v.w*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad64_00",
+          "definition": 4
+        },
+        {
+          "type": "int64_integer",
+          "name": "m_data pointer!~"
+        },
+        {
+          "type": "long_integer",
+          "name": "int m_size*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "int m_capacityAndFlags*!"
+        },
+        {
+          "type": "char_integer",
+          "name": "int8 m_buildType*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad2",
+          "definition": 7
+        },
+        {
+          "type": "pad",
+          "name": "pad64_01",
+          "definition": 4
+        },
+        {
+          "type": "block",
+          "name": "mopp data block *!",
+          "definition": "mopp_code_data_definition_block_65"
+        },
+        {
+          "type": "char_integer",
+          "name": "mopp build type!*#they say it only matters for ps3"
+        },
+        {
+          "type": "pad",
+          "name": "explicit alignment pad 3",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_permutation_block_52": {
+      "guid": "ab85d1d74cd06fedf6d6469d6d1cee52",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "short_integer",
+          "name": "resourceBspOffset*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "resourceBspCount*!"
+        },
+        {
+          "type": "block",
+          "name": "bsps*",
+          "definition": "collision_model_bsp_block_53"
+        },
+        {
+          "type": "block",
+          "name": "mopp_codes*",
+          "definition": "mopp_code_definition_block_64"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_region_block_51": {
+      "guid": "a2b3d98b46ce4f42fe3923a24e4003c3",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "block",
+          "name": "permutations*",
+          "definition": "collision_model_permutation_block_52"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp3d_nodes_block_70": {
+      "guid": "b5d8fc2148e7ff8e521f6192a371733e",
+      "size": 8,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "node data designator!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp3d_kd_supdernodes_block_71": {
+      "guid": "abcdc2014fa91012b40a40a7bcb41ae0",
+      "size": 128,
+      "fields": [
+        {
+          "type": "real",
+          "name": "plane 0*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 1*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 2*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 3*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 4*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 5*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 6*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 7*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 8*!"
+        },
+        {
+          "type": "real",
+          "name": "plane 9*!"
+        },
+        {
+          "type": "real",
+          "name": "plane10*!"
+        },
+        {
+          "type": "real",
+          "name": "plane11*!"
+        },
+        {
+          "type": "real",
+          "name": "plane12*!"
+        },
+        {
+          "type": "real",
+          "name": "plane13*!"
+        },
+        {
+          "type": "real",
+          "name": "plane14*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "plane dimensions*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 0*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 1*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 2*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 3*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 4*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 5*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 6*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 7*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 8*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index 9*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index10*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index11*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index12*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index13*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index14*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "child index15*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "planes_block_72": {
+      "guid": "5d188a8d4e0d719cdaa61580eb42e322",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_plane_3d",
+          "name": "plane*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "leaves_block_73": {
+      "guid": "a5fd8ee34ecc9a64fbf2eb9ca10c0345",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "leaves_block_73_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 1
+        },
+        {
+          "type": "word_integer",
+          "name": "bsp2d reference count*"
+        },
+        {
+          "type": "dword_integer",
+          "name": "first bsp2d reference*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp2d_references_block_74": {
+      "guid": "591e809e445f8c386fde89b8ff74543b",
+      "size": 4,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "plane*"
+        },
+        {
+          "type": "short_integer",
+          "name": "bsp2d node*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp2d_nodes_block_75": {
+      "guid": "6cd60c8c4124c73b8c4039b3bed36a96",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_plane_2d",
+          "name": "plane*"
+        },
+        {
+          "type": "short_integer",
+          "name": "left child*"
+        },
+        {
+          "type": "short_integer",
+          "name": "right child*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "surfaces_block_76": {
+      "guid": "7ab819354b88010a80de12ab3991cd85",
+      "size": 8,
+      "fields": [
+        {
+          "type": "word_integer",
+          "name": "plane index*"
+        },
+        {
+          "type": "word_integer",
+          "name": "first edge*"
+        },
+        {
+          "type": "short_integer",
+          "name": "material*"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "surfaces_block_76_options_3"
+        },
+        {
+          "type": "byte_integer",
+          "name": "best plane calculation vertex index *!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "edges_block_77": {
+      "guid": "b51da6354400ec53338cb581fdcadcd1",
+      "size": 12,
+      "fields": [
+        {
+          "type": "word_integer",
+          "name": "start vertex*"
+        },
+        {
+          "type": "word_integer",
+          "name": "end vertex*"
+        },
+        {
+          "type": "word_integer",
+          "name": "forward edge*"
+        },
+        {
+          "type": "word_integer",
+          "name": "reverse edge*"
+        },
+        {
+          "type": "word_integer",
+          "name": "left surface*"
+        },
+        {
+          "type": "word_integer",
+          "name": "right surface*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vertices_block_78": {
+      "guid": "6c3f6a604c6a1fce65e2898f602f6de5",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "point*"
+        },
+        {
+          "type": "word_integer",
+          "name": "first edge*"
+        },
+        {
+          "type": "short_integer",
+          "name": "sink*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bsp__69": {
+      "guid": "130d16e94a1ea468ad5819a9eca7da3b",
+      "size": 252,
+      "fields": [
+        {
+          "type": "block",
+          "name": "bsp3d nodes*",
+          "definition": "bsp3d_nodes_block_70"
+        },
+        {
+          "type": "block",
+          "name": "bsp3d supernodes*",
+          "definition": "bsp3d_kd_supdernodes_block_71"
+        },
+        {
+          "type": "block",
+          "name": "planes*",
+          "definition": "planes_block_72"
+        },
+        {
+          "type": "block",
+          "name": "leaves*",
+          "definition": "leaves_block_73"
+        },
+        {
+          "type": "block",
+          "name": "bsp2d references*",
+          "definition": "bsp2d_references_block_74"
+        },
+        {
+          "type": "block",
+          "name": "bsp2d nodes*",
+          "definition": "bsp2d_nodes_block_75"
+        },
+        {
+          "type": "block",
+          "name": "surfaces*",
+          "definition": "surfaces_block_76"
+        },
+        {
+          "type": "block",
+          "name": "edges*",
+          "definition": "edges_block_77"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "vertices_block_78"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_bsp_block_68": {
+      "guid": "036840d248c1531643727f884fb840b1",
+      "size": 256,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "node index*"
+        },
+        {
+          "type": "pad",
+          "name": "KXGCEIEI",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "bsp*",
+          "definition": "bsp__69"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mopp_code_data_definition_block_80": {
+      "guid": "0eab741f4408f5d7e1325a9d6dfdd412",
+      "size": 1,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "mopp data*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mopp_code_definition_block_79": {
+      "guid": "ee2bc8984e988ad1e55143b676f65c63",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "field pointer skip!~"
+        },
+        {
+          "type": "short_integer",
+          "name": "size*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "count~*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "v.i*!"
+        },
+        {
+          "type": "real",
+          "name": "v.j*!"
+        },
+        {
+          "type": "real",
+          "name": "v.k*!"
+        },
+        {
+          "type": "real",
+          "name": "v.w*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad64_00",
+          "definition": 4
+        },
+        {
+          "type": "int64_integer",
+          "name": "m_data pointer!~"
+        },
+        {
+          "type": "long_integer",
+          "name": "int m_size*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "int m_capacityAndFlags*!"
+        },
+        {
+          "type": "char_integer",
+          "name": "int8 m_buildType*!"
+        },
+        {
+          "type": "pad",
+          "name": "pad2",
+          "definition": 7
+        },
+        {
+          "type": "pad",
+          "name": "pad64_01",
+          "definition": 4
+        },
+        {
+          "type": "block",
+          "name": "mopp data block *!",
+          "definition": "mopp_code_data_definition_block_80"
+        },
+        {
+          "type": "char_integer",
+          "name": "mopp build type!*#they say it only matters for ps3"
+        },
+        {
+          "type": "pad",
+          "name": "explicit alignment pad 3",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_permutation_block_67": {
+      "guid": "ab85d1d74cd06fedf6d6469d6d1cee52",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "short_integer",
+          "name": "resourceBspOffset*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "resourceBspCount*!"
+        },
+        {
+          "type": "block",
+          "name": "bsps*",
+          "definition": "collision_model_bsp_block_68"
+        },
+        {
+          "type": "block",
+          "name": "mopp_codes*",
+          "definition": "mopp_code_definition_block_79"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_region_block_66": {
+      "guid": "a2b3d98b46ce4f42fe3923a24e4003c3",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "block",
+          "name": "permutations*",
+          "definition": "collision_model_permutation_block_67"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_pathfinding_sphere_block_81": {
+      "guid": "ec25013c4e7aa193bb4603adb6395c51",
+      "size": 20,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "node*"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "collision_model_pathfinding_sphere_block_81_options_1"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "center*"
+        },
+        {
+          "type": "real",
+          "name": "radius*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_node_block_82": {
+      "guid": "732343d34597041e868a1292186a9f94",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^*"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "collision_model_node_block_82_options_1"
+        },
+        {
+          "type": "short_integer",
+          "name": "parent node*"
+        },
+        {
+          "type": "short_integer",
+          "name": "next sibling node*"
+        },
+        {
+          "type": "short_integer",
+          "name": "first child node*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flags_for_nodes_driving_collision_geo___83": {
+      "guid": "69bd63d6e7d4398038a70810d6267ca8",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "long_integer",
+          "name": "flag data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_model_struct_definition_1": {
+      "guid": "c84e6ac1538ad0487f846a06c05883e5",
+      "size": 240,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_integer",
+          "name": "import_info_checksum*!"
+        },
+        {
+          "type": "block",
+          "name": "errors*",
+          "definition": "global_error_report_categories_block_3"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags*",
+          "definition": "collision_model_struct_definition_1_options_4"
+        },
+        {
+          "type": "block",
+          "name": "materials*",
+          "definition": "collision_model_material_block_50"
+        },
+        {
+          "type": "block",
+          "name": "regions*",
+          "definition": "collision_model_region_block_51"
+        },
+        {
+          "type": "block",
+          "name": "cookie cutters*",
+          "definition": "collision_model_region_block_66"
+        },
+        {
+          "type": "block",
+          "name": "pathfinding spheres*",
+          "definition": "collision_model_pathfinding_sphere_block_81"
+        },
+        {
+          "type": "block",
+          "name": "nodes*",
+          "definition": "collision_model_node_block_82"
+        },
+        {
+          "type": "pad",
+          "name": "regions resource",
+          "definition": 16
+        },
+        {
+          "type": "struct",
+          "name": "flags for nodes driving collision geo*!",
+          "definition": "flags_for_nodes_driving_collision_geo___83"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "global_error_report_categories_block_3_options_1": {
+      "options": [
+        "silent",
+        "comment",
+        "warning",
+        "error"
+      ]
+    },
+    "global_error_report_categories_block_3_options_2": {
+      "options": [
+        "rendered",
+        "tangent-space",
+        "non-critical",
+        "lightmap light",
+        "report key is valid"
+      ]
+    },
+    "error_reports_block_4_options_0": {
+      "options": [
+        "silent",
+        "comment",
+        "warning",
+        "error"
+      ]
+    },
+    "error_reports_block_4_options_1": {
+      "options": [
+        "none",
+        "structure",
+        "poop",
+        "lightmap",
+        "pathfinding"
+      ]
+    },
+    "error_reports_block_4_options_2": {
+      "options": [
+        "rendered",
+        "tangent-space",
+        "non-critical",
+        "lightmap light",
+        "report key is valid"
+      ]
+    },
+    "collision_model_struct_definition_1_options_4": {
+      "options": [
+        "contains open edges",
+        "physics built*!",
+        "physics in use*!",
+        "processed*!",
+        "has two sided surfaces"
+      ]
+    },
+    "leaves_block_58_options_0": {
+      "options": [
+        "contains double-sided surfaces"
+      ]
+    },
+    "surfaces_block_61_options_3": {
+      "options": [
+        "two sided",
+        "invisible",
+        "climbable",
+        "invalid",
+        "conveyor",
+        "slip",
+        "plane negated"
+      ]
+    },
+    "leaves_block_73_options_0": {
+      "options": [
+        "contains double-sided surfaces"
+      ]
+    },
+    "surfaces_block_76_options_3": {
+      "options": [
+        "two sided",
+        "invisible",
+        "climbable",
+        "invalid",
+        "conveyor",
+        "slip",
+        "plane negated"
+      ]
+    },
+    "collision_model_pathfinding_sphere_block_81_options_1": {
+      "options": [
+        "remains when open",
+        "vehicle only",
+        "with sectors"
+      ]
+    },
+    "collision_model_node_block_82_options_1": {
+      "options": [
+        "Generate Nav Mesh"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

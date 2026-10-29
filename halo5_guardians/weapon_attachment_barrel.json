@@ -1,0 +1,1984 @@
+{
+  "name": "weapon_attachment_barrel",
+  "tag": "weab",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "global_object_attachment_block_4": {
+      "max_count": 48,
+      "struct": "global_object_attachment_block_4"
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentObjectBlock_6"
+    },
+    "WeaponAccuracyModifiers_7": {
+      "max_count": 1,
+      "struct": "WeaponAccuracyModifiers_7"
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "max_count": 1,
+      "struct": "WeaponPrecisionAimModifiers_8"
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "max_count": 1,
+      "struct": "WeaponUnitPropertyModifiers_9"
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "max_count": 1,
+      "struct": "WeaponAimAssistPropertyModifiers_10"
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "max_count": 1,
+      "struct": "weapon_recoil_view_kick_modifiers_11"
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "max_count": 1,
+      "struct": "WeaponRecoilGunkickModifiers_12"
+    },
+    "WeaponAnimationModifiers_13": {
+      "max_count": 1,
+      "struct": "WeaponAnimationModifiers_13"
+    },
+    "WeaponHeatModifiers_14": {
+      "max_count": 1,
+      "struct": "WeaponHeatModifiers_14"
+    },
+    "UIItemInfoBlock_15": {
+      "max_count": 1,
+      "struct": "UIItemInfoBlock_15"
+    },
+    "WeaponAttachmentBarrelFiringParamsBlock_18": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFiringParamsBlock_18"
+    },
+    "barrel_firing_effect_block_20": {
+      "max_count": 5,
+      "struct": "barrel_firing_effect_block_20"
+    },
+    "ProjectileDistributionCustomAngleOffset_23": {
+      "max_count": 16,
+      "struct": "ProjectileDistributionCustomAngleOffset_23"
+    },
+    "projectileDistributionCustomVector_24": {
+      "max_count": 16,
+      "struct": "projectileDistributionCustomVector_24"
+    },
+    "WeaponAttachmentBarrelDistributionBlock_21": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelDistributionBlock_21"
+    },
+    "WeaponAttachmentBarrelErrorBlock_25": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelErrorBlock_25"
+    },
+    "WeaponAttachmentBarrelNoiseBlock_27": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelNoiseBlock_27"
+    },
+    "WeaponAttachmentHeatGeneratedPerRoundOverride_29": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentHeatGeneratedPerRoundOverride_29"
+    },
+    "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_30": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_30"
+    },
+    "WeaponAttachmentBarrelFireSoundBlock_32": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFireSoundBlock_32"
+    },
+    "AutomaticFireVariationBlock_36": {
+      "max_count": 8,
+      "struct": "AutomaticFireVariationBlock_36"
+    },
+    "WeaponAttachmentBarrelAutomaticFireSoundBlock_34": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelAutomaticFireSoundBlock_34"
+    },
+    "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_37": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_37"
+    },
+    "weapon_attachment_barrel_override_17": {
+      "max_count": 1,
+      "struct": "weapon_attachment_barrel_override_17"
+    },
+    "WeaponAttachmentBarrelFiringParamsBlock_40": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFiringParamsBlock_40"
+    },
+    "barrel_firing_effect_block_42": {
+      "max_count": 5,
+      "struct": "barrel_firing_effect_block_42"
+    },
+    "ProjectileDistributionCustomAngleOffset_45": {
+      "max_count": 16,
+      "struct": "ProjectileDistributionCustomAngleOffset_45"
+    },
+    "projectileDistributionCustomVector_46": {
+      "max_count": 16,
+      "struct": "projectileDistributionCustomVector_46"
+    },
+    "WeaponAttachmentBarrelDistributionBlock_43": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelDistributionBlock_43"
+    },
+    "WeaponAttachmentBarrelErrorBlock_47": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelErrorBlock_47"
+    },
+    "WeaponAttachmentBarrelNoiseBlock_49": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelNoiseBlock_49"
+    },
+    "WeaponAttachmentHeatGeneratedPerRoundOverride_51": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentHeatGeneratedPerRoundOverride_51"
+    },
+    "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_52": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_52"
+    },
+    "WeaponAttachmentBarrelFireSoundBlock_54": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFireSoundBlock_54"
+    },
+    "AutomaticFireVariationBlock_58": {
+      "max_count": 8,
+      "struct": "AutomaticFireVariationBlock_58"
+    },
+    "WeaponAttachmentBarrelAutomaticFireSoundBlock_56": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelAutomaticFireSoundBlock_56"
+    },
+    "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_59": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_59"
+    },
+    "weapon_attachment_barrel_override_39": {
+      "max_count": 1,
+      "struct": "weapon_attachment_barrel_override_39"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "weapon_attachment_barrel_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_object_attachment_block_4": {
+      "guid": "11097257429c477533d975a73f4575ee",
+      "size": 80,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "override type#this attachment will override the attachment on the object that shares this ",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "marker"
+        },
+        {
+          "type": "char_enum",
+          "name": "change color",
+          "definition": "global_object_attachment_block_4_options_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "global_object_attachment_block_4_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "DPKP",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "primary scale"
+        },
+        {
+          "type": "string_id",
+          "name": "secondary scale"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachmentName_5": {
+      "guid": "7166d96b409060fc1c2ebf9c91f0157d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "guid": "69a0d8184a18977c2ec52c9c5c788d2a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "object",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "weapon marker"
+        },
+        {
+          "type": "string_id",
+          "name": "attachment marker"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAccuracyModifiers_7": {
+      "guid": "da8879984a0f4ed579123c8f4048154f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "accuracy spread{Accuracy Bloom}:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "guid": "809408414624313b546f658e2d588e96",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "precision transition in time modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "precision transition out time modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "guid": "c17f9f4049269ffebbb77b8e2ad9a775",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "move speed scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "turn rate scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "simulated input scale modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "guid": "2cb7ba74481428a00d7d2a93c4188131",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "autoaim angle:percent#the maximum angle that autoaim works at full strength"
+        },
+        {
+          "type": "real",
+          "name": "prioritization angle:percent#angle used to select model targets based on priority"
+        },
+        {
+          "type": "real",
+          "name": "autoaim range:percent#autoaim only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "autoaim falloff range:percent#at what point the autoaim starts falling off.  Fully falls off at autoaim range."
+        },
+        {
+          "type": "real",
+          "name": "autoaim near falloff range:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism angle:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism range:percent#magnetism only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "magnetism falloff range:percent#at what point magnetism starts falling off.  Fully falls off at magnetism range."
+        },
+        {
+          "type": "real",
+          "name": "magnetism near falloff range:percent#at what point magnetism reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "deviation angle:percent#the maximum angle that a projectile is allowed to deviate from the gun barrel due to autoaim OR network lead vector reconstruction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "guid": "867b6ceb45ee09b734870c94b40a00b6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "view kick deceleration modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "view kick return to center modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "guid": "c0b6345a44080b16986bde88c03694a1",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "gunkick spring constant modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAnimationModifiers_13": {
+      "guid": "f921d36c4356b5f65bb1efae74b1566b",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real",
+          "name": "ready playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "ready initial playback modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "put away playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload while empty playback speed modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponHeatModifiers_14": {
+      "guid": "4a20a34a469cb8b1bdb06aa633975ec0",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "overheated heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "heat generated per round modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIItemInfoBlock_15": {
+      "guid": "6bb873fd472b52c677909b90d0074580",
+      "size": 128,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "description#general in-universe item description"
+        },
+        {
+          "type": "string_id",
+          "name": "help text#verbose usage info for use during gameplay"
+        },
+        {
+          "type": "string_id",
+          "name": "icon string id#legacy, from when we embedded the sprites into the font to get streaming behaviour"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite#bitmap file representing this item",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#frame inside the item's image strip which shows this item "
+        },
+        {
+          "type": "tag_reference",
+          "name": "alt sprite#secondary bitmap file representing this item. for detail images, overlays etc.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "alt sprite index#alt sprite's frame"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui vehicle screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_component_3": {
+      "guid": "128b8f414ede891885730099d6c4f5c1",
+      "size": 328,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Attachment"
+        },
+        {
+          "type": "string_id",
+          "name": "variant region name"
+        },
+        {
+          "type": "string_id",
+          "name": "variant permutation name"
+        },
+        {
+          "type": "block",
+          "name": "attachments",
+          "definition": "global_object_attachment_block_4"
+        },
+        {
+          "type": "pad",
+          "name": "attachmentPad",
+          "definition": 4
+        },
+        {
+          "type": "custom",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "attachmentName_5"
+        },
+        {
+          "type": "block",
+          "name": "attachment object",
+          "definition": "WeaponAttachmentObjectBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "accuracy modifiers",
+          "definition": "WeaponAccuracyModifiers_7"
+        },
+        {
+          "type": "block",
+          "name": "precision aim modifiers",
+          "definition": "WeaponPrecisionAimModifiers_8"
+        },
+        {
+          "type": "block",
+          "name": "unit modifiers",
+          "definition": "WeaponUnitPropertyModifiers_9"
+        },
+        {
+          "type": "block",
+          "name": "aim assist modifiers",
+          "definition": "WeaponAimAssistPropertyModifiers_10"
+        },
+        {
+          "type": "block",
+          "name": "recoil view kick modifiers",
+          "definition": "weapon_recoil_view_kick_modifiers_11"
+        },
+        {
+          "type": "block",
+          "name": "recoil gunkick modifiers",
+          "definition": "WeaponRecoilGunkickModifiers_12"
+        },
+        {
+          "type": "block",
+          "name": "animation modifiers",
+          "definition": "WeaponAnimationModifiers_13"
+        },
+        {
+          "type": "block",
+          "name": "heat modifiers",
+          "definition": "WeaponHeatModifiers_14"
+        },
+        {
+          "type": "block",
+          "name": "UI display info",
+          "definition": "UIItemInfoBlock_15"
+        },
+        {
+          "type": "pad",
+          "name": "endPad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firing_params_19": {
+      "guid": "b9afce9e494b8cf8e687d69c80e5e636",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real_bounds",
+          "name": "rounds per second#the number of firing effects created per second.  0 defaults to 60"
+        },
+        {
+          "type": "string_id",
+          "name": "rate of fire acceleration#function value sets the current rate of fire when the barrel is firing"
+        },
+        {
+          "type": "real",
+          "name": "acceleration time:seconds#the continuous firing time it takes for the weapon to achieve its final rounds per second"
+        },
+        {
+          "type": "string_id",
+          "name": "rate of fire deceleration#function value sets the current rate of fire when the barrel is not firing"
+        },
+        {
+          "type": "real",
+          "name": "deceleration time:seconds#the continuous idle time it takes for the weapon to return from its final rounds per second to its initial"
+        },
+        {
+          "type": "real",
+          "name": "barrel spin scale#scale the barrel spin speed by this amount"
+        },
+        {
+          "type": "real_fraction",
+          "name": "blurred rate of fire#a percentage between 0 and 1 which controls how soon in its firing animation the weapon blurs"
+        },
+        {
+          "type": "short_bounds",
+          "name": "shots per fire#allows designer caps to the shots you can fire from one firing action"
+        },
+        {
+          "type": "real",
+          "name": "fire recovery time:seconds#how long after a set of shots it takes before the barrel can fire again"
+        },
+        {
+          "type": "real_fraction",
+          "name": "soft recovery fraction#how much of the recovery allows shots to be queued"
+        },
+        {
+          "type": "real",
+          "name": "melee  fire recovery time:seconds#how long after a set of shots it takes before the weapon can melee"
+        },
+        {
+          "type": "real_fraction",
+          "name": "melee soft recovery fraction#how much of the melee recovery allows melee to be queued"
+        },
+        {
+          "type": "real",
+          "name": "runtime rate of fire acceleration rate!"
+        },
+        {
+          "type": "real",
+          "name": "runtime rate of fire deceleration rate!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFiringParamsBlock_18": {
+      "guid": "967315ec4fc2df7acf75c6b0261f964d",
+      "size": 60,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "firing params",
+          "definition": "firing_params_19"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "barrel_firing_effect_block_20": {
+      "guid": "28bbfa0042b07568d15ce794e6f4e7b8",
+      "size": 484,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "shot count lower bound#the minimum number of times this firing effect will be used, once it has been chosen"
+        },
+        {
+          "type": "short_integer",
+          "name": "shot count upper bound#the maximum number of times this firing effect will be used, once it has been chosen"
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing effect^#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical effect^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire effect#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty effect#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing effect#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing damage#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical damage^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire damage#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty damage#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing damage#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing rider damage#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical rider damage^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire rider damage#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty rider damage#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing rider damage#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ProjectileDistributionCustomAngleOffset_23": {
+      "guid": "cb9e245e482898709b82ffacba57b7b4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_euler_angles_2d",
+          "name": "angle offset^:[-90, 90]#yaw +right pitch +up"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectileDistributionCustomVector_24": {
+      "guid": "9db02e184febcd2dabbdb7a63c77e884",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "Point offset^:[-1.1]#x-y offset - +x is right, +y is up"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectile_distribution_22": {
+      "guid": "aa0536ee4732df725c637c925db0ac0b",
+      "size": 64,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "distribution function",
+          "definition": "projectile_distribution_22_options_0"
+        },
+        {
+          "type": "short_integer",
+          "name": "projectiles per shot"
+        },
+        {
+          "type": "block",
+          "name": "direction offset#Custom vectors must be set in distribution function above",
+          "definition": "ProjectileDistributionCustomAngleOffset_23"
+        },
+        {
+          "type": "block",
+          "name": "position offsets#Custom vectors must be set in distribution function above",
+          "definition": "projectileDistributionCustomVector_24"
+        },
+        {
+          "type": "real",
+          "name": "distribution angle:degrees#used by distribution function 'horizontal fan' above"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelDistributionBlock_21": {
+      "guid": "1405a8aa40c0ff8d19ef2a80bc5aac32",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "projectile distribution",
+          "definition": "projectile_distribution_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectile_error_26": {
+      "guid": "6243ece945117449ee6669af2148162c",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real",
+          "name": "deceleration time:seconds#the continuous idle time it would take for a barrel_error of 1.0 to return to its minimum value."
+        },
+        {
+          "type": "real",
+          "name": "runtime error deceleration rate!"
+        },
+        {
+          "type": "angle",
+          "name": "minimum error:degrees#projectile direction is randomly selected between this and max_error_angle below"
+        },
+        {
+          "type": "angle_bounds",
+          "name": "error angle:degrees (max_error_angle)#current barrel_error is linearly interpolated between these to generate max_error_angle"
+        },
+        {
+          "type": "real_bounds",
+          "name": "damage error#the range of angles (in degrees) that a damaged weapon will skew fire"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelErrorBlock_25": {
+      "guid": "01e364114fca8379be02c3be867db9d2",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "projectile error",
+          "definition": "projectile_error_26"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "barrel_noise_28": {
+      "guid": "06f53a294f58a16e848371baff9324fc",
+      "size": 4,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "ai noise#how loud this weapon appears to the AI when firing",
+          "definition": "barrel_noise_28_options_0"
+        },
+        {
+          "type": "short_enum",
+          "name": "motion tracker noise#how far the weapon can be heard on the motion tracker when firing",
+          "definition": "barrel_noise_28_options_1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelNoiseBlock_27": {
+      "guid": "5f93435e478dd9d34b13139d424c236f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "barrel noise",
+          "definition": "barrel_noise_28"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentHeatGeneratedPerRoundOverride_29": {
+      "guid": "1c9276e149b53e5016c3d1a1060e2a1b",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real_fraction",
+          "name": "heat generated per round:[0,1]#the amount of heat generated each time the barrel fires. Unlike the name suggests, this amount of heat is NOT applied per projectile created."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "age_generation_31": {
+      "guid": "c3520dcb4fe0977f5db6eb8bac32c509",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_fraction",
+          "name": "age generated per round:[0,1]#the amount the weapon ages each time the trigger is fired"
+        },
+        {
+          "type": "real_fraction",
+          "name": "CAMPAIGN age generated per round:[0,1]#the amount the weapon ages each time the trigger is fired"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_30": {
+      "guid": "4bd6a61048d806e4a30d7d96d68408e3",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "age generation",
+          "definition": "age_generation_31"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "fire_sound_33": {
+      "guid": "a9f32d504bb4e29605de09b9a246587f",
+      "size": 36,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "fire_sound_33_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFireSoundBlock_32": {
+      "guid": "de010cdd41b60d686481c8859e2771f5",
+      "size": 36,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "fire sound",
+          "definition": "fire_sound_33"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "AutomaticFireVariationBlock_36": {
+      "guid": "df1e4eca40f6a183b2df23a84795ada6",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "firing loop for automatics",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "automatic_fire_sound_35": {
+      "guid": "d6b3d3764d58d3b01ad11d91caf71fea",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "firing loop for automatics",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "automatic fire variations",
+          "definition": "AutomaticFireVariationBlock_36"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelAutomaticFireSoundBlock_34": {
+      "guid": "ca8a12734fe10ff4074a77b3decdef3f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "automatic fire sound",
+          "definition": "automatic_fire_sound_35"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "fire_tail_sound_38": {
+      "guid": "2db098da414bd888c36eab885f82b363",
+      "size": 48,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tail sounds",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Tail sounds switch group#this is the switch group this weapon tail class will use"
+        },
+        {
+          "type": "long_integer",
+          "name": "Tail sound switch group hash!"
+        },
+        {
+          "type": "string_id",
+          "name": "Tail sounds switch value#this is the name of the weapon for this weapon tail class"
+        },
+        {
+          "type": "long_integer",
+          "name": "Tail sound switch value hash!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_37": {
+      "guid": "7677e373489101b8780f3aa2f10ec32a",
+      "size": 48,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "fire tail sound",
+          "definition": "fire_tail_sound_38"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_barrel_override_17": {
+      "guid": "27c252674b950511fe60a09020b43144",
+      "size": 312,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "projectile",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "firing params",
+          "definition": "WeaponAttachmentBarrelFiringParamsBlock_18"
+        },
+        {
+          "type": "block",
+          "name": "firing effects",
+          "definition": "barrel_firing_effect_block_20"
+        },
+        {
+          "type": "block",
+          "name": "projectile distribution",
+          "definition": "WeaponAttachmentBarrelDistributionBlock_21"
+        },
+        {
+          "type": "block",
+          "name": "projectile error",
+          "definition": "WeaponAttachmentBarrelErrorBlock_25"
+        },
+        {
+          "type": "block",
+          "name": "noise",
+          "definition": "WeaponAttachmentBarrelNoiseBlock_27"
+        },
+        {
+          "type": "block",
+          "name": "heat generated per round",
+          "definition": "WeaponAttachmentHeatGeneratedPerRoundOverride_29"
+        },
+        {
+          "type": "block",
+          "name": "age generation",
+          "definition": "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_30"
+        },
+        {
+          "type": "block",
+          "name": "fire sound",
+          "definition": "WeaponAttachmentBarrelFireSoundBlock_32"
+        },
+        {
+          "type": "block",
+          "name": "automatic fire sound",
+          "definition": "WeaponAttachmentBarrelAutomaticFireSoundBlock_34"
+        },
+        {
+          "type": "block",
+          "name": "fire tail sound",
+          "definition": "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_37"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firing_params_41": {
+      "guid": "b9afce9e494b8cf8e687d69c80e5e636",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real_bounds",
+          "name": "rounds per second#the number of firing effects created per second.  0 defaults to 60"
+        },
+        {
+          "type": "string_id",
+          "name": "rate of fire acceleration#function value sets the current rate of fire when the barrel is firing"
+        },
+        {
+          "type": "real",
+          "name": "acceleration time:seconds#the continuous firing time it takes for the weapon to achieve its final rounds per second"
+        },
+        {
+          "type": "string_id",
+          "name": "rate of fire deceleration#function value sets the current rate of fire when the barrel is not firing"
+        },
+        {
+          "type": "real",
+          "name": "deceleration time:seconds#the continuous idle time it takes for the weapon to return from its final rounds per second to its initial"
+        },
+        {
+          "type": "real",
+          "name": "barrel spin scale#scale the barrel spin speed by this amount"
+        },
+        {
+          "type": "real_fraction",
+          "name": "blurred rate of fire#a percentage between 0 and 1 which controls how soon in its firing animation the weapon blurs"
+        },
+        {
+          "type": "short_bounds",
+          "name": "shots per fire#allows designer caps to the shots you can fire from one firing action"
+        },
+        {
+          "type": "real",
+          "name": "fire recovery time:seconds#how long after a set of shots it takes before the barrel can fire again"
+        },
+        {
+          "type": "real_fraction",
+          "name": "soft recovery fraction#how much of the recovery allows shots to be queued"
+        },
+        {
+          "type": "real",
+          "name": "melee  fire recovery time:seconds#how long after a set of shots it takes before the weapon can melee"
+        },
+        {
+          "type": "real_fraction",
+          "name": "melee soft recovery fraction#how much of the melee recovery allows melee to be queued"
+        },
+        {
+          "type": "real",
+          "name": "runtime rate of fire acceleration rate!"
+        },
+        {
+          "type": "real",
+          "name": "runtime rate of fire deceleration rate!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFiringParamsBlock_40": {
+      "guid": "967315ec4fc2df7acf75c6b0261f964d",
+      "size": 60,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "firing params",
+          "definition": "firing_params_41"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "barrel_firing_effect_block_42": {
+      "guid": "28bbfa0042b07568d15ce794e6f4e7b8",
+      "size": 484,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "shot count lower bound#the minimum number of times this firing effect will be used, once it has been chosen"
+        },
+        {
+          "type": "short_integer",
+          "name": "shot count upper bound#the maximum number of times this firing effect will be used, once it has been chosen"
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing effect^#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical effect^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire effect#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty effect#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing effect#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing damage#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical damage^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire damage#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty damage#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing damage#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "firing rider damage#this effect is used when the weapon is loaded and fired normally",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "critical rider damage^#this effect is used when the weapon is loaded and will do critical damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "misfire rider damage#this effect is used when the weapon is loaded but fired while overheated",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty rider damage#this effect is used when the weapon is not loaded",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional secondary firing rider damage#this effect is for later shots of a burst if set",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ProjectileDistributionCustomAngleOffset_45": {
+      "guid": "cb9e245e482898709b82ffacba57b7b4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_euler_angles_2d",
+          "name": "angle offset^:[-90, 90]#yaw +right pitch +up"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectileDistributionCustomVector_46": {
+      "guid": "9db02e184febcd2dabbdb7a63c77e884",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "Point offset^:[-1.1]#x-y offset - +x is right, +y is up"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectile_distribution_44": {
+      "guid": "aa0536ee4732df725c637c925db0ac0b",
+      "size": 64,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "distribution function",
+          "definition": "projectile_distribution_44_options_0"
+        },
+        {
+          "type": "short_integer",
+          "name": "projectiles per shot"
+        },
+        {
+          "type": "block",
+          "name": "direction offset#Custom vectors must be set in distribution function above",
+          "definition": "ProjectileDistributionCustomAngleOffset_45"
+        },
+        {
+          "type": "block",
+          "name": "position offsets#Custom vectors must be set in distribution function above",
+          "definition": "projectileDistributionCustomVector_46"
+        },
+        {
+          "type": "real",
+          "name": "distribution angle:degrees#used by distribution function 'horizontal fan' above"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelDistributionBlock_43": {
+      "guid": "1405a8aa40c0ff8d19ef2a80bc5aac32",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "projectile distribution",
+          "definition": "projectile_distribution_44"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "projectile_error_48": {
+      "guid": "6243ece945117449ee6669af2148162c",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real",
+          "name": "deceleration time:seconds#the continuous idle time it would take for a barrel_error of 1.0 to return to its minimum value."
+        },
+        {
+          "type": "real",
+          "name": "runtime error deceleration rate!"
+        },
+        {
+          "type": "angle",
+          "name": "minimum error:degrees#projectile direction is randomly selected between this and max_error_angle below"
+        },
+        {
+          "type": "angle_bounds",
+          "name": "error angle:degrees (max_error_angle)#current barrel_error is linearly interpolated between these to generate max_error_angle"
+        },
+        {
+          "type": "real_bounds",
+          "name": "damage error#the range of angles (in degrees) that a damaged weapon will skew fire"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelErrorBlock_47": {
+      "guid": "01e364114fca8379be02c3be867db9d2",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "projectile error",
+          "definition": "projectile_error_48"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "barrel_noise_50": {
+      "guid": "06f53a294f58a16e848371baff9324fc",
+      "size": 4,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "ai noise#how loud this weapon appears to the AI when firing",
+          "definition": "barrel_noise_50_options_0"
+        },
+        {
+          "type": "short_enum",
+          "name": "motion tracker noise#how far the weapon can be heard on the motion tracker when firing",
+          "definition": "barrel_noise_50_options_1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelNoiseBlock_49": {
+      "guid": "5f93435e478dd9d34b13139d424c236f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "barrel noise",
+          "definition": "barrel_noise_50"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentHeatGeneratedPerRoundOverride_51": {
+      "guid": "1c9276e149b53e5016c3d1a1060e2a1b",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real_fraction",
+          "name": "heat generated per round:[0,1]#the amount of heat generated each time the barrel fires. Unlike the name suggests, this amount of heat is NOT applied per projectile created."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "age_generation_53": {
+      "guid": "c3520dcb4fe0977f5db6eb8bac32c509",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_fraction",
+          "name": "age generated per round:[0,1]#the amount the weapon ages each time the trigger is fired"
+        },
+        {
+          "type": "real_fraction",
+          "name": "CAMPAIGN age generated per round:[0,1]#the amount the weapon ages each time the trigger is fired"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_52": {
+      "guid": "4bd6a61048d806e4a30d7d96d68408e3",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "age generation",
+          "definition": "age_generation_53"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "fire_sound_55": {
+      "guid": "a9f32d504bb4e29605de09b9a246587f",
+      "size": 36,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "fire_sound_55_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFireSoundBlock_54": {
+      "guid": "de010cdd41b60d686481c8859e2771f5",
+      "size": 36,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "fire sound",
+          "definition": "fire_sound_55"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "AutomaticFireVariationBlock_58": {
+      "guid": "df1e4eca40f6a183b2df23a84795ada6",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "firing loop for automatics",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "automatic_fire_sound_57": {
+      "guid": "d6b3d3764d58d3b01ad11d91caf71fea",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "firing loop for automatics",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "automatic fire variations",
+          "definition": "AutomaticFireVariationBlock_58"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelAutomaticFireSoundBlock_56": {
+      "guid": "ca8a12734fe10ff4074a77b3decdef3f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "automatic fire sound",
+          "definition": "automatic_fire_sound_57"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "fire_tail_sound_60": {
+      "guid": "2db098da414bd888c36eab885f82b363",
+      "size": 48,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tail sounds",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Tail sounds switch group#this is the switch group this weapon tail class will use"
+        },
+        {
+          "type": "long_integer",
+          "name": "Tail sound switch group hash!"
+        },
+        {
+          "type": "string_id",
+          "name": "Tail sounds switch value#this is the name of the weapon for this weapon tail class"
+        },
+        {
+          "type": "long_integer",
+          "name": "Tail sound switch value hash!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_59": {
+      "guid": "7677e373489101b8780f3aa2f10ec32a",
+      "size": 48,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "fire tail sound",
+          "definition": "fire_tail_sound_60"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_barrel_override_39": {
+      "guid": "27c252674b950511fe60a09020b43144",
+      "size": 312,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "projectile",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "firing params",
+          "definition": "WeaponAttachmentBarrelFiringParamsBlock_40"
+        },
+        {
+          "type": "block",
+          "name": "firing effects",
+          "definition": "barrel_firing_effect_block_42"
+        },
+        {
+          "type": "block",
+          "name": "projectile distribution",
+          "definition": "WeaponAttachmentBarrelDistributionBlock_43"
+        },
+        {
+          "type": "block",
+          "name": "projectile error",
+          "definition": "WeaponAttachmentBarrelErrorBlock_47"
+        },
+        {
+          "type": "block",
+          "name": "noise",
+          "definition": "WeaponAttachmentBarrelNoiseBlock_49"
+        },
+        {
+          "type": "block",
+          "name": "heat generated per round",
+          "definition": "WeaponAttachmentHeatGeneratedPerRoundOverride_51"
+        },
+        {
+          "type": "block",
+          "name": "age generation",
+          "definition": "WeaponAttachmentBarrelAgeGeneratedPerRoundBlock_52"
+        },
+        {
+          "type": "block",
+          "name": "fire sound",
+          "definition": "WeaponAttachmentBarrelFireSoundBlock_54"
+        },
+        {
+          "type": "block",
+          "name": "automatic fire sound",
+          "definition": "WeaponAttachmentBarrelAutomaticFireSoundBlock_56"
+        },
+        {
+          "type": "block",
+          "name": "fire tail sound",
+          "definition": "WeaponAttachmentBarrelFireTailSoundDefinitionBlock_59"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_barrel_component_16": {
+      "guid": "8b2003e84250a10a78bd679942e0d5e6",
+      "size": 56,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Barrel"
+        },
+        {
+          "type": "block",
+          "name": "primary barrel override",
+          "definition": "weapon_attachment_barrel_override_17"
+        },
+        {
+          "type": "block",
+          "name": "secondary barrel override",
+          "definition": "weapon_attachment_barrel_override_39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_barrel_struct_definition_1": {
+      "guid": "e1b6b403d0cfa4ecb5659f6fb8b85077",
+      "size": 400,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "weapon attachment component",
+          "definition": "weapon_attachment_component_3"
+        },
+        {
+          "type": "struct",
+          "name": "weapon attachment barrel component",
+          "definition": "weapon_attachment_barrel_component_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "global_object_attachment_block_4_options_3": {
+      "options": [
+        "none",
+        "primary",
+        "secondary",
+        "tertiary",
+        "quaternary"
+      ]
+    },
+    "global_object_attachment_block_4_options_4": {
+      "options": [
+        "force always on#when this flag is clear we only create the attachment when the function object function is active or set to empty string",
+        "effect size scale from object scale"
+      ]
+    },
+    "projectile_distribution_22_options_0": {
+      "options": [
+        "point",
+        "horizontal fan",
+        "custom directions{custom vectors}",
+        "custom positions"
+      ]
+    },
+    "barrel_noise_28_options_0": {
+      "options": [
+        "silent#ai will not respond to this sound",
+        "quiet",
+        "medium",
+        "shout",
+        "loud#ai can hear this sound at any range"
+      ]
+    },
+    "barrel_noise_28_options_1": {
+      "options": [
+        "edge",
+        "inner",
+        "silent"
+      ]
+    },
+    "fire_sound_33_options_0": {
+      "options": [
+        "play once per burst"
+      ]
+    },
+    "projectile_distribution_44_options_0": {
+      "options": [
+        "point",
+        "horizontal fan",
+        "custom directions{custom vectors}",
+        "custom positions"
+      ]
+    },
+    "barrel_noise_50_options_0": {
+      "options": [
+        "silent#ai will not respond to this sound",
+        "quiet",
+        "medium",
+        "shout",
+        "loud#ai can hear this sound at any range"
+      ]
+    },
+    "barrel_noise_50_options_1": {
+      "options": [
+        "edge",
+        "inner",
+        "silent"
+      ]
+    },
+    "fire_sound_55_options_0": {
+      "options": [
+        "play once per burst"
+      ]
+    }
+  },
+  "datas": {}
+}

@@ -1,0 +1,293 @@
+{
+  "name": "cheap_particle_emitter",
+  "tag": "cpem",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "cheap_particle_emitter_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spawnrate_3": {
+      "guid": "e439295b4f7fed02947b3dba184f3d39",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cheap_particle_emitter_struct_definition_1": {
+      "guid": "bc499a4306bb6bfe24f293b7c29c29dd",
+      "size": 344,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "cheap_particle_emitter_struct_definition_1_options_2"
+        },
+        {
+          "type": "word_integer",
+          "name": "version!"
+        },
+        {
+          "type": "real",
+          "name": "spawn rate!:particles per second"
+        },
+        {
+          "type": "custom",
+          "name": "SPAWN RATE"
+        },
+        {
+          "type": "struct",
+          "name": "spawnrate",
+          "definition": "spawnrate_3"
+        },
+        {
+          "type": "custom",
+          "name": "LOD"
+        },
+        {
+          "type": "real",
+          "name": "distance fade start:world_units#the distance where the number of spawned particles starts to be reduced"
+        },
+        {
+          "type": "real",
+          "name": "distance fade end:world units#the distance where the number of spawned particles is zero"
+        },
+        {
+          "type": "custom",
+          "name": "TYPES"
+        },
+        {
+          "type": "custom",
+          "name": "types"
+        },
+        {
+          "type": "string_id",
+          "name": "type 0"
+        },
+        {
+          "type": "real",
+          "name": "weight 0"
+        },
+        {
+          "type": "string_id",
+          "name": "type 1"
+        },
+        {
+          "type": "real",
+          "name": "weight 1"
+        },
+        {
+          "type": "string_id",
+          "name": "type 2"
+        },
+        {
+          "type": "real",
+          "name": "weight 2"
+        },
+        {
+          "type": "string_id",
+          "name": "type 3"
+        },
+        {
+          "type": "real",
+          "name": "weight 3"
+        },
+        {
+          "type": "custom",
+          "name": "LIFETIME"
+        },
+        {
+          "type": "real_bounds",
+          "name": "lifetime:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "EMITTER PARAMETERS"
+        },
+        {
+          "type": "tag_reference",
+          "name": "position texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "position scale"
+        },
+        {
+          "type": "real",
+          "name": "position flatten"
+        },
+        {
+          "type": "tag_reference",
+          "name": "velocity texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real_bounds",
+          "name": "directionality:[0-1]#Blends between a random direction and the forward direction"
+        },
+        {
+          "type": "real_bounds",
+          "name": "speed scale#scales the initial speed of the particle"
+        },
+        {
+          "type": "real_bounds",
+          "name": "subframe offset:frames#spawns particle at subframe time"
+        },
+        {
+          "type": "custom",
+          "name": "PARTICLE PARAMETERS"
+        },
+        {
+          "type": "real",
+          "name": "rotation randomness:[0-1]#how much the particle is randomly rotated"
+        },
+        {
+          "type": "real",
+          "name": "particle scale modifier:[0-2]#modifies the inherent scale of the particles"
+        },
+        {
+          "type": "custom",
+          "name": "LIGHTING PARAMETERS"
+        },
+        {
+          "type": "real",
+          "name": "lighting contrast#increase or decrease contrast between bright and dark areas"
+        },
+        {
+          "type": "real",
+          "name": "lighting offset#adjust overall brightness in all areas"
+        },
+        {
+          "type": "real",
+          "name": "lighting min#clamps darkest particles to this exposure"
+        },
+        {
+          "type": "real",
+          "name": "lighting max#clamps brightest particles to this exposure"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "spawn_params0!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "spawn_params1!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "spawn_params2!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "spawn_params3!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "spawn_params4!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "global type library!",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "cheap_particle_emitter_struct_definition_1_options_2": {
+      "options": [
+        "correlate position and velocity",
+        "position texture in local space",
+        "velocity texture in local space",
+        "normalize velocity before scaling",
+        "randomly rotate emitter about up vector"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "weapon_depth_of_field",
+  "tag": "wdof",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "weapon_depth_of_field_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dof_3": {
+      "guid": "077565fb47e8c73c176643b3e1e10026",
+      "size": 44,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "depth of field"
+        },
+        {
+          "type": "real",
+          "name": "world blur aperture#Aperture is size of camera pinhole.  The larger the aperture the shallower the depth of field.  0 defaults to 0.7"
+        },
+        {
+          "type": "real",
+          "name": "world blur focus max distance:wu#Maximum allowable focus distance (everything past the focus distance is always in focus anyway)"
+        },
+        {
+          "type": "real_fraction",
+          "name": "World blur focus smoothing value: 0-1# 1 is unsmoothed, lower values are heavier smoothing"
+        },
+        {
+          "type": "real_fraction",
+          "name": "World blur trend smoothing value: 0-1# 1 is unsmoothed, lower values are heavier smoothing"
+        },
+        {
+          "type": "real_fraction",
+          "name": "world blur half width ratio:0-1#The wider the half width, the bigger the range of distances that are in focus"
+        },
+        {
+          "type": "real",
+          "name": "weapon blur aperture#Aperture is size of camera pinhole.  The larger the aperture the narrower the depth of field.  0 defaults to 0.7"
+        },
+        {
+          "type": "real",
+          "name": "weapon blur focus distance:wu#where dof focus is for the weapon (dof for weapon different than world)"
+        },
+        {
+          "type": "real",
+          "name": "weapon blur half width:wu#wider the width, the bigger the range of distances that are in focus (dof for weapon different than world)"
+        },
+        {
+          "type": "custom",
+          "name": "vignette"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "vignette radius bounds:0-1#Everything inside the min radius is clear, everything outside the max radius is fully darkened (to the intensity specified), interpolate between them"
+        },
+        {
+          "type": "real_fraction",
+          "name": "vignette intensity:0-1#0 is no vignetting 1 maximum darkness"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_depth_of_field_struct_definition_1": {
+      "guid": "f749a682f76b0be23977d837f8f66530",
+      "size": 64,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "dof",
+          "definition": "dof_3"
+        },
+        {
+          "type": "pad",
+          "name": "endPad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

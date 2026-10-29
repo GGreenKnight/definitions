@@ -1,0 +1,108 @@
+{
+  "name": "SuppressedIncident",
+  "tag": "sigd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "suppressed_incident_block_3": {
+      "max_count": 1000,
+      "struct": "suppressed_incident_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SuppressedIncident_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "suppressed_incident_block_3": {
+      "guid": "cb9d3072469ec3a171aefa95e1e3a333",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "incident name^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "suppression type",
+          "definition": "suppressed_incident_block_3_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "VNJESHFHV",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SuppressedIncident_struct_definition_1": {
+      "guid": "77142414bc57b40f177b53e4b84a133a",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "suppressed incidents",
+          "definition": "suppressed_incident_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "suppressed_incident_block_3_options_1": {
+      "options": [
+        "suppress cause player game engine event{suppress game engine event}",
+        "suppress effect player game engine event",
+        "suppress cause team game engine event",
+        "suppress effect team game engine event",
+        "suppress medal display{suppress display}",
+        "suppress medal stats{suppress stats}",
+        "suppress fanfare",
+        "suppress audio"
+      ]
+    }
+  },
+  "datas": {}
+}

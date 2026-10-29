@@ -1,0 +1,125 @@
+{
+  "name": "VehicleAttachment",
+  "tag": "vatc",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "VehicleVitalityPropertyModifiers_4": {
+      "max_count": 1,
+      "struct": "VehicleVitalityPropertyModifiers_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "VehicleAttachment_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleVitalityPropertyModifiers_4": {
+      "guid": "72fad036492a22b7137a9a80e9200afe",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "health scalar#0 means no changes, 1 means double"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "properties_3": {
+      "guid": "99c9f0704bb85074b23639ad020c989b",
+      "size": 28,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Vehicle Attachment"
+        },
+        {
+          "type": "block",
+          "name": "maximum vitality",
+          "definition": "VehicleVitalityPropertyModifiers_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachmentName_5": {
+      "guid": "7166d96b409060fc1c2ebf9c91f0157d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleAttachment_struct_definition_1": {
+      "guid": "f034eb3d71efaaafbdc50a153e4a16bf",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "properties",
+          "definition": "properties_3"
+        },
+        {
+          "type": "custom",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "attachmentName_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

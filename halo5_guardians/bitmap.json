@@ -1,0 +1,1214 @@
+{
+  "name": "bitmap",
+  "tag": "bitm",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "bitmap_usage_block_3": {
+      "max_count": 1,
+      "struct": "bitmap_usage_block_3"
+    },
+    "bitmap_group_sprite_block_def_5": {
+      "max_count": 512,
+      "struct": "bitmap_group_sprite_block_def_5"
+    },
+    "bitmap_group_sequence_block_def_4": {
+      "max_count": 256,
+      "struct": "bitmap_group_sequence_block_def_4"
+    },
+    "bitmap_tight_bounds_block_def_6": {
+      "max_count": 20,
+      "struct": "bitmap_tight_bounds_block_def_6"
+    },
+    "bitmap_group_sprite_block_def_8": {
+      "max_count": 512,
+      "struct": "bitmap_group_sprite_block_def_8"
+    },
+    "bitmap_group_sequence_block_def_7": {
+      "max_count": 256,
+      "struct": "bitmap_group_sequence_block_def_7"
+    },
+    "bitmap_data_block_def_9": {
+      "max_count": 65536,
+      "struct": "bitmap_data_block_def_9"
+    },
+    "bitmap_data_block_def_10": {
+      "max_count": 65536,
+      "struct": "bitmap_data_block_def_10"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "bitmap_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_usage_block_3": {
+      "guid": "09e0ae9044d864f4b5fac0af57bddc0b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "source gamma:0.0 to use xenon curve (default)"
+        },
+        {
+          "type": "long_enum",
+          "name": "bitmap curve",
+          "definition": "bitmap_usage_block_3_options_1"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "bitmap_usage_block_3_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "slicer",
+          "definition": "bitmap_usage_block_3_options_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "dicer flags",
+          "definition": "bitmap_usage_block_3_options_4"
+        },
+        {
+          "type": "char_enum",
+          "name": "packer",
+          "definition": "bitmap_usage_block_3_options_5"
+        },
+        {
+          "type": "byte_flags",
+          "name": "packer flags",
+          "definition": "bitmap_usage_block_3_options_6"
+        },
+        {
+          "type": "char_enum",
+          "name": "type",
+          "definition": "bitmap_usage_block_3_options_7"
+        },
+        {
+          "type": "char_integer",
+          "name": "mipmap limit"
+        },
+        {
+          "type": "char_enum",
+          "name": "smallest mip",
+          "definition": "bitmap_usage_block_3_options_9"
+        },
+        {
+          "type": "char_enum",
+          "name": "downsample filter",
+          "definition": "bitmap_usage_block_3_options_10"
+        },
+        {
+          "type": "char_integer",
+          "name": "filter radius bias"
+        },
+        {
+          "type": "word_flags",
+          "name": "downsample flags",
+          "definition": "bitmap_usage_block_3_options_12"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "sprite background color"
+        },
+        {
+          "type": "char_enum",
+          "name": "swizzle red",
+          "definition": "bitmap_usage_block_3_options_14"
+        },
+        {
+          "type": "char_enum",
+          "name": "swizzle green",
+          "definition": "bitmap_usage_block_3_options_15"
+        },
+        {
+          "type": "char_enum",
+          "name": "swizzle blue",
+          "definition": "bitmap_usage_block_3_options_16"
+        },
+        {
+          "type": "char_enum",
+          "name": "swizzle alpha",
+          "definition": "bitmap_usage_block_3_options_17"
+        },
+        {
+          "type": "long_enum",
+          "name": "bitmap format",
+          "definition": "bitmap_usage_block_3_options_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_group_sprite_block_def_5": {
+      "guid": "bbf4f81942dcf00a2e2031a752979d28",
+      "size": 32,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "bitmap index*"
+        },
+        {
+          "type": "pad",
+          "name": "D",
+          "definition": 2
+        },
+        {
+          "type": "pad",
+          "name": "GMLJPJIMC",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "left*"
+        },
+        {
+          "type": "real",
+          "name": "right*"
+        },
+        {
+          "type": "real",
+          "name": "top*"
+        },
+        {
+          "type": "real",
+          "name": "bottom*"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "registration point*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_group_sequence_block_def_4": {
+      "guid": "1502673245ce9e8b9b4953b820937c55",
+      "size": 80,
+      "fields": [
+        {
+          "type": "string",
+          "name": "name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "first bitmap index*"
+        },
+        {
+          "type": "short_integer",
+          "name": "bitmap count*"
+        },
+        {
+          "type": "pad",
+          "name": "OTXYKQ",
+          "definition": 16
+        },
+        {
+          "type": "block",
+          "name": "sprites*",
+          "definition": "bitmap_group_sprite_block_def_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_tight_bounds_block_def_6": {
+      "guid": "999753df4c198ab5d3b3edbd0d45832d",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "uv"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_group_sprite_block_def_8": {
+      "guid": "bbf4f81942dcf00a2e2031a752979d28",
+      "size": 32,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "bitmap index*"
+        },
+        {
+          "type": "pad",
+          "name": "D",
+          "definition": 2
+        },
+        {
+          "type": "pad",
+          "name": "GMLJPJIMC",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "left*"
+        },
+        {
+          "type": "real",
+          "name": "right*"
+        },
+        {
+          "type": "real",
+          "name": "top*"
+        },
+        {
+          "type": "real",
+          "name": "bottom*"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "registration point*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_group_sequence_block_def_7": {
+      "guid": "1502673245ce9e8b9b4953b820937c55",
+      "size": 80,
+      "fields": [
+        {
+          "type": "string",
+          "name": "name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "first bitmap index*"
+        },
+        {
+          "type": "short_integer",
+          "name": "bitmap count*"
+        },
+        {
+          "type": "pad",
+          "name": "OTXYKQ",
+          "definition": 16
+        },
+        {
+          "type": "block",
+          "name": "sprites*",
+          "definition": "bitmap_group_sprite_block_def_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_data_block_def_9": {
+      "guid": "deb0516a4498021ccdc6419969aa94c2",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "width*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "short_integer",
+          "name": "height*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "char_integer",
+          "name": "depth*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "byte_flags",
+          "name": "more flags!",
+          "definition": "bitmap_data_block_def_9_options_3"
+        },
+        {
+          "type": "char_enum",
+          "name": "type*#DO NOT CHANGE",
+          "definition": "bitmap_data_block_def_9_options_4"
+        },
+        {
+          "type": "char_integer",
+          "name": "four times log2 size*#DO NOT CHANGE"
+        },
+        {
+          "type": "short_enum",
+          "name": "format*#DO NOT CHANGE",
+          "definition": "bitmap_data_block_def_9_options_6"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "bitmap_data_block_def_9_options_7"
+        },
+        {
+          "type": "char_integer",
+          "name": "exponent bias"
+        },
+        {
+          "type": "point_2d",
+          "name": "registration point#the 'center' of the bitmap - i.e. for particles"
+        },
+        {
+          "type": "char_integer",
+          "name": "mipmap count*#DO NOT CHANGE (not counting the highest resolution)"
+        },
+        {
+          "type": "char_enum",
+          "name": "curve#how to convert from pixel value to linear",
+          "definition": "bitmap_data_block_def_9_options_11"
+        },
+        {
+          "type": "pad",
+          "name": "unused",
+          "definition": 1
+        },
+        {
+          "type": "char_integer",
+          "name": "interleaved texture index"
+        },
+        {
+          "type": "real",
+          "name": "streaming scale"
+        },
+        {
+          "type": "pad",
+          "name": "bitmap resource handle*",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_data_block_def_10": {
+      "guid": "deb0516a4498021ccdc6419969aa94c2",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "width*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "short_integer",
+          "name": "height*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "char_integer",
+          "name": "depth*:pixels#DO NOT CHANGE"
+        },
+        {
+          "type": "byte_flags",
+          "name": "more flags!",
+          "definition": "bitmap_data_block_def_10_options_3"
+        },
+        {
+          "type": "char_enum",
+          "name": "type*#DO NOT CHANGE",
+          "definition": "bitmap_data_block_def_10_options_4"
+        },
+        {
+          "type": "char_integer",
+          "name": "four times log2 size*#DO NOT CHANGE"
+        },
+        {
+          "type": "short_enum",
+          "name": "format*#DO NOT CHANGE",
+          "definition": "bitmap_data_block_def_10_options_6"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags*",
+          "definition": "bitmap_data_block_def_10_options_7"
+        },
+        {
+          "type": "char_integer",
+          "name": "exponent bias"
+        },
+        {
+          "type": "point_2d",
+          "name": "registration point#the 'center' of the bitmap - i.e. for particles"
+        },
+        {
+          "type": "char_integer",
+          "name": "mipmap count*#DO NOT CHANGE (not counting the highest resolution)"
+        },
+        {
+          "type": "char_enum",
+          "name": "curve#how to convert from pixel value to linear",
+          "definition": "bitmap_data_block_def_10_options_11"
+        },
+        {
+          "type": "pad",
+          "name": "unused",
+          "definition": 1
+        },
+        {
+          "type": "char_integer",
+          "name": "interleaved texture index"
+        },
+        {
+          "type": "real",
+          "name": "streaming scale"
+        },
+        {
+          "type": "pad",
+          "name": "bitmap resource handle*",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_struct_definition_1": {
+      "guid": "f4bac13a91a44e0e4a1fc1eec1a8667a",
+      "size": 328,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "show bitmap"
+        },
+        {
+          "type": "custom",
+          "name": "IMPORT SETTINGS"
+        },
+        {
+          "type": "long_enum",
+          "name": "Usage#choose how you are using this bitmap",
+          "definition": "bitmap_struct_definition_1_options_4"
+        },
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "bitmap_struct_definition_1_options_5"
+        },
+        {
+          "type": "short_integer",
+          "name": "sprite spacing#number of pixels between adjacent sprites (0 uses default, negative numbers set no spacing)"
+        },
+        {
+          "type": "pad",
+          "name": "pad_spsp",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "bump map height:repeats#the apparent height of the bump map above the triangle it is textured onto, in texture repeats (i.e., 1.0 would be as high as the texture is wide)"
+        },
+        {
+          "type": "real_fraction",
+          "name": "fade factor:[0,1]#used by detail maps and illum maps.  0 means fade by last mipmap, 1 means fade by first mipmap"
+        },
+        {
+          "type": "real",
+          "name": "blur:pixels#how much to blur the input image"
+        },
+        {
+          "type": "real",
+          "name": "mip map blur:pixels#how much to blur as each mip level is being downsampled"
+        },
+        {
+          "type": "real",
+          "name": "specular power bias#Adjusts sharpness of resulting cubemap"
+        },
+        {
+          "type": "real",
+          "name": "base MIP bias:degrees#Zero indicates that 512x512 is our infinite-detail MIP"
+        },
+        {
+          "type": "char_enum",
+          "name": "curve mode#automatic chooses FAST if your bitmap is bright, and PRETTY if your bitmap has dark bits",
+          "definition": "bitmap_struct_definition_1_options_14"
+        },
+        {
+          "type": "char_integer",
+          "name": "max mipmap level#0 = use default defined by usage"
+        },
+        {
+          "type": "short_integer",
+          "name": "max resolution#0 = do not downsample source image"
+        },
+        {
+          "type": "short_integer",
+          "name": "atlas#index into global atlas if the texture is missing its required resources and has been atlased"
+        },
+        {
+          "type": "short_enum",
+          "name": "force bitmap format#overrides the format defined by usage",
+          "definition": "bitmap_struct_definition_1_options_18"
+        },
+        {
+          "type": "real",
+          "name": "tight bounds threshold:[0.0 - 1.0]#This is the level cutoff for tight bounds.  0.0 is monochrome black, 1.0 is monochrome white"
+        },
+        {
+          "type": "block",
+          "name": "usage override",
+          "definition": "bitmap_usage_block_3"
+        },
+        {
+          "type": "block",
+          "name": "manual_sequences*",
+          "definition": "bitmap_group_sequence_block_def_4"
+        },
+        {
+          "type": "custom",
+          "name": "IMPORT DATA"
+        },
+        {
+          "type": "block",
+          "name": "tight bounds",
+          "definition": "bitmap_tight_bounds_block_def_6"
+        },
+        {
+          "type": "data",
+          "name": "source data*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "qword_integer",
+          "name": "source checksum*"
+        },
+        {
+          "type": "data",
+          "name": "processed pixel data*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "sequences*",
+          "definition": "bitmap_group_sequence_block_def_7"
+        },
+        {
+          "type": "block",
+          "name": "bitmaps*",
+          "definition": "bitmap_data_block_def_9"
+        },
+        {
+          "type": "data",
+          "name": "xenon processed pixel data*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "xenon bitmaps*",
+          "definition": "bitmap_data_block_def_10"
+        },
+        {
+          "type": "pad",
+          "name": "alignment",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "bitmap_struct_definition_1_options_4": {
+      "options": [
+        "Diffuse Map",
+        "Linear Control Map",
+        "Specular Map",
+        "Bump Map (from Height Map)",
+        "Detail Bump Map (from Height Map - fades out)",
+        "Detail Map",
+        "Self-Illum Map",
+        "Change Color Map",
+        "Cube Map (Reflection Map)",
+        "HDR Cube Map",
+        "Sprite (Additive, Black Background)",
+        "Sprite (Blend, White Background)",
+        "Sprite (Double Multiply, Gray Background)",
+        "Interface Bitmap",
+        "Warp Map (EMBM)",
+        "Vector Map",
+        "3D Texture",
+        "Float Map (WARNING: HUGE)",
+        "Half float Map (HALF HUGE)",
+        "Height Map (for Parallax)",
+        "ZBrush Bump Map (from Bump Map)",
+        "Normal Map (aka zbump)",
+        "Detail ZBrush Bump Map",
+        "Detail Normal Map",
+        "Blend Map (linear for terrains)",
+        "Palettized --- effects only",
+        "CHUD related bitmap",
+        "Lightmap Array",
+        "Water Array",
+        "Interface Sprite",
+        "Interface Gradient",
+        "Material Map",
+        "Smoke Warp",
+        "Mux Material Blend Map",
+        "Cubemap Gel",
+        "Lens Flare gamma 2.2 -- effects only",
+        "Signed Noise",
+        "Roughness Map (auto)",
+        "Normal Map (from Standard Orientation of Maya, Modo, Zbrush)",
+        "Color Grading",
+        "Detail Normal Map (from Standard Orientation with distance fade)",
+        "Diffuse Texture Array",
+        "Palettized Texture Array",
+        "Uncompressed palette (no MIPs)",
+        "Gobo",
+        "Flow Map",
+        "Linear Control Map Texture Array",
+        "Bump Map (from Height Map) Texture Array",
+        "Detail Map Texture Array",
+        "Self-Illum Map Texture Array",
+        "Sprite (Additive, Black Background) Texture Array",
+        "Sprite (Blend, White Background) Texture Array",
+        "Sprite (Double Multiply, Gray Background) Texture Array",
+        "Warp Map (EMBM) Texture Array",
+        "Normal Map (aka zbump) Texture Array",
+        "Detail Normal Map Texture Array",
+        "Lens Flare gamma 2.2 -- effects only Texture Array",
+        "Normal Map (from Standard Orientation of Maya, Modo, Zbrush) Texture Array",
+        "Detail Normal Map (from Standard Orientation with distance fade) Texture Array",
+        "Flow Map Texture Array",
+        "Sprite Normal Map"
+      ]
+    },
+    "bitmap_struct_definition_1_options_5": {
+      "options": [
+        "bitmap is TILED#affects how height maps are converted to bump maps",
+        "use less blurry bump map#uses a sharper (and noisier) method of calculating bump maps from height maps",
+        "dither when compressing#lets the compressor use dithering",
+        "generate random sprites#repopulates the manual sequences with random sprites upon reimport",
+        "using tag_interop and tag_resource!*#FOR INTERNAL USE ONLY - DO NOT MODIFY",
+        "ignore alpha channel#if you have an alpha channel but do not care about it, set this flag",
+        "alpha channel stores TRANSPARENCY#if your alpha channel represents transparency (alpha blend or alpha-test only), set this bit to stop color bleeding on edges",
+        "preserve alpha channel in mipmaps for ALPHA TEST{prefer to use alpha value as a weight to build mipmap}#this will artificially thicken the alpha channel in mip maps, which can keep your bitmap from disappearing in the distance when you are using alpha test",
+        "only use on demand&UI on demand bitmap#this bitmap will always be demand loaded, only supported by UI",
+        "generate tight bounds#generate a polygonal bounding box around the non-empty pixels to save fill rate cost",
+        "tight bounds from alpha channel#unchecked, tight bounds are generated from the color channel",
+        "do not generate required section#bitmap will have data split between medium and low optional sections",
+        "unused",
+        "apply max resolution after slicing#allows use of &quot;max resolution&quot; on bitmaps that have multiple frames, but may be buggy...?",
+        "generate black-point tight bounds#generate a set of polygonal bounding boxes for various alpha black points",
+        "Pre-filter cubemaps#Apply cosine power-weighted cone filter to entire cubemap instead of filtering each face as separate 2D image"
+      ]
+    },
+    "bitmap_struct_definition_1_options_14": {
+      "options": [
+        "choose best#will choose FAST if your bitmap is bright",
+        "force FAST#forces FAST mode, but causes banding in dark areas",
+        "force PRETTY#chooses the best looking curve, probably slower"
+      ]
+    },
+    "bitmap_struct_definition_1_options_18": {
+      "options": [
+        "Use Default (defined by usage)",
+        "Best Compressed Color Format",
+        "Best Uncompressed Color Format",
+        "Best Compressed Bump Format",
+        "Best Uncompressed Bump Format",
+        "Best Compressed Monochrome Format",
+        "Best Uncompressed Monochrome Format",
+        "Best Compressed Monochrome Format without alpha",
+        "unused2!",
+        "unused3!",
+        "unused4!",
+        "unused5!",
+        "unused6!",
+        "--- Color and Alpha formats ---",
+        "bc1_unorm [a.k.a. DXT1] (Compressed Color + Color-Key Alpha){DXT1 (Compressed Color + Color-Key Alpha)}",
+        "bc2_unorm [a.k.a. DXT3] (Compressed Color + 4-bit Alpha){DXT3 (Compressed Color + 4-bit Alpha)}",
+        "bc3_unorm [a.k.a. DXT5] (Compressed Color + Compressed 8-bit Alpha){DXT5 (Compressed Color + Compressed 8-bit Alpha)}",
+        "24-bit Color + 8-bit Alpha",
+        "8-bit Monochrome + 8-bit Alpha",
+        "   Channel Mask (3-bit Color + 1-bit Alpha)",
+        "   30-bit Color + 2-bit Alpha",
+        "   48-bit Color + 16-bit Alpha",
+        "   HALF Color + Alpha",
+        "   FLOAT Color + Alpha",
+        "r8_unorm (8-bit Intensity replicated to RGBA){AY8 (8-bit Intensity replicated to ARGB)}",
+        "DEPRECATED DXT3A (4-bit Intensity replicated to ARGB){DXT3A (4-bit Intensity replicated to ARGB)}",
+        "bc4_unorm_rrrr [a.k.a. DXT5A] (Compressed Intensity replicated to ARGB){bc4_unorm_000r [a.k.a. DXT5A] (Compressed Intensity replicated to ARGB)}",
+        "Compressed Monochrome + Alpha",
+        "b4g4r4a4 (12-bit color + 4-bit alpha){A4R4G4B4 (12-bit color + 4-bit alpha)}",
+        "--- Color only formats ---",
+        "8-bit Monochrome",
+        "   Compressed 24-bit Color",
+        "   32-bit Color (R11G11B10)",
+        "   16-bit Monochrome",
+        "   16-bit Red + Green Only",
+        "   16 bit signed RGBA{   16 bit signed ARGB}",
+        "   HALF Red Only",
+        "   FLOAT Red Only",
+        "   HALF Red + Green Only",
+        "   FLOAT Red + Green Only",
+        "   HALF Monochrome",
+        "DEPRECATED Compressed 4-bit Monochrome{Compressed 4-bit Monochrome}",
+        "Compressed Interpolated Monochrome",
+        "bc6h_uf16 (HDR RGB unsigned half-float){DXT5 red}",
+        "bc6h_sf16 (HDR RGB signed half-float){DXT5 green}",
+        "bc7_unorm (High quality bc3){DXT5 blue}",
+        "--- Alpha only formats ---",
+        "DEPRECATED DXT3A (4-bit Alpha){DXT3A (4-bit Alpha)}",
+        "bc4_unorm_000r [a.k.a. DXT5A] (8-bit Compressed Alpha){DXT5A (8-bit Compressed Alpha)}",
+        "8-bit Alpha",
+        "unused13!",
+        "unused14!",
+        "unused15!",
+        "--- Normal map formats ---",
+        "bc5_snorm [a.k.a. DXN] Compressed Normals (better){DXN Compressed Normals (better)}",
+        "DEPRECATED CTX1 Compressed Normals (smaller){CTX1 Compressed Normals (smaller)}",
+        "16-bit Normals",
+        "32-bit Normals",
+        "8-bit 4-channel Vector"
+      ]
+    },
+    "bitmap_usage_block_3_options_1": {
+      "options": [
+        "unknown",
+        "xRGB (gamma about 2.0){SRGB (gamma 2.2)}",
+        "gamma 2.0",
+        "linear",
+        "offset log",
+        "sRGB (gamma 2.2)",
+        "Rec709 (gamma 2.2)"
+      ]
+    },
+    "bitmap_usage_block_3_options_2": {
+      "options": [
+        "Ignore Curve Override",
+        "Dont Allow Size Optimization",
+        "Swap Axes",
+        "Pre-filter cubemaps"
+      ]
+    },
+    "bitmap_usage_block_3_options_3": {
+      "options": [
+        "Automatically Determine Slicer",
+        "No Slicing (each source bitmap generates one element)",
+        "Color Plate Slicer",
+        "Cube Map Slicer",
+        "Color Grading Slicer"
+      ]
+    },
+    "bitmap_usage_block_3_options_4": {
+      "options": [
+        "Convert Plate Color Key to Alpha Channel",
+        "Rotate Cube Map to Match DirectX Format",
+        "Sprites- Shrink Elements to Smallest Non-Zero Alpha Region",
+        "Sprites- Shrink Elements to Smallest Non-Zero Color And Alpha Region",
+        "Unsigned -> Signed Scale and Bias",
+        "Color Grading sRGB Correction",
+        "Color Grading Rec709 Correction"
+      ]
+    },
+    "bitmap_usage_block_3_options_5": {
+      "options": [
+        "No packing",
+        "Sprite Pack (packs elements into as few bitmaps as possible)",
+        "Sprite Pack if needed (packs elements into as few bitmaps as possible)",
+        "3D Pack (packs elements into a 3D bitmap)"
+      ]
+    },
+    "bitmap_usage_block_3_options_6": {
+      "options": [
+        "Shrink Sprite Texture Pages Tightly to Content"
+      ]
+    },
+    "bitmap_usage_block_3_options_7": {
+      "options": [
+        "2D texture",
+        "3D texture",
+        "cube map",
+        "array"
+      ]
+    },
+    "bitmap_usage_block_3_options_9": {
+      "options": [
+        "1 pixel",
+        "2 pixel",
+        "4 pixel",
+        "8 pixel",
+        "16 pixel",
+        "32 pixel",
+        "64 pixel",
+        "128 pixel",
+        "256 pixel",
+        "512 pixel",
+        "1024 pixel"
+      ]
+    },
+    "bitmap_usage_block_3_options_10": {
+      "options": [
+        "Point Sampled",
+        "Box Filter",
+        "Blackman Filter",
+        "Lanczos Filter",
+        "Nuttall Filter",
+        "Blackman-Harris Filter",
+        "Blackman-Nuttall Filter",
+        "Flat Top Filter",
+        "Extreme Filter"
+      ]
+    },
+    "bitmap_usage_block_3_options_12": {
+      "options": [
+        "Sprites - Color Bleed in Zero Alpha Regions",
+        "Pre-Multiply Alpha (before downsampling)",
+        "Post-Divide Alpha (after downsampling)",
+        "Height Map - Convert to Bump Map",
+        "Detail Map - Fade to Gray",
+        "Signed -> Unsigned Scale and Bias",
+        "Illum Map - Fade to Black",
+        "ZBump - Scale by height and renormalize",
+        "Cubemap - Fix seams",
+        "Calculate specular power",
+        "Downsample Bumps in Angular Space",
+        "Standard Orientation of Normals in Angular Space and Renormalize",
+        "Generate RGB luminance into alpha channel"
+      ]
+    },
+    "bitmap_usage_block_3_options_14": {
+      "options": [
+        "Default",
+        "Source Red Channel",
+        "Source Green Channel",
+        "Source Blue Channel",
+        "Source Alpha Channel",
+        "Set to 1.0",
+        "Set to 0.0",
+        "Set to 0.5",
+        "Random"
+      ]
+    },
+    "bitmap_usage_block_3_options_15": {
+      "options": [
+        "Default",
+        "Source Red Channel",
+        "Source Green Channel",
+        "Source Blue Channel",
+        "Source Alpha Channel",
+        "Set to 1.0",
+        "Set to 0.0",
+        "Set to 0.5",
+        "Random"
+      ]
+    },
+    "bitmap_usage_block_3_options_16": {
+      "options": [
+        "Default",
+        "Source Red Channel",
+        "Source Green Channel",
+        "Source Blue Channel",
+        "Source Alpha Channel",
+        "Set to 1.0",
+        "Set to 0.0",
+        "Set to 0.5",
+        "Random"
+      ]
+    },
+    "bitmap_usage_block_3_options_17": {
+      "options": [
+        "Default",
+        "Source Red Channel",
+        "Source Green Channel",
+        "Source Blue Channel",
+        "Source Alpha Channel",
+        "Set to 1.0",
+        "Set to 0.0",
+        "Set to 0.5",
+        "Random"
+      ]
+    },
+    "bitmap_usage_block_3_options_18": {
+      "options": [
+        "Use Default (defined by usage)",
+        "Best Compressed Color Format",
+        "Best Uncompressed Color Format",
+        "Best Compressed Bump Format",
+        "Best Uncompressed Bump Format",
+        "Best Compressed Monochrome Format",
+        "Best Uncompressed Monochrome Format",
+        "Best Compressed Monochrome Format without alpha",
+        "unused2!",
+        "unused3!",
+        "unused4!",
+        "unused5!",
+        "unused6!",
+        "--- Color and Alpha formats ---",
+        "bc1_unorm [a.k.a. DXT1] (Compressed Color + Color-Key Alpha){DXT1 (Compressed Color + Color-Key Alpha)}",
+        "bc2_unorm [a.k.a. DXT3] (Compressed Color + 4-bit Alpha){DXT3 (Compressed Color + 4-bit Alpha)}",
+        "bc3_unorm [a.k.a. DXT5] (Compressed Color + Compressed 8-bit Alpha){DXT5 (Compressed Color + Compressed 8-bit Alpha)}",
+        "24-bit Color + 8-bit Alpha",
+        "8-bit Monochrome + 8-bit Alpha",
+        "   Channel Mask (3-bit Color + 1-bit Alpha)",
+        "   30-bit Color + 2-bit Alpha",
+        "   48-bit Color + 16-bit Alpha",
+        "   HALF Color + Alpha",
+        "   FLOAT Color + Alpha",
+        "r8_unorm (8-bit Intensity replicated to RGBA){AY8 (8-bit Intensity replicated to ARGB)}",
+        "DEPRECATED DXT3A (4-bit Intensity replicated to ARGB){DXT3A (4-bit Intensity replicated to ARGB)}",
+        "bc4_unorm_rrrr [a.k.a. DXT5A] (Compressed Intensity replicated to ARGB){bc4_unorm_000r [a.k.a. DXT5A] (Compressed Intensity replicated to ARGB)}",
+        "Compressed Monochrome + Alpha",
+        "b4g4r4a4 (12-bit color + 4-bit alpha){A4R4G4B4 (12-bit color + 4-bit alpha)}",
+        "--- Color only formats ---",
+        "8-bit Monochrome",
+        "   Compressed 24-bit Color",
+        "   32-bit Color (R11G11B10)",
+        "   16-bit Monochrome",
+        "   16-bit Red + Green Only",
+        "   16 bit signed RGBA{   16 bit signed ARGB}",
+        "   HALF Red Only",
+        "   FLOAT Red Only",
+        "   HALF Red + Green Only",
+        "   FLOAT Red + Green Only",
+        "   HALF Monochrome",
+        "DEPRECATED Compressed 4-bit Monochrome{Compressed 4-bit Monochrome}",
+        "Compressed Interpolated Monochrome",
+        "bc6h_uf16 (HDR RGB unsigned half-float){DXT5 red}",
+        "bc6h_sf16 (HDR RGB signed half-float){DXT5 green}",
+        "bc7_unorm (High quality bc3){DXT5 blue}",
+        "--- Alpha only formats ---",
+        "DEPRECATED DXT3A (4-bit Alpha){DXT3A (4-bit Alpha)}",
+        "bc4_unorm_000r [a.k.a. DXT5A] (8-bit Compressed Alpha){DXT5A (8-bit Compressed Alpha)}",
+        "8-bit Alpha",
+        "unused13!",
+        "unused14!",
+        "unused15!",
+        "--- Normal map formats ---",
+        "bc5_snorm [a.k.a. DXN] Compressed Normals (better){DXN Compressed Normals (better)}",
+        "DEPRECATED CTX1 Compressed Normals (smaller){CTX1 Compressed Normals (smaller)}",
+        "16-bit Normals",
+        "32-bit Normals",
+        "8-bit 4-channel Vector"
+      ]
+    },
+    "bitmap_data_block_def_9_options_3": {
+      "options": [
+        "xbox360 medium resolution offset is valid!*#DO NOT CHANGE",
+        "xbox360 pitch (memory spacing)!*#DO NOT CHANGE",
+        "xbox360 byte order!*#DO NOT CHANGE",
+        "xbox360 tiled texture!*#DO NOT CHANGE",
+        "xbox360 created correctly (hack for bumpmaps)!*#DO NOT CHANGE",
+        "xbox360 high resolution offset is valid!*#DO NOT CHANGE",
+        "xbox360 use interleaved textures!*#DO NOT CHANGE",
+        "xbox360 use on demand only!*#DO NOT CHANGE"
+      ]
+    },
+    "bitmap_data_block_def_9_options_4": {
+      "options": [
+        "2D texture",
+        "3D texture",
+        "cube map",
+        "array"
+      ]
+    },
+    "bitmap_data_block_def_9_options_6": {
+      "options": [
+        "a8_unorm (000A){a8}",
+        "r8_unorm_rrr1 (RRR1){y8}",
+        "r8_unorm_rrrr (RRRR){ay8}",
+        "r8g8_unorm_rrrg (RRRG){r8g8_unorm_gggr (GGGR)}",
+        "unused1",
+        "unused2",
+        "b5g6r5_unorm{r5g6b5}",
+        "unused3",
+        "b5g6r5a1_unorm{a1r5g5b5}",
+        "b4g4r4a4_unorm{a4r4g4b4}",
+        "b8g8r8x8_unorm{x8r8g8b8}",
+        "b8g8r8a8_unorm{a8r8g8b8}",
+        "unused4",
+        "DEPRECATED_dxt5_bias_alpha{dxt5_bias_alpha}",
+        "bc1_unorm (dxt1){dxt1}",
+        "bc2_unorm (dxt3){dxt3}",
+        "bc3_unorm (dxt5){dxt5}",
+        "DEPRECATED_a4r4g4b4_font{a4r4g4b4 font}",
+        "unused7",
+        "unused8",
+        "DEPRECATED_SOFTWARE_rgbfp32{software rgbfp32}",
+        "unused9",
+        "r8g8_snorm (v8u8){v8u8}",
+        "DEPRECATED_g8b8{g8b8}",
+        "r32g32b32a32_float (abgrfp32){abgrfp32}",
+        "r16g16b16a16_float (abgrfp16){abgrfp16}",
+        "r16_float_rrr1 (16f_mono){16f_mono}",
+        "r16_float_r000 (16f_red){16f_red}",
+        "r8g8b8a8_snorm (q8w8v8u8){q8w8v8u8}",
+        "r10g10b10a2_unorm (a2r10g10b10){a2r10g10b10}",
+        "r16g16b16a16_unorm (a16b16g16r16){a16b16g16r16}",
+        "r16g16_snorm (v16u16){v16u16}",
+        "r16_unorm_rrr0 (L16){l16}",
+        "r16g16_unorm (r16g16){r16g16}",
+        "r16g16b16a16_snorm (signedr16g16b16a16){signedr16g16b16a16}",
+        "DEPRECATED_dxt3a{dxt3a}",
+        "bc4_unorm_rrrr (dxt5a){bc4_unorm (dxt5a)}",
+        "bc4_snorm_rrrr",
+        "DEPRECATED_dxt3a_1111{dxt3a_1111}",
+        "bc5_snorm (dxn){dxn}",
+        "DEPRECATED_ctx1{ctx1}",
+        "DEPRECATED_dxt3a_alpha_only{dxt3a_alpha}",
+        "DEPRECATED_dxt3a_monochrome_only{dxt3a_mono}",
+        "bc4_unorm_000r (dxt5a_alpha){dxt5a_alpha}",
+        "bc4_unorm_rrr1 (dxt5a_mono){dxt5a_mono}",
+        "bc5_unorm_rrrg (dxn_mono_alpha){dxn_mono_alpha}",
+        "bc5_snorm_rrrg (dxn_mono_alpha signed)",
+        "bc6h_uf16 {dxt5_red}",
+        "bc6h_sf16 {dxt5_green}",
+        "bc7_unorm {dxt5_blue}",
+        "d24_unorm_s8_uint (depth 24){depth 24}",
+        "r11g11b10_float"
+      ]
+    },
+    "bitmap_data_block_def_9_options_7": {
+      "options": [
+        "power of two dimensions*#DO NOT CHANGE",
+        "compressed*#DO NOT CHANGE",
+        "swap axes*#DO NOT CHANGE",
+        "mutable at runtime#eg for forge lightmapper or other runtime processes that edit bitmaps"
+      ]
+    },
+    "bitmap_data_block_def_9_options_11": {
+      "options": [
+        "unknown",
+        "xRGB (gamma about 2.0){SRGB (gamma 2.2)}",
+        "gamma 2.0",
+        "linear",
+        "offset log",
+        "sRGB (gamma 2.2)",
+        "Rec709 (gamma 2.2)"
+      ]
+    },
+    "bitmap_data_block_def_10_options_3": {
+      "options": [
+        "xbox360 medium resolution offset is valid!*#DO NOT CHANGE",
+        "xbox360 pitch (memory spacing)!*#DO NOT CHANGE",
+        "xbox360 byte order!*#DO NOT CHANGE",
+        "xbox360 tiled texture!*#DO NOT CHANGE",
+        "xbox360 created correctly (hack for bumpmaps)!*#DO NOT CHANGE",
+        "xbox360 high resolution offset is valid!*#DO NOT CHANGE",
+        "xbox360 use interleaved textures!*#DO NOT CHANGE",
+        "xbox360 use on demand only!*#DO NOT CHANGE"
+      ]
+    },
+    "bitmap_data_block_def_10_options_4": {
+      "options": [
+        "2D texture",
+        "3D texture",
+        "cube map",
+        "array"
+      ]
+    },
+    "bitmap_data_block_def_10_options_6": {
+      "options": [
+        "a8_unorm (000A){a8}",
+        "r8_unorm_rrr1 (RRR1){y8}",
+        "r8_unorm_rrrr (RRRR){ay8}",
+        "r8g8_unorm_rrrg (RRRG){r8g8_unorm_gggr (GGGR)}",
+        "unused1",
+        "unused2",
+        "b5g6r5_unorm{r5g6b5}",
+        "unused3",
+        "b5g6r5a1_unorm{a1r5g5b5}",
+        "b4g4r4a4_unorm{a4r4g4b4}",
+        "b8g8r8x8_unorm{x8r8g8b8}",
+        "b8g8r8a8_unorm{a8r8g8b8}",
+        "unused4",
+        "DEPRECATED_dxt5_bias_alpha{dxt5_bias_alpha}",
+        "bc1_unorm (dxt1){dxt1}",
+        "bc2_unorm (dxt3){dxt3}",
+        "bc3_unorm (dxt5){dxt5}",
+        "DEPRECATED_a4r4g4b4_font{a4r4g4b4 font}",
+        "unused7",
+        "unused8",
+        "DEPRECATED_SOFTWARE_rgbfp32{software rgbfp32}",
+        "unused9",
+        "r8g8_snorm (v8u8){v8u8}",
+        "DEPRECATED_g8b8{g8b8}",
+        "r32g32b32a32_float (abgrfp32){abgrfp32}",
+        "r16g16b16a16_float (abgrfp16){abgrfp16}",
+        "r16_float_rrr1 (16f_mono){16f_mono}",
+        "r16_float_r000 (16f_red){16f_red}",
+        "r8g8b8a8_snorm (q8w8v8u8){q8w8v8u8}",
+        "r10g10b10a2_unorm (a2r10g10b10){a2r10g10b10}",
+        "r16g16b16a16_unorm (a16b16g16r16){a16b16g16r16}",
+        "r16g16_snorm (v16u16){v16u16}",
+        "r16_unorm_rrr0 (L16){l16}",
+        "r16g16_unorm (r16g16){r16g16}",
+        "r16g16b16a16_snorm (signedr16g16b16a16){signedr16g16b16a16}",
+        "DEPRECATED_dxt3a{dxt3a}",
+        "bc4_unorm_rrrr (dxt5a){bc4_unorm (dxt5a)}",
+        "bc4_snorm_rrrr",
+        "DEPRECATED_dxt3a_1111{dxt3a_1111}",
+        "bc5_snorm (dxn){dxn}",
+        "DEPRECATED_ctx1{ctx1}",
+        "DEPRECATED_dxt3a_alpha_only{dxt3a_alpha}",
+        "DEPRECATED_dxt3a_monochrome_only{dxt3a_mono}",
+        "bc4_unorm_000r (dxt5a_alpha){dxt5a_alpha}",
+        "bc4_unorm_rrr1 (dxt5a_mono){dxt5a_mono}",
+        "bc5_unorm_rrrg (dxn_mono_alpha){dxn_mono_alpha}",
+        "bc5_snorm_rrrg (dxn_mono_alpha signed)",
+        "bc6h_uf16 {dxt5_red}",
+        "bc6h_sf16 {dxt5_green}",
+        "bc7_unorm {dxt5_blue}",
+        "d24_unorm_s8_uint (depth 24){depth 24}",
+        "r11g11b10_float"
+      ]
+    },
+    "bitmap_data_block_def_10_options_7": {
+      "options": [
+        "power of two dimensions*#DO NOT CHANGE",
+        "compressed*#DO NOT CHANGE",
+        "swap axes*#DO NOT CHANGE",
+        "mutable at runtime#eg for forge lightmapper or other runtime processes that edit bitmaps"
+      ]
+    },
+    "bitmap_data_block_def_10_options_11": {
+      "options": [
+        "unknown",
+        "xRGB (gamma about 2.0){SRGB (gamma 2.2)}",
+        "gamma 2.0",
+        "linear",
+        "offset log",
+        "sRGB (gamma 2.2)",
+        "Rec709 (gamma 2.2)"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

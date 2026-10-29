@@ -1,0 +1,462 @@
+{
+  "name": "globals",
+  "tag": "matg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "globals_struct_definition_1": {
+      "guid": "e43d180cd8930c5d4e14c790bad800c5",
+      "size": 1552,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "AI globals"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ai globals ref",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "forge globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "game engine globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "multiplayer globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "firefight globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "global multiplayer object type list",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "grenades",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "melee globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "game medal globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Rasterizer globals"
+        },
+        {
+          "type": "tag_reference",
+          "name": "rasterizer_globals_ref",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Default camera fx settings"
+        },
+        {
+          "type": "tag_reference",
+          "name": "default camera fx settings",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "default atmosphere definition",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Default wind settings"
+        },
+        {
+          "type": "tag_reference",
+          "name": "default wind settings",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Default collision damage"
+        },
+        {
+          "type": "tag_reference",
+          "name": "collision damage effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "collision damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "collision filter",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "default item grounded friction",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "incident global properties",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "player model customization globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "loadout globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "game achievements",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "game performance thortles default",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Speech Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Narrative globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Revive Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Control Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Player Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Damage Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "LOC Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Material Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Camera Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Difficulty Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Gameplay Object Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Composer Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Garbage Collection Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Soft Ceiling Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Collectible Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Color Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Skull Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Cheat Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Interface Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Skill Rank Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Campaign Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Requisition Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Spartan Tracking Globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

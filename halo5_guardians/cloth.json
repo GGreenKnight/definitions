@@ -1,0 +1,303 @@
+{
+  "name": "cloth",
+  "tag": "clwd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "collision_sphere_block_3": {
+      "max_count": 8,
+      "struct": "collision_sphere_block_3"
+    },
+    "cloth_vertices_block_5": {
+      "max_count": 121,
+      "struct": "cloth_vertices_block_5"
+    },
+    "cloth_indices_block_6": {
+      "max_count": 1210,
+      "struct": "cloth_indices_block_6"
+    },
+    "cloth_indices_block_7": {
+      "max_count": 1210,
+      "struct": "cloth_indices_block_7"
+    },
+    "cloth_links_block_8": {
+      "max_count": 1210,
+      "struct": "cloth_links_block_8"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "cloth_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_sphere_block_3": {
+      "guid": "1168cfd44c7a1eec51ffa585afcdab40",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "object marker name"
+        },
+        {
+          "type": "real",
+          "name": "radius"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "properties_4": {
+      "guid": "3654721a4a6d8fdb1b913e832809e306",
+      "size": 48,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Integration type*",
+          "definition": "properties_4_options_0"
+        },
+        {
+          "type": "short_integer",
+          "name": "Number iterations#[1-8] sug 1"
+        },
+        {
+          "type": "real",
+          "name": "weight#[-10.0 - 10.0] sug 1.0"
+        },
+        {
+          "type": "real",
+          "name": "drag#[0.0 - 0.5] sug 0.07"
+        },
+        {
+          "type": "real",
+          "name": "wind_scale#[0.0 - 3.0] sug 1.0"
+        },
+        {
+          "type": "real",
+          "name": "wind_flappiness_scale#[0.0 - 1.0] sug 0.75"
+        },
+        {
+          "type": "real",
+          "name": "longest_rod#[1.0 - 10.0] sug 3.5"
+        },
+        {
+          "type": "pad",
+          "name": "WXLH",
+          "definition": 24
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cloth_vertices_block_5": {
+      "guid": "9cbfa0254521b339fde281bc55ed91f7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "initial position*"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "uv*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cloth_indices_block_6": {
+      "guid": "37d025ee4235d2d2d1299ba9dcccea0b",
+      "size": 2,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cloth_indices_block_7": {
+      "guid": "37d025ee4235d2d2d1299ba9dcccea0b",
+      "size": 2,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cloth_links_block_8": {
+      "guid": "2a08cad44f761ee691ffa685af5ae340",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "default_distance*"
+        },
+        {
+          "type": "long_integer",
+          "name": "index1*"
+        },
+        {
+          "type": "long_integer",
+          "name": "index2*"
+        },
+        {
+          "type": "pad",
+          "name": "vmx_pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cloth_struct_definition_1": {
+      "guid": "83d91285e5810b75b5c25cf38690c8fe",
+      "size": 264,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "cloth_struct_definition_1_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "marker attachment name"
+        },
+        {
+          "type": "string_id",
+          "name": "secondary axis attachment name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Default cloth vertices"
+        },
+        {
+          "type": "short_integer",
+          "name": "grid x dimension"
+        },
+        {
+          "type": "short_integer",
+          "name": "grid y dimension"
+        },
+        {
+          "type": "real",
+          "name": "grid spacing x"
+        },
+        {
+          "type": "real",
+          "name": "grid spacing y"
+        },
+        {
+          "type": "block",
+          "name": "collision spheres",
+          "definition": "collision_sphere_block_3"
+        },
+        {
+          "type": "custom",
+          "name": "Cloth Properties"
+        },
+        {
+          "type": "struct",
+          "name": "properties",
+          "definition": "properties_4"
+        },
+        {
+          "type": "custom",
+          "name": "Import or grid data"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "cloth_vertices_block_5"
+        },
+        {
+          "type": "block",
+          "name": "indices*",
+          "definition": "cloth_indices_block_6"
+        },
+        {
+          "type": "block",
+          "name": "strip indices*",
+          "definition": "cloth_indices_block_7"
+        },
+        {
+          "type": "block",
+          "name": "links*",
+          "definition": "cloth_links_block_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad_cd_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "cloth_struct_definition_1_options_2": {
+      "options": [
+        "Doesn't use wind",
+        "Uses grid attach top"
+      ]
+    },
+    "properties_4_options_0": {
+      "options": [
+        "verlet"
+      ]
+    }
+  },
+  "datas": {}
+}

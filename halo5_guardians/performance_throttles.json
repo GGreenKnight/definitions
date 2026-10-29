@@ -1,0 +1,200 @@
+{
+  "name": "performance_throttles",
+  "tag": "perf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "performane_throttle_block_3": {
+      "max_count": 7,
+      "struct": "performane_throttle_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "performance_throttles_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "performane_throttle_block_3": {
+      "guid": "85d1510540b38b6788fd82a3e37ca3d1",
+      "size": 76,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "performane_throttle_block_3_options_0"
+        },
+        {
+          "type": "real",
+          "name": "water tessellation scale"
+        },
+        {
+          "type": "real",
+          "name": "decorator fade dist scale:0 = off"
+        },
+        {
+          "type": "real",
+          "name": "effect lod distance scale{effect lod limit}"
+        },
+        {
+          "type": "custom",
+          "name": "Object settings"
+        },
+        {
+          "type": "real",
+          "name": "instance fade modifier!"
+        },
+        {
+          "type": "real",
+          "name": "object fade modifier#scales down the distances at which objects first LOD and then fade out"
+        },
+        {
+          "type": "real",
+          "name": "object detail fade modifier"
+        },
+        {
+          "type": "real",
+          "name": "object lighting time limit:s 0=0.001s#per frame time limit to spend sampling new lighting radiosity"
+        },
+        {
+          "type": "custom",
+          "name": "LOD settings"
+        },
+        {
+          "type": "real",
+          "name": "LOD modifier{IO fade modifier}:[0..1]#scales the distances for LOD"
+        },
+        {
+          "type": "real",
+          "name": "LOD vertical modifier{IO fade vertical modifier}:[0..1]#scales vertical LOD calculations (flying)"
+        },
+        {
+          "type": "long_integer",
+          "name": "Maximum Instance Group LOD draw bundles:[0..16]#Increases LOD on instances to reduce total number of draw bundles used to render groups"
+        },
+        {
+          "type": "custom",
+          "name": "Dynamic light settings"
+        },
+        {
+          "type": "long_integer",
+          "name": "max forward dynamic lights{max gpu dynamic lights}#will quickly fade gpu lights when we try to render more than this many:0 = off"
+        },
+        {
+          "type": "real",
+          "name": "forward dynamic light fade distance scale{gpu light fade distance scale}#scales the size used for distance-fade (set smaller to make it fade earlier)"
+        },
+        {
+          "type": "long_integer",
+          "name": "max screenspace dynamic lights#will quickly fade screenspace lights when we try to render more than this many:0 = off"
+        },
+        {
+          "type": "real",
+          "name": "screenspace light fade distance scale#scales the size used for distance-fade (set smaller to make it fade earlier)"
+        },
+        {
+          "type": "long_integer",
+          "name": "max effect lights (screenspace)#limits the number of effect lights we allow to be active at a time (eg. needler needles lighting up objects):0 = off"
+        },
+        {
+          "type": "custom",
+          "name": "Shadow settings"
+        },
+        {
+          "type": "long_integer",
+          "name": "max shadow casting objects:0 = off"
+        },
+        {
+          "type": "real",
+          "name": "shadow quality lod#scales resolution of object shadows:[0.0 to 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "floating shadow quality lod#scales resolution of floating shadow:[0.0 to 1.0], 0 = off"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "performance_throttles_struct_definition_1": {
+      "guid": "07bf8fbcebafe8ac8fee12a3f930cf41",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Performance Throttles"
+        },
+        {
+          "type": "block",
+          "name": "Performance Throttles",
+          "definition": "performane_throttle_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "performane_throttle_block_3_options_0": {
+      "options": [
+        "disable object attachment lights",
+        "disable first person shadow",
+        "disable cheap particles",
+        "disable blob shadows",
+        "disable patchy fog",
+        "disable screen distortion",
+        "disable light shafts",
+        "disable first person depth of field",
+        "disable motion blur",
+        "disable particles continue offscreen",
+        "disable light cones",
+        "disable water interraction",
+        "disable water refraction",
+        "disable decorators",
+        "disable instance occlusion queries#WARNING Will likely hurt perf on most maps",
+        "disable structure decals",
+        "disable object decals"
+      ]
+    }
+  },
+  "datas": {}
+}

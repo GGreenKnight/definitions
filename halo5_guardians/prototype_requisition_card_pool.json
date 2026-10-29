@@ -1,0 +1,93 @@
+{
+  "name": "prototype_requisition_card_pool",
+  "tag": "rpcp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "prototype_requisition_globals_card_pool_entry_3": {
+      "max_count": 512,
+      "struct": "prototype_requisition_globals_card_pool_entry_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "prototype_requisition_card_pool_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prototype_requisition_globals_card_pool_entry_3": {
+      "guid": "8e942e89461943f8a15c50a22ddc992b",
+      "size": 36,
+      "fields": [
+        {
+          "type": "real",
+          "name": "weight"
+        },
+        {
+          "type": "tag_reference",
+          "name": "card^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prototype_requisition_card_pool_struct_definition_1": {
+      "guid": "ea8b63328202c0c32d9808ffc7277b9b",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "cards",
+          "definition": "prototype_requisition_globals_card_pool_entry_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

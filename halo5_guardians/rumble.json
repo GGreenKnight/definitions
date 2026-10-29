@@ -1,0 +1,238 @@
+{
+  "name": "rumble",
+  "tag": "rmbl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "rumble_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dirty_whore_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "low_frequency_rumble_4": {
+      "guid": "ea65c64841edfda563cac498cc970ec7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "dirty whore",
+          "definition": "dirty_whore_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dirty_whore_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "high_frequency_rumble_6": {
+      "guid": "ea65c64841edfda563cac498cc970ec7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "dirty whore",
+          "definition": "dirty_whore_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dirty_whore_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "primary_trigger_rumble_8": {
+      "guid": "ea65c64841edfda563cac498cc970ec7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "dirty whore",
+          "definition": "dirty_whore_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dirty_whore_11": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "secondary_trigger_rumble_10": {
+      "guid": "ea65c64841edfda563cac498cc970ec7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "dirty whore",
+          "definition": "dirty_whore_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "rumble_3": {
+      "guid": "f1dc7b2946b30b7bbcae03bfcf877176",
+      "size": 128,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "low frequency rumble"
+        },
+        {
+          "type": "struct",
+          "name": "low frequency rumble",
+          "definition": "low_frequency_rumble_4"
+        },
+        {
+          "type": "custom",
+          "name": "high frequency rumble"
+        },
+        {
+          "type": "struct",
+          "name": "high frequency rumble",
+          "definition": "high_frequency_rumble_6"
+        },
+        {
+          "type": "custom",
+          "name": "primary trigger rumble"
+        },
+        {
+          "type": "struct",
+          "name": "primary trigger rumble",
+          "definition": "primary_trigger_rumble_8"
+        },
+        {
+          "type": "custom",
+          "name": "secondary trigger rumble"
+        },
+        {
+          "type": "struct",
+          "name": "secondary trigger rumble",
+          "definition": "secondary_trigger_rumble_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "rumble_struct_definition_1": {
+      "guid": "732962f9247fdc357bc41716a4aa2b53",
+      "size": 144,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "rumble",
+          "definition": "rumble_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "function_definition_data": {}
+  }
+}

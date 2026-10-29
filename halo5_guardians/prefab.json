@@ -1,0 +1,141 @@
+{
+  "name": "prefab",
+  "tag": "prfb",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "prefab_material_override_entries_block_schema_4": {
+      "max_count": 1023,
+      "struct": "prefab_material_override_entries_block_schema_4"
+    },
+    "prefab_material_overrides_block_schema_3": {
+      "max_count": 10240,
+      "struct": "prefab_material_overrides_block_schema_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "prefab_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_override_variants_5": {
+      "guid": "5e7d4a2d41824913012e65b28399a9ab",
+      "size": 64,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "original material",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "override material",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prefab_material_override_entries_block_schema_4": {
+      "guid": "5e7d4a2e41834913022e65b28499a9ab",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "material override variants",
+          "definition": "material_override_variants_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prefab_material_overrides_block_schema_3": {
+      "guid": "5e7d4a2f41844913032e65b28599a9ab",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "material override variant name"
+        },
+        {
+          "type": "block",
+          "name": "material override entries",
+          "definition": "prefab_material_override_entries_block_schema_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prefab_struct_definition_1": {
+      "guid": "da13f346f4e697e5d478911a60abc282",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bsp reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "material overrides",
+          "definition": "prefab_material_overrides_block_schema_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,164 @@
+{
+  "name": "camera_track",
+  "tag": "trak",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "cameraTrackControlPointBlock_4": {
+      "max_count": 2000,
+      "struct": "cameraTrackControlPointBlock_4"
+    },
+    "cameraTrackLensBlock_5": {
+      "max_count": 2000,
+      "struct": "cameraTrackLensBlock_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "camera_track_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cameraTrackControlPointBlock_4": {
+      "guid": "cd7602fd4e94e438b85a47b9e207f745",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "orientation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cameraTrackLensBlock_5": {
+      "guid": "38defdd940ba91f49d02fea1c0cd72c9",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "cameraTrackLensBlock_5_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "Focal Length"
+        },
+        {
+          "type": "real",
+          "name": "Focus Distance"
+        },
+        {
+          "type": "real",
+          "name": "FStop"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Track_3": {
+      "guid": "6968aa004bea4b75277808808f4f4201",
+      "size": 60,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Track_3_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "Control Points",
+          "definition": "cameraTrackControlPointBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "Lenses",
+          "definition": "cameraTrackLensBlock_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_track_struct_definition_1": {
+      "guid": "62e726eb8b61dbcc7a6fed4121e1ef16",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "Track",
+          "definition": "Track_3"
+        },
+        {
+          "type": "pad",
+          "name": "EXPLICIT_PAD!",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "Track_3_options_0": {
+      "options": [
+        "Lens Enabled"
+      ]
+    },
+    "cameraTrackLensBlock_5_options_0": {
+      "options": [
+        "Depth Of Field Enabled"
+      ]
+    }
+  },
+  "datas": {}
+}

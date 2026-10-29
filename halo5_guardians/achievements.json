@@ -1,0 +1,192 @@
+{
+  "name": "achievements",
+  "tag": "achi",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "single_achievement_restricted_level_block_4": {
+      "max_count": 5,
+      "struct": "single_achievement_restricted_level_block_4"
+    },
+    "single_achievement_definition_block_3": {
+      "max_count": 256,
+      "struct": "single_achievement_definition_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "achievements_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "single_achievement_restricted_level_block_4": {
+      "guid": "55cef75045985141432f6b96e5236c4a",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "level name^#Compared to map name in scenario"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "single_achievement_definition_block_3": {
+      "guid": "7549688b4edfd7d7ef71ac92f5943d57",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "char_enum",
+          "name": "type",
+          "definition": "single_achievement_definition_block_3_options_1"
+        },
+        {
+          "type": "byte_flags",
+          "name": "difficulty",
+          "definition": "single_achievement_definition_block_3_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "VJNOSNJER",
+          "definition": 2
+        },
+        {
+          "type": "block",
+          "name": "restricted levels",
+          "definition": "single_achievement_restricted_level_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "achievements_struct_definition_1": {
+      "guid": "e21af8b50dc930fc9901fda81b9fa7ff",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "achievement",
+          "definition": "single_achievement_definition_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_gad_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "single_achievement_definition_block_3_options_1": {
+      "options": [
+        "m10_complete",
+        "m20_complete",
+        "m30_complete",
+        "m60_complete",
+        "m40_complete",
+        "m70_complete",
+        "m80_complete",
+        "m90_complete",
+        "camp_normal_complete",
+        "camp_heroic_complete",
+        "camp_legendary_complete",
+        "camp_legendary_solo_complete",
+        "camp_heroic_3skulls_complete",
+        "camp_coop_mission_complete",
+        "camp_coop_complete",
+        "terminal_1",
+        "terminal_all",
+        "m10_special",
+        "m20_special",
+        "m30_special",
+        "m60_special",
+        "m40_special",
+        "m70_special",
+        "m80_special",
+        "m90_special",
+        "earn_rank_005",
+        "earn_rank_020",
+        "wargames_win_5",
+        "wargames_win_20",
+        "spartan_ops_mission_complete",
+        "spartan_ops_episode1_complete",
+        "spartan_ops_5episodes_complete",
+        "spartan_ops_legendary_solo_mission_complete",
+        "spops_1_special",
+        "spops_2_special",
+        "spops_3_special",
+        "spops_4_special",
+        "spops_5_special",
+        "challenge_complete",
+        "25_challenges_complete",
+        "change_armor",
+        "change_emblem",
+        "change_tag",
+        "change_pose",
+        "save_custom_map",
+        "save_custom_gametype",
+        "save_screenshot",
+        "save_filmclip",
+        "upload_to_fileshare",
+        "now_they_fly",
+        "size_is_everything",
+        "odst",
+        "bigfoot",
+        "david_and_goliath",
+        "bad_robot",
+        "clay_pigeon",
+        "special_delivery"
+      ]
+    },
+    "single_achievement_definition_block_3_options_2": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    }
+  },
+  "datas": {}
+}

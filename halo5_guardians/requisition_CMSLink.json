@@ -1,0 +1,168 @@
+{
+  "name": "requisition_CMSLink",
+  "tag": "rbcl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "requisition_ImageData_3": {
+      "max_count": 1,
+      "struct": "requisition_ImageData_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "requisition_CMSLink_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "requisition_ImageData_3": {
+      "guid": "2304e8de4100e5146d6589b8ed3f21d4",
+      "size": 72,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "icon sprite index"
+        },
+        {
+          "type": "tag_reference",
+          "name": "small icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "small icon sprite index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "requisition_CMSLink_struct_definition_1": {
+      "guid": "314d63634c145a4033a9a7908032e8cf",
+      "size": 224,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "CMS identifier*"
+        },
+        {
+          "type": "string_id",
+          "name": "CMS type*"
+        },
+        {
+          "type": "custom",
+          "name": "Automated Photo Data"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Asset Spec Block",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lighting Spec Block",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Photo Spec",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Override Image Data",
+          "definition": "requisition_ImageData_3"
+        },
+        {
+          "type": "custom",
+          "name": "Generated Icons"
+        },
+        {
+          "type": "tag_reference",
+          "name": "icon bitmap*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "icon sprite index*"
+        },
+        {
+          "type": "long_integer",
+          "name": "icon hash*"
+        },
+        {
+          "type": "tag_reference",
+          "name": "small icon bitmap*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "small icon sprite index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

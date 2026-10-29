@@ -1,0 +1,95 @@
+{
+  "name": "ForgePaletteDefinition",
+  "tag": "fpal",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "ForgePaletteDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgePaletteDefinition_struct_definition_1": {
+      "guid": "c60cbaacb3369fa94b29234b8d57f305",
+      "size": 64,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Parent Palette",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Name"
+        },
+        {
+          "type": "string_id",
+          "name": "Description"
+        },
+        {
+          "type": "real",
+          "name": "Placement Priority"
+        },
+        {
+          "type": "word_flags",
+          "name": "Flags",
+          "definition": "ForgePaletteDefinition_struct_definition_1_options_6"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "ForgePaletteDefinition_struct_definition_1_options_6": {
+      "options": [
+        "is inline#If true, we insert the elements of this palette directly into its parent palette with a header",
+        "is internal only#If true, we only get access to this palette (and its children) in non-release builds"
+      ]
+    }
+  },
+  "datas": {}
+}

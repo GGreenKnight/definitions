@@ -1,0 +1,135 @@
+{
+  "name": "prototype_requisition_service_globals",
+  "tag": "rpsg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "prototype_requisition_globals_pack_entry_3": {
+      "max_count": 512,
+      "struct": "prototype_requisition_globals_pack_entry_3"
+    },
+    "prototype_requisition_terminal_category_ui_data_4": {
+      "max_count": 16,
+      "struct": "prototype_requisition_terminal_category_ui_data_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "prototype_requisition_service_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prototype_requisition_globals_pack_entry_3": {
+      "guid": "8787e4764c3b7e89df33a0a1cce3dfe0",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "pack^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prototype_requisition_terminal_category_ui_data_4": {
+      "guid": "e74e336345020e083fcf7b805523519f",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string",
+          "name": "name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "icon sprite index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "prototype_requisition_service_globals_struct_definition_1": {
+      "guid": "6ebfe1050d91190948fee0f2452751f1",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "packs",
+          "definition": "prototype_requisition_globals_pack_entry_3"
+        },
+        {
+          "type": "long_integer",
+          "name": "starting credits"
+        },
+        {
+          "type": "long_integer",
+          "name": "starting currency"
+        },
+        {
+          "type": "long_integer",
+          "name": "credits to grant on match complete"
+        },
+        {
+          "type": "block",
+          "name": "in game terminal category UI data",
+          "definition": "prototype_requisition_terminal_category_ui_data_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

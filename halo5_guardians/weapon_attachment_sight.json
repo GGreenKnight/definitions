@@ -1,0 +1,1148 @@
+{
+  "name": "weapon_attachment_sight",
+  "tag": "west",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "global_object_attachment_block_4": {
+      "max_count": 48,
+      "struct": "global_object_attachment_block_4"
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentObjectBlock_6"
+    },
+    "WeaponAccuracyModifiers_7": {
+      "max_count": 1,
+      "struct": "WeaponAccuracyModifiers_7"
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "max_count": 1,
+      "struct": "WeaponPrecisionAimModifiers_8"
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "max_count": 1,
+      "struct": "WeaponUnitPropertyModifiers_9"
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "max_count": 1,
+      "struct": "WeaponAimAssistPropertyModifiers_10"
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "max_count": 1,
+      "struct": "weapon_recoil_view_kick_modifiers_11"
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "max_count": 1,
+      "struct": "WeaponRecoilGunkickModifiers_12"
+    },
+    "WeaponAnimationModifiers_13": {
+      "max_count": 1,
+      "struct": "WeaponAnimationModifiers_13"
+    },
+    "WeaponHeatModifiers_14": {
+      "max_count": 1,
+      "struct": "WeaponHeatModifiers_14"
+    },
+    "UIItemInfoBlock_15": {
+      "max_count": 1,
+      "struct": "UIItemInfoBlock_15"
+    },
+    "WeaponAccuracyModifiers_25": {
+      "max_count": 1,
+      "struct": "WeaponAccuracyModifiers_25"
+    },
+    "WeaponUnitPropertyModifiers_26": {
+      "max_count": 1,
+      "struct": "WeaponUnitPropertyModifiers_26"
+    },
+    "WeaponAimAssistPropertyModifiers_27": {
+      "max_count": 1,
+      "struct": "WeaponAimAssistPropertyModifiers_27"
+    },
+    "weapon_recoil_view_kick_modifiers_28": {
+      "max_count": 1,
+      "struct": "weapon_recoil_view_kick_modifiers_28"
+    },
+    "WeaponRecoilGunkickModifiers_29": {
+      "max_count": 1,
+      "struct": "WeaponRecoilGunkickModifiers_29"
+    },
+    "ZoomLevelBlock_24": {
+      "max_count": 3,
+      "struct": "ZoomLevelBlock_24"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "weapon_attachment_sight_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_object_attachment_block_4": {
+      "guid": "11097257429c477533d975a73f4575ee",
+      "size": 80,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "override type#this attachment will override the attachment on the object that shares this ",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "marker"
+        },
+        {
+          "type": "char_enum",
+          "name": "change color",
+          "definition": "global_object_attachment_block_4_options_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "global_object_attachment_block_4_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "DPKP",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "primary scale"
+        },
+        {
+          "type": "string_id",
+          "name": "secondary scale"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachmentName_5": {
+      "guid": "7166d96b409060fc1c2ebf9c91f0157d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "guid": "69a0d8184a18977c2ec52c9c5c788d2a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "object",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "weapon marker"
+        },
+        {
+          "type": "string_id",
+          "name": "attachment marker"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAccuracyModifiers_7": {
+      "guid": "da8879984a0f4ed579123c8f4048154f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "accuracy spread{Accuracy Bloom}:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "guid": "809408414624313b546f658e2d588e96",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "precision transition in time modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "precision transition out time modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "guid": "c17f9f4049269ffebbb77b8e2ad9a775",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "move speed scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "turn rate scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "simulated input scale modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "guid": "2cb7ba74481428a00d7d2a93c4188131",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "autoaim angle:percent#the maximum angle that autoaim works at full strength"
+        },
+        {
+          "type": "real",
+          "name": "prioritization angle:percent#angle used to select model targets based on priority"
+        },
+        {
+          "type": "real",
+          "name": "autoaim range:percent#autoaim only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "autoaim falloff range:percent#at what point the autoaim starts falling off.  Fully falls off at autoaim range."
+        },
+        {
+          "type": "real",
+          "name": "autoaim near falloff range:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism angle:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism range:percent#magnetism only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "magnetism falloff range:percent#at what point magnetism starts falling off.  Fully falls off at magnetism range."
+        },
+        {
+          "type": "real",
+          "name": "magnetism near falloff range:percent#at what point magnetism reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "deviation angle:percent#the maximum angle that a projectile is allowed to deviate from the gun barrel due to autoaim OR network lead vector reconstruction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "guid": "867b6ceb45ee09b734870c94b40a00b6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "view kick deceleration modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "view kick return to center modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "guid": "c0b6345a44080b16986bde88c03694a1",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "gunkick spring constant modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAnimationModifiers_13": {
+      "guid": "f921d36c4356b5f65bb1efae74b1566b",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real",
+          "name": "ready playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "ready initial playback modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "put away playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload while empty playback speed modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponHeatModifiers_14": {
+      "guid": "4a20a34a469cb8b1bdb06aa633975ec0",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "overheated heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "heat generated per round modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIItemInfoBlock_15": {
+      "guid": "6bb873fd472b52c677909b90d0074580",
+      "size": 128,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "description#general in-universe item description"
+        },
+        {
+          "type": "string_id",
+          "name": "help text#verbose usage info for use during gameplay"
+        },
+        {
+          "type": "string_id",
+          "name": "icon string id#legacy, from when we embedded the sprites into the font to get streaming behaviour"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite#bitmap file representing this item",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#frame inside the item's image strip which shows this item "
+        },
+        {
+          "type": "tag_reference",
+          "name": "alt sprite#secondary bitmap file representing this item. for detail images, overlays etc.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "alt sprite index#alt sprite's frame"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui vehicle screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_component_3": {
+      "guid": "128b8f414ede891885730099d6c4f5c1",
+      "size": 328,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Attachment"
+        },
+        {
+          "type": "string_id",
+          "name": "variant region name"
+        },
+        {
+          "type": "string_id",
+          "name": "variant permutation name"
+        },
+        {
+          "type": "block",
+          "name": "attachments",
+          "definition": "global_object_attachment_block_4"
+        },
+        {
+          "type": "pad",
+          "name": "attachmentPad",
+          "definition": 4
+        },
+        {
+          "type": "custom",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "attachmentName_5"
+        },
+        {
+          "type": "block",
+          "name": "attachment object",
+          "definition": "WeaponAttachmentObjectBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "accuracy modifiers",
+          "definition": "WeaponAccuracyModifiers_7"
+        },
+        {
+          "type": "block",
+          "name": "precision aim modifiers",
+          "definition": "WeaponPrecisionAimModifiers_8"
+        },
+        {
+          "type": "block",
+          "name": "unit modifiers",
+          "definition": "WeaponUnitPropertyModifiers_9"
+        },
+        {
+          "type": "block",
+          "name": "aim assist modifiers",
+          "definition": "WeaponAimAssistPropertyModifiers_10"
+        },
+        {
+          "type": "block",
+          "name": "recoil view kick modifiers",
+          "definition": "weapon_recoil_view_kick_modifiers_11"
+        },
+        {
+          "type": "block",
+          "name": "recoil gunkick modifiers",
+          "definition": "WeaponRecoilGunkickModifiers_12"
+        },
+        {
+          "type": "block",
+          "name": "animation modifiers",
+          "definition": "WeaponAnimationModifiers_13"
+        },
+        {
+          "type": "block",
+          "name": "heat modifiers",
+          "definition": "WeaponHeatModifiers_14"
+        },
+        {
+          "type": "block",
+          "name": "UI display info",
+          "definition": "UIItemInfoBlock_15"
+        },
+        {
+          "type": "pad",
+          "name": "endPad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ads_transition_in_time_precision_aim_transition_in_time__time_in_seconds_to_transition_into_precision_aim_mode_17": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "ads_transition_in_time_precision_aim_transition_in_time__time_in_seconds_to_transition_into_precision_aim_mode_17_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ads_transition_out_time_precision_aim_transition_out_time__time_in_seconds_to_transition_out_of_precision_aim_mode_18": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "ads_transition_out_time_precision_aim_transition_out_time__time_in_seconds_to_transition_out_of_precision_aim_mode_18_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_20": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ads_percent_to_offset_percent_19": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_20"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_22": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ads_enabled_to_complete_21": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_sight_component_16": {
+      "guid": "3a53e6dd49f7260d4abe04b405fcdafc",
+      "size": 496,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Sight"
+        },
+        {
+          "type": "long_flags",
+          "name": "sight flags",
+          "definition": "weapon_sight_component_16_options_1"
+        },
+        {
+          "type": "custom",
+          "name": "ads transition in time{precision aim transition in time}#time in seconds to transition into precision aim mode"
+        },
+        {
+          "type": "struct",
+          "name": "ads transition in time{precision aim transition in time}#time in seconds to transition into precision aim mode",
+          "definition": "ads_transition_in_time_precision_aim_transition_in_time__time_in_seconds_to_transition_into_precision_aim_mode_17"
+        },
+        {
+          "type": "custom",
+          "name": "ads transition out time{precision aim transition out time}#time in seconds to transition out of precision aim mode"
+        },
+        {
+          "type": "struct",
+          "name": "ads transition out time{precision aim transition out time}#time in seconds to transition out of precision aim mode",
+          "definition": "ads_transition_out_time_precision_aim_transition_out_time__time_in_seconds_to_transition_out_of_precision_aim_mode_18"
+        },
+        {
+          "type": "real",
+          "name": "weapon fov scale"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "ads translation offset{precision aim translation offset}"
+        },
+        {
+          "type": "custom",
+          "name": "ads percent to offset percent"
+        },
+        {
+          "type": "struct",
+          "name": "ads percent to offset percent",
+          "definition": "ads_percent_to_offset_percent_19"
+        },
+        {
+          "type": "real_fraction",
+          "name": "ads state enabled fraction#progress along ads transition to enable ads state"
+        },
+        {
+          "type": "custom",
+          "name": "ads enabled to complete"
+        },
+        {
+          "type": "struct",
+          "name": "ads enabled to complete",
+          "definition": "ads_enabled_to_complete_21"
+        },
+        {
+          "type": "real_bounds",
+          "name": "tc transition in fraction"
+        },
+        {
+          "type": "real_fraction",
+          "name": "transparency transition start ads fraction#sight's transparent parts will start transitioning towards maximum transparency at this point of the ads transition"
+        },
+        {
+          "type": "real_fraction",
+          "name": "transparency transition finish ads fraction#sight's transparent parts will reach maximum transparency at this point of the ads transition"
+        },
+        {
+          "type": "custom",
+          "name": "ui"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui sight front screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui sight front 1080 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui sight back screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui sight back 1080 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui alt1 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui alt2 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui alt3 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui alt4 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui alt5 screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "depth of field",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "penalized descope"
+        },
+        {
+          "type": "custom",
+          "name": "penalized descope"
+        },
+        {
+          "type": "tag_reference",
+          "name": "penalized descope sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "penalized descope transition out modifier:percent#modifies precision aim transition out time.  Default value 0.9."
+        },
+        {
+          "type": "real",
+          "name": "penalized descope ADS hold disable time:seconds#Time for the weapon to ads reenter ads when continuously holding the ADS button.  Default value 0.8"
+        },
+        {
+          "type": "string_id",
+          "name": "ads anim mode#defaults to &quot;precision&quot;"
+        },
+        {
+          "type": "real_fraction",
+          "name": "ADS camo removal scale{ADS camo distortion subtraction}#Scales weapon active camo when aimed in"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAccuracyModifiers_25": {
+      "guid": "da8879984a0f4ed579123c8f4048154f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "accuracy spread{Accuracy Bloom}:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponUnitPropertyModifiers_26": {
+      "guid": "c17f9f4049269ffebbb77b8e2ad9a775",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "move speed scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "turn rate scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "simulated input scale modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAimAssistPropertyModifiers_27": {
+      "guid": "2cb7ba74481428a00d7d2a93c4188131",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "autoaim angle:percent#the maximum angle that autoaim works at full strength"
+        },
+        {
+          "type": "real",
+          "name": "prioritization angle:percent#angle used to select model targets based on priority"
+        },
+        {
+          "type": "real",
+          "name": "autoaim range:percent#autoaim only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "autoaim falloff range:percent#at what point the autoaim starts falling off.  Fully falls off at autoaim range."
+        },
+        {
+          "type": "real",
+          "name": "autoaim near falloff range:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism angle:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism range:percent#magnetism only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "magnetism falloff range:percent#at what point magnetism starts falling off.  Fully falls off at magnetism range."
+        },
+        {
+          "type": "real",
+          "name": "magnetism near falloff range:percent#at what point magnetism reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "deviation angle:percent#the maximum angle that a projectile is allowed to deviate from the gun barrel due to autoaim OR network lead vector reconstruction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_recoil_view_kick_modifiers_28": {
+      "guid": "867b6ceb45ee09b734870c94b40a00b6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "view kick deceleration modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "view kick return to center modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponRecoilGunkickModifiers_29": {
+      "guid": "c0b6345a44080b16986bde88c03694a1",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "gunkick spring constant modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ZoomLevelBlock_24": {
+      "guid": "350abdaa4230fec564c0179e13962bb6",
+      "size": 284,
+      "fields": [
+        {
+          "type": "real",
+          "name": "magnification"
+        },
+        {
+          "type": "real",
+          "name": "zoom transition time"
+        },
+        {
+          "type": "real",
+          "name": "effect rate"
+        },
+        {
+          "type": "tag_reference",
+          "name": "zoom in sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "zoom out sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "byte_flags",
+          "name": "zoom effect flags",
+          "definition": "ZoomLevelBlock_24_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "zoom effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "screen effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Accuracy Modifiers",
+          "definition": "WeaponAccuracyModifiers_25"
+        },
+        {
+          "type": "block",
+          "name": "unit modifiers",
+          "definition": "WeaponUnitPropertyModifiers_26"
+        },
+        {
+          "type": "block",
+          "name": "aim assist modifiers",
+          "definition": "WeaponAimAssistPropertyModifiers_27"
+        },
+        {
+          "type": "block",
+          "name": "recoil view kick modifiers",
+          "definition": "weapon_recoil_view_kick_modifiers_28"
+        },
+        {
+          "type": "block",
+          "name": "recoil gunkick modifiers",
+          "definition": "WeaponRecoilGunkickModifiers_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_zoom_23": {
+      "guid": "fe38d7684be701d2de86b8b09ca9cc18",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Zoom"
+        },
+        {
+          "type": "block",
+          "name": "zoom",
+          "definition": "ZoomLevelBlock_24"
+        },
+        {
+          "type": "pad",
+          "name": "endPad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_sight_struct_definition_1": {
+      "guid": "d6130e208391acf1de2e0bbdda502b9e",
+      "size": 872,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "weapon attachment component",
+          "definition": "weapon_attachment_component_3"
+        },
+        {
+          "type": "struct",
+          "name": "weapon sight component",
+          "definition": "weapon_sight_component_16"
+        },
+        {
+          "type": "struct",
+          "name": "weapon zoom",
+          "definition": "weapon_zoom_23"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "global_object_attachment_block_4_options_3": {
+      "options": [
+        "none",
+        "primary",
+        "secondary",
+        "tertiary",
+        "quaternary"
+      ]
+    },
+    "global_object_attachment_block_4_options_4": {
+      "options": [
+        "force always on#when this flag is clear we only create the attachment when the function object function is active or set to empty string",
+        "effect size scale from object scale"
+      ]
+    },
+    "weapon_sight_component_16_options_1": {
+      "options": [
+        "not hide ui reticle#Prevents hiding the ui reticle when in ADS",
+        "aim assist ADS only#only enable aim assist when aimed down sight",
+        "aim assist magnetism ADS only#only enable aim assist magnetism when aimed down sight",
+        "hide weapon in ADS#weapon will become hidden when the targeting computer (tc) transition begins",
+        "outline locked targets in ADS#for weapons that have target tracking this will enable outline when the weapon is ADS"
+      ]
+    },
+    "ads_transition_in_time_precision_aim_transition_in_time__time_in_seconds_to_transition_into_precision_aim_mode_17_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "ads_transition_out_time_precision_aim_transition_out_time__time_in_seconds_to_transition_out_of_precision_aim_mode_18_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "ZoomLevelBlock_24_options_5": {
+      "options": [
+        "overrides unit and camera screen effects"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

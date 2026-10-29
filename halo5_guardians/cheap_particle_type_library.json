@@ -1,0 +1,281 @@
+{
+  "name": "cheap_particle_type_library",
+  "tag": "cptl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "cheap_particle_type_block_3": {
+      "max_count": 255,
+      "struct": "cheap_particle_type_block_3"
+    },
+    "cheap_particle_bitmap_reference_block_4": {
+      "max_count": 63,
+      "struct": "cheap_particle_bitmap_reference_block_4"
+    },
+    "cheapParticleTurbulenceTypeBlock_5": {
+      "max_count": 8,
+      "struct": "cheapParticleTurbulenceTypeBlock_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "cheap_particle_type_library_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cheap_particle_type_block_3": {
+      "guid": "3268d5f749c24ee140c115af470190e9",
+      "size": 84,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "custom",
+          "name": "physics"
+        },
+        {
+          "type": "real",
+          "name": "drag"
+        },
+        {
+          "type": "real",
+          "name": "gravity"
+        },
+        {
+          "type": "real",
+          "name": "turbulence"
+        },
+        {
+          "type": "long_integer",
+          "name": "turbulence type#the type of turbulence this particle will experience"
+        },
+        {
+          "type": "custom",
+          "name": "collision"
+        },
+        {
+          "type": "real",
+          "name": "depth_range#depth range over which the particle will collide"
+        },
+        {
+          "type": "real",
+          "name": "elasticity#energy remaining after collision bounce"
+        },
+        {
+          "type": "real",
+          "name": "death#percentage change [0-1] that the particle will die on collision"
+        },
+        {
+          "type": "long_integer",
+          "name": "change type#the type this particle will change into on collision"
+        },
+        {
+          "type": "custom",
+          "name": "render"
+        },
+        {
+          "type": "long_enum",
+          "name": "orientation",
+          "definition": "cheap_particle_type_block_3_options_12"
+        },
+        {
+          "type": "custom",
+          "name": "render parameters"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color0"
+        },
+        {
+          "type": "real",
+          "name": "intensity0"
+        },
+        {
+          "type": "real",
+          "name": "fade start:[0,1]#point in particles lifetime at which fade begins"
+        },
+        {
+          "type": "real_bounds",
+          "name": "size:world units"
+        },
+        {
+          "type": "real",
+          "name": "motion blur stretch#how much the particle stretches as it moves"
+        },
+        {
+          "type": "long_integer",
+          "name": "texture"
+        },
+        {
+          "type": "real",
+          "name": "texture y scale#scales the texture in the y direction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cheap_particle_bitmap_reference_block_4": {
+      "guid": "6f5dfb084c2c0fa04d1851b0babe2da5",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cheapParticleTurbulenceTypeBlock_5": {
+      "guid": "97ca1a7444a771cbf507748e23dc0eda",
+      "size": 52,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "turbulence:texture used to turbulate particles",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "turb du dt#change in u coordinate over time"
+        },
+        {
+          "type": "real",
+          "name": "turb dv dt#change in v coordinate over time"
+        },
+        {
+          "type": "real",
+          "name": "turb du dp#change in u coordinate per particle"
+        },
+        {
+          "type": "real",
+          "name": "turb dv dp#change in v coordinate per particle"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cheap_particle_type_library_struct_definition_1": {
+      "guid": "4f2ad206a1c6bbb6b0e401df14297cbc",
+      "size": 232,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "compile"
+        },
+        {
+          "type": "block",
+          "name": "types",
+          "definition": "cheap_particle_type_block_3"
+        },
+        {
+          "type": "block",
+          "name": "textures",
+          "definition": "cheap_particle_bitmap_reference_block_4"
+        },
+        {
+          "type": "tag_reference",
+          "name": "random:texture used to generate random values per particle",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "turbulence types",
+          "definition": "cheapParticleTurbulenceTypeBlock_5"
+        },
+        {
+          "type": "tag_reference",
+          "name": "type_texture!",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "render_texture!",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "turbulenceTexture!",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "cheap_particle_type_block_3_options_12": {
+      "options": [
+        "velocity",
+        "screen facing"
+      ]
+    }
+  },
+  "datas": {}
+}

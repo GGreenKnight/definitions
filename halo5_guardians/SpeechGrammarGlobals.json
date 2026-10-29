@@ -1,0 +1,172 @@
+{
+  "name": "SpeechGrammarGlobals",
+  "tag": "sggs",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "SpeechGrammarBlock_3": {
+      "max_count": 256,
+      "struct": "SpeechGrammarBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SpeechGrammarGlobals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SpeechGrammarBlock_3": {
+      "guid": "fc828af64e08806e09d06184b486f845",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Speech Grammar",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SpeechGrammarGlobals_struct_definition_1": {
+      "guid": "82beb9c3997b3572f0a09502af9fecf9",
+      "size": 288,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "real",
+          "name": "VUI Timeout In Seconds"
+        },
+        {
+          "type": "real",
+          "name": "VUI Leafnode Timeout In Seconds"
+        },
+        {
+          "type": "real_fraction",
+          "name": "Default Confidence"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "SpeechGrammarGlobals_struct_definition_1_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "Speech Grammars",
+          "definition": "SpeechGrammarBlock_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized errors",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized phrases",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized display text",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized needs text",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized locate text",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "localized orders text",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "default spotted effect#effect played on objects when they first become visible",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "default shimmer effect delay#how many seconds must you look at the object for the shimmer effect to play"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "SpeechGrammarGlobals_struct_definition_1_options_5": {
+      "options": [
+        "turn all vui off"
+      ]
+    }
+  },
+  "datas": {}
+}

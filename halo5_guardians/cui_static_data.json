@@ -1,0 +1,337 @@
+{
+  "name": "cui_static_data",
+  "tag": "cust",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "static_data_column_4": {
+      "max_count": 128,
+      "struct": "static_data_column_4"
+    },
+    "property_long_value_6": {
+      "max_count": 8192,
+      "struct": "property_long_value_6"
+    },
+    "property_real_value_7": {
+      "max_count": 8192,
+      "struct": "property_real_value_7"
+    },
+    "property_string_id_value_8": {
+      "max_count": 8192,
+      "struct": "property_string_id_value_8"
+    },
+    "propertyComponentPtrValue_9": {
+      "max_count": 8192,
+      "struct": "propertyComponentPtrValue_9"
+    },
+    "property_tag_reference_value_10": {
+      "max_count": 8192,
+      "struct": "property_tag_reference_value_10"
+    },
+    "property_text_value_11": {
+      "max_count": 8192,
+      "struct": "property_text_value_11"
+    },
+    "property_argb_color_value_12": {
+      "max_count": 8192,
+      "struct": "property_argb_color_value_12"
+    },
+    "static_data_row_5": {
+      "max_count": 256,
+      "struct": "static_data_row_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "cui_static_data_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "static_data_column_4": {
+      "guid": "1fc0b0414409cfb90693b2bed14c8905",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "short_enum",
+          "name": "type",
+          "definition": "static_data_column_4_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_long_value_6": {
+      "guid": "63dd28294d14d1f152793896fc1fcc8f",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_real_value_7": {
+      "guid": "758da8a4409059126254fba1693c45d2",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_string_id_value_8": {
+      "guid": "63caf9704ea90faf2cb1feb315007ca4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "string_id",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "propertyComponentPtrValue_9": {
+      "guid": "b824c8c944af9fe40e33aaa4b60e0b97",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "string_id",
+          "name": "value"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "propertyComponentPtrValue_9_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_tag_reference_value_10": {
+      "guid": "caa80a1445b59b12f5403aa52e4ca4ff",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "value",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_text_value_11": {
+      "guid": "9b80dcd34f46d0f843607aafda9d5497",
+      "size": 260,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "long_string",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "property_argb_color_value_12": {
+      "guid": "a86fc89b4bac478a446bed97b89a09c3",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "static_data_row_5": {
+      "guid": "b1a7ec45439ebc3da4f1d9a6af5709a3",
+      "size": 196,
+      "fields": [
+        {
+          "type": "block",
+          "name": "long properties",
+          "definition": "property_long_value_6"
+        },
+        {
+          "type": "block",
+          "name": "real properties",
+          "definition": "property_real_value_7"
+        },
+        {
+          "type": "block",
+          "name": "string_id properties",
+          "definition": "property_string_id_value_8"
+        },
+        {
+          "type": "block",
+          "name": "component ptr properties",
+          "definition": "propertyComponentPtrValue_9"
+        },
+        {
+          "type": "block",
+          "name": "tag reference properties",
+          "definition": "property_tag_reference_value_10"
+        },
+        {
+          "type": "block",
+          "name": "string properties",
+          "definition": "property_text_value_11"
+        },
+        {
+          "type": "block",
+          "name": "argb color properties",
+          "definition": "property_argb_color_value_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "static_data_3": {
+      "guid": "2618e512442b8ff9b2ff939f1f12b890",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "columns",
+          "definition": "static_data_column_4"
+        },
+        {
+          "type": "block",
+          "name": "rows",
+          "definition": "static_data_row_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_static_data_struct_definition_1": {
+      "guid": "e31a1511e8ebdc01fbf47b2d397e455c",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "static data",
+          "definition": "static_data_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "static_data_column_4_options_1": {
+      "options": [
+        "boolean",
+        "long",
+        "real",
+        "string",
+        "component",
+        "tag reference",
+        "string id",
+        "argb color",
+        "emblem info"
+      ]
+    },
+    "propertyComponentPtrValue_9_options_2": {
+      "options": [
+        "source is in external system"
+      ]
+    }
+  },
+  "datas": {}
+}

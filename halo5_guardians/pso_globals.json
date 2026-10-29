@@ -1,0 +1,110 @@
+{
+  "name": "pso_globals",
+  "tag": "gpso",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "GraphicsPSOBlock_3": {
+      "max_count": 10240,
+      "struct": "GraphicsPSOBlock_3"
+    },
+    "ComputePSOBlock_4": {
+      "max_count": 10240,
+      "struct": "ComputePSOBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "pso_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "GraphicsPSOBlock_3": {
+      "guid": "6d51b13cdc05761958ada32588e98501",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "PSO reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ComputePSOBlock_4": {
+      "guid": "5099945a9869d9b06b01d4ae3a446380",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "PSO reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pso_globals_struct_definition_1": {
+      "guid": "6a80b533d75ff8c0f05df00e51ecc22b",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Graphics pipeline states",
+          "definition": "GraphicsPSOBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "Compute pipeline states",
+          "definition": "ComputePSOBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

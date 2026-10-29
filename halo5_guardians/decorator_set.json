@@ -1,0 +1,482 @@
+{
+  "name": "decorator_set",
+  "tag": "dctr",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "decorator_set_instance_name_block_3": {
+      "max_count": 32767,
+      "struct": "decorator_set_instance_name_block_3"
+    },
+    "global_decorator_type_block_4": {
+      "max_count": 254,
+      "struct": "global_decorator_type_block_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "decorator_set_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "decorator_set_instance_name_block_3": {
+      "guid": "ba17da19419a100952135c87674b1cfe",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_decorator_type_block_4": {
+      "guid": "02b61c354970457e50a011bb8ea1f82d",
+      "size": 108,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "index!"
+        },
+        {
+          "type": "long_integer",
+          "name": "mesh^"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "global_decorator_type_block_4_options_2"
+        },
+        {
+          "type": "real",
+          "name": "scale min:[0.0 - 5.0]"
+        },
+        {
+          "type": "real",
+          "name": "scale max:[0.0 - 5.0]"
+        },
+        {
+          "type": "real",
+          "name": "tilt min:degrees"
+        },
+        {
+          "type": "real",
+          "name": "tilt max:degrees"
+        },
+        {
+          "type": "real",
+          "name": "wind min:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "wind max:[0.0 - 1.0]"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color 0"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color 1"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color 2"
+        },
+        {
+          "type": "real",
+          "name": "ground tint min:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "ground tint max:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "hover min:[-1.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "hover max:[-1.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "glossiness min:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "glossiness max:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "minimum distance between decorators:world units"
+        },
+        {
+          "type": "real",
+          "name": "placement weight:[0.0 - 1.0]"
+        },
+        {
+          "type": "real",
+          "name": "postprocessed weight!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "decorator_set_struct_definition_1": {
+      "guid": "1e39e4f9782a4e69cfb3be1fc62d803a",
+      "size": 536,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "link to render model"
+        },
+        {
+          "type": "custom",
+          "name": "Render models:"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Base{render model}*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod2{render model_lod1}*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod3{render model_lod2}*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod4{render model_lod3}*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "render model instance names!",
+          "definition": "decorator_set_instance_name_block_3"
+        },
+        {
+          "type": "long_integer",
+          "name": "render model instance name valid count!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "normal map",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "RENDERING"
+        },
+        {
+          "type": "byte_flags",
+          "name": "render flags",
+          "definition": "decorator_set_struct_definition_1_options_13"
+        },
+        {
+          "type": "char_enum",
+          "name": "render shader!",
+          "definition": "decorator_set_struct_definition_1_options_14"
+        },
+        {
+          "type": "char_enum",
+          "name": "light sampling pattern",
+          "definition": "decorator_set_struct_definition_1_options_15"
+        },
+        {
+          "type": "byte_integer",
+          "name": "version!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Base Shader{Shader}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod2 Shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod3 Shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lod4 Shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 0x{wavelength X}"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 0y{wavelength Y}"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 0z{wave speed}"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 0w{wave frequency}"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 1x"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 1y"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 1z"
+        },
+        {
+          "type": "real",
+          "name": "decorator user parameter 1w"
+        },
+        {
+          "type": "real",
+          "name": "decorator aux vertex parameter x"
+        },
+        {
+          "type": "real",
+          "name": "decorator aux vertex parameter y"
+        },
+        {
+          "type": "custom",
+          "name": "LOD FADE + CULL"
+        },
+        {
+          "type": "real",
+          "name": "early cull:[0 - 1]#cull vertices this percentage sooner than LOD3-nothing transition"
+        },
+        {
+          "type": "real",
+          "name": "cull block size:[0.5-100]world units#decorators are grouped into blocks to be culled in large batches, this determines how much ground each batch covers.  Should be small if you expect to have very dense decorators, and large if you expect them to be sparse"
+        },
+        {
+          "type": "real",
+          "name": "decimation speed!:[0 - infinite]#1 is default"
+        },
+        {
+          "type": "real",
+          "name": "decimation start distance!#[block size by default] decimation offset of the starting point"
+        },
+        {
+          "type": "real",
+          "name": "decimate to!{max decimation percentage}#0 means all the way removed. 100 means nothing"
+        },
+        {
+          "type": "real",
+          "name": "decimation start:world units"
+        },
+        {
+          "type": "real",
+          "name": "decimation end:world units"
+        },
+        {
+          "type": "long_integer",
+          "name": "max valid lod!"
+        },
+        {
+          "type": "custom",
+          "name": "Lod transitions:"
+        },
+        {
+          "type": "custom",
+          "name": "Base to LOD2:"
+        },
+        {
+          "type": "real",
+          "name": "start point0{Base to LOD1 cross fading start point}"
+        },
+        {
+          "type": "real",
+          "name": "end point0{Base to LOD1 cross fading end point}"
+        },
+        {
+          "type": "custom",
+          "name": "LOD2 to LOD3:"
+        },
+        {
+          "type": "real",
+          "name": "start point1{LOD1 to LOD2 cross fading start point}"
+        },
+        {
+          "type": "real",
+          "name": "end point1{LOD1 to LOD2 cross fading end point}"
+        },
+        {
+          "type": "custom",
+          "name": "LOD3 to LOD4:"
+        },
+        {
+          "type": "real",
+          "name": "start point2{LOD2 to LOD3 cross fading start point}"
+        },
+        {
+          "type": "real",
+          "name": "end point2{LOD2 to LOD3 cross fading end point}"
+        },
+        {
+          "type": "custom",
+          "name": "LOD4 to nothing:"
+        },
+        {
+          "type": "real",
+          "name": "start point3{LOD3 to nothing cross fading start point}"
+        },
+        {
+          "type": "real",
+          "name": "end point3{LOD3 to nothing cross fading end point}"
+        },
+        {
+          "type": "custom",
+          "name": "DECORATOR TYPES"
+        },
+        {
+          "type": "block",
+          "name": "decorator types",
+          "definition": "global_decorator_type_block_4"
+        },
+        {
+          "type": "int64_integer",
+          "name": "decoratorConstantsLOD1!~"
+        },
+        {
+          "type": "int64_integer",
+          "name": "decoratorConstantsLOD2!~"
+        },
+        {
+          "type": "int64_integer",
+          "name": "decoratorConstantsLOD3!~"
+        },
+        {
+          "type": "int64_integer",
+          "name": "decoratorConstantsLOD4!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "decorator_set_struct_definition_1_options_13": {
+      "options": [
+        "render two sided",
+        "dont sample light through geometry#takes twice as long to light",
+        "Use decimation method for random structured decorators",
+        "more strictly respect block size#or there could only be 10x10 blocks per cluster"
+      ]
+    },
+    "decorator_set_struct_definition_1_options_14": {
+      "options": [
+        "billboard + wind + dynamic lights{wind + dynamic lights}",
+        "billboard + dynamic lights{still + dynamic lights}",
+        "solid mesh + dynamic lights{still + no lights}",
+        "solid mesh{still + sun light only}",
+        "underwater + dynamic lights{wavy + dynamic lights}",
+        "volumetric billboard + dynamic lights{shaded + dynamic lights}",
+        "volumetric billboard + wind + dynamic lights",
+        "normal map"
+      ]
+    },
+    "decorator_set_struct_definition_1_options_15": {
+      "options": [
+        "ground default",
+        "hanging"
+      ]
+    },
+    "global_decorator_type_block_4_options_2": {
+      "options": [
+        "only on ground",
+        "random rotation",
+        "rotate x axis down",
+        "align to normal",
+        "align random"
+      ]
+    }
+  },
+  "datas": {}
+}

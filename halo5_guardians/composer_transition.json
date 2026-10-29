@@ -1,0 +1,284 @@
+{
+  "name": "composer_transition",
+  "tag": "cmpt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "composer_transition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Fade_Out_From_Game_3": {
+      "guid": "86514cb94b0eba25187eb7903f48fe43",
+      "size": 24,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Fade_Out_From_Game_3_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Fade Time:ticks"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Fade Color^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Sleep Time:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Fade_In_4": {
+      "guid": "86514cb94b0eba25187eb7903f48fe43",
+      "size": 24,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Fade_In_4_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Fade Time:ticks"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Fade Color^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Sleep Time:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Fade_Out_5": {
+      "guid": "86514cb94b0eba25187eb7903f48fe43",
+      "size": 24,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Fade_Out_5_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Fade Time:ticks"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Fade Color^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Sleep Time:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Fade_Post_Core_Load_6": {
+      "guid": "86514cb94b0eba25187eb7903f48fe43",
+      "size": 24,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Fade_Post_Core_Load_6_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Fade Time:ticks"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Fade Color^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Sleep Time:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Fade_In_To_Game__7": {
+      "guid": "86514cb94b0eba25187eb7903f48fe43",
+      "size": 24,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Fade_In_To_Game__7_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Fade Time:ticks"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Fade Color^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Sleep Time:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composer_transition_struct_definition_1": {
+      "guid": "234d93ba64ff8b12c3b8f8ef086ab315",
+      "size": 136,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "FADE OUT FROM GAME"
+        },
+        {
+          "type": "struct",
+          "name": "Fade Out From Game",
+          "definition": "Fade_Out_From_Game_3"
+        },
+        {
+          "type": "custom",
+          "name": "FADE IN"
+        },
+        {
+          "type": "struct",
+          "name": "Fade In",
+          "definition": "Fade_In_4"
+        },
+        {
+          "type": "custom",
+          "name": "FADE OUT"
+        },
+        {
+          "type": "struct",
+          "name": "Fade Out",
+          "definition": "Fade_Out_5"
+        },
+        {
+          "type": "custom",
+          "name": "FADE POST CORE LOAD"
+        },
+        {
+          "type": "struct",
+          "name": "Fade Post Core Load",
+          "definition": "Fade_Post_Core_Load_6"
+        },
+        {
+          "type": "custom",
+          "name": "FADE IN TO GAME"
+        },
+        {
+          "type": "struct",
+          "name": "Fade In To Game ",
+          "definition": "Fade_In_To_Game__7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "Fade_Out_From_Game_3_options_0": {
+      "options": [
+        "Active"
+      ]
+    },
+    "Fade_In_4_options_0": {
+      "options": [
+        "Active"
+      ]
+    },
+    "Fade_Out_5_options_0": {
+      "options": [
+        "Active"
+      ]
+    },
+    "Fade_Post_Core_Load_6_options_0": {
+      "options": [
+        "Active"
+      ]
+    },
+    "Fade_In_To_Game__7_options_0": {
+      "options": [
+        "Active"
+      ]
+    }
+  },
+  "datas": {}
+}

@@ -1,0 +1,525 @@
+{
+  "name": "frame_event_list",
+  "tag": "frms",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "SoundEventReferenceBlock_4": {
+      "max_count": 256,
+      "struct": "SoundEventReferenceBlock_4"
+    },
+    "SoundEventReferenceSetBlock_3": {
+      "max_count": 4096,
+      "struct": "SoundEventReferenceSetBlock_3"
+    },
+    "animation_graph_dialogue_reference_block_5": {
+      "max_count": 4096,
+      "struct": "animation_graph_dialogue_reference_block_5"
+    },
+    "EffectEventReferenceBlock_7": {
+      "max_count": 256,
+      "struct": "EffectEventReferenceBlock_7"
+    },
+    "EffectEventReferenceSetBlock_6": {
+      "max_count": 4096,
+      "struct": "EffectEventReferenceSetBlock_6"
+    },
+    "import_frame_event_block_9": {
+      "max_count": 512,
+      "struct": "import_frame_event_block_9"
+    },
+    "animation_sound_event_block_extended_10": {
+      "max_count": 512,
+      "struct": "animation_sound_event_block_extended_10"
+    },
+    "animation_effects_event_block_extended_11": {
+      "max_count": 512,
+      "struct": "animation_effects_event_block_extended_11"
+    },
+    "animation_dialogue_event_block_extended_12": {
+      "max_count": 512,
+      "struct": "animation_dialogue_event_block_extended_12"
+    },
+    "import_animation_event_block_8": {
+      "max_count": 8192,
+      "struct": "import_animation_event_block_8"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "frame_event_list_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SoundEventReferenceBlock_4": {
+      "guid": "3b0b92f246280ed06eb7dba1273aa9a8",
+      "size": 108,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sound^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "SoundEventReferenceBlock_4_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "internal_flags!",
+          "definition": "SoundEventReferenceBlock_4_options_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "model#optional. only allow this event when used on this model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "model variant#optional. only allow this event when used on this model variant"
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon#optional. only allow this event when this weapon is in use",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "weapon variant#optional. only allow this event when this weapon variant is in use"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SoundEventReferenceSetBlock_3": {
+      "guid": "44ff5ad94fbf62ba29dbb48b1d39cdca",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#Give this group of references a name."
+        },
+        {
+          "type": "block",
+          "name": "sounds|ABCDCC",
+          "definition": "SoundEventReferenceBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_graph_dialogue_reference_block_5": {
+      "guid": "7e2418a6b504153a1286e9a6dab50c97",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "vocalization name^"
+        },
+        {
+          "type": "char_enum",
+          "name": "play restriction",
+          "definition": "animation_graph_dialogue_reference_block_5_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "paddingForCharSizeEnum",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "EffectEventReferenceBlock_7": {
+      "guid": "4d6a825d4388ca1c9356c0b45df6ddd3",
+      "size": 108,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "effect^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "EffectEventReferenceBlock_7_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "internal_flags!",
+          "definition": "EffectEventReferenceBlock_7_options_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "model#optional. only allow this event when used on this model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "model variant#optional. only allow this event when used on this model variant"
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon#optional. only allow this event when this weapon is in use",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "weapon variant#optional. only allow this event when this weapon variant is in use"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "EffectEventReferenceSetBlock_6": {
+      "guid": "bdb826024e87dc34619591a9c7c8e0fa",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#Give this group of references a name"
+        },
+        {
+          "type": "block",
+          "name": "effects|ABCDCC",
+          "definition": "EffectEventReferenceBlock_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "import_frame_event_block_9": {
+      "guid": "ab6ddd39421bffc72cfab9bc5922a5cb",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "event name*"
+        },
+        {
+          "type": "string_id",
+          "name": "animation name!*"
+        },
+        {
+          "type": "short_integer",
+          "name": "frame"
+        },
+        {
+          "type": "short_integer",
+          "name": "frame offset"
+        },
+        {
+          "type": "short_enum",
+          "name": "type*",
+          "definition": "import_frame_event_block_9_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "long_integer",
+          "name": "unique ID*!#(Do not change this)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_sound_event_block_extended_10": {
+      "guid": "a93991cb4ebaed060b681b9126da3db2",
+      "size": 12,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "frame event"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "short_integer",
+          "name": "sound"
+        },
+        {
+          "type": "short_integer",
+          "name": "frame offset#If a frame event is set, this number is relative to frame event, otherwise it's absolute."
+        },
+        {
+          "type": "string_id",
+          "name": "marker name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_effects_event_block_extended_11": {
+      "guid": "8ed7d41d405573cf0d9552a1b5109c9c",
+      "size": 12,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "frame event"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "short_integer",
+          "name": "effect"
+        },
+        {
+          "type": "short_integer",
+          "name": "frame offset#If a frame event is set, this number is relative to frame event, otherwise it's absolute."
+        },
+        {
+          "type": "string_id",
+          "name": "marker name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_dialogue_event_block_extended_12": {
+      "guid": "649b17554cbc29131468f0bc325e4f62",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "frame event"
+        },
+        {
+          "type": "short_integer",
+          "name": "dialogue reference"
+        },
+        {
+          "type": "short_integer",
+          "name": "frame offset#If a frame event is set, this number is relative to frame event, otherwise it's absolute."
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "import_animation_event_block_8": {
+      "guid": "2aa3ba594a1fa001dd04ef8d57905d74",
+      "size": 120,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "animation name^*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "animation frame count^*!"
+        },
+        {
+          "type": "block",
+          "name": "animation events",
+          "definition": "import_frame_event_block_9"
+        },
+        {
+          "type": "block",
+          "name": "sound events",
+          "definition": "animation_sound_event_block_extended_10"
+        },
+        {
+          "type": "block",
+          "name": "effect events",
+          "definition": "animation_effects_event_block_extended_11"
+        },
+        {
+          "type": "block",
+          "name": "dialogue events",
+          "definition": "animation_dialogue_event_block_extended_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "frame_event_list_struct_definition_1": {
+      "guid": "bac8ba7898037c576cede2fd4737c6f9",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "IMPORTANT TAG NOTES"
+        },
+        {
+          "type": "block",
+          "name": "sound references|ABCDCC",
+          "definition": "SoundEventReferenceSetBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "dialogue references|ABCDCC",
+          "definition": "animation_graph_dialogue_reference_block_5"
+        },
+        {
+          "type": "block",
+          "name": "effect references|ABCDCC",
+          "definition": "EffectEventReferenceSetBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "frame events|ABCDCC",
+          "definition": "import_animation_event_block_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "SoundEventReferenceBlock_4_options_1": {
+      "options": [
+        "allow on player",
+        "left arm only",
+        "right arm only",
+        "first-person only",
+        "third-person only",
+        "forward only",
+        "reverse only",
+        "fp no aged weapons"
+      ]
+    },
+    "SoundEventReferenceBlock_4_options_2": {
+      "options": [
+        "model_index_required",
+        "weapon_index_required"
+      ]
+    },
+    "animation_graph_dialogue_reference_block_5_options_1": {
+      "options": [
+        "Unrestricted",
+        "Only With Shield",
+        "Only With Shield Empty"
+      ]
+    },
+    "EffectEventReferenceBlock_7_options_1": {
+      "options": [
+        "allow on player",
+        "left arm only",
+        "right arm only",
+        "first-person only",
+        "third-person only",
+        "forward only",
+        "reverse only",
+        "fp no aged weapons"
+      ]
+    },
+    "EffectEventReferenceBlock_7_options_2": {
+      "options": [
+        "model_index_required",
+        "weapon_index_required"
+      ]
+    },
+    "import_frame_event_block_9_options_4": {
+      "options": [
+        "none",
+        "primary keyframe{primary_keyframe}",
+        "secondary keyframe{secondary_keyframe}",
+        "tertiary keyframe",
+        "left foot{left_foot}",
+        "right foot{right_foot}",
+        "allow interruption{allow_interruption}",
+        "do not allow interruption",
+        "both-feet shuffle",
+        "body impact",
+        "left foot lock",
+        "left foot unlock",
+        "right foot lock",
+        "right foot unlock",
+        "blend range marker",
+        "stride expansion",
+        "stride contraction",
+        "ragdoll keyframe",
+        "drop weapon keyframe",
+        "match a",
+        "match b",
+        "match c",
+        "match d",
+        "jetpack closed",
+        "jetpack open",
+        "sound event",
+        "effect event",
+        "left_hand",
+        "right_hand",
+        "start_bamf",
+        "end_bamf",
+        "hide"
+      ]
+    }
+  },
+  "datas": {}
+}

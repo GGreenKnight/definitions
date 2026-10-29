@@ -1,0 +1,164 @@
+{
+  "name": "water_physics_drag_properties",
+  "tag": "wpdp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "water_physics_drag_properties_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "velocity_to_pressure_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pressure_4": {
+      "guid": "c5e705f14e01aa0c53401b98dc22cc44",
+      "size": 32,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "velocity to pressure",
+          "definition": "velocity_to_pressure_5"
+        },
+        {
+          "type": "real",
+          "name": "max velocity:wu/s"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "velocity_to_pressure_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "suction_6": {
+      "guid": "c5e705f14e01aa0c53401b98dc22cc44",
+      "size": 32,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "velocity to pressure",
+          "definition": "velocity_to_pressure_7"
+        },
+        {
+          "type": "real",
+          "name": "max velocity:wu/s"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "drag_3": {
+      "guid": "fce5eaf240593e2dc28b4c8cd683564f",
+      "size": 72,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Pressure"
+        },
+        {
+          "type": "struct",
+          "name": "pressure",
+          "definition": "pressure_4"
+        },
+        {
+          "type": "custom",
+          "name": "Suction"
+        },
+        {
+          "type": "struct",
+          "name": "suction",
+          "definition": "suction_6"
+        },
+        {
+          "type": "real",
+          "name": "linear damping"
+        },
+        {
+          "type": "real",
+          "name": "angular damping"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "water_physics_drag_properties_struct_definition_1": {
+      "guid": "cb8a6d6b7aba39bbed71b2a08d3f6209",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "drag",
+          "definition": "drag_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "function_definition_data": {}
+  }
+}

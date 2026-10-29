@@ -1,0 +1,186 @@
+{
+  "name": "spring_acceleration",
+  "tag": "sadt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "spring_linear_acceleration_block_3": {
+      "max_count": 3,
+      "struct": "spring_linear_acceleration_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "spring_acceleration_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spring_damping_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spring_acceleration_6": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spring_linear_acceleration_block_3": {
+      "guid": "1c23aaac444913238310abae8a0d17d9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "real",
+          "name": "acceleration range:world units"
+        },
+        {
+          "type": "real",
+          "name": "inverse acceleration range:world units*!"
+        },
+        {
+          "type": "real",
+          "name": "world acceleration scale#0 defaults to 1, scale the acceleration the object itself applies on this system."
+        },
+        {
+          "type": "custom",
+          "name": "damping"
+        },
+        {
+          "type": "struct",
+          "name": "spring damping",
+          "definition": "spring_damping_4"
+        },
+        {
+          "type": "real",
+          "name": "velocity domain"
+        },
+        {
+          "type": "struct",
+          "name": "spring acceleration",
+          "definition": "spring_acceleration_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "spring_acceleration_struct_definition_1": {
+      "guid": "a02808b03a2f53acd2188dcedc5e1517",
+      "size": 56,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "linear acceleartions",
+          "definition": "spring_linear_acceleration_block_3"
+        },
+        {
+          "type": "short_integer",
+          "name": "x-axis"
+        },
+        {
+          "type": "short_integer",
+          "name": "y-axis"
+        },
+        {
+          "type": "short_integer",
+          "name": "z-axis"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "function_definition_data": {}
+  }
+}

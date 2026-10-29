@@ -1,0 +1,143 @@
+{
+  "name": "assetPhotoToolAssetSpecBlockTag",
+  "tag": "apab",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "assetSpecBlock_3": {
+      "max_count": 4096,
+      "struct": "assetSpecBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "assetPhotoToolAssetSpecBlockTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "assetSpecBlock_3": {
+      "guid": "be6326f44e8df2dc8b6cdabadfc6a776",
+      "size": 112,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "object",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "variant"
+        },
+        {
+          "type": "tag_reference",
+          "name": "object configuration",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "assetSpecBlock_3_options_3"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "position override#only used if 'override transform' is checked"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "orientation override#only used if 'override transform' is checked"
+        },
+        {
+          "type": "string_id",
+          "name": "animation name"
+        },
+        {
+          "type": "real",
+          "name": "end animation frame"
+        },
+        {
+          "type": "long_flags",
+          "name": "animation flags",
+          "definition": "assetSpecBlock_3_options_8"
+        },
+        {
+          "type": "real",
+          "name": "scale#if greater than 0.0, the tool will use this scale, otherwise the tool will use 1.0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "assetPhotoToolAssetSpecBlockTag_struct_definition_1": {
+      "guid": "104e9b778d2e874a1de57c88bc100397",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "asset specs",
+          "definition": "assetSpecBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "assetSpecBlock_3_options_3": {
+      "options": [
+        "override transform"
+      ]
+    },
+    "assetSpecBlock_3_options_8": {
+      "options": [
+        "interpolate",
+        "alignment and position is valid"
+      ]
+    }
+  },
+  "datas": {}
+}

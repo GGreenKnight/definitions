@@ -1,0 +1,366 @@
+{
+  "name": "node_graph_stack",
+  "tag": "ngst",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "transition_definition_5": {
+      "max_count": 64,
+      "struct": "transition_definition_5"
+    },
+    "node_graph_stack_reference_definition_6": {
+      "max_count": 32,
+      "struct": "node_graph_stack_reference_definition_6"
+    },
+    "node_definition_4": {
+      "max_count": 128,
+      "struct": "node_definition_4"
+    },
+    "node_graph_definition_3": {
+      "max_count": 32,
+      "struct": "node_graph_definition_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "node_graph_stack_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "transition_definition_5": {
+      "guid": "232b0ca94f18f1af12305b8e69b42772",
+      "size": 108,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "event^"
+        },
+        {
+          "type": "string_id",
+          "name": "target node"
+        },
+        {
+          "type": "string",
+          "name": "out animation name"
+        },
+        {
+          "type": "string",
+          "name": "in animation name"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "transition_definition_5_options_4"
+        },
+        {
+          "type": "real",
+          "name": "editor from angle!"
+        },
+        {
+          "type": "real",
+          "name": "editor to angle!"
+        },
+        {
+          "type": "real",
+          "name": "editor bezier from x!"
+        },
+        {
+          "type": "real",
+          "name": "editor bezier from y!"
+        },
+        {
+          "type": "real",
+          "name": "editor bezier to x!"
+        },
+        {
+          "type": "real",
+          "name": "editor bezier to y!"
+        },
+        {
+          "type": "real",
+          "name": "editor caption x!"
+        },
+        {
+          "type": "real",
+          "name": "editor caption y!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_graph_stack_reference_definition_6": {
+      "guid": "8833880e45d0ae1e504cfc82ec5c0159",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "child stack reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_definition_4": {
+      "guid": "57c87f0c43b1f9b6578093a26a13c4c3",
+      "size": 156,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#Node name"
+        },
+        {
+          "type": "string_id",
+          "name": "Placement Node name"
+        },
+        {
+          "type": "block",
+          "name": "transitions",
+          "definition": "transition_definition_5"
+        },
+        {
+          "type": "long_enum",
+          "name": "screen wrapper",
+          "definition": "node_definition_4_options_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "fui screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_enum",
+          "name": "loading mode",
+          "definition": "node_definition_4_options_6"
+        },
+        {
+          "type": "block",
+          "name": "child stacks",
+          "definition": "node_graph_stack_reference_definition_6"
+        },
+        {
+          "type": "long_flags",
+          "name": "state flags",
+          "definition": "node_definition_4_options_8"
+        },
+        {
+          "type": "real",
+          "name": "editor pos x!"
+        },
+        {
+          "type": "real",
+          "name": "editor pos y!"
+        },
+        {
+          "type": "long_flags",
+          "name": "editor flags!",
+          "definition": "node_definition_4_options_11"
+        },
+        {
+          "type": "long_enum",
+          "name": "editor shape!",
+          "definition": "node_definition_4_options_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_graph_definition_3": {
+      "guid": "f2bfb07047485aa8c7afc98b8fd861a8",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#NodeGraph name"
+        },
+        {
+          "type": "string_id",
+          "name": "initial node"
+        },
+        {
+          "type": "block",
+          "name": "nodes",
+          "definition": "node_definition_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_graph_stack_struct_definition_1": {
+      "guid": "5bff5e037a7319e63e4415e7d3a675ee",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "name^#NodeGraph stack name"
+        },
+        {
+          "type": "long_enum",
+          "name": "transform method",
+          "definition": "node_graph_stack_struct_definition_1_options_3"
+        },
+        {
+          "type": "long_enum",
+          "name": "projection method",
+          "definition": "node_graph_stack_struct_definition_1_options_4"
+        },
+        {
+          "type": "long_enum",
+          "name": "render mode",
+          "definition": "node_graph_stack_struct_definition_1_options_5"
+        },
+        {
+          "type": "string_id",
+          "name": "markerName^"
+        },
+        {
+          "type": "real",
+          "name": "scale"
+        },
+        {
+          "type": "long_enum",
+          "name": "loading mode",
+          "definition": "node_graph_stack_struct_definition_1_options_8"
+        },
+        {
+          "type": "block",
+          "name": "node graphs",
+          "definition": "node_graph_definition_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "node_graph_stack_struct_definition_1_options_3": {
+      "options": [
+        "Default 2D",
+        "Object Marker 3D",
+        "Primary Weapon Marker 3D",
+        "Primary Weapon Marker 2D",
+        "Inherited",
+        "Weapon Reticle"
+      ]
+    },
+    "node_graph_stack_struct_definition_1_options_4": {
+      "options": [
+        "Default 2D",
+        "Player View",
+        "Inherited"
+      ]
+    },
+    "node_graph_stack_struct_definition_1_options_5": {
+      "options": [
+        "2D",
+        "3D In World"
+      ]
+    },
+    "node_graph_stack_struct_definition_1_options_8": {
+      "options": [
+        "LoadWhenActive",
+        "Preload"
+      ]
+    },
+    "transition_definition_5_options_4": {
+      "options": [
+        "Override Default"
+      ]
+    },
+    "node_definition_4_options_3": {
+      "options": [
+        "guess from screen tag",
+        "none",
+        "WPF",
+        "CUI",
+        "NodeGraph",
+        "SharedNodeGraph",
+        "ADSWeaponNode",
+        "VehicleNode",
+        "FUI"
+      ]
+    },
+    "node_definition_4_options_6": {
+      "options": [
+        "LoadWhenActive",
+        "Preload"
+      ]
+    },
+    "node_definition_4_options_8": {
+      "options": [
+        "Allow Input Fall Through",
+        "Matchmaking status should appear on top of this",
+        "Hide On Spartan Render Mode (When in that mode, hide this screen)",
+        "Allow Input Fall Through Even When Handled",
+        "Draw on top of fades",
+        "Allow Gameplay Input"
+      ]
+    },
+    "node_definition_4_options_11": {
+      "options": [
+        "locked"
+      ]
+    },
+    "node_definition_4_options_12": {
+      "options": [
+        "rectangle",
+        "hexagon",
+        "trapezoid",
+        "circle",
+        "diamond"
+      ]
+    }
+  },
+  "datas": {}
+}

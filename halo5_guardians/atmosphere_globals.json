@@ -1,0 +1,164 @@
+{
+  "name": "atmosphere_globals",
+  "tag": "atgf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "atmosphere_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "9019aba54a1a4c5a34f01aadada1fd11",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wind_strength_across_distance_4": {
+      "guid": "384eba0045342aa943d011ad26ef234a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "volume_texture_fog_globals_3": {
+      "guid": "3ebf88174916c94cd390c9b316f63970",
+      "size": 80,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Volume Texture Fog Non-blending Parameters"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Fog Bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "Texture repeat rate"
+        },
+        {
+          "type": "real",
+          "name": "Distance between sheets"
+        },
+        {
+          "type": "real",
+          "name": "Depth fade factor"
+        },
+        {
+          "type": "real",
+          "name": "Transparent sort distance"
+        },
+        {
+          "type": "char_enum",
+          "name": "Transparent sort layer",
+          "definition": "volume_texture_fog_globals_3_options_6"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "volume_texture_fog_globals_3_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "UNdfdfdSED",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "wind strength across distance",
+          "definition": "wind_strength_across_distance_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "atmosphere_globals_struct_definition_1": {
+      "guid": "5ce577185bf7d71742b8071ff7ffab24",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "volume texture fog globals",
+          "definition": "volume_texture_fog_globals_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "volume_texture_fog_globals_3_options_6": {
+      "options": [
+        "invalid",
+        "pre-pass",
+        "normal",
+        "post-pass"
+      ]
+    },
+    "volume_texture_fog_globals_3_options_7": {
+      "options": [
+        "Disable Texture Rotation"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

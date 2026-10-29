@@ -1,0 +1,306 @@
+{
+  "name": "rasterizer_globals",
+  "tag": "rasg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "default_textures_refs_block_3": {
+      "max_count": 32,
+      "struct": "default_textures_refs_block_3"
+    },
+    "material_textures_refs_block_4": {
+      "max_count": 16,
+      "struct": "material_textures_refs_block_4"
+    },
+    "explicit_shader_refs_block_5": {
+      "max_count": 1024,
+      "struct": "explicit_shader_refs_block_5"
+    },
+    "globalMaterialsBlock_6": {
+      "max_count": 32,
+      "struct": "globalMaterialsBlock_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "rasterizer_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "default_textures_refs_block_3": {
+      "guid": "7b0790d847c8d39d8910728528f1808a",
+      "size": 36,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "options",
+          "definition": "default_textures_refs_block_3_options_0"
+        },
+        {
+          "type": "tag_reference",
+          "name": "default bitmaps",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_textures_refs_block_4": {
+      "guid": "0f4db84448cdfd9f47aadcb9d4cc472d",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "material textures",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "explicit_shader_refs_block_5": {
+      "guid": "d3d3046b4cabf1927b11bc956f84cd3c",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "shader{explicit vertex shader}^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "globalMaterialsBlock_6": {
+      "guid": "d8faf27a458e9e49130fe2914beec1d7",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "material^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "rasterizer_globals_struct_definition_1": {
+      "guid": "47b3f8eb3c5edbef43a5934e870b7a4c",
+      "size": 416,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "default bitmaps:"
+        },
+        {
+          "type": "block",
+          "name": "default bitmaps",
+          "definition": "default_textures_refs_block_3"
+        },
+        {
+          "type": "custom",
+          "name": "material textures:"
+        },
+        {
+          "type": "block",
+          "name": "material textures",
+          "definition": "material_textures_refs_block_4"
+        },
+        {
+          "type": "custom",
+          "name": "explicit shaders:"
+        },
+        {
+          "type": "block",
+          "name": "explicit shaders",
+          "definition": "explicit_shader_refs_block_5"
+        },
+        {
+          "type": "custom",
+          "name": "global materials:"
+        },
+        {
+          "type": "block",
+          "name": "global materials",
+          "definition": "globalMaterialsBlock_6"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Active Camo Distortion Texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "default performance throttles",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Logo Texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "default scenario render data",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Cheap Particle Type Library",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Motion blur parameters:"
+        },
+        {
+          "type": "real",
+          "name": "max blur{max blur x}:[0 - 0.2]#max amount to blur, as a percentage of the screen"
+        },
+        {
+          "type": "real",
+          "name": "blur scale{blur scale x}:[0 - 0.5]#scales blur for a given velocity"
+        },
+        {
+          "type": "real",
+          "name": "center falloff x:[0 - 20]#larger values make smaller areas of no blur"
+        },
+        {
+          "type": "real",
+          "name": "center falloff y:[0 - 20]#larger values make smaller areas of no blur"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Hologram Camera FX",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "lighting debug parameters:"
+        },
+        {
+          "type": "tag_reference",
+          "name": "airprobe render model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "debug lighting value#we will replace the albedo with this value across RGB"
+        },
+        {
+          "type": "real",
+          "name": "albedo clip min#pixels that have an albedo below this value will get colorized blue in the albedo clip debug display"
+        },
+        {
+          "type": "real",
+          "name": "albedo clip max#pixels that have an albedo above this value will get colorized red in the albedo clip debug display"
+        },
+        {
+          "type": "custom",
+          "name": "Ausar: DX12 Pipeline state objects globals tag"
+        },
+        {
+          "type": "tag_reference",
+          "name": "pso globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "default_textures_refs_block_3_options_0": {
+      "options": [
+        "don't load bitmap by default"
+      ]
+    }
+  },
+  "datas": {}
+}

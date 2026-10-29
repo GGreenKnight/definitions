@@ -1,0 +1,102 @@
+{
+  "name": "CollisionFilterDefinition",
+  "tag": "cfdf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "CollisionTypeBlock_3": {
+      "max_count": 255,
+      "struct": "CollisionTypeBlock_3"
+    },
+    "CollisionLayerBlock_4": {
+      "max_count": 520200,
+      "struct": "CollisionLayerBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "CollisionFilterDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CollisionTypeBlock_3": {
+      "guid": "38026b63439023619109deadde3df413",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CollisionLayerBlock_4": {
+      "guid": "edb2780b45f0189b0b23379b76113080",
+      "size": 1,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "collision~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CollisionFilterDefinition_struct_definition_1": {
+      "guid": "95957fa60d769e0080684828e948fec5",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "types~",
+          "definition": "CollisionTypeBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "layers~",
+          "definition": "CollisionLayerBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

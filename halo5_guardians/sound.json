@@ -1,0 +1,321 @@
+{
+  "name": "sound",
+  "tag": "snd!",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "narrativeReferenceBlock_4": {
+      "max_count": 1,
+      "struct": "narrativeReferenceBlock_4"
+    },
+    "aiDialogueEventBlock_5": {
+      "max_count": 1,
+      "struct": "aiDialogueEventBlock_5"
+    },
+    "facial_animation_language_block_6": {
+      "max_count": 17,
+      "struct": "facial_animation_language_block_6"
+    },
+    "soundVOEventBlock_3": {
+      "max_count": 32,
+      "struct": "soundVOEventBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "sound_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "narrativeReferenceBlock_4": {
+      "guid": "1108c492497d10f2f70da3891d824d0e",
+      "size": 364,
+      "fields": [
+        {
+          "type": "string",
+          "name": "Character name*"
+        },
+        {
+          "type": "long_string",
+          "name": "Dialogue*"
+        },
+        {
+          "type": "string",
+          "name": "WWise effect*"
+        },
+        {
+          "type": "string",
+          "name": "Narrative Wwise Effect Recommendation"
+        },
+        {
+          "type": "long_enum",
+          "name": "Wwise 2D/3D*",
+          "definition": "narrativeReferenceBlock_4_options_4"
+        },
+        {
+          "type": "long_enum",
+          "name": "Narrative 2D/3D Recommendation",
+          "definition": "narrativeReferenceBlock_4_options_5"
+        },
+        {
+          "type": "real",
+          "name": "WWise Attenuation*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "aiDialogueEventBlock_5": {
+      "guid": "b62c04ed4194f8526fcc8f9e4549b7a9",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "aiDialogueEventBlock_5_options_0"
+        },
+        {
+          "type": "real",
+          "name": "skip fraction#Percent this file will be skipped when picked. 0 is always, 0.99 is almost never"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "facial_animation_language_block_6": {
+      "guid": "5280f0a04a45a280452d51b6b42f3132",
+      "size": 20,
+      "fields": [
+        {
+          "type": "pad",
+          "name": "facial animation resource",
+          "definition": 16
+        },
+        {
+          "type": "long_enum",
+          "name": "language",
+          "definition": "facial_animation_language_block_6_options_1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "soundVOEventBlock_3": {
+      "guid": "0e0134dd4bba62fe8d85d982d8072ee7",
+      "size": 100,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Event Name*"
+        },
+        {
+          "type": "string_id",
+          "name": "Subtitle Name*"
+        },
+        {
+          "type": "real",
+          "name": "Event duration*"
+        },
+        {
+          "type": "real",
+          "name": "Event max radius"
+        },
+        {
+          "type": "block",
+          "name": "Narrative Reference",
+          "definition": "narrativeReferenceBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "AI Dialogue Info",
+          "definition": "aiDialogueEventBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "facial animation resource languages",
+          "definition": "facial_animation_language_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_struct_definition_1": {
+      "guid": "8a45bb1bfcdc2b588250e07df18525c4",
+      "size": 144,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "sound_struct_definition_1_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "SFX Event Name#Sound event name."
+        },
+        {
+          "type": "string_id",
+          "name": "SFX Player Event Name#Optional sound event name for player only."
+        },
+        {
+          "type": "string_id",
+          "name": "SFX Fallback Event Name#Fallback sound event if the others don't play - should be in a guaranteed bank."
+        },
+        {
+          "type": "string_id",
+          "name": "SFX Player Fallback Event Name#Fallback player-only sound event if the others don't play - should be in a guaranteed bank."
+        },
+        {
+          "type": "real",
+          "name": "Max Radius"
+        },
+        {
+          "type": "real",
+          "name": "Max Duration#Max duration of this event. Enter manually for now - will auto-fill later."
+        },
+        {
+          "type": "real",
+          "name": "Don't play time.#Time the event will not retrigger for (global)"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Sound bank#Reference to the sound bank tag this event is in. Can be empty.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Player sound bank#Will only load if there is a player event set above. Reference to the player sound bank tag this event is in. Can be empty.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "VO Event Info",
+          "definition": "soundVOEventBlock_3"
+        },
+        {
+          "type": "long_integer",
+          "name": "deterministic flag index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "sound_struct_definition_1_options_2": {
+      "options": [
+        "never obstruct#disable occlusion/obstruction for this sound",
+        "use huge sound transmission",
+        "link count to owner unit",
+        "don't use lipsync data",
+        "instant sound propagation",
+        "optional player sound event!*",
+        "fallback sound event!*",
+        "has lipsync data",
+        "is deterministic",
+        "is external source",
+        "override external source event",
+        "use don't play time!",
+        "delay start if sound bank not loaded",
+        "use fallback only for DVD",
+        "has subtitle!*",
+        "ignore node transform#use this if you're getting wacky spatialization (such as scorpion cannon)",
+        "radio combo voice",
+        "cinematic allow tails to play out",
+        "negate radius-based focus#Use the opposite of the decision for whether to apply focus feature based on whether the sound is 2D or 3D"
+      ]
+    },
+    "narrativeReferenceBlock_4_options_4": {
+      "options": [
+        "2D",
+        "3D",
+        "Combo"
+      ]
+    },
+    "narrativeReferenceBlock_4_options_5": {
+      "options": [
+        "2D",
+        "3D",
+        "Combo"
+      ]
+    },
+    "aiDialogueEventBlock_5_options_0": {
+      "options": [
+        "Campaign Only",
+        "Exclude from certain missions",
+        "Exclude from M10",
+        "Exclude from M20",
+        "Exclude from M30",
+        "Exclude from M40",
+        "Exclude from M60",
+        "Exclude from M70",
+        "Exclude from M80",
+        "Exclude from M90"
+      ]
+    },
+    "facial_animation_language_block_6_options_1": {
+      "options": [
+        "english",
+        "japanese",
+        "german",
+        "french",
+        "spanish",
+        "mexican spanish",
+        "italian",
+        "korean",
+        "chinese-traditional",
+        "chinese-simplified",
+        "portuguese",
+        "polish",
+        "russian",
+        "danish",
+        "finnish",
+        "dutch",
+        "norwegian"
+      ]
+    }
+  },
+  "datas": {}
+}

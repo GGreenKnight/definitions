@@ -1,0 +1,883 @@
+{
+  "name": "player_model_customization_globals",
+  "tag": "pmcg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "customized_model_player_bits_block_4": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_4"
+    },
+    "customized_model_selection_block_3": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_3"
+    },
+    "customized_model_player_bits_block_6": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_6"
+    },
+    "customized_model_selection_block_5": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_5"
+    },
+    "customized_model_player_bits_block_8": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_8"
+    },
+    "customized_model_selection_block_7": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_7"
+    },
+    "customized_model_player_bits_block_10": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_10"
+    },
+    "customized_model_selection_block_9": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_9"
+    },
+    "customized_model_player_bits_block_12": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_12"
+    },
+    "customized_model_selection_block_11": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_11"
+    },
+    "customized_model_player_bits_block_14": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_14"
+    },
+    "customized_model_selection_block_13": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_13"
+    },
+    "customized_model_player_bits_block_16": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_16"
+    },
+    "customized_model_selection_block_15": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_15"
+    },
+    "customized_model_player_bits_block_18": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_18"
+    },
+    "customized_model_selection_block_17": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_17"
+    },
+    "customized_model_player_bits_block_20": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_20"
+    },
+    "customized_model_selection_block_19": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_19"
+    },
+    "customized_model_player_bits_block_22": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_22"
+    },
+    "customized_model_selection_block_21": {
+      "max_count": 96,
+      "struct": "customized_model_selection_block_21"
+    },
+    "customized_model_player_bits_block_23": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_23"
+    },
+    "customized_model_player_bits_block_24": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_24"
+    },
+    "customized_model_player_bits_block_25": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_25"
+    },
+    "customized_model_player_bits_block_26": {
+      "max_count": 32,
+      "struct": "customized_model_player_bits_block_26"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "player_model_customization_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_4": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_4_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_3": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_6": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_6_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_5": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_8": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_8_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_7": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_10": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_10_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_9": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_12": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_12_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_11": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_14": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_14_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_13": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_16": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_16_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_15": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_18": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_18_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_17": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_20": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_20_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_19": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_20"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_22": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_22_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_selection_block_21": {
+      "guid": "2c0583974b24039b5de7a393d4c6964e",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "selection name^"
+        },
+        {
+          "type": "block",
+          "name": "customized bits",
+          "definition": "customized_model_player_bits_block_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_23": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_23_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_24": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_24_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_25": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_25_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "customized_model_player_bits_block_26": {
+      "guid": "3aaa47ec4ce5b8f29279428be223df05",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "region name^"
+        },
+        {
+          "type": "string_id",
+          "name": "permutation name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "customized_model_player_bits_block_26_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_model_customization_globals_struct_definition_1": {
+      "guid": "e2734597ea403c9f3d77060282953585",
+      "size": 472,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "spartan render model#used for string list generation",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "elite render model!",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "helmet selections",
+          "definition": "customized_model_selection_block_3"
+        },
+        {
+          "type": "block",
+          "name": "chest selections",
+          "definition": "customized_model_selection_block_5"
+        },
+        {
+          "type": "block",
+          "name": "elite selections!",
+          "definition": "customized_model_selection_block_7"
+        },
+        {
+          "type": "block",
+          "name": "left shoulder",
+          "definition": "customized_model_selection_block_9"
+        },
+        {
+          "type": "block",
+          "name": "right shoulder",
+          "definition": "customized_model_selection_block_11"
+        },
+        {
+          "type": "block",
+          "name": "arms",
+          "definition": "customized_model_selection_block_13"
+        },
+        {
+          "type": "block",
+          "name": "legs",
+          "definition": "customized_model_selection_block_15"
+        },
+        {
+          "type": "block",
+          "name": "unused 5!",
+          "definition": "customized_model_selection_block_17"
+        },
+        {
+          "type": "block",
+          "name": "spartan armor effect selections",
+          "definition": "customized_model_selection_block_19"
+        },
+        {
+          "type": "block",
+          "name": "elite armor effect selections!",
+          "definition": "customized_model_selection_block_21"
+        },
+        {
+          "type": "block",
+          "name": "male spartan selections",
+          "definition": "customized_model_player_bits_block_23"
+        },
+        {
+          "type": "block",
+          "name": "female spartan selections",
+          "definition": "customized_model_player_bits_block_24"
+        },
+        {
+          "type": "block",
+          "name": "spartan model defaults",
+          "definition": "customized_model_player_bits_block_25"
+        },
+        {
+          "type": "block",
+          "name": "elite model defaults!",
+          "definition": "customized_model_player_bits_block_26"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "customized_model_player_bits_block_4_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_6_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_8_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_10_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_12_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_14_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_16_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_18_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_20_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_22_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_23_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_24_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_25_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    },
+    "customized_model_player_bits_block_26_options_2": {
+      "options": [
+        "male_only#this permutation only applies to male players",
+        "female_only#this permutation only applies to female players"
+      ]
+    }
+  },
+  "datas": {}
+}

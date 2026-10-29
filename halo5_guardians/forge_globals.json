@@ -1,0 +1,866 @@
+{
+  "name": "forge_globals",
+  "tag": "forg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "forge_color_block_3": {
+      "max_count": 128,
+      "struct": "forge_color_block_3"
+    },
+    "ForgeColorReferenceBlock_4": {
+      "max_count": 32,
+      "struct": "ForgeColorReferenceBlock_4"
+    },
+    "monitor_move_speed_block_5": {
+      "max_count": 8,
+      "struct": "monitor_move_speed_block_5"
+    },
+    "JumbotronReferenceBlock_6": {
+      "max_count": 4,
+      "struct": "JumbotronReferenceBlock_6"
+    },
+    "ForgeGoboDefinitionsBlock_7": {
+      "max_count": 32,
+      "struct": "ForgeGoboDefinitionsBlock_7"
+    },
+    "ForgeLightIntensityFunctionDefinitionsBlock_8": {
+      "max_count": 32,
+      "struct": "ForgeLightIntensityFunctionDefinitionsBlock_8"
+    },
+    "ForgeAreaScreenEffectsBlock_11": {
+      "max_count": 32,
+      "struct": "ForgeAreaScreenEffectsBlock_11"
+    },
+    "ForgeBitmapsBlock_12": {
+      "max_count": 32,
+      "struct": "ForgeBitmapsBlock_12"
+    },
+    "ForgeBitmapsBlock_13": {
+      "max_count": 32,
+      "struct": "ForgeBitmapsBlock_13"
+    },
+    "ForgeLensFlaresBlock_14": {
+      "max_count": 32,
+      "struct": "ForgeLensFlaresBlock_14"
+    },
+    "ForgeLightConesBlock_15": {
+      "max_count": 32,
+      "struct": "ForgeLightConesBlock_15"
+    },
+    "RotationSnapBlock_16": {
+      "max_count": 16,
+      "struct": "RotationSnapBlock_16"
+    },
+    "TranslationSnapBlock_17": {
+      "max_count": 16,
+      "struct": "TranslationSnapBlock_17"
+    },
+    "ForgeLabelBlock_18": {
+      "max_count": 64,
+      "struct": "ForgeLabelBlock_18"
+    },
+    "ForgeOutlineShadersBlock_19": {
+      "max_count": 32,
+      "struct": "ForgeOutlineShadersBlock_19"
+    },
+    "CompositionDefinitionReferenceBlock_20": {
+      "max_count": 16,
+      "struct": "CompositionDefinitionReferenceBlock_20"
+    },
+    "GameTypeCinematicNameBlock_21": {
+      "max_count": 32,
+      "struct": "GameTypeCinematicNameBlock_21"
+    },
+    "CinematicPlayerAnimationBlock_22": {
+      "max_count": 64,
+      "struct": "CinematicPlayerAnimationBlock_22"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "forge_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "forge_color_block_3": {
+      "guid": "5f30901811e193f6b1f9d197189be5ba",
+      "size": 16,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeColorReferenceBlock_4": {
+      "guid": "03bc8448474c2669c6a426a185405f40",
+      "size": 8,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "Default Value"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "monitor_move_speed_block_5": {
+      "guid": "f5f194ba42429889b985dcba5d8957e4",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "translation speed"
+        },
+        {
+          "type": "real",
+          "name": "rotation speed"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "JumbotronReferenceBlock_6": {
+      "guid": "f35e9924458ded914bb493874dcae7a9",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "jumbotron UI element#This is the UI NodeGraphStack that'll be drawn in-game for Jumbotrons",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the jumbotron in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeGoboDefinitionsBlock_7": {
+      "guid": "f74cbe7ec7c9eea881bb78ecd29f4f16",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "gobo setting",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the gobo in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Intensity_Function_9": {
+      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "Intensity_Function_9_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeLightIntensityFunctionDefinitionsBlock_8": {
+      "guid": "3c749b1d31f24572d2b86412383720cc",
+      "size": 48,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Intensity Function",
+          "definition": "Intensity_Function_9"
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the function in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeAreaScreenEffectsBlock_11": {
+      "guid": "a5e33ac9a4bd10cf78dcf30188da3220",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "area screen effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the screen effect in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeBitmapsBlock_12": {
+      "guid": "de4249b811b126fdfcbdb2d73d8a9806",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the bitmap in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeBitmapsBlock_13": {
+      "guid": "de4249b811b126fdfcbdb2d73d8a9806",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the bitmap in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeLensFlaresBlock_14": {
+      "guid": "b7fe2c6768505d8ddfd98ab7be6ccfd7",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "lens flare",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the lens flare in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeLightConesBlock_15": {
+      "guid": "e650e52c1daa4952ed29b12ca3840529",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "light cone",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "name^#this is the name that'll display for the light cone in-menu"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "RotationSnapBlock_16": {
+      "guid": "8c0327624cf20b16e0e704b646915428",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "rotation snap amount (degrees)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "TranslationSnapBlock_17": {
+      "guid": "151d8c264310a06ff49c83a595a455f8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real",
+          "name": "translation snap amount (world units)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeLabelBlock_18": {
+      "guid": "e1eb3bc14d0eb2057d9795b19fbccbad",
+      "size": 16,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#this is the string id of the actual Megalo label"
+        },
+        {
+          "type": "string_id",
+          "name": "label display name^#this is the string id of the friendlier display name for the label"
+        },
+        {
+          "type": "string_id",
+          "name": "label display description^#this is the string id of the display description of what this label does"
+        },
+        {
+          "type": "char_enum",
+          "name": "application rule",
+          "definition": "ForgeLabelBlock_18_options_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "side effects of label",
+          "definition": "ForgeLabelBlock_18_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeOutlineShadersBlock_19": {
+      "guid": "9fe6fe4949635ea4da93b38c637dbe85",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "material^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CompositionDefinitionReferenceBlock_20": {
+      "guid": "7213995644a633fdece4ddb22d010a14",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Composition Reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "GameTypeCinematicNameBlock_21": {
+      "guid": "d692fe0d4c77d63929e000af2f163532",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CinematicPlayerAnimationBlock_22": {
+      "guid": "29488d21420abbfe16ab11ada7a8b890",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "Player Index In Team#This animation will only be used for the player with this index in their team"
+        },
+        {
+          "type": "char_enum",
+          "name": "Team Size#This animation will only be used if animating player's team size matches this rule",
+          "definition": "CinematicPlayerAnimationBlock_22_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Team Relation#This animation will only be used if the animating player's team's relation to the cinematic viewer's team matches this rule",
+          "definition": "CinematicPlayerAnimationBlock_22_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Cinematic Type",
+          "definition": "CinematicPlayerAnimationBlock_22_options_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Model Animation Graph",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Animation Name#We lookup this animation name in the animation graph referenced above"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "forge_globals_struct_definition_1": {
+      "guid": "8fc79eef08f66145e6ca1fa4f5435251",
+      "size": 856,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "forge colors",
+          "definition": "forge_color_block_3"
+        },
+        {
+          "type": "block",
+          "name": "Forge Color References",
+          "definition": "ForgeColorReferenceBlock_4"
+        },
+        {
+          "type": "custom",
+          "name": "Magnets"
+        },
+        {
+          "type": "tag_reference",
+          "name": "magnet effect scenery",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "parent magnet marker name"
+        },
+        {
+          "type": "string_id",
+          "name": "child magnet marker name"
+        },
+        {
+          "type": "real_fraction",
+          "name": "deprecated, delete me when systems team says it's okay (1)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (2)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (3)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (4)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (5)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (6)"
+        },
+        {
+          "type": "real",
+          "name": "deprecated, delete me when systems team says it's okay (7)"
+        },
+        {
+          "type": "real_fraction",
+          "name": "deprecated, delete me when systems team says it's okay (8)"
+        },
+        {
+          "type": "custom",
+          "name": "Forge Camera Manipulation"
+        },
+        {
+          "type": "real",
+          "name": "max object grab range#max possible distance at which monitor can grab an object. Small objects may not be grabbable at this distance. In absolute distance units."
+        },
+        {
+          "type": "real",
+          "name": "default grab distance mult#when you spawn an object, it'll be spawned defaultGrabDistanceMultiplier x object.boundingRadius out"
+        },
+        {
+          "type": "real_bounds",
+          "name": "min-max grab distance mult#auto-zoom brings you no closer/farther than multiplier x object.boundingRadius from grabbed object"
+        },
+        {
+          "type": "real_bounds",
+          "name": "minimum grab distance threshold#auto-zoom near can never leave these bounds"
+        },
+        {
+          "type": "real_bounds",
+          "name": "maximum grab distance threshold#auto-zoom far can never leave these bounds"
+        },
+        {
+          "type": "real",
+          "name": "lock-on time#it takes this long (seconds) for the camera to focus on grabbed objects when you lock on"
+        },
+        {
+          "type": "real",
+          "name": "grab-cam soft ceiling movement speed#when we're outside level bounds while grabbing item(s)"
+        },
+        {
+          "type": "real",
+          "name": "grab-cam inward spring constant#these control camera springiness for restoring position when we get blocked from our object"
+        },
+        {
+          "type": "real",
+          "name": "grab-cam outward spring constant#these control camera springiness for restoring position when we get blocked from our object"
+        },
+        {
+          "type": "real",
+          "name": "camera-object distance threshold#How far the camera can get from expected distance to object before we force camera position"
+        },
+        {
+          "type": "real",
+          "name": "translating-objects speed multiplier#When you're grabbing and translating objects, monitor speed is x this"
+        },
+        {
+          "type": "block",
+          "name": "monitor speed multipliers",
+          "definition": "monitor_move_speed_block_5"
+        },
+        {
+          "type": "string_id",
+          "name": "monitor boost name^"
+        },
+        {
+          "type": "real",
+          "name": "monitor boost translation speed"
+        },
+        {
+          "type": "real",
+          "name": "monitor boost rotation speed"
+        },
+        {
+          "type": "block",
+          "name": "jumbotron UI element#This is the UI NodeGraphStack that'll be drawn in-game for Jumbotrons",
+          "definition": "JumbotronReferenceBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "forge gobo definitions",
+          "definition": "ForgeGoboDefinitionsBlock_7"
+        },
+        {
+          "type": "block",
+          "name": "forge light intensity function definitions",
+          "definition": "ForgeLightIntensityFunctionDefinitionsBlock_8"
+        },
+        {
+          "type": "block",
+          "name": "forge area screen effect definitions",
+          "definition": "ForgeAreaScreenEffectsBlock_11"
+        },
+        {
+          "type": "block",
+          "name": "forge patchy fog bitmaps",
+          "definition": "ForgeBitmapsBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "forge cloud bitmaps",
+          "definition": "ForgeBitmapsBlock_13"
+        },
+        {
+          "type": "block",
+          "name": "forge lens flares",
+          "definition": "ForgeLensFlaresBlock_14"
+        },
+        {
+          "type": "block",
+          "name": "forge light cones",
+          "definition": "ForgeLightConesBlock_15"
+        },
+        {
+          "type": "block",
+          "name": "rotation snap values#These are the rotation snaps the user can set to",
+          "definition": "RotationSnapBlock_16"
+        },
+        {
+          "type": "block",
+          "name": "translation snap values#These are the translation snaps the user can set to",
+          "definition": "TranslationSnapBlock_17"
+        },
+        {
+          "type": "tag_reference",
+          "name": "forge required resources#This is a list of Forge object tags that'll be force-loaded in Forge game types",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "rotation handle shader#used on programatically-generated rotation handle rings",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "path preview shader#used on programatically-generated path previews (like for mancannon paths)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "global label values#These are the global megalo labels that provide limited scripting functionality to objects",
+          "definition": "ForgeLabelBlock_18"
+        },
+        {
+          "type": "block",
+          "name": "outline shaders#Shaders for different Forge outline types (&quot;grabbed + deleting&quot;, &quot;highlighted by networked player&quot;, etc.)",
+          "definition": "ForgeOutlineShadersBlock_19"
+        },
+        {
+          "type": "string_id",
+          "name": "Forge Intro Composition Name"
+        },
+        {
+          "type": "block",
+          "name": "Forge Intro Compositions#Since we generate composition at runtime we only need one CompositionDefinition in this block",
+          "definition": "CompositionDefinitionReferenceBlock_20"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Forge Outro Composition Template#We'll write camera and player positions into this template for Forge outros",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Forge Static View Composition Template#We'll write camera positions into this template for previewing static views",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Game Type Cinematic Names#Cinematic objects can specify that they only should be used in certain game types by name (i.e. only the CTF intro cinematic)",
+          "definition": "GameTypeCinematicNameBlock_21"
+        },
+        {
+          "type": "block",
+          "name": "Cinematic Player Animations#We lookup here to decide which animation to use for a given player in Forge intros/outros",
+          "definition": "CinematicPlayerAnimationBlock_22"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Default Boundary Shader#If we're rendering a boundary and it doesn't have an object-specific boundary override, use this",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "Intensity_Function_9_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "ForgeLabelBlock_18_options_3": {
+      "options": [
+        "AllObjects",
+        "OnlySpawnPointsAndZones",
+        "OnlySpawnPoints",
+        "OnlySpawnZones",
+        "OnlyTraitZones",
+        "OnlyFlagStands",
+        "OnlyCinematicObjects"
+      ]
+    },
+    "ForgeLabelBlock_18_options_4": {
+      "options": [
+        "Only spawn if game mode requires"
+      ]
+    },
+    "CinematicPlayerAnimationBlock_22_options_1": {
+      "options": [
+        "FourPlayerTeamSize",
+        "FallbackTeamSize"
+      ]
+    },
+    "CinematicPlayerAnimationBlock_22_options_2": {
+      "options": [
+        "MyTeam",
+        "FirstTeamIAmSpectating",
+        "SecondTeamIAmSpectating"
+      ]
+    },
+    "CinematicPlayerAnimationBlock_22_options_3": {
+      "options": [
+        "Intro",
+        "Outro",
+        "StaticView"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

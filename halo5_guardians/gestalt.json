@@ -1,0 +1,653 @@
+{
+  "name": "gestalt",
+  "tag": "acme",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "all_block_fields_block_6": {
+      "max_count": 7,
+      "struct": "all_block_fields_block_6"
+    },
+    "all_block_fields_block_10": {
+      "max_count": 7,
+      "struct": "all_block_fields_block_10"
+    },
+    "test_block_count_1_11": {
+      "max_count": 1,
+      "struct": "test_block_count_1_11"
+    },
+    "test_block_count_4_12": {
+      "max_count": 3,
+      "struct": "test_block_count_4_12"
+    },
+    "all_field_block_4": {
+      "max_count": 7,
+      "struct": "all_field_block_4"
+    },
+    "custom_field_block_13": {
+      "max_count": 4,
+      "struct": "custom_field_block_13"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "gestalt_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "array_test__3": {
+      "guid": "1bbe80a9cd60a93138eb151ce8f5d7ca",
+      "size": 28,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "string_id",
+          "name": "test array string"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "blah_5": {
+      "guid": "ed7e361f313d597a35cc8b2df84e4ab3",
+      "size": 32,
+      "fields": [
+        {
+          "type": "pad",
+          "name": "test resource2",
+          "definition": 16
+        },
+        {
+          "type": "pad",
+          "name": "test resource2",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "all_block_fields_block_6": {
+      "guid": "28c582e04f8a5b66441c36ba0985b50d",
+      "size": 7,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "_field_char_block_index"
+        },
+        {
+          "type": "short_integer",
+          "name": "_field_short_block_index"
+        },
+        {
+          "type": "long_integer",
+          "name": "_field_long_block_index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ugh_foo_ugh_7": {
+      "guid": "ca1fabd14ab862205cd95fa8b5cf0ace",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string",
+          "name": "e"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_crap_8": {
+      "guid": "bf0343fe4c03e6c36f31c8ad70b4ed17",
+      "size": 32,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Input Variable",
+          "definition": "function_crap_8_options_0"
+        },
+        {
+          "type": "short_enum",
+          "name": "Range Variable",
+          "definition": "function_crap_8_options_1"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "all_block_fields_block_10": {
+      "guid": "28c582e04f8a5b66441c36ba0985b50d",
+      "size": 7,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "_field_char_block_index"
+        },
+        {
+          "type": "short_integer",
+          "name": "_field_short_block_index"
+        },
+        {
+          "type": "long_integer",
+          "name": "_field_long_block_index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "test_block_count_1_11": {
+      "guid": "ed5fb6bd4d35f029be2acea252d55038",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "can you see me???^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "test_block_count_4_12": {
+      "guid": "ed5fb6bd4d35f029be2acea252d55038",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "can you see me???^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "all_field_block_4": {
+      "guid": "290e7263466768df94dad59733105f20",
+      "size": 592,
+      "fields": [
+        {
+          "type": "pad",
+          "name": "test resource^",
+          "definition": 16
+        },
+        {
+          "type": "pad",
+          "name": "test resource2",
+          "definition": 16
+        },
+        {
+          "type": "struct",
+          "name": "blah",
+          "definition": "blah_5"
+        },
+        {
+          "type": "string",
+          "name": "_field_string"
+        },
+        {
+          "type": "string_id",
+          "name": "_field_string_id"
+        },
+        {
+          "type": "char_integer",
+          "name": "_field_char_integer"
+        },
+        {
+          "type": "short_integer",
+          "name": "_field_short_integer"
+        },
+        {
+          "type": "long_integer",
+          "name": "_field_long_integer"
+        },
+        {
+          "type": "angle",
+          "name": "_field_angle"
+        },
+        {
+          "type": "tag",
+          "name": "_field_tag"
+        },
+        {
+          "type": "short_enum",
+          "name": "_field_enum",
+          "definition": "all_field_block_4_options_10"
+        },
+        {
+          "type": "long_flags",
+          "name": "_field_flags",
+          "definition": "all_field_block_4_options_11"
+        },
+        {
+          "type": "word_flags",
+          "name": "_field_word_flags",
+          "definition": "all_field_block_4_options_12"
+        },
+        {
+          "type": "byte_flags",
+          "name": "_field_byte_flags",
+          "definition": "all_field_block_4_options_13"
+        },
+        {
+          "type": "point_2d",
+          "name": "_field_short_point2d"
+        },
+        {
+          "type": "rectangle_2d",
+          "name": "_field_short_rectangle2d"
+        },
+        {
+          "type": "rgb_color",
+          "name": "_field_rgb_pixel32"
+        },
+        {
+          "type": "argb_color",
+          "name": "_field_argb_pixel32"
+        },
+        {
+          "type": "real",
+          "name": "_field_real"
+        },
+        {
+          "type": "real_fraction",
+          "name": "_field_real_fraction"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "_field_real_point2d"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "_field_real_point3d"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "_field_real_vector2d"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "_field_real_vector3d"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "_field_real_quaternion"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "_field_real_euler_angles2d"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "_field_real_euler_angles3d"
+        },
+        {
+          "type": "real_plane_2d",
+          "name": "_field_real_plane2d"
+        },
+        {
+          "type": "real_plane_3d",
+          "name": "_field_real_plane3d"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "_field_real_rgb_color"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "_field_real_argb_color"
+        },
+        {
+          "type": "real_hsv_color",
+          "name": "_field_real_hsv_color"
+        },
+        {
+          "type": "real_ahsv_color",
+          "name": "_field_real_ahsv_color"
+        },
+        {
+          "type": "short_bounds",
+          "name": "_field_short_integer_bounds"
+        },
+        {
+          "type": "angle_bounds",
+          "name": "_field_angle_bounds"
+        },
+        {
+          "type": "real_bounds",
+          "name": "_field_real_bounds"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "_field_real_fraction_bounds"
+        },
+        {
+          "type": "tag_reference",
+          "name": "_field_tag_reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "_field_block",
+          "definition": "all_block_fields_block_6"
+        },
+        {
+          "type": "long_integer",
+          "name": "look at me!"
+        },
+        {
+          "type": "struct",
+          "name": "ugh foo ugh",
+          "definition": "ugh_foo_ugh_7"
+        },
+        {
+          "type": "string",
+          "name": "sentinel"
+        },
+        {
+          "type": "string_id",
+          "name": "bleh"
+        },
+        {
+          "type": "struct",
+          "name": "function crap",
+          "definition": "function_crap_8"
+        },
+        {
+          "type": "block",
+          "name": "block2",
+          "definition": "all_block_fields_block_10"
+        },
+        {
+          "type": "long_enum",
+          "name": "ugh",
+          "definition": "all_field_block_4_options_45"
+        },
+        {
+          "type": "block",
+          "name": "block3",
+          "definition": "test_block_count_1_11"
+        },
+        {
+          "type": "block",
+          "name": "block4",
+          "definition": "test_block_count_4_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "custom_field_block_13": {
+      "guid": "f514520f42affc882447efbb3ad1ddb0",
+      "size": 12,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "more blah"
+        },
+        {
+          "type": "char_enum",
+          "name": "_field_char_enum",
+          "definition": "custom_field_block_13_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "ARBP",
+          "definition": 3
+        },
+        {
+          "type": "long_enum",
+          "name": "_field_long_enum",
+          "definition": "custom_field_block_13_options_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gestalt_struct_definition_1": {
+      "guid": "d68fab69d0ee47b8c2de3c47592ba1c6",
+      "size": 112,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "array test!",
+          "definition": "array_test__3"
+        },
+        {
+          "type": "string_id",
+          "name": "material"
+        },
+        {
+          "type": "custom",
+          "name": "test|FF0080"
+        },
+        {
+          "type": "block",
+          "name": "all fields|pink",
+          "definition": "all_field_block_4"
+        },
+        {
+          "type": "block",
+          "name": "custom fields",
+          "definition": "custom_field_block_13"
+        },
+        {
+          "type": "custom",
+          "name": "Sliders"
+        },
+        {
+          "type": "custom",
+          "name": "slider1"
+        },
+        {
+          "type": "real",
+          "name": "slider1"
+        },
+        {
+          "type": "custom",
+          "name": "slider2"
+        },
+        {
+          "type": "real",
+          "name": "slider2"
+        },
+        {
+          "type": "custom",
+          "name": "export tag to xml"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "all_field_block_4_options_10": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "all_field_block_4_options_11": {
+      "options": [
+        "alpha",
+        "beta",
+        "gamma",
+        "fixup_flag_test{delta}",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "all_field_block_4_options_12": {
+      "options": [
+        "alpha",
+        "beta",
+        "gamma",
+        "fixup_flag_test{delta}",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "all_field_block_4_options_13": {
+      "options": [
+        "alpha",
+        "beta",
+        "gamma",
+        "fixup_flag_test{delta}",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "function_crap_8_options_0": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "function_crap_8_options_1": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "all_field_block_4_options_45": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "custom_field_block_13_options_1": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    },
+    "custom_field_block_13_options_3": {
+      "options": [
+        "alpha_blah{alpha}",
+        "beta",
+        "gamma",
+        "delta",
+        "epsilon",
+        "zeta",
+        "eta"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

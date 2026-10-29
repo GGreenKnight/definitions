@@ -1,0 +1,377 @@
+{
+  "name": "death_program_selector",
+  "tag": "bdpd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "death_program_damage_region_reporting_block_6": {
+      "max_count": 11,
+      "struct": "death_program_damage_region_reporting_block_6"
+    },
+    "ragdoll_blend_function_block_8": {
+      "max_count": 127,
+      "struct": "ragdoll_blend_function_block_8"
+    },
+    "death_program_velocity_gate_block_7": {
+      "max_count": 2,
+      "struct": "death_program_velocity_gate_block_7"
+    },
+    "death_program_damage_reporting_block_4": {
+      "max_count": 64,
+      "struct": "death_program_damage_reporting_block_4"
+    },
+    "death_program_special_block_3": {
+      "max_count": 7,
+      "struct": "death_program_special_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "death_program_selector_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damageSource_5": {
+      "guid": "c31a245d433dff8727bbe58fe63e1849",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Damage Source Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "death_program_damage_region_reporting_block_6": {
+      "guid": "82489f884420977acc3abfbc91a0176c",
+      "size": 1,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Damaged Region#Damaged region of the body",
+          "definition": "death_program_damage_region_reporting_block_6_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "blend_function_9": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ragdoll_blend_function_block_8": {
+      "guid": "614056244fdcea07ebb454899025b332",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "ragdoll_blend_function_block_8_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad_bf",
+          "definition": 3
+        },
+        {
+          "type": "struct",
+          "name": "blend function",
+          "definition": "blend_function_9"
+        },
+        {
+          "type": "string_id",
+          "name": "ragdoll subgroup#Which ragdoll group (defined in the physics model) this function affects.  If empty, this is a global fallback function."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "death_program_velocity_gate_block_7": {
+      "guid": "500a180d4ebb000479aa40b918fdba9e",
+      "size": 76,
+      "fields": [
+        {
+          "type": "real",
+          "name": "minimum velocity:wu/s#this death program will be selected if the biped's velocity is above this number^"
+        },
+        {
+          "type": "long_enum",
+          "name": "death program",
+          "definition": "death_program_velocity_gate_block_7_options_1"
+        },
+        {
+          "type": "real",
+          "name": "death program scale#input to the death program to scale the result (only affects ragdolls)"
+        },
+        {
+          "type": "real",
+          "name": "acceleration direction adjust z#adjusts the direction by adding this to z and re-normalizing"
+        },
+        {
+          "type": "real",
+          "name": "fallback death program scale#when we downgrade to an instantaneous ragdoll, this is the input to the death program to scale the result (only affects ragdolls)"
+        },
+        {
+          "type": "real",
+          "name": "fallback acceleration direction adjust z#when we downgrade to an instantaneous ragdoll, this is how we adjust the direction by adding this to z and re-normalizing"
+        },
+        {
+          "type": "real",
+          "name": "powered ragdoll impact radius#when killing powered ragdolls, kill all rigidbodies within this radius of the impacted rigid body"
+        },
+        {
+          "type": "string_id",
+          "name": "death animation stance#Override stance that contains the death animations for this gait speed when using animate then ragdoll option."
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "death_program_velocity_gate_block_7_options_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad_vgf",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "Animate-then-ragdoll"
+        },
+        {
+          "type": "angle",
+          "name": "ragdoll animation bypass angle:degrees#if the angle between the terrain and the up-vector exceeds this, along the animation path, skip the animation and go straight to ragdoll (if 0, the bypass isn't used)"
+        },
+        {
+          "type": "skip",
+          "name": "Cosine Angle",
+          "definition": 4
+        },
+        {
+          "type": "custom",
+          "name": "Powered-ragdoll"
+        },
+        {
+          "type": "real",
+          "name": "Blend duration:Length of time the animation blends into ragdoll, in seconds#At runtime we chose the lesser of this, and the duration of the animation"
+        },
+        {
+          "type": "custom",
+          "name": "Blend functions"
+        },
+        {
+          "type": "block",
+          "name": "Blend functions",
+          "definition": "ragdoll_blend_function_block_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "death_program_damage_reporting_block_4": {
+      "guid": "2411ca094af66f03af79669082942d01",
+      "size": 60,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Triggering Damage Source"
+        },
+        {
+          "type": "struct",
+          "name": "damageSource",
+          "definition": "damageSource_5"
+        },
+        {
+          "type": "custom",
+          "name": "Damaged Regions"
+        },
+        {
+          "type": "block",
+          "name": "damage regions",
+          "definition": "death_program_damage_region_reporting_block_6"
+        },
+        {
+          "type": "block",
+          "name": "velocity",
+          "definition": "death_program_velocity_gate_block_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "death_program_special_block_3": {
+      "guid": "07a7988047241351e5a95dbfa7aa258c",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "special type^",
+          "definition": "death_program_special_block_3_options_0"
+        },
+        {
+          "type": "block",
+          "name": "damage type",
+          "definition": "death_program_damage_reporting_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "death_program_selector_struct_definition_1": {
+      "guid": "c9b94577e8db9976fd9e37568bbe7a35",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation"
+        },
+        {
+          "type": "custom",
+          "name": "Death Program Selection"
+        },
+        {
+          "type": "tag_reference",
+          "name": "parent",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "special type",
+          "definition": "death_program_special_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_dps_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "death_program_special_block_3_options_0": {
+      "options": [
+        "none",
+        "headshot",
+        "melee",
+        "collision",
+        "assassination",
+        "shoulderbash",
+        "groundpound"
+      ]
+    },
+    "death_program_damage_region_reporting_block_6_options_0": {
+      "options": [
+        "gut",
+        "chest",
+        "head",
+        "left shoulder",
+        "left arm",
+        "left leg",
+        "left foot",
+        "right shoulder",
+        "right arm",
+        "right leg",
+        "right foot"
+      ]
+    },
+    "death_program_velocity_gate_block_7_options_1": {
+      "options": [
+        "animate then ragdoll",
+        "default ragdoll program",
+        "headshot ragdoll program",
+        "melee ragdoll program",
+        "powered ragdoll program",
+        "vehicle ragdoll program"
+      ]
+    },
+    "death_program_velocity_gate_block_7_options_8": {
+      "options": [
+        "conservatively ragdoll#If there is any risk of the NPC intersecting with world geometry during death animations, go straight to ragdoll",
+        "continue current animation#Do not play ping, continue whatever animation the character was playing while engaging powered ragdoll",
+        "kill rigid-bodies and descendants upon impact",
+        "force soft ping overlay"
+      ]
+    },
+    "ragdoll_blend_function_block_8_options_1": {
+      "options": [
+        "affects translation#The blend function controls translation (you probably want this)",
+        "affects orientation#The blend function controls orientation (you probably want this)"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

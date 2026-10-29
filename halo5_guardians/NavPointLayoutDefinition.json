@@ -1,0 +1,365 @@
+{
+  "name": "NavPointLayoutDefinition",
+  "tag": "navl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "NavPointLayoutDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_sprite_bg_3": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_sprite_fg_4": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_radial_progress_bar_5": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "top_sprite_6": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "top_label_7": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_progress_bar_8": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_progress_bar_2_9": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_label_10": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_timer_11": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "left_timer_12": {
+      "guid": "fedabd31456d08b7611c8685dd945617",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "yaw_sprite_13": {
+      "guid": "9a36508d43cb5dec3587e8b9266fc263",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "real",
+          "name": "pivot offset"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavPointLayoutDefinition_struct_definition_1": {
+      "guid": "88a15274341e718cc81d67f8a875a11d",
+      "size": 176,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "real",
+          "name": "morph fraction"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "anchor offset"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "center box width height"
+        },
+        {
+          "type": "custom",
+          "name": "center sprite bg"
+        },
+        {
+          "type": "struct",
+          "name": "center sprite bg",
+          "definition": "center_sprite_bg_3"
+        },
+        {
+          "type": "custom",
+          "name": "center sprite fg"
+        },
+        {
+          "type": "struct",
+          "name": "center sprite fg",
+          "definition": "center_sprite_fg_4"
+        },
+        {
+          "type": "custom",
+          "name": "center radial progress bar"
+        },
+        {
+          "type": "struct",
+          "name": "center radial progress bar",
+          "definition": "center_radial_progress_bar_5"
+        },
+        {
+          "type": "custom",
+          "name": "top sprite"
+        },
+        {
+          "type": "struct",
+          "name": "top sprite",
+          "definition": "top_sprite_6"
+        },
+        {
+          "type": "custom",
+          "name": "top label"
+        },
+        {
+          "type": "struct",
+          "name": "top label",
+          "definition": "top_label_7"
+        },
+        {
+          "type": "custom",
+          "name": "right progress bar"
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar",
+          "definition": "right_progress_bar_8"
+        },
+        {
+          "type": "custom",
+          "name": "right progress bar 2"
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar 2",
+          "definition": "right_progress_bar_2_9"
+        },
+        {
+          "type": "custom",
+          "name": "right label"
+        },
+        {
+          "type": "struct",
+          "name": "right label",
+          "definition": "right_label_10"
+        },
+        {
+          "type": "custom",
+          "name": "right timer"
+        },
+        {
+          "type": "struct",
+          "name": "right timer",
+          "definition": "right_timer_11"
+        },
+        {
+          "type": "custom",
+          "name": "left timer"
+        },
+        {
+          "type": "struct",
+          "name": "left timer",
+          "definition": "left_timer_12"
+        },
+        {
+          "type": "custom",
+          "name": "yaw sprite"
+        },
+        {
+          "type": "struct",
+          "name": "yaw sprite",
+          "definition": "yaw_sprite_13"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,461 @@
+{
+  "name": "sound_mix",
+  "tag": "snmx",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "sound_mix_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "obstruction_settings_4": {
+      "guid": "f38f05d94f33f9bbfed7ea95258f5861",
+      "size": 8,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "real",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "custom",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "occlusion_settings_5": {
+      "guid": "f38f05d94f33f9bbfed7ea95258f5861",
+      "size": 8,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "real",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "custom",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "default_transmission_settings_3": {
+      "guid": "7d2210b1416a1e4ed02596a6352305df",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "default obstruction settings"
+        },
+        {
+          "type": "struct",
+          "name": "obstruction settings",
+          "definition": "obstruction_settings_4"
+        },
+        {
+          "type": "custom",
+          "name": "default occlusion settings"
+        },
+        {
+          "type": "struct",
+          "name": "occlusion settings",
+          "definition": "occlusion_settings_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "first_person_left_side_mix_6": {
+      "guid": "f0ffee5249b6b30962842086dbe5d042",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "left stereo gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "right stereo gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "first_person_middle_mix_7": {
+      "guid": "f0ffee5249b6b30962842086dbe5d042",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "left stereo gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "right stereo gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "first_person_right_side_mix_8": {
+      "guid": "f0ffee5249b6b30962842086dbe5d042",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "left stereo gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "right stereo gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "first_person_surround_mix_9": {
+      "guid": "ea4cd8764cc162330121c1ab90a2ce9d",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "rear speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ambient_surround_mix_10": {
+      "guid": "ea4cd8764cc162330121c1ab90a2ce9d",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "rear speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "surround_center_mix_12": {
+      "guid": "5f672b7342baec719f6f06b9d974a956",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "center speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "stereo_center_mix_13": {
+      "guid": "5f672b7342baec719f6f06b9d974a956",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "center speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "radio_surround_center_mix_14": {
+      "guid": "5f672b7342baec719f6f06b9d974a956",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "center speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "radio_stereo_center_mix_15": {
+      "guid": "5f672b7342baec719f6f06b9d974a956",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "front speaker gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "center speaker gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_mix_11": {
+      "guid": "a2c05d8f4d82a92d31a3349582efd34b",
+      "size": 108,
+      "fields": [
+        {
+          "type": "real",
+          "name": "mono unspatialized gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "stereo to 3d gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "rear surround to front stereo gain:dB"
+        },
+        {
+          "type": "custom",
+          "name": "surround center mix"
+        },
+        {
+          "type": "struct",
+          "name": "surround center mix",
+          "definition": "surround_center_mix_12"
+        },
+        {
+          "type": "custom",
+          "name": "stereo center mix"
+        },
+        {
+          "type": "struct",
+          "name": "stereo center mix",
+          "definition": "stereo_center_mix_13"
+        },
+        {
+          "type": "custom",
+          "name": "radio surround center mix"
+        },
+        {
+          "type": "struct",
+          "name": "radio surround center mix",
+          "definition": "radio_surround_center_mix_14"
+        },
+        {
+          "type": "custom",
+          "name": "radio stereo center mix"
+        },
+        {
+          "type": "struct",
+          "name": "radio stereo center mix",
+          "definition": "radio_stereo_center_mix_15"
+        },
+        {
+          "type": "custom",
+          "name": "more sound lovin'"
+        },
+        {
+          "type": "real",
+          "name": "stereo unspatialized gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "quad route to lfe gain:dB"
+        },
+        {
+          "type": "custom",
+          "name": "last minute values"
+        },
+        {
+          "type": "real",
+          "name": "solo player fade out delay: seconds"
+        },
+        {
+          "type": "real",
+          "name": "solo player fade out time: seconds"
+        },
+        {
+          "type": "real",
+          "name": "solo player fade in time: seconds"
+        },
+        {
+          "type": "real",
+          "name": "game music fade out time: seconds"
+        },
+        {
+          "type": "custom",
+          "name": "debugging stuff"
+        },
+        {
+          "type": "tag_reference",
+          "name": "play on unplayable sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "left/right bleed:[0 = no bleed, 1 = swap left/right, 0.5 = mono"
+        },
+        {
+          "type": "real",
+          "name": "remote voice boost: output= (1 + boost)*input"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_mix_struct_definition_1": {
+      "guid": "3949f153c2ee2c372c912d6c12a9e37f",
+      "size": 184,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "default transmission settings",
+          "definition": "default_transmission_settings_3"
+        },
+        {
+          "type": "custom",
+          "name": "first person left side mix"
+        },
+        {
+          "type": "struct",
+          "name": "first person left side mix",
+          "definition": "first_person_left_side_mix_6"
+        },
+        {
+          "type": "custom",
+          "name": "first person middle mix"
+        },
+        {
+          "type": "struct",
+          "name": "first person middle mix",
+          "definition": "first_person_middle_mix_7"
+        },
+        {
+          "type": "custom",
+          "name": "first person right side mix"
+        },
+        {
+          "type": "struct",
+          "name": "first person right side mix",
+          "definition": "first_person_right_side_mix_8"
+        },
+        {
+          "type": "custom",
+          "name": "first person surround mix"
+        },
+        {
+          "type": "struct",
+          "name": "first person surround mix",
+          "definition": "first_person_surround_mix_9"
+        },
+        {
+          "type": "custom",
+          "name": "ambient surround mix"
+        },
+        {
+          "type": "struct",
+          "name": "ambient surround mix",
+          "definition": "ambient_surround_mix_10"
+        },
+        {
+          "type": "custom",
+          "name": "global mix"
+        },
+        {
+          "type": "struct",
+          "name": "global mix",
+          "definition": "global_mix_11"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

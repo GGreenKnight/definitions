@@ -1,0 +1,137 @@
+{
+  "name": "game_performance_throttle",
+  "tag": "gptd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "game_performance_throttle_entries_block_3": {
+      "max_count": 32,
+      "struct": "game_performance_throttle_entries_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "game_performance_throttle_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "filter_4": {
+      "guid": "aaa4cf0549590843920dc3c00e07ab12",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "minimum player count"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_5": {
+      "guid": "a9a4cf0549598843920dc3b00e07ab16",
+      "size": 24,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "maximum havok proxy count"
+        },
+        {
+          "type": "long_integer",
+          "name": "maximum impact count"
+        },
+        {
+          "type": "long_integer",
+          "name": "vehicle suspension update frequency"
+        },
+        {
+          "type": "long_integer",
+          "name": "Actor LOD, AI actors to update fully each frame"
+        },
+        {
+          "type": "long_integer",
+          "name": "Actor LOD, Number of frames to tick LODed AI"
+        },
+        {
+          "type": "long_integer",
+          "name": "Actor LOD, Number of concurrent LOD actors to tick"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "game_performance_throttle_entries_block_3": {
+      "guid": "7195a90349a569be5e30cdc5dc8f8657",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "filter",
+          "definition": "filter_4"
+        },
+        {
+          "type": "struct",
+          "name": "profile",
+          "definition": "profile_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "game_performance_throttle_struct_definition_1": {
+      "guid": "b9bc829f55d6e4e9c8a34f3eef6ccb87",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "entries",
+          "definition": "game_performance_throttle_entries_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

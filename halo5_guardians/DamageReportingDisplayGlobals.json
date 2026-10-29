@@ -1,0 +1,267 @@
+{
+  "name": "DamageReportingDisplayGlobals",
+  "tag": "drdg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "AttachmentNameListBlock_6": {
+      "max_count": 8,
+      "struct": "AttachmentNameListBlock_6"
+    },
+    "DamageDisplayByDamageTypeBlock_8": {
+      "max_count": 10,
+      "struct": "DamageDisplayByDamageTypeBlock_8"
+    },
+    "DamageDisplayByAttachmentListBlock_5": {
+      "max_count": 50,
+      "struct": "DamageDisplayByAttachmentListBlock_5"
+    },
+    "DamageDisplayByDamageSourceBlock_3": {
+      "max_count": 1024,
+      "struct": "DamageDisplayByDamageSourceBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "DamageReportingDisplayGlobals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damageSource_4": {
+      "guid": "fb19cd2f4e62491e2c715b8fcdcaa19d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "NOTE"
+        },
+        {
+          "type": "string_id",
+          "name": "Damage Source Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachmentName_7": {
+      "guid": "aa24f8d749b6d12c538279b814679955",
+      "size": 4,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "NOTE"
+        },
+        {
+          "type": "string_id",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "AttachmentNameListBlock_6": {
+      "guid": "88131fd842b5e814256e7ebe17d5287f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "attachmentName_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damageType_9": {
+      "guid": "bb9b94884096c2aaae76608081711e6f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "NOTE"
+        },
+        {
+          "type": "string_id",
+          "name": "Damage Type Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "displayDefinition_10": {
+      "guid": "038ec4e84524041b328db09895bef241",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the damage"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite sheet#sprite sheet that contains the sprite for this damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#index in the sprite sheet of the sprite for this damage"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DamageDisplayByDamageTypeBlock_8": {
+      "guid": "97c40a674dbe93dda9f7ffbc507d24bc",
+      "size": 44,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Damage Type"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation"
+        },
+        {
+          "type": "struct",
+          "name": "damageType",
+          "definition": "damageType_9"
+        },
+        {
+          "type": "struct",
+          "name": "displayDefinition",
+          "definition": "displayDefinition_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DamageDisplayByAttachmentListBlock_5": {
+      "guid": "086bb4fe482d4cf8a12a10acf8e9fb45",
+      "size": 56,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Attachment List"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation"
+        },
+        {
+          "type": "block",
+          "name": "attachmentList",
+          "definition": "AttachmentNameListBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "displayByDamageType",
+          "definition": "DamageDisplayByDamageTypeBlock_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DamageDisplayByDamageSourceBlock_3": {
+      "guid": "85b2e2214557ee8fb446f7bd80156dcf",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Damage Source"
+        },
+        {
+          "type": "custom",
+          "name": "Explanation"
+        },
+        {
+          "type": "struct",
+          "name": "damageSource",
+          "definition": "damageSource_4"
+        },
+        {
+          "type": "block",
+          "name": "displayByAttachmentList",
+          "definition": "DamageDisplayByAttachmentListBlock_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DamageReportingDisplayGlobals_struct_definition_1": {
+      "guid": "18980104ae627c4bef7a901afed74ab1",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Damage Reporting Display Map"
+        },
+        {
+          "type": "block",
+          "name": "damageDisplayMap",
+          "definition": "DamageDisplayByDamageSourceBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

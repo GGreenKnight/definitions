@@ -1,0 +1,151 @@
+{
+  "name": "sound_environment",
+  "tag": "snde",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "sound_environment_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "reverb_settings_3": {
+      "guid": "e4b31e1d4c51c5a76cd802ae068b3f2b",
+      "size": 20,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "WWise Environment"
+        },
+        {
+          "type": "string_id",
+          "name": "Environment name#Name of the environment from WWise. This will be a DSP effect with Environmental Effect checked."
+        },
+        {
+          "type": "string_id",
+          "name": "Environment name player#Name of the environment from WWise. This will be a DSP effect with Environmental Effect checked."
+        },
+        {
+          "type": "custom",
+          "name": "Dry mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "real",
+          "name": "Dry mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "custom",
+          "name": "Wet mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "real",
+          "name": "Wet mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "custom",
+          "name": "Player wet mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "real",
+          "name": "Player wet mix value#0 to 1 with 0 being none, and 1 being full."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lowpass_settings_4": {
+      "guid": "f38f05d94f33f9bbfed7ea95258f5861",
+      "size": 8,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "real",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "custom",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_environment_struct_definition_1": {
+      "guid": "06c54c2612a50d9a4a99f9906ce74f5f",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Reverb Settings"
+        },
+        {
+          "type": "struct",
+          "name": "reverb settings",
+          "definition": "reverb_settings_3"
+        },
+        {
+          "type": "custom",
+          "name": "Forced Lowpass"
+        },
+        {
+          "type": "struct",
+          "name": "lowpass settings",
+          "definition": "lowpass_settings_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

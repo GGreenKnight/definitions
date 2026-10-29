@@ -1,0 +1,89 @@
+{
+  "name": "scenario_required_resource",
+  "tag": "sdzg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "scenario_budget_references_block_3": {
+      "max_count": 4096,
+      "struct": "scenario_budget_references_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "scenario_required_resource_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_budget_references_block_3": {
+      "guid": "236e8b7d45de9d0d74ebea9c8233dafe",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_required_resource_struct_definition_1": {
+      "guid": "7efaf0abf0749cc3967ab2cb2a25c854",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "resources",
+          "definition": "scenario_budget_references_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,904 @@
+{
+  "name": "lens_flare",
+  "tag": "lens",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "lens_flare_reflection_block_3": {
+      "max_count": 32,
+      "struct": "lens_flare_reflection_block_3"
+    },
+    "lens_flare_scalar_animation_block_14": {
+      "max_count": 1,
+      "struct": "lens_flare_scalar_animation_block_14"
+    },
+    "lens_flare_scalar_animation_block_17": {
+      "max_count": 1,
+      "struct": "lens_flare_scalar_animation_block_17"
+    },
+    "lens_flare_color_animation_block_20": {
+      "max_count": 1,
+      "struct": "lens_flare_color_animation_block_20"
+    },
+    "lens_flare_color_animation_block_23": {
+      "max_count": 1,
+      "struct": "lens_flare_color_animation_block_23"
+    },
+    "lens_flare_scalar_animation_block_26": {
+      "max_count": 1,
+      "struct": "lens_flare_scalar_animation_block_26"
+    },
+    "lens_flare_scalar_animation_block_29": {
+      "max_count": 1,
+      "struct": "lens_flare_scalar_animation_block_29"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "lens_flare_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "radius_curve_interpolated_by_external_input_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scale_curve_X_interpolated_by_external_input_6": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scale_curve_Y_interpolated_by_external_input_8": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_11": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "brightness_curve_interpolated_by_external_input_10": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_13": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_curve_interpolated_by_external_input_12": {
+      "guid": "f9547f48444047288a3ed4b0faf5d1bd",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_13"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_reflection_block_3": {
+      "guid": "fbc3037746ca4bfc998a9f870a240dbc",
+      "size": 252,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "lens_flare_reflection_block_3_options_1"
+        },
+        {
+          "type": "short_integer",
+          "name": "bitmap index"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap override",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "angle",
+          "name": "falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "cutoff_angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate X falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate X cutoff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate Y falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate Y cutoff angle:degrees"
+        },
+        {
+          "type": "real",
+          "name": "near fade begin distance:world units#distance where the lens flare starts to fade in"
+        },
+        {
+          "type": "real",
+          "name": "near fade end distance:world units#distance where the lens flare is fully faded in"
+        },
+        {
+          "type": "real",
+          "name": "far fade begin distance:world units#distance at which the lens flare brightness is maximum"
+        },
+        {
+          "type": "real",
+          "name": "far fade end distance:world units#distance at which the lens flare brightness is minimum; set to zero to disable distance fading"
+        },
+        {
+          "type": "real",
+          "name": "rotation offset:degrees"
+        },
+        {
+          "type": "real",
+          "name": "axis offset:percent#percent offset in screen space along corona axis - 0.0 is on the corona, 1.0 is primary side edge of the screen, -1.0 is opposite side"
+        },
+        {
+          "type": "real",
+          "name": "x offset:percent"
+        },
+        {
+          "type": "real",
+          "name": "y offset:percent"
+        },
+        {
+          "type": "real_bounds",
+          "name": "offset bounds#the axis offset times corona offset is clamped between these values"
+        },
+        {
+          "type": "struct",
+          "name": "radius curve#interpolated by external input",
+          "definition": "radius_curve_interpolated_by_external_input_4"
+        },
+        {
+          "type": "struct",
+          "name": "scale curve X#interpolated by external input",
+          "definition": "scale_curve_X_interpolated_by_external_input_6"
+        },
+        {
+          "type": "struct",
+          "name": "scale curve Y#interpolated by external input",
+          "definition": "scale_curve_Y_interpolated_by_external_input_8"
+        },
+        {
+          "type": "struct",
+          "name": "brightness curve#interpolated by external input",
+          "definition": "brightness_curve_interpolated_by_external_input_10"
+        },
+        {
+          "type": "custom",
+          "name": "TINT COLOR"
+        },
+        {
+          "type": "struct",
+          "name": "color curve#interpolated by external input",
+          "definition": "color_curve_interpolated_by_external_input_12"
+        },
+        {
+          "type": "real_fraction",
+          "name": "modulation factor:[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "tint power:[0.1, 16]"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_16": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_15": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_scalar_animation_block_14": {
+      "guid": "70d8212640bbaabdb0037aa30bd1779d",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_15"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_19": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_18": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_19"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_scalar_animation_block_17": {
+      "guid": "70d8212640bbaabdb0037aa30bd1779d",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_color_mapping_22": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_animation_21": {
+      "guid": "3dbb7f1a4fd054f991da249d78307a29",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "color_animation_21_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG1",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "lens flare color mapping",
+          "definition": "lens_flare_color_mapping_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_color_animation_block_20": {
+      "guid": "a0b6d1314a2f2a6377cbd98d3a99dc8b",
+      "size": 44,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "color animation",
+          "definition": "color_animation_21"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_color_mapping_25": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_animation_24": {
+      "guid": "3dbb7f1a4fd054f991da249d78307a29",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "color_animation_24_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG1",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "lens flare color mapping",
+          "definition": "lens_flare_color_mapping_25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_color_animation_block_23": {
+      "guid": "a0b6d1314a2f2a6377cbd98d3a99dc8b",
+      "size": 44,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "color animation",
+          "definition": "color_animation_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_28": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_27": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_28"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_scalar_animation_block_26": {
+      "guid": "70d8212640bbaabdb0037aa30bd1779d",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_27"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_31": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_30": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_31"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_scalar_animation_block_29": {
+      "guid": "70d8212640bbaabdb0037aa30bd1779d",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_30"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lens_flare_struct_definition_1": {
+      "guid": "9685f76e79bdf3c13a6405727c9677e3",
+      "size": 328,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "LENS FLARE"
+        },
+        {
+          "type": "angle",
+          "name": "falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "cutoff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate X falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate X cutoff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate Y falloff angle:degrees"
+        },
+        {
+          "type": "angle",
+          "name": "separate Y cutoff angle:degrees"
+        },
+        {
+          "type": "custom",
+          "name": "OCCLUSION"
+        },
+        {
+          "type": "long_integer",
+          "name": "occlusion reflection index#occlusion information will be generated against the size of this reflection"
+        },
+        {
+          "type": "real",
+          "name": "occlusion offset distance:world units#distance along offset direction used to test occlusion"
+        },
+        {
+          "type": "short_enum",
+          "name": "occlusion offset direction",
+          "definition": "lens_flare_struct_definition_1_options_12"
+        },
+        {
+          "type": "pad",
+          "name": "PANTS",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "occlusion inner radius scale#percent of the corona to occlude against (ie 0.25, 0.125, etc)"
+        },
+        {
+          "type": "real",
+          "name": "occlusion min pixels"
+        },
+        {
+          "type": "real",
+          "name": "occlusion max pixels"
+        },
+        {
+          "type": "real",
+          "name": "near fade begin distance:world units#distance where the lens flare starts to fade in"
+        },
+        {
+          "type": "real",
+          "name": "near fade end distance:world units#distance where the lens flare is fully faded in"
+        },
+        {
+          "type": "real",
+          "name": "far fade begin distance{near fade distance}:world units#distance at which the lens flare brightness is maximum"
+        },
+        {
+          "type": "real",
+          "name": "far fade end distance{far fade distance}:world units#distance at which the lens flare brightness is minimum; set to zero to disable distance fading"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "lens_flare_struct_definition_1_options_22"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime flags!"
+        },
+        {
+          "type": "short_enum",
+          "name": "rotation function",
+          "definition": "lens_flare_struct_definition_1_options_24"
+        },
+        {
+          "type": "pad",
+          "name": "WWZC",
+          "definition": 2
+        },
+        {
+          "type": "angle",
+          "name": "rotation function scale:degrees"
+        },
+        {
+          "type": "custom",
+          "name": "EFFECT PARAMETERS"
+        },
+        {
+          "type": "short_enum",
+          "name": "falloff function",
+          "definition": "lens_flare_struct_definition_1_options_28"
+        },
+        {
+          "type": "pad",
+          "name": "COYUTLR",
+          "definition": 2
+        },
+        {
+          "type": "block",
+          "name": "reflections",
+          "definition": "lens_flare_reflection_block_3"
+        },
+        {
+          "type": "custom",
+          "name": "ANIMATION"
+        },
+        {
+          "type": "word_flags",
+          "name": "animation flags",
+          "definition": "lens_flare_struct_definition_1_options_32"
+        },
+        {
+          "type": "pad",
+          "name": "AQVC",
+          "definition": 2
+        },
+        {
+          "type": "block",
+          "name": "time brightness",
+          "definition": "lens_flare_scalar_animation_block_14"
+        },
+        {
+          "type": "block",
+          "name": "age brightness",
+          "definition": "lens_flare_scalar_animation_block_17"
+        },
+        {
+          "type": "block",
+          "name": "time color",
+          "definition": "lens_flare_color_animation_block_20"
+        },
+        {
+          "type": "block",
+          "name": "age color",
+          "definition": "lens_flare_color_animation_block_23"
+        },
+        {
+          "type": "block",
+          "name": "time rotation",
+          "definition": "lens_flare_scalar_animation_block_26"
+        },
+        {
+          "type": "block",
+          "name": "age rotation",
+          "definition": "lens_flare_scalar_animation_block_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "lens_flare_struct_definition_1_options_12": {
+      "options": [
+        "toward viewer",
+        "marker forward",
+        "none"
+      ]
+    },
+    "lens_flare_struct_definition_1_options_22": {
+      "options": [
+        "rotate occlusion testing box with lens flare#otherwise remains aligned with screen. turn on render_debug_lens_flares and look at green box",
+        "no occlusion test",
+        "only render in first person",
+        "only render in third person",
+        "no reflection opacity feedback#unchecked, each reflection evaluates its opacity from the previous reflection in the list",
+        "scale by marker",
+        "don't autofade#otherwise fade based on effect time, for effect attachments only",
+        "don't render while zoomed",
+        "use separate X and Y falloff angles"
+      ]
+    },
+    "lens_flare_struct_definition_1_options_24": {
+      "options": [
+        "none",
+        "rotation A",
+        "rotation B",
+        "rotation-translation",
+        "translation"
+      ]
+    },
+    "lens_flare_struct_definition_1_options_28": {
+      "options": [
+        "linear",
+        "late",
+        "very late",
+        "early",
+        "very early",
+        "cosine",
+        "zero",
+        "one"
+      ]
+    },
+    "lens_flare_reflection_block_3_options_1": {
+      "options": [
+        "rotate from center of screen",
+        "radius scaled by distance",
+        "radius scaled by occlusion factor",
+        "ignore external color",
+        "only move along Y{lock to flare X}",
+        "only move along X{lock to flare Y}",
+        "proximity to center as function input#The input to the curves below should be multiplied by 1 if at the center of the screen and 0 if at the edge",
+        "mirror across flare#Also renders this reflection's mirror image across the flare center",
+        "disabled for debugging",
+        "flip U coordinate",
+        "flip V coordinate",
+        "draw in world space instead of screen space",
+        "override falloff angles",
+        "override fade distances",
+        "use separate X and Y falloff angles",
+        "do not render"
+      ]
+    },
+    "lens_flare_struct_definition_1_options_32": {
+      "options": [
+        "synchronized"
+      ]
+    },
+    "color_animation_21_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "color_animation_24_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

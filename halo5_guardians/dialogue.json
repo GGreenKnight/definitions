@@ -1,0 +1,154 @@
+{
+  "name": "dialogue",
+  "tag": "udlg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "vocalization_stimuli_block_definition_4": {
+      "max_count": 6,
+      "struct": "vocalization_stimuli_block_definition_4"
+    },
+    "sound_references_block_3": {
+      "max_count": 4096,
+      "struct": "sound_references_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "dialogue_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vocalization_stimuli_block_definition_4": {
+      "guid": "8ea8b87c4ee8e73cfed4958cc69eefb6",
+      "size": 40,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "vocalization_stimuli_block_definition_4_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "AN",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "stimulus^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_references_block_3": {
+      "guid": "6751bc804348af51f0f06a88168fdb68",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "vocalization^"
+        },
+        {
+          "type": "block",
+          "name": "stimuli",
+          "definition": "vocalization_stimuli_block_definition_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dialogue_struct_definition_1": {
+      "guid": "422625eac72a06eb457c62a8fef347aa",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "global dialogue info",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "dialogue_struct_definition_1_options_3"
+        },
+        {
+          "type": "block",
+          "name": "vocalizations",
+          "definition": "sound_references_block_3"
+        },
+        {
+          "type": "string_id",
+          "name": "mission dialogue designator#3-letter mission dialogue designator name"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "dialogue_struct_definition_1_options_3": {
+      "options": [
+        "female"
+      ]
+    },
+    "vocalization_stimuli_block_definition_4_options_0": {
+      "options": [
+        "additive#this stimulus should add to the default vocalization instead of replacing it",
+        "don't suppress#this stimulus cannot be suppressed"
+      ]
+    }
+  },
+  "datas": {}
+}

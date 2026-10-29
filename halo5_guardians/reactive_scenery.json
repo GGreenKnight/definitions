@@ -1,0 +1,146 @@
+{
+  "name": "reactive_scenery",
+  "tag": "rscn",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "reactive_animation_3": {
+      "max_count": 8,
+      "struct": "reactive_animation_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "reactive_scenery_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "reactive_animation_3": {
+      "guid": "c2ef79c04f2008001355289984c2c463",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "animation name^"
+        },
+        {
+          "type": "real",
+          "name": "blend time:seconds"
+        },
+        {
+          "type": "real",
+          "name": "wait time:seconds"
+        },
+        {
+          "type": "real",
+          "name": "random start percent#0 to 1.0. Set to prevent objects animating in sync. The animation will start at a random point between 0 and the given value."
+        },
+        {
+          "type": "short_integer",
+          "name": "framerate:frames per second#0 defaults to 30 fps."
+        },
+        {
+          "type": "char_enum",
+          "name": "behavior",
+          "definition": "reactive_animation_3_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "type#Animation type. Ambient plays on top of other animations.",
+          "definition": "reactive_animation_3_options_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "reactive_scenery_struct_definition_1": {
+      "guid": "9bb3d263d6d80a38a94688c8bcb1eee1",
+      "size": 56,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Reactive Scenery"
+        },
+        {
+          "type": "block",
+          "name": "Animations#The animations this object will play in reaction to events.",
+          "definition": "reactive_animation_3"
+        },
+        {
+          "type": "real",
+          "name": "proximity distance:world units#How close a player must be to trigger a Proximity animation."
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "reactive_scenery_struct_definition_1_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "reactive_animation_3_options_5": {
+      "options": [
+        "Stopping",
+        "Looping",
+        "Bouncing"
+      ]
+    },
+    "reactive_animation_3_options_6": {
+      "options": [
+        "Idle",
+        "Proximity",
+        "Damage",
+        "Recover",
+        "Ambient"
+      ]
+    },
+    "reactive_scenery_struct_definition_1_options_5": {
+      "options": [
+        "halt Ambient animation during Damage animation"
+      ]
+    }
+  },
+  "datas": {}
+}

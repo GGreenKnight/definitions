@@ -1,0 +1,100 @@
+{
+  "name": "PowerupDefinition",
+  "tag": "pugm",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "genericModifier_3": {
+      "max_count": 32,
+      "struct": "genericModifier_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "PowerupDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "genericModifier_3": {
+      "guid": "0f9304be472aa4307021aba4b3c77452",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "malleable property name"
+        },
+        {
+          "type": "real",
+          "name": "scalar#scales the movement speed"
+        },
+        {
+          "type": "real",
+          "name": "duration#how long the scale is applied"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PowerupDefinition_struct_definition_1": {
+      "guid": "059a02c3efb1681cca11ba8b6cfa1d7b",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "UI fill meter color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "UI backer bitmap color"
+        },
+        {
+          "type": "block",
+          "name": "properties",
+          "definition": "genericModifier_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

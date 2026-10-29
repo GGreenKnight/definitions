@@ -1,0 +1,167 @@
+{
+  "name": "camo",
+  "tag": "cmoe",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "camo_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Active_Camo_Amount_3": {
+      "guid": "d6e8140f4278b16b26a7699bac94b495",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Shadow_Amount_5": {
+      "guid": "d6e8140f4278b16b26a7699bac94b495",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camo_struct_definition_1": {
+      "guid": "de8874e54e0ec97b056958d1707b3b08",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Active Camo Controls"
+        },
+        {
+          "type": "word_flags",
+          "name": "Flags",
+          "definition": "camo_struct_definition_1_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "KKHKKHKKL",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "Active Camo Amount",
+          "definition": "Active_Camo_Amount_3"
+        },
+        {
+          "type": "struct",
+          "name": "Shadow Amount",
+          "definition": "Shadow_Amount_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad_ced_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "camo_struct_definition_1_options_3": {
+      "options": [
+        "also apply to object children"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,1960 @@
+{
+  "name": "PlayerGlobalsDefinition",
+  "tag": "glpa",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "player_information_block_3": {
+      "max_count": 3,
+      "struct": "player_information_block_3"
+    },
+    "CameraGlobalsBlockDefinition_6": {
+      "max_count": 1,
+      "struct": "CameraGlobalsBlockDefinition_6"
+    },
+    "firstPersonpHiddenBodyRegionsBlock_14": {
+      "max_count": 32,
+      "struct": "firstPersonpHiddenBodyRegionsBlock_14"
+    },
+    "firstPersonpHiddenBodyRegionsBlock_17": {
+      "max_count": 32,
+      "struct": "firstPersonpHiddenBodyRegionsBlock_17"
+    },
+    "CoopCharacterRepresentationBlock_16": {
+      "max_count": 4,
+      "struct": "CoopCharacterRepresentationBlock_16"
+    },
+    "CoopTeamRepresentationBlock_15": {
+      "max_count": 3,
+      "struct": "CoopTeamRepresentationBlock_15"
+    },
+    "player_representation_block_13": {
+      "max_count": 3,
+      "struct": "player_representation_block_13"
+    },
+    "player_traits_vitality_block_19": {
+      "max_count": 1,
+      "struct": "player_traits_vitality_block_19"
+    },
+    "grenade_block_21": {
+      "max_count": 16,
+      "struct": "grenade_block_21"
+    },
+    "player_traits_weapons_block_20": {
+      "max_count": 1,
+      "struct": "player_traits_weapons_block_20"
+    },
+    "player_traits_movement_block_22": {
+      "max_count": 1,
+      "struct": "player_traits_movement_block_22"
+    },
+    "player_traits_appearance_block_23": {
+      "max_count": 1,
+      "struct": "player_traits_appearance_block_23"
+    },
+    "player_traits_sensors_block_24": {
+      "max_count": 1,
+      "struct": "player_traits_sensors_block_24"
+    },
+    "game_engine_player_traits_block_18": {
+      "max_count": 1,
+      "struct": "game_engine_player_traits_block_18"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "PlayerGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "grenade_aiming_determines_the_distance_along_the_aiming_vector_to_orient_the_grenade_based_on_the_camera_pitch_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_information_block_3": {
+      "guid": "45af4745477d4d242c7005a2e7ebcae5",
+      "size": 336,
+      "fields": [
+        {
+          "type": "real",
+          "name": "walking speed:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "run forward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "run backward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "run sideways:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "run acceleration:world units per second squared"
+        },
+        {
+          "type": "real",
+          "name": "sneak forward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "sneak backward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "sneak sideways:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "sneak acceleration:world units per second squared"
+        },
+        {
+          "type": "real",
+          "name": "downed forward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "downed backward:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "downed sideways:world units per second"
+        },
+        {
+          "type": "real",
+          "name": "downed acceleration:world units per second squared"
+        },
+        {
+          "type": "real",
+          "name": "airborne acceleration:world units per second squared"
+        },
+        {
+          "type": "real",
+          "name": "weapon ready anim scaler"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "grenade origin"
+        },
+        {
+          "type": "struct",
+          "name": "grenade aiming#determines the distance along the aiming vector to orient the grenade based on the camera pitch",
+          "definition": "grenade_aiming_determines_the_distance_along_the_aiming_vector_to_orient_the_grenade_based_on_the_camera_pitch_4"
+        },
+        {
+          "type": "real_bounds",
+          "name": "first person idle time:seconds"
+        },
+        {
+          "type": "real_fraction",
+          "name": "first person skip fraction:[0,1]"
+        },
+        {
+          "type": "tag_reference",
+          "name": "coop countdown sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "coop respawn sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "coop respawn effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "hologram death effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "binoculars zoom count"
+        },
+        {
+          "type": "real_bounds",
+          "name": "binoculars zoom range"
+        },
+        {
+          "type": "tag_reference",
+          "name": "night vision on{flashlight on}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "night vision off{flashlight off}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "tracking detection locked decay time"
+        },
+        {
+          "type": "real",
+          "name": "tracking detection locking decay time"
+        },
+        {
+          "type": "real",
+          "name": "fire team objective range"
+        },
+        {
+          "type": "real",
+          "name": "fire team sandbox range"
+        },
+        {
+          "type": "real",
+          "name": "fire team cone angle: in degrees"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pitch_values_7": {
+      "guid": "ae0596e725e7b3cae232c51fffbe8ce3",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "yaw_values_8": {
+      "guid": "3b480f4069fea2648db81f6e9945a67b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flying_camera_pitch_values_9": {
+      "guid": "7a0fe9ef6964e06f7abf174a2a66dd31",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flying_camera_yaw_values_10": {
+      "guid": "0440dc2efdcd5a3044488b1bdc1ab800",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "real",
+          "name": "Angular velocity#degrees per second"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flying_camera_speed_values_11": {
+      "guid": "b186a081e2afc595dd7197ed08d3136a",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Speed"
+        },
+        {
+          "type": "real",
+          "name": "Speed"
+        },
+        {
+          "type": "real",
+          "name": "Speed"
+        },
+        {
+          "type": "real",
+          "name": "Speed"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "flying_camera_thrust_values_12": {
+      "guid": "dec3164cb133beee3d5a110e281f854f",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Thrust"
+        },
+        {
+          "type": "real",
+          "name": "Thrust"
+        },
+        {
+          "type": "real",
+          "name": "Thrust"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CameraGlobalsBlockDefinition_6": {
+      "guid": "4c73792c41f6c46744aa4a8d794cbb50",
+      "size": 140,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Pitch values"
+        },
+        {
+          "type": "struct",
+          "name": "pitch values",
+          "definition": "pitch_values_7"
+        },
+        {
+          "type": "custom",
+          "name": "Yaw values"
+        },
+        {
+          "type": "struct",
+          "name": "yaw values",
+          "definition": "yaw_values_8"
+        },
+        {
+          "type": "custom",
+          "name": "Flying camera pitch values"
+        },
+        {
+          "type": "struct",
+          "name": "flying camera pitch values",
+          "definition": "flying_camera_pitch_values_9"
+        },
+        {
+          "type": "custom",
+          "name": "Flying camera yaw values"
+        },
+        {
+          "type": "struct",
+          "name": "flying camera yaw values",
+          "definition": "flying_camera_yaw_values_10"
+        },
+        {
+          "type": "custom",
+          "name": "Flying camera speed values"
+        },
+        {
+          "type": "struct",
+          "name": "flying camera speed values",
+          "definition": "flying_camera_speed_values_11"
+        },
+        {
+          "type": "custom",
+          "name": "Flying camera thrust values"
+        },
+        {
+          "type": "struct",
+          "name": "flying camera thrust values",
+          "definition": "flying_camera_thrust_values_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firstPersonpHiddenBodyRegionsBlock_14": {
+      "guid": "b6c7f81f4d112d748fb3a99cc52bf350",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "hidden region^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "firstPersonpHiddenBodyRegionsBlock_14_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firstPersonpHiddenBodyRegionsBlock_17": {
+      "guid": "b6c7f81f4d112d748fb3a99cc52bf350",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "hidden region^"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "firstPersonpHiddenBodyRegionsBlock_17_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CoopCharacterRepresentationBlock_16": {
+      "guid": "1a65f8581d94bd46df48b6e81d52a380",
+      "size": 140,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "character first person hands model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character first person hands variant name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character first person body (legs) model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character first person body (legs) variant name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character third person unit",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "character third person unit variant name"
+        },
+        {
+          "type": "char_enum",
+          "name": "character avatar name",
+          "definition": "CoopCharacterRepresentationBlock_16_options_6"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "hidden regions override#Applied to the first person body (legs) model. If this is left empty, will use the global hidden fpBody regions defined in playerglobals instead.",
+          "definition": "firstPersonpHiddenBodyRegionsBlock_17"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CoopTeamRepresentationBlock_15": {
+      "guid": "b17a8ec31a80b7ab14ca66bbf54bf982",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "Fireteam type",
+          "definition": "CoopTeamRepresentationBlock_15_options_0"
+        },
+        {
+          "type": "block",
+          "name": "Coop player representation#The visual representation a character in the fireteam",
+          "definition": "CoopCharacterRepresentationBlock_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_representation_block_13": {
+      "guid": "4f35e23a43d1facb26d7c690b796c449",
+      "size": 268,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "player_representation_block_13_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "hud screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "first person hands model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "first person multiplayer hands variant"
+        },
+        {
+          "type": "tag_reference",
+          "name": "first person body model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "first person multiplayer body variant"
+        },
+        {
+          "type": "block",
+          "name": "hidden fpBody regions",
+          "definition": "firstPersonpHiddenBodyRegionsBlock_14"
+        },
+        {
+          "type": "tag_reference",
+          "name": "third person unit",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "third person variant"
+        },
+        {
+          "type": "tag_reference",
+          "name": "binoculars zoom in sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "binoculars zoom out sounds",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "player information"
+        },
+        {
+          "type": "block",
+          "name": "Coop teams#The visual representation for the coop fireteams in campaign",
+          "definition": "CoopTeamRepresentationBlock_15"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_traits_vitality_block_19": {
+      "guid": "8f23b52b46507e5674d26ebde86fa6d5",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "should apply trait",
+          "definition": "player_traits_vitality_block_19_options_0"
+        },
+        {
+          "type": "custom",
+          "name": "damage resistance"
+        },
+        {
+          "type": "real",
+          "name": "damage resistance"
+        },
+        {
+          "type": "real",
+          "name": "shield multiplier"
+        },
+        {
+          "type": "real",
+          "name": "body multiplier"
+        },
+        {
+          "type": "real",
+          "name": "shield stun duration"
+        },
+        {
+          "type": "real",
+          "name": "shield recharge rate"
+        },
+        {
+          "type": "real",
+          "name": "body recharge rate"
+        },
+        {
+          "type": "real",
+          "name": "overshield recharge rate"
+        },
+        {
+          "type": "real",
+          "name": "vampirism percent"
+        },
+        {
+          "type": "real",
+          "name": "explosive damage resistance#incoming damage multiplied by (1 - resistance)"
+        },
+        {
+          "type": "real",
+          "name": "wheelman armor vehicle stun time modifier"
+        },
+        {
+          "type": "real",
+          "name": "wheelman armor vehicle recharge time modifier"
+        },
+        {
+          "type": "real",
+          "name": "wheelman armor vehicle emp disabled time modifier"
+        },
+        {
+          "type": "real",
+          "name": "fall damage multiplier"
+        },
+        {
+          "type": "char_enum",
+          "name": "headshot immunity",
+          "definition": "player_traits_vitality_block_19_options_15"
+        },
+        {
+          "type": "char_enum",
+          "name": "assassination immunity",
+          "definition": "player_traits_vitality_block_19_options_16"
+        },
+        {
+          "type": "char_enum",
+          "name": "deathless",
+          "definition": "player_traits_vitality_block_19_options_17"
+        },
+        {
+          "type": "char_enum",
+          "name": "fast track armor",
+          "definition": "player_traits_vitality_block_19_options_18"
+        },
+        {
+          "type": "char_enum",
+          "name": "powerup cancellation",
+          "definition": "player_traits_vitality_block_19_options_19"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "grenade_block_21": {
+      "guid": "5819a7ec4fc46525f005c197a4decad8",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "grenade reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "char_integer",
+          "name": "count"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_traits_weapons_block_20": {
+      "guid": "b29d76d042893a959dd081ab6107a9c0",
+      "size": 152,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "should apply trait",
+          "definition": "player_traits_weapons_block_20_options_0"
+        },
+        {
+          "type": "real",
+          "name": "damage multiplier"
+        },
+        {
+          "type": "real",
+          "name": "melee damage multiplier"
+        },
+        {
+          "type": "real",
+          "name": "grenade damage multiplier"
+        },
+        {
+          "type": "real",
+          "name": "grenade recharge seconds frag"
+        },
+        {
+          "type": "real",
+          "name": "grenade recharge seconds plasma"
+        },
+        {
+          "type": "real",
+          "name": "grenade recharge seconds spike"
+        },
+        {
+          "type": "real",
+          "name": "hero equipment energy use rate modifier"
+        },
+        {
+          "type": "real",
+          "name": "hero equipment energy recharge delay modifier"
+        },
+        {
+          "type": "real",
+          "name": "hero equipment energy recharge rate modifier"
+        },
+        {
+          "type": "real",
+          "name": "hero equipment initial energy modifier"
+        },
+        {
+          "type": "real",
+          "name": "equipment energy use rate modifier"
+        },
+        {
+          "type": "real",
+          "name": "equipment energy recharge delay modifier"
+        },
+        {
+          "type": "real",
+          "name": "equipment energy use recharge rate modifier"
+        },
+        {
+          "type": "real",
+          "name": "equipment energy initial energy modifier"
+        },
+        {
+          "type": "real",
+          "name": "switch speed modifier"
+        },
+        {
+          "type": "real",
+          "name": "reload speed modifier"
+        },
+        {
+          "type": "real",
+          "name": "explosive area of effect radius modifier"
+        },
+        {
+          "type": "real",
+          "name": "gunner armor modifier"
+        },
+        {
+          "type": "real",
+          "name": "stability armor modifier"
+        },
+        {
+          "type": "real",
+          "name": "drop recon warning seconds"
+        },
+        {
+          "type": "real",
+          "name": "assassination speed modifier"
+        },
+        {
+          "type": "char_enum",
+          "name": "weapon pickup allowed",
+          "definition": "player_traits_weapons_block_20_options_22"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "initial grenade count",
+          "definition": "grenade_block_21"
+        },
+        {
+          "type": "char_enum",
+          "name": "infinite ammo",
+          "definition": "player_traits_weapons_block_20_options_25"
+        },
+        {
+          "type": "char_enum",
+          "name": "equipment usage",
+          "definition": "player_traits_weapons_block_20_options_26"
+        },
+        {
+          "type": "char_enum",
+          "name": "equipment usage excepting auto turret#false will disable all equipment except auto turret",
+          "definition": "player_traits_weapons_block_20_options_27"
+        },
+        {
+          "type": "char_enum",
+          "name": "equipment drop",
+          "definition": "player_traits_weapons_block_20_options_28"
+        },
+        {
+          "type": "char_enum",
+          "name": "infinite equipment",
+          "definition": "player_traits_weapons_block_20_options_29"
+        },
+        {
+          "type": "char_enum",
+          "name": "weapons ammopack",
+          "definition": "player_traits_weapons_block_20_options_30"
+        },
+        {
+          "type": "char_enum",
+          "name": "weapons grenadier",
+          "definition": "player_traits_weapons_block_20_options_31"
+        },
+        {
+          "type": "char_enum",
+          "name": "weapons explode on death armormod#spawns projectile specified in globals.globals",
+          "definition": "player_traits_weapons_block_20_options_32"
+        },
+        {
+          "type": "char_enum",
+          "name": "weapons well equipped",
+          "definition": "player_traits_weapons_block_20_options_33"
+        },
+        {
+          "type": "pad",
+          "name": "weapons_padding",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "initial weapons/equipment"
+        },
+        {
+          "type": "string_id",
+          "name": "initial primary weapon"
+        },
+        {
+          "type": "string_id",
+          "name": "initial secondary weapon"
+        },
+        {
+          "type": "string_id",
+          "name": "initial equipment"
+        },
+        {
+          "type": "string_id",
+          "name": "initial tactical package"
+        },
+        {
+          "type": "string_id",
+          "name": "initial support upgrade"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_traits_movement_block_22": {
+      "guid": "4f62673d46f66d614d68a6a3b367c138",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "should apply trait",
+          "definition": "player_traits_movement_block_22_options_0"
+        },
+        {
+          "type": "real",
+          "name": "speed"
+        },
+        {
+          "type": "real",
+          "name": "gravity multiplier"
+        },
+        {
+          "type": "real",
+          "name": "jump multiplier"
+        },
+        {
+          "type": "real",
+          "name": "turn speed multiplier"
+        },
+        {
+          "type": "char_enum",
+          "name": "vehicle usage",
+          "definition": "player_traits_movement_block_22_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "double jump",
+          "definition": "player_traits_movement_block_22_options_6"
+        },
+        {
+          "type": "char_enum",
+          "name": "sprint usage",
+          "definition": "player_traits_movement_block_22_options_7"
+        },
+        {
+          "type": "char_enum",
+          "name": "automatic momentum usage",
+          "definition": "player_traits_movement_block_22_options_8"
+        },
+        {
+          "type": "char_enum",
+          "name": "vaulting enabled",
+          "definition": "player_traits_movement_block_22_options_9"
+        },
+        {
+          "type": "char_enum",
+          "name": "stealthy",
+          "definition": "player_traits_movement_block_22_options_10"
+        },
+        {
+          "type": "char_enum",
+          "name": "clamber enabled",
+          "definition": "player_traits_movement_block_22_options_11"
+        },
+        {
+          "type": "char_enum",
+          "name": "thrusters enabled",
+          "definition": "player_traits_movement_block_22_options_12"
+        },
+        {
+          "type": "char_enum",
+          "name": "stabilizer enabled",
+          "definition": "player_traits_movement_block_22_options_13"
+        },
+        {
+          "type": "pad",
+          "name": "grue",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_traits_appearance_block_23": {
+      "guid": "3f91581241dcea75a641bca001fc1ce8",
+      "size": 12,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "active camo",
+          "definition": "player_traits_appearance_block_23_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "waypoint",
+          "definition": "player_traits_appearance_block_23_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "gamertag visible",
+          "definition": "player_traits_appearance_block_23_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "aura",
+          "definition": "player_traits_appearance_block_23_options_3"
+        },
+        {
+          "type": "custom",
+          "name": "death effect/attached effect"
+        },
+        {
+          "type": "string_id",
+          "name": "death effect"
+        },
+        {
+          "type": "string_id",
+          "name": "attached effect"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_traits_sensors_block_24": {
+      "guid": "e4c40b0c4b60e067713310aaaa5dfe9b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "should apply trait",
+          "definition": "player_traits_sensors_block_24_options_0"
+        },
+        {
+          "type": "real",
+          "name": "motion tracker range"
+        },
+        {
+          "type": "char_enum",
+          "name": "motion tracker",
+          "definition": "player_traits_sensors_block_24_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "motion tracker while zoomed",
+          "definition": "player_traits_sensors_block_24_options_3"
+        },
+        {
+          "type": "char_enum",
+          "name": "directional damage indicator",
+          "definition": "player_traits_sensors_block_24_options_4"
+        },
+        {
+          "type": "char_enum",
+          "name": "vision mode",
+          "definition": "player_traits_sensors_block_24_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "battle awareness",
+          "definition": "player_traits_sensors_block_24_options_6"
+        },
+        {
+          "type": "char_enum",
+          "name": "threat view",
+          "definition": "player_traits_sensors_block_24_options_7"
+        },
+        {
+          "type": "char_enum",
+          "name": "aural enhancement",
+          "definition": "player_traits_sensors_block_24_options_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "game_engine_player_traits_block_18": {
+      "guid": "aecdfa4e47fd754181e799aa907f53f6",
+      "size": 140,
+      "fields": [
+        {
+          "type": "block",
+          "name": "vitality traits",
+          "definition": "player_traits_vitality_block_19"
+        },
+        {
+          "type": "block",
+          "name": "weapon traits",
+          "definition": "player_traits_weapons_block_20"
+        },
+        {
+          "type": "block",
+          "name": "movement traits",
+          "definition": "player_traits_movement_block_22"
+        },
+        {
+          "type": "block",
+          "name": "appearance traits",
+          "definition": "player_traits_appearance_block_23"
+        },
+        {
+          "type": "block",
+          "name": "sensor traits",
+          "definition": "player_traits_sensors_block_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "player_malleable_properties_25": {
+      "guid": "8fd758404ad657b7c63ff199c38ecbd6",
+      "size": 96,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "motion tracker normal range#distance at which objects appear on the motion tracker"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker normal range#distance at which objects appear on the motion tracker",
+          "definition": "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26"
+        },
+        {
+          "type": "custom",
+          "name": "motion tracker extended range#distance at which objects appear on the motion tracker"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker extended range#distance at which objects appear on the motion tracker",
+          "definition": "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27"
+        },
+        {
+          "type": "custom",
+          "name": "motion tracker vehicle range#distance at which objects appear on the motion tracker"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker vehicle range#distance at which objects appear on the motion tracker",
+          "definition": "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28"
+        },
+        {
+          "type": "custom",
+          "name": "motion tracker threshold speed (friendly):world units per second#speed above which friendly/neutral objects appear on the player's motion tracker"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker threshold speed (friendly):world units per second#speed above which friendly/neutral objects appear on the player's motion tracker",
+          "definition": "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29"
+        },
+        {
+          "type": "custom",
+          "name": "motion tracker threshold speed (enemy):world units per second#speed above which enemy objects appear on the player's motion tracker"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker threshold speed (enemy):world units per second#speed above which enemy objects appear on the player's motion tracker",
+          "definition": "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30"
+        },
+        {
+          "type": "custom",
+          "name": "motion tracker visibility scalar#scales how fast this player will appear to be moving to other motion trackers (does not scale the actual speed)"
+        },
+        {
+          "type": "struct",
+          "name": "motion tracker visibility scalar#scales how fast this player will appear to be moving to other motion trackers (does not scale the actual speed)",
+          "definition": "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PlayerGlobalsDefinition_struct_definition_1": {
+      "guid": "5b755586375bea498d6ae7a83e29dd2a",
+      "size": 224,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "@player information",
+          "definition": "player_information_block_3"
+        },
+        {
+          "type": "block",
+          "name": "@player camera",
+          "definition": "CameraGlobalsBlockDefinition_6"
+        },
+        {
+          "type": "block",
+          "name": "@player representation",
+          "definition": "player_representation_block_13"
+        },
+        {
+          "type": "block",
+          "name": "default player traits",
+          "definition": "game_engine_player_traits_block_18"
+        },
+        {
+          "type": "struct",
+          "name": "player malleable properties",
+          "definition": "player_malleable_properties_25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "player_representation_block_13_options_0": {
+      "options": [
+        "can use health packs"
+      ]
+    },
+    "firstPersonpHiddenBodyRegionsBlock_14_options_1": {
+      "options": [
+        "visible in ICS"
+      ]
+    },
+    "CoopTeamRepresentationBlock_15_options_0": {
+      "options": [
+        "Chief (Blue team)",
+        "Locke (Osiris Team)",
+        "Chief (cracked visor and blue team)"
+      ]
+    },
+    "CoopCharacterRepresentationBlock_16_options_6": {
+      "options": [
+        "None",
+        "Masterchief",
+        "Fred",
+        "Kelly",
+        "Linda",
+        "Locke",
+        "Thorne",
+        "Tanaka",
+        "Vale"
+      ]
+    },
+    "firstPersonpHiddenBodyRegionsBlock_17_options_1": {
+      "options": [
+        "visible in ICS"
+      ]
+    },
+    "player_traits_vitality_block_19_options_0": {
+      "options": [
+        "damage resistance",
+        "shield multiplier",
+        "body multiplier",
+        "shield stun duration",
+        "shield recharge rate",
+        "body recharge rate",
+        "overshield recharge rate",
+        "vampirism percent",
+        "explosive damage resistance",
+        "wheelman armor vehicle stun time modifier",
+        "wheelman armor vehicle recharge time modifier",
+        "wheelman armor vehicle emp disabled time modifier",
+        "fall damage multiplier"
+      ]
+    },
+    "player_traits_vitality_block_19_options_15": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_vitality_block_19_options_16": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_vitality_block_19_options_17": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_vitality_block_19_options_18": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_vitality_block_19_options_19": {
+      "options": [
+        "unchanged",
+        "none",
+        "no_overshield"
+      ]
+    },
+    "player_traits_weapons_block_20_options_0": {
+      "options": [
+        "damage multiplier",
+        "melee damage multiplier",
+        "grenade damage multiplier",
+        "grenade recharge seconds frag",
+        "grenade recharge seconds plasma",
+        "grenade recharge seconds spike",
+        "hero equipment energy use rate modifier",
+        "hero equipment energy recharge delay modifier",
+        "hero equipment energy recharge rate modifier",
+        "hero equipment initial energy modifier",
+        "equipment energy use rate modifier",
+        "equipment energy recharge delay modifier",
+        "equipment energy use recharge rate modifier",
+        "equipment energy initial energy modifier",
+        "switch speed modifier",
+        "reload speed modifier",
+        "explosive area of effect radius modifier",
+        "gunner armor modifier",
+        "stability armor modifier",
+        "drop recon warning seconds",
+        "assassination speed modifier"
+      ]
+    },
+    "player_traits_weapons_block_20_options_22": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_25": {
+      "options": [
+        "unchanged",
+        "off",
+        "on",
+        "bottomless_clip"
+      ]
+    },
+    "player_traits_weapons_block_20_options_26": {
+      "options": [
+        "unchanged",
+        "off",
+        "not with objectives",
+        "on"
+      ]
+    },
+    "player_traits_weapons_block_20_options_27": {
+      "options": [
+        "unchanged",
+        "off",
+        "not with objectives",
+        "on"
+      ]
+    },
+    "player_traits_weapons_block_20_options_28": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_29": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_30": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_31": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_32": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_weapons_block_20_options_33": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_0": {
+      "options": [
+        "speed",
+        "gravity multiplier",
+        "jump multiplier",
+        "turn speed multiplier"
+      ]
+    },
+    "player_traits_movement_block_22_options_5": {
+      "options": [
+        "unchanged",
+        "none",
+        "passenger_only",
+        "driver_only",
+        "gunner_only",
+        "not_passenger",
+        "not_driver",
+        "not_gunner",
+        "full"
+      ]
+    },
+    "player_traits_movement_block_22_options_6": {
+      "options": [
+        "unchanged",
+        "off",
+        "on",
+        "on_plus_lunge"
+      ]
+    },
+    "player_traits_movement_block_22_options_7": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_8": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_9": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_10": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_11": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_12": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_movement_block_22_options_13": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_appearance_block_23_options_0": {
+      "options": [
+        "unchanged",
+        "off",
+        "poor",
+        "good",
+        "excellent",
+        "invisible"
+      ]
+    },
+    "player_traits_appearance_block_23_options_1": {
+      "options": [
+        "unchanged",
+        "off",
+        "allies",
+        "all"
+      ]
+    },
+    "player_traits_appearance_block_23_options_2": {
+      "options": [
+        "unchanged",
+        "off",
+        "allies",
+        "all"
+      ]
+    },
+    "player_traits_appearance_block_23_options_3": {
+      "options": [
+        "unchanged",
+        "off",
+        "team_color",
+        "black",
+        "white"
+      ]
+    },
+    "player_traits_sensors_block_24_options_0": {
+      "options": [
+        "motion tracker range"
+      ]
+    },
+    "player_traits_sensors_block_24_options_2": {
+      "options": [
+        "unchanged",
+        "off",
+        "moving_friendly_bipeds_moving_neutral_vehicles",
+        "moving_bipeds_moving_vehicles",
+        "all_bipeds_moving_vehicles"
+      ]
+    },
+    "player_traits_sensors_block_24_options_3": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_sensors_block_24_options_4": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_sensors_block_24_options_5": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_sensors_block_24_options_6": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_sensors_block_24_options_7": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "player_traits_sensors_block_24_options_8": {
+      "options": [
+        "unchanged",
+        "false",
+        "true"
+      ]
+    },
+    "motion_tracker_normal_range_distance_at_which_objects_appear_on_the_motion_tracker_26_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "motion_tracker_extended_range_distance_at_which_objects_appear_on_the_motion_tracker_27_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "motion_tracker_vehicle_range_distance_at_which_objects_appear_on_the_motion_tracker_28_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "motion_tracker_threshold_speed__friendly__world_units_per_second_speed_above_which_friendly_neutral_objects_appear_on_the_player_s_motion_tracker_29_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "motion_tracker_threshold_speed__enemy__world_units_per_second_speed_above_which_enemy_objects_appear_on_the_player_s_motion_tracker_30_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "motion_tracker_visibility_scalar_scales_how_fast_this_player_will_appear_to_be_moving_to_other_motion_trackers__does_not_scale_the_actual_speed__31_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

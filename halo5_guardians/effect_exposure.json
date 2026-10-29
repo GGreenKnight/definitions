@@ -1,0 +1,296 @@
+{
+  "name": "effect_exposure",
+  "tag": "efex",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "effect_exposure_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Alpha_blend_Override_3": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Additive_Override_4": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Lit_Alpha_blend_Override_5": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Lit_Additive_Override_6": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Surface_Alpha_blend_Override_7": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Surface_Additive_Override_8": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Cheap_Light_Override_9": {
+      "guid": "7926291e58471f22c251695eaeceb61b",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "min exposure"
+        },
+        {
+          "type": "real",
+          "name": "max exposure"
+        },
+        {
+          "type": "real",
+          "name": "underexposed slope"
+        },
+        {
+          "type": "real",
+          "name": "overexposed slope"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "effect_exposure_struct_definition_1": {
+      "guid": "2b7d6ae8e9674397dbeb31af11c85b32",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Alpha-blend Override"
+        },
+        {
+          "type": "struct",
+          "name": "Alpha-blend Override",
+          "definition": "Alpha_blend_Override_3"
+        },
+        {
+          "type": "custom",
+          "name": "Additive Override"
+        },
+        {
+          "type": "struct",
+          "name": "Additive Override",
+          "definition": "Additive_Override_4"
+        },
+        {
+          "type": "custom",
+          "name": "Lit Alpha-blend Override"
+        },
+        {
+          "type": "struct",
+          "name": "Lit Alpha-blend Override",
+          "definition": "Lit_Alpha_blend_Override_5"
+        },
+        {
+          "type": "custom",
+          "name": "Lit Additive Override"
+        },
+        {
+          "type": "struct",
+          "name": "Lit Additive Override",
+          "definition": "Lit_Additive_Override_6"
+        },
+        {
+          "type": "custom",
+          "name": "Surface Alpha-blend Override"
+        },
+        {
+          "type": "struct",
+          "name": "Surface Alpha-blend Override",
+          "definition": "Surface_Alpha_blend_Override_7"
+        },
+        {
+          "type": "custom",
+          "name": "Surface Additive Override"
+        },
+        {
+          "type": "struct",
+          "name": "Surface Additive Override",
+          "definition": "Surface_Additive_Override_8"
+        },
+        {
+          "type": "custom",
+          "name": "Cheap Light Override"
+        },
+        {
+          "type": "struct",
+          "name": "Cheap Light Override",
+          "definition": "Cheap_Light_Override_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

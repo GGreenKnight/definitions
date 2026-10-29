@@ -1,0 +1,105 @@
+{
+  "name": "firefight_globals",
+  "tag": "ffgd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "firefightWaveTemplatesBlock_3": {
+      "max_count": 128,
+      "struct": "firefightWaveTemplatesBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "firefight_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firefightWaveTemplatesBlock_3": {
+      "guid": "0b9922fa452f18810340d2b463440b5c",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "wave template",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "firefight_globals_struct_definition_1": {
+      "guid": "8f441e23288c511d02e7f9ed064345ce",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "wave templates",
+          "definition": "firefightWaveTemplatesBlock_3"
+        },
+        {
+          "type": "custom",
+          "name": "PLAYER SPAWN INFLUENCERS"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Influencer default spawn settings",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "tag_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

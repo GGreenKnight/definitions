@@ -1,0 +1,124 @@
+{
+  "name": "script_container",
+  "tag": "hscn",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "hs_source_reference_block_4": {
+      "max_count": 128,
+      "struct": "hs_source_reference_block_4"
+    },
+    "hs_source_reference_block_5": {
+      "max_count": 128,
+      "struct": "hs_source_reference_block_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "script_container_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "hs_source_reference_block_4": {
+      "guid": "8cf36b3a4fcc8c22839b8aa3d20ec8ce",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "hs_source_reference_block_5": {
+      "guid": "8cf36b3a4fcc8c22839b8aa3d20ec8ce",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "script_data_3": {
+      "guid": "d87fef8047c307de28fc85973f64538e",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "source file references*",
+          "definition": "hs_source_reference_block_4"
+        },
+        {
+          "type": "block",
+          "name": "external source references",
+          "definition": "hs_source_reference_block_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "script_container_struct_definition_1": {
+      "guid": "c41bc574c86f6b0990895fae42f6296c",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "script data",
+          "definition": "script_data_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

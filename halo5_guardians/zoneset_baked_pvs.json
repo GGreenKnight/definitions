@@ -1,0 +1,191 @@
+{
+  "name": "zoneset_baked_pvs",
+  "tag": "pvsb",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "ScenarioZoneSetBakedPVSSubregionLongBlock_3": {
+      "max_count": 65535,
+      "struct": "ScenarioZoneSetBakedPVSSubregionLongBlock_3"
+    },
+    "ScenarioZoneSetBakedPVSSubregionDWORDBlock_6": {
+      "max_count": 65535,
+      "struct": "ScenarioZoneSetBakedPVSSubregionDWORDBlock_6"
+    },
+    "ScenarioZoneSetBakedPVSSubregionBlock_5": {
+      "max_count": 65535,
+      "struct": "ScenarioZoneSetBakedPVSSubregionBlock_5"
+    },
+    "ScenarioZoneSetBakedPVSPerBSPDataBlock_4": {
+      "max_count": 32,
+      "struct": "ScenarioZoneSetBakedPVSPerBSPDataBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "zoneset_baked_pvs_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ScenarioZoneSetBakedPVSSubregionLongBlock_3": {
+      "guid": "10cb84ff4e41d957488770a494251e82",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "Value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ScenarioZoneSetBakedPVSSubregionDWORDBlock_6": {
+      "guid": "1daa41de4ec6dee98e799b9ef7f6e834",
+      "size": 4,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "Value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ScenarioZoneSetBakedPVSSubregionBlock_5": {
+      "guid": "8f7434e34e1696eb33e946979c991c9a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Visibility array",
+          "definition": "ScenarioZoneSetBakedPVSSubregionDWORDBlock_6"
+        },
+        {
+          "type": "word_integer",
+          "name": "sx"
+        },
+        {
+          "type": "word_integer",
+          "name": "sy"
+        },
+        {
+          "type": "real",
+          "name": "z min"
+        },
+        {
+          "type": "real",
+          "name": "z max"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ScenarioZoneSetBakedPVSPerBSPDataBlock_4": {
+      "guid": "10401e2c4be66bd919675daafa6a56d5",
+      "size": 88,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Subregion array",
+          "definition": "ScenarioZoneSetBakedPVSSubregionBlock_5"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "AABB min"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "AABB max"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "Block Size"
+        },
+        {
+          "type": "long_integer",
+          "name": "Instance count"
+        },
+        {
+          "type": "long_integer",
+          "name": "Block count X"
+        },
+        {
+          "type": "long_integer",
+          "name": "Block count Y"
+        },
+        {
+          "type": "long_integer",
+          "name": "BSP index"
+        },
+        {
+          "type": "int64_integer",
+          "name": "Instance Postprocess Checksum!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "zoneset_baked_pvs_struct_definition_1": {
+      "guid": "5b0754531392e1127422ab198c93d888",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "BSP index map",
+          "definition": "ScenarioZoneSetBakedPVSSubregionLongBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "Per BSP data",
+          "definition": "ScenarioZoneSetBakedPVSPerBSPDataBlock_4"
+        },
+        {
+          "type": "pad",
+          "name": "resource data",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

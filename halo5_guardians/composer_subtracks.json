@@ -1,0 +1,1963 @@
+{
+  "name": "composer_subtracks",
+  "tag": "subt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "composerSubActionBlock_4": {
+      "max_count": 10000,
+      "struct": "composerSubActionBlock_4"
+    },
+    "composerTextDataBlock_11": {
+      "max_count": 10000,
+      "struct": "composerTextDataBlock_11"
+    },
+    "composerEditorSubActionBlock_7": {
+      "max_count": 10000,
+      "struct": "composerEditorSubActionBlock_7"
+    },
+    "subActionPointBlock_12": {
+      "max_count": 10000,
+      "struct": "subActionPointBlock_12"
+    },
+    "composerBranchElementBlock_15": {
+      "max_count": 8,
+      "struct": "composerBranchElementBlock_15"
+    },
+    "subActionBranchBlock_14": {
+      "max_count": 10000,
+      "struct": "subActionBranchBlock_14"
+    },
+    "composerDialogBlock_18": {
+      "max_count": 8,
+      "struct": "composerDialogBlock_18"
+    },
+    "subActionDialogBlock_17": {
+      "max_count": 10000,
+      "struct": "subActionDialogBlock_17"
+    },
+    "subActionSubtitleBlock_20": {
+      "max_count": 10000,
+      "struct": "subActionSubtitleBlock_20"
+    },
+    "subActionEffectBlock_21": {
+      "max_count": 10000,
+      "struct": "subActionEffectBlock_21"
+    },
+    "composerSubjectBlock_25": {
+      "max_count": 16,
+      "struct": "composerSubjectBlock_25"
+    },
+    "subActionLightBlock_23": {
+      "max_count": 10000,
+      "struct": "subActionLightBlock_23"
+    },
+    "composerSubjectBlock_27": {
+      "max_count": 16,
+      "struct": "composerSubjectBlock_27"
+    },
+    "subActionClipPlaneBlock_26": {
+      "max_count": 10000,
+      "struct": "subActionClipPlaneBlock_26"
+    },
+    "subActionFunctionBlock_28": {
+      "max_count": 10000,
+      "struct": "subActionFunctionBlock_28"
+    },
+    "subActionUserInputConstraintsBlock_31": {
+      "max_count": 10000,
+      "struct": "subActionUserInputConstraintsBlock_31"
+    },
+    "subActionGenericBlock_32": {
+      "max_count": 10000,
+      "struct": "subActionGenericBlock_32"
+    },
+    "subActionObjectBlock_33": {
+      "max_count": 10000,
+      "struct": "subActionObjectBlock_33"
+    },
+    "subActionValueBlock_34": {
+      "max_count": 10000,
+      "struct": "subActionValueBlock_34"
+    },
+    "subActionTriggerBlock_35": {
+      "max_count": 10000,
+      "struct": "subActionTriggerBlock_35"
+    },
+    "composerScriptBlock_36": {
+      "max_count": 10000,
+      "struct": "composerScriptBlock_36"
+    },
+    "composerPlayerDataBlock_39": {
+      "max_count": 1,
+      "struct": "composerPlayerDataBlock_39"
+    },
+    "subActionUISceneBlock_37": {
+      "max_count": 10000,
+      "struct": "subActionUISceneBlock_37"
+    },
+    "subActionNodeGraphEventBlock_40": {
+      "max_count": 10000,
+      "struct": "subActionNodeGraphEventBlock_40"
+    },
+    "subActionGameEngineVignetteEventBlock_41": {
+      "max_count": 10000,
+      "struct": "subActionGameEngineVignetteEventBlock_41"
+    },
+    "subActionCameraLensDirtBlock_42": {
+      "max_count": 10000,
+      "struct": "subActionCameraLensDirtBlock_42"
+    },
+    "subActionTransformBlock_43": {
+      "max_count": 10000,
+      "struct": "subActionTransformBlock_43"
+    },
+    "composerSubTrackBlock_3": {
+      "max_count": 1000,
+      "struct": "composerSubTrackBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "composer_subtracks_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Start_Condition_Script__5": {
+      "guid": "385eadfd436d9c0d6de88a8e2c7d69a6",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string",
+          "name": "Script Name!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Start_Condition_Script__5_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "End_Condition_Script__6": {
+      "guid": "385eadfd436d9c0d6de88a8e2c7d69a6",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string",
+          "name": "Script Name!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "End_Condition_Script__6_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerSubActionBlock_4": {
+      "guid": "dc209993442ce81d869c6f92f854bf5e",
+      "size": 160,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "Type^",
+          "definition": "composerSubActionBlock_4_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Start Type",
+          "definition": "composerSubActionBlock_4_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "End Type",
+          "definition": "composerSubActionBlock_4_options_2"
+        },
+        {
+          "type": "short_integer",
+          "name": "Data Index*"
+        },
+        {
+          "type": "long_integer",
+          "name": "Start Action"
+        },
+        {
+          "type": "long_integer",
+          "name": "Start Offset"
+        },
+        {
+          "type": "struct",
+          "name": "Start Condition Script!",
+          "definition": "Start_Condition_Script__5"
+        },
+        {
+          "type": "struct",
+          "name": "End Condition Script!",
+          "definition": "End_Condition_Script__6"
+        },
+        {
+          "type": "long_integer",
+          "name": "End Action"
+        },
+        {
+          "type": "long_integer",
+          "name": "End Offset"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Start_Condition_Script_8": {
+      "guid": "5541b07847e181b921be7bab894c3af7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "End_Condition_Script_9": {
+      "guid": "5541b07847e181b921be7bab894c3af7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Custom_Script_10": {
+      "guid": "5541b07847e181b921be7bab894c3af7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerTextDataBlock_11": {
+      "guid": "5541b07847e181b921be7bab894c3af7",
+      "size": 32,
+      "fields": [
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerEditorSubActionBlock_7": {
+      "guid": "730356744f19a2c6076683a8a18562d7",
+      "size": 388,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "Comment"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Color"
+        },
+        {
+          "type": "byte_integer",
+          "name": "SubTrack*"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Editor Flags!*",
+          "definition": "composerEditorSubActionBlock_7_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "Start Condition Script"
+        },
+        {
+          "type": "struct",
+          "name": "Start Condition Script",
+          "definition": "Start_Condition_Script_8"
+        },
+        {
+          "type": "custom",
+          "name": "End Condition Script"
+        },
+        {
+          "type": "struct",
+          "name": "End Condition Script",
+          "definition": "End_Condition_Script_9"
+        },
+        {
+          "type": "custom",
+          "name": "Custom Script"
+        },
+        {
+          "type": "struct",
+          "name": "Custom Script",
+          "definition": "Custom_Script_10"
+        },
+        {
+          "type": "block",
+          "name": "Branch Scripts",
+          "definition": "composerTextDataBlock_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_13": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_13_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_13_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_13_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionPointBlock_12": {
+      "guid": "571939464181abcd268acbbd3c425ab5",
+      "size": 76,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionPointBlock_12_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "Point"
+        },
+        {
+          "type": "struct",
+          "name": "Point",
+          "definition": "Point_13"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Asset^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Condition_Script__16": {
+      "guid": "385eadfd436d9c0d6de88a8e2c7d69a6",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string",
+          "name": "Script Name!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Condition_Script__16_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerBranchElementBlock_15": {
+      "guid": "5a1e6c294e1975cc474e5e8695e6c734",
+      "size": 72,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "Target Action"
+        },
+        {
+          "type": "struct",
+          "name": "Condition Script!",
+          "definition": "Condition_Script__16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionBranchBlock_14": {
+      "guid": "453617f74519bf27444fac93546db442",
+      "size": 28,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Elements",
+          "definition": "composerBranchElementBlock_15"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerDialogBlock_18": {
+      "guid": "d8d8cc15472dbc1dba2fd9a12f4bfc64",
+      "size": 48,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Dialog^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "Weight"
+        },
+        {
+          "type": "real",
+          "name": "Scale"
+        },
+        {
+          "type": "string_id",
+          "name": "Subtitle"
+        },
+        {
+          "type": "string_id",
+          "name": "Default Sound Effect"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Subject_19": {
+      "guid": "c96ca9b04656db1170856187c9c031b8",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Object Name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Subject_19_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionDialogBlock_17": {
+      "guid": "f6581811432d19d7394336846e76ce59",
+      "size": 44,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Dialogs",
+          "definition": "composerDialogBlock_18"
+        },
+        {
+          "type": "struct",
+          "name": "Subject",
+          "definition": "Subject_19"
+        },
+        {
+          "type": "string_id",
+          "name": "Character"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionSubtitleBlock_20": {
+      "guid": "01b162de42f09e302207dab497c62434",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Subtitle"
+        },
+        {
+          "type": "string_id",
+          "name": "Character"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_22": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_22_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_22_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_22_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionEffectBlock_21": {
+      "guid": "a3550dc64f87b1758881a0a56a47d43e",
+      "size": 88,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionEffectBlock_21_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "Effect^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Point"
+        },
+        {
+          "type": "struct",
+          "name": "Point",
+          "definition": "Point_22"
+        },
+        {
+          "type": "real",
+          "name": "Scale"
+        },
+        {
+          "type": "string_id",
+          "name": "Function A"
+        },
+        {
+          "type": "string_id",
+          "name": "Function B"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_24": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_24_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_24_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_24_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerSubjectBlock_25": {
+      "guid": "c96ca9b04656db1170856187c9c031b8",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Object Name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "composerSubjectBlock_25_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionLightBlock_23": {
+      "guid": "edea178a459dcfe026624e856153793f",
+      "size": 76,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Lights Tag Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Light ID"
+        },
+        {
+          "type": "custom",
+          "name": "Point"
+        },
+        {
+          "type": "struct",
+          "name": "Point",
+          "definition": "Point_24"
+        },
+        {
+          "type": "block",
+          "name": "Linked Objects",
+          "definition": "composerSubjectBlock_25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerSubjectBlock_27": {
+      "guid": "c96ca9b04656db1170856187c9c031b8",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Object Name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "composerSubjectBlock_27_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionClipPlaneBlock_26": {
+      "guid": "a0b7bdcc417b78c591621c85e1632fb6",
+      "size": 52,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "Plane Center"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Plane Direction"
+        },
+        {
+          "type": "block",
+          "name": "Subjects",
+          "definition": "composerSubjectBlock_27"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_30": {
+      "guid": "9019aba54a1a4c5a34f01aadada1fd11",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_29": {
+      "guid": "384eba0045342aa943d011ad26ef234a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_30"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionFunctionBlock_28": {
+      "guid": "df6fd1bd4cc5294156197f9177927aec",
+      "size": 36,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionFunctionBlock_28_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Function Name^"
+        },
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionUserInputConstraintsBlock_31": {
+      "guid": "44e22c944d8c485d2f72c193fa82e226",
+      "size": 12,
+      "fields": [
+        {
+          "type": "rectangle_2d",
+          "name": "Maximum Look Angles"
+        },
+        {
+          "type": "real",
+          "name": "Frictional Force"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionGenericBlock_32": {
+      "guid": "caed71024f77f73601850798ca41f38a",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Asset^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "Blend Frames"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionObjectBlock_33": {
+      "guid": "9da5b67140f1f3f9a4f1e0828ce2f3ba",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionObjectBlock_33_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionValueBlock_34": {
+      "guid": "499ed478405bafcecf1bcf850ad2a328",
+      "size": 12,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionValueBlock_34_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "Start Value"
+        },
+        {
+          "type": "real",
+          "name": "End Value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionTriggerBlock_35": {
+      "guid": "361c73e94e69d217225e5dac4bf18242",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "subActionTriggerBlock_35_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerScriptBlock_36": {
+      "guid": "385eadfd436d9c0d6de88a8e2c7d69a6",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string",
+          "name": "Script Name!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "composerScriptBlock_36_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "data",
+          "name": "Data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Script CRC!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_38": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_38_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_38_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_38_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerPlayerDataBlock_39": {
+      "guid": "8e2771a34cd95760b6d45eb613f5dbce",
+      "size": 12,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Player Type",
+          "definition": "composerPlayerDataBlock_39_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Multiplayer Team",
+          "definition": "composerPlayerDataBlock_39_options_1"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "composerPlayerDataBlock_39_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 1
+        },
+        {
+          "type": "long_integer",
+          "name": "Player Index"
+        },
+        {
+          "type": "long_integer",
+          "name": "Forge Spectator Player Index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionUISceneBlock_37": {
+      "guid": "b6374cc1ede06ddda4af65ac7d4bdad6",
+      "size": 108,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionUISceneBlock_37_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "UI Scene^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Point"
+        },
+        {
+          "type": "struct",
+          "name": "Point",
+          "definition": "Point_38"
+        },
+        {
+          "type": "real",
+          "name": "Scale"
+        },
+        {
+          "type": "block",
+          "name": "Player Data",
+          "definition": "composerPlayerDataBlock_39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionNodeGraphEventBlock_40": {
+      "guid": "00107580ad562f530cd5f78adfadbe93",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Event Name"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionNodeGraphEventBlock_40_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionGameEngineVignetteEventBlock_41": {
+      "guid": "a43307fc433ef8946539998996066254",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Event Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionCameraLensDirtBlock_42": {
+      "guid": "acaf71ef4cde19bff1a717a464054636",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Intensity"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Dirt Texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "char_enum",
+          "name": "Dirt Type",
+          "definition": "subActionCameraLensDirtBlock_42_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_1_44": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_1_44_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_1_44_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_1_44_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point_2_45": {
+      "guid": "37814d454b86690a5145a184a8b1e89b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "Type^",
+          "definition": "Point_2_45_options_0"
+        },
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Point_2_45_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Index Type!~",
+          "definition": "Point_2_45_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Object Name"
+        },
+        {
+          "type": "long_integer",
+          "name": "Index!~"
+        },
+        {
+          "type": "string_id",
+          "name": "Marker"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "Rotation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_47": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_46": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_47"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "subActionTransformBlock_43": {
+      "guid": "272ff5e7485c980b111e47a49883114b",
+      "size": 112,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "subActionTransformBlock_43_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "Point 1"
+        },
+        {
+          "type": "struct",
+          "name": "Point 1",
+          "definition": "Point_1_44"
+        },
+        {
+          "type": "custom",
+          "name": "Point 2"
+        },
+        {
+          "type": "struct",
+          "name": "Point 2",
+          "definition": "Point_2_45"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_46"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerSubTrackBlock_3": {
+      "guid": "264df9bb47807f1c9427dba75f6fff71",
+      "size": 596,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name^"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Color"
+        },
+        {
+          "type": "block",
+          "name": "SubActions",
+          "definition": "composerSubActionBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "Editor SubActions",
+          "definition": "composerEditorSubActionBlock_7"
+        },
+        {
+          "type": "block",
+          "name": "Points",
+          "definition": "subActionPointBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "Branches",
+          "definition": "subActionBranchBlock_14"
+        },
+        {
+          "type": "block",
+          "name": "Dialog",
+          "definition": "subActionDialogBlock_17"
+        },
+        {
+          "type": "block",
+          "name": "Subtitles",
+          "definition": "subActionSubtitleBlock_20"
+        },
+        {
+          "type": "block",
+          "name": "Effects",
+          "definition": "subActionEffectBlock_21"
+        },
+        {
+          "type": "block",
+          "name": "Lights",
+          "definition": "subActionLightBlock_23"
+        },
+        {
+          "type": "block",
+          "name": "Clip Planes",
+          "definition": "subActionClipPlaneBlock_26"
+        },
+        {
+          "type": "block",
+          "name": "Functions",
+          "definition": "subActionFunctionBlock_28"
+        },
+        {
+          "type": "block",
+          "name": "Input Constraints",
+          "definition": "subActionUserInputConstraintsBlock_31"
+        },
+        {
+          "type": "block",
+          "name": "Generic SubActions",
+          "definition": "subActionGenericBlock_32"
+        },
+        {
+          "type": "block",
+          "name": "Object SubActions",
+          "definition": "subActionObjectBlock_33"
+        },
+        {
+          "type": "block",
+          "name": "Value SubActions",
+          "definition": "subActionValueBlock_34"
+        },
+        {
+          "type": "block",
+          "name": "Trigger SubActions",
+          "definition": "subActionTriggerBlock_35"
+        },
+        {
+          "type": "block",
+          "name": "Scripts",
+          "definition": "composerScriptBlock_36"
+        },
+        {
+          "type": "block",
+          "name": "UI Scenes",
+          "definition": "subActionUISceneBlock_37"
+        },
+        {
+          "type": "block",
+          "name": "NodeGraph Events",
+          "definition": "subActionNodeGraphEventBlock_40"
+        },
+        {
+          "type": "block",
+          "name": "Game Engine Vignette Events",
+          "definition": "subActionGameEngineVignetteEventBlock_41"
+        },
+        {
+          "type": "block",
+          "name": "Camera Lens Dirt",
+          "definition": "subActionCameraLensDirtBlock_42"
+        },
+        {
+          "type": "block",
+          "name": "Transform SubActions",
+          "definition": "subActionTransformBlock_43"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composer_subtracks_struct_definition_1": {
+      "guid": "f8ffd0cbf529fcca87dcc773fbfc7ec5",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "SubTracks",
+          "definition": "composerSubTrackBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_ctd_0!",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "composerSubActionBlock_4_options_0": {
+      "options": [
+        "Branch",
+        "Look At",
+        "Face",
+        "Shoot At",
+        "Effect",
+        "Script",
+        "Clip Plane",
+        "Function",
+        "Input Constraint",
+        "Dialog",
+        "Sound",
+        "Screen Effect",
+        "Texture Movie",
+        "Custom Lighting{Lighting}",
+        "Atmosphere Fog",
+        "Camera FX Settings",
+        "Cubemap",
+        "Environment Darken",
+        "Exposure",
+        "Static Scalar{Lightmap Direct Scalar}",
+        "Lightmap Indirect Scalar",
+        "Analytic Scalar{Sun Scalar}",
+        "Light",
+        "Hologram Lighting",
+        "Aim At",
+        "Effect Object",
+        "Title",
+        "UI Scene",
+        "NodeGraph Event",
+        "Subtitle",
+        "ICS Camera{ICS 3rd Person Camera}",
+        "Game Engine Vignette Event",
+        "Sound Object",
+        "Light Cone",
+        "Color Grading",
+        "Camera Lens Dirt",
+        "Transform"
+      ]
+    },
+    "composerSubActionBlock_4_options_1": {
+      "options": [
+        "Offset From Start",
+        "Offset From End",
+        "Condition"
+      ]
+    },
+    "composerSubActionBlock_4_options_2": {
+      "options": [
+        "Offset From Start",
+        "Offset From End",
+        "Condition"
+      ]
+    },
+    "Start_Condition_Script__5_options_1": {
+      "options": [
+        "Client",
+        "HasAssociatedScript"
+      ]
+    },
+    "End_Condition_Script__6_options_1": {
+      "options": [
+        "Client",
+        "HasAssociatedScript"
+      ]
+    },
+    "composerEditorSubActionBlock_7_options_3": {
+      "options": [
+        "Muted",
+        "Expanded",
+        "Imported",
+        "Playing",
+        "Recording"
+      ]
+    },
+    "subActionPointBlock_12_options_0": {
+      "options": [
+        "Unattached"
+      ]
+    },
+    "Point_13_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_13_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_13_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "Condition_Script__16_options_1": {
+      "options": [
+        "Client",
+        "HasAssociatedScript"
+      ]
+    },
+    "Subject_19_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "subActionEffectBlock_21_options_0": {
+      "options": [
+        "Loop",
+        "Kill",
+        "Attach"
+      ]
+    },
+    "Point_22_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_22_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_22_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "Point_24_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_24_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_24_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "composerSubjectBlock_25_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "composerSubjectBlock_27_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "subActionFunctionBlock_28_options_0": {
+      "options": [
+        "Clear Value At End",
+        "Global"
+      ]
+    },
+    "subActionObjectBlock_33_options_1": {
+      "options": [
+        "Kill"
+      ]
+    },
+    "subActionValueBlock_34_options_0": {
+      "options": [
+        "Constant"
+      ]
+    },
+    "subActionTriggerBlock_35_options_0": {
+      "options": [
+        "Enable FOV",
+        "3rd Person Camera"
+      ]
+    },
+    "composerScriptBlock_36_options_1": {
+      "options": [
+        "Client",
+        "HasAssociatedScript"
+      ]
+    },
+    "subActionUISceneBlock_37_options_0": {
+      "options": [
+        "Attach",
+        "Render 2D",
+        "Render on display plane (1080p)"
+      ]
+    },
+    "Point_38_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_38_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_38_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "composerPlayerDataBlock_39_options_0": {
+      "options": [
+        "Multiplayer",
+        "Campaign",
+        "Dynamic"
+      ]
+    },
+    "composerPlayerDataBlock_39_options_1": {
+      "options": [
+        "defender",
+        "attacker",
+        "third party",
+        "fourth party",
+        "fifth party",
+        "sixth party",
+        "seventh party",
+        "eighth party{eigth party}",
+        "neutral"
+      ]
+    },
+    "composerPlayerDataBlock_39_options_2": {
+      "options": [
+        "UseWinningTeam",
+        "ForgeIntroSpectator"
+      ]
+    },
+    "subActionNodeGraphEventBlock_40_options_1": {
+      "options": [
+        "Global Event"
+      ]
+    },
+    "subActionCameraLensDirtBlock_42_options_2": {
+      "options": [
+        "Apply at bloom res",
+        "Apply at full res"
+      ]
+    },
+    "subActionTransformBlock_43_options_0": {
+      "options": [
+        "Position",
+        "Rotation"
+      ]
+    },
+    "Point_1_44_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_1_44_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_1_44_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    },
+    "Point_2_45_options_0": {
+      "options": [
+        "Current",
+        "Object",
+        "Point Set",
+        "Flag",
+        "Custom",
+        "Scene Anchor",
+        "Instance Anchor",
+        "Nearest Player",
+        "None"
+      ]
+    },
+    "Point_2_45_options_1": {
+      "options": [
+        "Use Orientation",
+        "Don't Stop"
+      ]
+    },
+    "Point_2_45_options_2": {
+      "options": [
+        "Name",
+        "AI",
+        "Global",
+        "Puppet",
+        "Point Set",
+        "Flag"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {},
+    "function_definition_data": {}
+  }
+}

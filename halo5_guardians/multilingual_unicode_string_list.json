@@ -1,0 +1,343 @@
+{
+  "name": "multilingual_unicode_string_list",
+  "tag": "unic",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "multilingual_unicode_string_reference_block_3": {
+      "max_count": 34816,
+      "struct": "multilingual_unicode_string_reference_block_3"
+    },
+    "string_substitution_pair_block_4": {
+      "max_count": 2048,
+      "struct": "string_substitution_pair_block_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "multilingual_unicode_string_list_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "multilingual_unicode_string_reference_block_3": {
+      "guid": "c5bc6da34eb237a41d516aa2e6966923",
+      "size": 72,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "string id^*"
+        },
+        {
+          "type": "long_integer",
+          "name": "english offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "japanese offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "german offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "french offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "spanish offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "mexican spanish offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "italian offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "korean offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "traditional chinese offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "simplified chinese offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "portuguese offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "polish offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "russian offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "danish offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "finnish offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "dutch offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "norwegian offset*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "string_substitution_pair_block_4": {
+      "guid": "57436af64de13705b60a03bb0bdb5e68",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "first string id^*!"
+        },
+        {
+          "type": "string_id",
+          "name": "second string id*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "associated value*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "language_pack_offsets__5": {
+      "guid": "66fe0e92c51ca3c50ec3a418408b8704",
+      "size": 68,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "short_integer",
+          "name": "start index!"
+        },
+        {
+          "type": "short_integer",
+          "name": "string count!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "multilingual_unicode_string_list_struct_definition_1": {
+      "guid": "2aca62ed2a7a77fb66a75ad88739b27a",
+      "size": 168,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "import - directory"
+        },
+        {
+          "type": "custom",
+          "name": "import - single file"
+        },
+        {
+          "type": "block",
+          "name": "string references*",
+          "definition": "multilingual_unicode_string_reference_block_3"
+        },
+        {
+          "type": "block",
+          "name": "substitution pairs*",
+          "definition": "string_substitution_pair_block_4"
+        },
+        {
+          "type": "data",
+          "name": "string data utf8*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "struct",
+          "name": "language pack offsets!",
+          "definition": "language_pack_offsets__5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "tag_data": {}
+  }
+}

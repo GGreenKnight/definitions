@@ -1,0 +1,139 @@
+{
+  "name": "ComposerGlobalsDefinition",
+  "tag": "glcm",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "composerCharactersBlock_4": {
+      "max_count": 16,
+      "struct": "composerCharactersBlock_4"
+    },
+    "composerGlobalsBlock_3": {
+      "max_count": 1,
+      "struct": "composerGlobalsBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "ComposerGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerCharactersBlock_4": {
+      "guid": "4a6e3d74478dc5075fff2b8677a11f1f",
+      "size": 28,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "character name^"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "subtitle color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "shadow color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "composerGlobalsBlock_3": {
+      "guid": "3b2f2a5b4fb052df8bff8fa6d769d030",
+      "size": 80,
+      "fields": [
+        {
+          "type": "real",
+          "name": "cinematic film aperture"
+        },
+        {
+          "type": "real",
+          "name": "cinematic skip ui up time"
+        },
+        {
+          "type": "long_integer",
+          "name": "Max frames jumped to trigger sound"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "subtitle rect width#percentage towards the center - 0=default, 0.5=center of the screen"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "subtitle rect height#0=default, 0.5=center of the screen"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "default subtitle color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "default subtitle shadow color"
+        },
+        {
+          "type": "block",
+          "name": "cinematic characters",
+          "definition": "composerCharactersBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ComposerGlobalsDefinition_struct_definition_1": {
+      "guid": "d6994cb1632951161546bc3ea6b2363b",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "composer globals{cinematics globals}",
+          "definition": "composerGlobalsBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

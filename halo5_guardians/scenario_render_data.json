@@ -1,0 +1,89 @@
+{
+  "name": "scenario_render_data",
+  "tag": "sred",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "scenario_render_data_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_render_data_struct_definition_1": {
+      "guid": "68d919e81ec6862e53061ddf240b632d",
+      "size": 24,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_integer",
+          "name": "dynamic/analytic gobo texture slots"
+        },
+        {
+          "type": "short_integer",
+          "name": "max gobo resolution"
+        },
+        {
+          "type": "char_enum",
+          "name": "gobo bit depth",
+          "definition": "scenario_render_data_struct_definition_1_options_4"
+        },
+        {
+          "type": "char_enum",
+          "name": "single pass lighting mode",
+          "definition": "scenario_render_data_struct_definition_1_options_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "scenario_render_data_struct_definition_1_options_4": {
+      "options": [
+        "8-bit",
+        "16-bit"
+      ]
+    },
+    "scenario_render_data_struct_definition_1_options_5": {
+      "options": [
+        "sun only",
+        "multiple lights"
+      ]
+    }
+  },
+  "datas": {}
+}

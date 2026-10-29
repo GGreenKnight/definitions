@@ -1,0 +1,116 @@
+{
+  "name": "sound_global_propagation",
+  "tag": "sgp!",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "sound_global_propagation_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "underwater_propagation_3": {
+      "guid": "de42e80749529f17692262a271306655",
+      "size": 136,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sound environment",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "background sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "background sound gain#scale for fog background sound:dB"
+        },
+        {
+          "type": "real",
+          "name": "environment ducking#scales the surrounding background sound by this much:dB"
+        },
+        {
+          "type": "tag_reference",
+          "name": "entry sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "exit sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_global_propagation_struct_definition_1": {
+      "guid": "e912b6a5479b6ebcd0833ca5492575b5",
+      "size": 152,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "underwater propagation globals"
+        },
+        {
+          "type": "struct",
+          "name": "underwater propagation",
+          "definition": "underwater_propagation_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

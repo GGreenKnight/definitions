@@ -1,0 +1,226 @@
+{
+  "name": "wpf_screen",
+  "tag": "wpfs",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "WPFScreenTemplateInstantiationBlock_3": {
+      "max_count": 512,
+      "struct": "WPFScreenTemplateInstantiationBlock_3"
+    },
+    "WPFBitmapGroupReferencesBlock_4": {
+      "max_count": 512,
+      "struct": "WPFBitmapGroupReferencesBlock_4"
+    },
+    "string_file_references_5": {
+      "max_count": 64,
+      "struct": "string_file_references_5"
+    },
+    "WPFSoundGroupReferencesDefinition_6": {
+      "max_count": 512,
+      "struct": "WPFSoundGroupReferencesDefinition_6"
+    },
+    "WPFObjReferencesDefinition_7": {
+      "max_count": 512,
+      "struct": "WPFObjReferencesDefinition_7"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "wpf_screen_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WPFScreenTemplateInstantiationBlock_3": {
+      "guid": "51ec2a114262d0036e6d47a35f7adeaf",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "xaml reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WPFBitmapGroupReferencesBlock_4": {
+      "guid": "c9881e5b426842013d15eb9e774ccd3d",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "string_file_references_5": {
+      "guid": "f35ba8a64cec4ca52270709422e51721",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "string list",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WPFSoundGroupReferencesDefinition_6": {
+      "guid": "e2ac65674cc75648574121b0999d1785",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WPFObjReferencesDefinition_7": {
+      "guid": "2c4ecd0e4ef74f4c83c2688cf26ae077",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wpf_screen_struct_definition_1": {
+      "guid": "c22f78477d5789d0b7e84743d54859a2",
+      "size": 224,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "import - directory"
+        },
+        {
+          "type": "custom",
+          "name": "import - single file"
+        },
+        {
+          "type": "string_id",
+          "name": "xamlName"
+        },
+        {
+          "type": "block",
+          "name": "xamlReferences",
+          "definition": "WPFScreenTemplateInstantiationBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "imageListReferences",
+          "definition": "WPFBitmapGroupReferencesBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "string references",
+          "definition": "string_file_references_5"
+        },
+        {
+          "type": "block",
+          "name": "sound references",
+          "definition": "WPFSoundGroupReferencesDefinition_6"
+        },
+        {
+          "type": "block",
+          "name": "obj references",
+          "definition": "WPFObjReferencesDefinition_7"
+        },
+        {
+          "type": "data",
+          "name": "xamlfiledata*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "tag_reference",
+          "name": "LuaScriptReference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "wpf_screen_struct_definition_1_options_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "wpf_screen_struct_definition_1_options_12": {
+      "options": [
+        "converted to 1080p"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

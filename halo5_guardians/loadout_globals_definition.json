@@ -1,0 +1,140 @@
+{
+  "name": "loadout_globals_definition",
+  "tag": "lgtd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "grenade_block_4": {
+      "max_count": 16,
+      "struct": "grenade_block_4"
+    },
+    "custom_loadout_defaults_block_3": {
+      "max_count": 5,
+      "struct": "custom_loadout_defaults_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "loadout_globals_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "grenade_block_4": {
+      "guid": "5819a7ec4fc46525f005c197a4decad8",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "grenade reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "char_integer",
+          "name": "count"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "custom_loadout_defaults_block_3": {
+      "guid": "5c0c246c4baa32670dc6959cd607567f",
+      "size": 52,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "loadout name^"
+        },
+        {
+          "type": "string_id",
+          "name": "initial primary weapon#name of an element from global starting weapons block. Other values: (empty) - unchanged unchanged - unchanged default - take from starting profiles in scenario none - no weapon random - use random item from valid starting weapons"
+        },
+        {
+          "type": "string_id",
+          "name": "initial primary weapon variant name"
+        },
+        {
+          "type": "string_id",
+          "name": "initial secondary weapon#see above"
+        },
+        {
+          "type": "string_id",
+          "name": "initial secondary weapon variant name"
+        },
+        {
+          "type": "string_id",
+          "name": "initial equipment#see above"
+        },
+        {
+          "type": "block",
+          "name": "initial grenade count",
+          "definition": "grenade_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "loadout_globals_definition_struct_definition_1": {
+      "guid": "d0cd9395adbe7b19ffa06c1ba47c912e",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "default custom loadouts",
+          "definition": "custom_loadout_defaults_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

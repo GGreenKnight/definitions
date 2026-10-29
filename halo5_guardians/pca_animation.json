@@ -1,0 +1,289 @@
+{
+  "name": "pca_animation",
+  "tag": "pcaa",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "PCAImportedFrameDatablock_3": {
+      "max_count": 67108864,
+      "struct": "PCAImportedFrameDatablock_3"
+    },
+    "PCAImportedAnimationDataBlock_5": {
+      "max_count": 4096,
+      "struct": "PCAImportedAnimationDataBlock_5"
+    },
+    "raw_blendshape_block_6": {
+      "max_count": 16777216,
+      "struct": "raw_blendshape_block_6"
+    },
+    "PCAImportedMeshDataBlock_4": {
+      "max_count": 8191,
+      "struct": "PCAImportedMeshDataBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "pca_animation_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PCAImportedFrameDatablock_3": {
+      "guid": "e53334344f480655f8f61a82b5b36f55",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "Coefficients",
+          "definition": "tag_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PCAImportedAnimationDataBlock_5": {
+      "guid": "959fd2f84296bbc11c7dcdad1c568a12",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name^*"
+        },
+        {
+          "type": "long_integer",
+          "name": "Offset*"
+        },
+        {
+          "type": "long_integer",
+          "name": "Count*"
+        },
+        {
+          "type": "long_integer",
+          "name": "PCA Shape Offset*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "PCA coefficient Count*!"
+        },
+        {
+          "type": "custom",
+          "name": "Resource Data"
+        },
+        {
+          "type": "pad",
+          "name": "CoefficientResource*",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "raw_blendshape_block_6": {
+      "guid": "7d5e55934db9f97e00bc978ee95cec72",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "position*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "normal*"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "tension and ambient occlusion*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PCAImportedMeshDataBlock_4": {
+      "guid": "3f7a00d0442a1fe334fed7ae47055926",
+      "size": 132,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "render mesh index*"
+        },
+        {
+          "type": "long_integer",
+          "name": "vertices per shape*"
+        },
+        {
+          "type": "long_integer",
+          "name": "vertex buffer index*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "position scale*"
+        },
+        {
+          "type": "real",
+          "name": "tension scale*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "position offset*"
+        },
+        {
+          "type": "real",
+          "name": "tension offset*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "normal scale*"
+        },
+        {
+          "type": "real",
+          "name": "stretch scale*"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "normal offset*"
+        },
+        {
+          "type": "real",
+          "name": "stretch offset*"
+        },
+        {
+          "type": "custom",
+          "name": "Animations"
+        },
+        {
+          "type": "block",
+          "name": "animations*",
+          "definition": "PCAImportedAnimationDataBlock_5"
+        },
+        {
+          "type": "custom",
+          "name": "Vertices"
+        },
+        {
+          "type": "block",
+          "name": "raw blendshape verts*",
+          "definition": "raw_blendshape_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pca_animation_struct_definition_1": {
+      "guid": "f03fc696ae1f8dc3caab9d7bf53c6b48",
+      "size": 168,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Links"
+        },
+        {
+          "type": "tag_reference",
+          "name": "RenderModel*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "AnimationGraph*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_flags",
+          "name": "pcaFlags*",
+          "definition": "pca_animation_struct_definition_1_options_5"
+        },
+        {
+          "type": "long_integer",
+          "name": "PCA Animation Count*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "PCA Checksum*!"
+        },
+        {
+          "type": "custom",
+          "name": "Imported Data"
+        },
+        {
+          "type": "block",
+          "name": "frame data*",
+          "definition": "PCAImportedFrameDatablock_3"
+        },
+        {
+          "type": "block",
+          "name": "mesh data*",
+          "definition": "PCAImportedMeshDataBlock_4"
+        },
+        {
+          "type": "custom",
+          "name": "Resource Data"
+        },
+        {
+          "type": "pad",
+          "name": "api resource*",
+          "definition": 16
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "pca_animation_struct_definition_1_options_5": {
+      "options": [
+        "lookup table ready",
+        "resources generated",
+        "resources committed"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

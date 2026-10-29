@@ -1,0 +1,2380 @@
+{
+  "name": "particle",
+  "tag": "prt3",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "attachment_block_3": {
+      "max_count": 4,
+      "struct": "attachment_block_3"
+    },
+    "material_shader_function_parameter_block_6": {
+      "max_count": 267,
+      "struct": "material_shader_function_parameter_block_6"
+    },
+    "material_shader_parameter_block_5": {
+      "max_count": 267,
+      "struct": "material_shader_parameter_block_5"
+    },
+    "material_postprocess_texture_block_9": {
+      "max_count": 32,
+      "struct": "material_postprocess_texture_block_9"
+    },
+    "material_shader_function_parameter_block_10": {
+      "max_count": 267,
+      "struct": "material_shader_function_parameter_block_10"
+    },
+    "functionParameterBlock_12": {
+      "max_count": 255,
+      "struct": "functionParameterBlock_12"
+    },
+    "externParameterBlock_13": {
+      "max_count": 255,
+      "struct": "externParameterBlock_13"
+    },
+    "materialConstantBlock_14": {
+      "max_count": 255,
+      "struct": "materialConstantBlock_14"
+    },
+    "materialConstantBlock_15": {
+      "max_count": 255,
+      "struct": "materialConstantBlock_15"
+    },
+    "material_postprocess_block_8": {
+      "max_count": 1,
+      "struct": "material_postprocess_block_8"
+    },
+    "gpu_sprite_block_32": {
+      "max_count": 1,
+      "struct": "gpu_sprite_block_32"
+    },
+    "gpu_variants_block_34": {
+      "max_count": 16,
+      "struct": "gpu_variants_block_34"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "particle_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachment_block_3": {
+      "guid": "db30967240fd39642a93b18d361707d3",
+      "size": 40,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "attachment_block_3_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "gerrrrr",
+          "definition": 3
+        },
+        {
+          "type": "tag_reference",
+          "name": "type",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "char_enum",
+          "name": "trigger",
+          "definition": "attachment_block_3_options_3"
+        },
+        {
+          "type": "byte_integer",
+          "name": "skip fraction:[0-127]#0 will always play, 127 will be extremely rare"
+        },
+        {
+          "type": "char_enum",
+          "name": "primary scale",
+          "definition": "attachment_block_3_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "secondary scale",
+          "definition": "attachment_block_3_options_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_function_parameter_block_6": {
+      "guid": "5471f0e34472f54d16a555aded7b009a",
+      "size": 52,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "material_shader_function_parameter_block_6_options_0"
+        },
+        {
+          "type": "string_id",
+          "name": "input name"
+        },
+        {
+          "type": "string_id",
+          "name": "range name"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier!",
+          "definition": "material_shader_function_parameter_block_6_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "real",
+          "name": "time period:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "FUNCTION"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_parameter_block_5": {
+      "guid": "5e4b3e06473618a83f96cfbe9dd6ca42",
+      "size": 232,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "parameter name^*"
+        },
+        {
+          "type": "long_enum",
+          "name": "parameter type*",
+          "definition": "material_shader_parameter_block_5_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parameter index*!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "bitmap path"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "real"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "vector"
+        },
+        {
+          "type": "long_integer",
+          "name": "int/bool"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap flags"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap filter mode"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode x"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode y"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap sharpen mode"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap extern mode"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap min mipmap"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap max mipmap"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter flags!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phases used"
+        },
+        {
+          "type": "dword_integer",
+          "name": "shader types used"
+        },
+        {
+          "type": "block",
+          "name": "function parameters",
+          "definition": "material_shader_function_parameter_block_6"
+        },
+        {
+          "type": "data",
+          "name": "display name*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "display group*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "display help text*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "real",
+          "name": "display minimum"
+        },
+        {
+          "type": "real",
+          "name": "display maximum"
+        },
+        {
+          "type": "word_integer",
+          "name": "register offset*!"
+        },
+        {
+          "type": "word_integer",
+          "name": "register size*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_postprocess_texture_block_9": {
+      "guid": "cd9812ec4be13cd648fe3bb396a5bc0b",
+      "size": 56,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "dword_integer",
+          "name": "shader stage mask"
+        },
+        {
+          "type": "word_integer",
+          "name": "frame index parameter"
+        },
+        {
+          "type": "word_integer",
+          "name": "sampler index"
+        },
+        {
+          "type": "word_integer",
+          "name": "transform register index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "extern texture mode"
+        },
+        {
+          "type": "pad",
+          "name": "lkasdfhbahsdf",
+          "definition": 1
+        },
+        {
+          "type": "int64_integer",
+          "name": "SamplerState!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_11": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_function_parameter_block_10": {
+      "guid": "5471f0e34472f54d16a555aded7b009a",
+      "size": 52,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "material_shader_function_parameter_block_10_options_0"
+        },
+        {
+          "type": "string_id",
+          "name": "input name"
+        },
+        {
+          "type": "string_id",
+          "name": "range name"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier!",
+          "definition": "material_shader_function_parameter_block_10_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "real",
+          "name": "time period:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "FUNCTION"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "functionParameterBlock_12": {
+      "guid": "25a1ecc04cbeb81fe266949fdbcfa980",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "function index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "register offset"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter group"
+        },
+        {
+          "type": "pad",
+          "name": "DHaFS",
+          "definition": 1
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "externParameterBlock_13": {
+      "guid": "721182364f91b22cafda45a6bba5e7ab",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "extern index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "extern offset"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter group"
+        },
+        {
+          "type": "pad",
+          "name": "DHaFS",
+          "definition": 1
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "materialConstantBlock_14": {
+      "guid": "8333766c49c69913871f34aef2fb867f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_quaternion",
+          "name": "register"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "materialConstantBlock_15": {
+      "guid": "8333766c49c69913871f34aef2fb867f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_quaternion",
+          "name": "register"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_queryable_properties_table_16": {
+      "guid": "d069a6be0b8924d087be4361aa46bc58",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_postprocess_block_8": {
+      "guid": "1d50d0c341c0c85257905b9ea3f398ce",
+      "size": 200,
+      "fields": [
+        {
+          "type": "block",
+          "name": "textures",
+          "definition": "material_postprocess_texture_block_9"
+        },
+        {
+          "type": "long_integer",
+          "name": "textures to clear"
+        },
+        {
+          "type": "block",
+          "name": "functions",
+          "definition": "material_shader_function_parameter_block_10"
+        },
+        {
+          "type": "block",
+          "name": "function parameters",
+          "definition": "functionParameterBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "extern parameters",
+          "definition": "externParameterBlock_13"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "material_postprocess_block_8_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "layer blend mode",
+          "definition": "material_postprocess_block_8_options_6"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "material_postprocess_block_8_options_7"
+        },
+        {
+          "type": "block",
+          "name": "material constants!~",
+          "definition": "materialConstantBlock_14"
+        },
+        {
+          "type": "block",
+          "name": "alternate constants!~",
+          "definition": "materialConstantBlock_15"
+        },
+        {
+          "type": "int64_integer",
+          "name": "materialConstantBuffer!~"
+        },
+        {
+          "type": "int64_integer",
+          "name": "alternateConstantBuffer!~"
+        },
+        {
+          "type": "dword_integer",
+          "name": "material constant shader stage mask"
+        },
+        {
+          "type": "struct",
+          "name": "runtime queryable properties table",
+          "definition": "runtime_queryable_properties_table_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "actual_material__4": {
+      "guid": "13810d2344063c15599476aa073df0a7",
+      "size": 112,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "material shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "material parameters",
+          "definition": "material_shader_parameter_block_5"
+        },
+        {
+          "type": "block",
+          "name": "postprocess definition!",
+          "definition": "material_postprocess_block_8"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 2"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 3"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 4"
+        },
+        {
+          "type": "real",
+          "name": "sort offset"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "actual_material__4_options_8"
+        },
+        {
+          "type": "char_enum",
+          "name": "sort layer*",
+          "definition": "actual_material__4_options_9"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags!",
+          "definition": "actual_material__4_options_10"
+        },
+        {
+          "type": "byte_flags",
+          "name": "render flags!",
+          "definition": "actual_material__4_options_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_18": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "aspect_ratio_17": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "aspect_ratio_17_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "aspect_ratio_17_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "aspect_ratio_17_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "aspect_ratio_17_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_18"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "aspect_ratio_17_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_20": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19": {
+      "guid": "342c007143cfbafbd65dda9fca2d0d63",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_20"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_22": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_22"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_24": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_24"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_26": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "frame_index_0_first_frame__1_last_frame_25_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "frame_index_0_first_frame__1_last_frame_25_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "frame_index_0_first_frame__1_last_frame_25_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "frame_index_0_first_frame__1_last_frame_25_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_26"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "frame_index_0_first_frame__1_last_frame_25_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_28": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "animation_rate_index_cycles_per_second_27_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "animation_rate_index_cycles_per_second_27_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "animation_rate_index_cycles_per_second_27_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "animation_rate_index_cycles_per_second_27_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_28"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "animation_rate_index_cycles_per_second_27_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_30": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29": {
+      "guid": "646072524e37e8089d4047843c481194",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "palette_animation_v_coord_of_palette_29_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "palette_animation_v_coord_of_palette_29_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "palette_animation_v_coord_of_palette_29_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "palette_animation_v_coord_of_palette_29_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_30"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "byte_flags",
+          "name": "force flags!",
+          "definition": "palette_animation_v_coord_of_palette_29_options_7"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_gpu_sprite_array__33": {
+      "guid": "51cb174d30b16f729d1b50bffa77d3c1",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gpu_sprite_block_32": {
+      "guid": "821f9c90486395841d372594dde8b87a",
+      "size": 16,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "runtime gpu_sprite_array!",
+          "definition": "runtime_gpu_sprite_array__33"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_m_count__35": {
+      "guid": "34c6a13955d4fa7ce6287a4f39371ef0",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_real!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gpu_variants_block_34": {
+      "guid": "7820cc6f40f40228e75b229397bd8d81",
+      "size": 16,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "runtime m_count!",
+          "definition": "runtime_m_count__35"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_m_gpu_data__31": {
+      "guid": "62f911d6493b972578b1fd8f7bfc0806",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "runtime m_sprite!",
+          "definition": "gpu_sprite_block_32"
+        },
+        {
+          "type": "block",
+          "name": "runtime m_frames!",
+          "definition": "gpu_variants_block_34"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "particle_struct_definition_1": {
+      "guid": "ab48d7e1cbc8021e9f60eec5a8d949b1",
+      "size": 600,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "main flags",
+          "definition": "particle_struct_definition_1_options_2"
+        },
+        {
+          "type": "block",
+          "name": "attachments",
+          "definition": "attachment_block_3"
+        },
+        {
+          "type": "custom",
+          "name": "PARTICLE APPEARANCE"
+        },
+        {
+          "type": "long_flags",
+          "name": "appearance flags",
+          "definition": "particle_struct_definition_1_options_5"
+        },
+        {
+          "type": "short_enum",
+          "name": "particle billboard style",
+          "definition": "particle_struct_definition_1_options_6"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime m_textureArraySize!"
+        },
+        {
+          "type": "short_integer",
+          "name": "first sequence index"
+        },
+        {
+          "type": "short_integer",
+          "name": "sequence count"
+        },
+        {
+          "type": "real",
+          "name": "low res switch distance:wu#the distance at which we switch from low res (close) to high res (far)"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "center offset"
+        },
+        {
+          "type": "real",
+          "name": "curvature:0=flat, 1=hemisphere"
+        },
+        {
+          "type": "real",
+          "name": "angle fade range:degrees#degrees beyond cutoff over which particles fade"
+        },
+        {
+          "type": "real",
+          "name": "angle fade cutoff:degrees#degrees away from edge-on where fade is total"
+        },
+        {
+          "type": "real",
+          "name": "motion blur translation scale#affects billboard tilt from observer motion"
+        },
+        {
+          "type": "real",
+          "name": "motion blur rotation scale#affects billboard tilt from observer turning"
+        },
+        {
+          "type": "real",
+          "name": "motion blur aspect scale#affects aspect ratio stretching from particle and observer motion"
+        },
+        {
+          "type": "custom",
+          "name": "material"
+        },
+        {
+          "type": "struct",
+          "name": "actual material?",
+          "definition": "actual_material__4"
+        },
+        {
+          "type": "struct",
+          "name": "aspect ratio",
+          "definition": "aspect_ratio_17"
+        },
+        {
+          "type": "struct",
+          "name": "color:RGB#controls how the color of the particle changes as a function of its input",
+          "definition": "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19"
+        },
+        {
+          "type": "struct",
+          "name": "intensity#multiplies color to give dynamic range outside [0,1]",
+          "definition": "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21"
+        },
+        {
+          "type": "struct",
+          "name": "alpha#separate from color, controls how the particle fades as a function of its input",
+          "definition": "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23"
+        },
+        {
+          "type": "real",
+          "name": "tint factor:0=modulate, 1=tint#switches between modulate (multiply) and tint(preserve whites)"
+        },
+        {
+          "type": "custom",
+          "name": "PARTICLE ANIMATION"
+        },
+        {
+          "type": "long_flags",
+          "name": "animation flags",
+          "definition": "particle_struct_definition_1_options_26"
+        },
+        {
+          "type": "struct",
+          "name": "frame index#0=first frame, 1=last frame",
+          "definition": "frame_index_0_first_frame__1_last_frame_25"
+        },
+        {
+          "type": "struct",
+          "name": "animation rate:index cycles per second",
+          "definition": "animation_rate_index_cycles_per_second_27"
+        },
+        {
+          "type": "struct",
+          "name": "palette animation:v coord of palette",
+          "definition": "palette_animation_v_coord_of_palette_29"
+        },
+        {
+          "type": "custom",
+          "name": "Mesh data, if this is a mesh particle"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_used_particle_states!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_constant_per_particle_properties!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_constant_over_time_properties!"
+        },
+        {
+          "type": "struct",
+          "name": "runtime m_gpu_data!",
+          "definition": "runtime_m_gpu_data__31"
+        },
+        {
+          "type": "pad",
+          "name": "party_pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "particle_struct_definition_1_options_2": {
+      "options": [
+        "dies at rest",
+        "dies on structure collision",
+        "dies in water",
+        "dies in air",
+        "has sweetener",
+        "uses cheap shader"
+      ]
+    },
+    "attachment_block_3_options_0": {
+      "options": [
+        "disabled for debugging"
+      ]
+    },
+    "attachment_block_3_options_3": {
+      "options": [
+        "birth",
+        "collision",
+        "death",
+        "first collision"
+      ]
+    },
+    "attachment_block_3_options_5": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "attachment_block_3_options_6": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "particle_struct_definition_1_options_5": {
+      "options": [
+        "random u mirror",
+        "random v mirror",
+        "random starting rotation",
+        "tint from lightmap",
+        "tint from diffuse texture",
+        "bitmap authored vertically",
+        "intensity affects alpha",
+        "fade when viewed edge-on",
+        "motion blur",
+        "double-sided",
+        "low res#renders heavy overdraw particles faster",
+        "low res tighter mask#requires depth fade",
+        "never kill verts on GPU (expensive)",
+        "particle velocity relative to camera#makes parallel and perpindicular to velocity behave differently based upon camera motion",
+        "render with water"
+      ]
+    },
+    "particle_struct_definition_1_options_6": {
+      "options": [
+        "screen facing",
+        "camera facing",
+        "parallel to direction",
+        "perpendicular to direction",
+        "vertical",
+        "horizontal",
+        "local vertical",
+        "local horizontal",
+        "world (particle models)",
+        "velocity horizontal (particle models)",
+        "local"
+      ]
+    },
+    "material_shader_parameter_block_5_options_1": {
+      "options": [
+        "bitmap",
+        "real",
+        "int",
+        "bool",
+        "color"
+      ]
+    },
+    "material_shader_function_parameter_block_6_options_0": {
+      "options": [
+        "value",
+        "color",
+        "scale uniform",
+        "scale u",
+        "scale v",
+        "offset u",
+        "offset v",
+        "frame index",
+        "alpha"
+      ]
+    },
+    "material_shader_function_parameter_block_6_options_3": {
+      "options": [
+        " ",
+        "Add",
+        "Multiply"
+      ]
+    },
+    "material_shader_function_parameter_block_10_options_0": {
+      "options": [
+        "value",
+        "color",
+        "scale uniform",
+        "scale u",
+        "scale v",
+        "offset u",
+        "offset v",
+        "frame index",
+        "alpha"
+      ]
+    },
+    "material_shader_function_parameter_block_10_options_3": {
+      "options": [
+        " ",
+        "Add",
+        "Multiply"
+      ]
+    },
+    "material_postprocess_block_8_options_5": {
+      "options": [
+        "opaque",
+        "additive",
+        "multiply",
+        "alpha_blend",
+        "double_multiply",
+        "pre_multiplied_alpha",
+        "maximum",
+        "multiply_add",
+        "add_src_times_dstalpha",
+        "add_src_times_srcalpha",
+        "inv_alpha_blend",
+        "motion_blur_static",
+        "motion_blur_inhibit",
+        "alpha_blend_constant",
+        "overdraw_apply",
+        "wet_screen_effect",
+        "minimum",
+        "revsubtract",
+        "forge_lightmap",
+        "forge_lightmap_inv",
+        "replace_all_channels",
+        "alpha_blend_max",
+        "opaque_alpha_blend",
+        "alpha_blend_additive_transparent",
+        "floating shadow",
+        "decal_alpha_blend",
+        "decal_add_src_times_src_alpha",
+        "decal_multiply_add",
+        "wpf_blend_mode",
+        "wpf_no_color_blend_mode",
+        "blend forge analytic red",
+        "blend factor green only",
+        "blend forge analytic blue",
+        "blend factor alpha only",
+        "multiply red green only",
+        "multiply blue alpha only",
+        "decal opaque",
+        "accumulate_pre_multiplied_alpha",
+        "accumulate_multiply_add",
+        "accumulate_alpha_blend",
+        "accumulate_inverse_alpha_blend",
+        "accumulate_additive",
+        "accumulate_additive_transparent",
+        "accumulate_add_src_times_srcalpha",
+        "accumulate_multiply",
+        "ssao_multiply",
+        "ssao_alpha_channel_only",
+        "depth_peeling_blend_mode",
+        "depth_peeling_Z_pass",
+        "wpf_additive_blend_mode",
+        "forge_normalize",
+        "depth_peeling_accumulate_alpha",
+        "alpha_blend_for_display_planes",
+        "forge_light",
+        "forge_light_inverse",
+        "composite_UI"
+      ]
+    },
+    "material_postprocess_block_8_options_6": {
+      "options": [
+        "none",
+        "blended",
+        "layered"
+      ]
+    },
+    "material_postprocess_block_8_options_7": {
+      "options": [
+        "has material constant functions",
+        "has texture frame functions",
+        "disable atmosphere fog",
+        "uses depth camera",
+        "material is variable",
+        "has variable material constant functions",
+        "has at least one extern texture used"
+      ]
+    },
+    "actual_material__4_options_8": {
+      "options": [
+        "opaque",
+        "additive",
+        "multiply",
+        "alpha_blend",
+        "double_multiply",
+        "pre_multiplied_alpha",
+        "maximum",
+        "multiply_add",
+        "add_src_times_dstalpha",
+        "add_src_times_srcalpha",
+        "inv_alpha_blend",
+        "motion_blur_static",
+        "motion_blur_inhibit",
+        "alpha_blend_constant",
+        "overdraw_apply",
+        "wet_screen_effect",
+        "minimum",
+        "revsubtract",
+        "forge_lightmap",
+        "forge_lightmap_inv",
+        "replace_all_channels",
+        "alpha_blend_max",
+        "opaque_alpha_blend",
+        "alpha_blend_additive_transparent",
+        "floating shadow",
+        "decal_alpha_blend",
+        "decal_add_src_times_src_alpha",
+        "decal_multiply_add",
+        "wpf_blend_mode",
+        "wpf_no_color_blend_mode",
+        "blend forge analytic red",
+        "blend factor green only",
+        "blend forge analytic blue",
+        "blend factor alpha only",
+        "multiply red green only",
+        "multiply blue alpha only",
+        "decal opaque",
+        "accumulate_pre_multiplied_alpha",
+        "accumulate_multiply_add",
+        "accumulate_alpha_blend",
+        "accumulate_inverse_alpha_blend",
+        "accumulate_additive",
+        "accumulate_additive_transparent",
+        "accumulate_add_src_times_srcalpha",
+        "accumulate_multiply",
+        "ssao_multiply",
+        "ssao_alpha_channel_only",
+        "depth_peeling_blend_mode",
+        "depth_peeling_Z_pass",
+        "wpf_additive_blend_mode",
+        "forge_normalize",
+        "depth_peeling_accumulate_alpha",
+        "alpha_blend_for_display_planes",
+        "forge_light",
+        "forge_light_inverse",
+        "composite_UI"
+      ]
+    },
+    "actual_material__4_options_9": {
+      "options": [
+        "invalid",
+        "pre-pass",
+        "normal",
+        "post-pass"
+      ]
+    },
+    "actual_material__4_options_10": {
+      "options": [
+        "converted from shader",
+        "decal post lighting"
+      ]
+    },
+    "actual_material__4_options_11": {
+      "options": [
+        "no atmosphere fog",
+        "cull shields",
+        "cull active camo"
+      ]
+    },
+    "aspect_ratio_17_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "aspect_ratio_17_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "aspect_ratio_17_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "aspect_ratio_17_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "aspect_ratio_17_options_7": {
+      "options": [
+        "force constant"
+      ]
+    },
+    "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "color_RGB_controls_how_the_color_of_the_particle_changes_as_a_function_of_its_input_19_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "intensity_multiplies_color_to_give_dynamic_range_outside__0_1__21_options_7": {
+      "options": [
+        "force constant"
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "alpha_separate_from_color__controls_how_the_particle_fades_as_a_function_of_its_input_23_options_7": {
+      "options": [
+        "force constant"
+      ]
+    },
+    "particle_struct_definition_1_options_26": {
+      "options": [
+        "frame animation one shot",
+        "can animate backwards"
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "frame_index_0_first_frame__1_last_frame_25_options_7": {
+      "options": [
+        "force constant"
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "animation_rate_index_cycles_per_second_27_options_7": {
+      "options": [
+        "force constant"
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29_options_0": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29_options_1": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29_options_3": {
+      "options": [
+        "particle age",
+        "system age{emitter age}",
+        "particle random",
+        "system random{emitter random}",
+        "particle correlation 1{particle random 1}",
+        "particle correlation 2{particle random 2}",
+        "particle correlation 3{particle random 3}",
+        "particle correlation 4{particle random 4}",
+        "system correlation 1{emitter correlation 1}{emitter random 1}",
+        "system correlation 2{emitter correlation 2}{emitter random 2}",
+        "particle emission time{emitter time}{particle emit time}",
+        "location lod{system lod}",
+        "game time",
+        "effect a scale",
+        "effect b scale",
+        "particle rotation{physics rotation}",
+        "location random",
+        "distance from emitter",
+        "particle simulation a",
+        "particle simulation b",
+        "particle velocity",
+        "invalid state --- please set again"
+      ]
+    },
+    "palette_animation_v_coord_of_palette_29_options_7": {
+      "options": [
+        "force constant"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {},
+    "tag_data": {}
+  }
+}

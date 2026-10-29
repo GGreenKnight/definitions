@@ -1,0 +1,102 @@
+{
+  "name": "assetPhotoToolLightingSpecBlockTag",
+  "tag": "aplt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "lightingSpecBlock_3": {
+      "max_count": 128,
+      "struct": "lightingSpecBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "assetPhotoToolLightingSpecBlockTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lightingSpecBlock_3": {
+      "guid": "c92ae0e84afa12bd95ed68a479cf2d8b",
+      "size": 24,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "lighting variant id"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "lightingSpecBlock_3_options_1"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color override#used only if 'override background color' is checked"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "assetPhotoToolLightingSpecBlockTag_struct_definition_1": {
+      "guid": "f43db27761cea84ec75c02ba0645b878",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "lighting specs",
+          "definition": "lightingSpecBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "lightingSpecBlock_3_options_1": {
+      "options": [
+        "use lightmapped object visibility",
+        "override background color",
+        "use depth as alpha mask"
+      ]
+    }
+  },
+  "datas": {}
+}

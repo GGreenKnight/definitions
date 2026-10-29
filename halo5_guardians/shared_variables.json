@@ -1,0 +1,136 @@
+{
+  "name": "shared_variables",
+  "tag": "shvr",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "affectedFileBlock_3": {
+      "max_count": 32,
+      "struct": "affectedFileBlock_3"
+    },
+    "sharedVariableTouchBlock_5": {
+      "max_count": 32,
+      "struct": "sharedVariableTouchBlock_5"
+    },
+    "sharedVariableBlock_4": {
+      "max_count": 32,
+      "struct": "sharedVariableBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "shared_variables_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "affectedFileBlock_3": {
+      "guid": "b8af34f94d97991c70e893a5d6f52f17",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "file to touch^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sharedVariableTouchBlock_5": {
+      "guid": "69dbf3f946308f9c300a54b0cc49dd43",
+      "size": 260,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "file to touch"
+        },
+        {
+          "type": "long_string",
+          "name": "field to touch"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sharedVariableBlock_4": {
+      "guid": "a75976d344d5a6948971118277c2d8f8",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "touches",
+          "definition": "sharedVariableTouchBlock_5"
+        },
+        {
+          "type": "real",
+          "name": "numerical value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "shared_variables_struct_definition_1": {
+      "guid": "bb1a44f547497b13dcf508892e014b97",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "affected files",
+          "definition": "affectedFileBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "shared variables",
+          "definition": "sharedVariableBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

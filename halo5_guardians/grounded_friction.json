@@ -1,0 +1,118 @@
+{
+  "name": "grounded_friction",
+  "tag": "grfr",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "grounded_friction_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Friction_over_time_3": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "grounded_friction_struct_definition_1": {
+      "guid": "f2098a2664feb047c8c2d7ee0aa9370e",
+      "size": 64,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "GROUNDED FRICTION"
+        },
+        {
+          "type": "struct",
+          "name": "Friction over time",
+          "definition": "Friction_over_time_3"
+        },
+        {
+          "type": "real",
+          "name": "Friction over time domain min:seconds#Grounded time at which the graph begins to apply (corresponds to the left side of the graph).  E.g. If you set this to 5.0, no friction will be applied for the first 5 seconds after an object is considered to be &quot;grounded&quot;."
+        },
+        {
+          "type": "real",
+          "name": "Friction over time domain max:seconds#Grounded time at which the graph ends (corresponds to the right side of the graph).  E.g. If want friction to be a constant 0.5 after 15 seconds of grounded motion, set this to 15 and make the graph end at 0.5."
+        },
+        {
+          "type": "real",
+          "name": "Maximum slope for friction:degrees#If the slope of the surface the object is resting on is steeper than this, the grounded friction timer will reset to zero (disabling friction temporarily)."
+        },
+        {
+          "type": "real",
+          "name": "Minimum asymmetry ratio for axis lock#If the length of the longest axis of the object's bounding box is at least this multiple of the length of its shortest axis, angular friction will be applied only to rotation around the longest axis (to prevent the slow timber effect). 2.0 is the default if this is left at 0.0. Use a very large number to disable (e.g. 10000.0)."
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "function_definition_data": {}
+  }
+}

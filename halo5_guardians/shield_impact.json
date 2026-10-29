@@ -1,0 +1,701 @@
+{
+  "name": "shield_impact",
+  "tag": "shit",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "shield_impact_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Edge_Glow_Color_3": {
+      "guid": "bdac1b154adf794f702edea49ffabb63",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Edge_Glow_Intensity_5": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_8": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Plasma_Center_Color_7": {
+      "guid": "bdac1b154adf794f702edea49ffabb63",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Plasma_Center_Intensity_9": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_12": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Plasma_Edge_Color_11": {
+      "guid": "bdac1b154adf794f702edea49ffabb63",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_14": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Plasma_Edge_Intensity_13": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_16": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Extrusion_Amount_15": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_18": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Oscillation_Amplitude_17": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_20": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Hit_Color_19": {
+      "guid": "bdac1b154adf794f702edea49ffabb63",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_20"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_22": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Hit_Intensity_21": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_24": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Hit_Radius_23": {
+      "guid": "efddc6314736eab14e73109ca3199e60",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "shield_impact_struct_definition_1": {
+      "guid": "d796ffd54f38b44c93735f9fc793b01d",
+      "size": 712,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Shield Controls"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "shield_impact_struct_definition_1_options_3"
+        },
+        {
+          "type": "short_integer",
+          "name": "version!"
+        },
+        {
+          "type": "custom",
+          "name": "Shield Intensity"
+        },
+        {
+          "type": "custom",
+          "name": "Shield Intensity"
+        },
+        {
+          "type": "real",
+          "name": "Recent Damage Intensity"
+        },
+        {
+          "type": "real",
+          "name": "Current Damage Intensity"
+        },
+        {
+          "type": "custom",
+          "name": "Shield Edge"
+        },
+        {
+          "type": "custom",
+          "name": "Shield Edge"
+        },
+        {
+          "type": "real",
+          "name": "Depth Fade Range:world units"
+        },
+        {
+          "type": "real",
+          "name": "Outer Fade Radius:[0-1]"
+        },
+        {
+          "type": "real",
+          "name": "Center Radius:[0-1]"
+        },
+        {
+          "type": "real",
+          "name": "Inner Fade Radius:[0-1]"
+        },
+        {
+          "type": "struct",
+          "name": "Edge Glow Color",
+          "definition": "Edge_Glow_Color_3"
+        },
+        {
+          "type": "struct",
+          "name": "Edge Glow Intensity",
+          "definition": "Edge_Glow_Intensity_5"
+        },
+        {
+          "type": "custom",
+          "name": "Plasma"
+        },
+        {
+          "type": "custom",
+          "name": "Plasma"
+        },
+        {
+          "type": "real",
+          "name": "Plasma Depth Fade Range:world units"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Plasma Noise Texture 0",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Plasma Noise Texture 1",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "Tiling Scale"
+        },
+        {
+          "type": "real",
+          "name": "Scroll Speed"
+        },
+        {
+          "type": "real",
+          "name": "Edge Sharpness"
+        },
+        {
+          "type": "real",
+          "name": "Center Sharpness"
+        },
+        {
+          "type": "real",
+          "name": "Plasma Outer Fade Radius:[0-1]"
+        },
+        {
+          "type": "real",
+          "name": "Plasma Center Radius:[0-1]"
+        },
+        {
+          "type": "real",
+          "name": "Plasma Inner Fade Radius:[0-1]"
+        },
+        {
+          "type": "struct",
+          "name": "Plasma Center Color",
+          "definition": "Plasma_Center_Color_7"
+        },
+        {
+          "type": "struct",
+          "name": "Plasma Center Intensity",
+          "definition": "Plasma_Center_Intensity_9"
+        },
+        {
+          "type": "struct",
+          "name": "Plasma Edge Color",
+          "definition": "Plasma_Edge_Color_11"
+        },
+        {
+          "type": "struct",
+          "name": "Plasma Edge Intensity",
+          "definition": "Plasma_Edge_Intensity_13"
+        },
+        {
+          "type": "custom",
+          "name": "Extrusion Oscillation"
+        },
+        {
+          "type": "custom",
+          "name": "Extrusion Oscillation"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Oscillation Texture 0",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Oscillation Texture 1",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "Oscillation Tiling Scale"
+        },
+        {
+          "type": "real",
+          "name": "Oscillation Scroll Speed"
+        },
+        {
+          "type": "struct",
+          "name": "Extrusion Amount",
+          "definition": "Extrusion_Amount_15"
+        },
+        {
+          "type": "struct",
+          "name": "Oscillation Amplitude",
+          "definition": "Oscillation_Amplitude_17"
+        },
+        {
+          "type": "custom",
+          "name": "Hit Response"
+        },
+        {
+          "type": "custom",
+          "name": "Hit Response"
+        },
+        {
+          "type": "real",
+          "name": "Hit Time:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "Hit Color",
+          "definition": "Hit_Color_19"
+        },
+        {
+          "type": "struct",
+          "name": "Hit Intensity",
+          "definition": "Hit_Intensity_21"
+        },
+        {
+          "type": "struct",
+          "name": "Hit Radius",
+          "definition": "Hit_Radius_23"
+        },
+        {
+          "type": "tag_reference",
+          "name": "hit blob texture (adds significant cost)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real_quaternion",
+          "name": "edge_scales!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "edge_offsets!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "plasma_scales!"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "depth_fade_params!"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "shield_impact_struct_definition_1_options_3": {
+      "options": [
+        "render always",
+        "render first person",
+        "dont render third person"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "sound_radio_settings",
+  "tag": "srad",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "sound_radio_settings_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_radio_settings_struct_definition_1": {
+      "guid": "fd225e3df4a75206ba3f03a813d26f32",
+      "size": 24,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "mix settings"
+        },
+        {
+          "type": "long_enum",
+          "name": "mix",
+          "definition": "sound_radio_settings_struct_definition_1_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "sound_radio_settings_struct_definition_1_options_3": {
+      "options": [
+        "full#full unspatialized radio effect",
+        "3d#mixes in the unspatialized radio effect with distance",
+        "none#essentially turns off the radio effect!"
+      ]
+    }
+  },
+  "datas": {}
+}

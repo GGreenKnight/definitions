@@ -1,0 +1,185 @@
+{
+  "name": "scenario_interpolator",
+  "tag": "sirp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "scenario_interpolator_data_block_3": {
+      "max_count": 32,
+      "struct": "scenario_interpolator_data_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "scenario_interpolator_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_interpolator_data_block_3": {
+      "guid": "2fa4af3d4c1d658e5911568b51109aee",
+      "size": 60,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "scenario_interpolator_data_block_3_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "SCBP1",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_4"
+        },
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "long_enum",
+          "name": "map reset type",
+          "definition": "scenario_interpolator_data_block_3_options_5"
+        },
+        {
+          "type": "real_fraction",
+          "name": "custom map reset value"
+        },
+        {
+          "type": "long_enum",
+          "name": "start type",
+          "definition": "scenario_interpolator_data_block_3_options_7"
+        },
+        {
+          "type": "long_enum",
+          "name": "stop type",
+          "definition": "scenario_interpolator_data_block_3_options_8"
+        },
+        {
+          "type": "real_fraction",
+          "name": "custom stop value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_interpolator_struct_definition_1": {
+      "guid": "34cd7a742492d0139d10a25735700975",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "interpolators",
+          "definition": "scenario_interpolator_data_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "scenario_interpolator_data_block_3_options_0": {
+      "options": [
+        "loops#will continue to play until stopped.  if checked, no wrap should also be checked",
+        "always active#will be started when the map loads.  good for looping interpolators"
+      ]
+    },
+    "scenario_interpolator_data_block_3_options_5": {
+      "options": [
+        "initial",
+        "ending",
+        "custom"
+      ]
+    },
+    "scenario_interpolator_data_block_3_options_7": {
+      "options": [
+        "initial",
+        "unchanged"
+      ]
+    },
+    "scenario_interpolator_data_block_3_options_8": {
+      "options": [
+        "initial",
+        "hold",
+        "ending",
+        "custom"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "point_physics",
+  "tag": "pphy",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "point_physics_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "point_physics_struct_definition_1": {
+      "guid": "bc376a1c67ae910e141f2e7d3a6b4898",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "point_physics_struct_definition_1_options_2"
+        },
+        {
+          "type": "real",
+          "name": "runtime mass over radius cubed!"
+        },
+        {
+          "type": "real",
+          "name": "runtime inverse density!"
+        },
+        {
+          "type": "long_integer",
+          "name": "IGNORE1!"
+        },
+        {
+          "type": "long_integer",
+          "name": "IGNORE2!"
+        },
+        {
+          "type": "long_integer",
+          "name": "IGNORE3!"
+        },
+        {
+          "type": "long_integer",
+          "name": "IGNORE4!"
+        },
+        {
+          "type": "long_integer",
+          "name": "IGNORE5!"
+        },
+        {
+          "type": "real",
+          "name": "density:g/mL"
+        },
+        {
+          "type": "real",
+          "name": "air friction"
+        },
+        {
+          "type": "real",
+          "name": "water friction"
+        },
+        {
+          "type": "real",
+          "name": "surface friction#when hitting the ground or interior, percentage of velocity lost in one collision"
+        },
+        {
+          "type": "real",
+          "name": "elasticity#0.0 is inelastic collisions (no bounce) 1.0 is perfectly elastic (reflected velocity equals incoming velocity)"
+        },
+        {
+          "type": "pad",
+          "name": "DR",
+          "definition": 12
+        },
+        {
+          "type": "custom",
+          "name": "Densities (g/mL)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "point_physics_struct_definition_1_options_2": {
+      "options": [
+        "UNUSED",
+        "collides with structures",
+        "collides with water surface",
+        "uses simple wind#the wind on this point won't have high-frequency variations",
+        "uses damped wind#the wind on this point will be artificially slow",
+        "no gravity#the point is not affected by gravity"
+      ]
+    }
+  },
+  "datas": {}
+}

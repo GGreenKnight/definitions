@@ -1,0 +1,161 @@
+{
+  "name": "antenna",
+  "tag": "ant!",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "antenna_vertex_block_3": {
+      "max_count": 20,
+      "struct": "antenna_vertex_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "antenna_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "antenna_vertex_block_3": {
+      "guid": "5f3bf4f0476a775441ad5983490f16ab",
+      "size": 64,
+      "fields": [
+        {
+          "type": "real_euler_angles_2d",
+          "name": "angles#direction toward next vertex!"
+        },
+        {
+          "type": "real",
+          "name": "length:world units#distance between this vertex and the next"
+        },
+        {
+          "type": "short_integer",
+          "name": "sequence index#bitmap group sequence index for this vertex's texture"
+        },
+        {
+          "type": "pad",
+          "name": "NTCTQQF",
+          "definition": 2
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color#color at this vertex"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "LOD color#color at this vertex for the low-LOD line primitives!"
+        },
+        {
+          "type": "real",
+          "name": "hermite t!"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "vector to next!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "antenna_struct_definition_1": {
+      "guid": "ed7789d4bc0a555027a7c4fe9b9ac1fc",
+      "size": 144,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "attachment marker name#the marker name where the antenna should be attached"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmaps",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "physics",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real_fraction",
+          "name": "spring strength coefficient#strength of the spring (larger values make the spring stronger)"
+        },
+        {
+          "type": "real",
+          "name": "texel to world width scale"
+        },
+        {
+          "type": "real",
+          "name": "falloff pixels!"
+        },
+        {
+          "type": "real",
+          "name": "cutoff pixels!"
+        },
+        {
+          "type": "real",
+          "name": "point of bend#[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "starting bend#[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "ending bend#[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "runtime total length!"
+        },
+        {
+          "type": "block",
+          "name": "vertices",
+          "definition": "antenna_vertex_block_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

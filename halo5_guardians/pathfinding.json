@@ -1,0 +1,1474 @@
+{
+  "name": "pathfinding",
+  "tag": "pfnd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "FiringPointDefinitionBlock_5": {
+      "max_count": 32767,
+      "struct": "FiringPointDefinitionBlock_5"
+    },
+    "FiringPointAABBBlock_4": {
+      "max_count": 2147483647,
+      "struct": "FiringPointAABBBlock_4"
+    },
+    "pathfinding_data_block_3": {
+      "max_count": 32,
+      "struct": "pathfinding_data_block_3"
+    },
+    "FiringPointDefinitionBlock_8": {
+      "max_count": 32767,
+      "struct": "FiringPointDefinitionBlock_8"
+    },
+    "FiringPointAABBBlock_7": {
+      "max_count": 2147483647,
+      "struct": "FiringPointAABBBlock_7"
+    },
+    "MobileNavMeshBlock_6": {
+      "max_count": 500,
+      "struct": "MobileNavMeshBlock_6"
+    },
+    "NavVolumeBucketBlock_11": {
+      "max_count": 3,
+      "struct": "NavVolumeBucketBlock_11"
+    },
+    "NavVolumeBlock_10": {
+      "max_count": 256,
+      "struct": "NavVolumeBlock_10"
+    },
+    "FiringPointDefinitionBlock_14": {
+      "max_count": 32767,
+      "struct": "FiringPointDefinitionBlock_14"
+    },
+    "FiringPointAABBBlock_13": {
+      "max_count": 2147483647,
+      "struct": "FiringPointAABBBlock_13"
+    },
+    "NavClimbBlock_12": {
+      "max_count": 256,
+      "struct": "NavClimbBlock_12"
+    },
+    "editorMetadataBlock_18": {
+      "max_count": 1024,
+      "struct": "editorMetadataBlock_18"
+    },
+    "user_hint_jump_block_16": {
+      "max_count": 1000,
+      "struct": "user_hint_jump_block_16"
+    },
+    "user_hint_sector_point_block_20": {
+      "max_count": 32,
+      "struct": "user_hint_sector_point_block_20"
+    },
+    "hint_object_id_block_21": {
+      "max_count": 32,
+      "struct": "hint_object_id_block_21"
+    },
+    "editorMetadataBlock_23": {
+      "max_count": 1024,
+      "struct": "editorMetadataBlock_23"
+    },
+    "user_hint_cookie_cutter_block_19": {
+      "max_count": 512,
+      "struct": "user_hint_cookie_cutter_block_19"
+    },
+    "user_hint_sector_point_block_25": {
+      "max_count": 32,
+      "struct": "user_hint_sector_point_block_25"
+    },
+    "editorMetadataBlock_26": {
+      "max_count": 1024,
+      "struct": "editorMetadataBlock_26"
+    },
+    "user_hint_navmesh_area_block_24": {
+      "max_count": 1024,
+      "struct": "user_hint_navmesh_area_block_24"
+    },
+    "user_hint_block_15": {
+      "max_count": 1,
+      "struct": "user_hint_block_15"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "pathfinding_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointDefinitionBlock_5": {
+      "guid": "625d9e164a70e01eaddddb857a60a6a9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref~!"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags!",
+          "definition": "FiringPointDefinitionBlock_5_options_3"
+        },
+        {
+          "type": "word_flags",
+          "name": "posture flags!",
+          "definition": "FiringPointDefinitionBlock_5_options_4"
+        },
+        {
+          "type": "short_integer",
+          "name": "area^!"
+        },
+        {
+          "type": "char_integer",
+          "name": "bits and pad!"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1",
+          "definition": 1
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal!"
+        },
+        {
+          "type": "angle",
+          "name": "facing!"
+        },
+        {
+          "type": "long_integer",
+          "name": "lastAbsoluteRejectionGameTime!"
+        },
+        {
+          "type": "real",
+          "name": "distanceSqToClosestBoundary!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointAABBBlock_4": {
+      "guid": "673648e3400c260c1a092cbdd6492ff3",
+      "size": 64,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "m_min*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_min*~!"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "m_max*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_max*~!"
+        },
+        {
+          "type": "block",
+          "name": "firingPoints*~",
+          "definition": "FiringPointDefinitionBlock_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pathfinding_data_block_3": {
+      "guid": "d935ab3c421686acbb36b7bc7c72e09a",
+      "size": 160,
+      "fields": [
+        {
+          "type": "data",
+          "name": "navGraphData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navMediatorData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navTraversalData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navFPTreeData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "firingPointAABBList*~",
+          "definition": "FiringPointAABBBlock_4"
+        },
+        {
+          "type": "long_integer",
+          "name": "version*~"
+        },
+        {
+          "type": "long_integer",
+          "name": "structure checksum*~"
+        },
+        {
+          "type": "pad",
+          "name": "padAlignPathfindingData",
+          "definition": 12
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointDefinitionBlock_8": {
+      "guid": "625d9e164a70e01eaddddb857a60a6a9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref~!"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags!",
+          "definition": "FiringPointDefinitionBlock_8_options_3"
+        },
+        {
+          "type": "word_flags",
+          "name": "posture flags!",
+          "definition": "FiringPointDefinitionBlock_8_options_4"
+        },
+        {
+          "type": "short_integer",
+          "name": "area^!"
+        },
+        {
+          "type": "char_integer",
+          "name": "bits and pad!"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1",
+          "definition": 1
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal!"
+        },
+        {
+          "type": "angle",
+          "name": "facing!"
+        },
+        {
+          "type": "long_integer",
+          "name": "lastAbsoluteRejectionGameTime!"
+        },
+        {
+          "type": "real",
+          "name": "distanceSqToClosestBoundary!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointAABBBlock_7": {
+      "guid": "673648e3400c260c1a092cbdd6492ff3",
+      "size": 64,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "m_min*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_min*~!"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "m_max*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_max*~!"
+        },
+        {
+          "type": "block",
+          "name": "firingPoints*~",
+          "definition": "FiringPointDefinitionBlock_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_id_9": {
+      "guid": "a40a140145aede4b14477fb47b9ec399",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "unique id*"
+        },
+        {
+          "type": "short_integer",
+          "name": "origin bsp index*"
+        },
+        {
+          "type": "char_enum",
+          "name": "type*",
+          "definition": "object_id_9_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "source*",
+          "definition": "object_id_9_options_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MobileNavMeshBlock_6": {
+      "guid": "9417c73041592664b26ceb9c20a97485",
+      "size": 160,
+      "fields": [
+        {
+          "type": "data",
+          "name": "navGraphData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navMediatorData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navTraversalData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navFPTreeData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "firingPointAABBList*~",
+          "definition": "FiringPointAABBBlock_7"
+        },
+        {
+          "type": "long_integer",
+          "name": "version*~"
+        },
+        {
+          "type": "struct",
+          "name": "object id",
+          "definition": "object_id_9"
+        },
+        {
+          "type": "long_integer",
+          "name": "nodeIndex"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "MobileNavMeshBlock_6_options_8"
+        },
+        {
+          "type": "pad",
+          "name": "padFlags",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavVolumeBucketBlock_11": {
+      "guid": "44fcafb045337cd7934015b42594e09a",
+      "size": 32,
+      "fields": [
+        {
+          "type": "data",
+          "name": "navMediatorData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "char_integer",
+          "name": "bucketID"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavVolumeBlock_10": {
+      "guid": "967c1dd543346b6d8f284f88c8bbaed1",
+      "size": 48,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "navMeshAreaIndex*~"
+        },
+        {
+          "type": "long_integer",
+          "name": "version*~"
+        },
+        {
+          "type": "block",
+          "name": "buckets*~",
+          "definition": "NavVolumeBucketBlock_11"
+        },
+        {
+          "type": "pad",
+          "name": "padAlignNavVolume",
+          "definition": 12
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointDefinitionBlock_14": {
+      "guid": "625d9e164a70e01eaddddb857a60a6a9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref~!"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags!",
+          "definition": "FiringPointDefinitionBlock_14_options_3"
+        },
+        {
+          "type": "word_flags",
+          "name": "posture flags!",
+          "definition": "FiringPointDefinitionBlock_14_options_4"
+        },
+        {
+          "type": "short_integer",
+          "name": "area^!"
+        },
+        {
+          "type": "char_integer",
+          "name": "bits and pad!"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1",
+          "definition": 1
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal!"
+        },
+        {
+          "type": "angle",
+          "name": "facing!"
+        },
+        {
+          "type": "long_integer",
+          "name": "lastAbsoluteRejectionGameTime!"
+        },
+        {
+          "type": "real",
+          "name": "distanceSqToClosestBoundary!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FiringPointAABBBlock_13": {
+      "guid": "673648e3400c260c1a092cbdd6492ff3",
+      "size": 64,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "m_min*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_min*~!"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "m_max*~"
+        },
+        {
+          "type": "real",
+          "name": "havok w m_max*~!"
+        },
+        {
+          "type": "block",
+          "name": "firingPoints*~",
+          "definition": "FiringPointDefinitionBlock_14"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavClimbBlock_12": {
+      "guid": "5c34e2034f21f75d662d39b90146604b",
+      "size": 160,
+      "fields": [
+        {
+          "type": "data",
+          "name": "navGraphData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navMediatorData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navTraversalData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "navFPTreeData*~",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "firingPointAABBList*~",
+          "definition": "FiringPointAABBBlock_13"
+        },
+        {
+          "type": "long_integer",
+          "name": "version*~"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshAreaIndex*~"
+        },
+        {
+          "type": "pad",
+          "name": "padAlignPathfindingData",
+          "definition": 12
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "geometry_17": {
+      "guid": "15170fed4c5a0d2bce4ba1845ea189c8",
+      "size": 84,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "Point 0*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref0*~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref0*~!"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Point 1*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref1*~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref1*~!"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Point 2*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref2*~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref2*~!"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "Point 3*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref3*~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref3*~!"
+        },
+        {
+          "type": "word_flags",
+          "name": "invalid_points*!",
+          "definition": "geometry_17_options_12"
+        },
+        {
+          "type": "pad",
+          "name": "KJHIUF",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "editorMetadataBlock_18": {
+      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+      "size": 520,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorMetadataBlock_18_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_jump_block_16": {
+      "guid": "0e281bd741c06751acc84a84c2cfbff4",
+      "size": 136,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "hint type",
+          "definition": "user_hint_jump_block_16_options_0"
+        },
+        {
+          "type": "short_integer",
+          "name": "Squad group filter"
+        },
+        {
+          "type": "long_integer",
+          "name": "hint data 0*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "hint data 1*!"
+        },
+        {
+          "type": "byte_integer",
+          "name": "hint data 2*!"
+        },
+        {
+          "type": "byte_integer",
+          "name": "pad1*!"
+        },
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "word_flags",
+          "name": "Flags",
+          "definition": "user_hint_jump_block_16_options_7"
+        },
+        {
+          "type": "short_enum",
+          "name": "force jump height",
+          "definition": "user_hint_jump_block_16_options_8"
+        },
+        {
+          "type": "word_flags",
+          "name": "control flags",
+          "definition": "user_hint_jump_block_16_options_9"
+        },
+        {
+          "type": "pad",
+          "name": "post-forced-hoist-height",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "geometry",
+          "definition": "geometry_17"
+        },
+        {
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_sector_point_block_20": {
+      "guid": "33170c5b41ff1260a4d6bb8e4e46984c",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "point"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref~!"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_ID___22": {
+      "guid": "a40a140145aede4b14477fb47b9ec399",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "unique id*"
+        },
+        {
+          "type": "short_integer",
+          "name": "origin bsp index*"
+        },
+        {
+          "type": "char_enum",
+          "name": "type*",
+          "definition": "object_ID___22_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "source*",
+          "definition": "object_ID___22_options_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "hint_object_id_block_21": {
+      "guid": "9b75822143c24ab2e55f3b9ae0939aa0",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "object ID*!",
+          "definition": "object_ID___22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "editorMetadataBlock_23": {
+      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+      "size": 520,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorMetadataBlock_23_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_cookie_cutter_block_19": {
+      "guid": "51c7f11e4538a5069ceaafaa96a35481",
+      "size": 120,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "hkaiVolume vtable*~!"
+        },
+        {
+          "type": "short_integer",
+          "name": "size*~!"
+        },
+        {
+          "type": "short_integer",
+          "name": "count*~!"
+        },
+        {
+          "type": "pad",
+          "name": "pad64_00",
+          "definition": 4
+        },
+        {
+          "type": "block",
+          "name": "points",
+          "definition": "user_hint_sector_point_block_20"
+        },
+        {
+          "type": "block",
+          "name": "pointsObjectIds",
+          "definition": "hint_object_id_block_21"
+        },
+        {
+          "type": "real",
+          "name": "z height"
+        },
+        {
+          "type": "real",
+          "name": "z sink"
+        },
+        {
+          "type": "short_enum",
+          "name": "type",
+          "definition": "user_hint_cookie_cutter_block_19_options_8"
+        },
+        {
+          "type": "short_integer",
+          "name": "pad*!"
+        },
+        {
+          "type": "long_integer",
+          "name": "runtimeObjectTransformOverrideIndex*~!"
+        },
+        {
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock_23"
+        },
+        {
+          "type": "char_integer",
+          "name": "invalid*!"
+        },
+        {
+          "type": "char_integer",
+          "name": "pad2*!"
+        },
+        {
+          "type": "char_integer",
+          "name": "pad3*!"
+        },
+        {
+          "type": "char_integer",
+          "name": "pad4*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_sector_point_block_25": {
+      "guid": "33170c5b41ff1260a4d6bb8e4e46984c",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "point"
+        },
+        {
+          "type": "long_integer",
+          "name": "packedKeyOffaceref~!"
+        },
+        {
+          "type": "long_integer",
+          "name": "navMeshUIDOffaceref~!"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "normal"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "editorMetadataBlock_26": {
+      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+      "size": 520,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorMetadataBlock_26_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_navmesh_area_block_24": {
+      "guid": "60c6e6a6446bec9c47f302ac2e02feac",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "hkaiVolume vtable*~!"
+        },
+        {
+          "type": "short_integer",
+          "name": "size*~!"
+        },
+        {
+          "type": "short_integer",
+          "name": "count*~!"
+        },
+        {
+          "type": "pad",
+          "name": "pad64_00",
+          "definition": 4
+        },
+        {
+          "type": "block",
+          "name": "points",
+          "definition": "user_hint_sector_point_block_25"
+        },
+        {
+          "type": "real",
+          "name": "z height"
+        },
+        {
+          "type": "real",
+          "name": "z sink"
+        },
+        {
+          "type": "real",
+          "name": "step height"
+        },
+        {
+          "type": "long_enum",
+          "name": "type",
+          "definition": "user_hint_navmesh_area_block_24_options_8"
+        },
+        {
+          "type": "byte_integer",
+          "name": "isValid*~!"
+        },
+        {
+          "type": "byte_integer",
+          "name": "runtimeCarverInversion*~!"
+        },
+        {
+          "type": "pad",
+          "name": "postrci",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "Max CONVEX Border Simplify Area"
+        },
+        {
+          "type": "real",
+          "name": "Max CONVEX Border Simplify Area"
+        },
+        {
+          "type": "custom",
+          "name": "Max Border Distance Error"
+        },
+        {
+          "type": "real",
+          "name": "Max Border Distance Error"
+        },
+        {
+          "type": "custom",
+          "name": "Max CONCAVE Border Simplify Area"
+        },
+        {
+          "type": "real",
+          "name": "Max CONCAVE Border Simplify Area"
+        },
+        {
+          "type": "custom",
+          "name": "Max Walkable Slope"
+        },
+        {
+          "type": "real",
+          "name": "Max Walkable Slope"
+        },
+        {
+          "type": "custom",
+          "name": "Cosine angle merge control"
+        },
+        {
+          "type": "real",
+          "name": "Cosine angle merge control"
+        },
+        {
+          "type": "custom",
+          "name": "Hole replacement area"
+        },
+        {
+          "type": "real",
+          "name": "Hole replacement area"
+        },
+        {
+          "type": "custom",
+          "name": "Partition size"
+        },
+        {
+          "type": "long_integer",
+          "name": "Partition size"
+        },
+        {
+          "type": "custom",
+          "name": "Loop shrink factor"
+        },
+        {
+          "type": "real",
+          "name": "Loop shrink factor"
+        },
+        {
+          "type": "custom",
+          "name": "Unique per volume cell size"
+        },
+        {
+          "type": "real",
+          "name": "Custom Air Cell Size"
+        },
+        {
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock_26"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_hint_block_15": {
+      "guid": "8c8eeef84eb7a52295a6fe9d5053ccc4",
+      "size": 84,
+      "fields": [
+        {
+          "type": "block",
+          "name": "jump hints",
+          "definition": "user_hint_jump_block_16"
+        },
+        {
+          "type": "block",
+          "name": "cookie cutters",
+          "definition": "user_hint_cookie_cutter_block_19"
+        },
+        {
+          "type": "block",
+          "name": "navmesh areas",
+          "definition": "user_hint_navmesh_area_block_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pathfinding_struct_definition_1": {
+      "guid": "801d6d500ef4d7d970870c44a8bfdcb9",
+      "size": 160,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "bsp pathfinding data",
+          "definition": "pathfinding_data_block_3"
+        },
+        {
+          "type": "block",
+          "name": "mobileNavMeshes*~",
+          "definition": "MobileNavMeshBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "navVolumes*~",
+          "definition": "NavVolumeBlock_10"
+        },
+        {
+          "type": "block",
+          "name": "navClimbs*~",
+          "definition": "NavClimbBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "hints",
+          "definition": "user_hint_block_15"
+        },
+        {
+          "type": "byte_integer",
+          "name": "already Converted!"
+        },
+        {
+          "type": "pad",
+          "name": "lindquistPad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "FiringPointDefinitionBlock_5_options_3": {
+      "options": [
+        "open",
+        "partial",
+        "closed",
+        "mobile",
+        "wall lean",
+        "perch don't use this doesn't work",
+        "ground point",
+        "dynamic cover point",
+        "automatically generated!",
+        "nav volume",
+        "center bunkering"
+      ]
+    },
+    "FiringPointDefinitionBlock_5_options_4": {
+      "options": [
+        "corner_left",
+        "corner_right",
+        "bunker",
+        "bunker high",
+        "bunker low"
+      ]
+    },
+    "FiringPointDefinitionBlock_8_options_3": {
+      "options": [
+        "open",
+        "partial",
+        "closed",
+        "mobile",
+        "wall lean",
+        "perch don't use this doesn't work",
+        "ground point",
+        "dynamic cover point",
+        "automatically generated!",
+        "nav volume",
+        "center bunkering"
+      ]
+    },
+    "FiringPointDefinitionBlock_8_options_4": {
+      "options": [
+        "corner_left",
+        "corner_right",
+        "bunker",
+        "bunker high",
+        "bunker low"
+      ]
+    },
+    "object_id_9_options_2": {
+      "options": [
+        "biped",
+        "vehicle",
+        "weapon",
+        "equipment",
+        "terminal",
+        "projectile",
+        "scenery",
+        "machine",
+        "control",
+        "dispenser",
+        "sound_scenery",
+        "crate",
+        "creature",
+        "giant",
+        "effect_scenery",
+        "entity"
+      ]
+    },
+    "object_id_9_options_3": {
+      "options": [
+        "structure",
+        "editor",
+        "dynamic",
+        "legacy",
+        "sky",
+        "parent"
+      ]
+    },
+    "MobileNavMeshBlock_6_options_8": {
+      "options": [
+        "always loaded"
+      ]
+    },
+    "FiringPointDefinitionBlock_14_options_3": {
+      "options": [
+        "open",
+        "partial",
+        "closed",
+        "mobile",
+        "wall lean",
+        "perch don't use this doesn't work",
+        "ground point",
+        "dynamic cover point",
+        "automatically generated!",
+        "nav volume",
+        "center bunkering"
+      ]
+    },
+    "FiringPointDefinitionBlock_14_options_4": {
+      "options": [
+        "corner_left",
+        "corner_right",
+        "bunker",
+        "bunker high",
+        "bunker low"
+      ]
+    },
+    "user_hint_jump_block_16_options_0": {
+      "options": [
+        "jump link",
+        "climb link",
+        "vault link",
+        "mount link",
+        "hoist link",
+        "wall jump link"
+      ]
+    },
+    "user_hint_jump_block_16_options_7": {
+      "options": [
+        "bidirectional",
+        "closed"
+      ]
+    },
+    "user_hint_jump_block_16_options_8": {
+      "options": [
+        "NONE",
+        "down",
+        "step",
+        "crouch",
+        "stand",
+        "storey",
+        "tower",
+        "infinite"
+      ]
+    },
+    "user_hint_jump_block_16_options_9": {
+      "options": [
+        "magic lift",
+        "vehicle only",
+        "railing",
+        "vault",
+        "down",
+        "phase",
+        "stop autodown",
+        "force walk"
+      ]
+    },
+    "geometry_17_options_12": {
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "editorMetadataBlock_18_options_1": {
+      "options": [
+        "class",
+        "array",
+        "string",
+        "bool",
+        "int"
+      ]
+    },
+    "object_ID___22_options_2": {
+      "options": [
+        "biped",
+        "vehicle",
+        "weapon",
+        "equipment",
+        "terminal",
+        "projectile",
+        "scenery",
+        "machine",
+        "control",
+        "dispenser",
+        "sound_scenery",
+        "crate",
+        "creature",
+        "giant",
+        "effect_scenery",
+        "entity"
+      ]
+    },
+    "object_ID___22_options_3": {
+      "options": [
+        "structure",
+        "editor",
+        "dynamic",
+        "legacy",
+        "sky",
+        "parent"
+      ]
+    },
+    "user_hint_cookie_cutter_block_19_options_8": {
+      "options": [
+        "carve out",
+        "preserve",
+        "carve air volume"
+      ]
+    },
+    "editorMetadataBlock_23_options_1": {
+      "options": [
+        "class",
+        "array",
+        "string",
+        "bool",
+        "int"
+      ]
+    },
+    "user_hint_navmesh_area_block_24_options_8": {
+      "options": [
+        "Generate Ground",
+        "Generate Climb",
+        "Generate Air",
+        "Generate Custom Air",
+        "Navmesh Low Res",
+        "Navmesh 2",
+        "Navmesh 3",
+        "Navmesh 4",
+        "Navmesh 5",
+        "Navmesh 6",
+        "Navmesh 7",
+        "Navmesh 8",
+        "Navmesh High Res",
+        "CUSTOM (Recommended)",
+        "No Bunkering"
+      ]
+    },
+    "editorMetadataBlock_26_options_1": {
+      "options": [
+        "class",
+        "array",
+        "string",
+        "bool",
+        "int"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

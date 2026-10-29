@@ -1,0 +1,255 @@
+{
+  "name": "vectorart_asset",
+  "tag": "vaas",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "polyartVertexBlock_3": {
+      "max_count": 32768,
+      "struct": "polyartVertexBlock_3"
+    },
+    "polyartIndexBlock_4": {
+      "max_count": 32768,
+      "struct": "polyartIndexBlock_4"
+    },
+    "vertexBuffersBlock_5": {
+      "max_count": 1,
+      "struct": "vertexBuffersBlock_5"
+    },
+    "indexBuffersBlock_6": {
+      "max_count": 1,
+      "struct": "indexBuffersBlock_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "vectorart_asset_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyartVertexBlock_3": {
+      "guid": "118494c34b9bb73fdc4d74a49b327406",
+      "size": 12,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "half x*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half y*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half z*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half alpha*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half u*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half v*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyartIndexBlock_4": {
+      "guid": "a4c7cb014d142540a27fa2b5f24d7693",
+      "size": 2,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vertexBuffersBlock_5": {
+      "guid": "f38916ab435eca2ab153b3bc3e0d1357",
+      "size": 80,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "declaration type*"
+        },
+        {
+          "type": "byte_integer",
+          "name": "stride*"
+        },
+        {
+          "type": "pad",
+          "name": "vertex buffer pad",
+          "definition": 2
+        },
+        {
+          "type": "dword_integer",
+          "name": "count*"
+        },
+        {
+          "type": "pad",
+          "name": "wtf",
+          "definition": 48
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d SRV*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d cpu copy*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "indexBuffersBlock_6": {
+      "guid": "fb7aa38b46253ce503006cb9bc2b8160",
+      "size": 72,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "declaration type*"
+        },
+        {
+          "type": "byte_integer",
+          "name": "stride*"
+        },
+        {
+          "type": "pad",
+          "name": "vertex buffer pad",
+          "definition": 2
+        },
+        {
+          "type": "dword_integer",
+          "name": "count*"
+        },
+        {
+          "type": "pad",
+          "name": "wtf",
+          "definition": 48
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d cpu copy*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vectorart_asset_struct_definition_1": {
+      "guid": "c3a5effc4f94e20f269af5fbe9827f91",
+      "size": 152,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "runtime flags*!",
+          "definition": "vectorart_asset_struct_definition_1_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "MERP",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "antialiasing extent size"
+        },
+        {
+          "type": "real",
+          "name": "import fudge factor (suggested 0.5)"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "bounds*"
+        },
+        {
+          "type": "real",
+          "name": "curve smoothness"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "polyartVertexBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "indices*",
+          "definition": "polyartIndexBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "pc vertex buffers*",
+          "definition": "vertexBuffersBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "pc index buffers*",
+          "definition": "indexBuffersBlock_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "vectorart_asset_struct_definition_1_options_2": {
+      "options": [
+        "processed*!",
+        "available*!"
+      ]
+    }
+  },
+  "datas": {}
+}

@@ -1,0 +1,2327 @@
+{
+  "name": "ComponentDefinition",
+  "tag": "fuic",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "NamedResourceHandleDefinitionBlock_4": {
+      "max_count": 1024,
+      "struct": "NamedResourceHandleDefinitionBlock_4"
+    },
+    "BooleanDefinitionBlock_6": {
+      "max_count": 1024,
+      "struct": "BooleanDefinitionBlock_6"
+    },
+    "IntegerDefinitionBlock_7": {
+      "max_count": 1024,
+      "struct": "IntegerDefinitionBlock_7"
+    },
+    "FloatDefinitionBlock_8": {
+      "max_count": 1024,
+      "struct": "FloatDefinitionBlock_8"
+    },
+    "ColorDefinitionBlock_9": {
+      "max_count": 1024,
+      "struct": "ColorDefinitionBlock_9"
+    },
+    "Point2FDefinitionBlock_11": {
+      "max_count": 1024,
+      "struct": "Point2FDefinitionBlock_11"
+    },
+    "StringIdDefinitionBlock_12": {
+      "max_count": 1024,
+      "struct": "StringIdDefinitionBlock_12"
+    },
+    "BitmapGroupReferenceDefinitionBlock_13": {
+      "max_count": 1024,
+      "struct": "BitmapGroupReferenceDefinitionBlock_13"
+    },
+    "FloatAnimationDefinitionBlock_14": {
+      "max_count": 1024,
+      "struct": "FloatAnimationDefinitionBlock_14"
+    },
+    "ColorAnimationDefinitionBlock_17": {
+      "max_count": 1024,
+      "struct": "ColorAnimationDefinitionBlock_17"
+    },
+    "Point2FAnimationDefinitionBlock_22": {
+      "max_count": 1024,
+      "struct": "Point2FAnimationDefinitionBlock_22"
+    },
+    "IntegerAnimationDefinitionBlock_25": {
+      "max_count": 1024,
+      "struct": "IntegerAnimationDefinitionBlock_25"
+    },
+    "ResourceHandleDefinitionBlock_29": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_29"
+    },
+    "StoryboardDefinitionBlock_28": {
+      "max_count": 1024,
+      "struct": "StoryboardDefinitionBlock_28"
+    },
+    "NumericDisplayDefinitionBlock_31": {
+      "max_count": 1024,
+      "struct": "NumericDisplayDefinitionBlock_31"
+    },
+    "VisualStateDefinitionBlock_33": {
+      "max_count": 1024,
+      "struct": "VisualStateDefinitionBlock_33"
+    },
+    "ResourceHandleDefinitionBlock_36": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_36"
+    },
+    "VisualStateGroupDefinitionBlock_35": {
+      "max_count": 1024,
+      "struct": "VisualStateGroupDefinitionBlock_35"
+    },
+    "ResourceHandleDefinitionBlock_41": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_41"
+    },
+    "FloatAnimationUsingKeyFramesDefinitionBlock_38": {
+      "max_count": 1024,
+      "struct": "FloatAnimationUsingKeyFramesDefinitionBlock_38"
+    },
+    "LinearFloatKeyFrameDefinitionBlock_43": {
+      "max_count": 1024,
+      "struct": "LinearFloatKeyFrameDefinitionBlock_43"
+    },
+    "DiscreteFloatKeyFrameDefinitionBlock_45": {
+      "max_count": 1024,
+      "struct": "DiscreteFloatKeyFrameDefinitionBlock_45"
+    },
+    "ResourceHandleDefinitionBlock_50": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_50"
+    },
+    "ColorAnimationUsingKeyFramesDefinitionBlock_47": {
+      "max_count": 1024,
+      "struct": "ColorAnimationUsingKeyFramesDefinitionBlock_47"
+    },
+    "LinearColorKeyFrameDefinitionBlock_52": {
+      "max_count": 1024,
+      "struct": "LinearColorKeyFrameDefinitionBlock_52"
+    },
+    "DiscreteColorKeyFrameDefinitionBlock_55": {
+      "max_count": 1024,
+      "struct": "DiscreteColorKeyFrameDefinitionBlock_55"
+    },
+    "ResourceHandleDefinitionBlock_61": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_61"
+    },
+    "BooleanAnimationUsingKeyFramesDefinitionBlock_58": {
+      "max_count": 1024,
+      "struct": "BooleanAnimationUsingKeyFramesDefinitionBlock_58"
+    },
+    "DiscreteBooleanKeyFrameDefinitionBlock_63": {
+      "max_count": 1024,
+      "struct": "DiscreteBooleanKeyFrameDefinitionBlock_63"
+    },
+    "ResourceHandleDefinitionBlock_68": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_68"
+    },
+    "Point2FAnimationUsingKeyFramesDefinitionBlock_65": {
+      "max_count": 1024,
+      "struct": "Point2FAnimationUsingKeyFramesDefinitionBlock_65"
+    },
+    "LinearPoint2FKeyFrameDefinitionBlock_70": {
+      "max_count": 1024,
+      "struct": "LinearPoint2FKeyFrameDefinitionBlock_70"
+    },
+    "DiscretePoint2FKeyFrameDefinitionBlock_72": {
+      "max_count": 1024,
+      "struct": "DiscretePoint2FKeyFrameDefinitionBlock_72"
+    },
+    "ResourceHandleDefinitionBlock_77": {
+      "max_count": 1024,
+      "struct": "ResourceHandleDefinitionBlock_77"
+    },
+    "IntegerAnimationUsingKeyFramesDefinitionBlock_74": {
+      "max_count": 1024,
+      "struct": "IntegerAnimationUsingKeyFramesDefinitionBlock_74"
+    },
+    "LinearIntegerKeyFrameDefinitionBlock_79": {
+      "max_count": 1024,
+      "struct": "LinearIntegerKeyFrameDefinitionBlock_79"
+    },
+    "DiscreteIntegerKeyFrameDefinitionBlock_81": {
+      "max_count": 1024,
+      "struct": "DiscreteIntegerKeyFrameDefinitionBlock_81"
+    },
+    "RepeatBehaviorDefinitionBlock_83": {
+      "max_count": 1024,
+      "struct": "RepeatBehaviorDefinitionBlock_83"
+    },
+    "SoundDefinitionBlock_84": {
+      "max_count": 1024,
+      "struct": "SoundDefinitionBlock_84"
+    },
+    "SoundLoopDefinitionBlock_85": {
+      "max_count": 1024,
+      "struct": "SoundLoopDefinitionBlock_85"
+    },
+    "NavPointLayoutDefinitionBlock_86": {
+      "max_count": 1024,
+      "struct": "NavPointLayoutDefinitionBlock_86"
+    },
+    "NavPointAnimationDefinitionBlock_87": {
+      "max_count": 1024,
+      "struct": "NavPointAnimationDefinitionBlock_87"
+    },
+    "StringTableEntryDefinitionBlock_89": {
+      "max_count": 1024,
+      "struct": "StringTableEntryDefinitionBlock_89"
+    },
+    "StringTableDefinitionBlock_88": {
+      "max_count": 1024,
+      "struct": "StringTableDefinitionBlock_88"
+    },
+    "SubComponentDefinitionBlock_90": {
+      "max_count": 1024,
+      "struct": "SubComponentDefinitionBlock_90"
+    },
+    "HudTwoToneGradientDefinitionBlock_91": {
+      "max_count": 1024,
+      "struct": "HudTwoToneGradientDefinitionBlock_91"
+    },
+    "FontDefinitionBlock_94": {
+      "max_count": 1024,
+      "struct": "FontDefinitionBlock_94"
+    },
+    "HighContrastAdditiveDefinitionBlock_96": {
+      "max_count": 1024,
+      "struct": "HighContrastAdditiveDefinitionBlock_96"
+    },
+    "VertexWarpDefinitionBlock_97": {
+      "max_count": 1024,
+      "struct": "VertexWarpDefinitionBlock_97"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "ComponentDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_5": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NamedResourceHandleDefinitionBlock_4": {
+      "guid": "1cf6f98f49452722123748ac2663b239",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BooleanDefinitionBlock_6": {
+      "guid": "69dfec9b43bf0db1194d8c9176d5aaea",
+      "size": 1,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "value",
+          "definition": "BooleanDefinitionBlock_6_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "IntegerDefinitionBlock_7": {
+      "guid": "1d4961fa4881e32a6d57d6835c161349",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FloatDefinitionBlock_8": {
+      "guid": "39ca867949562c99754c59a09521c2b9",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "value_10": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ColorDefinitionBlock_9": {
+      "guid": "d44661b94997730d0fe084a8a313dfce",
+      "size": 36,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "value",
+          "definition": "value_10"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value old {value}"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point2FDefinitionBlock_11": {
+      "guid": "f753a545444cd2c2be10359a03069be9",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real_point_2d",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "StringIdDefinitionBlock_12": {
+      "guid": "ba60308e42514c82ed994aa1f9c5ccb6",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BitmapGroupReferenceDefinitionBlock_13": {
+      "guid": "0d60474140dfc2715360bf8e99172c26",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "word_integer",
+          "name": "sprite index#the index of the sprite within the bitmap to use"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_16": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_15": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FloatAnimationDefinitionBlock_14": {
+      "guid": "eb7efa384ac0cd4e1a9675b9d4bd8e52",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_15"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "FloatAnimationDefinitionBlock_14_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "from"
+        },
+        {
+          "type": "real",
+          "name": "to"
+        },
+        {
+          "type": "real",
+          "name": "duration"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_19": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_18": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_19"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "from_20": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "to_21": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ColorAnimationDefinitionBlock_17": {
+      "guid": "7394baa0445a950adec953a734bf85db",
+      "size": 92,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_18"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "ColorAnimationDefinitionBlock_17_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "struct",
+          "name": "from",
+          "definition": "from_20"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "from old {from}"
+        },
+        {
+          "type": "struct",
+          "name": "to",
+          "definition": "to_21"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "to old {to}"
+        },
+        {
+          "type": "real",
+          "name": "duration"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_24": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_23": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point2FAnimationDefinitionBlock_22": {
+      "guid": "9042c91f4c749c72c5bef884c27a7e22",
+      "size": 36,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_23"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "Point2FAnimationDefinitionBlock_22_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "real_point_2d",
+          "name": "from"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "to"
+        },
+        {
+          "type": "real",
+          "name": "duration"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_27": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_26": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_27"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "IntegerAnimationDefinitionBlock_25": {
+      "guid": "3013a82b48c8654efae1c4832c5e56c5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_26"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "IntegerAnimationDefinitionBlock_25_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "from"
+        },
+        {
+          "type": "long_integer",
+          "name": "to"
+        },
+        {
+          "type": "real",
+          "name": "duration"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_30": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_29": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_30"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "StoryboardDefinitionBlock_28": {
+      "guid": "f5e4db304a0602e12887a79e28f0b7ca",
+      "size": 28,
+      "fields": [
+        {
+          "type": "block",
+          "name": "timelines",
+          "definition": "ResourceHandleDefinitionBlock_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "tint_color_of_the_numeric_display_32": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NumericDisplayDefinitionBlock_31": {
+      "guid": "f183bc664e9c4d5a4000aca7aa4e1545",
+      "size": 112,
+      "fields": [
+        {
+          "type": "string",
+          "name": "extra characters used in display in addition to 0 to 9#must be in order that they appear in bitmap tag"
+        },
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "struct",
+          "name": "tint color of the numeric display",
+          "definition": "tint_color_of_the_numeric_display_32"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "tint color old {tint color of the numeric display}"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "alignment point on screen#top-left, top-center, or top-right corner depending on text alignment"
+        },
+        {
+          "type": "short_enum",
+          "name": "numeric display alignment based on alignment point given",
+          "definition": "NumericDisplayDefinitionBlock_31_options_5"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "NumericDisplayDefinitionBlock_31_options_6"
+        },
+        {
+          "type": "pad",
+          "name": "padBase",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "storyboard_34": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VisualStateDefinitionBlock_33": {
+      "guid": "61610eef4199b1039713c4b47d61289d",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "struct",
+          "name": "storyboard",
+          "definition": "storyboard_34"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_37": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_36": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_37"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VisualStateGroupDefinitionBlock_35": {
+      "guid": "cc7d572e44c1362ffc84399d3ad8ba2e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "block",
+          "name": "visual states",
+          "definition": "ResourceHandleDefinitionBlock_36"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_40": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_39": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_40"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_42": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_41": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_42"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FloatAnimationUsingKeyFramesDefinitionBlock_38": {
+      "guid": "3578cbf54046ae2ce22e4dac4eea02d2",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_39"
+        },
+        {
+          "type": "block",
+          "name": "key frames",
+          "definition": "ResourceHandleDefinitionBlock_41"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_44": {
+      "guid": "1b6c54034450c6a1e1c19aa2b331d310",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "real",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LinearFloatKeyFrameDefinitionBlock_43": {
+      "guid": "dcd3a94243e9228cd1d5e4a9ac4a466a",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_44"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_46": {
+      "guid": "1b6c54034450c6a1e1c19aa2b331d310",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "real",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DiscreteFloatKeyFrameDefinitionBlock_45": {
+      "guid": "4ae20ca342d3108f43e8a88e7bc04b15",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_46"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_49": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_48": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_49"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_51": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_50": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_51"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ColorAnimationUsingKeyFramesDefinitionBlock_47": {
+      "guid": "02f7563a49a3586e218df9b321d8de78",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_48"
+        },
+        {
+          "type": "block",
+          "name": "key frames",
+          "definition": "ResourceHandleDefinitionBlock_50"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "key_value_54": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_53": {
+      "guid": "94ead44e4522ddb865c17da178a0ff9a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "struct",
+          "name": "key value",
+          "definition": "key_value_54"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "key value old {key value}"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LinearColorKeyFrameDefinitionBlock_52": {
+      "guid": "b33ca40342d77d841073c4aa066aab14",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_53"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "key_value_57": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_56": {
+      "guid": "94ead44e4522ddb865c17da178a0ff9a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "struct",
+          "name": "key value",
+          "definition": "key_value_57"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "key value old {key value}"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DiscreteColorKeyFrameDefinitionBlock_55": {
+      "guid": "1ec40c82481492c7d2fd0ab82e1b3033",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_56"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_60": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_59": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_60"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_62": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_61": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_62"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BooleanAnimationUsingKeyFramesDefinitionBlock_58": {
+      "guid": "b2281cac45ac0143051e2a9a2c1bac96",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_59"
+        },
+        {
+          "type": "block",
+          "name": "key frames",
+          "definition": "ResourceHandleDefinitionBlock_61"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_64": {
+      "guid": "5b52c6944b0431a17de1038d6486252c",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "byte_flags",
+          "name": "key value",
+          "definition": "keyframebase_64_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DiscreteBooleanKeyFrameDefinitionBlock_63": {
+      "guid": "93247c244dfc86520ab9528afe1da873",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_64"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_67": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_66": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_67"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_69": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_68": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_69"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Point2FAnimationUsingKeyFramesDefinitionBlock_65": {
+      "guid": "f757849947c088416d0ff7b5799c9834",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_66"
+        },
+        {
+          "type": "block",
+          "name": "key frames",
+          "definition": "ResourceHandleDefinitionBlock_68"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_71": {
+      "guid": "9a7cbb7d46b2964f8bebaa8ca0776b78",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LinearPoint2FKeyFrameDefinitionBlock_70": {
+      "guid": "36a4dc164a67f76f422069b92309f53c",
+      "size": 12,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_71"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_73": {
+      "guid": "9a7cbb7d46b2964f8bebaa8ca0776b78",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DiscretePoint2FKeyFrameDefinitionBlock_72": {
+      "guid": "137ad4754f6d6358dd1788b82e39d8a8",
+      "size": 12,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_73"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "repeat_behavior_76": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "animation_base_75": {
+      "guid": "8e6b2e8d4451cf28fd7319a502acc9ba",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "target"
+        },
+        {
+          "type": "struct",
+          "name": "repeat behavior",
+          "definition": "repeat_behavior_76"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "handle_78": {
+      "guid": "301fc7c542c85525e7c244a9895e6969",
+      "size": 8,
+      "fields": [
+        {
+          "type": "dword_integer",
+          "name": "resource type"
+        },
+        {
+          "type": "long_integer",
+          "name": "resource index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ResourceHandleDefinitionBlock_77": {
+      "guid": "424e4fa24e727bd3cb6aa1bbdee69eb8",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "handle",
+          "definition": "handle_78"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "IntegerAnimationUsingKeyFramesDefinitionBlock_74": {
+      "guid": "ebbba21a4cb964339da081ad034a71d5",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "animation base",
+          "definition": "animation_base_75"
+        },
+        {
+          "type": "block",
+          "name": "key frames",
+          "definition": "ResourceHandleDefinitionBlock_77"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_80": {
+      "guid": "235c218847dcbcc0dbb812a608ced824",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "long_integer",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LinearIntegerKeyFrameDefinitionBlock_79": {
+      "guid": "a152679545d406384a643b8d3f649653",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_80"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "keyframebase_82": {
+      "guid": "235c218847dcbcc0dbb812a608ced824",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "key time"
+        },
+        {
+          "type": "long_integer",
+          "name": "key value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DiscreteIntegerKeyFrameDefinitionBlock_81": {
+      "guid": "4e07c4574dfff1ee142d62afe9be7152",
+      "size": 8,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "keyframebase",
+          "definition": "keyframebase_82"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "RepeatBehaviorDefinitionBlock_83": {
+      "guid": "a1d4120e447f29f3c940db861b6948f6",
+      "size": 12,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "RepeatBehaviorDefinitionBlock_83_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "count"
+        },
+        {
+          "type": "real",
+          "name": "duration"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SoundDefinitionBlock_84": {
+      "guid": "4f97e55e4e059cd50d63dab358e62e26",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SoundLoopDefinitionBlock_85": {
+      "guid": "56e132bf4fa15e2048f23eb67179c6c1",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "asset reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavPointLayoutDefinitionBlock_86": {
+      "guid": "501d6b5442503f5b00649c9e186c03df",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tag reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavPointAnimationDefinitionBlock_87": {
+      "guid": "4f2eb06b470501a6d8afdca11f7ff543",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tag reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "StringTableEntryDefinitionBlock_89": {
+      "guid": "2085ec3b43593b38cf09eaa98be55834",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "data",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "StringTableDefinitionBlock_88": {
+      "guid": "3ced8fcb40d3d306980a0b8201982cfa",
+      "size": 28,
+      "fields": [
+        {
+          "type": "block",
+          "name": "entires",
+          "definition": "StringTableEntryDefinitionBlock_89"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SubComponentDefinitionBlock_90": {
+      "guid": "e0b4a3d74b806f9aba77208297e40dad",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sub component reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "left_color_92": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_color_93": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "HudTwoToneGradientDefinitionBlock_91": {
+      "guid": "a74402904a9cff1b68a70282f683d3c4",
+      "size": 92,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "left color",
+          "definition": "left_color_92"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "left color old {left color}"
+        },
+        {
+          "type": "struct",
+          "name": "right color",
+          "definition": "right_color_93"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "right color old {right color}"
+        },
+        {
+          "type": "real",
+          "name": "edge filter amount"
+        },
+        {
+          "type": "real",
+          "name": "current meter value"
+        },
+        {
+          "type": "real",
+          "name": "min meter value"
+        },
+        {
+          "type": "real",
+          "name": "max meter value"
+        },
+        {
+          "type": "byte_flags",
+          "name": "additive blend toggle",
+          "definition": "HudTwoToneGradientDefinitionBlock_91_options_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "tint_color_95": {
+      "guid": "35ddd2124a9eb550a758f69f0d9f0e68",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FontDefinitionBlock_94": {
+      "guid": "a82395004dc35168df43e9a4c73fb602",
+      "size": 296,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "font family name"
+        },
+        {
+          "type": "struct",
+          "name": "tint color",
+          "definition": "tint_color_95"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "tint color old {tint color}"
+        },
+        {
+          "type": "real",
+          "name": "font size"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "HighContrastAdditiveDefinitionBlock_96": {
+      "guid": "0beba20d4ce7c78bab729b8152c71e0f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "dynamic threshold min"
+        },
+        {
+          "type": "real",
+          "name": "dynamic threshold max"
+        },
+        {
+          "type": "real",
+          "name": "dynamic threshold clamp"
+        },
+        {
+          "type": "byte_flags",
+          "name": "high contrast enable",
+          "definition": "HighContrastAdditiveDefinitionBlock_96_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VertexWarpDefinitionBlock_97": {
+      "guid": "e3969a764815bc44d85e738712aa7b63",
+      "size": 48,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "ellipsoid scale"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "ellipsoid center"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "output offset"
+        },
+        {
+          "type": "long_integer",
+          "name": "tessellation X"
+        },
+        {
+          "type": "long_integer",
+          "name": "tessellation Y"
+        },
+        {
+          "type": "byte_flags",
+          "name": "warp enabled",
+          "definition": "VertexWarpDefinitionBlock_97_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "resources_3": {
+      "guid": "5aed957546a675a55fa5488da028a692",
+      "size": 1148,
+      "fields": [
+        {
+          "type": "block",
+          "name": "entries",
+          "definition": "NamedResourceHandleDefinitionBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "booleans",
+          "definition": "BooleanDefinitionBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "ints",
+          "definition": "IntegerDefinitionBlock_7"
+        },
+        {
+          "type": "block",
+          "name": "floats",
+          "definition": "FloatDefinitionBlock_8"
+        },
+        {
+          "type": "block",
+          "name": "colors",
+          "definition": "ColorDefinitionBlock_9"
+        },
+        {
+          "type": "block",
+          "name": "point2fs",
+          "definition": "Point2FDefinitionBlock_11"
+        },
+        {
+          "type": "block",
+          "name": "string ids",
+          "definition": "StringIdDefinitionBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "bitmaps",
+          "definition": "BitmapGroupReferenceDefinitionBlock_13"
+        },
+        {
+          "type": "block",
+          "name": "floatanimations",
+          "definition": "FloatAnimationDefinitionBlock_14"
+        },
+        {
+          "type": "block",
+          "name": "coloranimations",
+          "definition": "ColorAnimationDefinitionBlock_17"
+        },
+        {
+          "type": "block",
+          "name": "point2fanimations",
+          "definition": "Point2FAnimationDefinitionBlock_22"
+        },
+        {
+          "type": "block",
+          "name": "integeranimations",
+          "definition": "IntegerAnimationDefinitionBlock_25"
+        },
+        {
+          "type": "block",
+          "name": "storyboards",
+          "definition": "StoryboardDefinitionBlock_28"
+        },
+        {
+          "type": "block",
+          "name": "numericdisplay",
+          "definition": "NumericDisplayDefinitionBlock_31"
+        },
+        {
+          "type": "block",
+          "name": "visualstates",
+          "definition": "VisualStateDefinitionBlock_33"
+        },
+        {
+          "type": "block",
+          "name": "visualstategroups",
+          "definition": "VisualStateGroupDefinitionBlock_35"
+        },
+        {
+          "type": "block",
+          "name": "floatanimationusingkeyframes",
+          "definition": "FloatAnimationUsingKeyFramesDefinitionBlock_38"
+        },
+        {
+          "type": "block",
+          "name": "linearfloatkeyframes",
+          "definition": "LinearFloatKeyFrameDefinitionBlock_43"
+        },
+        {
+          "type": "block",
+          "name": "discretefloatkeyframes",
+          "definition": "DiscreteFloatKeyFrameDefinitionBlock_45"
+        },
+        {
+          "type": "block",
+          "name": "coloranimationusingkeyframes",
+          "definition": "ColorAnimationUsingKeyFramesDefinitionBlock_47"
+        },
+        {
+          "type": "block",
+          "name": "linearcolorkeyframes",
+          "definition": "LinearColorKeyFrameDefinitionBlock_52"
+        },
+        {
+          "type": "block",
+          "name": "discretecolorkeyframes",
+          "definition": "DiscreteColorKeyFrameDefinitionBlock_55"
+        },
+        {
+          "type": "block",
+          "name": "booleananimationusingkeyframes",
+          "definition": "BooleanAnimationUsingKeyFramesDefinitionBlock_58"
+        },
+        {
+          "type": "block",
+          "name": "discretebooleankeyframes",
+          "definition": "DiscreteBooleanKeyFrameDefinitionBlock_63"
+        },
+        {
+          "type": "block",
+          "name": "point2fanimationusingkeyframes",
+          "definition": "Point2FAnimationUsingKeyFramesDefinitionBlock_65"
+        },
+        {
+          "type": "block",
+          "name": "linearpoint2fkeyframes",
+          "definition": "LinearPoint2FKeyFrameDefinitionBlock_70"
+        },
+        {
+          "type": "block",
+          "name": "discretepoint2fkeyframes",
+          "definition": "DiscretePoint2FKeyFrameDefinitionBlock_72"
+        },
+        {
+          "type": "block",
+          "name": "integeranimationusingkeyframes",
+          "definition": "IntegerAnimationUsingKeyFramesDefinitionBlock_74"
+        },
+        {
+          "type": "block",
+          "name": "linearintegerkeyframes",
+          "definition": "LinearIntegerKeyFrameDefinitionBlock_79"
+        },
+        {
+          "type": "block",
+          "name": "discreteintegerkeyframes",
+          "definition": "DiscreteIntegerKeyFrameDefinitionBlock_81"
+        },
+        {
+          "type": "block",
+          "name": "repeatbehaviors",
+          "definition": "RepeatBehaviorDefinitionBlock_83"
+        },
+        {
+          "type": "block",
+          "name": "sound",
+          "definition": "SoundDefinitionBlock_84"
+        },
+        {
+          "type": "block",
+          "name": "soundloop",
+          "definition": "SoundLoopDefinitionBlock_85"
+        },
+        {
+          "type": "block",
+          "name": "navpointlayouts",
+          "definition": "NavPointLayoutDefinitionBlock_86"
+        },
+        {
+          "type": "block",
+          "name": "navpointanimations",
+          "definition": "NavPointAnimationDefinitionBlock_87"
+        },
+        {
+          "type": "block",
+          "name": "stringtables",
+          "definition": "StringTableDefinitionBlock_88"
+        },
+        {
+          "type": "block",
+          "name": "subcomponents",
+          "definition": "SubComponentDefinitionBlock_90"
+        },
+        {
+          "type": "block",
+          "name": "hudtwotonegradient",
+          "definition": "HudTwoToneGradientDefinitionBlock_91"
+        },
+        {
+          "type": "block",
+          "name": "font",
+          "definition": "FontDefinitionBlock_94"
+        },
+        {
+          "type": "block",
+          "name": "highcontrastadditive",
+          "definition": "HighContrastAdditiveDefinitionBlock_96"
+        },
+        {
+          "type": "block",
+          "name": "vertexwarp",
+          "definition": "VertexWarpDefinitionBlock_97"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ComponentDefinition_struct_definition_1": {
+      "guid": "c78653ceaa3ead3489676a1f1fe8dad0",
+      "size": 1200,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "name#screen name"
+        },
+        {
+          "type": "string",
+          "name": "class#class name"
+        },
+        {
+          "type": "struct",
+          "name": "resources",
+          "definition": "resources_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "BooleanDefinitionBlock_6_options_0": {
+      "options": [
+        "Enabled"
+      ]
+    },
+    "FloatAnimationDefinitionBlock_14_options_1": {
+      "options": [
+        "From valid",
+        "To valid"
+      ]
+    },
+    "ColorAnimationDefinitionBlock_17_options_1": {
+      "options": [
+        "From valid",
+        "To valid"
+      ]
+    },
+    "Point2FAnimationDefinitionBlock_22_options_1": {
+      "options": [
+        "From valid",
+        "To valid"
+      ]
+    },
+    "IntegerAnimationDefinitionBlock_25_options_1": {
+      "options": [
+        "From valid",
+        "To valid"
+      ]
+    },
+    "NumericDisplayDefinitionBlock_31_options_5": {
+      "options": [
+        "left alignment",
+        "right alignment",
+        "center alignment"
+      ]
+    },
+    "NumericDisplayDefinitionBlock_31_options_6": {
+      "options": [
+        "Use additive blend"
+      ]
+    },
+    "keyframebase_64_options_1": {
+      "options": [
+        "Enabled"
+      ]
+    },
+    "RepeatBehaviorDefinitionBlock_83_options_0": {
+      "options": [
+        "Count valid",
+        "Duration valid"
+      ]
+    },
+    "HudTwoToneGradientDefinitionBlock_91_options_8": {
+      "options": [
+        "Enabled"
+      ]
+    },
+    "HighContrastAdditiveDefinitionBlock_96_options_3": {
+      "options": [
+        "Enabled"
+      ]
+    },
+    "VertexWarpDefinitionBlock_97_options_5": {
+      "options": [
+        "Enabled"
+      ]
+    }
+  },
+  "datas": {}
+}

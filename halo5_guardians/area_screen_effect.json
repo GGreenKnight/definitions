@@ -1,0 +1,433 @@
+{
+  "name": "area_screen_effect",
+  "tag": "sefc",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "single_screen_effect_3": {
+      "max_count": 8,
+      "struct": "single_screen_effect_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "area_screen_effect_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "distance_falloff_4": {
+      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "time_falloff_6": {
+      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "angle_falloff_8": {
+      "guid": "d2d2c2b84359a3d2d87d128dd8f3b77e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_11": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_falloff_10": {
+      "guid": "92c128e646654b427b70e1801ddb6cce",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "single_screen_effect_3": {
+      "guid": "2e559b3646a74e35291eaea19f23aa90",
+      "size": 344,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "single_screen_effect_3_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "hidden flags!",
+          "definition": "single_screen_effect_3_options_2"
+        },
+        {
+          "type": "custom",
+          "name": "DISTANCE FALLOFF"
+        },
+        {
+          "type": "real",
+          "name": "maximum distance:world units#the maximum distance this screen effect will affect"
+        },
+        {
+          "type": "struct",
+          "name": "distance falloff",
+          "definition": "distance_falloff_4"
+        },
+        {
+          "type": "custom",
+          "name": "TIME EVOLUTION"
+        },
+        {
+          "type": "real",
+          "name": "delay:seconds#the effect will start after this many seconds (ignored if the play sequentially flag is set)"
+        },
+        {
+          "type": "real",
+          "name": "lifetime:seconds#the effect is destroyed after this many seconds (0 = never dies)"
+        },
+        {
+          "type": "struct",
+          "name": "time falloff",
+          "definition": "time_falloff_6"
+        },
+        {
+          "type": "custom",
+          "name": "ANGLE FALLOFF"
+        },
+        {
+          "type": "struct",
+          "name": "angle falloff",
+          "definition": "angle_falloff_8"
+        },
+        {
+          "type": "custom",
+          "name": "OBJECT FALLOFF"
+        },
+        {
+          "type": "struct",
+          "name": "object falloff",
+          "definition": "object_falloff_10"
+        },
+        {
+          "type": "custom",
+          "name": "EFFECTS"
+        },
+        {
+          "type": "tag_reference",
+          "name": "color grading look-up-texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "runtime color grading strength!:[do not edit]#do not edit"
+        },
+        {
+          "type": "real",
+          "name": "exposure boost:stops#increase in exposure"
+        },
+        {
+          "type": "real",
+          "name": "exposure deboost:stops#decrease in exposure"
+        },
+        {
+          "type": "real",
+          "name": "hue left:degrees [0-360]#shifts hue R->G->B"
+        },
+        {
+          "type": "real",
+          "name": "hue right:degrees [0-360]#shifts hue B->G->R"
+        },
+        {
+          "type": "real",
+          "name": "saturation:[0-1]#increases saturation"
+        },
+        {
+          "type": "real",
+          "name": "desaturation:[0-1]#decreases saturation"
+        },
+        {
+          "type": "real",
+          "name": "contrast enhance:[0-1]#contrast increase"
+        },
+        {
+          "type": "real",
+          "name": "gamma enhance:[0-10]#gamma increase"
+        },
+        {
+          "type": "real",
+          "name": "gamma reduce:[0-10]#gamma increase"
+        },
+        {
+          "type": "real",
+          "name": "bright noise:[0-1]#add bright noise contribution, 0 turns it off, 1: full on"
+        },
+        {
+          "type": "real",
+          "name": "dark noise:[0-1]#add dark noise contribution, 0 turns it off, 1: full on"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color filter#this color is multiplied on top"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color floor#this color is subtracted"
+        },
+        {
+          "type": "real_fraction",
+          "name": "color replace strength:[0-1]#used to blend in the color replace below"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color replace#this color is blended in place of the screen's color"
+        },
+        {
+          "type": "real",
+          "name": "tron:[0-1]#adds a full-screen tron effect"
+        },
+        {
+          "type": "real",
+          "name": "radial blur{motion suck}:[-2, 2]#adds motion-blur towards or away from this screen effect"
+        },
+        {
+          "type": "real",
+          "name": "bloom buffer radial blur{bloom buffer motion suck}:[-2, 2]#adds cheap bloom buffer motion-blur towards or away from this screen effect"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "radial blur direction{motion suck direction}!:[do not edit]#do not edit"
+        },
+        {
+          "type": "real",
+          "name": "horizontal blur:[0-10] expensive#blurs the entire screen"
+        },
+        {
+          "type": "real",
+          "name": "vertical blur:[0-10] expensive#blurs the entire screen"
+        },
+        {
+          "type": "real",
+          "name": "vision mode:[0-1]#turns on the global vision mode"
+        },
+        {
+          "type": "real",
+          "name": "hud fade:[0-1]#fades the chud"
+        },
+        {
+          "type": "real",
+          "name": "fov in:[0-1]#zooms in the field of view"
+        },
+        {
+          "type": "real",
+          "name": "fov out:[0-1]#zooms out the field of view"
+        },
+        {
+          "type": "real",
+          "name": "screen shake:[0-1]#shakes the entire screen"
+        },
+        {
+          "type": "tag_reference",
+          "name": "shader effect#applies this shader to the entire screen",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "area_screen_effect_struct_definition_1": {
+      "guid": "0809399aa7a701a297d3bb9b0aee0df6",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "word_flags",
+          "name": "global flags",
+          "definition": "area_screen_effect_struct_definition_1_options_2"
+        },
+        {
+          "type": "word_flags",
+          "name": "global hidden flags!",
+          "definition": "area_screen_effect_struct_definition_1_options_3"
+        },
+        {
+          "type": "block",
+          "name": "screen effects",
+          "definition": "single_screen_effect_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "area_screen_effect_struct_definition_1_options_2": {
+      "options": [
+        "play sequentially - ignore delay settings",
+        "debug this screen effect",
+        "force delete when attached to dead object",
+        "force max one per object",
+        "force looping (dangerous; lasts forever)"
+      ]
+    },
+    "area_screen_effect_struct_definition_1_options_3": {
+      "options": [
+        "update thread",
+        "render thread"
+      ]
+    },
+    "single_screen_effect_3_options_1": {
+      "options": [
+        "debug disable",
+        "allow effect outside radius",
+        "unattached",
+        "first person{first person only}",
+        "third person{third person only}",
+        "disable camera falloffs{cinematic}#disables distance and angle falloffs",
+        "only affects attached object",
+        "draw precisely one (ask Bill before you check this)",
+        "use player travel direction"
+      ]
+    },
+    "single_screen_effect_3_options_2": {
+      "options": [
+        "update thread",
+        "render thread"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "name": "RequisitionGlobalsDefinition",
+  "tag": "rqgs",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "LevelByXPBlock_3": {
+      "max_count": 100,
+      "struct": "LevelByXPBlock_3"
+    },
+    "requisition_terminal_category_ui_data_4": {
+      "max_count": 16,
+      "struct": "requisition_terminal_category_ui_data_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "RequisitionGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LevelByXPBlock_3": {
+      "guid": "72fd5bc64d47a3172cacafa37a1c6613",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "level#level achieved when the xp is gained"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "long_integer",
+          "name": "xp#xp at which the level is bumped"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "requisition_terminal_category_ui_data_4": {
+      "guid": "8734856f42ec6434acfdedb6da3a509b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "icon bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "icon sprite index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "RequisitionGlobalsDefinition_struct_definition_1": {
+      "guid": "37bac3e80c99815d1726c201245b1f4a",
+      "size": 200,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "levels by xp block",
+          "definition": "LevelByXPBlock_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "prototype service globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "tag checksum list",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "user interface required resources",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "gameplay required resources",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "in game terminal category UI data",
+          "definition": "requisition_terminal_category_ui_data_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

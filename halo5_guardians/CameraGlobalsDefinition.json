@@ -1,0 +1,435 @@
+{
+  "name": "CameraGlobalsDefinition",
+  "tag": "glca",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "camera_block_3": {
+      "max_count": 1,
+      "struct": "camera_block_3"
+    },
+    "global_camera_impulse_block_7": {
+      "max_count": 1,
+      "struct": "global_camera_impulse_block_7"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "CameraGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pitch_to_vertical_offset_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "obstruction_6": {
+      "guid": "3a9d370f4b3b57742fae3c86cca8f293",
+      "size": 24,
+      "fields": [
+        {
+          "type": "real_fraction",
+          "name": "cylinder fraction#controls how far from the focus point the outer raycasts start.  0 == cone, 1 == cylinder"
+        },
+        {
+          "type": "angle",
+          "name": "obstruction test angle:degrees#how wide of a cone to test"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max inward accel:1.0/s/s#how quickly the camera moves inward when it anticipates a collision"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max outward accel:1.0/s/s#how quickly the camera returns to a normal position when its anticipated distance is further than its current"
+        },
+        {
+          "type": "real",
+          "name": "obstruction max velocity:1.0/s#maximum speed the camera can move"
+        },
+        {
+          "type": "real",
+          "name": "obstruction return delay:s#when the camera wants to start moving back out, wait this long before doing so"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_block_3": {
+      "guid": "5544fb064476f3d057621fa5e234a66b",
+      "size": 256,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "default unit camera track",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "SANDBOX"
+        },
+        {
+          "type": "struct",
+          "name": "pitch to vertical offset",
+          "definition": "pitch_to_vertical_offset_4"
+        },
+        {
+          "type": "custom",
+          "name": "CAMERA UNIVERSALS"
+        },
+        {
+          "type": "real",
+          "name": "field of view:degrees"
+        },
+        {
+          "type": "real",
+          "name": "yaw scale"
+        },
+        {
+          "type": "real",
+          "name": "pitch scale"
+        },
+        {
+          "type": "real",
+          "name": "forward scale"
+        },
+        {
+          "type": "real",
+          "name": "side scale"
+        },
+        {
+          "type": "real",
+          "name": "up scale"
+        },
+        {
+          "type": "custom",
+          "name": "DEAD CAMERA"
+        },
+        {
+          "type": "real",
+          "name": "minimum distance to player# closest distance camera can get to player"
+        },
+        {
+          "type": "real",
+          "name": "transition time:seconds#time it takes for the camera to move from the initial distance to the final distance"
+        },
+        {
+          "type": "real",
+          "name": "falling death transition time:seconds#time it takes for the camera to move to its final position during a falling death"
+        },
+        {
+          "type": "real",
+          "name": "initial distance:wu#on the first frame after death, this is how far out of the body the camera will be"
+        },
+        {
+          "type": "real",
+          "name": "final distance:wu#how far from the body the camera will settle"
+        },
+        {
+          "type": "real",
+          "name": "dead cam z offset:wu#how far above the body the camera focuses on"
+        },
+        {
+          "type": "real",
+          "name": "dead cam maximum elevation:radians#the highest angle the camera can raise to (prevents it from flipping over the vertical axis)"
+        },
+        {
+          "type": "real",
+          "name": "dead cam movement delay:seconds#delay in tracking the killer"
+        },
+        {
+          "type": "real",
+          "name": "time_to_auto_switch_to_orbiting:seconds#how long the death camera lasts before auto-switching to orbiting camera"
+        },
+        {
+          "type": "real",
+          "name": "ignore_stick_time:seconds#how long the death camera ignores stick inputs and keeps turning towards the killer (should be non-zero because user could have died while running or looking around)"
+        },
+        {
+          "type": "real",
+          "name": "ignore_button_time:seconds#how long the death camera ignores shoulder button inputs and keeps turning towards the killer"
+        },
+        {
+          "type": "real",
+          "name": "dead camera minimum falling velocity#minimum velocity to switch to fell to death behavior (when biped is not actually falling to death)"
+        },
+        {
+          "type": "custom",
+          "name": "FLYING CAMERA"
+        },
+        {
+          "type": "real",
+          "name": "maximum boost speed#the scaling factor for the left stick when the left trigger is fully depressed"
+        },
+        {
+          "type": "real",
+          "name": "time to maximum_boost#seconds. while pegging boost, time to reach maximum speed"
+        },
+        {
+          "type": "short_enum",
+          "name": "boost function",
+          "definition": "camera_block_3_options_26"
+        },
+        {
+          "type": "pad",
+          "name": "hoist",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "zoomed field of view:degrees#field of view when zoomed"
+        },
+        {
+          "type": "real",
+          "name": "zoomed look speed#scaling factor for look speed when zoomed"
+        },
+        {
+          "type": "real",
+          "name": "bounding sphere radius:wu#radius of sphere for collision"
+        },
+        {
+          "type": "real",
+          "name": "flying cam movement delay:seconds#how quickly the camera responds to the user's input"
+        },
+        {
+          "type": "real",
+          "name": "zoom transition time:seconds#how long it takes to zoom in or out"
+        },
+        {
+          "type": "real",
+          "name": "vertical movement time to max speed"
+        },
+        {
+          "type": "short_enum",
+          "name": "vertical movement function",
+          "definition": "camera_block_3_options_34"
+        },
+        {
+          "type": "pad",
+          "name": "moist",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "ORBITING CAMERA"
+        },
+        {
+          "type": "real",
+          "name": "minimum distance:wu"
+        },
+        {
+          "type": "real",
+          "name": "maximum distance:wu"
+        },
+        {
+          "type": "real",
+          "name": "initial distance on focus:wu#on the first frame after a focus change, this is how far out of the body the camera will be"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam movement delay:seconds#how quickly the camera responds to the user's input"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam z offset:wu#how far above the object's root node to position the camera's focus point"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam minimum elevation:radians#lowest angle the camera can be moved to"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam maximum elevation:radians#highest angle the camera can be moved to"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam use targets facing direction after :seconds of no player input"
+        },
+        {
+          "type": "real",
+          "name": "film specific tuning orbit cam use targets facing direction after :seconds of no player input"
+        },
+        {
+          "type": "real",
+          "name": "orbit cam transition to targets facing direction delay"
+        },
+        {
+          "type": "custom",
+          "name": "SAVED FILMS"
+        },
+        {
+          "type": "real",
+          "name": "max playback speed#how fast the film plays when the trigger is fully depressed"
+        },
+        {
+          "type": "real",
+          "name": "fade out time:seconds#how long it takes for the screen to fade out when rewinding"
+        },
+        {
+          "type": "real",
+          "name": "fade in time:seconds#see above"
+        },
+        {
+          "type": "custom",
+          "name": "IN GAME"
+        },
+        {
+          "type": "real",
+          "name": "enter vehicle transition time:seconds#how long it takes the camera to move from first to third person when entering a vehicle"
+        },
+        {
+          "type": "real",
+          "name": "exit vehicle transition time:seconds#see above"
+        },
+        {
+          "type": "custom",
+          "name": "CAMERA OBSTRUCTION"
+        },
+        {
+          "type": "struct",
+          "name": "obstruction",
+          "definition": "obstruction_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mapping_8": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_camera_impulse_block_7": {
+      "guid": "57f3934545650b82b0c443a3479aadfd",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "mapping",
+          "definition": "mapping_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CameraGlobalsDefinition_struct_definition_1": {
+      "guid": "43e65e73ada00f99a3f7a5cbe1358f81",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "camera",
+          "definition": "camera_block_3"
+        },
+        {
+          "type": "block",
+          "name": "camera impulse",
+          "definition": "global_camera_impulse_block_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "camera_block_3_options_26": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    },
+    "camera_block_3_options_34": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

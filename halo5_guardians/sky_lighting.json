@@ -1,0 +1,151 @@
+{
+  "name": "sky_lighting",
+  "tag": "sklt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "sky_lighting_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sky_lighting_struct_definition_1": {
+      "guid": "6540413a570545a02995b7ed247fabf1",
+      "size": 144,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Sky Lighting"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Sky Color{Uniform Color}"
+        },
+        {
+          "type": "real",
+          "name": "Sky Color Intensity{Uniform Intensity}"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Ground Color"
+        },
+        {
+          "type": "real",
+          "name": "Ground Color Intensity"
+        },
+        {
+          "type": "real",
+          "name": "Horizon Angle"
+        },
+        {
+          "type": "real",
+          "name": "Horizon Width"
+        },
+        {
+          "type": "real",
+          "name": "Direction 1"
+        },
+        {
+          "type": "real",
+          "name": "Front-Back 1"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Color 1"
+        },
+        {
+          "type": "real",
+          "name": "Intensity 1"
+        },
+        {
+          "type": "real",
+          "name": "Width 1"
+        },
+        {
+          "type": "real",
+          "name": "Direction 2"
+        },
+        {
+          "type": "real",
+          "name": "Front-Back 2"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Color 2"
+        },
+        {
+          "type": "real",
+          "name": "Intensity 2"
+        },
+        {
+          "type": "real",
+          "name": "Width 2"
+        },
+        {
+          "type": "real",
+          "name": "Direction 3"
+        },
+        {
+          "type": "real",
+          "name": "Front-Back 3"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Color 3"
+        },
+        {
+          "type": "real",
+          "name": "Intensity 3"
+        },
+        {
+          "type": "real",
+          "name": "Width 3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_sky_lighting_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

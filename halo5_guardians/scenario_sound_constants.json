@@ -1,0 +1,149 @@
+{
+  "name": "scenario_sound_constants",
+  "tag": "sssc",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "soundBankLoadBlock_3": {
+      "max_count": 52,
+      "struct": "soundBankLoadBlock_3"
+    },
+    "g_stateGroupReferenceBlock_4": {
+      "max_count": 256,
+      "struct": "g_stateGroupReferenceBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "scenario_sound_constants_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "soundBankLoadBlock_3": {
+      "guid": "0ce98746473bd3da6762d2ae37dd8acd",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Sound bank",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "g_stateGroupReferenceBlock_4": {
+      "guid": "35da4a684dc0414884318dbc75986ffc",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "State-group reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scenario_sound_constants_struct_definition_1": {
+      "guid": "ae60a778e89ec922eea537a3b5c7c3f9",
+      "size": 104,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "scenario_sound_constants_struct_definition_1_options_2"
+        },
+        {
+          "type": "block",
+          "name": "Scenario sound bank list",
+          "definition": "soundBankLoadBlock_3"
+        },
+        {
+          "type": "string_id",
+          "name": "Inside reverb name#This reverb will be used for inside areas when the listener is outside."
+        },
+        {
+          "type": "long_integer",
+          "name": "Inside reverb hash ID!"
+        },
+        {
+          "type": "long_integer",
+          "name": "sound permutation mission id"
+        },
+        {
+          "type": "real",
+          "name": "attenuation adjustment factor#1 is no change, 0.5 is half, etc"
+        },
+        {
+          "type": "real",
+          "name": "enemy rtpc distance#max distance an enemy can be to be counted in our enemy-related rtpcs"
+        },
+        {
+          "type": "real",
+          "name": "kill count frequency time period:seconds#the amount of time to consider a kill relevant for the kill count frequency"
+        },
+        {
+          "type": "real",
+          "name": "combat intensity RTPCs timer#number of seconds between each time the combat intensity RTPCs are set"
+        },
+        {
+          "type": "block",
+          "name": "State Groups#State groups we care enough about to have saved and loaded, as well as inherited during campaign player-teleportation",
+          "definition": "g_stateGroupReferenceBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "scenario_sound_constants_struct_definition_1_options_2": {
+      "options": [
+        "Use Environment Acoustics"
+      ]
+    }
+  },
+  "datas": {}
+}

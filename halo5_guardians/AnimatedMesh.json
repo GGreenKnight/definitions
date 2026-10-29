@@ -1,0 +1,79 @@
+{
+  "name": "AnimatedMesh",
+  "tag": "ames",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "AnimatedMesh_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "AnimatedMesh_struct_definition_1": {
+      "guid": "121d84d95054724066cd75612850cb9a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Flags"
+        },
+        {
+          "type": "byte_integer",
+          "name": "Version"
+        },
+        {
+          "type": "byte_integer",
+          "name": "Authored FPS"
+        },
+        {
+          "type": "word_integer",
+          "name": "Resource frame count"
+        },
+        {
+          "type": "pad",
+          "name": "Perframe rigid body resources",
+          "definition": 16
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

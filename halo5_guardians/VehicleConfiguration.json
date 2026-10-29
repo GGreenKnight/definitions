@@ -1,0 +1,150 @@
+{
+  "name": "VehicleConfiguration",
+  "tag": "vcdd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "VehicleAttachmentReferenceDefinition_4": {
+      "max_count": 2,
+      "struct": "VehicleAttachmentReferenceDefinition_4"
+    },
+    "VehicleWeaponConfiguration_5": {
+      "max_count": 4,
+      "struct": "VehicleWeaponConfiguration_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "VehicleConfiguration_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleAttachmentReferenceDefinition_4": {
+      "guid": "6d2a5a9c430a643fcbdc6bb98a17adff",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "attachment",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleWeaponConfiguration_5": {
+      "guid": "1bca1da142d250aa1edd9ca53f0fe85d",
+      "size": 36,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "weapon configuration",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "Weapon name#Corresponds with weapon in model tag"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vehicle_3": {
+      "guid": "fed24fd5425b8a446fc5a2a13e287cd2",
+      "size": 92,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Variant name"
+        },
+        {
+          "type": "block",
+          "name": "generic attachments",
+          "definition": "VehicleAttachmentReferenceDefinition_4"
+        },
+        {
+          "type": "block",
+          "name": "weapon configurations",
+          "definition": "VehicleWeaponConfiguration_5"
+        },
+        {
+          "type": "tag_reference",
+          "name": "UI Display Info",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleConfiguration_struct_definition_1": {
+      "guid": "4c751802ecb9e00bfa9e597c9f69a26d",
+      "size": 120,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 8
+        },
+        {
+          "type": "struct",
+          "name": "vehicle",
+          "definition": "vehicle_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

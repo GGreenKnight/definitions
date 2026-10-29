@@ -1,0 +1,127 @@
+{
+  "name": "AmbientActionPointDefinitionTag",
+  "tag": "aaap",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "object_designer_metadata_block_4": {
+      "max_count": 32,
+      "struct": "object_designer_metadata_block_4"
+    },
+    "ambient_action_block_3": {
+      "max_count": 512,
+      "struct": "ambient_action_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "AmbientActionPointDefinitionTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_designer_metadata_block_4": {
+      "guid": "7a236d954b5b66975b691494408a3af4",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "meta label^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ambient_action_block_3": {
+      "guid": "2e60a80b48aeeffe61ea10ac1906a20c",
+      "size": 76,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Time playing animation:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Cooldown time:seconds"
+        },
+        {
+          "type": "string_id",
+          "name": "composition name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "composition definition",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "Max distance agents will consider this opp from:wu"
+        },
+        {
+          "type": "block",
+          "name": "Ambient meta labels",
+          "definition": "object_designer_metadata_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "AmbientActionPointDefinitionTag_struct_definition_1": {
+      "guid": "b48b729a15b47a483ae6fdc52748331f",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Ambient Info# The ambient info for this ambient action",
+          "definition": "ambient_action_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

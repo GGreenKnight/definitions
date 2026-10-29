@@ -1,0 +1,776 @@
+{
+  "name": "structure_lights",
+  "tag": "strl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "editorMetadataBlock_13": {
+      "max_count": 1024,
+      "struct": "editorMetadataBlock_13"
+    },
+    "structure_light_definition_block_3": {
+      "max_count": 32767,
+      "struct": "structure_light_definition_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "structure_lights_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Intensity_Function_Intensity__5": {
+      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "Intensity_Function_Intensity__5_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_8": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Outer_Attenuation_Function_Distance_Attenuation_End__7": {
+      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "Outer_Attenuation_Function_Distance_Attenuation_End__7_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Outer_Cone_Angle_Function_Outer_Cone_End__9": {
+      "guid": "26aa4a83434a42b4cba3ac93cd20a908",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "Outer_Cone_Angle_Function_Outer_Cone_End__9_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_12": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Interpolation_Function_11": {
+      "guid": "3dbb8f1a4fd054f991da249d78307a29",
+      "size": 44,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "short_enum",
+          "name": "Output Modifier!",
+          "definition": "Interpolation_Function_11_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Midnight_Light_Parameters_4": {
+      "guid": "c74b158e4613e000f6653d89a79de6e1",
+      "size": 416,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Dynamic/Static Shared Light Parameters"
+        },
+        {
+          "type": "string_id",
+          "name": "haloLightNode:^#Light node name in DCC."
+        },
+        {
+          "type": "long_enum",
+          "name": "Type{Light Type}",
+          "definition": "Midnight_Light_Parameters_4_options_2"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Color{Light Color}"
+        },
+        {
+          "type": "real",
+          "name": "Intensity Scalar"
+        },
+        {
+          "type": "struct",
+          "name": "Intensity Function{Intensity}",
+          "definition": "Intensity_Function_Intensity__5"
+        },
+        {
+          "type": "real",
+          "name": "Near Attenuation{Distance Attenuation Start}"
+        },
+        {
+          "type": "real",
+          "name": "Far Attenuation{Distance Attenuation End Scalar}"
+        },
+        {
+          "type": "struct",
+          "name": "Outer Attenuation Function{Distance Attenuation End}",
+          "definition": "Outer_Attenuation_Function_Distance_Attenuation_End__7"
+        },
+        {
+          "type": "real",
+          "name": "Near Begin:#Distance at which the light begins affecting things"
+        },
+        {
+          "type": "real",
+          "name": "Far Begin:#Distance at which the light begins affecting at full strength"
+        },
+        {
+          "type": "real",
+          "name": "Camera Distance Fade Start:#Distance at which we start to fade out this light"
+        },
+        {
+          "type": "real",
+          "name": "Camera Distance Fade End:#Distance at which the light should be completely faded out and not seen"
+        },
+        {
+          "type": "real",
+          "name": "Camera Distance Shadow Fade Start:#Distance at which we start to fade out this shadow"
+        },
+        {
+          "type": "real",
+          "name": "Camera Distance Shadow Fade End:#Distance at which the shadow should be completely faded out and not seen"
+        },
+        {
+          "type": "real",
+          "name": "Specular Intensity:#For screen-space dynamic lights"
+        },
+        {
+          "type": "custom",
+          "name": "Area Lights Parameters"
+        },
+        {
+          "type": "real",
+          "name": "Planar Light Width"
+        },
+        {
+          "type": "real",
+          "name": "Planar Light Height"
+        },
+        {
+          "type": "real",
+          "name": "Area Light Radius"
+        },
+        {
+          "type": "custom",
+          "name": "Shared Spot Parameters"
+        },
+        {
+          "type": "real",
+          "name": "Inner Cone Angle"
+        },
+        {
+          "type": "real",
+          "name": "Outer Cone Angle"
+        },
+        {
+          "type": "struct",
+          "name": "Outer Cone Angle Function{Outer Cone End}",
+          "definition": "Outer_Cone_Angle_Function_Outer_Cone_End__9"
+        },
+        {
+          "type": "long_enum",
+          "name": "Cone Projection Shape:#Use cone in all cases unless you have a gobo you need to project, frustum uses the full clip area of the light",
+          "definition": "Midnight_Light_Parameters_4_options_24"
+        },
+        {
+          "type": "custom",
+          "name": "Dynamic Only Parameters"
+        },
+        {
+          "type": "short_enum",
+          "name": "Shadows",
+          "definition": "Midnight_Light_Parameters_4_options_26"
+        },
+        {
+          "type": "short_integer",
+          "name": "Dynamic Shadow Resolution"
+        },
+        {
+          "type": "real",
+          "name": "Shadow Near Clip Plane"
+        },
+        {
+          "type": "real",
+          "name": "Shadow Far Clip Plane"
+        },
+        {
+          "type": "real",
+          "name": "Shadow Bias Offset"
+        },
+        {
+          "type": "real",
+          "name": "Shadow Filter Width"
+        },
+        {
+          "type": "pad",
+          "name": "pad_mlp_1",
+          "definition": 1
+        },
+        {
+          "type": "char_enum",
+          "name": "Ignore Dynamic Objects",
+          "definition": "Midnight_Light_Parameters_4_options_33"
+        },
+        {
+          "type": "char_enum",
+          "name": "Cinema Objects Only#This should only be turned on if you have light linking data correctly setup",
+          "definition": "Midnight_Light_Parameters_4_options_34"
+        },
+        {
+          "type": "char_enum",
+          "name": "Cinema Only",
+          "definition": "Midnight_Light_Parameters_4_options_35"
+        },
+        {
+          "type": "char_enum",
+          "name": "Cinema Exclude",
+          "definition": "Midnight_Light_Parameters_4_options_36"
+        },
+        {
+          "type": "char_integer",
+          "name": "Manual Version"
+        },
+        {
+          "type": "char_enum",
+          "name": "Specular Contribution",
+          "definition": "Midnight_Light_Parameters_4_options_38"
+        },
+        {
+          "type": "char_enum",
+          "name": "Diffuse Contribution",
+          "definition": "Midnight_Light_Parameters_4_options_39"
+        },
+        {
+          "type": "custom",
+          "name": "Analytic Only Parameters"
+        },
+        {
+          "type": "short_enum",
+          "name": "Enable Analytic Shadows",
+          "definition": "Midnight_Light_Parameters_4_options_41"
+        },
+        {
+          "type": "short_integer",
+          "name": "Analytic Shadow Map Index"
+        },
+        {
+          "type": "real",
+          "name": "Analytic Shadow Sharpness"
+        },
+        {
+          "type": "real",
+          "name": "Analytic Shadow Near Depth"
+        },
+        {
+          "type": "custom",
+          "name": "Dynamic Gobo"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Gobos",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Color Change"
+        },
+        {
+          "type": "struct",
+          "name": "Interpolation Function",
+          "definition": "Interpolation_Function_11"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "Target Color"
+        },
+        {
+          "type": "custom",
+          "name": "Bungie Parameters"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "Midnight_Light_Parameters_4_options_51"
+        },
+        {
+          "type": "real",
+          "name": "destroy light after:seconds#automatically destroys the light after it has existed this long (0 to disable)"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Lens Flare",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Light Cone",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "editorMetadataBlock_13": {
+      "guid": "49566d103ee6efbe6d8c8eb1db3d0368",
+      "size": 520,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "data name"
+        },
+        {
+          "type": "long_enum",
+          "name": "data type",
+          "definition": "editorMetadataBlock_13_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parent index"
+        },
+        {
+          "type": "long_string",
+          "name": "data value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structure_light_definition_block_3": {
+      "guid": "5cad7a734084815ef819c0be024dd1b6",
+      "size": 496,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "Composer Id!"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "facing"
+        },
+        {
+          "type": "char_integer",
+          "name": "Version!"
+        },
+        {
+          "type": "char_enum",
+          "name": "Active",
+          "definition": "structure_light_definition_block_3_options_4"
+        },
+        {
+          "type": "short_enum",
+          "name": "light mode",
+          "definition": "structure_light_definition_block_3_options_5"
+        },
+        {
+          "type": "struct",
+          "name": "Midnight_Light_Parameters",
+          "definition": "Midnight_Light_Parameters_4"
+        },
+        {
+          "type": "real",
+          "name": "indirect amplification factor"
+        },
+        {
+          "type": "real",
+          "name": "jitter angle"
+        },
+        {
+          "type": "char_integer",
+          "name": "is a lightmapper-only light!"
+        },
+        {
+          "type": "char_enum",
+          "name": "indirect only",
+          "definition": "structure_light_definition_block_3_options_10"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime index*"
+        },
+        {
+          "type": "block",
+          "name": "Editor Metadata!",
+          "definition": "editorMetadataBlock_13"
+        },
+        {
+          "type": "string_id",
+          "name": "bone name"
+        },
+        {
+          "type": "char_enum",
+          "name": "should contribute to adjacent BSPs",
+          "definition": "structure_light_definition_block_3_options_14"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structure_lights_struct_definition_1": {
+      "guid": "2be0699110027a710327eb1e406224f9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "generic light definitions",
+          "definition": "structure_light_definition_block_3"
+        },
+        {
+          "type": "long_integer",
+          "name": "lastLightId!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "structure_light_definition_block_3_options_4": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "structure_light_definition_block_3_options_5": {
+      "options": [
+        "Dynamic",
+        "Static",
+        "Analytic"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_2": {
+      "options": [
+        "Omni",
+        "Spot",
+        "Directional",
+        "Planar",
+        "Sun"
+      ]
+    },
+    "Intensity_Function_Intensity__5_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "Outer_Attenuation_Function_Distance_Attenuation_End__7_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "Outer_Cone_Angle_Function_Outer_Cone_End__9_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_24": {
+      "options": [
+        "Cone",
+        "Frustum"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_26": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_33": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_34": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_35": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_36": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_38": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_39": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_41": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "Interpolation_Function_11_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "Midnight_Light_Parameters_4_options_51": {
+      "options": [
+        "dont render splitscreen#no rendering this light in splitscreen mode",
+        "render in multiplayer override#overrides game settings that disable dynamic lights",
+        "move to camera in first person#moves the light to match the camera",
+        "always on for weapon#even it is dropped",
+        "ignores dynamic objects (analytic lights only)",
+        "disables object shadows (analytic lights only)"
+      ]
+    },
+    "structure_light_definition_block_3_options_10": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    },
+    "editorMetadataBlock_13_options_1": {
+      "options": [
+        "class",
+        "array",
+        "string",
+        "bool",
+        "int"
+      ]
+    },
+    "structure_light_definition_block_3_options_14": {
+      "options": [
+        "Off",
+        "On"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

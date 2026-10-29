@@ -1,0 +1,122 @@
+{
+  "name": "wpf_font",
+  "tag": "font",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "wpf_font_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "anti_alias_data_3": {
+      "guid": "85324d43f0e74f05b184e5052fe99466",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "antiAliasData"
+        },
+        {
+          "type": "real",
+          "name": "antiAliasData"
+        },
+        {
+          "type": "real",
+          "name": "antiAliasData"
+        },
+        {
+          "type": "real",
+          "name": "antiAliasData"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wpf_font_struct_definition_1": {
+      "guid": "6e7be03de338f0de565163634bbefd2f",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "import"
+        },
+        {
+          "type": "string",
+          "name": "font name"
+        },
+        {
+          "type": "long_enum",
+          "name": "render mode*",
+          "definition": "wpf_font_struct_definition_1_options_4"
+        },
+        {
+          "type": "custom",
+          "name": "Vector Font Antialiasing Tweakables"
+        },
+        {
+          "type": "struct",
+          "name": "anti alias data",
+          "definition": "anti_alias_data_3"
+        },
+        {
+          "type": "pad",
+          "name": "font file resource",
+          "definition": 16
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "wpf_font_struct_definition_1_options_4": {
+      "options": [
+        "Bitmap",
+        "Vector"
+      ]
+    }
+  },
+  "datas": {}
+}

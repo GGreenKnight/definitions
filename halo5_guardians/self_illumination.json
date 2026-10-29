@@ -1,0 +1,212 @@
+{
+  "name": "self_illumination",
+  "tag": "sict",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "self_illumination_state_3": {
+      "max_count": 16,
+      "struct": "self_illumination_state_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "self_illumination_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Intensity__Animates_intensity_over_time__0___Min_Intensity___1___Max_Intensity_4": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Color__Animates_color_over_time___0___White___1___Full_Color_6": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Activation__Animates_On_Off_state_over_time__0___Off__1___On_8": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illumination_state_3": {
+      "guid": "a95f36714a146eca4f393287faf4a9c5",
+      "size": 100,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Self-Illumination State"
+        },
+        {
+          "type": "string_id",
+          "name": "Name^"
+        },
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "self_illumination_state_3_options_2"
+        },
+        {
+          "type": "real",
+          "name": "Length #Length of illumination animation in seconds."
+        },
+        {
+          "type": "string_id",
+          "name": "Next State #Used to automatically transition to another state when finished."
+        },
+        {
+          "type": "struct",
+          "name": "Intensity #Animates intensity over time. 0 - Min Intensity.  1 - Max Intensity",
+          "definition": "Intensity__Animates_intensity_over_time__0___Min_Intensity___1___Max_Intensity_4"
+        },
+        {
+          "type": "struct",
+          "name": "Color #Animates color over time.  0 - White.  1 - Full Color",
+          "definition": "Color__Animates_color_over_time___0___White___1___Full_Color_6"
+        },
+        {
+          "type": "struct",
+          "name": "Activation #Animates On/Off state over time. 0 - Off. 1 - On",
+          "definition": "Activation__Animates_On_Off_state_over_time__0___Off__1___On_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illumination_struct_definition_1": {
+      "guid": "35d5def3b11c7a3bba4d90debf676a9e",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "States",
+          "definition": "self_illumination_state_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "self_illumination_state_3_options_2": {
+      "options": [
+        "Looping",
+        "Triggered By AI State",
+        "Triggered By Anim State",
+        "Triggered By Dialog"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "name": "collision_damage",
+  "tag": "cddf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "collision_damage_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mapping_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "game_collision_damage_4": {
+      "guid": "1de4baa44c13fbc77af176954741468f",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "mapping",
+          "definition": "mapping_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mapping_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "absolute_collision_damage_6": {
+      "guid": "1de4baa44c13fbc77af176954741468f",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "mapping",
+          "definition": "mapping_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DamageStruct_3": {
+      "guid": "52349903447ae7c336dcfca5d8b0a587",
+      "size": 136,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "DamageStruct_3_options_0"
+        },
+        {
+          "type": "real",
+          "name": "minimum velocity for lethal collision#If your velocity is above this value the collision is potentially lethal, 0 retains old functionality where the lethality is decided by the damage modifier"
+        },
+        {
+          "type": "custom",
+          "name": "Game collision damage parameters"
+        },
+        {
+          "type": "struct",
+          "name": "game collision damage",
+          "definition": "game_collision_damage_4"
+        },
+        {
+          "type": "real_bounds",
+          "name": "game acceleration#0-Infinity"
+        },
+        {
+          "type": "real",
+          "name": "minimum velocity for game damage#if you are going below this velocity we stop all game damage"
+        },
+        {
+          "type": "real",
+          "name": "Apply collision damage scale#0 means 1.  1 is standard scale.  Some things may want to apply more damage"
+        },
+        {
+          "type": "real",
+          "name": "Friendly apply collision damage scale#0 means 1.  1 is standard scale.  Some things may want to apply more damage, yet go soft on their friends"
+        },
+        {
+          "type": "custom",
+          "name": "Absolute collision damage parameters"
+        },
+        {
+          "type": "struct",
+          "name": "absolute collision damage",
+          "definition": "absolute_collision_damage_6"
+        },
+        {
+          "type": "real_bounds",
+          "name": "absolute acceleration#0-Infinity"
+        },
+        {
+          "type": "real",
+          "name": "minimum velocity for absolute damage#if you are going below this velocity we stop all absolute damage"
+        },
+        {
+          "type": "real",
+          "name": "Apply absolute collision damage scale#0 means 1.  1 is standard scale.  Some things may want to apply more damage"
+        },
+        {
+          "type": "real",
+          "name": "Friendly apply absolute collision damage scale#0 means 1.  1 is standard scale.  Some things may want to apply more damage, yet go soft on their friends"
+        },
+        {
+          "type": "custom",
+          "name": "Alternative damage effect"
+        },
+        {
+          "type": "tag_reference",
+          "name": "alternative damage effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "collision_damage_struct_definition_1": {
+      "guid": "e5d304160a9e259204f07bd768f46016",
+      "size": 152,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "DamageStruct",
+          "definition": "DamageStruct_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "DamageStruct_3_options_0": {
+      "options": [
+        "Don't scale damage#typically, we scale the damage to make only &quot;lethal&quot; collision damage kill people; this flag overrides that behavior",
+        "Object may choose not to deal damage#in some cases (notably, the thruster pack) we should ask an object if it wants to opt out of dealing damage for one reason or another"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

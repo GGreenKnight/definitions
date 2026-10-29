@@ -1,0 +1,123 @@
+{
+  "name": "ai_mission_dialogue",
+  "tag": "mdlg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "mission_dialogue_variants_block_4": {
+      "max_count": 10,
+      "struct": "mission_dialogue_variants_block_4"
+    },
+    "mission_dialogue_lines_block_3": {
+      "max_count": 500,
+      "struct": "mission_dialogue_lines_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "ai_mission_dialogue_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mission_dialogue_variants_block_4": {
+      "guid": "5de3b90c4de3abbb07fc0e8780aab27b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "variant designation#3-letter designation for the character^"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "sound effect"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mission_dialogue_lines_block_3": {
+      "guid": "b95bd27f45a15b6594003db837332d92",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "variants",
+          "definition": "mission_dialogue_variants_block_4"
+        },
+        {
+          "type": "string_id",
+          "name": "default sound effect"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ai_mission_dialogue_struct_definition_1": {
+      "guid": "3bb02ca123651ecf47515777bcf3ea09",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "lines",
+          "definition": "mission_dialogue_lines_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

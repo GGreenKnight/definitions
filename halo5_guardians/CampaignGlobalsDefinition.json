@@ -1,0 +1,135 @@
+{
+  "name": "CampaignGlobalsDefinition",
+  "tag": "cmpg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "campaign_globals_map_block_4": {
+      "max_count": 3,
+      "struct": "campaign_globals_map_block_4"
+    },
+    "campaign_globals_block_3": {
+      "max_count": 15,
+      "struct": "campaign_globals_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "CampaignGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_globals_map_block_4": {
+      "guid": "087bef9f414466340fc75b97bde82fe4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "map id"
+        },
+        {
+          "type": "string_id",
+          "name": "map name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_globals_block_3": {
+      "guid": "f61ec9e042c75d9f9e6b779a345339c9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "block",
+          "name": "maps",
+          "definition": "campaign_globals_map_block_4"
+        },
+        {
+          "type": "string_id",
+          "name": "mission name"
+        },
+        {
+          "type": "string_id",
+          "name": "mission description"
+        },
+        {
+          "type": "string_id",
+          "name": "mission background image uri"
+        },
+        {
+          "type": "string_id",
+          "name": "mission CMS guid"
+        },
+        {
+          "type": "string_id",
+          "name": "mission team"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CampaignGlobalsDefinition_struct_definition_1": {
+      "guid": "7824dd6c83056081964614f5598c0bb4",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "campaign globals",
+          "definition": "campaign_globals_block_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Influencer default spawn settings",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

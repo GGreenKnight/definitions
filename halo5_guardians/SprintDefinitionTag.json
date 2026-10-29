@@ -1,0 +1,443 @@
+{
+  "name": "SprintDefinitionTag",
+  "tag": "sasp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "SprintDefinitionTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "common_ability_parameters_4": {
+      "guid": "a0b1eff4483cd954d47df188cdebb4f0",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "common_ability_parameters_4_options_0"
+        },
+        {
+          "type": "real_fraction",
+          "name": "activation energy cost#amount of energy required to activate the ability"
+        },
+        {
+          "type": "real",
+          "name": "active energy consumption:energy/second#amount of energy consumed continuously while the ability is active"
+        },
+        {
+          "type": "tag_reference",
+          "name": "activation effect#effects triggered when player activates ability",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "time_to_full_speed_seconds_how_long_to_reach_top_speed_5": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "time_to_full_speed_seconds_how_long_to_reach_top_speed_5_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "speed_ramp_up_function_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "full_speed_scalar_how_much_faster_we_actually_go_when_at_full_sprint_7": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "full_speed_scalar_how_much_faster_we_actually_go_when_at_full_sprint_7_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "look_velocity_scale_function_8": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "max_strafe_throttle_magnitude_function_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damage_to_sprint_fraction_reduction_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "exit_animation_speed_scalar_scales_the_Spartan_s_sprint_exit_animation_playback_speed_11": {
+      "guid": "f8d8b4a140e6db63bb8cea978b2eae63",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Base Value"
+        },
+        {
+          "type": "real_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "exit_animation_speed_scalar_scales_the_Spartan_s_sprint_exit_animation_playback_speed_11_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sprint_3": {
+      "guid": "3c61dfbc44de407840842381b84cfb42",
+      "size": 276,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "common ability parameters",
+          "definition": "common_ability_parameters_4"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags{shoulder bash flags}",
+          "definition": "sprint_3_options_1"
+        },
+        {
+          "type": "long_enum",
+          "name": "stun timer control",
+          "definition": "sprint_3_options_2"
+        },
+        {
+          "type": "real",
+          "name": "evade delay time#how long after evading before the sprint fraction starts building up again"
+        },
+        {
+          "type": "real",
+          "name": "seconds to full speed#how long to reach top speed"
+        },
+        {
+          "type": "custom",
+          "name": "time to full speed:seconds#how long to reach top speed"
+        },
+        {
+          "type": "struct",
+          "name": "time to full speed:seconds#how long to reach top speed",
+          "definition": "time_to_full_speed_seconds_how_long_to_reach_top_speed_5"
+        },
+        {
+          "type": "real",
+          "name": "falloff time:seconds#amount of time it takes for effects of sprint (speed, look speed, and strafe scale) to wear off after exiting sprint"
+        },
+        {
+          "type": "custom",
+          "name": "speed ramp up function"
+        },
+        {
+          "type": "struct",
+          "name": "speed ramp up function",
+          "definition": "speed_ramp_up_function_6"
+        },
+        {
+          "type": "real",
+          "name": "full speed multiplier#how much faster we actually go when at full sprint"
+        },
+        {
+          "type": "custom",
+          "name": "full speed scalar#how much faster we actually go when at full sprint"
+        },
+        {
+          "type": "struct",
+          "name": "full speed scalar#how much faster we actually go when at full sprint",
+          "definition": "full_speed_scalar_how_much_faster_we_actually_go_when_at_full_sprint_7"
+        },
+        {
+          "type": "custom",
+          "name": "look velocity scale function"
+        },
+        {
+          "type": "struct",
+          "name": "look velocity scale function",
+          "definition": "look_velocity_scale_function_8"
+        },
+        {
+          "type": "real",
+          "name": "yaw velocity scale at full sprint#scale applied to yaw velocity when sprinting at full speed"
+        },
+        {
+          "type": "real",
+          "name": "pitch velocity scale at full sprint#scale applied to pitch velocity when sprinting at full speed"
+        },
+        {
+          "type": "custom",
+          "name": "max strafe throttle magnitude function"
+        },
+        {
+          "type": "struct",
+          "name": "max strafe throttle magnitude function",
+          "definition": "max_strafe_throttle_magnitude_function_9"
+        },
+        {
+          "type": "real",
+          "name": "max strafe throttle magnitude at full sprint#cap applied to strafe throttle magnitude at full sprint"
+        },
+        {
+          "type": "real",
+          "name": "pegged magnitude#how far the stick needs to be pressed before being considered pegged"
+        },
+        {
+          "type": "real",
+          "name": "pegged magnitude (legacy presets)#in legacy you don't get left/right throttle inputs only forward/back (default = 0.3)"
+        },
+        {
+          "type": "angle",
+          "name": "pegged angular threshold#how far off straight up we consider pegged"
+        },
+        {
+          "type": "angle",
+          "name": "max angle between facing and velocity:degrees#if facing deviates from velocity by more than this threshold, player is kicked out of sprint"
+        },
+        {
+          "type": "real",
+          "name": "minimum player velocity to be considered in a sprinting state:world units per second"
+        },
+        {
+          "type": "string_id",
+          "name": "animation stance"
+        },
+        {
+          "type": "custom",
+          "name": "stopping power"
+        },
+        {
+          "type": "struct",
+          "name": "damage to sprint fraction reduction",
+          "definition": "damage_to_sprint_fraction_reduction_10"
+        },
+        {
+          "type": "custom",
+          "name": "damage recharge delay timer"
+        },
+        {
+          "type": "real",
+          "name": "damage recharge delay timer#how long after taking damage before you can start to build up sprint"
+        },
+        {
+          "type": "real_fraction",
+          "name": "damage reduction ignore threshold#only reduce sprint fraction from damage if the sprint fraction is <= this"
+        },
+        {
+          "type": "real_fraction",
+          "name": "damage reduction minimum#don't reduce the sprint fraction below this"
+        },
+        {
+          "type": "custom",
+          "name": "exit animation speed scalar#scales the Spartan's sprint exit animation playback speed"
+        },
+        {
+          "type": "struct",
+          "name": "exit animation speed scalar#scales the Spartan's sprint exit animation playback speed",
+          "definition": "exit_animation_speed_scalar_scales_the_Spartan_s_sprint_exit_animation_playback_speed_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SprintDefinitionTag_struct_definition_1": {
+      "guid": "96e8d1bbe52e9eb6aa9a79dd3f70c356",
+      "size": 296,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "sprint",
+          "definition": "sprint_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "common_ability_parameters_4_options_0": {
+      "options": [
+        "Use 3rd Person Camera When Active",
+        "Hide Reticle When Active",
+        "Is Motion Tracked (By Enemies) When Active",
+        "One-Shot Activation Effect#Effect kills itself rather than being explicitly killed when the ability deactivates",
+        "Can be activated when weapon state is relaxed",
+        "Does Not Appear In Extended Motion Tracker Range"
+      ]
+    },
+    "sprint_3_options_1": {
+      "options": [
+        "allow build up whilst airborne",
+        "enable stopping power",
+        "enable stopping power in campaign",
+        "pause damage section recharge#when sprinting prevents the damage section recharging (N.B. not the same as the stun timer)",
+        "zero sprint fraction when engaging combat actions#firing, throwing grenades, etc."
+      ]
+    },
+    "sprint_3_options_2": {
+      "options": [
+        "Normal",
+        "Suspend",
+        "Reset"
+      ]
+    },
+    "time_to_full_speed_seconds_how_long_to_reach_top_speed_5_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "full_speed_scalar_how_much_faster_we_actually_go_when_at_full_sprint_7_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "exit_animation_speed_scalar_scales_the_Spartan_s_sprint_exit_animation_playback_speed_11_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

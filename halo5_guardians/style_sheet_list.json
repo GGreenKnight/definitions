@@ -1,0 +1,539 @@
+{
+  "name": "style_sheet_list",
+  "tag": "uiss",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "UserInterfaceStyleSheetFontIdBlock_5": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetFontIdBlock_5"
+    },
+    "UserInterfaceStyleSheetTextCaseBlock_6": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetTextCaseBlock_6"
+    },
+    "UserInterfaceStyleSheetJustificationBlock_7": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetJustificationBlock_7"
+    },
+    "UserInterfaceStyleSheetAlignmentBlock_8": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetAlignmentBlock_8"
+    },
+    "UserInterfaceStyleSheetScaleBlock_9": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetScaleBlock_9"
+    },
+    "UserInterfaceStyleSheetFixedHeightBlock_10": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetFixedHeightBlock_10"
+    },
+    "UserInterfaceStyleSheetsFontBlock_4": {
+      "max_count": 64,
+      "struct": "UserInterfaceStyleSheetsFontBlock_4"
+    },
+    "UserInterfaceStyleSheetDropShadowStyleBlock_12": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetDropShadowStyleBlock_12"
+    },
+    "UserInterfaceStyleSheetColorBlock_13": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetColorBlock_13"
+    },
+    "UserInterfaceStyleSheetColorBlock_14": {
+      "max_count": 1,
+      "struct": "UserInterfaceStyleSheetColorBlock_14"
+    },
+    "UserInterfaceStyleSheetsVisualBlock_11": {
+      "max_count": 64,
+      "struct": "UserInterfaceStyleSheetsVisualBlock_11"
+    },
+    "UserInterfaceStyleSheetLanguagesBlock_3": {
+      "max_count": 17,
+      "struct": "UserInterfaceStyleSheetLanguagesBlock_3"
+    },
+    "UserInterfaceStyleSheetGradientBlock_15": {
+      "max_count": 32,
+      "struct": "UserInterfaceStyleSheetGradientBlock_15"
+    },
+    "UserInterfaceStyleSheetDropshadowBlock_16": {
+      "max_count": 32,
+      "struct": "UserInterfaceStyleSheetDropshadowBlock_16"
+    },
+    "UserInterfaceStyleSheetOuterGlowBlock_17": {
+      "max_count": 32,
+      "struct": "UserInterfaceStyleSheetOuterGlowBlock_17"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "style_sheet_list_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetFontIdBlock_5": {
+      "guid": "5be81ba7468018004cb75ea6bd9f924e",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "font id",
+          "definition": "UserInterfaceStyleSheetFontIdBlock_5_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetTextCaseBlock_6": {
+      "guid": "b05f2549425982bbc0d0198fb1626f51",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "text case",
+          "definition": "UserInterfaceStyleSheetTextCaseBlock_6_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetJustificationBlock_7": {
+      "guid": "7a8dc16643a165d6996273b0f02ddaed",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "justification",
+          "definition": "UserInterfaceStyleSheetJustificationBlock_7_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetAlignmentBlock_8": {
+      "guid": "4b81a80144f25bcbff1ace859cb8b252",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "alignment",
+          "definition": "UserInterfaceStyleSheetAlignmentBlock_8_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetScaleBlock_9": {
+      "guid": "c5f63a734ab9d27a4c92fa9842c924ed",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetFixedHeightBlock_10": {
+      "guid": "84c93cac4ccc83cde3578c990bbc18bf",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "height"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetsFontBlock_4": {
+      "guid": "b11128e6453768216032e9a80ff1694e",
+      "size": 172,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "style sheet name^"
+        },
+        {
+          "type": "block",
+          "name": "font id",
+          "definition": "UserInterfaceStyleSheetFontIdBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "text case",
+          "definition": "UserInterfaceStyleSheetTextCaseBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "justification",
+          "definition": "UserInterfaceStyleSheetJustificationBlock_7"
+        },
+        {
+          "type": "block",
+          "name": "alignment",
+          "definition": "UserInterfaceStyleSheetAlignmentBlock_8"
+        },
+        {
+          "type": "block",
+          "name": "scale",
+          "definition": "UserInterfaceStyleSheetScaleBlock_9"
+        },
+        {
+          "type": "block",
+          "name": "fixed height",
+          "definition": "UserInterfaceStyleSheetFixedHeightBlock_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetDropShadowStyleBlock_12": {
+      "guid": "d10ed3b24a226c5d007b4685ec2f6a71",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "drop shadow style",
+          "definition": "UserInterfaceStyleSheetDropShadowStyleBlock_12_options_0"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetColorBlock_13": {
+      "guid": "5faf93b643a65af9be5c65a7e71439f3",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetColorBlock_14": {
+      "guid": "5faf93b643a65af9be5c65a7e71439f3",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetsVisualBlock_11": {
+      "guid": "47874fb6457c2a7b1afefaac8099ccbc",
+      "size": 100,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "style sheet name^"
+        },
+        {
+          "type": "block",
+          "name": "drop shadow style",
+          "definition": "UserInterfaceStyleSheetDropShadowStyleBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "text color",
+          "definition": "UserInterfaceStyleSheetColorBlock_13"
+        },
+        {
+          "type": "block",
+          "name": "drop shadow color",
+          "definition": "UserInterfaceStyleSheetColorBlock_14"
+        },
+        {
+          "type": "string_id",
+          "name": "gradient name"
+        },
+        {
+          "type": "string_id",
+          "name": "dropshadow name"
+        },
+        {
+          "type": "string_id",
+          "name": "outer glow name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetLanguagesBlock_3": {
+      "guid": "b9a0f1804d66c79a301ee6ae4fcc3d3f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "language^",
+          "definition": "UserInterfaceStyleSheetLanguagesBlock_3_options_0"
+        },
+        {
+          "type": "block",
+          "name": "font style sheets",
+          "definition": "UserInterfaceStyleSheetsFontBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "visual style sheets",
+          "definition": "UserInterfaceStyleSheetsVisualBlock_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetGradientBlock_15": {
+      "guid": "1ac5df384b1c6ea688ed35aa428f1d79",
+      "size": 92,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "gradient name^"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color1"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color2"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color3"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color4"
+        },
+        {
+          "type": "real",
+          "name": "angle"
+        },
+        {
+          "type": "real",
+          "name": "scale"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "offset"
+        },
+        {
+          "type": "long_integer",
+          "name": "number of colors"
+        },
+        {
+          "type": "long_enum",
+          "name": "gradient shape",
+          "definition": "UserInterfaceStyleSheetGradientBlock_15_options_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetDropshadowBlock_16": {
+      "guid": "da87e84140a304af21c83aa1c4408ea2",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "dropshadow name^"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "angle"
+        },
+        {
+          "type": "real",
+          "name": "distance"
+        },
+        {
+          "type": "real",
+          "name": "spread"
+        },
+        {
+          "type": "real",
+          "name": "size"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceStyleSheetOuterGlowBlock_17": {
+      "guid": "c337c4674346110ed1ec3a8c05669d9d",
+      "size": 28,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "outer glow name^"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "spread"
+        },
+        {
+          "type": "real",
+          "name": "size"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "style_sheet_list_struct_definition_1": {
+      "guid": "4b407aedac0e3a6a1025fe0f8effe617",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "style sheet languages",
+          "definition": "UserInterfaceStyleSheetLanguagesBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "gradients",
+          "definition": "UserInterfaceStyleSheetGradientBlock_15"
+        },
+        {
+          "type": "block",
+          "name": "dropshadows",
+          "definition": "UserInterfaceStyleSheetDropshadowBlock_16"
+        },
+        {
+          "type": "block",
+          "name": "outer glows",
+          "definition": "UserInterfaceStyleSheetOuterGlowBlock_17"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "UserInterfaceStyleSheetLanguagesBlock_3_options_0": {
+      "options": [
+        "english",
+        "japanese",
+        "german",
+        "french",
+        "spanish",
+        "mexican spanish",
+        "italian",
+        "korean",
+        "chinese-traditional",
+        "chinese-simplified",
+        "portuguese",
+        "polish",
+        "russian",
+        "danish",
+        "finnish",
+        "dutch",
+        "norwegian"
+      ]
+    },
+    "UserInterfaceStyleSheetFontIdBlock_5_options_0": {
+      "options": [
+        "terminal font",
+        "subtitle font"
+      ]
+    },
+    "UserInterfaceStyleSheetTextCaseBlock_6_options_0": {
+      "options": [
+        "normal",
+        "uppercase",
+        "lowercase"
+      ]
+    },
+    "UserInterfaceStyleSheetJustificationBlock_7_options_0": {
+      "options": [
+        "left",
+        "right",
+        "center"
+      ]
+    },
+    "UserInterfaceStyleSheetAlignmentBlock_8_options_0": {
+      "options": [
+        "top",
+        "bottom",
+        "center"
+      ]
+    },
+    "UserInterfaceStyleSheetDropShadowStyleBlock_12_options_0": {
+      "options": [
+        "none",
+        "drop",
+        "outline"
+      ]
+    },
+    "UserInterfaceStyleSheetGradientBlock_15_options_9": {
+      "options": [
+        "linear",
+        "circular",
+        "diamond",
+        "square"
+      ]
+    }
+  },
+  "datas": {}
+}

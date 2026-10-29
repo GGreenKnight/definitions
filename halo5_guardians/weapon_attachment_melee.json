@@ -1,0 +1,706 @@
+{
+  "name": "weapon_attachment_melee",
+  "tag": "weme",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "global_object_attachment_block_4": {
+      "max_count": 48,
+      "struct": "global_object_attachment_block_4"
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "max_count": 1,
+      "struct": "WeaponAttachmentObjectBlock_6"
+    },
+    "WeaponAccuracyModifiers_7": {
+      "max_count": 1,
+      "struct": "WeaponAccuracyModifiers_7"
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "max_count": 1,
+      "struct": "WeaponPrecisionAimModifiers_8"
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "max_count": 1,
+      "struct": "WeaponUnitPropertyModifiers_9"
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "max_count": 1,
+      "struct": "WeaponAimAssistPropertyModifiers_10"
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "max_count": 1,
+      "struct": "weapon_recoil_view_kick_modifiers_11"
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "max_count": 1,
+      "struct": "WeaponRecoilGunkickModifiers_12"
+    },
+    "WeaponAnimationModifiers_13": {
+      "max_count": 1,
+      "struct": "WeaponAnimationModifiers_13"
+    },
+    "WeaponHeatModifiers_14": {
+      "max_count": 1,
+      "struct": "WeaponHeatModifiers_14"
+    },
+    "UIItemInfoBlock_15": {
+      "max_count": 1,
+      "struct": "UIItemInfoBlock_15"
+    },
+    "melee_damage_parameters_block_17": {
+      "max_count": 2,
+      "struct": "melee_damage_parameters_block_17"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "weapon_attachment_melee_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "global_object_attachment_block_4": {
+      "guid": "11097257429c477533d975a73f4575ee",
+      "size": 80,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "override type#this attachment will override the attachment on the object that shares this ",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "marker"
+        },
+        {
+          "type": "char_enum",
+          "name": "change color",
+          "definition": "global_object_attachment_block_4_options_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "global_object_attachment_block_4_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "DPKP",
+          "definition": 2
+        },
+        {
+          "type": "string_id",
+          "name": "primary scale"
+        },
+        {
+          "type": "string_id",
+          "name": "secondary scale"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "attachmentName_5": {
+      "guid": "7166d96b409060fc1c2ebf9c91f0157d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAttachmentObjectBlock_6": {
+      "guid": "69a0d8184a18977c2ec52c9c5c788d2a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "object",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "weapon marker"
+        },
+        {
+          "type": "string_id",
+          "name": "attachment marker"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAccuracyModifiers_7": {
+      "guid": "da8879984a0f4ed579123c8f4048154f",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "accuracy spread{Accuracy Bloom}:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponPrecisionAimModifiers_8": {
+      "guid": "809408414624313b546f658e2d588e96",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "precision transition in time modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "precision transition out time modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponUnitPropertyModifiers_9": {
+      "guid": "c17f9f4049269ffebbb77b8e2ad9a775",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "move speed scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "turn rate scale modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "simulated input scale modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAimAssistPropertyModifiers_10": {
+      "guid": "2cb7ba74481428a00d7d2a93c4188131",
+      "size": 40,
+      "fields": [
+        {
+          "type": "real",
+          "name": "autoaim angle:percent#the maximum angle that autoaim works at full strength"
+        },
+        {
+          "type": "real",
+          "name": "prioritization angle:percent#angle used to select model targets based on priority"
+        },
+        {
+          "type": "real",
+          "name": "autoaim range:percent#autoaim only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "autoaim falloff range:percent#at what point the autoaim starts falling off.  Fully falls off at autoaim range."
+        },
+        {
+          "type": "real",
+          "name": "autoaim near falloff range:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism angle:percent#at what point the autoaim reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "magnetism range:percent#magnetism only has an effect along this distance"
+        },
+        {
+          "type": "real",
+          "name": "magnetism falloff range:percent#at what point magnetism starts falling off.  Fully falls off at magnetism range."
+        },
+        {
+          "type": "real",
+          "name": "magnetism near falloff range:percent#at what point magnetism reaches full power"
+        },
+        {
+          "type": "real",
+          "name": "deviation angle:percent#the maximum angle that a projectile is allowed to deviate from the gun barrel due to autoaim OR network lead vector reconstruction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_recoil_view_kick_modifiers_11": {
+      "guid": "867b6ceb45ee09b734870c94b40a00b6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "real",
+          "name": "view kick deceleration modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "view kick return to center modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponRecoilGunkickModifiers_12": {
+      "guid": "c0b6345a44080b16986bde88c03694a1",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "gunkick spring constant modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponAnimationModifiers_13": {
+      "guid": "f921d36c4356b5f65bb1efae74b1566b",
+      "size": 20,
+      "fields": [
+        {
+          "type": "real",
+          "name": "ready playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "ready initial playback modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "put away playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload playback speed modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "reload while empty playback speed modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponHeatModifiers_14": {
+      "guid": "4a20a34a469cb8b1bdb06aa633975ec0",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real",
+          "name": "heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "overheated heat loss per second modifier:percent"
+        },
+        {
+          "type": "real",
+          "name": "heat generated per round modifier:percent"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIItemInfoBlock_15": {
+      "guid": "6bb873fd472b52c677909b90d0074580",
+      "size": 128,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "description#general in-universe item description"
+        },
+        {
+          "type": "string_id",
+          "name": "help text#verbose usage info for use during gameplay"
+        },
+        {
+          "type": "string_id",
+          "name": "icon string id#legacy, from when we embedded the sprites into the font to get streaming behaviour"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite#bitmap file representing this item",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#frame inside the item's image strip which shows this item "
+        },
+        {
+          "type": "tag_reference",
+          "name": "alt sprite#secondary bitmap file representing this item. for detail images, overlays etc.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "alt sprite index#alt sprite's frame"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui vehicle screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_component_3": {
+      "guid": "128b8f414ede891885730099d6c4f5c1",
+      "size": 328,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Attachment"
+        },
+        {
+          "type": "string_id",
+          "name": "variant region name"
+        },
+        {
+          "type": "string_id",
+          "name": "variant permutation name"
+        },
+        {
+          "type": "block",
+          "name": "attachments",
+          "definition": "global_object_attachment_block_4"
+        },
+        {
+          "type": "pad",
+          "name": "attachmentPad",
+          "definition": 4
+        },
+        {
+          "type": "custom",
+          "name": "Attachment Name"
+        },
+        {
+          "type": "struct",
+          "name": "attachmentName",
+          "definition": "attachmentName_5"
+        },
+        {
+          "type": "block",
+          "name": "attachment object",
+          "definition": "WeaponAttachmentObjectBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "accuracy modifiers",
+          "definition": "WeaponAccuracyModifiers_7"
+        },
+        {
+          "type": "block",
+          "name": "precision aim modifiers",
+          "definition": "WeaponPrecisionAimModifiers_8"
+        },
+        {
+          "type": "block",
+          "name": "unit modifiers",
+          "definition": "WeaponUnitPropertyModifiers_9"
+        },
+        {
+          "type": "block",
+          "name": "aim assist modifiers",
+          "definition": "WeaponAimAssistPropertyModifiers_10"
+        },
+        {
+          "type": "block",
+          "name": "recoil view kick modifiers",
+          "definition": "weapon_recoil_view_kick_modifiers_11"
+        },
+        {
+          "type": "block",
+          "name": "recoil gunkick modifiers",
+          "definition": "WeaponRecoilGunkickModifiers_12"
+        },
+        {
+          "type": "block",
+          "name": "animation modifiers",
+          "definition": "WeaponAnimationModifiers_13"
+        },
+        {
+          "type": "block",
+          "name": "heat modifiers",
+          "definition": "WeaponHeatModifiers_14"
+        },
+        {
+          "type": "block",
+          "name": "UI display info",
+          "definition": "UIItemInfoBlock_15"
+        },
+        {
+          "type": "pad",
+          "name": "endPad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "melee_damage_parameters_block_17": {
+      "guid": "b9eba02ea76ce89574ea8baba5c19c40",
+      "size": 376,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "melee damage parameters"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "damage pyramid angles"
+        },
+        {
+          "type": "real",
+          "name": "damage pyramid depth:wu#0 defaults to k_default_player_melee_distance"
+        },
+        {
+          "type": "real",
+          "name": "maximum lunge range:wu#0 defaults to k_default_player_melee_lunge_distance"
+        },
+        {
+          "type": "real",
+          "name": "damage lunge explosive depth:wu#the distance out from the pyramid center to spawn explosive effects.  This value will be clamped to the damage pyramid depth. 0 defaults to the damage pyramid depth"
+        },
+        {
+          "type": "real",
+          "name": "runtime damage lunge explosive fraction*!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "melee damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "melee response",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "lunge melee damage#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "lunge melee response#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty melee damage#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "empty melee response#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "clang melee damage#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "clang melee response#this is only important for the energy sword",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "clang melee against melee weapon damage#e.g. used by AR to damage sword guy when clanging sword attack",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "clang melee against melee weapon damage response#e.g. used by AR to damage sword guy when clanging sword attack",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "lunge melee explosive damage",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_melee_component_16": {
+      "guid": "9acd2da94e8f704fcbe34089c30e45ff",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Weapon Melee"
+        },
+        {
+          "type": "block",
+          "name": "melee damage parameters",
+          "definition": "melee_damage_parameters_block_17"
+        },
+        {
+          "type": "string_id",
+          "name": "melee animation set"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_attachment_melee_struct_definition_1": {
+      "guid": "fc01fe3891e92fc7674808dafdc1bcd0",
+      "size": 376,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "weapon attachment component",
+          "definition": "weapon_attachment_component_3"
+        },
+        {
+          "type": "struct",
+          "name": "weapon melee component",
+          "definition": "weapon_melee_component_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "global_object_attachment_block_4_options_3": {
+      "options": [
+        "none",
+        "primary",
+        "secondary",
+        "tertiary",
+        "quaternary"
+      ]
+    },
+    "global_object_attachment_block_4_options_4": {
+      "options": [
+        "force always on#when this flag is clear we only create the attachment when the function object function is active or set to empty string",
+        "effect size scale from object scale"
+      ]
+    }
+  },
+  "datas": {}
+}

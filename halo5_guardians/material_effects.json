@@ -1,0 +1,208 @@
+{
+  "name": "material_effects",
+  "tag": "foot",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "material_effect_material_block_4": {
+      "max_count": 500,
+      "struct": "material_effect_material_block_4"
+    },
+    "material_effect_material_block_5": {
+      "max_count": 500,
+      "struct": "material_effect_material_block_5"
+    },
+    "material_effect_block_v2_3": {
+      "max_count": 30,
+      "struct": "material_effect_block_v2_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "material_effects_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_effect_material_block_4": {
+      "guid": "8fce6765435c945c33de419287d88edc",
+      "size": 76,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tag (effect or sound)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "secondary tag (effect or sound)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "material name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime material index!"
+        },
+        {
+          "type": "char_enum",
+          "name": "sweetener mode",
+          "definition": "material_effect_material_block_4_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "L",
+          "definition": 1
+        },
+        {
+          "type": "real",
+          "name": "max_visibility_distance#manual override for the max distance this effect can be from the camera and still be rendered (not valid for sounds)."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_effect_material_block_5": {
+      "guid": "8fce6765435c945c33de419287d88edc",
+      "size": 76,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "tag (effect or sound)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "secondary tag (effect or sound)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "material name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime material index!"
+        },
+        {
+          "type": "char_enum",
+          "name": "sweetener mode",
+          "definition": "material_effect_material_block_5_options_4"
+        },
+        {
+          "type": "pad",
+          "name": "L",
+          "definition": 1
+        },
+        {
+          "type": "real",
+          "name": "max_visibility_distance#manual override for the max distance this effect can be from the camera and still be rendered (not valid for sounds)."
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_effect_block_v2_3": {
+      "guid": "b0032d6741b8821dac373fae16fdc06c",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "sounds",
+          "definition": "material_effect_material_block_4"
+        },
+        {
+          "type": "block",
+          "name": "effects",
+          "definition": "material_effect_material_block_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_effects_struct_definition_1": {
+      "guid": "3487ba56f13167a18ab2eb828c9828c9",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "effects",
+          "definition": "material_effect_block_v2_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "material_effect_material_block_4_options_4": {
+      "options": [
+        "sweetener default",
+        "sweetener enabled",
+        "sweetener disabled"
+      ]
+    },
+    "material_effect_material_block_5_options_4": {
+      "options": [
+        "sweetener default",
+        "sweetener enabled",
+        "sweetener disabled"
+      ]
+    }
+  },
+  "datas": {}
+}

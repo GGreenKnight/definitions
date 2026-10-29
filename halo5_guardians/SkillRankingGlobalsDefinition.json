@@ -1,0 +1,124 @@
+{
+  "name": "SkillRankingGlobalsDefinition",
+  "tag": "glsa",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "skill_rank_tier_block_4": {
+      "max_count": 10,
+      "struct": "skill_rank_tier_block_4"
+    },
+    "skill_ranking_globals_block_3": {
+      "max_count": 10,
+      "struct": "skill_ranking_globals_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SkillRankingGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "skill_rank_tier_block_4": {
+      "guid": "4c1dfa8f42aa204e1b859bada5e2677c",
+      "size": 12,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display_name #total points needed to reach this rank"
+        },
+        {
+          "type": "long_integer",
+          "name": "beginning_points"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "skill_ranking_globals_block_3": {
+      "guid": "84e6fb3847ba8f71008867805c6d0210",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "display_name^"
+        },
+        {
+          "type": "long_integer",
+          "name": "icon_index"
+        },
+        {
+          "type": "block",
+          "name": "tier",
+          "definition": "skill_rank_tier_block_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SkillRankingGlobalsDefinition_struct_definition_1": {
+      "guid": "7b5854aea55d95eeed753d4e49b9f49e",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_integer",
+          "name": "number of games to qualify for CSR"
+        },
+        {
+          "type": "block",
+          "name": "skill ranking globals",
+          "definition": "skill_ranking_globals_block_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

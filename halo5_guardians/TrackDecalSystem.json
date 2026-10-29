@@ -1,0 +1,110 @@
+{
+  "name": "TrackDecalSystem",
+  "tag": "trds",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "TrackDecalSystem_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "TrackDecalSystem_struct_definition_1": {
+      "guid": "00db9d57cb683f1ff83a9703dd56402e",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Decal system",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Distance Between Vertices"
+        },
+        {
+          "type": "real",
+          "name": "Min distance:world units#the minimum distance before a decal is generated."
+        },
+        {
+          "type": "real",
+          "name": "Max distance:world units#the maximum distance before a decal is generated."
+        },
+        {
+          "type": "real",
+          "name": "Distance velocity scale#the amount to scale the velocity while calculating the distance between verts"
+        },
+        {
+          "type": "custom",
+          "name": "Velocity-based Offset"
+        },
+        {
+          "type": "real",
+          "name": "Max offset:world units#the maximum distance from the contact point to generate quads. This can be used to hide some of the poping"
+        },
+        {
+          "type": "real",
+          "name": "Offset velocity scale#the amount to scale the velocity while calculating the velocity-based offset"
+        },
+        {
+          "type": "custom",
+          "name": "Contact Patch"
+        },
+        {
+          "type": "real",
+          "name": "Contact patch width:world units#the width of the tire"
+        },
+        {
+          "type": "real",
+          "name": "Contact patch length:world units#the amount of the tire that contacts the surface from front to back. This length is used when the tire is sliding sideways instead of the width"
+        },
+        {
+          "type": "real",
+          "name": "Texture U repeat length:world units#the length of tire track before the texture repeats in the U direction"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

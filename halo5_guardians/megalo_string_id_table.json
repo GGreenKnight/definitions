@@ -1,0 +1,106 @@
+{
+  "name": "megalo_string_id_table",
+  "tag": "msit",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "megalo_string_id_block_3": {
+      "max_count": 512,
+      "struct": "megalo_string_id_block_3"
+    },
+    "megalo_string_id_to_sprite_index_block_4": {
+      "max_count": 256,
+      "struct": "megalo_string_id_to_sprite_index_block_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "megalo_string_id_table_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "megalo_string_id_block_3": {
+      "guid": "6b7821874e8d32c279e317be962b77eb",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "string_id^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "megalo_string_id_to_sprite_index_block_4": {
+      "guid": "fc7d7ac94548adf8cbb51980adfdc6c6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "from megalo string_id"
+        },
+        {
+          "type": "long_integer",
+          "name": "loadout menu sprite frame"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "megalo_string_id_table_struct_definition_1": {
+      "guid": "42085d075968a85544fb2b3ef2a2fdfa",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "megalo string_ids",
+          "definition": "megalo_string_id_block_3"
+        },
+        {
+          "type": "block",
+          "name": "megalo string_ids sprite mapping",
+          "definition": "megalo_string_id_to_sprite_index_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

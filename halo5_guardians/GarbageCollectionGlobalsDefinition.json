@@ -1,0 +1,142 @@
+{
+  "name": "GarbageCollectionGlobalsDefinition",
+  "tag": "glga",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "havok_cleanup_resources_block_3": {
+      "max_count": 1,
+      "struct": "havok_cleanup_resources_block_3"
+    },
+    "garbage_collection_block_4": {
+      "max_count": 1,
+      "struct": "garbage_collection_block_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "GarbageCollectionGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "havok_cleanup_resources_block_3": {
+      "guid": "1158b5b84d5afbfc592286b47beb91cb",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "object cleanup effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "garbage_collection_block_4": {
+      "guid": "49b147e04847863caa4813be7e2dc96b",
+      "size": 36,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Garbage Times"
+        },
+        {
+          "type": "real",
+          "name": "Dropped item:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dropped special item:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dropped item in multiplayer:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Broken constraints:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dead unit:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dead player:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dead MP Player:seconds"
+        },
+        {
+          "type": "real",
+          "name": "Dead MP Player overloaded: seconds"
+        },
+        {
+          "type": "long_integer",
+          "name": "Max dead body count #above this number, overloaded mp time is used to garbage collect dead bodies"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "GarbageCollectionGlobalsDefinition_struct_definition_1": {
+      "guid": "3b9ea2bbf53862320e9d2c9c8846fd23",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "havok cleanup resources",
+          "definition": "havok_cleanup_resources_block_3"
+        },
+        {
+          "type": "block",
+          "name": "garbage collection",
+          "definition": "garbage_collection_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

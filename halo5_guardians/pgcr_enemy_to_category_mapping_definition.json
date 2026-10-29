@@ -1,0 +1,405 @@
+{
+  "name": "pgcr_enemy_to_category_mapping_definition",
+  "tag": "pcec",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "pgcr_player_to_category_entry_block_4": {
+      "max_count": 1,
+      "struct": "pgcr_player_to_category_entry_block_4"
+    },
+    "pgcr_enemy_to_category_entry_block_5": {
+      "max_count": 16,
+      "struct": "pgcr_enemy_to_category_entry_block_5"
+    },
+    "pgcr_enemy_to_category_list_block_3": {
+      "max_count": 128,
+      "struct": "pgcr_enemy_to_category_list_block_3"
+    },
+    "pgcr_player_to_category_entry_block_7": {
+      "max_count": 1,
+      "struct": "pgcr_player_to_category_entry_block_7"
+    },
+    "pgcr_enemy_to_category_entry_block_8": {
+      "max_count": 16,
+      "struct": "pgcr_enemy_to_category_entry_block_8"
+    },
+    "pgcr_enemy_to_category_list_block_6": {
+      "max_count": 128,
+      "struct": "pgcr_enemy_to_category_list_block_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "pgcr_enemy_to_category_mapping_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_player_to_category_entry_block_4": {
+      "guid": "b6d210714da8d5c4a148f4a2a2e568ac",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "player type",
+          "definition": "pgcr_player_to_category_entry_block_4_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_5": {
+      "guid": "27d7ea7349b9810a7047469905b69802",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "character type",
+          "definition": "pgcr_enemy_to_category_entry_block_5_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "character class",
+          "definition": "pgcr_enemy_to_category_entry_block_5_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_enemy_to_category_list_block_3": {
+      "guid": "13cb91f2486c8fa01aba93ad3423a101",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "category display name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "sprite index"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "pgcr_enemy_to_category_list_block_3_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 1
+        },
+        {
+          "type": "block",
+          "name": "player types",
+          "definition": "pgcr_player_to_category_entry_block_4"
+        },
+        {
+          "type": "block",
+          "name": "enemy types",
+          "definition": "pgcr_enemy_to_category_entry_block_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_player_to_category_entry_block_7": {
+      "guid": "b6d210714da8d5c4a148f4a2a2e568ac",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "player type",
+          "definition": "pgcr_player_to_category_entry_block_7_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_8": {
+      "guid": "27d7ea7349b9810a7047469905b69802",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "character type",
+          "definition": "pgcr_enemy_to_category_entry_block_8_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "character class",
+          "definition": "pgcr_enemy_to_category_entry_block_8_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_enemy_to_category_list_block_6": {
+      "guid": "13cb91f2486c8fa01aba93ad3423a101",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "category display name^"
+        },
+        {
+          "type": "short_integer",
+          "name": "sprite index"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "pgcr_enemy_to_category_list_block_6_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 1
+        },
+        {
+          "type": "block",
+          "name": "player types",
+          "definition": "pgcr_player_to_category_entry_block_7"
+        },
+        {
+          "type": "block",
+          "name": "enemy types",
+          "definition": "pgcr_enemy_to_category_entry_block_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "pgcr_enemy_to_category_mapping_definition_struct_definition_1": {
+      "guid": "40f5ae00dab9cd74030514bf89c8b3bf",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "character categories",
+          "definition": "pgcr_enemy_to_category_list_block_3"
+        },
+        {
+          "type": "block",
+          "name": "vehicle categories",
+          "definition": "pgcr_enemy_to_category_list_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "pgcr_enemy_to_category_list_block_3_options_2": {
+      "options": [
+        "category contains players"
+      ]
+    },
+    "pgcr_player_to_category_entry_block_4_options_0": {
+      "options": [
+        "UNSC",
+        "Covenant"
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_5_options_0": {
+      "options": [
+        "any",
+        "brute",
+        "grunt",
+        "jackal",
+        "skirmisher",
+        "marine",
+        "spartan",
+        "bugger",
+        "hunter",
+        "flood_infection",
+        "flood_carrier",
+        "flood_combat",
+        "flood_pure",
+        "sentinel",
+        "elite",
+        "engineer",
+        "mule",
+        "turret",
+        "mongoose",
+        "warthog",
+        "scorpion",
+        "hornet",
+        "pelican",
+        "revenant",
+        "seraph",
+        "shade",
+        "watchtower",
+        "ghost",
+        "chopper",
+        "mauler",
+        "wraith",
+        "banshee",
+        "phantom",
+        "scarab",
+        "guntower",
+        "tuning_fork",
+        "broadsword",
+        "mammoth",
+        "lich",
+        "mantis",
+        "wasp",
+        "phaeton",
+        "bishop",
+        "knight",
+        "pawn",
+        "soldier",
+        "packmaster",
+        "cavalier"
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_5_options_1": {
+      "options": [
+        "any",
+        "infantry",
+        "leader",
+        "hero",
+        "specialist",
+        "light vehicle",
+        "heavy vehicle",
+        "giant vehicle",
+        "standard vehicle"
+      ]
+    },
+    "pgcr_enemy_to_category_list_block_6_options_2": {
+      "options": [
+        "category contains players"
+      ]
+    },
+    "pgcr_player_to_category_entry_block_7_options_0": {
+      "options": [
+        "UNSC",
+        "Covenant"
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_8_options_0": {
+      "options": [
+        "any",
+        "brute",
+        "grunt",
+        "jackal",
+        "skirmisher",
+        "marine",
+        "spartan",
+        "bugger",
+        "hunter",
+        "flood_infection",
+        "flood_carrier",
+        "flood_combat",
+        "flood_pure",
+        "sentinel",
+        "elite",
+        "engineer",
+        "mule",
+        "turret",
+        "mongoose",
+        "warthog",
+        "scorpion",
+        "hornet",
+        "pelican",
+        "revenant",
+        "seraph",
+        "shade",
+        "watchtower",
+        "ghost",
+        "chopper",
+        "mauler",
+        "wraith",
+        "banshee",
+        "phantom",
+        "scarab",
+        "guntower",
+        "tuning_fork",
+        "broadsword",
+        "mammoth",
+        "lich",
+        "mantis",
+        "wasp",
+        "phaeton",
+        "bishop",
+        "knight",
+        "pawn",
+        "soldier",
+        "packmaster",
+        "cavalier"
+      ]
+    },
+    "pgcr_enemy_to_category_entry_block_8_options_1": {
+      "options": [
+        "any",
+        "infantry",
+        "leader",
+        "hero",
+        "specialist",
+        "light vehicle",
+        "heavy vehicle",
+        "giant vehicle",
+        "standard vehicle"
+      ]
+    }
+  },
+  "datas": {}
+}

@@ -1,0 +1,112 @@
+{
+  "name": "lua_script",
+  "tag": "luas",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "LuaScriptReferenceBlock_3": {
+      "max_count": 32,
+      "struct": "LuaScriptReferenceBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "lua_script_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LuaScriptReferenceBlock_3": {
+      "guid": "9e51f865470a57076dfb5e8ed56ebeb2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "script*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lua_script_struct_definition_1": {
+      "guid": "7aad937ddfdee871de71fd5dba805290",
+      "size": 336,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "import - directory"
+        },
+        {
+          "type": "custom",
+          "name": "import - single file"
+        },
+        {
+          "type": "string_id",
+          "name": "luaFileName"
+        },
+        {
+          "type": "data",
+          "name": "luaFileData*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "long_string",
+          "name": "luaFileNameString*"
+        },
+        {
+          "type": "block",
+          "name": "referencedScripts*",
+          "definition": "LuaScriptReferenceBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "tag_data": {}
+  }
+}

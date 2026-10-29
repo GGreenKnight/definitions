@@ -1,0 +1,187 @@
+{
+  "name": "SkullGlobalsDefinition",
+  "tag": "glsk",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "campaign_metagame_style_type_block_4": {
+      "max_count": 100,
+      "struct": "campaign_metagame_style_type_block_4"
+    },
+    "campaign_metagame_difficulty_scale_block_5": {
+      "max_count": 4,
+      "struct": "campaign_metagame_difficulty_scale_block_5"
+    },
+    "campaign_metagame_skull_block_6": {
+      "max_count": 20,
+      "struct": "campaign_metagame_skull_block_6"
+    },
+    "campaign_metagame_globals_block_3": {
+      "max_count": 1,
+      "struct": "campaign_metagame_globals_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SkullGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_metagame_style_type_block_4": {
+      "guid": "5dfa123046538a3d75d8939e4248d3af",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "incident name^"
+        },
+        {
+          "type": "real",
+          "name": "style multiplier"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_metagame_difficulty_scale_block_5": {
+      "guid": "4c1dfa8f4eaa201e1b858bad95e2677d",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "difficulty multiplier"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_metagame_skull_block_6": {
+      "guid": "8f1530d94c93c5cc139373a6aebac8d5",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "difficulty multiplier"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_metagame_globals_block_3": {
+      "guid": "84d6cb3847ba9f71008847805c6d0200",
+      "size": 120,
+      "fields": [
+        {
+          "type": "block",
+          "name": "styles",
+          "definition": "campaign_metagame_style_type_block_4"
+        },
+        {
+          "type": "block",
+          "name": "difficulty",
+          "definition": "campaign_metagame_difficulty_scale_block_5"
+        },
+        {
+          "type": "block",
+          "name": "skulls{Primary Skulls}",
+          "definition": "campaign_metagame_skull_block_6"
+        },
+        {
+          "type": "long_integer",
+          "name": "friendly_death_point_count"
+        },
+        {
+          "type": "long_integer",
+          "name": "player_death_point_count"
+        },
+        {
+          "type": "long_integer",
+          "name": "player_betrayal_point_count"
+        },
+        {
+          "type": "real",
+          "name": "transient score time{multi kill window}:s#how long does transient score stay onscreen"
+        },
+        {
+          "type": "real",
+          "name": "EMP kill window#time after taking a guys shields down with emp damage you have to get the emp kill bonus (seconds)"
+        },
+        {
+          "type": "real",
+          "name": "Cowbell explosion acceleration multiplier#acceleration multiplier from explosions if cowbell is enabled"
+        },
+        {
+          "type": "real",
+          "name": "Famine ammo multiplier#scalar multiplier to determine what percentage of normally dropped ammo will drop if famine is on"
+        },
+        {
+          "type": "real",
+          "name": "Score delta display seconds (max)#How long to display accumulated points"
+        },
+        {
+          "type": "real",
+          "name": "Score delta display seconds (incremental)#How long to extend the timer when displaying accumulated points, extended every time accumulated points increases"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SkullGlobalsDefinition_struct_definition_1": {
+      "guid": "e5da3e2fcbb5aefc206322f9a98af759",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "campaign metagame globals",
+          "definition": "campaign_metagame_globals_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,249 @@
+{
+  "name": "sound_effect_template",
+  "tag": "_fx_",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "sound_effect_template_parameter_block_4": {
+      "max_count": 128,
+      "struct": "sound_effect_template_parameter_block_4"
+    },
+    "sound_effect_templates_block_3": {
+      "max_count": 8,
+      "struct": "sound_effect_templates_block_3"
+    },
+    "sound_effect_template_additional_sound_input_block_6": {
+      "max_count": 1,
+      "struct": "sound_effect_template_additional_sound_input_block_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "sound_effect_template_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "default_function_5": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_effect_template_parameter_block_4": {
+      "guid": "0c097b16427a12df2e4070a14f8ed4bf",
+      "size": 56,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "short_enum",
+          "name": "type",
+          "definition": "sound_effect_template_parameter_block_4_options_1"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "sound_effect_template_parameter_block_4_options_2"
+        },
+        {
+          "type": "long_integer",
+          "name": "hardware offset"
+        },
+        {
+          "type": "long_integer",
+          "name": "default enum integer value"
+        },
+        {
+          "type": "real",
+          "name": "default scalar value"
+        },
+        {
+          "type": "struct",
+          "name": "default function",
+          "definition": "default_function_5"
+        },
+        {
+          "type": "real",
+          "name": "minimum scalar value"
+        },
+        {
+          "type": "real",
+          "name": "maximum scalar value"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_effect_templates_block_3": {
+      "guid": "5c8458f8456094b86fb5eb93026e7ea6",
+      "size": 68,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "dsp effect"
+        },
+        {
+          "type": "custom",
+          "name": "WARNING"
+        },
+        {
+          "type": "data",
+          "name": "explanation",
+          "definition": "tag_data"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "sound_effect_templates_block_3_options_3"
+        },
+        {
+          "type": "short_integer",
+          "name": "dsp state offset!"
+        },
+        {
+          "type": "short_integer",
+          "name": "dsp state size!"
+        },
+        {
+          "type": "block",
+          "name": "parameters",
+          "definition": "sound_effect_template_parameter_block_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "low_frequency_sound_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_effect_template_additional_sound_input_block_6": {
+      "guid": "c146fb4e4229444567c630b8f0319f1a",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "dsp effect"
+        },
+        {
+          "type": "struct",
+          "name": "low frequency sound",
+          "definition": "low_frequency_sound_7"
+        },
+        {
+          "type": "real",
+          "name": "time period: seconds"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_effect_template_struct_definition_1": {
+      "guid": "39727debcaf181667773c1859daba42f",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "template collection",
+          "definition": "sound_effect_templates_block_3"
+        },
+        {
+          "type": "string_id",
+          "name": "internal dsp effect name{input effect name}"
+        },
+        {
+          "type": "block",
+          "name": "additional sound inputs",
+          "definition": "sound_effect_template_additional_sound_input_block_6"
+        },
+        {
+          "type": "pad",
+          "name": "pad_set_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "sound_effect_templates_block_3_options_3": {
+      "options": [
+        "use high level parameters",
+        "custom parameters"
+      ]
+    },
+    "sound_effect_template_parameter_block_4_options_1": {
+      "options": [
+        "integer",
+        "real",
+        "filter type"
+      ]
+    },
+    "sound_effect_template_parameter_block_4_options_2": {
+      "options": [
+        "expose as function"
+      ]
+    }
+  },
+  "datas": {
+    "tag_data": {},
+    "function_definition_data": {}
+  }
+}

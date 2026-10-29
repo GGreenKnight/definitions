@@ -1,0 +1,301 @@
+{
+  "name": "polyart_asset",
+  "tag": "paas",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "polyartCameraBlock_3": {
+      "max_count": 1,
+      "struct": "polyartCameraBlock_3"
+    },
+    "polyartVertexBlock_4": {
+      "max_count": 32768,
+      "struct": "polyartVertexBlock_4"
+    },
+    "polyartIndexBlock_5": {
+      "max_count": 32768,
+      "struct": "polyartIndexBlock_5"
+    },
+    "vertexBuffersBlock_6": {
+      "max_count": 1,
+      "struct": "vertexBuffersBlock_6"
+    },
+    "indexBuffersBlock_7": {
+      "max_count": 1,
+      "struct": "indexBuffersBlock_7"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "polyart_asset_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyartCameraBlock_3": {
+      "guid": "99094e2a4a48f7534333ec81cdb08808",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real",
+          "name": "horizontal fov"
+        },
+        {
+          "type": "real",
+          "name": "vertical fov"
+        },
+        {
+          "type": "real",
+          "name": "near z plane distance"
+        },
+        {
+          "type": "real",
+          "name": "far z plane distance"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "camera position"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyartVertexBlock_4": {
+      "guid": "118494c34b9bb73fdc4d74a49b327406",
+      "size": 12,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "half x*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half y*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half z*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half alpha*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half u*"
+        },
+        {
+          "type": "short_integer",
+          "name": "half v*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyartIndexBlock_5": {
+      "guid": "a4c7cb014d142540a27fa2b5f24d7693",
+      "size": 2,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "vertexBuffersBlock_6": {
+      "guid": "f38916ab435eca2ab153b3bc3e0d1357",
+      "size": 80,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "declaration type*"
+        },
+        {
+          "type": "byte_integer",
+          "name": "stride*"
+        },
+        {
+          "type": "pad",
+          "name": "vertex buffer pad",
+          "definition": 2
+        },
+        {
+          "type": "dword_integer",
+          "name": "count*"
+        },
+        {
+          "type": "pad",
+          "name": "wtf",
+          "definition": 48
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d SRV*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d cpu copy*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "indexBuffersBlock_7": {
+      "guid": "fb7aa38b46253ce503006cb9bc2b8160",
+      "size": 72,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "declaration type*"
+        },
+        {
+          "type": "byte_integer",
+          "name": "stride*"
+        },
+        {
+          "type": "pad",
+          "name": "vertex buffer pad",
+          "definition": 2
+        },
+        {
+          "type": "dword_integer",
+          "name": "count*"
+        },
+        {
+          "type": "pad",
+          "name": "wtf",
+          "definition": 48
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d*"
+        },
+        {
+          "type": "int64_integer",
+          "name": "ptr d3d cpu copy*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "polyart_asset_struct_definition_1": {
+      "guid": "a1cd2f7b83ed701dc7d1d704914d8ef7",
+      "size": 168,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "runtime flags*!",
+          "definition": "polyart_asset_struct_definition_1_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Polyart vertex type",
+          "definition": "polyart_asset_struct_definition_1_options_3"
+        },
+        {
+          "type": "char_integer",
+          "name": "uvSet index"
+        },
+        {
+          "type": "pad",
+          "name": "MERP",
+          "definition": 1
+        },
+        {
+          "type": "real",
+          "name": "antialiasing extent size"
+        },
+        {
+          "type": "block",
+          "name": "placement data",
+          "definition": "polyartCameraBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "polyartVertexBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "indices*",
+          "definition": "polyartIndexBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "pc vertex buffers*",
+          "definition": "vertexBuffersBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "pc index buffers*",
+          "definition": "indexBuffersBlock_7"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "polyart_asset_struct_definition_1_options_2": {
+      "options": [
+        "processed*!",
+        "available*!"
+      ]
+    },
+    "polyart_asset_struct_definition_1_options_3": {
+      "options": [
+        "Position",
+        "Position And UV"
+      ]
+    }
+  },
+  "datas": {}
+}

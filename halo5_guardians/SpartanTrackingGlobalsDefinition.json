@@ -1,0 +1,231 @@
+{
+  "name": "SpartanTrackingGlobalsDefinition",
+  "tag": "sptg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "DefaultRangeBlock_4": {
+      "max_count": 4,
+      "struct": "DefaultRangeBlock_4"
+    },
+    "DisplayMaximumsBlock_5": {
+      "max_count": 4,
+      "struct": "DisplayMaximumsBlock_5"
+    },
+    "SpartanTrackingPingGlobalsBlockDefinition_3": {
+      "max_count": 2,
+      "struct": "SpartanTrackingPingGlobalsBlockDefinition_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SpartanTrackingGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DefaultRangeBlock_4": {
+      "guid": "5e064f454175c0af887ff38d14540631",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "default range"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "DisplayMaximumsBlock_5": {
+      "guid": "a7c0ed684498a743477ea99f9e5dcee9",
+      "size": 1,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "maximum number of tracked objects displayed"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SpartanTrackingPingGlobalsBlockDefinition_3": {
+      "guid": "11d2d20941978d25d31670b4fc430d25",
+      "size": 164,
+      "fields": [
+        {
+          "type": "real",
+          "name": "ping display time:seconds#how long tracked objects are marked"
+        },
+        {
+          "type": "custom",
+          "name": "Per Priority Default Ranges"
+        },
+        {
+          "type": "block",
+          "name": "default range per priority",
+          "definition": "DefaultRangeBlock_4"
+        },
+        {
+          "type": "custom",
+          "name": "Per Priority Tracking Limits"
+        },
+        {
+          "type": "block",
+          "name": "max tracked per priority",
+          "definition": "DisplayMaximumsBlock_5"
+        },
+        {
+          "type": "custom",
+          "name": "active ping properties"
+        },
+        {
+          "type": "custom",
+          "name": "The following fields only apply to active tracking."
+        },
+        {
+          "type": "tag_reference",
+          "name": "ping effect 0&team Chief active ping effect#this effect is used when the spartan uses their tracking device",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ping effect 1{ping effect}&team Locke active ping effect#this effect is used when the spartan uses their tracking device",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ping effect 2&team Chief (cracked visor) active ping effect#this effect is used when the spartan uses their tracking device",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "ping recharge time&active ping recharge time:seconds#minimum time (in seconds) between successive pings"
+        },
+        {
+          "type": "real",
+          "name": "ping travel rate&active ping travel rate:world units per second#approximation of how fast the active ping effect travels so we can synchronize when things show up in the UI"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SpartanTrackingGlobalsDefinition_struct_definition_1": {
+      "guid": "1bd73f6440e1b4c3a03ca0d3bfa061c8",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Sorting"
+        },
+        {
+          "type": "real",
+          "name": "distance weight"
+        },
+        {
+          "type": "real",
+          "name": "blended weight"
+        },
+        {
+          "type": "real",
+          "name": "FOV weight"
+        },
+        {
+          "type": "pad",
+          "name": "pad0[3]",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "Outlining"
+        },
+        {
+          "type": "char_enum",
+          "name": "default outline color index#index into outline material's 4-color 'outline_color' parameter",
+          "definition": "SpartanTrackingGlobalsDefinition_struct_definition_1_options_8"
+        },
+        {
+          "type": "real_fraction",
+          "name": "default outline intensity:(0,1] - 0 or less defaults to 0.025"
+        },
+        {
+          "type": "real_fraction",
+          "name": "default outline thickness:(0,1] - 0 or less defaults to 0.25"
+        },
+        {
+          "type": "real",
+          "name": "outline fade duration:(0...) seconds - 0 or less defaults to 0.33"
+        },
+        {
+          "type": "real",
+          "name": "interaction target outline intensity scale:[1...) - less than 1 defaults to 2#overall intensity will be capped at 1"
+        },
+        {
+          "type": "real",
+          "name": "interaction target outline thickness scale:[1...) - less than 1 defaults to 2.5#overall thickness will be capped at 1"
+        },
+        {
+          "type": "block",
+          "name": "Ping Globals",
+          "definition": "SpartanTrackingPingGlobalsBlockDefinition_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "SpartanTrackingGlobalsDefinition_struct_definition_1_options_8": {
+      "options": [
+        "color index 0",
+        "color index 1",
+        "color index 2",
+        "color index 3"
+      ]
+    }
+  },
+  "datas": {}
+}

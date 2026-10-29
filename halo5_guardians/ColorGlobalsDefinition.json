@@ -1,0 +1,193 @@
+{
+  "name": "ColorGlobalsDefinition",
+  "tag": "glco",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "multiplayer_color_block_3": {
+      "max_count": 63,
+      "struct": "multiplayer_color_block_3"
+    },
+    "harmonyBlock_5": {
+      "max_count": 7,
+      "struct": "harmonyBlock_5"
+    },
+    "harmonyGroupBlock_4": {
+      "max_count": 33,
+      "struct": "harmonyGroupBlock_4"
+    },
+    "visor_color_block_6": {
+      "max_count": 63,
+      "struct": "visor_color_block_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "ColorGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "multiplayer_color_block_3": {
+      "guid": "0a6c97564866f0e2e9f308a76219c4c9",
+      "size": 12,
+      "fields": [
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "harmonyBlock_5": {
+      "guid": "5f0c6cda004151ab3f8434b6ab2be4c8",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "harmony name"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "primary color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "secondary color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "tertiary color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "harmonyGroupBlock_4": {
+      "guid": "47afa957db43e3d9535b1bb8fe3c7932",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "harmony group name"
+        },
+        {
+          "type": "block",
+          "name": "harmonies",
+          "definition": "harmonyBlock_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "visor_color_block_6": {
+      "guid": "91c73ac247bd84f2ad0b3b933b13db26",
+      "size": 28,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "tertiary color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "quaternary color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "elite_specular_color_7": {
+      "guid": "1935844441d061ac194e138b1b3ac626",
+      "size": 24,
+      "fields": [
+        {
+          "type": "real_rgb_color",
+          "name": "tertiary color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "quaternary color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ColorGlobalsDefinition_struct_definition_1": {
+      "guid": "4b9a7c19ba31915262aa9e25c77a8f00",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "profile colors",
+          "definition": "multiplayer_color_block_3"
+        },
+        {
+          "type": "block",
+          "name": "emblem colors",
+          "definition": "harmonyGroupBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "visor colors",
+          "definition": "visor_color_block_6"
+        },
+        {
+          "type": "struct",
+          "name": "elite specular color",
+          "definition": "elite_specular_color_7"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

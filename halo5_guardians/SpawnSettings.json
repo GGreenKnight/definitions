@@ -1,0 +1,4450 @@
+{
+  "name": "SpawnSettings",
+  "tag": "ssdf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "WeightFunctionBlock_7": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_7"
+    },
+    "SphereInfluencerRegionBlock_6": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_6"
+    },
+    "BoxInfluencerRegionBlock_10": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_10"
+    },
+    "WeightFunctionBlock_12": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_12"
+    },
+    "CylinderInfluencerRegionBlock_11": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_11"
+    },
+    "WeightFunctionBlock_16": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_16"
+    },
+    "ConeInfluencerRegionBlock_15": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_15"
+    },
+    "InfluencerRegionBlock_5": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_5"
+    },
+    "WeightFunctionBlock_21": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_21"
+    },
+    "ConeInfluencerRegionBlock_20": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_20"
+    },
+    "WeightFunctionBlock_25": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_25"
+    },
+    "PillInfluencerRegionBlock_24": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_24"
+    },
+    "MovingInfluencerRegionBlock_19": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_19"
+    },
+    "UnitOnlyInfluencerBlock_3": {
+      "max_count": 1024,
+      "struct": "UnitOnlyInfluencerBlock_3"
+    },
+    "WeightFunctionBlock_32": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_32"
+    },
+    "SphereInfluencerRegionBlock_31": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_31"
+    },
+    "BoxInfluencerRegionBlock_35": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_35"
+    },
+    "WeightFunctionBlock_37": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_37"
+    },
+    "CylinderInfluencerRegionBlock_36": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_36"
+    },
+    "WeightFunctionBlock_41": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_41"
+    },
+    "ConeInfluencerRegionBlock_40": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_40"
+    },
+    "InfluencerRegionBlock_30": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_30"
+    },
+    "WeightFunctionBlock_46": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_46"
+    },
+    "ConeInfluencerRegionBlock_45": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_45"
+    },
+    "WeightFunctionBlock_50": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_50"
+    },
+    "PillInfluencerRegionBlock_49": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_49"
+    },
+    "MovingInfluencerRegionBlock_44": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_44"
+    },
+    "UnitInfluencerBlock_28": {
+      "max_count": 1024,
+      "struct": "UnitInfluencerBlock_28"
+    },
+    "WeightFunctionBlock_57": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_57"
+    },
+    "SphereInfluencerRegionBlock_56": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_56"
+    },
+    "BoxInfluencerRegionBlock_60": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_60"
+    },
+    "WeightFunctionBlock_62": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_62"
+    },
+    "CylinderInfluencerRegionBlock_61": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_61"
+    },
+    "WeightFunctionBlock_66": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_66"
+    },
+    "ConeInfluencerRegionBlock_65": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_65"
+    },
+    "InfluencerRegionBlock_55": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_55"
+    },
+    "WeightFunctionBlock_71": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_71"
+    },
+    "ConeInfluencerRegionBlock_70": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_70"
+    },
+    "WeightFunctionBlock_75": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_75"
+    },
+    "PillInfluencerRegionBlock_74": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_74"
+    },
+    "MovingInfluencerRegionBlock_69": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_69"
+    },
+    "UnitInfluencerBlock_53": {
+      "max_count": 1024,
+      "struct": "UnitInfluencerBlock_53"
+    },
+    "WeightFunctionBlock_83": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_83"
+    },
+    "SphereInfluencerRegionBlock_82": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_82"
+    },
+    "BoxInfluencerRegionBlock_86": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_86"
+    },
+    "WeightFunctionBlock_88": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_88"
+    },
+    "CylinderInfluencerRegionBlock_87": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_87"
+    },
+    "WeightFunctionBlock_92": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_92"
+    },
+    "ConeInfluencerRegionBlock_91": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_91"
+    },
+    "InfluencerRegionBlock_81": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_81"
+    },
+    "WeightFunctionBlock_97": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_97"
+    },
+    "ConeInfluencerRegionBlock_96": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_96"
+    },
+    "WeightFunctionBlock_101": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_101"
+    },
+    "PillInfluencerRegionBlock_100": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_100"
+    },
+    "MovingInfluencerRegionBlock_95": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_95"
+    },
+    "UnitInfluencerBlock_79": {
+      "max_count": 1024,
+      "struct": "UnitInfluencerBlock_79"
+    },
+    "WeaponInfluencerBlock_78": {
+      "max_count": 1024,
+      "struct": "WeaponInfluencerBlock_78"
+    },
+    "WeightFunctionBlock_109": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_109"
+    },
+    "SphereInfluencerRegionBlock_108": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_108"
+    },
+    "BoxInfluencerRegionBlock_112": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_112"
+    },
+    "WeightFunctionBlock_114": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_114"
+    },
+    "CylinderInfluencerRegionBlock_113": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_113"
+    },
+    "WeightFunctionBlock_118": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_118"
+    },
+    "ConeInfluencerRegionBlock_117": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_117"
+    },
+    "InfluencerRegionBlock_107": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_107"
+    },
+    "WeightFunctionBlock_123": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_123"
+    },
+    "ConeInfluencerRegionBlock_122": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_122"
+    },
+    "WeightFunctionBlock_127": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_127"
+    },
+    "PillInfluencerRegionBlock_126": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_126"
+    },
+    "MovingInfluencerRegionBlock_121": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_121"
+    },
+    "UnitInfluencerBlock_105": {
+      "max_count": 1024,
+      "struct": "UnitInfluencerBlock_105"
+    },
+    "VehicleInfluencerBlock_104": {
+      "max_count": 1024,
+      "struct": "VehicleInfluencerBlock_104"
+    },
+    "WeightFunctionBlock_133": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_133"
+    },
+    "SphereInfluencerRegionBlock_132": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_132"
+    },
+    "BoxInfluencerRegionBlock_136": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_136"
+    },
+    "WeightFunctionBlock_138": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_138"
+    },
+    "CylinderInfluencerRegionBlock_137": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_137"
+    },
+    "WeightFunctionBlock_142": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_142"
+    },
+    "ConeInfluencerRegionBlock_141": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_141"
+    },
+    "InfluencerRegionBlock_131": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_131"
+    },
+    "WeightFunctionBlock_147": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_147"
+    },
+    "ConeInfluencerRegionBlock_146": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_146"
+    },
+    "WeightFunctionBlock_151": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_151"
+    },
+    "PillInfluencerRegionBlock_150": {
+      "max_count": 256,
+      "struct": "PillInfluencerRegionBlock_150"
+    },
+    "MovingInfluencerRegionBlock_145": {
+      "max_count": 256,
+      "struct": "MovingInfluencerRegionBlock_145"
+    },
+    "ProjectileInfluencerBlock_130": {
+      "max_count": 1024,
+      "struct": "ProjectileInfluencerBlock_130"
+    },
+    "WeightFunctionBlock_157": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_157"
+    },
+    "SphereInfluencerRegionBlock_156": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_156"
+    },
+    "BoxInfluencerRegionBlock_160": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_160"
+    },
+    "WeightFunctionBlock_162": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_162"
+    },
+    "CylinderInfluencerRegionBlock_161": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_161"
+    },
+    "WeightFunctionBlock_166": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_166"
+    },
+    "ConeInfluencerRegionBlock_165": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_165"
+    },
+    "InfluencerRegionBlock_155": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_155"
+    },
+    "EquipmentInfluencerBlock_154": {
+      "max_count": 1024,
+      "struct": "EquipmentInfluencerBlock_154"
+    },
+    "WeightFunctionBlock_172": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_172"
+    },
+    "SphereInfluencerRegionBlock_171": {
+      "max_count": 256,
+      "struct": "SphereInfluencerRegionBlock_171"
+    },
+    "BoxInfluencerRegionBlock_175": {
+      "max_count": 256,
+      "struct": "BoxInfluencerRegionBlock_175"
+    },
+    "WeightFunctionBlock_177": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_177"
+    },
+    "CylinderInfluencerRegionBlock_176": {
+      "max_count": 256,
+      "struct": "CylinderInfluencerRegionBlock_176"
+    },
+    "WeightFunctionBlock_181": {
+      "max_count": 1,
+      "struct": "WeightFunctionBlock_181"
+    },
+    "ConeInfluencerRegionBlock_180": {
+      "max_count": 256,
+      "struct": "ConeInfluencerRegionBlock_180"
+    },
+    "InfluencerRegionBlock_170": {
+      "max_count": 256,
+      "struct": "InfluencerRegionBlock_170"
+    },
+    "ObjectDispenserInfluencerBlock_169": {
+      "max_count": 1024,
+      "struct": "ObjectDispenserInfluencerBlock_169"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "SpawnSettings_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_9": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_8": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_9"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_7": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_6": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_6_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_10": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_10_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_14": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_13": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_12": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_13"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_11": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_11_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_18": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_17": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_16": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_17"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_15": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_15_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_5": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_6"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_10"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_11"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_15"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_23": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_22": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_23"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_21": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_20": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_20_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_21"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_27": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_26": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_27"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_25": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_26"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_24": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_24_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_19": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_20"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Unit_Influencer_4": {
+      "guid": "da984eb2497d4098331ab8a2f18c3069",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Filter flags",
+          "definition": "Unit_Influencer_4_options_0"
+        },
+        {
+          "type": "long_flags",
+          "name": "Allowed dispositions",
+          "definition": "Unit_Influencer_4_options_1"
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_19"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitOnlyInfluencerBlock_3": {
+      "guid": "577c0d304342e458bf3ba0bed3236ff4",
+      "size": 68,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "UnitOnlyInfluencerBlock_3_options_0"
+        },
+        {
+          "type": "struct",
+          "name": "Unit Influencer",
+          "definition": "Unit_Influencer_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_34": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_33": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_34"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_32": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_33"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_31": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_31_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_32"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_35": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_35_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_39": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_38": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_37": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_38"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_36": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_36_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_37"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_43": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_42": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_43"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_41": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_42"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_40": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_40_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_41"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_30": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_31"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_35"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_36"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_40"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_48": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_47": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_48"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_46": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_47"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_45": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_45_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_46"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_52": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_51": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_52"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_50": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_51"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_49": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_49_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_50"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_44": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_45"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_49"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Unit_Influencer_29": {
+      "guid": "da984eb2497d4098331ab8a2f18c3069",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Filter flags",
+          "definition": "Unit_Influencer_29_options_0"
+        },
+        {
+          "type": "long_flags",
+          "name": "Allowed dispositions",
+          "definition": "Unit_Influencer_29_options_1"
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_30"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_44"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitInfluencerBlock_28": {
+      "guid": "e10d7d534b4527108587628357e15491",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Unit Influencer",
+          "definition": "Unit_Influencer_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_59": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_58": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_59"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_57": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_58"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_56": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_56_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_57"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_60": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_60_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_64": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_63": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_64"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_62": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_63"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_61": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_61_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_62"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_68": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_67": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_68"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_66": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_67"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_65": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_65_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_66"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_55": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_56"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_60"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_61"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_65"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_73": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_72": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_73"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_71": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_72"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_70": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_70_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_71"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_77": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_76": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_77"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_75": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_76"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_74": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_74_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_75"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_69": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_70"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_74"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Unit_Influencer_54": {
+      "guid": "da984eb2497d4098331ab8a2f18c3069",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Filter flags",
+          "definition": "Unit_Influencer_54_options_0"
+        },
+        {
+          "type": "long_flags",
+          "name": "Allowed dispositions",
+          "definition": "Unit_Influencer_54_options_1"
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_55"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_69"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitInfluencerBlock_53": {
+      "guid": "e10d7d534b4527108587628357e15491",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Unit Influencer",
+          "definition": "Unit_Influencer_54"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_85": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_84": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_85"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_83": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_84"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_82": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_82_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_83"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_86": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_86_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_90": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_89": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_90"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_88": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_89"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_87": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_87_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_88"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_94": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_93": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_94"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_92": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_93"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_91": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_91_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_92"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_81": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_82"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_86"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_87"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_91"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_99": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_98": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_99"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_97": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_98"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_96": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_96_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_97"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_103": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_102": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_103"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_101": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_102"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_100": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_100_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_101"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_95": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_96"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_100"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Unit_Influencer_80": {
+      "guid": "da984eb2497d4098331ab8a2f18c3069",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Filter flags",
+          "definition": "Unit_Influencer_80_options_0"
+        },
+        {
+          "type": "long_flags",
+          "name": "Allowed dispositions",
+          "definition": "Unit_Influencer_80_options_1"
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_81"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_95"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitInfluencerBlock_79": {
+      "guid": "e10d7d534b4527108587628357e15491",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Unit Influencer",
+          "definition": "Unit_Influencer_80"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeaponInfluencerBlock_78": {
+      "guid": "87d4a8454864107057f4a19650edb858",
+      "size": 64,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Weapon^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Unit influencer",
+          "definition": "UnitInfluencerBlock_79"
+        },
+        {
+          "type": "real",
+          "name": "Location unseen multiplier"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_111": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_110": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_111"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_109": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_110"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_108": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_108_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_109"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_112": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_112_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_116": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_115": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_116"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_114": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_115"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_113": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_113_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_114"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_120": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_119": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_120"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_118": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_119"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_117": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_117_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_118"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_107": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_108"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_112"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_113"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_117"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_125": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_124": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_125"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_123": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_124"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_122": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_122_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_123"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_129": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_128": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_129"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_127": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_128"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_126": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_126_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_127"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_121": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_122"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_126"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Unit_Influencer_106": {
+      "guid": "da984eb2497d4098331ab8a2f18c3069",
+      "size": 64,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Filter flags",
+          "definition": "Unit_Influencer_106_options_0"
+        },
+        {
+          "type": "long_flags",
+          "name": "Allowed dispositions",
+          "definition": "Unit_Influencer_106_options_1"
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_107"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_121"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UnitInfluencerBlock_105": {
+      "guid": "e10d7d534b4527108587628357e15491",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Unit Influencer",
+          "definition": "Unit_Influencer_106"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "VehicleInfluencerBlock_104": {
+      "guid": "64ae7b1c490632a6b8752a8995bec0eb",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Vehicle^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Unit influencer",
+          "definition": "UnitInfluencerBlock_105"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_135": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_134": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_135"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_133": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_134"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_132": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_132_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_133"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_136": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_136_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_140": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_139": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_140"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_138": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_139"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_137": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_137_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_138"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_144": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_143": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_144"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_142": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_143"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_141": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_141_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_142"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_131": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_132"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_136"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_137"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_141"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_149": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_148": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_149"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_147": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_148"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_146": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_146_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_147"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_153": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_152": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_153"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_151": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_152"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "PillInfluencerRegionBlock_150": {
+      "guid": "16e35856435c1628909b00006947b7e7",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "PillInfluencerRegionBlock_150_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_151"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MovingInfluencerRegionBlock_145": {
+      "guid": "9ff8ceac4552f09d60a49e98fc38cc4f",
+      "size": 60,
+      "fields": [
+        {
+          "type": "real",
+          "name": "Lead time:s"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_146"
+        },
+        {
+          "type": "block",
+          "name": "Pill",
+          "definition": "PillInfluencerRegionBlock_150"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ProjectileInfluencerBlock_130": {
+      "guid": "6e14464d4c802eb954361ca849b572b7",
+      "size": 88,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Projectile^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_131"
+        },
+        {
+          "type": "block",
+          "name": "Movement influencer",
+          "definition": "MovingInfluencerRegionBlock_145"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_159": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_158": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_159"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_157": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_158"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_156": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_156_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_157"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_160": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_160_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_164": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_163": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_164"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_162": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_163"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_161": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_161_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_162"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_168": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_167": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_168"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_166": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_167"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_165": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_165_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_166"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_155": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_156"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_160"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_161"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_165"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "EquipmentInfluencerBlock_154": {
+      "guid": "2642bde44a33300ff812bd8a854f901b",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Equipment^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_155"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_174": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_173": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_174"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_172": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_173"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SphereInfluencerRegionBlock_171": {
+      "guid": "201b52644684edf5f15bcca17c6e92ec",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "SphereInfluencerRegionBlock_171_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_172"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "BoxInfluencerRegionBlock_175": {
+      "guid": "8bd9c8e94e61f27d58292fa0b3c0eac7",
+      "size": 20,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "BoxInfluencerRegionBlock_175_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Width"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_179": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_178": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_179"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_177": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_178"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "CylinderInfluencerRegionBlock_176": {
+      "guid": "bb97b2724e836f37aad5cb904fe89a8e",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "CylinderInfluencerRegionBlock_176_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "real",
+          "name": "Height"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_177"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_183": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Function_182": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_183"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "WeightFunctionBlock_181": {
+      "guid": "5ce5fe7d452b2ebbdb188096958b8331",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Function",
+          "definition": "Function_182"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ConeInfluencerRegionBlock_180": {
+      "guid": "39dd0a854a7a502ad2d033a3b842dbb2",
+      "size": 44,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "Flags",
+          "definition": "ConeInfluencerRegionBlock_180_options_0"
+        },
+        {
+          "type": "real",
+          "name": "Length"
+        },
+        {
+          "type": "real",
+          "name": "Base radius"
+        },
+        {
+          "type": "real",
+          "name": "Weight"
+        },
+        {
+          "type": "block",
+          "name": "Weight function",
+          "definition": "WeightFunctionBlock_181"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "InfluencerRegionBlock_170": {
+      "guid": "07632e4d4ec9642d5780a5b215b36591",
+      "size": 112,
+      "fields": [
+        {
+          "type": "block",
+          "name": "Sphere",
+          "definition": "SphereInfluencerRegionBlock_171"
+        },
+        {
+          "type": "block",
+          "name": "Box",
+          "definition": "BoxInfluencerRegionBlock_175"
+        },
+        {
+          "type": "block",
+          "name": "Cylinder",
+          "definition": "CylinderInfluencerRegionBlock_176"
+        },
+        {
+          "type": "block",
+          "name": "Cone",
+          "definition": "ConeInfluencerRegionBlock_180"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ObjectDispenserInfluencerBlock_169": {
+      "guid": "3853228c423c6b4c21c1de9d62fcdb71",
+      "size": 32,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Filter flags",
+          "definition": "ObjectDispenserInfluencerBlock_169_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "Influencer",
+          "definition": "InfluencerRegionBlock_170"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SpawnSettings_struct_definition_1": {
+      "guid": "ad961b431bb4c06e9d315cbd629dad1c",
+      "size": 272,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "real",
+          "name": "Minimum spawn time:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "Unseen spawning settings"
+        },
+        {
+          "type": "real",
+          "name": "Hostile visibility cone length"
+        },
+        {
+          "type": "real",
+          "name": "Friendly visibility cone length"
+        },
+        {
+          "type": "real",
+          "name": "Visibility cone angle:degrees"
+        },
+        {
+          "type": "real",
+          "name": "Spawn point can see hostile cone length"
+        },
+        {
+          "type": "real",
+          "name": "Spawn point can see friendly cone length"
+        },
+        {
+          "type": "custom",
+          "name": "Spawn weight settings"
+        },
+        {
+          "type": "real",
+          "name": "Quantization step"
+        },
+        {
+          "type": "custom",
+          "name": "Unit Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Unit influencers",
+          "definition": "UnitOnlyInfluencerBlock_3"
+        },
+        {
+          "type": "custom",
+          "name": "Dead Unit Influencers"
+        },
+        {
+          "type": "real",
+          "name": "Active duration:s"
+        },
+        {
+          "type": "block",
+          "name": "Dead unit influencers",
+          "definition": "UnitInfluencerBlock_28"
+        },
+        {
+          "type": "custom",
+          "name": "Spawning Unit Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Spawning unit influencers",
+          "definition": "UnitInfluencerBlock_53"
+        },
+        {
+          "type": "custom",
+          "name": "Weapon Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Weapon influencers",
+          "definition": "WeaponInfluencerBlock_78"
+        },
+        {
+          "type": "custom",
+          "name": "Vehicle Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Vehicle influencers",
+          "definition": "VehicleInfluencerBlock_104"
+        },
+        {
+          "type": "custom",
+          "name": "Projectile Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Projectile influencers",
+          "definition": "ProjectileInfluencerBlock_130"
+        },
+        {
+          "type": "custom",
+          "name": "Equipment Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Equipment influencers",
+          "definition": "EquipmentInfluencerBlock_154"
+        },
+        {
+          "type": "custom",
+          "name": "Object Dispenser Influencers"
+        },
+        {
+          "type": "block",
+          "name": "Object dispenser influencers",
+          "definition": "ObjectDispenserInfluencerBlock_169"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "UnitOnlyInfluencerBlock_3_options_0": {
+      "options": [
+        "Does not stack"
+      ]
+    },
+    "Unit_Influencer_4_options_0": {
+      "options": [
+        "Player controlled",
+        "Not player controlled",
+        "In combat",
+        "Not in combat",
+        "AI controlled"
+      ]
+    },
+    "Unit_Influencer_4_options_1": {
+      "options": [
+        "Ally",
+        "Enemy",
+        "Neutral"
+      ]
+    },
+    "SphereInfluencerRegionBlock_6_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_10_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_11_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_15_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_20_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_24_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "Unit_Influencer_29_options_0": {
+      "options": [
+        "Player controlled",
+        "Not player controlled",
+        "In combat",
+        "Not in combat",
+        "AI controlled"
+      ]
+    },
+    "Unit_Influencer_29_options_1": {
+      "options": [
+        "Ally",
+        "Enemy",
+        "Neutral"
+      ]
+    },
+    "SphereInfluencerRegionBlock_31_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_35_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_36_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_40_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_45_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_49_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "Unit_Influencer_54_options_0": {
+      "options": [
+        "Player controlled",
+        "Not player controlled",
+        "In combat",
+        "Not in combat",
+        "AI controlled"
+      ]
+    },
+    "Unit_Influencer_54_options_1": {
+      "options": [
+        "Ally",
+        "Enemy",
+        "Neutral"
+      ]
+    },
+    "SphereInfluencerRegionBlock_56_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_60_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_61_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_65_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_70_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_74_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "Unit_Influencer_80_options_0": {
+      "options": [
+        "Player controlled",
+        "Not player controlled",
+        "In combat",
+        "Not in combat",
+        "AI controlled"
+      ]
+    },
+    "Unit_Influencer_80_options_1": {
+      "options": [
+        "Ally",
+        "Enemy",
+        "Neutral"
+      ]
+    },
+    "SphereInfluencerRegionBlock_82_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_86_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_87_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_91_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_96_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_100_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "Unit_Influencer_106_options_0": {
+      "options": [
+        "Player controlled",
+        "Not player controlled",
+        "In combat",
+        "Not in combat",
+        "AI controlled"
+      ]
+    },
+    "Unit_Influencer_106_options_1": {
+      "options": [
+        "Ally",
+        "Enemy",
+        "Neutral"
+      ]
+    },
+    "SphereInfluencerRegionBlock_108_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_112_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_113_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_117_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_122_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_126_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "SphereInfluencerRegionBlock_132_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_136_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_137_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_141_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_146_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "PillInfluencerRegionBlock_150_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "SphereInfluencerRegionBlock_156_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_160_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_161_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_165_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ObjectDispenserInfluencerBlock_169_options_0": {
+      "options": [
+        "None",
+        "Weapon Incoming",
+        "Weapon Constructing",
+        "Weapon Ready",
+        "Weapon Respawning"
+      ]
+    },
+    "SphereInfluencerRegionBlock_171_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "BoxInfluencerRegionBlock_175_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "CylinderInfluencerRegionBlock_176_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    },
+    "ConeInfluencerRegionBlock_180_options_0": {
+      "options": [
+        "Reject Spawn"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

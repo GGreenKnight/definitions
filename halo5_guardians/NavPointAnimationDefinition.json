@@ -1,0 +1,856 @@
+{
+  "name": "NavPointAnimationDefinition",
+  "tag": "nava",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "NavPointAnimationDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "progress_time_function_Defines_the_progress___as_a_function_of_time_3": {
+      "guid": "72cb9289481e027651a36794187c6df5",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_sprite_bg_5": {
+      "guid": "b72d9f5b4cd92a8860918c8e323f8f1b",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "center_sprite_bg_5_options_0"
+        },
+        {
+          "type": "long_enum",
+          "name": "sequenceIndex",
+          "definition": "center_sprite_bg_5_options_1"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_sprite_fg_6": {
+      "guid": "b72d9f5b4cd92a8860918c8e323f8f1b",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "center_sprite_fg_6_options_0"
+        },
+        {
+          "type": "long_enum",
+          "name": "sequenceIndex",
+          "definition": "center_sprite_fg_6_options_1"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "center_radial_progress_bar_7": {
+      "guid": "0436d6494e664ad69833b891c1168085",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "center_radial_progress_bar_7_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "left color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "right color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "top_sprite_8": {
+      "guid": "b72d9f5b4cd92a8860918c8e323f8f1b",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "top_sprite_8_options_0"
+        },
+        {
+          "type": "long_enum",
+          "name": "sequenceIndex",
+          "definition": "top_sprite_8_options_1"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "top_label_9": {
+      "guid": "9b2a901d4e1542c97aa4ba8349b02ad3",
+      "size": 28,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "top_label_9_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_progress_bar_10": {
+      "guid": "0436d6494e664ad69833b891c1168085",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "right_progress_bar_10_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "left color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "right color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_progress_bar_2_11": {
+      "guid": "0436d6494e664ad69833b891c1168085",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "right_progress_bar_2_11_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "left color"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "right color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_label_12": {
+      "guid": "9b2a901d4e1542c97aa4ba8349b02ad3",
+      "size": 28,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "right_label_12_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "right_timer_13": {
+      "guid": "9b2a901d4e1542c97aa4ba8349b02ad3",
+      "size": 28,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "right_timer_13_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "left_timer_14": {
+      "guid": "9b2a901d4e1542c97aa4ba8349b02ad3",
+      "size": 28,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "left_timer_14_options_0"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "yaw_sprite_15": {
+      "guid": "b72d9f5b4cd92a8860918c8e323f8f1b",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "yaw_sprite_15_options_0"
+        },
+        {
+          "type": "long_enum",
+          "name": "sequenceIndex",
+          "definition": "yaw_sprite_15_options_1"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "width and height"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "alpha"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "NavPointAnimationDefinition_struct_definition_1": {
+      "guid": "b64a3d241626abfd577036f80ff2ea1b",
+      "size": 416,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_enum",
+          "name": "loop type",
+          "definition": "NavPointAnimationDefinition_struct_definition_1_options_2"
+        },
+        {
+          "type": "real",
+          "name": "total time animation runs for"
+        },
+        {
+          "type": "real",
+          "name": "delay before looping"
+        },
+        {
+          "type": "struct",
+          "name": "progress-time function#Defines the progress % as a function of time",
+          "definition": "progress_time_function_Defines_the_progress___as_a_function_of_time_3"
+        },
+        {
+          "type": "custom",
+          "name": "center sprite bg"
+        },
+        {
+          "type": "struct",
+          "name": "center sprite bg",
+          "definition": "center_sprite_bg_5"
+        },
+        {
+          "type": "custom",
+          "name": "center sprite fg"
+        },
+        {
+          "type": "struct",
+          "name": "center sprite fg",
+          "definition": "center_sprite_fg_6"
+        },
+        {
+          "type": "custom",
+          "name": "center radial progress bar"
+        },
+        {
+          "type": "struct",
+          "name": "center radial progress bar",
+          "definition": "center_radial_progress_bar_7"
+        },
+        {
+          "type": "custom",
+          "name": "top sprite"
+        },
+        {
+          "type": "struct",
+          "name": "top sprite",
+          "definition": "top_sprite_8"
+        },
+        {
+          "type": "custom",
+          "name": "top label"
+        },
+        {
+          "type": "struct",
+          "name": "top label",
+          "definition": "top_label_9"
+        },
+        {
+          "type": "custom",
+          "name": "right progress bar"
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar",
+          "definition": "right_progress_bar_10"
+        },
+        {
+          "type": "custom",
+          "name": "right progress bar 2"
+        },
+        {
+          "type": "struct",
+          "name": "right progress bar 2",
+          "definition": "right_progress_bar_2_11"
+        },
+        {
+          "type": "custom",
+          "name": "right label"
+        },
+        {
+          "type": "struct",
+          "name": "right label",
+          "definition": "right_label_12"
+        },
+        {
+          "type": "custom",
+          "name": "right timer"
+        },
+        {
+          "type": "struct",
+          "name": "right timer",
+          "definition": "right_timer_13"
+        },
+        {
+          "type": "custom",
+          "name": "left timer"
+        },
+        {
+          "type": "struct",
+          "name": "left timer",
+          "definition": "left_timer_14"
+        },
+        {
+          "type": "custom",
+          "name": "yaw sprite"
+        },
+        {
+          "type": "struct",
+          "name": "yaw sprite",
+          "definition": "yaw_sprite_15"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "NavPointAnimationDefinition_struct_definition_1_options_2": {
+      "options": [
+        "LoopForward",
+        "LoopReversed",
+        "LoopForwardThenReversed",
+        "PlayOnceThenHold",
+        "PlayOnceReversedThenHold"
+      ]
+    },
+    "center_sprite_bg_5_options_0": {
+      "options": [
+        "SequenceIndexValid",
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "center_sprite_bg_5_options_1": {
+      "options": [
+        "TacticalObjective",
+        "SubObjective",
+        "MainObjective",
+        "SupplyCache",
+        "MoveToIndicator",
+        "ChatterIndicator",
+        "AttackCommandFg",
+        "ReviveFg",
+        "ReviveBg",
+        "BleedoutTimerStroke",
+        "ReviveCommand",
+        "ReviveHelpPulse",
+        "WzBossFg",
+        "WzBossBg",
+        "WzReqFg",
+        "WzHomeBaseFg",
+        "AttackFg",
+        "DefendFg",
+        "CircleBg",
+        "DiamondBg",
+        "SquareBg",
+        "HexBg",
+        "CircleStroke",
+        "DiamondStroke",
+        "SquareStroke",
+        "HexStroke",
+        "ExclamationFg",
+        "DeadIndicator",
+        "SpeakingIndicator",
+        "WeaponPadFg",
+        "CubeFg",
+        "FlagFg",
+        "LetterAFg",
+        "LetterBFg",
+        "LetterCFg",
+        "BombFg",
+        "CrownFg",
+        "SmallOffscreenArrow",
+        "FriendlyArrow",
+        "EnemyArrow",
+        "SeekIndicator",
+        "LockOnIndicator",
+        "ReqBg",
+        "Num0Fg",
+        "Num1Fg",
+        "Num2Fg",
+        "Num3Fg",
+        "Num4Fg",
+        "Num5Fg",
+        "Num6Fg",
+        "Num7Fg",
+        "Num8Fg",
+        "Num9Fg"
+      ]
+    },
+    "center_sprite_fg_6_options_0": {
+      "options": [
+        "SequenceIndexValid",
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "center_sprite_fg_6_options_1": {
+      "options": [
+        "TacticalObjective",
+        "SubObjective",
+        "MainObjective",
+        "SupplyCache",
+        "MoveToIndicator",
+        "ChatterIndicator",
+        "AttackCommandFg",
+        "ReviveFg",
+        "ReviveBg",
+        "BleedoutTimerStroke",
+        "ReviveCommand",
+        "ReviveHelpPulse",
+        "WzBossFg",
+        "WzBossBg",
+        "WzReqFg",
+        "WzHomeBaseFg",
+        "AttackFg",
+        "DefendFg",
+        "CircleBg",
+        "DiamondBg",
+        "SquareBg",
+        "HexBg",
+        "CircleStroke",
+        "DiamondStroke",
+        "SquareStroke",
+        "HexStroke",
+        "ExclamationFg",
+        "DeadIndicator",
+        "SpeakingIndicator",
+        "WeaponPadFg",
+        "CubeFg",
+        "FlagFg",
+        "LetterAFg",
+        "LetterBFg",
+        "LetterCFg",
+        "BombFg",
+        "CrownFg",
+        "SmallOffscreenArrow",
+        "FriendlyArrow",
+        "EnemyArrow",
+        "SeekIndicator",
+        "LockOnIndicator",
+        "ReqBg",
+        "Num0Fg",
+        "Num1Fg",
+        "Num2Fg",
+        "Num3Fg",
+        "Num4Fg",
+        "Num5Fg",
+        "Num6Fg",
+        "Num7Fg",
+        "Num8Fg",
+        "Num9Fg"
+      ]
+    },
+    "center_radial_progress_bar_7_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "LeftColorValid",
+        "RightColorValid",
+        "AlphaValid"
+      ]
+    },
+    "top_sprite_8_options_0": {
+      "options": [
+        "SequenceIndexValid",
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "top_sprite_8_options_1": {
+      "options": [
+        "TacticalObjective",
+        "SubObjective",
+        "MainObjective",
+        "SupplyCache",
+        "MoveToIndicator",
+        "ChatterIndicator",
+        "AttackCommandFg",
+        "ReviveFg",
+        "ReviveBg",
+        "BleedoutTimerStroke",
+        "ReviveCommand",
+        "ReviveHelpPulse",
+        "WzBossFg",
+        "WzBossBg",
+        "WzReqFg",
+        "WzHomeBaseFg",
+        "AttackFg",
+        "DefendFg",
+        "CircleBg",
+        "DiamondBg",
+        "SquareBg",
+        "HexBg",
+        "CircleStroke",
+        "DiamondStroke",
+        "SquareStroke",
+        "HexStroke",
+        "ExclamationFg",
+        "DeadIndicator",
+        "SpeakingIndicator",
+        "WeaponPadFg",
+        "CubeFg",
+        "FlagFg",
+        "LetterAFg",
+        "LetterBFg",
+        "LetterCFg",
+        "BombFg",
+        "CrownFg",
+        "SmallOffscreenArrow",
+        "FriendlyArrow",
+        "EnemyArrow",
+        "SeekIndicator",
+        "LockOnIndicator",
+        "ReqBg",
+        "Num0Fg",
+        "Num1Fg",
+        "Num2Fg",
+        "Num3Fg",
+        "Num4Fg",
+        "Num5Fg",
+        "Num6Fg",
+        "Num7Fg",
+        "Num8Fg",
+        "Num9Fg"
+      ]
+    },
+    "top_label_9_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "right_progress_bar_10_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "LeftColorValid",
+        "RightColorValid",
+        "AlphaValid"
+      ]
+    },
+    "right_progress_bar_2_11_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "LeftColorValid",
+        "RightColorValid",
+        "AlphaValid"
+      ]
+    },
+    "right_label_12_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "right_timer_13_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "left_timer_14_options_0": {
+      "options": [
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "yaw_sprite_15_options_0": {
+      "options": [
+        "SequenceIndexValid",
+        "WidthValid",
+        "HeightValid",
+        "ColorValid",
+        "AlphaValid"
+      ]
+    },
+    "yaw_sprite_15_options_1": {
+      "options": [
+        "TacticalObjective",
+        "SubObjective",
+        "MainObjective",
+        "SupplyCache",
+        "MoveToIndicator",
+        "ChatterIndicator",
+        "AttackCommandFg",
+        "ReviveFg",
+        "ReviveBg",
+        "BleedoutTimerStroke",
+        "ReviveCommand",
+        "ReviveHelpPulse",
+        "WzBossFg",
+        "WzBossBg",
+        "WzReqFg",
+        "WzHomeBaseFg",
+        "AttackFg",
+        "DefendFg",
+        "CircleBg",
+        "DiamondBg",
+        "SquareBg",
+        "HexBg",
+        "CircleStroke",
+        "DiamondStroke",
+        "SquareStroke",
+        "HexStroke",
+        "ExclamationFg",
+        "DeadIndicator",
+        "SpeakingIndicator",
+        "WeaponPadFg",
+        "CubeFg",
+        "FlagFg",
+        "LetterAFg",
+        "LetterBFg",
+        "LetterCFg",
+        "BombFg",
+        "CrownFg",
+        "SmallOffscreenArrow",
+        "FriendlyArrow",
+        "EnemyArrow",
+        "SeekIndicator",
+        "LockOnIndicator",
+        "ReqBg",
+        "Num0Fg",
+        "Num1Fg",
+        "Num2Fg",
+        "Num3Fg",
+        "Num4Fg",
+        "Num5Fg",
+        "Num6Fg",
+        "Num7Fg",
+        "Num8Fg",
+        "Num9Fg"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

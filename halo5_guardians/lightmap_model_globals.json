@@ -1,0 +1,89 @@
+{
+  "name": "lightmap_model_globals",
+  "tag": "LMMg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "lightmap_model_reference_block_3": {
+      "max_count": 32767,
+      "struct": "lightmap_model_reference_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "lightmap_model_globals_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lightmap_model_reference_block_3": {
+      "guid": "d9134e313145ee31d4ec559a8baaae75",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "Model Reference^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lightmap_model_globals_struct_definition_1": {
+      "guid": "5384de6f4622345799a28243c33e6cef",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Lightmapped Models",
+          "definition": "lightmap_model_reference_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_lmg_0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

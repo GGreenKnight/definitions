@@ -1,0 +1,3496 @@
+{
+  "name": "test_tag",
+  "tag": "ttag",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "basic_block_use_once_3": {
+      "max_count": 8,
+      "struct": "basic_block_use_once_3"
+    },
+    "block_with_struct_6": {
+      "max_count": 8,
+      "struct": "block_with_struct_6"
+    },
+    "basic_block_9": {
+      "max_count": 8,
+      "struct": "basic_block_9"
+    },
+    "basic_block_11": {
+      "max_count": 8,
+      "struct": "basic_block_11"
+    },
+    "complex_sub_block_10": {
+      "max_count": 8,
+      "struct": "complex_sub_block_10"
+    },
+    "complex_block_8": {
+      "max_count": 1024,
+      "struct": "complex_block_8"
+    },
+    "basic_block_13": {
+      "max_count": 8,
+      "struct": "basic_block_13"
+    },
+    "basic_block_15": {
+      "max_count": 8,
+      "struct": "basic_block_15"
+    },
+    "basic_block_17": {
+      "max_count": 8,
+      "struct": "basic_block_17"
+    },
+    "complex_sub_block_16": {
+      "max_count": 8,
+      "struct": "complex_sub_block_16"
+    },
+    "complex_block_14": {
+      "max_count": 1024,
+      "struct": "complex_block_14"
+    },
+    "basic_block_19": {
+      "max_count": 8,
+      "struct": "basic_block_19"
+    },
+    "basic_block_21": {
+      "max_count": 8,
+      "struct": "basic_block_21"
+    },
+    "basic_block_23": {
+      "max_count": 8,
+      "struct": "basic_block_23"
+    },
+    "basic_block_25": {
+      "max_count": 8,
+      "struct": "basic_block_25"
+    },
+    "complex_sub_block_24": {
+      "max_count": 8,
+      "struct": "complex_sub_block_24"
+    },
+    "complex_block_22": {
+      "max_count": 1024,
+      "struct": "complex_block_22"
+    },
+    "basic_block_26": {
+      "max_count": 8,
+      "struct": "basic_block_26"
+    },
+    "basic_block_28": {
+      "max_count": 8,
+      "struct": "basic_block_28"
+    },
+    "basic_block_30": {
+      "max_count": 8,
+      "struct": "basic_block_30"
+    },
+    "basic_block_32": {
+      "max_count": 8,
+      "struct": "basic_block_32"
+    },
+    "complex_sub_block_31": {
+      "max_count": 8,
+      "struct": "complex_sub_block_31"
+    },
+    "complex_block_29": {
+      "max_count": 1024,
+      "struct": "complex_block_29"
+    },
+    "basic_block_33": {
+      "max_count": 8,
+      "struct": "basic_block_33"
+    },
+    "basic_block_35": {
+      "max_count": 8,
+      "struct": "basic_block_35"
+    },
+    "basic_block_37": {
+      "max_count": 8,
+      "struct": "basic_block_37"
+    },
+    "basic_block_39": {
+      "max_count": 8,
+      "struct": "basic_block_39"
+    },
+    "complex_sub_block_38": {
+      "max_count": 8,
+      "struct": "complex_sub_block_38"
+    },
+    "complex_block_36": {
+      "max_count": 1024,
+      "struct": "complex_block_36"
+    },
+    "basic_block_40": {
+      "max_count": 8,
+      "struct": "basic_block_40"
+    },
+    "basic_block_42": {
+      "max_count": 8,
+      "struct": "basic_block_42"
+    },
+    "basic_block_44": {
+      "max_count": 8,
+      "struct": "basic_block_44"
+    },
+    "basic_block_46": {
+      "max_count": 8,
+      "struct": "basic_block_46"
+    },
+    "complex_sub_block_45": {
+      "max_count": 8,
+      "struct": "complex_sub_block_45"
+    },
+    "complex_block_43": {
+      "max_count": 1024,
+      "struct": "complex_block_43"
+    },
+    "basic_block_47": {
+      "max_count": 8,
+      "struct": "basic_block_47"
+    },
+    "basic_block_49": {
+      "max_count": 8,
+      "struct": "basic_block_49"
+    },
+    "basic_block_51": {
+      "max_count": 8,
+      "struct": "basic_block_51"
+    },
+    "basic_block_53": {
+      "max_count": 8,
+      "struct": "basic_block_53"
+    },
+    "complex_sub_block_52": {
+      "max_count": 8,
+      "struct": "complex_sub_block_52"
+    },
+    "complex_block_50": {
+      "max_count": 1024,
+      "struct": "complex_block_50"
+    },
+    "basic_block_54": {
+      "max_count": 8,
+      "struct": "basic_block_54"
+    },
+    "basic_block_56": {
+      "max_count": 8,
+      "struct": "basic_block_56"
+    },
+    "basic_block_58": {
+      "max_count": 8,
+      "struct": "basic_block_58"
+    },
+    "basic_block_60": {
+      "max_count": 8,
+      "struct": "basic_block_60"
+    },
+    "complex_sub_block_59": {
+      "max_count": 8,
+      "struct": "complex_sub_block_59"
+    },
+    "complex_block_57": {
+      "max_count": 1024,
+      "struct": "complex_block_57"
+    },
+    "basic_block_61": {
+      "max_count": 8,
+      "struct": "basic_block_61"
+    },
+    "basic_block_63": {
+      "max_count": 8,
+      "struct": "basic_block_63"
+    },
+    "basic_block_65": {
+      "max_count": 8,
+      "struct": "basic_block_65"
+    },
+    "basic_block_67": {
+      "max_count": 8,
+      "struct": "basic_block_67"
+    },
+    "complex_sub_block_66": {
+      "max_count": 8,
+      "struct": "complex_sub_block_66"
+    },
+    "complex_block_64": {
+      "max_count": 1024,
+      "struct": "complex_block_64"
+    },
+    "basic_block_68": {
+      "max_count": 8,
+      "struct": "basic_block_68"
+    },
+    "basic_block_70": {
+      "max_count": 8,
+      "struct": "basic_block_70"
+    },
+    "basic_block_72": {
+      "max_count": 8,
+      "struct": "basic_block_72"
+    },
+    "basic_block_74": {
+      "max_count": 8,
+      "struct": "basic_block_74"
+    },
+    "complex_sub_block_73": {
+      "max_count": 8,
+      "struct": "complex_sub_block_73"
+    },
+    "complex_block_71": {
+      "max_count": 1024,
+      "struct": "complex_block_71"
+    },
+    "basic_block_77": {
+      "max_count": 8,
+      "struct": "basic_block_77"
+    },
+    "basic_block_79": {
+      "max_count": 8,
+      "struct": "basic_block_79"
+    },
+    "basic_block_81": {
+      "max_count": 8,
+      "struct": "basic_block_81"
+    },
+    "complex_sub_block_80": {
+      "max_count": 8,
+      "struct": "complex_sub_block_80"
+    },
+    "complex_block_78": {
+      "max_count": 1024,
+      "struct": "complex_block_78"
+    },
+    "basic_block_83": {
+      "max_count": 8,
+      "struct": "basic_block_83"
+    },
+    "basic_block_85": {
+      "max_count": 8,
+      "struct": "basic_block_85"
+    },
+    "basic_block_87": {
+      "max_count": 8,
+      "struct": "basic_block_87"
+    },
+    "basic_block_89": {
+      "max_count": 8,
+      "struct": "basic_block_89"
+    },
+    "complex_sub_block_88": {
+      "max_count": 8,
+      "struct": "complex_sub_block_88"
+    },
+    "complex_block_86": {
+      "max_count": 1024,
+      "struct": "complex_block_86"
+    },
+    "basic_block_90": {
+      "max_count": 8,
+      "struct": "basic_block_90"
+    },
+    "basic_block_92": {
+      "max_count": 8,
+      "struct": "basic_block_92"
+    },
+    "basic_block_94": {
+      "max_count": 8,
+      "struct": "basic_block_94"
+    },
+    "basic_block_96": {
+      "max_count": 8,
+      "struct": "basic_block_96"
+    },
+    "complex_sub_block_95": {
+      "max_count": 8,
+      "struct": "complex_sub_block_95"
+    },
+    "complex_block_93": {
+      "max_count": 1024,
+      "struct": "complex_block_93"
+    },
+    "basic_block_97": {
+      "max_count": 8,
+      "struct": "basic_block_97"
+    },
+    "basic_block_99": {
+      "max_count": 8,
+      "struct": "basic_block_99"
+    },
+    "basic_block_101": {
+      "max_count": 8,
+      "struct": "basic_block_101"
+    },
+    "basic_block_103": {
+      "max_count": 8,
+      "struct": "basic_block_103"
+    },
+    "complex_sub_block_102": {
+      "max_count": 8,
+      "struct": "complex_sub_block_102"
+    },
+    "complex_block_100": {
+      "max_count": 1024,
+      "struct": "complex_block_100"
+    },
+    "basic_block_104": {
+      "max_count": 8,
+      "struct": "basic_block_104"
+    },
+    "basic_block_106": {
+      "max_count": 8,
+      "struct": "basic_block_106"
+    },
+    "basic_block_108": {
+      "max_count": 8,
+      "struct": "basic_block_108"
+    },
+    "basic_block_110": {
+      "max_count": 8,
+      "struct": "basic_block_110"
+    },
+    "complex_sub_block_109": {
+      "max_count": 8,
+      "struct": "complex_sub_block_109"
+    },
+    "complex_block_107": {
+      "max_count": 1024,
+      "struct": "complex_block_107"
+    },
+    "basic_block_111": {
+      "max_count": 8,
+      "struct": "basic_block_111"
+    },
+    "basic_block_113": {
+      "max_count": 8,
+      "struct": "basic_block_113"
+    },
+    "basic_block_115": {
+      "max_count": 8,
+      "struct": "basic_block_115"
+    },
+    "basic_block_117": {
+      "max_count": 8,
+      "struct": "basic_block_117"
+    },
+    "complex_sub_block_116": {
+      "max_count": 8,
+      "struct": "complex_sub_block_116"
+    },
+    "complex_block_114": {
+      "max_count": 1024,
+      "struct": "complex_block_114"
+    },
+    "basic_block_118": {
+      "max_count": 8,
+      "struct": "basic_block_118"
+    },
+    "basic_block_120": {
+      "max_count": 8,
+      "struct": "basic_block_120"
+    },
+    "basic_block_122": {
+      "max_count": 8,
+      "struct": "basic_block_122"
+    },
+    "basic_block_124": {
+      "max_count": 8,
+      "struct": "basic_block_124"
+    },
+    "complex_sub_block_123": {
+      "max_count": 8,
+      "struct": "complex_sub_block_123"
+    },
+    "complex_block_121": {
+      "max_count": 1024,
+      "struct": "complex_block_121"
+    },
+    "basic_block_125": {
+      "max_count": 8,
+      "struct": "basic_block_125"
+    },
+    "basic_block_127": {
+      "max_count": 8,
+      "struct": "basic_block_127"
+    },
+    "basic_block_129": {
+      "max_count": 8,
+      "struct": "basic_block_129"
+    },
+    "basic_block_131": {
+      "max_count": 8,
+      "struct": "basic_block_131"
+    },
+    "complex_sub_block_130": {
+      "max_count": 8,
+      "struct": "complex_sub_block_130"
+    },
+    "complex_block_128": {
+      "max_count": 1024,
+      "struct": "complex_block_128"
+    },
+    "basic_block_132": {
+      "max_count": 8,
+      "struct": "basic_block_132"
+    },
+    "basic_block_134": {
+      "max_count": 8,
+      "struct": "basic_block_134"
+    },
+    "basic_block_136": {
+      "max_count": 8,
+      "struct": "basic_block_136"
+    },
+    "basic_block_138": {
+      "max_count": 8,
+      "struct": "basic_block_138"
+    },
+    "complex_sub_block_137": {
+      "max_count": 8,
+      "struct": "complex_sub_block_137"
+    },
+    "complex_block_135": {
+      "max_count": 1024,
+      "struct": "complex_block_135"
+    },
+    "basic_block_140": {
+      "max_count": 8,
+      "struct": "basic_block_140"
+    },
+    "basic_block_142": {
+      "max_count": 8,
+      "struct": "basic_block_142"
+    },
+    "complex_sub_block_141": {
+      "max_count": 8,
+      "struct": "complex_sub_block_141"
+    },
+    "complex_block_139": {
+      "max_count": 1024,
+      "struct": "complex_block_139"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "test_tag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_use_once_3": {
+      "guid": "0a4bf989531541b3adc6a0e0cc2b78f7",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_struct_4": {
+      "guid": "c39fb86238c04e30b6b498deecac2eb3",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "long in struct"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_array_5": {
+      "guid": "d97074bc843d969b24786b5f8cc2f3a2",
+      "size": 32,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "long_integer",
+          "name": "long in array"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "struct_in_block_7": {
+      "guid": "c39fb86238c04e30b6b498deecac2eb3",
+      "size": 4,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "long in struct"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "block_with_struct_6": {
+      "guid": "e4454f73473b48a9be2e659bbc601313",
+      "size": 4,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "struct in block",
+          "definition": "struct_in_block_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_9": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_11": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_10": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_8": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_9"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_13": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_15": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_17": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_16": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_17"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_14": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_15"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_12": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_13"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_19": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_21": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_23": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_25": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_24": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_25"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_22": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_23"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_20": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_21"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_22"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_26": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_28": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_30": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_32": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_31": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_32"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_29": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_30"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_31"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_27": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_28"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_29"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_33": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_35": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_37": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_39": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_38": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_36": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_37"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_38"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_34": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_35"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_36"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_40": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_42": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_44": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_46": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_45": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_46"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_43": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_44"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_45"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_41": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_42"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_43"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_47": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_49": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_51": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_53": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_52": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_53"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_50": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_51"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_52"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_48": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_49"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_50"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_54": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_56": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_58": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_60": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_59": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_60"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_57": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_58"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_59"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_55": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_56"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_57"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_61": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_63": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_65": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_67": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_66": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_67"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_64": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_65"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_66"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_62": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_63"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_64"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_68": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_70": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_72": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_74": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_73": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_74"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_71": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_72"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_73"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_69": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_70"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_71"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_array_18": {
+      "guid": "707010fc54300d61794f026a4d3840dd",
+      "size": 1088,
+      "fields": [
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_19"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_20"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_26"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_27"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_33"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_34"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_40"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_41"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_47"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_48"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_54"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_55"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_61"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_62"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_68"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_69"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_77": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_79": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_81": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_80": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_81"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_78": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_79"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_80"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "struct_76": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_77"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_78"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_83": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_85": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_87": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_89": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_88": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_89"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_86": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_87"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_88"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_84": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_85"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_86"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_90": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_92": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_94": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_96": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_95": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_96"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_93": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_94"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_95"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_91": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_92"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_93"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_97": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_99": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_101": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_103": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_102": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_103"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_100": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_101"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_102"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_98": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_99"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_100"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_104": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_106": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_108": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_110": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_109": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_110"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_107": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_108"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_109"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_105": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_106"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_107"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_111": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_113": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_115": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_117": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_116": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_117"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_114": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_115"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_116"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_112": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_113"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_114"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_118": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_120": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_122": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_124": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_123": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_124"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_121": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_122"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_123"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_119": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_120"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_121"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_125": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_127": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_129": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_131": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_130": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_131"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_128": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_129"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_130"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_126": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_127"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_128"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_132": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_134": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_136": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_138": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_137": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_138"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_135": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_136"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_137"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_struct_in_array_133": {
+      "guid": "35ce4f80b9e34eda87d9c8dd433a7ba9",
+      "size": 72,
+      "fields": [
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_134"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_135"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "array_82": {
+      "guid": "f58a731192a02e760d2fe855b53b89ab",
+      "size": 1088,
+      "fields": [
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_83"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_84"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_90"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_91"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_97"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_98"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_104"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_105"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_111"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_112"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_118"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_119"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_125"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_126"
+        },
+        {
+          "type": "string",
+          "name": "string in array"
+        },
+        {
+          "type": "block",
+          "name": "basic block in array",
+          "definition": "basic_block_132"
+        },
+        {
+          "type": "point_2d",
+          "name": "point 2d in array"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct in array",
+          "definition": "complex_struct_in_array_133"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_140": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "basic_block_142": {
+      "guid": "a197fb9a05304815a08cb1f967ac6332",
+      "size": 256,
+      "fields": [
+        {
+          "type": "long_string",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_sub_block_141": {
+      "guid": "40aa5814fcb742278c35502fe569decf",
+      "size": 60,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "raz",
+          "definition": "basic_block_142"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "complex_block_139": {
+      "guid": "4e8886584ec54cc4a1604d30bda3c0bd",
+      "size": 56,
+      "fields": [
+        {
+          "type": "block",
+          "name": "foo",
+          "definition": "basic_block_140"
+        },
+        {
+          "type": "block",
+          "name": "bar",
+          "definition": "complex_sub_block_141"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motherload_struct_75": {
+      "guid": "ed2c2b01d6cb4191ba3b80f6f16f59ff",
+      "size": 1188,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "struct",
+          "definition": "struct_76"
+        },
+        {
+          "type": "struct",
+          "name": "array",
+          "definition": "array_82"
+        },
+        {
+          "type": "block",
+          "name": "block",
+          "definition": "complex_block_139"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "test_tag_struct_definition_1": {
+      "guid": "57596fcdbc7fe57ff7cb08ffedeafc15",
+      "size": 3136,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string",
+          "name": "string"
+        },
+        {
+          "type": "long_string",
+          "name": "long string"
+        },
+        {
+          "type": "string_id",
+          "name": "hashstring global namespace"
+        },
+        {
+          "type": "old_string_id",
+          "name": "old string id"
+        },
+        {
+          "type": "string_id",
+          "name": "hashstring test namespace"
+        },
+        {
+          "type": "string_id",
+          "name": "hashstring multi namespace"
+        },
+        {
+          "type": "char_integer",
+          "name": "char"
+        },
+        {
+          "type": "pad",
+          "name": "pad char",
+          "definition": 1
+        },
+        {
+          "type": "short_integer",
+          "name": "short"
+        },
+        {
+          "type": "long_integer",
+          "name": "long"
+        },
+        {
+          "type": "int64_integer",
+          "name": "int64"
+        },
+        {
+          "type": "byte_integer",
+          "name": "byte"
+        },
+        {
+          "type": "pad",
+          "name": "pad byte",
+          "definition": 1
+        },
+        {
+          "type": "word_integer",
+          "name": "word"
+        },
+        {
+          "type": "dword_integer",
+          "name": "dword"
+        },
+        {
+          "type": "qword_integer",
+          "name": "qword"
+        },
+        {
+          "type": "angle",
+          "name": "angle"
+        },
+        {
+          "type": "tag",
+          "name": "tag"
+        },
+        {
+          "type": "char_enum",
+          "name": "char enum",
+          "definition": "test_tag_struct_definition_1_options_20"
+        },
+        {
+          "type": "pad",
+          "name": "pad char enum",
+          "definition": 1
+        },
+        {
+          "type": "short_enum",
+          "name": "short enum",
+          "definition": "test_tag_struct_definition_1_options_22"
+        },
+        {
+          "type": "long_enum",
+          "name": "long enum",
+          "definition": "test_tag_struct_definition_1_options_23"
+        },
+        {
+          "type": "byte_flags",
+          "name": "byte flags",
+          "definition": "test_tag_struct_definition_1_options_24"
+        },
+        {
+          "type": "pad",
+          "name": "pad byte flags",
+          "definition": 1
+        },
+        {
+          "type": "word_flags",
+          "name": "word flags",
+          "definition": "test_tag_struct_definition_1_options_26"
+        },
+        {
+          "type": "long_flags",
+          "name": "long flags",
+          "definition": "test_tag_struct_definition_1_options_27"
+        },
+        {
+          "type": "point_2d",
+          "name": "short point 2d"
+        },
+        {
+          "type": "rectangle_2d",
+          "name": "short rectangle 2d"
+        },
+        {
+          "type": "rgb_color",
+          "name": "rgb pixel 32"
+        },
+        {
+          "type": "argb_color",
+          "name": "argb pixel 32"
+        },
+        {
+          "type": "real",
+          "name": "real"
+        },
+        {
+          "type": "real_fraction",
+          "name": "fraction"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "real point 2d"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "real point 3d"
+        },
+        {
+          "type": "real_vector_2d",
+          "name": "real vector 2d"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "real vector 3d"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "real quaternion"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "real euler angles 2d"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "real euler angles 3d"
+        },
+        {
+          "type": "real_plane_2d",
+          "name": "plane 2d"
+        },
+        {
+          "type": "real_plane_3d",
+          "name": "plane 3d"
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "real rgb color"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "real argb color"
+        },
+        {
+          "type": "real_hsv_color",
+          "name": "real hsv color"
+        },
+        {
+          "type": "real_ahsv_color",
+          "name": "real ahsv color"
+        },
+        {
+          "type": "short_bounds",
+          "name": "short bounds"
+        },
+        {
+          "type": "angle_bounds",
+          "name": "angle bounds"
+        },
+        {
+          "type": "real_bounds",
+          "name": "real bounds"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "fraction bounds"
+        },
+        {
+          "type": "tag_reference",
+          "name": "tag reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "basic block",
+          "definition": "basic_block_use_once_3"
+        },
+        {
+          "type": "byte_flags",
+          "name": "byte block flags",
+          "definition": "test_tag_struct_definition_1_options_53"
+        },
+        {
+          "type": "pad",
+          "name": "pad byte block flags",
+          "definition": 1
+        },
+        {
+          "type": "word_flags",
+          "name": "word block flags",
+          "definition": "test_tag_struct_definition_1_options_55"
+        },
+        {
+          "type": "long_flags",
+          "name": "dword block flags",
+          "definition": "test_tag_struct_definition_1_options_56"
+        },
+        {
+          "type": "char_integer",
+          "name": "char block index"
+        },
+        {
+          "type": "pad",
+          "name": "pad char block index",
+          "definition": 1
+        },
+        {
+          "type": "short_integer",
+          "name": "short block index"
+        },
+        {
+          "type": "long_integer",
+          "name": "long block index"
+        },
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "tag_data"
+        },
+        {
+          "type": "custom",
+          "name": "explanation"
+        },
+        {
+          "type": "struct",
+          "name": "basic struct",
+          "definition": "basic_struct_4"
+        },
+        {
+          "type": "struct",
+          "name": "basic array",
+          "definition": "basic_array_5"
+        },
+        {
+          "type": "block",
+          "name": "block with struct",
+          "definition": "block_with_struct_6"
+        },
+        {
+          "type": "block",
+          "name": "complex block",
+          "definition": "complex_block_8"
+        },
+        {
+          "type": "struct",
+          "name": "complex struct",
+          "definition": "complex_struct_12"
+        },
+        {
+          "type": "struct",
+          "name": "complex array",
+          "definition": "complex_array_18"
+        },
+        {
+          "type": "struct",
+          "name": "motherload struct",
+          "definition": "motherload_struct_75"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "test_tag_struct_definition_1_options_20": {
+      "options": [
+        "CharEnumOne",
+        "CharEnumTwo",
+        "CharEnumThree"
+      ]
+    },
+    "test_tag_struct_definition_1_options_22": {
+      "options": [
+        "ShortEnumOne",
+        "ShortEnumTwo",
+        "ShortEnumThree"
+      ]
+    },
+    "test_tag_struct_definition_1_options_23": {
+      "options": [
+        "LongEnumOne",
+        "LongEnumTwo",
+        "LongEnumThree"
+      ]
+    },
+    "test_tag_struct_definition_1_options_24": {
+      "options": [
+        "first byte flag",
+        "second byte flag",
+        "third byte flag"
+      ]
+    },
+    "test_tag_struct_definition_1_options_26": {
+      "options": [
+        "first word flag",
+        "second word flag",
+        "third word flag"
+      ]
+    },
+    "test_tag_struct_definition_1_options_27": {
+      "options": [
+        "first long flag",
+        "second long flag",
+        "third long flag"
+      ]
+    },
+    "test_tag_struct_definition_1_options_53": {
+      "options": []
+    },
+    "test_tag_struct_definition_1_options_55": {
+      "options": []
+    },
+    "test_tag_struct_definition_1_options_56": {
+      "options": []
+    }
+  },
+  "datas": {
+    "tag_data": {}
+  }
+}

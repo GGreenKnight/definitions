@@ -1,0 +1,114 @@
+{
+  "name": "wpf_polyart",
+  "tag": "wpat",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "wpfPolyartVertexBlock_3": {
+      "max_count": 32768,
+      "struct": "wpfPolyartVertexBlock_3"
+    },
+    "wpfPolyartIndexBlock_4": {
+      "max_count": 32768,
+      "struct": "wpfPolyartIndexBlock_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "wpf_polyart_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wpfPolyartVertexBlock_3": {
+      "guid": "1f0b2e3d4309aac4b2533abf775dbd30",
+      "size": 32,
+      "fields": [
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "normal*"
+        },
+        {
+          "type": "real_point_2d",
+          "name": "texture coordinate*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wpfPolyartIndexBlock_4": {
+      "guid": "27dbbddf4520d250559b879298d7e020",
+      "size": 2,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "index*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "wpf_polyart_struct_definition_1": {
+      "guid": "3462c5260b11dfd8946f109e7a6efe8e",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "import"
+        },
+        {
+          "type": "block",
+          "name": "vertices*",
+          "definition": "wpfPolyartVertexBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "indices*",
+          "definition": "wpfPolyartIndexBlock_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

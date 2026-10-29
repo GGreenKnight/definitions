@@ -1,0 +1,137 @@
+{
+  "name": "particleman",
+  "tag": "pman",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "particleman_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Curve_3": {
+      "guid": "c1cb3a69489c25f976e25fb42b3b3400",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "particleman_struct_definition_1": {
+      "guid": "d344201781547f3694aab760b556c901",
+      "size": 64,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Particleize Settings"
+        },
+        {
+          "type": "short_enum",
+          "name": "Shape",
+          "definition": "particleman_struct_definition_1_options_3"
+        },
+        {
+          "type": "word_flags",
+          "name": "Flags",
+          "definition": "particleman_struct_definition_1_options_4"
+        },
+        {
+          "type": "real",
+          "name": "Duration:sec"
+        },
+        {
+          "type": "real",
+          "name": "Density"
+        },
+        {
+          "type": "real",
+          "name": "Size:world units"
+        },
+        {
+          "type": "struct",
+          "name": "Curve",
+          "definition": "Curve_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "particleman_struct_definition_1_options_3": {
+      "options": [
+        "cloud"
+      ]
+    },
+    "particleman_struct_definition_1_options_4": {
+      "options": [
+        "hide object when effect completes",
+        "move particles towards current set target location",
+        "override any currently running particleization"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

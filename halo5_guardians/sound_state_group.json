@@ -1,0 +1,84 @@
+{
+  "name": "sound_state_group",
+  "tag": "ssgp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "g_hashedNameBlock_3": {
+      "max_count": 255,
+      "struct": "g_hashedNameBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "sound_state_group_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "g_hashedNameBlock_3": {
+      "guid": "5b6b9e934bf86b7a557af2afb7261032",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_state_group_struct_definition_1": {
+      "guid": "3ed5dc47951defbc037ae8b565ff1f44",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "Name of state group"
+        },
+        {
+          "type": "block",
+          "name": "Names of states in the group",
+          "definition": "g_hashedNameBlock_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

@@ -1,0 +1,140 @@
+{
+  "name": "lua",
+  "tag": "hsc_",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "hs_references_block_4": {
+      "max_count": 1024,
+      "struct": "hs_references_block_4"
+    },
+    "hs_name_hashes_block_5": {
+      "max_count": 1024,
+      "struct": "hs_name_hashes_block_5"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "lua_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "hs_references_block_4": {
+      "guid": "d5081a5a49b0aaae215cdda38b1a4c98",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "reference*^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "hs_name_hashes_block_5": {
+      "guid": "747462124042bb674741c0befe85efc6",
+      "size": 8,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "hash*"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "source_file_3": {
+      "guid": "cb0615834130078cc3da1da23213725c",
+      "size": 120,
+      "fields": [
+        {
+          "type": "data",
+          "name": "source*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "block",
+          "name": "references*",
+          "definition": "hs_references_block_4"
+        },
+        {
+          "type": "block",
+          "name": "name hashes*",
+          "definition": "hs_name_hashes_block_5"
+        },
+        {
+          "type": "tag_reference",
+          "name": "prototype script*",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "lua_struct_definition_1": {
+      "guid": "93e783d0143260cca2fddcd1b2e88104",
+      "size": 136,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "source file",
+          "definition": "source_file_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {
+    "tag_data": {}
+  }
+}

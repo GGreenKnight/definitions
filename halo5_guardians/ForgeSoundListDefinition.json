@@ -1,0 +1,97 @@
+{
+  "name": "ForgeSoundListDefinition",
+  "tag": "fsld",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "ForgeSoundEventDefinitionBlock_3": {
+      "max_count": 256,
+      "struct": "ForgeSoundEventDefinitionBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "ForgeSoundListDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeSoundEventDefinitionBlock_3": {
+      "guid": "720759c641b24ad84a8a019e548790b7",
+      "size": 40,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "string_id",
+          "name": "sound category"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound response",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ForgeSoundListDefinition_struct_definition_1": {
+      "guid": "d1d3ea8b90a919ad8387567a1e16dc7a",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "entries",
+          "definition": "ForgeSoundEventDefinitionBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

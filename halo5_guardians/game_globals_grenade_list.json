@@ -1,0 +1,513 @@
+{
+  "name": "game_globals_grenade_list",
+  "tag": "gggl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "UIItemInfoBlock_10": {
+      "max_count": 1,
+      "struct": "UIItemInfoBlock_10"
+    },
+    "GameGlobalsGrenadeBlock_3": {
+      "max_count": 8,
+      "struct": "GameGlobalsGrenadeBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "game_globals_grenade_list_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "maximum_count__campaign__4": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "maximum_count__campaign__4_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "initial_count__campaign__5": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "initial_count__campaign__5_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "maximum_count__firefight__6": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "maximum_count__firefight__6_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "initial_count__firefight__7": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "initial_count__firefight__7_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "maximum_count__multiplayer__8": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "maximum_count__multiplayer__8_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "initial_count__multiplayer__9": {
+      "guid": "78009ab84c8277c3262a5081a5c134e4",
+      "size": 8,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "Base Value"
+        },
+        {
+          "type": "short_bounds",
+          "name": "Value Bounds"
+        },
+        {
+          "type": "char_enum",
+          "name": "Combiner",
+          "definition": "initial_count__multiplayer__9_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "padEnd",
+          "definition": 1
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIItemInfoBlock_10": {
+      "guid": "6bb873fd472b52c677909b90d0074580",
+      "size": 128,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "description#general in-universe item description"
+        },
+        {
+          "type": "string_id",
+          "name": "help text#verbose usage info for use during gameplay"
+        },
+        {
+          "type": "string_id",
+          "name": "icon string id#legacy, from when we embedded the sprites into the font to get streaming behaviour"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite#bitmap file representing this item",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#frame inside the item's image strip which shows this item "
+        },
+        {
+          "type": "tag_reference",
+          "name": "alt sprite#secondary bitmap file representing this item. for detail images, overlays etc.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "alt sprite index#alt sprite's frame"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui vehicle screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "GameGlobalsGrenadeBlock_3": {
+      "guid": "2d626a3a469abbef087316adecdfd9ae",
+      "size": 260,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "UI"
+        },
+        {
+          "type": "string_id",
+          "name": "Display Text StringID"
+        },
+        {
+          "type": "string_id",
+          "name": "Description Text StringID"
+        },
+        {
+          "type": "string_id",
+          "name": "Help Text StringID"
+        },
+        {
+          "type": "custom",
+          "name": "Maximum Grenade Count (Campaign)"
+        },
+        {
+          "type": "custom",
+          "name": "maximum count (campaign)"
+        },
+        {
+          "type": "struct",
+          "name": "maximum count (campaign)",
+          "definition": "maximum_count__campaign__4"
+        },
+        {
+          "type": "custom",
+          "name": "Initial Grenade Count (Campaign)"
+        },
+        {
+          "type": "custom",
+          "name": "initial count (campaign)"
+        },
+        {
+          "type": "struct",
+          "name": "initial count (campaign)",
+          "definition": "initial_count__campaign__5"
+        },
+        {
+          "type": "custom",
+          "name": "Maximum Grenade Count (Firefight)"
+        },
+        {
+          "type": "custom",
+          "name": "maximum count (firefight)"
+        },
+        {
+          "type": "struct",
+          "name": "maximum count (firefight)",
+          "definition": "maximum_count__firefight__6"
+        },
+        {
+          "type": "custom",
+          "name": "Initial Grenade Count (Firefight)"
+        },
+        {
+          "type": "custom",
+          "name": "initial count (firefight)"
+        },
+        {
+          "type": "struct",
+          "name": "initial count (firefight)",
+          "definition": "initial_count__firefight__7"
+        },
+        {
+          "type": "custom",
+          "name": "Maximum Grenade Count (Multiplayer)"
+        },
+        {
+          "type": "custom",
+          "name": "maximum count (multiplayer)"
+        },
+        {
+          "type": "struct",
+          "name": "maximum count (multiplayer)",
+          "definition": "maximum_count__multiplayer__8"
+        },
+        {
+          "type": "custom",
+          "name": "Initial Grenade Count (Multiplayer)"
+        },
+        {
+          "type": "custom",
+          "name": "initial count (multiplayer)"
+        },
+        {
+          "type": "struct",
+          "name": "initial count (multiplayer)",
+          "definition": "initial_count__multiplayer__9"
+        },
+        {
+          "type": "real",
+          "name": "drop percentage (Campaign)"
+        },
+        {
+          "type": "real",
+          "name": "drop percentage (Firefight)"
+        },
+        {
+          "type": "real",
+          "name": "drop percentage (Multiplayer)"
+        },
+        {
+          "type": "tag_reference",
+          "name": "throwing effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "equipment",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "projectile",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "equipment (PvE)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "projectile (PvE)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "UI display info",
+          "definition": "UIItemInfoBlock_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "game_globals_grenade_list_struct_definition_1": {
+      "guid": "b3c54ce3122bf74e431d98de99beed4a",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "grenades",
+          "definition": "GameGlobalsGrenadeBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "maximum_count__campaign__4_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "initial_count__campaign__5_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "maximum_count__firefight__6_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "initial_count__firefight__7_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "maximum_count__multiplayer__8_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    },
+    "initial_count__multiplayer__9_options_2": {
+      "options": [
+        "sequential#applies the percentages one after another on the base",
+        "total percentage#adds up all of the percentages and applies them to the base",
+        "addition#adds on all of the modifiers to the base",
+        "product#multiplies the values one after another on to the base"
+      ]
+    }
+  },
+  "datas": {}
+}

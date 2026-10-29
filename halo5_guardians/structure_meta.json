@@ -1,0 +1,258 @@
+{
+  "name": "structure_meta",
+  "tag": "smet",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "structureBspFxMarkerBlock_3": {
+      "max_count": 1024,
+      "struct": "structureBspFxMarkerBlock_3"
+    },
+    "structureMetadataLightConeMarkerBlock_4": {
+      "max_count": 1024,
+      "struct": "structureMetadataLightConeMarkerBlock_4"
+    },
+    "structure_bsp_environment_object_palette_block_5": {
+      "max_count": 1024,
+      "struct": "structure_bsp_environment_object_palette_block_5"
+    },
+    "structure_bsp_environment_object_block_6": {
+      "max_count": 16384,
+      "struct": "structure_bsp_environment_object_block_6"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "structure_meta_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structureBspFxMarkerBlock_3": {
+      "guid": "025d71c34bf15053991c33b151a5ea25",
+      "size": 92,
+      "fields": [
+        {
+          "type": "string",
+          "name": "marker name^"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "rotation*"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "position*"
+        },
+        {
+          "type": "tag_reference",
+          "name": "optional attached effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structureMetadataLightConeMarkerBlock_4": {
+      "guid": "5497309544dd6f234d5112a0f7a5c23d",
+      "size": 120,
+      "fields": [
+        {
+          "type": "string",
+          "name": "marker name^"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "rotation"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "position"
+        },
+        {
+          "type": "real",
+          "name": "length"
+        },
+        {
+          "type": "real",
+          "name": "width"
+        },
+        {
+          "type": "real",
+          "name": "intensity"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "light color"
+        },
+        {
+          "type": "tag_reference",
+          "name": "light cone tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structure_bsp_environment_object_palette_block_5": {
+      "guid": "37d2fc4a43f82e62debe35b211be7677",
+      "size": 68,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "definition^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "model",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "GVEYN!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structure_bsp_environment_object_block_6": {
+      "guid": "1cdf634d476ffd90daf133917f241bcc",
+      "size": 84,
+      "fields": [
+        {
+          "type": "string",
+          "name": "name^"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "rotation"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "translation"
+        },
+        {
+          "type": "real",
+          "name": "scale"
+        },
+        {
+          "type": "short_integer",
+          "name": "palette_index"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "structure_bsp_environment_object_block_6_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "QHUGQ",
+          "definition": 1
+        },
+        {
+          "type": "long_integer",
+          "name": "unique id*"
+        },
+        {
+          "type": "tag",
+          "name": "exported object type"
+        },
+        {
+          "type": "string_id",
+          "name": "scenario object name"
+        },
+        {
+          "type": "string_id",
+          "name": "variant name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "structure_meta_struct_definition_1": {
+      "guid": "49682a7fdbfeded06b2fe54d169a57ba",
+      "size": 128,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Effects markers*",
+          "definition": "structureBspFxMarkerBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "Light Cones*",
+          "definition": "structureMetadataLightConeMarkerBlock_4"
+        },
+        {
+          "type": "block",
+          "name": "Object Palette*",
+          "definition": "structure_bsp_environment_object_palette_block_5"
+        },
+        {
+          "type": "block",
+          "name": "Objects*",
+          "definition": "structure_bsp_environment_object_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "structure_bsp_environment_object_block_6_options_5": {
+      "options": [
+        "scripts always run"
+      ]
+    }
+  },
+  "datas": {}
+}

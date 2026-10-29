@@ -1,0 +1,966 @@
+{
+  "name": "user_interface_globals_definition",
+  "tag": "wgtz",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "node_graph_reference_block_definition_3": {
+      "max_count": 256,
+      "struct": "node_graph_reference_block_definition_3"
+    },
+    "font_set_reference_block_definition_4": {
+      "max_count": 256,
+      "struct": "font_set_reference_block_definition_4"
+    },
+    "bitmap_dictionary_reference_block_definition_5": {
+      "max_count": 256,
+      "struct": "bitmap_dictionary_reference_block_definition_5"
+    },
+    "cui_component_screen_reference_block_definition_6": {
+      "max_count": 256,
+      "struct": "cui_component_screen_reference_block_definition_6"
+    },
+    "cui_overlay_camera_block_definition_7": {
+      "max_count": 24,
+      "struct": "cui_overlay_camera_block_definition_7"
+    },
+    "cui_player_model_camera_settings_definition_8": {
+      "max_count": 32,
+      "struct": "cui_player_model_camera_settings_definition_8"
+    },
+    "cui_player_model_controller_settings_definition_9": {
+      "max_count": 32,
+      "struct": "cui_player_model_controller_settings_definition_9"
+    },
+    "cui_player_model_transition_settings_definition_11": {
+      "max_count": 1,
+      "struct": "cui_player_model_transition_settings_definition_11"
+    },
+    "cui_active_roster_settings_block_13": {
+      "max_count": 1,
+      "struct": "cui_active_roster_settings_block_13"
+    },
+    "campaign_state_screen_script_block_definition_15": {
+      "max_count": 64,
+      "struct": "campaign_state_screen_script_block_definition_15"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_16": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_16"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_17": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_17"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_18": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_18"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_19": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_19"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_20": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_20"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_21": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_21"
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_22": {
+      "max_count": 5,
+      "struct": "UserInterfaceGameScreenSequenceStepDefinition_22"
+    },
+    "SwapTagReferenceDefinition_23": {
+      "max_count": 128,
+      "struct": "SwapTagReferenceDefinition_23"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "user_interface_globals_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "node_graph_reference_block_definition_3": {
+      "guid": "064ae50c430d3a4dc4d96b8170436678",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "node graph tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "font_set_reference_block_definition_4": {
+      "guid": "39753fd64ad2f3dac89f599ce1b140df",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "wpf font set tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bitmap_dictionary_reference_block_definition_5": {
+      "guid": "cd4a6b7f4148d3c91ee90887f0c7c745",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap dictionary",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_component_screen_reference_block_definition_6": {
+      "guid": "5760e7a047694c3b783df1864287287b",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#for use in code"
+        },
+        {
+          "type": "tag_reference",
+          "name": "cui screen tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_overlay_camera_block_definition_7": {
+      "guid": "83781bd0418e054d59ce9488e0265695",
+      "size": 24,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "resolution name"
+        },
+        {
+          "type": "char_enum",
+          "name": "pivot corner",
+          "definition": "cui_overlay_camera_block_definition_7_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "Z near#distance to near clipping plane"
+        },
+        {
+          "type": "real",
+          "name": "Z far#distance to far clipping plane"
+        },
+        {
+          "type": "real",
+          "name": "X angle degrees#camera angle around the X axis"
+        },
+        {
+          "type": "real",
+          "name": "Y angle degrees#camera angle around the Y axis"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_player_model_camera_settings_definition_8": {
+      "guid": "73f77a8a08bed544babdb685efb872f8",
+      "size": 100,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Camera Settings"
+        },
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "model world position:wu#arbitrary location in the world to place the model"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "minimum world position"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "maximum world position"
+        },
+        {
+          "type": "string_id",
+          "name": "viewed model marker name"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "minimum camera offset:wu"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "minimum camera focal offset:wu"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "maximum camera offset:wu"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "maximum camera focal offset:wu"
+        },
+        {
+          "type": "real",
+          "name": "initial zoom:[0,1]"
+        },
+        {
+          "type": "real",
+          "name": "fov:degrees"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "zoom_transition_function_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_player_model_controller_settings_definition_9": {
+      "guid": "5d1bd5fe14d2e2c8f7f4be82fe82a043",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name"
+        },
+        {
+          "type": "real",
+          "name": "zoom speed:wu per tick"
+        },
+        {
+          "type": "struct",
+          "name": "zoom transition function",
+          "definition": "zoom_transition_function_10"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "initial rotation:degrees"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "minimum rotation:degrees"
+        },
+        {
+          "type": "real_euler_angles_2d",
+          "name": "maximum rotation:degrees"
+        },
+        {
+          "type": "real",
+          "name": "rotation speed:degrees per tick"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_transition_function_12": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_player_model_transition_settings_definition_11": {
+      "guid": "20e2fa5b470622e5621fccb4adace040",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "camera transition function",
+          "definition": "camera_transition_function_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "analog_scroll_function_14": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cui_active_roster_settings_block_13": {
+      "guid": "53a077404ca2597dbc3301bde6166518",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "analog scroll function",
+          "definition": "analog_scroll_function_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "campaign_state_screen_script_block_definition_15": {
+      "guid": "94a0c93849a62b65031554bd58bd3bc7",
+      "size": 40,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "map ID"
+        },
+        {
+          "type": "string_id",
+          "name": "screen script name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "music override",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_16": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_16_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_17": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_17_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_18": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_18_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_19": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_19_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_20": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_20_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_21": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_21_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_22": {
+      "guid": "790fa3504de5a494ad327b83a40c6252",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_22_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "UMPKIU",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Start Hui Event"
+        },
+        {
+          "type": "string_id",
+          "name": "End Hui Event"
+        },
+        {
+          "type": "short_integer",
+          "name": "startTime:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "endTime:ticks"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "SwapTagReferenceDefinition_23": {
+      "guid": "60312daa4ab4faeb27fcd8b8a82751ed",
+      "size": 64,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "original tag^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "replacement tag",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "user_interface_globals_definition_struct_definition_1": {
+      "guid": "1fc5ddf3e6bfb9ab276d4a30315fa748",
+      "size": 784,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Shared Globals"
+        },
+        {
+          "type": "tag_reference",
+          "name": "shared globals",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Multiplayer Variant Settings Interface"
+        },
+        {
+          "type": "tag_reference",
+          "name": "mp variant settings ui",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Game Hopper Localization Strings"
+        },
+        {
+          "type": "tag_reference",
+          "name": "game hopper descriptions",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Screen Widgets"
+        },
+        {
+          "type": "block",
+          "name": "node graphs",
+          "definition": "node_graph_reference_block_definition_3"
+        },
+        {
+          "type": "block",
+          "name": "wpf fonts",
+          "definition": "font_set_reference_block_definition_4"
+        },
+        {
+          "type": "block",
+          "name": "bitmap dictionaries#allow bitmap tags to be referenced using ampersand notation in HaloTextBlocks",
+          "definition": "bitmap_dictionary_reference_block_definition_5"
+        },
+        {
+          "type": "block",
+          "name": "cui screen widgets",
+          "definition": "cui_component_screen_reference_block_definition_6"
+        },
+        {
+          "type": "block",
+          "name": "cui overlay cameras",
+          "definition": "cui_overlay_camera_block_definition_7"
+        },
+        {
+          "type": "block",
+          "name": "player model camera settings",
+          "definition": "cui_player_model_camera_settings_definition_8"
+        },
+        {
+          "type": "block",
+          "name": "player model input settings",
+          "definition": "cui_player_model_controller_settings_definition_9"
+        },
+        {
+          "type": "block",
+          "name": "player model camera transition settings",
+          "definition": "cui_player_model_transition_settings_definition_11"
+        },
+        {
+          "type": "block",
+          "name": "active roster settings",
+          "definition": "cui_active_roster_settings_block_13"
+        },
+        {
+          "type": "custom",
+          "name": "PGCR Categories Definitions"
+        },
+        {
+          "type": "tag_reference",
+          "name": "pgcr categories definitions",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "PGCR Damage Types Definitions"
+        },
+        {
+          "type": "tag_reference",
+          "name": "pgcr damage types definitions",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Campaign State Screen Scripts"
+        },
+        {
+          "type": "block",
+          "name": "campaign state screen scripts",
+          "definition": "campaign_state_screen_script_block_definition_15"
+        },
+        {
+          "type": "real",
+          "name": "spawn-timer countdown rate:counts/sec"
+        },
+        {
+          "type": "block",
+          "name": "game intro sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_16"
+        },
+        {
+          "type": "block",
+          "name": "game round end sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_17"
+        },
+        {
+          "type": "block",
+          "name": "game round end with killcam sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_18"
+        },
+        {
+          "type": "block",
+          "name": "game next round sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_19"
+        },
+        {
+          "type": "block",
+          "name": "game end sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_20"
+        },
+        {
+          "type": "block",
+          "name": "game end with killcam sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_21"
+        },
+        {
+          "type": "block",
+          "name": "in game sequence",
+          "definition": "UserInterfaceGameScreenSequenceStepDefinition_22"
+        },
+        {
+          "type": "tag_reference",
+          "name": "HUD globals#global settings for the HUD. Set this for ingame globals.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "portrait poses",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "swap tags",
+          "definition": "SwapTagReferenceDefinition_23"
+        },
+        {
+          "type": "tag_reference",
+          "name": "resolution texture map",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "cui_overlay_camera_block_definition_7_options_1": {
+      "options": [
+        "top left",
+        "top right",
+        "bottom right",
+        "bottom left"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_16_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_17_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_18_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_19_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_20_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_21_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    },
+    "UserInterfaceGameScreenSequenceStepDefinition_22_options_0": {
+      "options": [
+        "show loadout menu",
+        "loadout menu close ends sequence",
+        "show scoreboard",
+        "show hud",
+        "show final kill cam"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

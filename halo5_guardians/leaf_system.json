@@ -1,0 +1,199 @@
+{
+  "name": "leaf_system",
+  "tag": "lswd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "leaf_type_block_3": {
+      "max_count": 16,
+      "struct": "leaf_type_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "leaf_system_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "leaf_type_block_3": {
+      "guid": "9cb09d254521b339fd8222bc55ed4afa",
+      "size": 60,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "bitmap sprite index#assumes sequence 0. if no sprites uses full bitmap"
+        },
+        {
+          "type": "pad",
+          "name": "UNAX",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "frequency"
+        },
+        {
+          "type": "real",
+          "name": "mass"
+        },
+        {
+          "type": "real_bounds",
+          "name": "geometry scale#default of 0 for both means 0.1"
+        },
+        {
+          "type": "real",
+          "name": "flitteriness"
+        },
+        {
+          "type": "real",
+          "name": "flitteriness swing arm length*"
+        },
+        {
+          "type": "real",
+          "name": "flitteriness scale*"
+        },
+        {
+          "type": "real",
+          "name": "flitteriness speed*"
+        },
+        {
+          "type": "real",
+          "name": "flitteriness leaves phase*"
+        },
+        {
+          "type": "real",
+          "name": "tumble scale"
+        },
+        {
+          "type": "real",
+          "name": "rotation scale"
+        },
+        {
+          "type": "real",
+          "name": "starting velocity"
+        },
+        {
+          "type": "fraction_bounds",
+          "name": "air friction XY and Z"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "leaf_system_struct_definition_1": {
+      "guid": "a2e66983b68a13b59f4020dc6d29979f",
+      "size": 136,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags!",
+          "definition": "leaf_system_struct_definition_1_options_2"
+        },
+        {
+          "type": "string_id",
+          "name": "marker attach name"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap sprite plate",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real_bounds",
+          "name": "emission rate#seconds"
+        },
+        {
+          "type": "real",
+          "name": "lifetime"
+        },
+        {
+          "type": "real_bounds",
+          "name": "wind min/max#default 0,0"
+        },
+        {
+          "type": "real",
+          "name": "wind scale"
+        },
+        {
+          "type": "real",
+          "name": "time scale"
+        },
+        {
+          "type": "real_bounds",
+          "name": "fade distance!#from maximum movement range (10+). default 0!"
+        },
+        {
+          "type": "real",
+          "name": "emissions sphere radius"
+        },
+        {
+          "type": "real",
+          "name": "movement cylinder radius"
+        },
+        {
+          "type": "real",
+          "name": "fade in time!"
+        },
+        {
+          "type": "real",
+          "name": "fade out time!"
+        },
+        {
+          "type": "block",
+          "name": "leaf types",
+          "definition": "leaf_type_block_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "leaf_system_struct_definition_1_options_2": {
+      "options": [
+        "collides structure",
+        "collides objects",
+        "collides water",
+        "affected by explosions"
+      ]
+    }
+  },
+  "datas": {}
+}

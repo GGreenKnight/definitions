@@ -1,0 +1,90 @@
+{
+  "name": "LOCGlobalsDefinition",
+  "tag": "gllo",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "LOCGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "LOCGlobalsDefinition_struct_definition_1": {
+      "guid": "e808ebf3ff079bce7fadfe722bf3662e",
+      "size": 24,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "long_enum",
+          "name": "language",
+          "definition": "LOCGlobalsDefinition_struct_definition_1_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "LOCGlobalsDefinition_struct_definition_1_options_2": {
+      "options": [
+        "english",
+        "japanese",
+        "german",
+        "french",
+        "spanish",
+        "mexican spanish",
+        "italian",
+        "korean",
+        "chinese-traditional",
+        "chinese-simplified",
+        "portuguese",
+        "polish",
+        "russian",
+        "danish",
+        "finnish",
+        "dutch",
+        "norwegian"
+      ]
+    }
+  },
+  "datas": {}
+}

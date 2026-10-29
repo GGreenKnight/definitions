@@ -1,0 +1,242 @@
+{
+  "name": "sound_effect_collection",
+  "tag": "sfx+",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "platform_sound_playback_lowpass_block_5": {
+      "max_count": 1,
+      "struct": "platform_sound_playback_lowpass_block_5"
+    },
+    "platform_sound_playback_component_block_7": {
+      "max_count": 16,
+      "struct": "platform_sound_playback_component_block_7"
+    },
+    "platform_sound_playback_block_3": {
+      "max_count": 128,
+      "struct": "platform_sound_playback_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "sound_effect_collection_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "settings_6": {
+      "guid": "f38f05d94f33f9bbfed7ea95258f5861",
+      "size": 8,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "real",
+          "name": "cutoff frequency:Hz"
+        },
+        {
+          "type": "custom",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "real",
+          "name": "output gain:dB"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "platform_sound_playback_lowpass_block_5": {
+      "guid": "881a12194ea701de0033c68bab16a4ba",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "attack:seconds"
+        },
+        {
+          "type": "real",
+          "name": "release:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "settings",
+          "definition": "settings_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "platform_sound_playback_component_block_7": {
+      "guid": "7f148c26433f4a18014175a4877f0e5b",
+      "size": 40,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sound^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "gain:dB#additional attenuation to sound"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "platform_sound_playback_component_block_7_options_2"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "playback_4": {
+      "guid": "4a19c7374aa2db9404cf7b9b3483f764",
+      "size": 188,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "playback_4_options_0"
+        },
+        {
+          "type": "tag_reference",
+          "name": "radio effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Start event",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "End event",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Immediate stop event#Must clear the effect without any transition - used for exiting levels, etc",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "lowpass effect",
+          "definition": "platform_sound_playback_lowpass_block_5"
+        },
+        {
+          "type": "block",
+          "name": "sound components",
+          "definition": "platform_sound_playback_component_block_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "platform_sound_playback_block_3": {
+      "guid": "334a1b384b5c94c45c39bd9c5a7f7b8a",
+      "size": 192,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "struct",
+          "name": "playback",
+          "definition": "playback_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sound_effect_collection_struct_definition_1": {
+      "guid": "7fd9c5f8294b725ab3e76a27c4c805d2",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "sound effects",
+          "definition": "platform_sound_playback_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "playback_4_options_0": {
+      "options": [
+        "turn off in splitscreen",
+        "only turn on in first person"
+      ]
+    },
+    "platform_sound_playback_component_block_7_options_2": {
+      "options": [
+        "don't play at start",
+        "play on stop",
+        "play alternate",
+        "sync with origin looping sound"
+      ]
+    }
+  },
+  "datas": {}
+}

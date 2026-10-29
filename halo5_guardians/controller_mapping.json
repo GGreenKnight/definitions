@@ -1,0 +1,1611 @@
+{
+  "name": "controller_mapping",
+  "tag": "cnmp",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "controller_mapping_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "leftStickClenchProtectionSettings_3": {
+      "guid": "ddb2feb74e7b329028678bb43edf82f9",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "clench detection time:seconds#if the player holds the stick click for longer than this amount of time it is considered a clench rather than an intentional press"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "rightStickClenchProtectionSettings_4": {
+      "guid": "ddb2feb74e7b329028678bb43edf82f9",
+      "size": 4,
+      "fields": [
+        {
+          "type": "real",
+          "name": "clench detection time:seconds#if the player holds the stick click for longer than this amount of time it is considered a clench rather than an intentional press"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "controller_mapping_struct_definition_1": {
+      "guid": "632b7a8677d9eba85865cb731d93d6cb",
+      "size": 216,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Left Analog Stick Clench Protection Settings"
+        },
+        {
+          "type": "struct",
+          "name": "leftStickClenchProtectionSettings",
+          "definition": "leftStickClenchProtectionSettings_3"
+        },
+        {
+          "type": "custom",
+          "name": "Right Analog Stick Clench Protection Settings"
+        },
+        {
+          "type": "struct",
+          "name": "rightStickClenchProtectionSettings",
+          "definition": "rightStickClenchProtectionSettings_4"
+        },
+        {
+          "type": "custom",
+          "name": "Start/Back"
+        },
+        {
+          "type": "short_enum",
+          "name": "jump",
+          "definition": "controller_mapping_struct_definition_1_options_7"
+        },
+        {
+          "type": "short_enum",
+          "name": "switch weapon",
+          "definition": "controller_mapping_struct_definition_1_options_8"
+        },
+        {
+          "type": "short_enum",
+          "name": "contextual action",
+          "definition": "controller_mapping_struct_definition_1_options_9"
+        },
+        {
+          "type": "short_enum",
+          "name": "melee attack",
+          "definition": "controller_mapping_struct_definition_1_options_10"
+        },
+        {
+          "type": "short_enum",
+          "name": "equipment",
+          "definition": "controller_mapping_struct_definition_1_options_11"
+        },
+        {
+          "type": "short_enum",
+          "name": "throw grenade",
+          "definition": "controller_mapping_struct_definition_1_options_12"
+        },
+        {
+          "type": "short_enum",
+          "name": "primary fire",
+          "definition": "controller_mapping_struct_definition_1_options_13"
+        },
+        {
+          "type": "short_enum",
+          "name": "crouch",
+          "definition": "controller_mapping_struct_definition_1_options_14"
+        },
+        {
+          "type": "short_enum",
+          "name": "zoom-zoom scope",
+          "definition": "controller_mapping_struct_definition_1_options_15"
+        },
+        {
+          "type": "short_enum",
+          "name": "ground pound",
+          "definition": "controller_mapping_struct_definition_1_options_16"
+        },
+        {
+          "type": "short_enum",
+          "name": "switch grenade prev",
+          "definition": "controller_mapping_struct_definition_1_options_17"
+        },
+        {
+          "type": "short_enum",
+          "name": "switch grenade next",
+          "definition": "controller_mapping_struct_definition_1_options_18"
+        },
+        {
+          "type": "short_enum",
+          "name": "secondary fire",
+          "definition": "controller_mapping_struct_definition_1_options_19"
+        },
+        {
+          "type": "short_enum",
+          "name": "tertiary fire",
+          "definition": "controller_mapping_struct_definition_1_options_20"
+        },
+        {
+          "type": "short_enum",
+          "name": "vehicle trick primary",
+          "definition": "controller_mapping_struct_definition_1_options_21"
+        },
+        {
+          "type": "short_enum",
+          "name": "vehicle trick secondary",
+          "definition": "controller_mapping_struct_definition_1_options_22"
+        },
+        {
+          "type": "short_enum",
+          "name": "vehicle VTOL lift",
+          "definition": "controller_mapping_struct_definition_1_options_23"
+        },
+        {
+          "type": "short_enum",
+          "name": "vehicle VTOL drop",
+          "definition": "controller_mapping_struct_definition_1_options_24"
+        },
+        {
+          "type": "short_enum",
+          "name": "spartan tracking",
+          "definition": "controller_mapping_struct_definition_1_options_25"
+        },
+        {
+          "type": "short_enum",
+          "name": "secondary contextual action",
+          "definition": "controller_mapping_struct_definition_1_options_26"
+        },
+        {
+          "type": "short_enum",
+          "name": "navpoint signal {radio message}",
+          "definition": "controller_mapping_struct_definition_1_options_27"
+        },
+        {
+          "type": "skip",
+          "name": "start",
+          "definition": 2
+        },
+        {
+          "type": "skip",
+          "name": "back",
+          "definition": 2
+        },
+        {
+          "type": "short_enum",
+          "name": "lean left",
+          "definition": "controller_mapping_struct_definition_1_options_30"
+        },
+        {
+          "type": "short_enum",
+          "name": "lean right",
+          "definition": "controller_mapping_struct_definition_1_options_31"
+        },
+        {
+          "type": "short_enum",
+          "name": "night vision",
+          "definition": "controller_mapping_struct_definition_1_options_32"
+        },
+        {
+          "type": "short_enum",
+          "name": "accept",
+          "definition": "controller_mapping_struct_definition_1_options_33"
+        },
+        {
+          "type": "short_enum",
+          "name": "cancel",
+          "definition": "controller_mapping_struct_definition_1_options_34"
+        },
+        {
+          "type": "short_enum",
+          "name": "machinima lower weapon",
+          "definition": "controller_mapping_struct_definition_1_options_35"
+        },
+        {
+          "type": "short_enum",
+          "name": "machinima camera enable",
+          "definition": "controller_mapping_struct_definition_1_options_36"
+        },
+        {
+          "type": "short_enum",
+          "name": "machinima camera control",
+          "definition": "controller_mapping_struct_definition_1_options_37"
+        },
+        {
+          "type": "short_enum",
+          "name": "machinima camera debug",
+          "definition": "controller_mapping_struct_definition_1_options_38"
+        },
+        {
+          "type": "short_enum",
+          "name": "machinima spartan camera",
+          "definition": "controller_mapping_struct_definition_1_options_39"
+        },
+        {
+          "type": "short_enum",
+          "name": "lift editor",
+          "definition": "controller_mapping_struct_definition_1_options_40"
+        },
+        {
+          "type": "short_enum",
+          "name": "drop editor",
+          "definition": "controller_mapping_struct_definition_1_options_41"
+        },
+        {
+          "type": "short_enum",
+          "name": "push to talk",
+          "definition": "controller_mapping_struct_definition_1_options_42"
+        },
+        {
+          "type": "short_enum",
+          "name": "cinematic skip",
+          "definition": "controller_mapping_struct_definition_1_options_43"
+        },
+        {
+          "type": "short_enum",
+          "name": "fireteam",
+          "definition": "controller_mapping_struct_definition_1_options_44"
+        },
+        {
+          "type": "short_enum",
+          "name": "regroup",
+          "definition": "controller_mapping_struct_definition_1_options_45"
+        },
+        {
+          "type": "short_enum",
+          "name": "activate minimap",
+          "definition": "controller_mapping_struct_definition_1_options_46"
+        },
+        {
+          "type": "short_enum",
+          "name": "loadout menu",
+          "definition": "controller_mapping_struct_definition_1_options_47"
+        },
+        {
+          "type": "short_enum",
+          "name": "sprint{hero assist}",
+          "definition": "controller_mapping_struct_definition_1_options_48"
+        },
+        {
+          "type": "short_enum",
+          "name": "skip killcam",
+          "definition": "controller_mapping_struct_definition_1_options_49"
+        },
+        {
+          "type": "short_enum",
+          "name": "mantis fire primary",
+          "definition": "controller_mapping_struct_definition_1_options_50"
+        },
+        {
+          "type": "short_enum",
+          "name": "mantis fire secondary",
+          "definition": "controller_mapping_struct_definition_1_options_51"
+        },
+        {
+          "type": "short_enum",
+          "name": "mantis melee attack",
+          "definition": "controller_mapping_struct_definition_1_options_52"
+        },
+        {
+          "type": "short_enum",
+          "name": "mantis crouch",
+          "definition": "controller_mapping_struct_definition_1_options_53"
+        },
+        {
+          "type": "short_enum",
+          "name": "change zoom level",
+          "definition": "controller_mapping_struct_definition_1_options_54"
+        },
+        {
+          "type": "short_enum",
+          "name": "weapon reload",
+          "definition": "controller_mapping_struct_definition_1_options_55"
+        },
+        {
+          "type": "short_enum",
+          "name": "interact",
+          "definition": "controller_mapping_struct_definition_1_options_56"
+        },
+        {
+          "type": "short_enum",
+          "name": "zoom in",
+          "definition": "controller_mapping_struct_definition_1_options_57"
+        },
+        {
+          "type": "short_enum",
+          "name": "zoom out",
+          "definition": "controller_mapping_struct_definition_1_options_58"
+        },
+        {
+          "type": "short_enum",
+          "name": "global chat",
+          "definition": "controller_mapping_struct_definition_1_options_59"
+        },
+        {
+          "type": "short_enum",
+          "name": "team chat",
+          "definition": "controller_mapping_struct_definition_1_options_60"
+        },
+        {
+          "type": "short_enum",
+          "name": "equip grenade 0",
+          "definition": "controller_mapping_struct_definition_1_options_61"
+        },
+        {
+          "type": "short_enum",
+          "name": "equip grenade 1",
+          "definition": "controller_mapping_struct_definition_1_options_62"
+        },
+        {
+          "type": "short_enum",
+          "name": "equip grenade 2",
+          "definition": "controller_mapping_struct_definition_1_options_63"
+        },
+        {
+          "type": "short_enum",
+          "name": "equip grenade 3",
+          "definition": "controller_mapping_struct_definition_1_options_64"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "controller_mapping_struct_definition_1_options_65"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 3
+        },
+        {
+          "type": "custom",
+          "name": "Button Labels"
+        },
+        {
+          "type": "string_id",
+          "name": "Button Preset Display Name"
+        },
+        {
+          "type": "string_id",
+          "name": "Button Preset Help Text"
+        },
+        {
+          "type": "string_id",
+          "name": "Left Trigger"
+        },
+        {
+          "type": "string_id",
+          "name": "Right Trigger"
+        },
+        {
+          "type": "string_id",
+          "name": "DPad Up"
+        },
+        {
+          "type": "string_id",
+          "name": "DPad Down"
+        },
+        {
+          "type": "string_id",
+          "name": "DPad Left"
+        },
+        {
+          "type": "string_id",
+          "name": "DPad Right"
+        },
+        {
+          "type": "string_id",
+          "name": "Start Button"
+        },
+        {
+          "type": "string_id",
+          "name": "Back Button"
+        },
+        {
+          "type": "string_id",
+          "name": "Left Thumb Stick"
+        },
+        {
+          "type": "string_id",
+          "name": "Right Thumb Stick"
+        },
+        {
+          "type": "string_id",
+          "name": "Button A"
+        },
+        {
+          "type": "string_id",
+          "name": "Button B"
+        },
+        {
+          "type": "string_id",
+          "name": "Button X"
+        },
+        {
+          "type": "string_id",
+          "name": "Button Y"
+        },
+        {
+          "type": "string_id",
+          "name": "Left Bumper"
+        },
+        {
+          "type": "string_id",
+          "name": "Right Bumper"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "controller_mapping_struct_definition_1_options_7": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_8": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_9": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_10": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_11": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_12": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_13": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_14": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_15": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_16": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_17": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_18": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_19": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_20": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_21": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_22": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_23": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_24": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_25": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_26": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_27": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_30": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_31": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_32": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_33": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_34": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_35": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_36": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_37": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_38": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_39": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_40": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_41": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_42": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_43": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_44": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_45": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_46": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_47": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_48": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_49": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_50": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_51": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_52": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_53": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_54": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_55": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_56": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_57": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_58": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_59": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_60": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_61": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_62": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_63": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_64": {
+      "options": [
+        "left trigger",
+        "right trigger",
+        "dpad up",
+        "dpad down",
+        "dpad left",
+        "dpad right",
+        "start",
+        "back",
+        "left thumb",
+        "right thumb",
+        "button a",
+        "button b",
+        "button x",
+        "button y",
+        "left bumper",
+        "right bumper"
+      ]
+    },
+    "controller_mapping_struct_definition_1_options_65": {
+      "options": [
+        "prevent accidential stick clicks move stick",
+        "prevent accidential stick clicks move stick (south paw)",
+        "prevent accidential stick clicks look stick",
+        "prevent accidential stick clicks look stick (south paw)"
+      ]
+    }
+  },
+  "datas": {}
+}

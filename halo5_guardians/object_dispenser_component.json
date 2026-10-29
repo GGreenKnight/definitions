@@ -1,0 +1,213 @@
+{
+  "name": "object_dispenser_component",
+  "tag": "odis",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "dispense_slot_4": {
+      "max_count": 2,
+      "struct": "dispense_slot_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "object_dispenser_component_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "dispense_slot_4": {
+      "guid": "2dd3032b4e2bf022dd817d93ac1686a1",
+      "size": 8,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "slot name"
+        },
+        {
+          "type": "string_id",
+          "name": "slot marker"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_dispenser_component_3": {
+      "guid": "f5015a2a4168aee7300620bebbf04ec9",
+      "size": 152,
+      "fields": [
+        {
+          "type": "block",
+          "name": "dispense slots",
+          "definition": "dispense_slot_4"
+        },
+        {
+          "type": "tag_reference",
+          "name": "incoming creation effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "ready effect",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "action string incoming"
+        },
+        {
+          "type": "char_enum",
+          "name": "respawn type",
+          "definition": "object_dispenser_component_3_options_4"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "object_dispenser_component_3_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "respawn time#set to > 0 to enable automatic spawning and respawning"
+        },
+        {
+          "type": "real",
+          "name": "incoming time mark#shows that the object is incoming when the respawn time remaining is this value"
+        },
+        {
+          "type": "real",
+          "name": "constructing time mark#shows that the object is constructing when the respawn time remaining is this value"
+        },
+        {
+          "type": "real",
+          "name": "damage acceleration scale horizontal"
+        },
+        {
+          "type": "real",
+          "name": "damage acceleration scale vertical"
+        },
+        {
+          "type": "real",
+          "name": "damage acceleration min horizontal:wu/s#applied after all scales"
+        },
+        {
+          "type": "real",
+          "name": "damage acceleration min vertical:wu/s#applied after all scales"
+        },
+        {
+          "type": "string_id",
+          "name": "incoming navpoint UI screen"
+        },
+        {
+          "type": "real",
+          "name": "navpoint visibility distance#distance that the navpoint is visibile from (<= 0 is infinite)"
+        },
+        {
+          "type": "custom",
+          "name": "Terminal"
+        },
+        {
+          "type": "real",
+          "name": "interaction radius:world units#radius that player is able to interact with this object"
+        },
+        {
+          "type": "long_flags",
+          "name": "Requisition Card Dispensable Types",
+          "definition": "object_dispenser_component_3_options_18"
+        },
+        {
+          "type": "string_id",
+          "name": "terminal navpoint UI screen"
+        },
+        {
+          "type": "pad",
+          "name": "pad1",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_dispenser_component_struct_definition_1": {
+      "guid": "c7a69cfb1d6bf8ea3db9057645cb88d6",
+      "size": 168,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "object dispenser component",
+          "definition": "object_dispenser_component_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "object_dispenser_component_3_options_4": {
+      "options": [
+        "frequency#respawns ever x seconds",
+        "on object removed",
+        "script controlled#game script will reset the respawn time"
+      ]
+    },
+    "object_dispenser_component_3_options_5": {
+      "options": [
+        "disable collision for readied objects"
+      ]
+    },
+    "object_dispenser_component_3_options_18": {
+      "options": [
+        "Boost",
+        "Prototype",
+        "Power-up",
+        "Vehicle",
+        "Weapon"
+      ]
+    }
+  },
+  "datas": {}
+}

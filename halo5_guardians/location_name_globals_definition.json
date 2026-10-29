@@ -1,0 +1,93 @@
+{
+  "name": "location_name_globals_definition",
+  "tag": "locs",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "location_name_block_3": {
+      "max_count": 1024,
+      "struct": "location_name_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "location_name_globals_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "location_name_block_3": {
+      "guid": "04dce9a544786a0932b18e8b6a5a8c2a",
+      "size": 4,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "location_name_globals_definition_struct_definition_1": {
+      "guid": "560f53b815938c1f106252d5a5cc6390",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "location names",
+          "definition": "location_name_block_3"
+        },
+        {
+          "type": "tag_reference",
+          "name": "location name string list",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

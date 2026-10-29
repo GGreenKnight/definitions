@@ -1,0 +1,238 @@
+{
+  "name": "render_water_ripple",
+  "tag": "rwrd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "render_water_ripple_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "render_water_ripple_struct_definition_1": {
+      "guid": "f96147bee76ff44052beb514e6f7a1fd",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "TYPE FLAGS"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "render_water_ripple_struct_definition_1_options_3"
+        },
+        {
+          "type": "custom",
+          "name": "INITIAL SETTINGS"
+        },
+        {
+          "type": "real",
+          "name": "initial radius{radius}"
+        },
+        {
+          "type": "real",
+          "name": "initial amplitude{amplitude}"
+        },
+        {
+          "type": "real",
+          "name": "spread speed"
+        },
+        {
+          "type": "real",
+          "name": "speed bias"
+        },
+        {
+          "type": "real",
+          "name": "position random range"
+        },
+        {
+          "type": "real",
+          "name": "max visibility distance"
+        },
+        {
+          "type": "custom",
+          "name": "LIFE SETTINGS"
+        },
+        {
+          "type": "real",
+          "name": "duration max"
+        },
+        {
+          "type": "real",
+          "name": "duration min"
+        },
+        {
+          "type": "real",
+          "name": "rise period ratio"
+        },
+        {
+          "type": "short_enum",
+          "name": "rise function",
+          "definition": "render_water_ripple_struct_definition_1_options_15"
+        },
+        {
+          "type": "short_enum",
+          "name": "descend function",
+          "definition": "render_water_ripple_struct_definition_1_options_16"
+        },
+        {
+          "type": "custom",
+          "name": "PENDULUM SETTINGS"
+        },
+        {
+          "type": "real",
+          "name": "phase revolution speed"
+        },
+        {
+          "type": "real",
+          "name": "phase repeat along radius"
+        },
+        {
+          "type": "custom",
+          "name": "SHAPE TRANSITION"
+        },
+        {
+          "type": "real",
+          "name": "pattern start idx"
+        },
+        {
+          "type": "real",
+          "name": "pattern end idx"
+        },
+        {
+          "type": "short_enum",
+          "name": "pattern transition",
+          "definition": "render_water_ripple_struct_definition_1_options_23"
+        },
+        {
+          "type": "pad",
+          "name": "SexyPadding1",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "FOAM"
+        },
+        {
+          "type": "real",
+          "name": "foam out radius"
+        },
+        {
+          "type": "real",
+          "name": "foam fade distance"
+        },
+        {
+          "type": "real",
+          "name": "foam duration"
+        },
+        {
+          "type": "short_enum",
+          "name": "foam fade function",
+          "definition": "render_water_ripple_struct_definition_1_options_29"
+        },
+        {
+          "type": "pad",
+          "name": "SexyPadding2",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "render_water_ripple_struct_definition_1_options_3": {
+      "options": [
+        "ripple drifted by flow",
+        "amplitude changed by pendulum function",
+        "display flash foam",
+        "foam size defined in game unit"
+      ]
+    },
+    "render_water_ripple_struct_definition_1_options_15": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    },
+    "render_water_ripple_struct_definition_1_options_16": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    },
+    "render_water_ripple_struct_definition_1_options_23": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    },
+    "render_water_ripple_struct_definition_1_options_29": {
+      "options": [
+        "linear",
+        "early",
+        "very early",
+        "late",
+        "very late",
+        "cosine",
+        "one",
+        "zero"
+      ]
+    }
+  },
+  "datas": {}
+}

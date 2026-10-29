@@ -1,0 +1,2134 @@
+{
+  "name": "light_volume_system",
+  "tag": "ltvl",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "material_shader_function_parameter_block_6": {
+      "max_count": 267,
+      "struct": "material_shader_function_parameter_block_6"
+    },
+    "material_shader_parameter_block_5": {
+      "max_count": 267,
+      "struct": "material_shader_parameter_block_5"
+    },
+    "material_postprocess_texture_block_9": {
+      "max_count": 32,
+      "struct": "material_postprocess_texture_block_9"
+    },
+    "material_shader_function_parameter_block_10": {
+      "max_count": 267,
+      "struct": "material_shader_function_parameter_block_10"
+    },
+    "functionParameterBlock_12": {
+      "max_count": 255,
+      "struct": "functionParameterBlock_12"
+    },
+    "externParameterBlock_13": {
+      "max_count": 255,
+      "struct": "externParameterBlock_13"
+    },
+    "materialConstantBlock_14": {
+      "max_count": 255,
+      "struct": "materialConstantBlock_14"
+    },
+    "materialConstantBlock_15": {
+      "max_count": 255,
+      "struct": "materialConstantBlock_15"
+    },
+    "material_postprocess_block_8": {
+      "max_count": 1,
+      "struct": "material_postprocess_block_8"
+    },
+    "gpu_property_block_34": {
+      "max_count": 20,
+      "struct": "gpu_property_block_34"
+    },
+    "gpu_function_block_36": {
+      "max_count": 28,
+      "struct": "gpu_function_block_36"
+    },
+    "gpu_color_block_38": {
+      "max_count": 8,
+      "struct": "gpu_color_block_38"
+    },
+    "light_volume_precompiled_vert_block_40": {
+      "max_count": 128,
+      "struct": "light_volume_precompiled_vert_block_40"
+    },
+    "light_volume_definition_block_3": {
+      "max_count": 16,
+      "struct": "light_volume_definition_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "light_volume_system_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_function_parameter_block_6": {
+      "guid": "5471f0e34472f54d16a555aded7b009a",
+      "size": 52,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "material_shader_function_parameter_block_6_options_0"
+        },
+        {
+          "type": "string_id",
+          "name": "input name"
+        },
+        {
+          "type": "string_id",
+          "name": "range name"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier!",
+          "definition": "material_shader_function_parameter_block_6_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "real",
+          "name": "time period:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "FUNCTION"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_parameter_block_5": {
+      "guid": "5e4b3e06473618a83f96cfbe9dd6ca42",
+      "size": 232,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "parameter name^*"
+        },
+        {
+          "type": "long_enum",
+          "name": "parameter type*",
+          "definition": "material_shader_parameter_block_5_options_1"
+        },
+        {
+          "type": "long_integer",
+          "name": "parameter index*!"
+        },
+        {
+          "type": "tag_reference",
+          "name": "bitmap",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "bitmap path"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "color"
+        },
+        {
+          "type": "real",
+          "name": "real"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "vector"
+        },
+        {
+          "type": "long_integer",
+          "name": "int/bool"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap flags"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap filter mode"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode x"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap address mode y"
+        },
+        {
+          "type": "word_integer",
+          "name": "bitmap sharpen mode"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap extern mode"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap min mipmap"
+        },
+        {
+          "type": "byte_integer",
+          "name": "bitmap max mipmap"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter flags!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phases used"
+        },
+        {
+          "type": "dword_integer",
+          "name": "shader types used"
+        },
+        {
+          "type": "block",
+          "name": "function parameters",
+          "definition": "material_shader_function_parameter_block_6"
+        },
+        {
+          "type": "data",
+          "name": "display name*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "display group*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "data",
+          "name": "display help text*",
+          "definition": "tag_data"
+        },
+        {
+          "type": "real",
+          "name": "display minimum"
+        },
+        {
+          "type": "real",
+          "name": "display maximum"
+        },
+        {
+          "type": "word_integer",
+          "name": "register offset*!"
+        },
+        {
+          "type": "word_integer",
+          "name": "register size*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_postprocess_texture_block_9": {
+      "guid": "cd9812ec4be13cd648fe3bb396a5bc0b",
+      "size": 56,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "bitmap reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "dword_integer",
+          "name": "shader stage mask"
+        },
+        {
+          "type": "word_integer",
+          "name": "frame index parameter"
+        },
+        {
+          "type": "word_integer",
+          "name": "sampler index"
+        },
+        {
+          "type": "word_integer",
+          "name": "transform register index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "extern texture mode"
+        },
+        {
+          "type": "pad",
+          "name": "lkasdfhbahsdf",
+          "definition": 1
+        },
+        {
+          "type": "int64_integer",
+          "name": "SamplerState!~"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_11": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_shader_function_parameter_block_10": {
+      "guid": "5471f0e34472f54d16a555aded7b009a",
+      "size": 52,
+      "fields": [
+        {
+          "type": "long_enum",
+          "name": "type^",
+          "definition": "material_shader_function_parameter_block_10_options_0"
+        },
+        {
+          "type": "string_id",
+          "name": "input name"
+        },
+        {
+          "type": "string_id",
+          "name": "range name"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier!",
+          "definition": "material_shader_function_parameter_block_10_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "BVCG",
+          "definition": 3
+        },
+        {
+          "type": "string_id",
+          "name": "Output Modifier Input!"
+        },
+        {
+          "type": "real",
+          "name": "time period:seconds"
+        },
+        {
+          "type": "custom",
+          "name": "FUNCTION"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "functionParameterBlock_12": {
+      "guid": "25a1ecc04cbeb81fe266949fdbcfa980",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "function index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "register offset"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter group"
+        },
+        {
+          "type": "pad",
+          "name": "DHaFS",
+          "definition": 1
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "externParameterBlock_13": {
+      "guid": "721182364f91b22cafda45a6bba5e7ab",
+      "size": 8,
+      "fields": [
+        {
+          "type": "byte_integer",
+          "name": "extern index"
+        },
+        {
+          "type": "byte_integer",
+          "name": "extern offset"
+        },
+        {
+          "type": "byte_integer",
+          "name": "parameter group"
+        },
+        {
+          "type": "pad",
+          "name": "DHaFS",
+          "definition": 1
+        },
+        {
+          "type": "dword_integer",
+          "name": "render phase mask"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "materialConstantBlock_14": {
+      "guid": "8333766c49c69913871f34aef2fb867f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_quaternion",
+          "name": "register"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "materialConstantBlock_15": {
+      "guid": "8333766c49c69913871f34aef2fb867f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real_quaternion",
+          "name": "register"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_queryable_properties_table_16": {
+      "guid": "d069a6be0b8924d087be4361aa46bc58",
+      "size": 4,
+      "fields": [
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "char_integer",
+          "name": "index"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "material_postprocess_block_8": {
+      "guid": "1d50d0c341c0c85257905b9ea3f398ce",
+      "size": 200,
+      "fields": [
+        {
+          "type": "block",
+          "name": "textures",
+          "definition": "material_postprocess_texture_block_9"
+        },
+        {
+          "type": "long_integer",
+          "name": "textures to clear"
+        },
+        {
+          "type": "block",
+          "name": "functions",
+          "definition": "material_shader_function_parameter_block_10"
+        },
+        {
+          "type": "block",
+          "name": "function parameters",
+          "definition": "functionParameterBlock_12"
+        },
+        {
+          "type": "block",
+          "name": "extern parameters",
+          "definition": "externParameterBlock_13"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "material_postprocess_block_8_options_5"
+        },
+        {
+          "type": "char_enum",
+          "name": "layer blend mode",
+          "definition": "material_postprocess_block_8_options_6"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "material_postprocess_block_8_options_7"
+        },
+        {
+          "type": "block",
+          "name": "material constants!~",
+          "definition": "materialConstantBlock_14"
+        },
+        {
+          "type": "block",
+          "name": "alternate constants!~",
+          "definition": "materialConstantBlock_15"
+        },
+        {
+          "type": "int64_integer",
+          "name": "materialConstantBuffer!~"
+        },
+        {
+          "type": "int64_integer",
+          "name": "alternateConstantBuffer!~"
+        },
+        {
+          "type": "dword_integer",
+          "name": "material constant shader stage mask"
+        },
+        {
+          "type": "struct",
+          "name": "runtime queryable properties table",
+          "definition": "runtime_queryable_properties_table_16"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "actual_material__4": {
+      "guid": "13810d2344063c15599476aa073df0a7",
+      "size": 112,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "material shader",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "material parameters",
+          "definition": "material_shader_parameter_block_5"
+        },
+        {
+          "type": "block",
+          "name": "postprocess definition!",
+          "definition": "material_postprocess_block_8"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 2"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 3"
+        },
+        {
+          "type": "string_id",
+          "name": "physics material name 4"
+        },
+        {
+          "type": "real",
+          "name": "sort offset"
+        },
+        {
+          "type": "char_enum",
+          "name": "alpha blend mode",
+          "definition": "actual_material__4_options_8"
+        },
+        {
+          "type": "char_enum",
+          "name": "sort layer*",
+          "definition": "actual_material__4_options_9"
+        },
+        {
+          "type": "byte_flags",
+          "name": "flags!",
+          "definition": "actual_material__4_options_10"
+        },
+        {
+          "type": "byte_flags",
+          "name": "render flags!",
+          "definition": "actual_material__4_options_11"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_18": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "length_17": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "length_17_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "length_17_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "length_17_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "length_17_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_18"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_20": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "offset_19": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "offset_19_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "offset_19_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "offset_19_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "offset_19_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_20"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_22": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_density_21": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_density_21_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_density_21_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_density_21_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_density_21_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_22"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_24": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_length_23": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_length_23_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_length_23_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_length_23_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_length_23_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_24"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_26": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_thickness_25": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_thickness_25_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_thickness_25_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_thickness_25_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_thickness_25_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_26"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_28": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_color_27": {
+      "guid": "59110fa94bee9d24f20fbb8ccf2e823a",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_color_27_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_color_27_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_color_27_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_color_27_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_28"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_30": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_alpha_29": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_alpha_29_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_alpha_29_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_alpha_29_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_alpha_29_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_30"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_32": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "profile_intensity_31": {
+      "guid": "bc2e916e459c13c10d6ebc82dde08c88",
+      "size": 40,
+      "fields": [
+        {
+          "type": "char_enum",
+          "name": "Input Variable",
+          "definition": "profile_intensity_31_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "Range Variable",
+          "definition": "profile_intensity_31_options_1"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier",
+          "definition": "profile_intensity_31_options_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Output Modifier Input",
+          "definition": "profile_intensity_31_options_3"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_32"
+        },
+        {
+          "type": "real",
+          "name": "runtime m_constant_value!"
+        },
+        {
+          "type": "word_integer",
+          "name": "runtime m_flags!"
+        },
+        {
+          "type": "pad",
+          "name": "DSFDSGLKJ",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_gpu_property_sub_array__35": {
+      "guid": "4f2ed9c02dc418b8ddd663984554b98f",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_property_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_property_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_property_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_property_real!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gpu_property_block_34": {
+      "guid": "a49c08234b6246cf47395ba40eda112d",
+      "size": 16,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "runtime gpu_property_sub_array!",
+          "definition": "runtime_gpu_property_sub_array__35"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_gpu_function_sub_array__37": {
+      "guid": "7bbd06f7ab567ff31e1390bba5516a64",
+      "size": 64,
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_function_real!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gpu_function_block_36": {
+      "guid": "e4f4c1fd4521776deaf4ccaacd0b3551",
+      "size": 64,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "runtime gpu_function_sub_array!",
+          "definition": "runtime_gpu_function_sub_array__37"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_gpu_color_sub_array__39": {
+      "guid": "dc9a6257f327f093172fda5302a01d0d",
+      "size": 16,
+      "fields": [
+        {
+          "type": "real",
+          "name": "runtime gpu_color_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_color_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_color_real!"
+        },
+        {
+          "type": "real",
+          "name": "runtime gpu_color_real!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "gpu_color_block_38": {
+      "guid": "77a26ffb43190c16d3c4e4814937dc69",
+      "size": 16,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "runtime gpu_color_sub_array!",
+          "definition": "runtime_gpu_color_sub_array__39"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_m_gpu_data__33": {
+      "guid": "33de233642c57c62318c5aadea782c99",
+      "size": 84,
+      "fields": [
+        {
+          "type": "block",
+          "name": "runtime gpu_property_block!",
+          "definition": "gpu_property_block_34"
+        },
+        {
+          "type": "block",
+          "name": "runtime gpu_functions_block!",
+          "definition": "gpu_function_block_36"
+        },
+        {
+          "type": "block",
+          "name": "runtime gpu_colors_block!",
+          "definition": "gpu_color_block_38"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "light_volume_precompiled_vert_block_40": {
+      "guid": "12fef6884acf36d540f716af96b1422a",
+      "size": 8,
+      "fields": [
+        {
+          "type": "word_integer",
+          "name": "r"
+        },
+        {
+          "type": "word_integer",
+          "name": "g"
+        },
+        {
+          "type": "word_integer",
+          "name": "b"
+        },
+        {
+          "type": "word_integer",
+          "name": "thickness"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "light_volume_definition_block_3": {
+      "guid": "7e3cf99b4af7b85c1800998f8adde1b1",
+      "size": 596,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "light_volume name^"
+        },
+        {
+          "type": "custom",
+          "name": "material"
+        },
+        {
+          "type": "struct",
+          "name": "actual material?",
+          "definition": "actual_material__4"
+        },
+        {
+          "type": "word_flags",
+          "name": "appearance flags",
+          "definition": "light_volume_definition_block_3_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "SONGWEOINGEW",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "brightness ratio#avg. brightness head-on/side-view"
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "light_volume_definition_block_3_options_6"
+        },
+        {
+          "type": "real",
+          "name": "LOD in distance#defaults to 0.0, ignored if 'lod enabled' not checked above"
+        },
+        {
+          "type": "real",
+          "name": "LOD feather in delta#defaults to 0.0, ignored if 'lod enabled' not checked above"
+        },
+        {
+          "type": "real",
+          "name": "inverse LOD feather in!"
+        },
+        {
+          "type": "real",
+          "name": "LOD out distance#defaults to 30.0, ignored if 'lod enabled' not checked above"
+        },
+        {
+          "type": "real",
+          "name": "LOD feather out delta#defaults to 10.0, ignored if 'lod enabled' not checked above"
+        },
+        {
+          "type": "real",
+          "name": "inverse LOD feather out!"
+        },
+        {
+          "type": "struct",
+          "name": "length",
+          "definition": "length_17"
+        },
+        {
+          "type": "struct",
+          "name": "offset",
+          "definition": "offset_19"
+        },
+        {
+          "type": "struct",
+          "name": "profile_density",
+          "definition": "profile_density_21"
+        },
+        {
+          "type": "struct",
+          "name": "profile_length",
+          "definition": "profile_length_23"
+        },
+        {
+          "type": "struct",
+          "name": "profile_thickness",
+          "definition": "profile_thickness_25"
+        },
+        {
+          "type": "struct",
+          "name": "profile_color",
+          "definition": "profile_color_27"
+        },
+        {
+          "type": "struct",
+          "name": "profile_alpha",
+          "definition": "profile_alpha_29"
+        },
+        {
+          "type": "struct",
+          "name": "profile_intensity",
+          "definition": "profile_intensity_31"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_constant_per_profile_properties!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_used_states!"
+        },
+        {
+          "type": "dword_integer",
+          "name": "runtime m_max_profile_count!"
+        },
+        {
+          "type": "struct",
+          "name": "runtime m_gpu_data!",
+          "definition": "runtime_m_gpu_data__33"
+        },
+        {
+          "type": "block",
+          "name": "precompiled vertices",
+          "definition": "light_volume_precompiled_vert_block_40"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "light_volume_system_struct_definition_1": {
+      "guid": "13a6098b762f2e509645625f4d6a0b5f",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "light_volumes",
+          "definition": "light_volume_definition_block_3"
+        },
+        {
+          "type": "pad",
+          "name": "pad_tp",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "material_shader_parameter_block_5_options_1": {
+      "options": [
+        "bitmap",
+        "real",
+        "int",
+        "bool",
+        "color"
+      ]
+    },
+    "material_shader_function_parameter_block_6_options_0": {
+      "options": [
+        "value",
+        "color",
+        "scale uniform",
+        "scale u",
+        "scale v",
+        "offset u",
+        "offset v",
+        "frame index",
+        "alpha"
+      ]
+    },
+    "material_shader_function_parameter_block_6_options_3": {
+      "options": [
+        " ",
+        "Add",
+        "Multiply"
+      ]
+    },
+    "material_shader_function_parameter_block_10_options_0": {
+      "options": [
+        "value",
+        "color",
+        "scale uniform",
+        "scale u",
+        "scale v",
+        "offset u",
+        "offset v",
+        "frame index",
+        "alpha"
+      ]
+    },
+    "material_shader_function_parameter_block_10_options_3": {
+      "options": [
+        " ",
+        "Add",
+        "Multiply"
+      ]
+    },
+    "material_postprocess_block_8_options_5": {
+      "options": [
+        "opaque",
+        "additive",
+        "multiply",
+        "alpha_blend",
+        "double_multiply",
+        "pre_multiplied_alpha",
+        "maximum",
+        "multiply_add",
+        "add_src_times_dstalpha",
+        "add_src_times_srcalpha",
+        "inv_alpha_blend",
+        "motion_blur_static",
+        "motion_blur_inhibit",
+        "alpha_blend_constant",
+        "overdraw_apply",
+        "wet_screen_effect",
+        "minimum",
+        "revsubtract",
+        "forge_lightmap",
+        "forge_lightmap_inv",
+        "replace_all_channels",
+        "alpha_blend_max",
+        "opaque_alpha_blend",
+        "alpha_blend_additive_transparent",
+        "floating shadow",
+        "decal_alpha_blend",
+        "decal_add_src_times_src_alpha",
+        "decal_multiply_add",
+        "wpf_blend_mode",
+        "wpf_no_color_blend_mode",
+        "blend forge analytic red",
+        "blend factor green only",
+        "blend forge analytic blue",
+        "blend factor alpha only",
+        "multiply red green only",
+        "multiply blue alpha only",
+        "decal opaque",
+        "accumulate_pre_multiplied_alpha",
+        "accumulate_multiply_add",
+        "accumulate_alpha_blend",
+        "accumulate_inverse_alpha_blend",
+        "accumulate_additive",
+        "accumulate_additive_transparent",
+        "accumulate_add_src_times_srcalpha",
+        "accumulate_multiply",
+        "ssao_multiply",
+        "ssao_alpha_channel_only",
+        "depth_peeling_blend_mode",
+        "depth_peeling_Z_pass",
+        "wpf_additive_blend_mode",
+        "forge_normalize",
+        "depth_peeling_accumulate_alpha",
+        "alpha_blend_for_display_planes",
+        "forge_light",
+        "forge_light_inverse",
+        "composite_UI"
+      ]
+    },
+    "material_postprocess_block_8_options_6": {
+      "options": [
+        "none",
+        "blended",
+        "layered"
+      ]
+    },
+    "material_postprocess_block_8_options_7": {
+      "options": [
+        "has material constant functions",
+        "has texture frame functions",
+        "disable atmosphere fog",
+        "uses depth camera",
+        "material is variable",
+        "has variable material constant functions",
+        "has at least one extern texture used"
+      ]
+    },
+    "actual_material__4_options_8": {
+      "options": [
+        "opaque",
+        "additive",
+        "multiply",
+        "alpha_blend",
+        "double_multiply",
+        "pre_multiplied_alpha",
+        "maximum",
+        "multiply_add",
+        "add_src_times_dstalpha",
+        "add_src_times_srcalpha",
+        "inv_alpha_blend",
+        "motion_blur_static",
+        "motion_blur_inhibit",
+        "alpha_blend_constant",
+        "overdraw_apply",
+        "wet_screen_effect",
+        "minimum",
+        "revsubtract",
+        "forge_lightmap",
+        "forge_lightmap_inv",
+        "replace_all_channels",
+        "alpha_blend_max",
+        "opaque_alpha_blend",
+        "alpha_blend_additive_transparent",
+        "floating shadow",
+        "decal_alpha_blend",
+        "decal_add_src_times_src_alpha",
+        "decal_multiply_add",
+        "wpf_blend_mode",
+        "wpf_no_color_blend_mode",
+        "blend forge analytic red",
+        "blend factor green only",
+        "blend forge analytic blue",
+        "blend factor alpha only",
+        "multiply red green only",
+        "multiply blue alpha only",
+        "decal opaque",
+        "accumulate_pre_multiplied_alpha",
+        "accumulate_multiply_add",
+        "accumulate_alpha_blend",
+        "accumulate_inverse_alpha_blend",
+        "accumulate_additive",
+        "accumulate_additive_transparent",
+        "accumulate_add_src_times_srcalpha",
+        "accumulate_multiply",
+        "ssao_multiply",
+        "ssao_alpha_channel_only",
+        "depth_peeling_blend_mode",
+        "depth_peeling_Z_pass",
+        "wpf_additive_blend_mode",
+        "forge_normalize",
+        "depth_peeling_accumulate_alpha",
+        "alpha_blend_for_display_planes",
+        "forge_light",
+        "forge_light_inverse",
+        "composite_UI"
+      ]
+    },
+    "actual_material__4_options_9": {
+      "options": [
+        "invalid",
+        "pre-pass",
+        "normal",
+        "post-pass"
+      ]
+    },
+    "actual_material__4_options_10": {
+      "options": [
+        "converted from shader",
+        "decal post lighting"
+      ]
+    },
+    "actual_material__4_options_11": {
+      "options": [
+        "no atmosphere fog",
+        "cull shields",
+        "cull active camo"
+      ]
+    },
+    "light_volume_definition_block_3_options_3": {
+      "options": []
+    },
+    "light_volume_definition_block_3_options_6": {
+      "options": [
+        "lod enabled#if not checked, the following flags do not matter, nor do LOD parameters below",
+        "lod always 1.0{ignore lod (render always)}",
+        "lod same in splitscreen",
+        "disable precompiled profiles",
+        "force precompile profiles",
+        "can be low res",
+        "precompiled!"
+      ]
+    },
+    "length_17_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "length_17_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "length_17_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "length_17_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "offset_19_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "offset_19_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "offset_19_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "offset_19_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_density_21_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_density_21_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_density_21_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_density_21_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_length_23_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_length_23_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_length_23_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_length_23_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_thickness_25_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_thickness_25_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_thickness_25_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_thickness_25_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_color_27_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_color_27_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_color_27_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_color_27_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_alpha_29_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_alpha_29_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_alpha_29_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_alpha_29_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_intensity_31_options_0": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_intensity_31_options_1": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    },
+    "profile_intensity_31_options_2": {
+      "options": [
+        " ",
+        "Plus",
+        "Times"
+      ]
+    },
+    "profile_intensity_31_options_3": {
+      "options": [
+        "profile position",
+        "game time",
+        "light volume age",
+        "light volume random",
+        "light volume correlation 1",
+        "light volume correlation 2",
+        "light volume lod",
+        "effect a scale",
+        "effect b scale",
+        "invalid state --- please set again"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {},
+    "tag_data": {}
+  }
+}

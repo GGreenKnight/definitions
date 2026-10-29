@@ -1,0 +1,1190 @@
+{
+  "name": "camera_fx_settings",
+  "tag": "cfxs",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "camera_fx_settings_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "exposure__3": {
+      "guid": "1fbecc294b7038c7479813af7bd65f3c",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "EXPOSURE"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "exposure__3_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "MKRGRF",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "exposure:stops#the target exposure (ONLY USED WHEN AUTO-EXPOSURE IS OFF)"
+        },
+        {
+          "type": "real",
+          "name": "maximum change:stops#the maximum allowed change in exposure between frames"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1):percent per frame#1 is instantaneous, 0.01 is a good speed, 0.001 is slower"
+        },
+        {
+          "type": "real",
+          "name": "minimum:stops#the absolute target exposure is clamped to this range"
+        },
+        {
+          "type": "real",
+          "name": "maximum:stops#the absolute target exposure is clamped to this range"
+        },
+        {
+          "type": "real",
+          "name": "auto-exposure screen brightness:[0.0001-1]#how bright you want the screen to be - auto-exposure will make it happen"
+        },
+        {
+          "type": "real",
+          "name": "auto-exposure delay:[0.1-1]seconds#how long to wait before auto-exposure kicks in to adjust the exposure"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "auto_exposure_sensitivity_4": {
+      "guid": "b2285d8b458580e5de6d11a4b5162a5a",
+      "size": 8,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "AUTO EXPOSURE SENSITIVITY"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "auto_exposure_sensitivity_4_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "MAKAMAKAHEY",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "sensitivity (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "exposure_pitch_influence_5": {
+      "guid": "2971e5c944cc4dc0b7b9fd9bace74812",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "EXPOSURE PITCH INFLUENCE"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "exposure_pitch_influence_5_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "MAKAMAKAHEY",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "INFLUENCE FUNCTION (GROUND -> HORIZON -> SKY)"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "function_8": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "exposure_compensation_7": {
+      "guid": "fcfba2314f27c66eca5fa4ab94b3fb6d",
+      "size": 32,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "EXPOSURE COMPENSATION"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "exposure_compensation_7_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "MAKAMAKAHEY",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "COMPENSATION FUNCTION (EXPOSURE MIN -> EXPOSURE MAX)"
+        },
+        {
+          "type": "struct",
+          "name": "function",
+          "definition": "function_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bloom_highlight_bloom_point__9": {
+      "guid": "5c28bdb241367aa74d2ed095ea817747",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "HIGHLIGHT BLOOM"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "bloom_highlight_bloom_point__9_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "LOTPRER",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "highlight bloom{bloom point}"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bloom_inherent_10": {
+      "guid": "1889c93248c8a56dd4d7b3b0f7d5dc01",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "AMBIENT BLOOM{INHERENT BLOOM}"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "bloom_inherent_10_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "ERIRLE",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "ambient bloom{inherent bloom}"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bloom_intensity_11": {
+      "guid": "a87763d240f3f5b2b02425a219d7dff5",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "BLOOM INTENSITY"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "bloom_intensity_11_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "SEMIFMD",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "bloom intensity"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bloom_layer_intensity__12": {
+      "guid": "a87763d340f4f5b2b12425a21ad7dff5",
+      "size": 24,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags!",
+          "definition": "bloom_layer_intensity__12_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "SEMIFMD",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "large layer intensity!#affects largest layer (least color bleed when applied)"
+        },
+        {
+          "type": "real",
+          "name": "medium layer intensity!"
+        },
+        {
+          "type": "real",
+          "name": "small layer intensity!#affects smallest layer (most color bleed when applied)"
+        },
+        {
+          "type": "real",
+          "name": "maximum change!"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "bloom_tint_color_13": {
+      "guid": "3318d9f04cd502ec1795e8adb5b69202",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "BLOOM TINT COLOR{BLOOM LARGE COLOR}"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "bloom_tint_color_13_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "KKROFI",
+          "definition": 2
+        },
+        {
+          "type": "real_rgb_color",
+          "name": "tint color{large color}"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illum_exposure_settings_14": {
+      "guid": "e684ad744d23c6d5c63660991b9111c0",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "SELF ILLUM EXPOSURE"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "self_illum_exposure_settings_14_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "JJFJFJKE",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "preferred exposure:stops#the preferred exposure for self illum"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illum_scale_15": {
+      "guid": "4545c7004fe42262e7e3fdb97bb89616",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "SELF ILLUM CHANGE"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "self_illum_scale_15_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "WOOGATCHOU",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "exposure change:[0-1]#how much the self illum is allowed to change, as a percentage of the normal exposure change"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illum_scale_unsc_16": {
+      "guid": "baf2d6c14c79c5d1122395af481bb807",
+      "size": 16,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "self_illum_scale_unsc_16_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "WOOGATCHOU",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "parameter value:#value of the self illum emissive parameter that can be used as an input for the material si_intensity to compensate for scene brightness"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illum_scale_covenant_17": {
+      "guid": "baf2d6c14c79c5d1122395af481bb807",
+      "size": 16,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "self_illum_scale_covenant_17_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "WOOGATCHOU",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "parameter value:#value of the self illum emissive parameter that can be used as an input for the material si_intensity to compensate for scene brightness"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "self_illum_scale_forerunner_18": {
+      "guid": "baf2d6c14c79c5d1122395af481bb807",
+      "size": 16,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "self_illum_scale_forerunner_18_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "WOOGATCHOU",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "parameter value:#value of the self illum emissive parameter that can be used as an input for the material si_intensity to compensate for scene brightness"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "deferred_reflection_intensity_19": {
+      "guid": "d16bd32d4c03afdf38d3a9b3f4e073fa",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "DEFERRED REFLECTION INTENSITY"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "deferred_reflection_intensity_19_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "ERIRLE",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "deferred reflection intensity"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "deferred_reflection_min_sort_distance_20": {
+      "guid": "4131272c40298c35ef37b581713199ce",
+      "size": 16,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "DEFERRED REFLECTION MINIMUM SORT DISTANCE"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "deferred_reflection_min_sort_distance_20_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "ERIRLE",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "deferred reflection minimum sort distance"
+        },
+        {
+          "type": "real",
+          "name": "maximum change"
+        },
+        {
+          "type": "real",
+          "name": "blend speed (0-1)"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "color_grading_21": {
+      "guid": "20d7eb23460388c0f8feb7be65851742",
+      "size": 40,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Color Grading"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "color_grading_21_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "SKHFDNV",
+          "definition": 2
+        },
+        {
+          "type": "tag_reference",
+          "name": "color grading texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "real",
+          "name": "blend time:seconds"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "filmic_tone_curve_22": {
+      "guid": "98708b0a418653b98d56839a5da1eba2",
+      "size": 88,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Filmic Tone Curve"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "filmic_tone_curve_22_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "MKRGRF",
+          "definition": 2
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "shoulder strength!#How intense the shoulder is"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "linear strength!#How intense the linear portion is"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "linear angle!#Angle of linear portion of curve"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "toe strength!#How intense the toe is"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "toe numerator!#Numerator of toe slope"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "toe denominator!#Denominator of toe slope"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "linear white point!#The white point in linear space"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "ssao_settings_23": {
+      "guid": "0877319bc1cfa444dd4f7d616e0ce4be",
+      "size": 44,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "SSAO settings"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "ssao_settings_23_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "agfth",
+          "definition": 2
+        },
+        {
+          "type": "word_flags",
+          "name": "ssao flags",
+          "definition": "ssao_settings_23_options_3"
+        },
+        {
+          "type": "pad",
+          "name": "dsadfgs",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "Radius"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Step size"
+        },
+        {
+          "type": "real",
+          "name": "Angle bias"
+        },
+        {
+          "type": "real",
+          "name": "Strength"
+        },
+        {
+          "type": "real",
+          "name": "Power exponent"
+        },
+        {
+          "type": "dword_integer",
+          "name": "Blur radius"
+        },
+        {
+          "type": "real",
+          "name": "Blur sharpness"
+        },
+        {
+          "type": "real",
+          "name": "Decorator apply darkening scaler#zero is no darkening"
+        },
+        {
+          "type": "real",
+          "name": "Hemi rejection falloff"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_lens_dirt_24": {
+      "guid": "07a2fbe1ab8a7ce5203fbce52b282df4",
+      "size": 44,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "Camera Lens Dirt Settings"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "camera_lens_dirt_24_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "agfth",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "Intensity"
+        },
+        {
+          "type": "tag_reference",
+          "name": "dirt texture",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "char_enum",
+          "name": "Dirt Type",
+          "definition": "camera_lens_dirt_24_options_5"
+        },
+        {
+          "type": "pad",
+          "name": "clds_pad_1",
+          "definition": 3
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_fx_settings_struct_definition_1": {
+      "guid": "8378875d67ec8dcfe2621756233bdfa8",
+      "size": 568,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "exposure!",
+          "definition": "exposure__3"
+        },
+        {
+          "type": "struct",
+          "name": "auto_exposure_sensitivity",
+          "definition": "auto_exposure_sensitivity_4"
+        },
+        {
+          "type": "struct",
+          "name": "exposure pitch influence",
+          "definition": "exposure_pitch_influence_5"
+        },
+        {
+          "type": "struct",
+          "name": "exposure compensation",
+          "definition": "exposure_compensation_7"
+        },
+        {
+          "type": "struct",
+          "name": "bloom_highlight{bloom_point}",
+          "definition": "bloom_highlight_bloom_point__9"
+        },
+        {
+          "type": "struct",
+          "name": "bloom_inherent",
+          "definition": "bloom_inherent_10"
+        },
+        {
+          "type": "struct",
+          "name": "bloom_intensity",
+          "definition": "bloom_intensity_11"
+        },
+        {
+          "type": "struct",
+          "name": "bloom_layer_intensity!",
+          "definition": "bloom_layer_intensity__12"
+        },
+        {
+          "type": "struct",
+          "name": "bloom_tint_color",
+          "definition": "bloom_tint_color_13"
+        },
+        {
+          "type": "struct",
+          "name": "self_illum_exposure_settings",
+          "definition": "self_illum_exposure_settings_14"
+        },
+        {
+          "type": "struct",
+          "name": "self_illum_scale",
+          "definition": "self_illum_scale_15"
+        },
+        {
+          "type": "custom",
+          "name": "SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (UNSC)"
+        },
+        {
+          "type": "struct",
+          "name": "self_illum_scale_unsc",
+          "definition": "self_illum_scale_unsc_16"
+        },
+        {
+          "type": "custom",
+          "name": "SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Covenant)"
+        },
+        {
+          "type": "struct",
+          "name": "self_illum_scale_covenant",
+          "definition": "self_illum_scale_covenant_17"
+        },
+        {
+          "type": "custom",
+          "name": "SELF ILLUM MATERIAL SHADER FUNCTION PARAMETER - (Forerunner)"
+        },
+        {
+          "type": "struct",
+          "name": "self_illum_scale_forerunner",
+          "definition": "self_illum_scale_forerunner_18"
+        },
+        {
+          "type": "struct",
+          "name": "deferred_reflection_intensity",
+          "definition": "deferred_reflection_intensity_19"
+        },
+        {
+          "type": "struct",
+          "name": "deferred_reflection_min_sort_distance",
+          "definition": "deferred_reflection_min_sort_distance_20"
+        },
+        {
+          "type": "custom",
+          "name": "EFFECT EXPOSURE OVERRIDE"
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect exposure override",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "struct",
+          "name": "color_grading",
+          "definition": "color_grading_21"
+        },
+        {
+          "type": "struct",
+          "name": "filmic_tone_curve",
+          "definition": "filmic_tone_curve_22"
+        },
+        {
+          "type": "struct",
+          "name": "ssao_settings",
+          "definition": "ssao_settings_23"
+        },
+        {
+          "type": "struct",
+          "name": "camera lens dirt",
+          "definition": "camera_lens_dirt_24"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "exposure__3_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "auto-adjust target",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "auto_exposure_sensitivity_4_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "exposure_pitch_influence_5_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "exposure_compensation_7_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "bloom_highlight_bloom_point__9_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "bloom_inherent_10_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "bloom_intensity_11_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "bloom_layer_intensity__12_options_0": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "bloom_tint_color_13_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "self_illum_exposure_settings_14_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "self_illum_scale_15_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "self_illum_scale_unsc_16_options_0": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "self_illum_scale_covenant_17_options_0": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "self_illum_scale_forerunner_18_options_0": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "deferred_reflection_intensity_19_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "deferred_reflection_min_sort_distance_20_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "color_grading_21_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "(unused2)!",
+        "fixed2!"
+      ]
+    },
+    "filmic_tone_curve_22_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "enabled",
+        "fixed2!"
+      ]
+    },
+    "ssao_settings_23_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "enabled",
+        "fixed2!"
+      ]
+    },
+    "ssao_settings_23_options_3": {
+      "options": [
+        "SSAO enabled"
+      ]
+    },
+    "camera_lens_dirt_24_options_1": {
+      "options": [
+        "use default (ignore these values)",
+        "maximum change is relative",
+        "(unused)!",
+        "bit3!",
+        "fixed!",
+        "enabled",
+        "fixed2!"
+      ]
+    },
+    "camera_lens_dirt_24_options_5": {
+      "options": [
+        "Apply at bloom res",
+        "Apply at full res"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "name": "FanfareDefinition",
+  "tag": "fanf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "FanfareDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "FanfareDefinition_struct_definition_1": {
+      "guid": "8dc6c4b3b0f97f19081fde73b22d79bd",
+      "size": 96,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "char_enum",
+          "name": "Type",
+          "definition": "FanfareDefinition_struct_definition_1_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 3
+        },
+        {
+          "type": "long_integer",
+          "name": "Priority#0 is highest priority"
+        },
+        {
+          "type": "string_id",
+          "name": "String identifier"
+        },
+        {
+          "type": "short_integer",
+          "name": "Sprite index"
+        },
+        {
+          "type": "short_integer",
+          "name": "Display time in seconds"
+        },
+        {
+          "type": "tag_reference",
+          "name": "Screen",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "Sound",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "FanfareDefinition_struct_definition_1_options_2": {
+      "options": [
+        "personal score",
+        "game score",
+        "game state",
+        "highlights",
+        "kill feed",
+        "quest feed"
+      ]
+    }
+  },
+  "datas": {}
+}

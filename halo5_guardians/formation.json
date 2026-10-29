@@ -1,0 +1,147 @@
+{
+  "name": "formation",
+  "tag": "form",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "formation_point_definition_4": {
+      "max_count": 8,
+      "struct": "formation_point_definition_4"
+    },
+    "formation_primitive_definition_3": {
+      "max_count": 4,
+      "struct": "formation_primitive_definition_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "formation_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "formation_point_definition_4": {
+      "guid": "23abaab1407ea50442a82ea083647b82",
+      "size": 8,
+      "fields": [
+        {
+          "type": "angle",
+          "name": "angle"
+        },
+        {
+          "type": "real",
+          "name": "offset"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "formation_primitive_definition_3": {
+      "guid": "8fa0d7084f88b9f3228145853321cacc",
+      "size": 52,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "formation_primitive_definition_3_options_0"
+        },
+        {
+          "type": "short_integer",
+          "name": "priority"
+        },
+        {
+          "type": "short_integer",
+          "name": "capacity*!"
+        },
+        {
+          "type": "pad",
+          "name": "post-capacity-pad",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "dist forwards"
+        },
+        {
+          "type": "real",
+          "name": "dist backwards"
+        },
+        {
+          "type": "real",
+          "name": "rank spacing"
+        },
+        {
+          "type": "real",
+          "name": "file spacing"
+        },
+        {
+          "type": "block",
+          "name": "points",
+          "definition": "formation_point_definition_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "formation_struct_definition_1": {
+      "guid": "f2d6705587d8bf2b12c6baac49cbca8b",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "primitives",
+          "definition": "formation_primitive_definition_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "formation_primitive_definition_3_options_0": {
+      "options": [
+        "radial",
+        "leader"
+      ]
+    }
+  },
+  "datas": {}
+}

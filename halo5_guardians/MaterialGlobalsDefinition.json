@@ -1,0 +1,866 @@
+{
+  "name": "MaterialGlobalsDefinition",
+  "tag": "glma",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "object_type_drag_properties_block_5": {
+      "max_count": 16,
+      "struct": "object_type_drag_properties_block_5"
+    },
+    "underwater_proxies_block_7": {
+      "max_count": 512,
+      "struct": "underwater_proxies_block_7"
+    },
+    "runtime_materials_block_3": {
+      "max_count": 512,
+      "struct": "runtime_materials_block_3"
+    },
+    "object_type_drag_properties_block_10": {
+      "max_count": 16,
+      "struct": "object_type_drag_properties_block_10"
+    },
+    "underwater_proxies_block_12": {
+      "max_count": 512,
+      "struct": "underwater_proxies_block_12"
+    },
+    "materials_block_8": {
+      "max_count": 256,
+      "struct": "materials_block_8"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "MaterialGlobalsDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_type_drag_properties_block_5": {
+      "guid": "12b22bb04906af9ebae6ccb065e3c4b6",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "drag properties",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "physics_properties_4": {
+      "guid": "8db8d6d84150833d61387da497dd3f5c",
+      "size": 104,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "flags!"
+        },
+        {
+          "type": "real",
+          "name": "friction"
+        },
+        {
+          "type": "real_fraction",
+          "name": "restitution"
+        },
+        {
+          "type": "real",
+          "name": "density:kg/m^3"
+        },
+        {
+          "type": "custom",
+          "name": "Drag"
+        },
+        {
+          "type": "tag_reference",
+          "name": "water physics drag properties",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "drag overrides",
+          "definition": "object_type_drag_properties_block_5"
+        },
+        {
+          "type": "custom",
+          "name": "Floatation"
+        },
+        {
+          "type": "pad",
+          "name": "default",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "super floater"
+        },
+        {
+          "type": "real",
+          "name": "floater"
+        },
+        {
+          "type": "real",
+          "name": "neutral"
+        },
+        {
+          "type": "real",
+          "name": "sinker"
+        },
+        {
+          "type": "real",
+          "name": "super sinker"
+        },
+        {
+          "type": "pad",
+          "name": "none",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sweeteners_6": {
+      "guid": "9f74bab94288c3664ffc2eb84b4c9259",
+      "size": 548,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener rolling",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener grinding",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee)#this is a medium sweetener and was the old default",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener rolling",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener grinding",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (melee)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "sweetener inheritance flags"
+        },
+        {
+          "type": "long_flags",
+          "name": "sweetener inheritance flags",
+          "definition": "sweeteners_6_options_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "underwater_proxies_block_7": {
+      "guid": "ad5f9353c7a3a0b96f40a0ba53266fc1",
+      "size": 12,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "when this material is encounted under a material of this type ..."
+        },
+        {
+          "type": "string_id",
+          "name": "underwater material"
+        },
+        {
+          "type": "custom",
+          "name": "... we report it as this material"
+        },
+        {
+          "type": "string_id",
+          "name": "proxy material"
+        },
+        {
+          "type": "short_integer",
+          "name": "underwater material type*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "proxy material type*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "runtime_materials_block_3": {
+      "guid": "83b9d6fb45b8e0f8963f5a94ee8af3d4",
+      "size": 736,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "string_id",
+          "name": "parent name"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime material index!"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "runtime_materials_block_3_options_3"
+        },
+        {
+          "type": "string_id",
+          "name": "general armor"
+        },
+        {
+          "type": "string_id",
+          "name": "specific armor"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime dry base material index!"
+        },
+        {
+          "type": "pad",
+          "name": "RMBP1",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "physics properties",
+          "definition": "physics_properties_4"
+        },
+        {
+          "type": "struct",
+          "name": "sweeteners",
+          "definition": "sweeteners_6"
+        },
+        {
+          "type": "tag_reference",
+          "name": "material effects",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "underwater proxies",
+          "definition": "underwater_proxies_block_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_type_drag_properties_block_10": {
+      "guid": "12b22bb04906af9ebae6ccb065e3c4b6",
+      "size": 32,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "drag properties",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "physics_properties_9": {
+      "guid": "8db8d6d84150833d61387da497dd3f5c",
+      "size": 104,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "flags!"
+        },
+        {
+          "type": "real",
+          "name": "friction"
+        },
+        {
+          "type": "real_fraction",
+          "name": "restitution"
+        },
+        {
+          "type": "real",
+          "name": "density:kg/m^3"
+        },
+        {
+          "type": "custom",
+          "name": "Drag"
+        },
+        {
+          "type": "tag_reference",
+          "name": "water physics drag properties",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "drag overrides",
+          "definition": "object_type_drag_properties_block_10"
+        },
+        {
+          "type": "custom",
+          "name": "Floatation"
+        },
+        {
+          "type": "pad",
+          "name": "default",
+          "definition": 4
+        },
+        {
+          "type": "real",
+          "name": "super floater"
+        },
+        {
+          "type": "real",
+          "name": "floater"
+        },
+        {
+          "type": "real",
+          "name": "neutral"
+        },
+        {
+          "type": "real",
+          "name": "sinker"
+        },
+        {
+          "type": "real",
+          "name": "super sinker"
+        },
+        {
+          "type": "pad",
+          "name": "none",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "sweeteners_11": {
+      "guid": "9f74bab94288c3664ffc2eb84b4c9259",
+      "size": 548,
+      "fields": [
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener rolling",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener grinding",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee)#this is a medium sweetener and was the old default",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "sound sweetener (melee large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener rolling",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener grinding",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "effect sweetener (melee)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (small)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (medium)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "water ripple (large)",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "sweetener inheritance flags"
+        },
+        {
+          "type": "long_flags",
+          "name": "sweetener inheritance flags",
+          "definition": "sweeteners_11_options_18"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "underwater_proxies_block_12": {
+      "guid": "ad5f9353c7a3a0b96f40a0ba53266fc1",
+      "size": 12,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "when this material is encounted under a material of this type ..."
+        },
+        {
+          "type": "string_id",
+          "name": "underwater material"
+        },
+        {
+          "type": "custom",
+          "name": "... we report it as this material"
+        },
+        {
+          "type": "string_id",
+          "name": "proxy material"
+        },
+        {
+          "type": "short_integer",
+          "name": "underwater material type*!"
+        },
+        {
+          "type": "short_integer",
+          "name": "proxy material type*!"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "materials_block_8": {
+      "guid": "4d5f915347a300b96f40afbc5c066fc5",
+      "size": 736,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "string_id",
+          "name": "parent name"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime material index!"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "materials_block_8_options_3"
+        },
+        {
+          "type": "string_id",
+          "name": "general armor"
+        },
+        {
+          "type": "string_id",
+          "name": "specific armor"
+        },
+        {
+          "type": "short_integer",
+          "name": "runtime dry base material index!"
+        },
+        {
+          "type": "pad",
+          "name": "RMBP1",
+          "definition": 2
+        },
+        {
+          "type": "struct",
+          "name": "physics properties",
+          "definition": "physics_properties_9"
+        },
+        {
+          "type": "struct",
+          "name": "sweeteners",
+          "definition": "sweeteners_11"
+        },
+        {
+          "type": "tag_reference",
+          "name": "material effects",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "block",
+          "name": "underwater proxies",
+          "definition": "underwater_proxies_block_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "MaterialGlobalsDefinition_struct_definition_1": {
+      "guid": "67669d416ab32af564255243341adad8",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "global material types"
+        },
+        {
+          "type": "string_id",
+          "name": "global water material#the default value for what material type water is"
+        },
+        {
+          "type": "string_id",
+          "name": "global air material#the default value for what material type air is"
+        },
+        {
+          "type": "short_integer",
+          "name": "global water material type!"
+        },
+        {
+          "type": "short_integer",
+          "name": "global air material type!"
+        },
+        {
+          "type": "block",
+          "name": "runtime materials*!",
+          "definition": "runtime_materials_block_3"
+        },
+        {
+          "type": "block",
+          "name": "materials",
+          "definition": "materials_block_8"
+        },
+        {
+          "type": "pad",
+          "name": "pad",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "runtime_materials_block_3_options_3": {
+      "options": [
+        "flammable",
+        "biomass",
+        "rad xfer interior"
+      ]
+    },
+    "sweeteners_6_options_18": {
+      "options": [
+        "sound_small",
+        "sound_medium",
+        "sound_large",
+        "sound_rolling",
+        "sound_grinding",
+        "sound_melee_small",
+        "sound_melee",
+        "sound_melee_large",
+        "effect_small",
+        "effect_medium",
+        "effect_large",
+        "effect_rolling",
+        "effect_grinding",
+        "effect_melee",
+        "water_ripple_small",
+        "water_ripple_medium",
+        "water_ripple_large"
+      ]
+    },
+    "materials_block_8_options_3": {
+      "options": [
+        "flammable",
+        "biomass",
+        "rad xfer interior"
+      ]
+    },
+    "sweeteners_11_options_18": {
+      "options": [
+        "sound_small",
+        "sound_medium",
+        "sound_large",
+        "sound_rolling",
+        "sound_grinding",
+        "sound_melee_small",
+        "sound_melee",
+        "sound_melee_large",
+        "effect_small",
+        "effect_medium",
+        "effect_large",
+        "effect_rolling",
+        "effect_grinding",
+        "effect_melee",
+        "water_ripple_small",
+        "water_ripple_medium",
+        "water_ripple_large"
+      ]
+    }
+  },
+  "datas": {}
+}

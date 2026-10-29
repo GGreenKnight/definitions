@@ -1,0 +1,285 @@
+{
+  "name": "simulated_input",
+  "tag": "sidt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "simulated_input_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "move_3": {
+      "guid": "259eac9340480d74b97c739b31585155",
+      "size": 72,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "move_3_options_0"
+        },
+        {
+          "type": "short_enum",
+          "name": "response type",
+          "definition": "move_3_options_1"
+        },
+        {
+          "type": "short_enum",
+          "name": "mapping type",
+          "definition": "move_3_options_2"
+        },
+        {
+          "type": "real_bounds",
+          "name": "angle:degrees"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_4"
+        },
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "real",
+          "name": "inverse duration:seconds#if >0.f, accumulated inpulse will be 'undone' over the give time span"
+        },
+        {
+          "type": "real",
+          "name": "inverse random length:percent#15.0 would randomly adjust length of accumulated impulse +/-15%"
+        },
+        {
+          "type": "real_bounds",
+          "name": "inverse random angle:degrees#apply random adjustment to direction of accumulated impulse"
+        },
+        {
+          "type": "real",
+          "name": "linear zoom penalty#linear multiplier of zoom that increases effect; computed for no change at zoom 1"
+        },
+        {
+          "type": "real",
+          "name": "square root zoom penalty#multiplier to increase effect proportional to square root of zoom; computed for no change at zoom 1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "look_5": {
+      "guid": "259eac9340480d74b97c739b31585155",
+      "size": 72,
+      "fields": [
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "look_5_options_0"
+        },
+        {
+          "type": "short_enum",
+          "name": "response type",
+          "definition": "look_5_options_1"
+        },
+        {
+          "type": "short_enum",
+          "name": "mapping type",
+          "definition": "look_5_options_2"
+        },
+        {
+          "type": "real_bounds",
+          "name": "angle:degrees"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_6"
+        },
+        {
+          "type": "real",
+          "name": "duration:seconds"
+        },
+        {
+          "type": "real",
+          "name": "inverse duration:seconds#if >0.f, accumulated inpulse will be 'undone' over the give time span"
+        },
+        {
+          "type": "real",
+          "name": "inverse random length:percent#15.0 would randomly adjust length of accumulated impulse +/-15%"
+        },
+        {
+          "type": "real_bounds",
+          "name": "inverse random angle:degrees#apply random adjustment to direction of accumulated impulse"
+        },
+        {
+          "type": "real",
+          "name": "linear zoom penalty#linear multiplier of zoom that increases effect; computed for no change at zoom 1"
+        },
+        {
+          "type": "real",
+          "name": "square root zoom penalty#multiplier to increase effect proportional to square root of zoom; computed for no change at zoom 1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "simulated_input_struct_definition_1": {
+      "guid": "ccbb306c30657bff38b4630785bcff97",
+      "size": 160,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "Simulated Input (SI)"
+        },
+        {
+          "type": "custom",
+          "name": "Impulse"
+        },
+        {
+          "type": "custom",
+          "name": "Scalers"
+        },
+        {
+          "type": "custom",
+          "name": "Screen Space angles"
+        },
+        {
+          "type": "custom",
+          "name": "Move"
+        },
+        {
+          "type": "struct",
+          "name": "move",
+          "definition": "move_3"
+        },
+        {
+          "type": "custom",
+          "name": "Look"
+        },
+        {
+          "type": "struct",
+          "name": "look",
+          "definition": "look_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "move_3_options_0": {
+      "options": [
+        "ignore base scaler#Always start with 1.0 instead of any value from damage multiplier value",
+        "ignore area control falloff#Skip this scaler",
+        "ignore elapsed time function scaler#Skip this scaler",
+        "ignore zoom scaler#Skip this scaler",
+        "ignore tick_delta_secs scaler#Skip this scaler"
+      ]
+    },
+    "move_3_options_1": {
+      "options": [
+        "aim vector",
+        "hit vector",
+        "inverse hit vector",
+        "attacker origin to victim origin",
+        "victim origin to attacker origin"
+      ]
+    },
+    "move_3_options_2": {
+      "options": [
+        "top down",
+        "screen space"
+      ]
+    },
+    "look_5_options_0": {
+      "options": [
+        "ignore base scaler#Always start with 1.0 instead of any value from damage multiplier value",
+        "ignore area control falloff#Skip this scaler",
+        "ignore elapsed time function scaler#Skip this scaler",
+        "ignore zoom scaler#Skip this scaler",
+        "ignore tick_delta_secs scaler#Skip this scaler"
+      ]
+    },
+    "look_5_options_1": {
+      "options": [
+        "aim vector",
+        "hit vector",
+        "inverse hit vector",
+        "attacker origin to victim origin",
+        "victim origin to attacker origin"
+      ]
+    },
+    "look_5_options_2": {
+      "options": [
+        "top down",
+        "screen space"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

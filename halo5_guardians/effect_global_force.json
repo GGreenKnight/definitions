@@ -1,0 +1,134 @@
+{
+  "name": "effect_global_force",
+  "tag": "egfd",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "effect_global_force_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "force_3": {
+      "guid": "395eddae4b02769f2b0835bfe1c7581d",
+      "size": 40,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "flags",
+          "definition": "force_3_options_0"
+        },
+        {
+          "type": "char_enum",
+          "name": "shape",
+          "definition": "force_3_options_1"
+        },
+        {
+          "type": "byte_integer",
+          "name": "version!"
+        },
+        {
+          "type": "pad",
+          "name": "grog",
+          "definition": 1
+        },
+        {
+          "type": "real",
+          "name": "normal force strength#force strength perpendicular to shape surface, positive pushes out, negative pulls in{force strength}"
+        },
+        {
+          "type": "real",
+          "name": "tangent force strength#force strength tangent to shape surface and aligned to particle velocity"
+        },
+        {
+          "type": "real",
+          "name": "binormal force strength#force strength binormal to shape surface and perpendicular to particle velocity"
+        },
+        {
+          "type": "real",
+          "name": "falloff begin:wus{sphere falloff begin}"
+        },
+        {
+          "type": "real",
+          "name": "falloff end:wus{sphere falloff end}"
+        },
+        {
+          "type": "real",
+          "name": "max speed#maximum speed from attached object that optionally gets normalized and multiplied with the force"
+        },
+        {
+          "type": "real_vector_3d",
+          "name": "direction override"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "effect_global_force_struct_definition_1": {
+      "guid": "26c5bce0ab9e566ba61ec7117009261b",
+      "size": 56,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "struct",
+          "name": "force",
+          "definition": "force_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "force_3_options_0": {
+      "options": [
+        "is infinitely long cylinder!",
+        "multiply force by attached object speed",
+        "override force direction"
+      ]
+    },
+    "force_3_options_1": {
+      "options": [
+        "sphere",
+        "cylinder",
+        "plane"
+      ]
+    }
+  },
+  "datas": {}
+}

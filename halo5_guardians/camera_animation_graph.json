@@ -1,0 +1,186 @@
+{
+  "name": "camera_animation_graph",
+  "tag": "camg",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "cameraTrackControlPointBlock_5": {
+      "max_count": 2000,
+      "struct": "cameraTrackControlPointBlock_5"
+    },
+    "cameraTrackLensBlock_6": {
+      "max_count": 2000,
+      "struct": "cameraTrackLensBlock_6"
+    },
+    "cameraTrackAnimationBlock_3": {
+      "max_count": 1024,
+      "struct": "cameraTrackAnimationBlock_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "camera_animation_graph_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cameraTrackControlPointBlock_5": {
+      "guid": "cd7602fd4e94e438b85a47b9e207f745",
+      "size": 28,
+      "fields": [
+        {
+          "type": "real_vector_3d",
+          "name": "position"
+        },
+        {
+          "type": "real_quaternion",
+          "name": "orientation"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cameraTrackLensBlock_6": {
+      "guid": "38defdd940ba91f49d02fea1c0cd72c9",
+      "size": 16,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "cameraTrackLensBlock_6_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "real",
+          "name": "Focal Length"
+        },
+        {
+          "type": "real",
+          "name": "Focus Distance"
+        },
+        {
+          "type": "real",
+          "name": "FStop"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Track_4": {
+      "guid": "6968aa004bea4b75277808808f4f4201",
+      "size": 60,
+      "fields": [
+        {
+          "type": "byte_flags",
+          "name": "Flags",
+          "definition": "Track_4_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "PAD1!",
+          "definition": 3
+        },
+        {
+          "type": "block",
+          "name": "Control Points",
+          "definition": "cameraTrackControlPointBlock_5"
+        },
+        {
+          "type": "block",
+          "name": "Lenses",
+          "definition": "cameraTrackLensBlock_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cameraTrackAnimationBlock_3": {
+      "guid": "852200174ce57276ae018a8b0b83d37e",
+      "size": 64,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Name^"
+        },
+        {
+          "type": "struct",
+          "name": "Track",
+          "definition": "Track_4"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_animation_graph_struct_definition_1": {
+      "guid": "8ba90b739285de7873fce116d83341be",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "Animations",
+          "definition": "cameraTrackAnimationBlock_3"
+        },
+        {
+          "type": "pad",
+          "name": "EXPLICIT_PAD!",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "Track_4_options_0": {
+      "options": [
+        "Lens Enabled"
+      ]
+    },
+    "cameraTrackLensBlock_6_options_0": {
+      "options": [
+        "Depth Of Field Enabled"
+      ]
+    }
+  },
+  "datas": {}
+}

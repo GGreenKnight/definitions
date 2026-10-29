@@ -1,0 +1,523 @@
+{
+  "name": "damage_response_definition",
+  "tag": "drdf",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "damage_response_global_sound_effect_block_6": {
+      "max_count": 1,
+      "struct": "damage_response_global_sound_effect_block_6"
+    },
+    "damage_response_class_block_3": {
+      "max_count": 2,
+      "struct": "damage_response_class_block_3"
+    },
+    "area_control_block_8": {
+      "max_count": 1,
+      "struct": "area_control_block_8"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "damage_response_definition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "directional_flash_4": {
+      "guid": "d18eb7b1416fe169b699cab590a216c3",
+      "size": 68,
+      "fields": [
+        {
+          "type": "real",
+          "name": "indicator duration"
+        },
+        {
+          "type": "real",
+          "name": "flash duration {duration}"
+        },
+        {
+          "type": "short_enum",
+          "name": "fade function",
+          "definition": "directional_flash_4_options_2"
+        },
+        {
+          "type": "pad",
+          "name": "ZASSFACE",
+          "definition": 2
+        },
+        {
+          "type": "real",
+          "name": "center size"
+        },
+        {
+          "type": "real",
+          "name": "offscreen size{size}"
+        },
+        {
+          "type": "real",
+          "name": "center alpha"
+        },
+        {
+          "type": "real",
+          "name": "offscreen alpha"
+        },
+        {
+          "type": "real",
+          "name": "inner alpha{inner scale}"
+        },
+        {
+          "type": "real",
+          "name": "outer alpha{outer scale}"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "flash color"
+        },
+        {
+          "type": "real_argb_color",
+          "name": "arrow color"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "motion_sensor_ping_5": {
+      "guid": "3d5cca564c200d29b2fda78fbe1c2d01",
+      "size": 4,
+      "fields": [
+        {
+          "type": "short_integer",
+          "name": "ping duration:ticks"
+        },
+        {
+          "type": "short_integer",
+          "name": "ping scale"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "scale____duration_seconds_7": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damage_response_global_sound_effect_block_6": {
+      "guid": "d8af888d45545da50382fa8016ed6ec9",
+      "size": 32,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "effect name"
+        },
+        {
+          "type": "struct",
+          "name": "scale => duration:seconds",
+          "definition": "scale____duration_seconds_7"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damage_response_class_block_3": {
+      "guid": "4b0239eb4e9fe7e435863c9a9bf660a6",
+      "size": 456,
+      "fields": [
+        {
+          "type": "short_enum",
+          "name": "type",
+          "definition": "damage_response_class_block_3_options_0"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "damage_response_class_block_3_options_1"
+        },
+        {
+          "type": "custom",
+          "name": "directional flash"
+        },
+        {
+          "type": "struct",
+          "name": "directional flash",
+          "definition": "directional_flash_4"
+        },
+        {
+          "type": "custom",
+          "name": "motion sensor ping"
+        },
+        {
+          "type": "struct",
+          "name": "motion sensor ping",
+          "definition": "motion_sensor_ping_5"
+        },
+        {
+          "type": "custom",
+          "name": "rumble"
+        },
+        {
+          "type": "tag_reference",
+          "name": "rumble{rumble data}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "rumble descope#if not specified, it will fallback to rumble",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "camera shake and impulse data"
+        },
+        {
+          "type": "tag_reference",
+          "name": "camera shake{camera shake data}",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "camera shake zoomed{camera shake data} #falls back on camerashake if untuned",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "camera shake descope#if not specified, it will fallback to zoomed",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "Flinch"
+        },
+        {
+          "type": "tag_reference",
+          "name": "flinch impulse",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "flinch impulse ads#if not specified, it will fallback to non-ads",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "flinch impulse descope#if not specified, it will fall back to ads",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "simulated input"
+        },
+        {
+          "type": "tag_reference",
+          "name": "simulated_input",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "simulated_input zoomed #falls back on simulated input if untuned",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "tag_reference",
+          "name": "simulated_input descope #if not specified, fallsback to zoomed",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "custom",
+          "name": "global sound effect"
+        },
+        {
+          "type": "block",
+          "name": "global sound effect",
+          "definition": "damage_response_global_sound_effect_block_6"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_10": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "distance_falloff_9": {
+      "guid": "3ef80f86468c0f31a20ec4b43aca386e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_10"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_12": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "angle_falloff_11": {
+      "guid": "3ef80f86468c0f31a20ec4b43aca386e",
+      "size": 28,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_12"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "Mapping_14": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "object_falloff_13": {
+      "guid": "3d2f4f414657f93ca27007a78e3f4107",
+      "size": 36,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "Input Variable!"
+        },
+        {
+          "type": "string_id",
+          "name": "Range Variable!"
+        },
+        {
+          "type": "struct",
+          "name": "Mapping",
+          "definition": "Mapping_14"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "area_control_block_8": {
+      "guid": "865d9c154f672638176b338fde738ae2",
+      "size": 100,
+      "fields": [
+        {
+          "type": "custom",
+          "name": "AREA CONTROL"
+        },
+        {
+          "type": "word_flags",
+          "name": "flags",
+          "definition": "area_control_block_8_options_1"
+        },
+        {
+          "type": "pad",
+          "name": "DRCS",
+          "definition": 2
+        },
+        {
+          "type": "custom",
+          "name": "Distance Falloff"
+        },
+        {
+          "type": "real",
+          "name": "maximum distance:world units#the maximum distance this player feedback will affect"
+        },
+        {
+          "type": "struct",
+          "name": "distance falloff",
+          "definition": "distance_falloff_9"
+        },
+        {
+          "type": "custom",
+          "name": "Angle Falloff"
+        },
+        {
+          "type": "struct",
+          "name": "angle falloff",
+          "definition": "angle_falloff_11"
+        },
+        {
+          "type": "custom",
+          "name": "Object Falloff"
+        },
+        {
+          "type": "struct",
+          "name": "object falloff",
+          "definition": "object_falloff_13"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "damage_response_definition_struct_definition_1": {
+      "guid": "46607f0b4855af7bbdbb42fba278da43",
+      "size": 72,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "block",
+          "name": "classes",
+          "definition": "damage_response_class_block_3"
+        },
+        {
+          "type": "block",
+          "name": "area control",
+          "definition": "area_control_block_8"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "damage_response_class_block_3_options_0": {
+      "options": [
+        "shielded",
+        "unshielded",
+        "all"
+      ]
+    },
+    "damage_response_class_block_3_options_1": {
+      "options": [
+        "ignore on no damage",
+        "suppress directional damage flashes",
+        "suppress directional damage arrows",
+        "only when zoomed#if target is zoomed",
+        "sound effect only applied when scale is full"
+      ]
+    },
+    "directional_flash_4_options_2": {
+      "options": [
+        "linear",
+        "late",
+        "very late",
+        "early",
+        "very early",
+        "cosine",
+        "zero",
+        "one"
+      ]
+    },
+    "area_control_block_8_options_1": {
+      "options": [
+        "distance_falloff",
+        "angle_falloff",
+        "object function falloff",
+        "use unit position#use the head position and facing vector of the unit instead of the player camera"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

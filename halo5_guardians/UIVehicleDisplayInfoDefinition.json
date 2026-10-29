@@ -1,0 +1,188 @@
+{
+  "name": "UIVehicleDisplayInfoDefinition",
+  "tag": "uivi",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "UIItemInfoBlock_3": {
+      "max_count": 1,
+      "struct": "UIItemInfoBlock_3"
+    },
+    "UIVehicleSeatTagBlockDefinition_4": {
+      "max_count": 8,
+      "struct": "UIVehicleSeatTagBlockDefinition_4"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "UIVehicleDisplayInfoDefinition_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIItemInfoBlock_3": {
+      "guid": "6bb873fd472b52c677909b90d0074580",
+      "size": 128,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "display name#friendly name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "description#general in-universe item description"
+        },
+        {
+          "type": "string_id",
+          "name": "help text#verbose usage info for use during gameplay"
+        },
+        {
+          "type": "string_id",
+          "name": "icon string id#legacy, from when we embedded the sprites into the font to get streaming behaviour"
+        },
+        {
+          "type": "tag_reference",
+          "name": "sprite#bitmap file representing this item",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "sprite index#frame inside the item's image strip which shows this item "
+        },
+        {
+          "type": "tag_reference",
+          "name": "alt sprite#secondary bitmap file representing this item. for detail images, overlays etc.",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_integer",
+          "name": "alt sprite index#alt sprite's frame"
+        },
+        {
+          "type": "tag_reference",
+          "name": "ui vehicle screen reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIVehicleSeatTagBlockDefinition_4": {
+      "guid": "aec19f9942c2c8d8211e2ab6058629f1",
+      "size": 20,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "label"
+        },
+        {
+          "type": "string_id",
+          "name": "Boarding Grenade String"
+        },
+        {
+          "type": "string_id",
+          "name": "Boarding Melee String"
+        },
+        {
+          "type": "string_id",
+          "name": "In Seat String"
+        },
+        {
+          "type": "string_id",
+          "name": "Enter Seat String"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "UIVehicleDisplayInfoDefinition_struct_definition_1": {
+      "guid": "7a420516f38736aa5cf840c151b4fd5e",
+      "size": 88,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "name^#short name for the item"
+        },
+        {
+          "type": "string_id",
+          "name": "Vehicle Flip String"
+        },
+        {
+          "type": "string_id",
+          "name": "Tint Color"
+        },
+        {
+          "type": "block",
+          "name": "UI Info",
+          "definition": "UIItemInfoBlock_3"
+        },
+        {
+          "type": "block",
+          "name": "Seats",
+          "definition": "UIVehicleSeatTagBlockDefinition_4"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {},
+  "datas": {}
+}

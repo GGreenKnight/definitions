@@ -1,0 +1,90 @@
+{
+  "name": "assetPhotoToolPhotoSpecTag",
+  "tag": "appt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "assetPhotoToolPhotoSpecTag_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "assetPhotoToolPhotoSpecTag_struct_definition_1": {
+      "guid": "ffdc83596f781fb3d83c95c932f85a0e",
+      "size": 80,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "tag_reference",
+          "name": "composition reference",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "long_flags",
+          "name": "flags",
+          "definition": "assetPhotoToolPhotoSpecTag_struct_definition_1_options_3"
+        },
+        {
+          "type": "real_point_3d",
+          "name": "position override#only used if 'override transform' is checked"
+        },
+        {
+          "type": "real_euler_angles_3d",
+          "name": "orientation override#only used if 'override transform' is checked"
+        },
+        {
+          "type": "pad",
+          "name": "pad0",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "assetPhotoToolPhotoSpecTag_struct_definition_1_options_3": {
+      "options": [
+        "override transform"
+      ]
+    }
+  },
+  "datas": {}
+}

@@ -1,0 +1,242 @@
+{
+  "name": "camera_shake",
+  "tag": "csdt",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "root": {
+      "max_count": 1,
+      "struct": "camera_shake_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mapping_4": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_impulse_3": {
+      "guid": "e55ad1cc4f822248879aeeaadf4c0be6",
+      "size": 48,
+      "fields": [
+        {
+          "type": "real",
+          "name": "impulse duration:seconds"
+        },
+        {
+          "type": "struct",
+          "name": "mapping",
+          "definition": "mapping_4"
+        },
+        {
+          "type": "angle",
+          "name": "rotation:degrees"
+        },
+        {
+          "type": "real",
+          "name": "pushback:world units"
+        },
+        {
+          "type": "real_bounds",
+          "name": "jitter:world units"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "mapping_6": {
+      "guid": "5a14a98f448453fad46810809e45f10a",
+      "size": 28,
+      "fields": [
+        {
+          "type": "data",
+          "name": "data",
+          "definition": "function_definition_data"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_shake_5": {
+      "guid": "214329494b806e211bd3d28bae9fac44",
+      "size": 96,
+      "fields": [
+        {
+          "type": "real",
+          "name": "shake duration:seconds#the effect will last for this duration."
+        },
+        {
+          "type": "custom",
+          "name": "procedural camera shake"
+        },
+        {
+          "type": "struct",
+          "name": "mapping",
+          "definition": "mapping_6"
+        },
+        {
+          "type": "real",
+          "name": "random translation:world units#random translation in all directions"
+        },
+        {
+          "type": "angle",
+          "name": "random rotation:degrees#random rotation in all directions"
+        },
+        {
+          "type": "real",
+          "name": "wobble function period:seconds"
+        },
+        {
+          "type": "real_fraction",
+          "name": "wobble weight#a value of 0.0 signifies that the wobble function has no effect; a value of 1.0 the wobble function completely scales the translational  and rotational magnitudes.  The less the weight, the less the effect wobble has."
+        },
+        {
+          "type": "short_enum",
+          "name": "wobble function#a function to perturb the effect's behavior over time",
+          "definition": "camera_shake_5_options_7"
+        },
+        {
+          "type": "custom",
+          "name": "animated camera shake"
+        },
+        {
+          "type": "char_enum",
+          "name": "animated shake playback",
+          "definition": "camera_shake_5_options_9"
+        },
+        {
+          "type": "char_enum",
+          "name": "animated shake weight",
+          "definition": "camera_shake_5_options_10"
+        },
+        {
+          "type": "tag_reference",
+          "name": "animation graph",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "animation name"
+        },
+        {
+          "type": "real",
+          "name": "zoom penalty linear #multiplier penalty that increases linearly with zoom over 1"
+        },
+        {
+          "type": "real",
+          "name": "zoom penalty squareroot #multiplier penalty that increases with square root of zoom over 1"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "camera_shake_struct_definition_1": {
+      "guid": "adbba09a29dd02224778e5e3e3f0265f",
+      "size": 160,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "custom",
+          "name": "camera impulse"
+        },
+        {
+          "type": "struct",
+          "name": "camera impulse",
+          "definition": "camera_impulse_3"
+        },
+        {
+          "type": "custom",
+          "name": "camera shake"
+        },
+        {
+          "type": "struct",
+          "name": "camera shake",
+          "definition": "camera_shake_5"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "camera_shake_5_options_7": {
+      "options": [
+        "one",
+        "zero",
+        "cosine",
+        "cosine (variable period)",
+        "diagonal wave",
+        "diagonal wave (variable period)",
+        "slide",
+        "slide (variable period)",
+        "noise",
+        "jitter",
+        "wander",
+        "spark"
+      ]
+    },
+    "camera_shake_5_options_9": {
+      "options": [
+        "looping",
+        "frame ratio"
+      ]
+    },
+    "camera_shake_5_options_10": {
+      "options": [
+        "effect scale",
+        "full"
+      ]
+    }
+  },
+  "datas": {
+    "function_definition_data": {}
+  }
+}

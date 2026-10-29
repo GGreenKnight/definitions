@@ -1,0 +1,442 @@
+{
+  "name": "squad_template",
+  "tag": "sqtm",
+  "version": 0,
+  "flags": 0,
+  "block": "root",
+  "field_type_sizes": {
+    "block": 28,
+    "data": 28,
+    "tag reference": 32
+  },
+  "blocks": {
+    "character_ref_choice_block_5": {
+      "max_count": 8,
+      "struct": "character_ref_choice_block_5"
+    },
+    "weapon_ref_choice_block_7": {
+      "max_count": 8,
+      "struct": "weapon_ref_choice_block_7"
+    },
+    "weapon_ref_choice_block_9": {
+      "max_count": 8,
+      "struct": "weapon_ref_choice_block_9"
+    },
+    "equipment_ref_choice_block_11": {
+      "max_count": 8,
+      "struct": "equipment_ref_choice_block_11"
+    },
+    "cell_template_block_3": {
+      "max_count": 10,
+      "struct": "cell_template_block_3"
+    },
+    "root": {
+      "max_count": 1,
+      "struct": "squad_template_struct_definition_1"
+    }
+  },
+  "structs": {
+    "internal_struct_2": {
+      "guid": "151d0146479c181f3970ec869043bc33",
+      "size": 8,
+      "fields": [
+        {
+          "type": "long_integer",
+          "name": "global tag ID!"
+        },
+        {
+          "type": "pad",
+          "name": "local tag handle!~",
+          "definition": 4
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "place_on_4": {
+      "guid": "f95bf66a44154676112fc5b6cf15deef",
+      "size": 4,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "place_on_4_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "place_on_6": {
+      "guid": "f95bf66a44154676112fc5b6cf15deef",
+      "size": 4,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "place_on_6_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "character_ref_choice_block_5": {
+      "guid": "01e52f154df871c367ea8fa501f63d4e",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "place_on_6"
+        },
+        {
+          "type": "tag_reference",
+          "name": "character type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "place_on_8": {
+      "guid": "f95bf66a44154676112fc5b6cf15deef",
+      "size": 4,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "place_on_8_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_ref_choice_block_7": {
+      "guid": "75ee09284fc6d53e8e2ada834fc9df7c",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "place_on_8"
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "place_on_10": {
+      "guid": "f95bf66a44154676112fc5b6cf15deef",
+      "size": 4,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "place_on_10_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "weapon_ref_choice_block_9": {
+      "guid": "75ee09284fc6d53e8e2ada834fc9df7c",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "place_on_10"
+        },
+        {
+          "type": "tag_reference",
+          "name": "weapon type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "place_on_12": {
+      "guid": "f95bf66a44154676112fc5b6cf15deef",
+      "size": 4,
+      "fields": [
+        {
+          "type": "word_flags",
+          "name": "difficulty flags",
+          "definition": "place_on_12_options_0"
+        },
+        {
+          "type": "pad",
+          "name": "post-difficulty-flags-padding",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "equipment_ref_choice_block_11": {
+      "guid": "adf3a9b84ea7faca316d2caa394970df",
+      "size": 40,
+      "fields": [
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "place_on_12"
+        },
+        {
+          "type": "tag_reference",
+          "name": "equipment type^",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "short_integer",
+          "name": "chance"
+        },
+        {
+          "type": "pad",
+          "name": "post-chance",
+          "definition": 2
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "cell_template_block_3": {
+      "guid": "847535684d622bd1fdc1f8b1689c89be",
+      "size": 168,
+      "fields": [
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "struct",
+          "name": "place on",
+          "definition": "place_on_4"
+        },
+        {
+          "type": "short_integer",
+          "name": "normal diff count#initial number of actors on normal difficulty"
+        },
+        {
+          "type": "short_enum",
+          "name": "major upgrade",
+          "definition": "cell_template_block_3_options_3"
+        },
+        {
+          "type": "custom",
+          "name": "Character Build"
+        },
+        {
+          "type": "block",
+          "name": "character type",
+          "definition": "character_ref_choice_block_5"
+        },
+        {
+          "type": "block",
+          "name": "initial weapon",
+          "definition": "weapon_ref_choice_block_7"
+        },
+        {
+          "type": "block",
+          "name": "initial secondary weapon",
+          "definition": "weapon_ref_choice_block_9"
+        },
+        {
+          "type": "block",
+          "name": "initial equipment",
+          "definition": "equipment_ref_choice_block_11"
+        },
+        {
+          "type": "short_enum",
+          "name": "grenade type",
+          "definition": "cell_template_block_3_options_9"
+        },
+        {
+          "type": "pad",
+          "name": "post-grenade",
+          "definition": 2
+        },
+        {
+          "type": "tag_reference",
+          "name": "vehicle type",
+          "definition": {
+            "flags": 0,
+            "allowed": []
+          }
+        },
+        {
+          "type": "string_id",
+          "name": "vehicle variant"
+        },
+        {
+          "type": "string_id",
+          "name": "activity name"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    },
+    "squad_template_struct_definition_1": {
+      "guid": "9a7e8057a6322498af01591bbdadaeb1",
+      "size": 48,
+      "fields": [
+        {
+          "type": "int64_integer",
+          "name": "vtable space*~!"
+        },
+        {
+          "type": "struct",
+          "name": "internal struct",
+          "definition": "internal_struct_2"
+        },
+        {
+          "type": "string_id",
+          "name": "name^"
+        },
+        {
+          "type": "block",
+          "name": "cell templates",
+          "definition": "cell_template_block_3"
+        },
+        {
+          "type": "terminator"
+        }
+      ]
+    }
+  },
+  "enums_flags": {
+    "place_on_4_options_0": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    },
+    "cell_template_block_3_options_3": {
+      "options": [
+        "normal",
+        "few",
+        "many",
+        "none",
+        "all"
+      ]
+    },
+    "place_on_6_options_0": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    },
+    "place_on_8_options_0": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    },
+    "place_on_10_options_0": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    },
+    "place_on_12_options_0": {
+      "options": [
+        "easy",
+        "normal",
+        "heroic",
+        "legendary"
+      ]
+    },
+    "cell_template_block_3_options_9": {
+      "options": [
+        "NONE",
+        "Human grenade",
+        "Covenant Plasma",
+        "Brute claymore",
+        "Firebomb"
+      ]
+    }
+  },
+  "datas": {}
+}
